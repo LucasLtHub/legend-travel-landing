@@ -50,6 +50,13 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 @media(min-width:900px){.navlinks{display:flex}}
 .navlinks a{font-size:15px;color:var(--white);transition:color .3s;white-space:nowrap}
 .navlinks a:hover{color:var(--red3)}
+.navtoggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;color:var(--white)}
+@media(min-width:900px){.navtoggle{display:none}}
+.navlinks-mobile{position:fixed;inset:0;z-index:60;background:rgba(14,35,45,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
+.navlinks-mobile.open{opacity:1;pointer-events:auto}
+.navlinks-mobile a{font-size:20px;color:var(--white);padding:14px 0}
+.navlinks-mobile a:hover{color:var(--red3)}
+.navclose{position:absolute;top:24px;right:24px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:var(--white)}
 .btn-red{display:inline-block;background:var(--red);color:var(--white);padding:8px 24px;border-radius:8px;font-size:14px;font-weight:500;transition:background .3s}
 .btn-red:hover{background:var(--bur)}
 .nav-cta-full{display:none}.nav-cta-short{display:inline}
@@ -187,22 +194,29 @@ section{background:var(--white)}
 .dcard:hover .cta{opacity:1;max-height:32px}
 
 /* PAQUETES */
-.paq-banner{background:var(--bur);color:var(--white);padding-top:80px;padding-bottom:80px}
-@media(min-width:1024px){.paq-banner{padding-top:112px;padding-bottom:112px}}
-.paq-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:40px}
-.paq-badge{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.18em;color:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.18);border-radius:100px;padding:6px 16px;margin-bottom:20px}
-.paq-badge svg{color:var(--red3)}
-.paq-title{font-size:36px;font-weight:700;letter-spacing:-.025em;line-height:1.05;color:var(--white)}
-@media(min-width:768px){.paq-title{font-size:48px}}
-.paq-title em{font-style:normal;color:var(--red3)}
-.paq-desc{font-size:16px;color:rgba(255,255,255,.7);margin-top:16px;max-width:480px;line-height:1.65}
-.paq-highlights{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
-.paq-hl{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;border:1px solid rgba(255,255,255,.25);border-radius:100px;padding:6px 16px;color:rgba(255,255,255,.8)}
-.paq-cta-box{display:flex;flex-direction:column;align-items:flex-start;gap:16px;flex:none}
-@media(min-width:640px){.paq-cta-box{align-items:center}}
-.btn-paq{display:inline-flex;align-items:center;gap:10px;background:var(--white);color:var(--bur);padding:16px 36px;border-radius:8px;font-size:17px;font-weight:700;transition:background .3s,color .3s,transform .3s;white-space:nowrap}
+.paq2{background:var(--bur);color:var(--white)}
+.paq2-grid{display:grid;grid-template-columns:1fr;gap:56px}
+@media(min-width:1024px){.paq2-grid{grid-template-columns:1.05fr 1fr;align-items:center;gap:72px}}
+.paq2-lead{font-size:16px;color:rgba(255,255,255,.72);margin-top:20px;max-width:480px;line-height:1.7}
+.paq2-stats{display:flex;flex-wrap:wrap;gap:28px;margin-top:32px;padding-top:28px;border-top:1px solid rgba(255,255,255,.14)}
+.paq2-stat b{display:block;font-size:26px;font-weight:700;color:var(--white);letter-spacing:-.02em}
+.paq2-stat span{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.5);margin-top:4px}
+.paq2-features{display:grid;grid-template-columns:1fr;gap:22px;margin-top:32px}
+@media(min-width:560px){.paq2-features{grid-template-columns:1fr 1fr}}
+.paq2-feat{display:flex;gap:14px;align-items:flex-start}
+.paq2-feat .ic{width:40px;height:40px;border-radius:10px;background:rgba(213,70,76,.18);color:var(--red3);display:flex;align-items:center;justify-content:center;flex:none}
+.paq2-feat b{display:block;font-size:14px;font-weight:700}
+.paq2-feat p{font-size:13px;color:rgba(255,255,255,.58);margin-top:3px;line-height:1.5}
+.btn-paq{display:inline-flex;align-items:center;gap:10px;background:var(--white);color:var(--bur);padding:16px 34px;border-radius:8px;font-size:16px;font-weight:700;margin-top:40px;transition:background .3s,color .3s,transform .3s;white-space:nowrap}
 .btn-paq:hover{background:var(--red);color:var(--white);transform:translateY(-3px)}
-.paq-note{font-size:12px;color:rgba(255,255,255,.4);text-align:center}
+.paq2-mosaic{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pm-item{position:relative;display:block;border-radius:18px;overflow:hidden;aspect-ratio:1/1;box-shadow:0 16px 36px rgba(0,0,0,.3);transition:transform .4s}
+.pm-item:hover{transform:translateY(-4px)}
+.pm-item .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .6s}
+.pm-item:hover .bg{transform:scale(1.07)}
+.pm-item::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(14,35,45,.85) 100%)}
+.pm-item span{position:absolute;bottom:16px;left:18px;z-index:1;font-size:14px;font-weight:700;color:#fff;letter-spacing:.01em}
+.pm-item.wide{grid-column:1/-1;aspect-ratio:2.3/1}
 
 .dark{background:var(--black);color:var(--white)}
 .dark .h2{color:var(--white)}
@@ -334,9 +348,9 @@ section{background:var(--white)}
 .soc-link{display:flex;flex-direction:column;align-items:center;gap:10px;padding:24px 36px;border-radius:16px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:rgba(255,255,255,.75);transition:background .25s,border-color .25s,color .25s,transform .2s;text-decoration:none;min-width:120px}
 .soc-link:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25);color:#fff;transform:translateY(-4px)}
 .soc-link span{font-size:13px;font-weight:600;letter-spacing:.01em}
-.fsoc{display:flex;gap:8px;margin-top:12px}
-.fsoc a{width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,.08);color:rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;transition:background .2s,color .2s}
-.fsoc a:hover{background:var(--red);color:#fff}
+.fsoc{display:flex;gap:10px;margin-top:16px}
+.fsoc a{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.06);color:rgba(255,255,255,.7);display:flex;align-items:center;justify-content:center;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.fsoc a:hover{background:var(--red);border-color:var(--red);color:#fff;transform:translateY(-2px)}
 
 footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,255,255,.1);padding-top:64px;padding-bottom:32px}
 .fgrid{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:56px}
@@ -374,7 +388,25 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
       <a href="#guias">Guías y consejos</a>
       <a href="#faq">FAQ</a>
     </nav>
+    <button class="navtoggle" id="navToggleBtn" aria-label="Abrir menú">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
   </div>
+</div>
+
+<div class="navlinks-mobile" id="navMobile">
+  <button class="navclose" id="navCloseBtn" aria-label="Cerrar menú">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <a href="#destinos">Destinos</a>
+  <a href="#paquetes">Paquetes</a>
+  <a href="#diferenciales">Por qué Legend</a>
+  <a href="#historia">Nuestra historia</a>
+  <a href="#equipo">El equipo</a>
+  <a href="#testimonios">Testimonios</a>
+  <a href="#financiacion">Medios de pago</a>
+  <a href="#guias">Guías y consejos</a>
+  <a href="#faq">FAQ</a>
 </div>
 
 <section class="hero">
@@ -475,22 +507,59 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
   </div>
 </section>
 
-<section class="paq-banner px" id="paquetes">
+<section class="sec px paq2" id="paquetes">
   <div class="mx">
-    <div class="paq-inner rv">
+    <div class="paq2-grid rv">
       <div>
-        <h2 class="paq-title">Buscá tu paquete <em>ideal.</em></h2>
-        <p class="paq-desc">Accedé a cientos de paquetes turísticos con precios actualizados en tiempo real. Vuelos, hoteles y excursiones en un solo lugar, con el respaldo de Legend Travel.</p>
-        <div class="paq-highlights">
-          <span class="paq-hl">Precios en tiempo real</span>
-          <span class="paq-hl">Caribe · Disney · Europa · Cruceros</span>
-          <span class="paq-hl">Financiación disponible</span>
+        <p class="kicker light">Paquetes</p>
+        <h2 class="h2">Miles de paquetes, <em>un solo buscador.</em></h2>
+        <p class="paq2-lead">Buscador con precios y disponibilidad actualizados en tiempo real. Elegís destino y fechas, comparás opciones y reservás con el respaldo y el acompañamiento de Legend Travel en cada paso del viaje.</p>
+
+        <div class="paq2-features">
+          <div class="paq2-feat">
+            <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48 2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48 2.83-2.83"/></svg></div>
+            <div><b>Precios en tiempo real</b><p>Tarifas y disponibilidad actualizadas todos los días.</p></div>
+          </div>
+          <div class="paq2-feat">
+            <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+            <div><b>Acompañamiento de Legend</b><p>Cada reserva la sigue una asesora real, de principio a fin.</p></div>
+          </div>
+          <div class="paq2-feat">
+            <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
+            <div><b>Cuotas y financiación</b><p>Todas las tarjetas, con planes en pesos a tu medida.</p></div>
+          </div>
+          <div class="paq2-feat">
+            <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+            <div><b>Red Grupo GEA</b><p>Acceso a los mayoristas más importantes del país.</p></div>
+          </div>
         </div>
-      </div>
-      <div class="paq-cta-box">
+
         <a class="btn-paq" href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
           Ver paquetes disponibles
+        </a>
+      </div>
+
+      <div class="paq2-mosaic">
+        <a class="pm-item wide" href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">
+          <div class="bg" style="background-image:url('https://images.pexels.com/photos/4468721/pexels-photo-4468721.jpeg?auto=compress&cs=tinysrgb&w=900')"></div>
+          <span>Argentina</span>
+        </a>
+        <a class="pm-item" href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">
+          <div class="bg" style="background-image:url('https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress&cs=tinysrgb&w=700')"></div>
+          <span>Europa</span>
+        </a>
+        <a class="pm-item" href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">
+          <div class="bg" style="background-image:url('https://images.pexels.com/photos/3417784/pexels-photo-3417784.jpeg?auto=compress&cs=tinysrgb&w=700')"></div>
+          <span>Caribe</span>
+        </a>
+        <a class="pm-item" href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">
+          <div class="bg" style="background-image:url('https://images.pexels.com/photos/18313202/pexels-photo-18313202.jpeg?auto=compress&cs=tinysrgb&w=700')"></div>
+          <span>África</span>
+        </a>
+        <a class="pm-item" href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">
+          <div class="bg" style="background-image:url('https://images.pexels.com/photos/889954/pexels-photo-889954.jpeg?auto=compress&cs=tinysrgb&w=700')"></div>
+          <span>Asia</span>
         </a>
       </div>
     </div>
@@ -735,7 +804,7 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
     <div class="fgrid">
       <div>
         <a href="#" class="brand">
-          <img src="logo-wordmark.png" alt="Legend Travel" class="brand-logo" style="height:52px;filter:brightness(0) invert(1)">
+          <img src="logo-wordmark.png" alt="Legend Travel" class="brand-logo" style="height:76px;filter:brightness(0) invert(1)">
         </a>
         <p class="fabout">Agencia de viajes fundada en 1991. Miembros del Grupo GEA. Viajes a medida con atención humana, desde nuestro local propio en zona norte de Buenos Aires.</p>
       </div>
@@ -751,15 +820,16 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
         <h4>Contacto</h4>
         <p class="t">Paraná 3745, Unicenter Shopping<br>Martínez, Buenos Aires</p>
         <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje">WhatsApp +54 9 11 2748-9446</a>
+        <a href="tel:+541147170344">Teléfono 11 4717-0344</a>
         <div class="fsoc">
           <a href="https://www.instagram.com/legendtraveloficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
           </a>
           <a href="https://www.tiktok.com/@legendtravel.ok" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-6.13 6.33 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.67a8.18 8.18 0 0 0 4.81 1.55V6.73a4.85 4.85 0 0 1-1.04-.04Z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-6.13 6.33 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.67a8.18 8.18 0 0 0 4.81 1.55V6.73a4.85 4.85 0 0 1-1.04-.04Z"/></svg>
           </a>
           <a href="https://www.facebook.com/LegendTravelOficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
           </a>
         </div>
       </div>
@@ -810,6 +880,15 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
     el.style.transitionDuration=(el.dataset.dur||'1000')+'ms';
     setTimeout(function(){el.classList.add('in')},parseInt(el.dataset.delay||'0',10));
   });
+
+  var navMobile=document.getElementById('navMobile');
+  var navToggleBtn=document.getElementById('navToggleBtn');
+  var navCloseBtn=document.getElementById('navCloseBtn');
+  function openMobileNav(){navMobile.classList.add('open');document.body.style.overflow='hidden'}
+  function closeMobileNav(){navMobile.classList.remove('open');document.body.style.overflow=''}
+  navToggleBtn.addEventListener('click',openMobileNav);
+  navCloseBtn.addEventListener('click',closeMobileNav);
+  navMobile.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMobileNav)});
 
   var obs=new IntersectionObserver(function(es){
     es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}});
