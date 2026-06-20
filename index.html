@@ -42,13 +42,13 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 }
 
 .navwrap{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:24px;display:flex;justify-content:center}
-.navbar{border-radius:13px;padding:11px 22px;display:flex;align-items:center;justify-content:center}
+.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:center}
 .brand{display:flex;align-items:center;gap:10px;color:var(--white)}
 .brand svg{width:32px;height:32px;flex:none}
 .brand span{font-size:24px;font-weight:600;letter-spacing:-.02em}
 .navlinks{display:none;align-items:center;gap:26px}
 @media(min-width:900px){.navlinks{display:flex}}
-.navlinks a{font-size:15px;color:var(--white);transition:color .3s;white-space:nowrap}
+.navlinks a{font-size:17px;color:var(--white);transition:color .3s;white-space:nowrap}
 .navlinks a:hover{color:var(--red3)}
 .navtoggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;color:var(--white)}
 @media(min-width:900px){.navtoggle{display:none}}
@@ -63,10 +63,6 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 @media(min-width:640px){.nav-cta-full{display:inline}.nav-cta-short{display:none}}
 
 .hero{position:relative;min-height:100vh;color:var(--white);overflow:hidden}
-.hero-logo-tr{position:absolute;top:0;right:0;z-index:6}
-.hero-logo-tr img{height:72px;width:auto;display:block;filter:brightness(0) invert(1) drop-shadow(0 3px 16px rgba(0,0,0,.55))}
-@media(min-width:768px){.hero-logo-tr img{height:96px}}
-@media(min-width:1280px){.hero-logo-tr img{height:105px}}
 .hero-media{position:absolute;inset:0;overflow:hidden}
 .hero-media .scene{
   position:absolute;inset:-12%;
@@ -142,18 +138,24 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
   background:linear-gradient(180deg,rgba(14,35,45,0) 0%,rgba(14,35,45,.4) 40%,rgba(14,35,45,.78) 72%,rgba(14,35,45,.9) 100%);
   pointer-events:none;
 }
-.hero-inner{position:relative;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:100vh;padding-top:160px}
+.hero-inner{position:relative;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:100vh;padding-top:80px}
 .hero h1{font-size:44px;font-weight:500;margin-bottom:20px;color:var(--white);letter-spacing:-0.04em;line-height:1.04;text-shadow:0 2px 24px rgba(14,35,45,.7),0 4px 48px rgba(14,35,45,.5)}
 @media(min-width:768px){.hero h1{font-size:56px}}
 @media(min-width:1024px){.hero h1{font-size:68px}}
 @media(min-width:1280px){.hero h1{font-size:80px}}
 .hero h1 .ch{display:inline-block;opacity:0;transform:translateY(12px);transition:opacity .5s,transform .5s}
 .hero h1 .ch.in{opacity:1;transform:translateY(0)}
-.hero-sub{font-size:16px;color:rgba(255,255,255,.82);max-width:520px;margin:0 auto 28px;text-shadow:0 1px 16px rgba(14,35,45,.75);text-align:center}
-@media(min-width:768px){.hero-sub{font-size:18px}}
+.hero h1{display:none}
+.hero-logo-main{margin-bottom:-20px}
+.hero-logo-main img{height:160px;width:auto;max-width:92vw;display:block;margin:0 auto;filter:drop-shadow(0 4px 20px rgba(0,0,0,.5))}
+@media(min-width:768px){.hero-logo-main{margin-bottom:-28px}.hero-logo-main img{height:200px}}
+@media(min-width:1024px){.hero-logo-main{margin-bottom:-34px}.hero-logo-main img{height:250px}}
+@media(min-width:1280px){.hero-logo-main{margin-bottom:-40px}.hero-logo-main img{height:300px}}
+.hero-sub{font-size:18px;color:rgba(255,255,255,.82);max-width:580px;margin:0 auto 28px;text-shadow:0 1px 16px rgba(14,35,45,.75);text-align:center}
+@media(min-width:768px){.hero-sub{font-size:21px}}
 .hero-btns{display:flex;flex-wrap:wrap;gap:16px}
-.hero-btns .btn-red{padding:12px 32px;font-size:16px}
-.btn-glass{display:inline-block;border:1px solid rgba(255,255,255,.2);color:#fff;padding:12px 32px;border-radius:8px;font-weight:500;font-size:16px;transition:background .3s,color .3s}
+.hero-btns .btn-red{padding:14px 38px;font-size:17px}
+.btn-glass{display:inline-block;border:1px solid rgba(255,255,255,.2);color:#fff;padding:14px 38px;border-radius:8px;font-weight:500;font-size:17px;transition:background .3s,color .3s}
 .btn-glass:hover{background:#fff;color:#000}
 .fade{opacity:0;transition:opacity 1s}
 .fade.in{opacity:1}
@@ -194,9 +196,11 @@ section{background:var(--white)}
 .dcard:hover .cta{opacity:1;max-height:32px}
 
 /* PAQUETES */
-.paq2{background:var(--bur);color:var(--white)}
+.paq2{background:var(--bur);color:var(--white);overflow:hidden}
+.paq2 .h2{color:var(--white)}
+.paq2 .h2 em{color:var(--red3)}
 .paq2-grid{display:grid;grid-template-columns:1fr;gap:56px}
-@media(min-width:1024px){.paq2-grid{grid-template-columns:1.05fr 1fr;align-items:center;gap:72px}}
+@media(min-width:1024px){.paq2-grid{grid-template-columns:1.05fr 1fr;align-items:start;gap:72px}}
 .paq2-lead{font-size:16px;color:rgba(255,255,255,.72);margin-top:20px;max-width:480px;line-height:1.7}
 .paq2-stats{display:flex;flex-wrap:wrap;gap:28px;margin-top:32px;padding-top:28px;border-top:1px solid rgba(255,255,255,.14)}
 .paq2-stat b{display:block;font-size:26px;font-weight:700;color:var(--white);letter-spacing:-.02em}
@@ -224,12 +228,12 @@ section{background:var(--white)}
 .vgrid{display:grid;grid-template-columns:1fr;gap:20px}
 @media(min-width:768px){.vgrid{grid-template-columns:1fr 1fr}}
 @media(min-width:1024px){.vgrid{grid-template-columns:1fr 1fr 1fr}}
-.vcard{height:100%;border-radius:16px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);padding:32px;transition:transform .3s,border-color .3s,background .3s}
-.vcard:hover{transform:translateY(-6px);border-color:rgba(213,70,76,.5);background:rgba(255,255,255,.07)}
-.vcard .ic{width:48px;height:48px;border-radius:12px;background:rgba(213,70,76,.15);color:var(--red3);display:flex;align-items:center;justify-content:center;margin-bottom:20px;transition:background .3s,color .3s,transform .3s}
+.vcard{height:100%;border-radius:16px;border:1px solid rgba(14,35,45,.1);background:rgba(14,35,45,.03);padding:32px;transition:transform .3s,border-color .3s,background .3s}
+.vcard:hover{transform:translateY(-6px);border-color:rgba(213,70,76,.4);background:rgba(213,70,76,.04)}
+.vcard .ic{width:48px;height:48px;border-radius:12px;background:rgba(213,70,76,.12);color:var(--red3);display:flex;align-items:center;justify-content:center;margin-bottom:20px;transition:background .3s,color .3s,transform .3s}
 .vcard:hover .ic{background:var(--red);color:var(--white);transform:rotate(-6deg)}
-.vcard h3{font-size:18px;font-weight:700;margin-bottom:8px}
-.vcard p{font-size:14px;color:rgba(255,255,255,.6)}
+.vcard h3{font-size:18px;font-weight:700;margin-bottom:8px;color:var(--black)}
+.vcard p{font-size:14px;color:rgba(14,35,45,.82)}
 
 .tgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media(min-width:640px){.tgrid{grid-template-columns:repeat(3,1fr)}}
@@ -241,8 +245,13 @@ section{background:var(--white)}
 .tcard b{display:block;font-weight:700;color:var(--black)}
 .tcard .role{font-size:13px;color:rgba(14,35,45,.55);margin-top:6px}
 /* HISTORIA */
+#historia{background:var(--bur)}
+#historia .kicker{color:var(--red3)}
+#historia .h2{color:var(--white)}
+#historia .h2 em{color:var(--red3)}
+#historia .lead{color:rgba(255,255,255,.7)}
 .hist-wrap{max-width:760px;margin:0 auto}
-.hist-body>p{font-size:17px;line-height:1.85;color:rgba(14,35,45,.72);margin-top:22px}
+.hist-body>p{font-size:17px;line-height:1.85;color:rgba(255,255,255,.75);margin-top:22px}
 .center-head{text-align:center;max-width:672px;margin:0 auto 64px}
 .center-head p.lead{color:rgba(14,35,45,.6);margin-top:20px}
 
@@ -273,7 +282,7 @@ section{background:var(--white)}
 .bgrid{display:grid;grid-template-columns:1fr;gap:24px}
 @media(min-width:768px){.bgrid{grid-template-columns:repeat(3,1fr)}}
 .bcard{display:block}
-.bcard .imwrap{border-radius:16px;overflow:hidden;aspect-ratio:16/10;margin-bottom:20px}
+.bcard .imwrap{border-radius:16px;overflow:hidden;aspect-ratio:4/3;margin-bottom:20px}
 .bcard .im{width:100%;height:100%;background-size:cover;background-position:center;transition:transform .7s}
 .bcard:hover .im{transform:scale(1.06)}
 .bcard .cat{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.22em;color:var(--red)}
@@ -328,7 +337,7 @@ section{background:var(--white)}
 .faq .ans{max-height:0;overflow:hidden;transition:max-height .4s ease}
 .faq .ans p{padding:0 4px 24px;font-size:15px;color:rgba(14,35,45,.6);max-width:640px}
 
-.contact{background:var(--black);color:var(--white);text-align:center}
+.contact{background:var(--bur);color:var(--white);text-align:center}
 .contact .h2{color:var(--white);font-size:44px}
 @media(min-width:768px){.contact .h2{font-size:60px}}
 @media(min-width:1024px){.contact .h2{font-size:72px}}
@@ -348,11 +357,12 @@ section{background:var(--white)}
 .soc-link{display:flex;flex-direction:column;align-items:center;gap:10px;padding:24px 36px;border-radius:16px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:rgba(255,255,255,.75);transition:background .25s,border-color .25s,color .25s,transform .2s;text-decoration:none;min-width:120px}
 .soc-link:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25);color:#fff;transform:translateY(-4px)}
 .soc-link span{font-size:13px;font-weight:600;letter-spacing:.01em}
-.fsoc{display:flex;gap:10px;margin-top:16px}
-.fsoc a{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.06);color:rgba(255,255,255,.7);display:flex;align-items:center;justify-content:center;transition:background .2s,color .2s,border-color .2s,transform .2s}
-.fsoc a:hover{background:var(--red);border-color:var(--red);color:#fff;transform:translateY(-2px)}
+.fsoc{display:flex;gap:10px;margin-top:16px;align-items:center}
+.fsoc a{color:rgba(255,255,255,.6);display:inline-flex;transition:color .2s,transform .2s}
+.fsoc a svg{width:22px;height:22px;display:block}
+.fsoc a:hover{color:#fff;transform:translateY(-2px)}
 
-footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,255,255,.1);padding-top:64px;padding-bottom:32px}
+footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,255,255,.1);padding-top:64px;padding-bottom:32px}
 .fgrid{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:56px}
 @media(min-width:640px){.fgrid{grid-template-columns:1fr 1fr}}
 @media(min-width:1024px){.fgrid{grid-template-columns:1.4fr 1fr 1fr 1.2fr}}
@@ -387,6 +397,7 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
       <a href="#financiacion">Medios de pago</a>
       <a href="#guias">Guías y consejos</a>
       <a href="#faq">FAQ</a>
+      <a href="#contacto">Contacto</a>
     </nav>
     <button class="navtoggle" id="navToggleBtn" aria-label="Abrir menú">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -407,12 +418,10 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
   <a href="#financiacion">Medios de pago</a>
   <a href="#guias">Guías y consejos</a>
   <a href="#faq">FAQ</a>
+  <a href="#contacto">Contacto</a>
 </div>
 
 <section class="hero">
-  <a href="#" class="hero-logo-tr fade" data-delay="200" data-dur="900">
-    <img src="logo-wordmark.png" alt="Legend Travel">
-  </a>
   <div class="hero-media">
     <div class="scene"></div>
     <div class="sun"></div>
@@ -425,6 +434,9 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
   <div class="hero-inner px">
     <div>
       <h1 id="heading" aria-label="Tu viaje, tu historia."></h1>
+      <div class="hero-logo-main fade" data-delay="200" data-dur="1000">
+        <img src="logo-wordmark.png" alt="Legend Travel">
+      </div>
       <p class="hero-sub fade" data-delay="800" data-dur="1000">Más de 35 años diseñando viajes a medida. Disney, Caribe, Europa y el mundo.</p>
       <div class="hero-btns fade" data-delay="1200" data-dur="1000" style="justify-content:center">
         <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
@@ -441,66 +453,66 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
         <p class="kicker">Destinos</p>
         <h2 class="h2">¿Qué viaje estás <em>soñando?</em></h2>
       </div>
-      <p class="sec-aside">Elegí por dónde empezar. Cada destino tiene una asesora que lo conoce de memoria.</p>
+      <p class="sec-aside">Elegí por dónde empezar. Te asesoramos en cada paso para que tu viaje sea exactamente como lo imaginaste.</p>
     </div>
     <div class="dgrid">
-      <a class="dcard rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">
+      <a class="dcard rv" href="disney/index.html">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/12569769/pexels-photo-12569769.jpeg?auto=compress&cs=tinysrgb&w=1200')"></div>
         <div class="arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></div>
         <div class="info">
-          <h3>Disney y Orlando</h3>
+          <h3>Disney</h3>
           <p class="copy">Familias y quinceañeras. 35 años haciendo magia.</p>
-          <span class="cta">Planear este viaje <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <span class="cta">Ver todo sobre Disney <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dcard rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">
-        <div class="bg" style="background-image:url('https://images.pexels.com/photos/3417784/pexels-photo-3417784.jpeg?auto=compress&cs=tinysrgb&w=1200')"></div>
+      <a class="dcard rv" href="caribe/index.html">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/30447886/pexels-photo-30447886.jpeg?auto=compress&cs=tinysrgb&w=1200')"></div>
         <div class="grad"></div>
         <div class="arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></div>
         <div class="info">
           <h3>Caribe</h3>
-          <p class="copy">Punta Cana, Cancún, Aruba. All-inclusive sin pensar en nada.</p>
-          <span class="cta">Planear este viaje <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <p class="copy">Playas de agua cristalina, sol y descanso total. El paraíso más cerca de lo que creés.</p>
+          <span class="cta">Ver todo sobre Caribe <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dcard rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">
+      <a class="dcard rv" href="europa/index.html">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress&cs=tinysrgb&w=1200')"></div>
         <div class="grad"></div>
         <div class="arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></div>
         <div class="info">
           <h3>Europa</h3>
           <p class="copy">Circuitos clásicos o a tu ritmo. Como lo soñaste.</p>
-          <span class="cta">Planear este viaje <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <span class="cta">Ver todo sobre Europa <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dcard rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">
-        <div class="bg" style="background-image:url('https://images.pexels.com/photos/2598675/pexels-photo-2598675.jpeg?auto=compress&cs=tinysrgb&w=1200')"></div>
+      <a class="dcard rv" href="brasil/index.html">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/24742342/pexels-photo-24742342.jpeg?auto=compress&cs=tinysrgb&w=1200')"></div>
         <div class="grad"></div>
         <div class="arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></div>
         <div class="info">
           <h3>Brasil</h3>
-          <p class="copy">Búzios, Florianópolis, Río, Maceió. El verano de siempre.</p>
-          <span class="cta">Planear este viaje <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <p class="copy">La alegría brasileña en estado puro. Playas, samba y paisajes que no se olvidan.</p>
+          <span class="cta">Ver todo sobre Brasil <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dcard rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">
+      <a class="dcard rv" href="cruceros/index.html">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/37880222/pexels-photo-37880222.jpeg?auto=compress&cs=tinysrgb&w=1200')"></div>
         <div class="grad"></div>
         <div class="arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></div>
         <div class="info">
           <h3>Cruceros</h3>
-          <p class="copy">Caribe, Mediterráneo o desde Buenos Aires.</p>
-          <span class="cta">Planear este viaje <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <p class="copy">Lujo, comodidad y el mundo visto desde el mar. Una experiencia que lo cambia todo.</p>
+          <span class="cta">Ver todo sobre Cruceros <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dcard rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">
-        <div class="bg" style="background-image:url('https://images.pexels.com/photos/3822113/pexels-photo-3822113.jpeg?auto=compress&cs=tinysrgb&w=1200')"></div>
+      <a class="dcard rv" href="argentina/index.html">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/4042403/pexels-photo-4042403.jpeg?auto=compress&cs=tinysrgb&w=1200')"></div>
         <div class="grad"></div>
         <div class="arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></div>
         <div class="info">
-          <h3>Lunas de miel</h3>
-          <p class="copy">El viaje de sus vidas, diseñado a medida.</p>
-          <span class="cta">Planear este viaje <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <h3>Argentina</h3>
+          <p class="copy">Argentina lo tiene todo, de norte a sur. Naturaleza, cultura y paisajes únicos en el mundo.</p>
+          <span class="cta">Ver todo sobre Argentina <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
     </div>
@@ -525,12 +537,12 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
             <div><b>Acompañamiento de Legend</b><p>Cada reserva la sigue una asesora real, de principio a fin.</p></div>
           </div>
           <div class="paq2-feat">
-            <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
-            <div><b>Cuotas y financiación</b><p>Todas las tarjetas, con planes en pesos a tu medida.</p></div>
+            <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+            <div><b>Destinos en todo el mundo</b><p>Disney, Caribe, Europa, Asia y mucho más en un solo lugar.</p></div>
           </div>
           <div class="paq2-feat">
-            <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
-            <div><b>Red Grupo GEA</b><p>Acceso a los mayoristas más importantes del país.</p></div>
+            <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.9 4.6L19 9.5l-4.1 2 .9 5-3.8-2.7L8.2 16.5l.9-5L5 9.5l5.1-1.9z"/></svg></div>
+            <div><b>Más de 35 años de experiencia</b><p>Décadas eligiendo los mejores paquetes para cada tipo de viajero.</p></div>
           </div>
         </div>
 
@@ -546,14 +558,6 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
           <span>Argentina</span>
         </a>
         <a class="pm-item" href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">
-          <div class="bg" style="background-image:url('https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress&cs=tinysrgb&w=700')"></div>
-          <span>Europa</span>
-        </a>
-        <a class="pm-item" href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">
-          <div class="bg" style="background-image:url('https://images.pexels.com/photos/3417784/pexels-photo-3417784.jpeg?auto=compress&cs=tinysrgb&w=700')"></div>
-          <span>Caribe</span>
-        </a>
-        <a class="pm-item" href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">
           <div class="bg" style="background-image:url('https://images.pexels.com/photos/18313202/pexels-photo-18313202.jpeg?auto=compress&cs=tinysrgb&w=700')"></div>
           <span>África</span>
         </a>
@@ -566,11 +570,11 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
   </div>
 </section>
 
-<section class="sec px dark" id="diferenciales">
+<section class="sec px" id="diferenciales">
   <div class="mx">
     <div class="rv" style="margin-bottom:64px">
-      <p class="kicker light">Por qué Legend</p>
-      <h2 class="h2" style="max-width:768px">Una agencia de verdad, de las que ya casi <em>no quedan.</em></h2>
+      <p class="kicker">Por qué Legend</p>
+      <h2 class="h2" style="max-width:768px">Lo que nos diferencia no es lo que decimos, <em>es lo que hacemos.</em></h2>
     </div>
     <div class="vgrid">
       <div class="vcard rv">
@@ -579,14 +583,14 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
         <p>Desde 1991 diseñando viajes. Sabemos qué funciona y qué evitar en cada destino.</p>
       </div>
       <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-        <h3>Grupo GEA · Ministerio de Turismo</h3>
-        <p>Agencia habilitada y miembros del Grupo GEA. Respaldo, experiencia y acceso a los mejores operadores del mercado.</p>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.8-.9L3 20l1-5.2a8.4 8.4 0 1 1 17-3.3Z"/></svg></div>
+        <h3>Acompañamiento total</h3>
+        <p>Antes, durante y después del viaje. Por WhatsApp, teléfono o en persona.</p>
       </div>
       <div class="vcard rv">
         <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
         <h3>Atención humana real</h3>
-        <p>Tu viaje lo arma una persona con nombre y apellido, no un algoritmo.</p>
+        <p>Cada consulta la responde una asesora con experiencia, no un bot. Te conocemos, y eso cambia todo.</p>
       </div>
       <div class="vcard rv">
         <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.9 4.6L19 9.5l-4.1 2 .9 5-3.8-2.7L8.2 16.5l.9-5L5 9.5l5.1-1.9z"/></svg></div>
@@ -594,14 +598,14 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
         <p>Nos contás la idea y diseñamos el itinerario completo, a tu ritmo y presupuesto.</p>
       </div>
       <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
-        <h3>Medios de pago</h3>
-        <p>Todas las tarjetas, cuotas y planes en pesos. Congelá el precio con una seña.</p>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-7-4.5-7-11a7 7 0 0 1 14 0c0 6.5-7 11-7 11Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Precios transparentes</h3>
+        <p>Sin letra chica, sin sorpresas. El precio que acordamos es el que pagás.</p>
       </div>
       <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.8-.9L3 20l1-5.2a8.4 8.4 0 1 1 17-3.3Z"/></svg></div>
-        <h3>Acompañamiento total</h3>
-        <p>Antes, durante y después del viaje. Por WhatsApp, teléfono o en persona.</p>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <h3>Grupo GEA · Ministerio de Turismo</h3>
+        <p>Agencia habilitada y miembros del Grupo GEA. Respaldo, experiencia y acceso a los mejores operadores del mercado.</p>
       </div>
     </div>
   </div>
@@ -612,10 +616,12 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
     <div class="hist-wrap rv">
       <div class="hist-body">
         <p class="kicker">Nuestra historia</p>
-        <h2 class="h2">Más de 35 años <em>construyendo confianza.</em></h2>
-        <p>Legend Travel nació en 1991, fundada por una familia con una convicción simple: que los viajes que valen la pena son los que se diseñan con alguien de confianza. Empezamos en zona norte de Buenos Aires, y ahí seguimos, más de tres décadas después.</p>
-        <p>Con los años crecimos en equipo, en destinos y en experiencia. Hoy formamos parte del <strong>Grupo GEA</strong>, una de las redes de agencias de viajes más importantes del país. Eso nos da acceso a los mejores mayoristas y operadores del mercado, lo que se traduce directamente en más opciones y mejores condiciones para cada cliente.</p>
-        <p>Trabajamos con legajo habilitado por el <strong>Ministerio de Turismo de la Nación</strong> y con la misma filosofía de siempre: atención personalizada, honestidad sobre qué conviene en cada caso y acompañamiento real antes, durante y después del viaje. Muchos de los que viajaron con nosotros en los noventa hoy nos mandan a sus hijos. Eso, para nosotros, lo dice todo.</p>
+        <h2 class="h2">Una familia que lleva <em>el viaje en la sangre.</em></h2>
+        <p>Todo empezó con <strong>Don José Ventura Pérez</strong>, pionero del turismo argentino y fundador de <strong>EVES</strong> —Entidad de Viajes Educativos y Sociales— hace casi un siglo. Su legado no fue solo una empresa: fue una forma de entender el mundo, de creer que viajar transforma a las personas. Esa convicción pasó de generación en generación y se convirtió en el ADN de todo lo que hacemos.</p>
+        <p>En 1991, sus nietos <strong>Fernando Pérez Grassi</strong> y <strong>Martín Pérez Balconi</strong> decidieron honrar ese legado familiar. Se sumó como socio fundador <strong>Luis Bernaudo</strong>, quien aportó su visión y compromiso desde el primer día. Juntos fundaron <strong>Legend Travel</strong> en zona norte de Buenos Aires. Lo que arrancó como una agencia pequeña de barrio creció hasta convertirse en un referente de la zona, sin perder nunca el trato cercano que nos define desde el primer día.</p>
+        <p>Más de tres décadas después, la filosofía sigue siendo la misma: cada viaje es único porque cada persona es única. Escuchamos, preguntamos, entendemos qué buscás y armamos el viaje que realmente querés hacer.</p>
+        <p>Con los años sumamos destinos, operadores y tecnología, pero nunca cambiamos lo más importante: cuando nos contactás, te atiende una persona con nombre y apellido que se toma el tiempo de conocerte. Eso marca la diferencia.</p>
+        <p style="font-style:italic;color:var(--red3);font-weight:500;margin-top:32px">Transformamos tus sueños en recuerdos. Porque los mejores momentos de la vida nacen viajando.</p>
       </div>
 
     </div>
@@ -626,19 +632,19 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
   <div class="mx">
     <div class="center-head rv">
       <p class="kicker" style="text-align:center">El equipo</p>
-      <h2 class="h2">Te atiende una persona, <em>no un algoritmo.</em></h2>
-      <p class="lead">Una empresa familiar, un solo equipo, desde 1991. Personas reales que conocen cada destino de primera mano.</p>
+      <h2 class="h2">El equipo que hace <em>posible tu viaje.</em></h2>
+      <p class="lead">Una empresa familiar, un solo equipo. Personas reales con las que vas a poder hablar cuando lo necesités.</p>
     </div>
     <div class="tgrid">
-      <a class="tcard rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer"><div class="av">F</div><b>Fernando</b><p class="role">Socio Gerente</p></a>
-      <a class="tcard rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer"><div class="av">S</div><b>Silvia</b><p class="role">Departamento de Ventas</p></a>
-      <a class="tcard rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer"><div class="av">P</div><b>Pilar</b><p class="role">Departamento de Ventas</p></a>
-      <a class="tcard rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer"><div class="av">C</div><b>Carolina</b><p class="role">Agente de Viajes</p></a>
-      <a class="tcard rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer"><div class="av">L</div><b>Luján</b><p class="role">Agente de Viajes</p></a>
-      <a class="tcard rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer"><div class="av">C</div><b>Claudia</b><p class="role">Agente de Viajes</p></a>
-      <a class="tcard rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer"><div class="av">L</div><b>Luciana</b><p class="role">Agente de Viajes</p></a>
-      <a class="tcard rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer"><div class="av">X</div><b>Xiomara</b><p class="role">Agente de Viajes</p></a>
-      <a class="tcard rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer"><div class="av">L</div><b>Lucas</b><p class="role">Administrativo</p></a>
+      <div class="tcard rv"><div class="av">C</div><b>Carolina</b><p class="role">Agente de Viajes</p></div>
+      <div class="tcard rv"><div class="av">L</div><b>Luján</b><p class="role">Agente de Viajes</p></div>
+      <div class="tcard rv"><div class="av">L</div><b>Luciana</b><p class="role">Agente de Viajes</p></div>
+      <div class="tcard rv"><div class="av">C</div><b>Claudia</b><p class="role">Agente de Viajes</p></div>
+      <div class="tcard rv"><div class="av">X</div><b>Xiomara</b><p class="role">Agente de Viajes</p></div>
+      <div class="tcard rv"><div class="av">P</div><b>Pilar</b><p class="role">Agente de Viajes</p></div>
+      <div class="tcard rv"><div class="av">S</div><b>Silvia</b><p class="role">Departamento de Ventas</p></div>
+      <div class="tcard rv"><div class="av">F</div><b>Fernando</b><p class="role">Socio Gerente</p></div>
+      <div class="tcard rv"><div class="av">L</div><b>Lucas</b><p class="role">Administrativo</p></div>
     </div>
   </div>
 </section>
@@ -648,7 +654,7 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
     <div class="sec-head rv">
       <div>
         <p class="kicker">Testimonios</p>
-        <h2 class="h2">Las historias las <em>escriben ellos.</em></h2>
+        <h2 class="h2">Lo que dicen quienes <em>ya viajaron con nosotros.</em></h2>
       </div>
       <div class="gbadge">
         <span class="stars">★★★★★</span>
@@ -679,13 +685,13 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
   <div class="mx">
     <div class="rv">
       <p class="kicker light">Medios de pago</p>
-      <h2 class="h2">Tu viaje, <em>sin preocupaciones.</em></h2>
-      <p class="lead">Trabajamos con todas las tarjetas de crédito y débito. Podés pagar en cuotas, congelar el precio con una seña y armar el plan de pagos que mejor te quede. Transparencia total, sin sorpresas.</p>
+      <h2 class="h2">Pagá como <em>más te convenga.</em></h2>
+      <p class="lead">Queremos que nada te frene a la hora de planificar tu viaje. Por eso aceptamos todas las formas de pago, con total transparencia y sin sorpresas.</p>
       <div class="chips">
-        <span class="chip">Visa</span><span class="chip">Mastercard</span><span class="chip">Amex</span><span class="chip">Débito</span><span class="chip">Cuotas sin interés</span><span class="chip">Seña congela precio</span>
+        <span class="chip">Efectivo</span><span class="chip">Transferencia bancaria</span><span class="chip">Tarjeta de crédito</span><span class="chip">Tarjeta de débito</span>
       </div>
     </div>
-    <a class="btn-white rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar planes de pago <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+    <a class="btn-white rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultanos por WhatsApp <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
   </div>
 </section>
 
@@ -693,11 +699,11 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
   <div class="mx">
     <div class="rv" style="margin-bottom:56px">
       <p class="kicker">Guías y consejos</p>
-      <h2 class="h2">35 años de oficio, <em>contado simple.</em></h2>
+      <h2 class="h2">Todo lo que necesitás saber <em>antes de viajar.</em></h2>
     </div>
     <div class="bgrid">
       <a class="bcard rv" href="javascript:void(0)" data-article="disney">
-        <div class="imwrap"><div class="im" style="background-image:url('https://images.pexels.com/photos/2031776/pexels-photo-2031776.jpeg?auto=compress&cs=tinysrgb&w=900')"></div></div>
+        <div class="imwrap"><div class="im" style="background-image:url('https://images.pexels.com/photos/12422683/pexels-photo-12422683.jpeg?auto=compress&cs=tinysrgb&w=900')"></div></div>
         <p class="cat">Disney</p>
         <h3>¿Cuándo conviene viajar a Disney?</h3>
         <p class="meta">Por Carolina · junio 2026</p>
@@ -725,9 +731,9 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
       <h2 class="h2" style="font-size:36px">Lo que todos <em>nos preguntan.</em></h2>
     </div>
     <div class="rv">
-      <div class="faq open">
-        <button aria-expanded="true">¿Dónde queda Legend Travel?<span class="pm"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></span></button>
-        <div class="ans"><p>Estamos en Unicenter Shopping, Paraná 3745, Martínez (zona norte de Buenos Aires). Podés venir al local sin turno o escribirnos por WhatsApp.</p></div>
+      <div class="faq">
+        <button aria-expanded="false">¿Dónde queda Legend Travel?<span class="pm"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></span></button>
+        <div class="ans"><p>Estamos en Martínez, zona norte de Buenos Aires. Podés venir al local sin turno o escribirnos por WhatsApp.</p></div>
       </div>
       <div class="faq">
         <button aria-expanded="false">¿Hace cuánto existe la agencia?<span class="pm"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></span></button>
@@ -754,7 +760,7 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
     <div class="rv">
       <p class="kicker light" style="text-align:center">Contacto</p>
       <h2 class="h2">¿Empezamos a escribir <em>tu historia?</em></h2>
-      <p class="lead">Contanos tu idea y en minutos te responde una asesora de verdad. O vení a tomar un café al local: lo planeamos juntos.</p>
+      <p class="lead">Contanos tu idea y en minutos te responde una asesora de verdad.</p>
     </div>
     <div class="rv">
       <a class="bigbtn" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">
@@ -766,12 +772,12 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
       <div class="ccard">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
         <b>El local</b>
-        <p>Paraná 3745, Unicenter Shopping<br>Martínez, Buenos Aires</p>
+        <p>Paraná 3745, Martínez<br>Buenos Aires</p>
       </div>
       <div class="ccard">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.8-.9L3 20l1-5.2a8.4 8.4 0 1 1 17-3.3Z"/></svg>
         <b>WhatsApp</b>
-        <p>+54 9 11 2748-9446<br>Te responde una asesora en el día</p>
+        <p>+54 9 11 2748-9446<br>Te responde una asesora en el momento</p>
       </div>
       <div class="ccard">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
@@ -804,21 +810,20 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
     <div class="fgrid">
       <div>
         <a href="#" class="brand">
-          <img src="logo-wordmark.png" alt="Legend Travel" class="brand-logo" style="height:76px;filter:brightness(0) invert(1)">
+          <img src="logo-wordmark.png" alt="Legend Travel" class="brand-logo" style="width:100%;height:auto;filter:brightness(0) invert(1)">
         </a>
-        <p class="fabout">Agencia de viajes fundada en 1991. Miembros del Grupo GEA. Viajes a medida con atención humana, desde nuestro local propio en zona norte de Buenos Aires.</p>
       </div>
       <div>
         <h4>Destinos</h4>
-        <a href="#destinos">Disney y Orlando</a><a href="#destinos">Caribe</a><a href="#destinos">Europa</a><a href="#destinos">Brasil</a><a href="#destinos">Cruceros</a>
+        <a href="#destinos">Disney</a><a href="#destinos">Caribe</a><a href="#destinos">Europa</a><a href="#destinos">Brasil</a><a href="#destinos">Cruceros</a>
       </div>
       <div>
         <h4>La agencia</h4>
-        <a href="#diferenciales">Nosotros</a><a href="#financiacion">Medios de pago</a><a href="#testimonios">Testimonios</a><a href="#destinos">Contacto</a>
+        <a href="#diferenciales">Por qué Legend</a><a href="#historia">Nuestra historia</a><a href="#equipo">El equipo</a><a href="#testimonios">Testimonios</a><a href="#financiacion">Medios de pago</a><a href="#guias">Guías y consejos</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a>
       </div>
       <div>
         <h4>Contacto</h4>
-        <p class="t">Paraná 3745, Unicenter Shopping<br>Martínez, Buenos Aires</p>
+        <p class="t">Paraná 3745, Martínez<br>Buenos Aires</p>
         <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje">WhatsApp +54 9 11 2748-9446</a>
         <a href="tel:+541147170344">Teléfono 11 4717-0344</a>
         <div class="fsoc">
@@ -835,7 +840,7 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
       </div>
     </div>
     <div class="fbot">
-      <span>© 2026 Legend Travel · Legajo XXXX — Ministerio de Turismo de la Nación</span>
+      <span>© 2026 Legend Travel · Legajo 7553 — Ministerio de Turismo de la Nación</span>
       <span class="claim">Tu viaje, tu historia.</span>
     </div>
   </div>
@@ -913,7 +918,7 @@ footer{background:var(--black);color:var(--white);border-top:1px solid rgba(255,
       cat:'Disney',
       title:'¿Cuándo conviene viajar a Disney?',
       byline:'Por Carolina &middot; Junio 2026',
-      img:'https://images.pexels.com/photos/2031776/pexels-photo-2031776.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      img:'https://images.pexels.com/photos/12422683/pexels-photo-12422683.jpeg?auto=compress&cs=tinysrgb&w=1200',
       wa:'https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20Disney',
       body:'<p>Hay una pregunta que Carolina responde unas veinte veces por mes: <strong>¿Cuándo conviene ir a Disney?</strong> Después de 35 años enviando familias al parque más famoso del mundo, la respuesta arranca siempre igual: depende de lo que buscás, pero hay meses que son claramente mejores que otros. Acá lo que nos enseñaron más de tres décadas de experiencia.</p>'
         +'<h2>Los meses de oro: enero y septiembre</h2>'
