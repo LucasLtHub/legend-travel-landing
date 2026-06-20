@@ -1,0 +1,33 @@
+# robots.txt — Legend Travel
+# Subir a la raíz: https://www.legendtravel.com.ar/robots.txt
+
+# Buscadores tradicionales
+User-agent: *
+Allow: /
+
+# Bots de IA — permitir explícitamente que lean el sitio (clave para GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://www.legendtravel.com.ar/sitemap.xml
