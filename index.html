@@ -178,7 +178,7 @@ section{background:var(--white)}
 
 .dgrid{display:grid;grid-template-columns:1fr;gap:24px}
 @media(min-width:768px){.dgrid{grid-template-columns:1fr 1fr}}
-@media(min-width:1024px){.dgrid{grid-template-columns:1fr 1fr 1fr}}
+@media(min-width:1024px){.dgrid{grid-template-columns:1fr 1fr 1fr 1fr}}
 .dcard{position:relative;display:block;border-radius:24px;overflow:hidden;aspect-ratio:4/4.6;box-shadow:0 8px 30px rgba(14,35,45,.10);transition:transform .5s,box-shadow .5s}
 .dcard:hover{transform:translateY(-8px);box-shadow:0 24px 60px rgba(14,35,45,.18)}
 .dcard .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .7s}
@@ -439,7 +439,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
         <img src="logo-wordmark.png" alt="Legend Travel">
       </div>
       <p class="hero-tagline fade" data-delay="600" data-dur="1000">Tu viaje, tu historia.</p>
-      <p class="hero-sub fade" data-delay="800" data-dur="1000">Más de 35 años diseñando viajes a medida. Disney, Caribe, Europa y el mundo.</p>
+      <p class="hero-sub fade" data-delay="800" data-dur="1000">Tu próximo viaje ya existe. Solo falta que nos cuentes el sueño.</p>
       <div class="hero-btns fade" data-delay="1200" data-dur="1000" style="justify-content:center">
         <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
         <a class="btn-glass liquid-glass" href="#destinos">Ver destinos</a>
@@ -458,13 +458,14 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       <p class="sec-aside">Elegí por dónde empezar. Te asesoramos en cada paso para que tu viaje sea exactamente como lo imaginaste.</p>
     </div>
     <div class="dgrid">
-      <a class="dcard rv" href="disney/index.html">
-        <div class="bg" style="background-image:url('https://images.pexels.com/photos/12569769/pexels-photo-12569769.jpeg?auto=compress&cs=tinysrgb&w=1200')"></div>
+      <a class="dcard rv" href="/usa/">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/290386/pexels-photo-290386.jpeg?auto=compress&cs=tinysrgb&w=1200');background-position:center 60%"></div>
+        <div class="grad"></div>
         <div class="arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></div>
         <div class="info">
-          <h3>Disney</h3>
-          <p class="copy">Familias y quinceañeras. 35 años haciendo magia.</p>
-          <span class="cta">Ver todo sobre Disney <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <h3>USA</h3>
+          <p class="copy">Nueva York, Miami, Hawaii, Las Vegas y la Costa Oeste. El sueño americano hecho viaje.</p>
+          <span class="cta">Ver todo sobre USA <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
       <a class="dcard rv" href="caribe/index.html">
@@ -515,6 +516,26 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <h3>Argentina</h3>
           <p class="copy">Argentina lo tiene todo, de norte a sur. Naturaleza, cultura y paisajes únicos en el mundo.</p>
           <span class="cta">Ver todo sobre Argentina <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="dcard rv" href="asia/index.html">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/889954/pexels-photo-889954.jpeg?auto=compress&cs=tinysrgb&w=1200')"></div>
+        <div class="grad"></div>
+        <div class="arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></div>
+        <div class="info">
+          <h3>Asia</h3>
+          <p class="copy">Templos, cultura milenaria y paisajes de otro mundo.</p>
+          <span class="cta">Ver todo sobre Asia <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="dcard rv" href="africa/index.html">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/18313202/pexels-photo-18313202.jpeg?auto=compress&cs=tinysrgb&w=1200')"></div>
+        <div class="grad"></div>
+        <div class="arrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></div>
+        <div class="info">
+          <h3>África</h3>
+          <p class="copy">Safaris, desiertos y aventuras inolvidables.</p>
+          <span class="cta">Ver todo sobre África <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
     </div>
@@ -817,7 +838,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       </div>
       <div>
         <h4>Destinos</h4>
-        <a href="#destinos">Disney</a><a href="#destinos">Caribe</a><a href="#destinos">Europa</a><a href="#destinos">Brasil</a><a href="#destinos">Cruceros</a>
+        <a href="#destinos">Disney</a><a href="#destinos">Caribe</a><a href="#destinos">Europa</a><a href="#destinos">Brasil</a><a href="#destinos">Cruceros</a><a href="asia/index.html">Asia</a><a href="africa/index.html">África</a>
       </div>
       <div>
         <h4>La agencia</h4>

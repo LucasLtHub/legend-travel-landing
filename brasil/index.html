@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -127,6 +127,8 @@ section{background:var(--white)}
 .dest-card p{font-size:13px;color:rgba(255,255,255,.75);line-height:1.55}
 .dest-card .ideal{display:inline-block;margin-top:10px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.6)}
 .dest-card .ideal span{color:var(--red3)}
+.dest-card .cta{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--white);margin-top:14px;opacity:0;max-height:0;overflow:hidden;transition:opacity .3s,max-height .3s}
+.dest-card:hover .cta{opacity:1;max-height:32px}
 
 /* GUÍA */
 .guia-grid{display:grid;grid-template-columns:1fr;gap:28px;max-width:780px}
@@ -255,7 +257,6 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
     <div class="hero-logo-main fade" data-delay="100" data-dur="1000">
       <img src="../logo-wordmark.png" alt="Legend Travel — agencia de viajes zona norte Buenos Aires" loading="eager">
     </div>
-    <p class="hero-eyebrow fade" data-delay="400" data-dur="800">Especialistas en Brasil · 35 años de experiencia</p>
     <h1 class="fade" data-delay="600" data-dur="900">Viajes a Brasil<br>desde Argentina,<br><em>para toda la familia.</em></h1>
     <p class="hero-sub fade" data-delay="900" data-dur="900">Búzios, Florianópolis, Río de Janeiro, Maceió y más. Playas, ciudad, cultura y gastronomía, con el respaldo de quien los conoce desde hace décadas.</p>
     <div class="hero-btns fade" data-delay="1100" data-dur="900">
@@ -333,44 +334,44 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       <h2 class="h2">¿A qué rincón de Brasil<br><em>querés ir?</em></h2>
     </div>
     <div class="dest-grid rv">
-      <a class="dest-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20B%C3%BAzios" target="_blank" rel="noopener noreferrer">
-        <div class="bg" style="background-image:url('https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Playa de aguas claras en Búzios, Brasil" loading="lazy"></div>
+      <a class="dest-card" href="/brasil/buzios.html">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Playa de aguas calmas en Búzios, Brasil"></div>
         <div class="grad"></div>
         <div class="info">
           <span class="tag">Río de Janeiro</span>
           <h3>Búzios</h3>
-          <p>23 playas diferentes en una misma peninsula. Aguas calmas para familias con chicos, vida nocturna y gastronomía de calidad. El favorito de los argentinos.</p>
-          <p class="ideal">Ideal para → <span>Familias y parejas</span></p>
+          <p>23 playas en una península encantadora. Agua siempre calma, ambiente europeo y gastronomía de nivel. El destino favorito de las parejas argentinas.</p>
+          <span class="cta">Ver todo sobre Búzios <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20Florianopolis" target="_blank" rel="noopener noreferrer">
-        <div class="bg" style="background-image:url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Playa con palmeras en Florianópolis" loading="lazy"></div>
+      <a class="dest-card" href="/brasil/florianopolis.html">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Playa con palmeras en Florianópolis"></div>
         <div class="grad"></div>
         <div class="info">
           <span class="tag">Santa Catarina</span>
           <h3>Florianópolis</h3>
           <p>La Isla de la Magia. 42 playas, laguna para windsurf, dunas y vida nocturna. Muy popular entre jóvenes y grupos de amigos que buscan playa con movimiento.</p>
-          <p class="ideal">Ideal para → <span>Jóvenes y grupos</span></p>
+          <span class="cta">Ver todo sobre Florianópolis <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20R%C3%ADo%20de%20Janeiro" target="_blank" rel="noopener noreferrer">
-        <div class="bg" style="background-image:url('https://images.pexels.com/photos/2868242/pexels-photo-2868242.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Vista de Río de Janeiro con la bahía de Guanabara" loading="lazy"></div>
+      <a class="dest-card" href="/brasil/rio.html">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/2868242/pexels-photo-2868242.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Vista de Río de Janeiro con la bahía de Guanabara"></div>
         <div class="grad"></div>
         <div class="info">
           <span class="tag">Ciudad</span>
           <h3>Río de Janeiro</h3>
           <p>Copacabana, Ipanema, el Pan de Azúcar y el Cristo. La ciudad más icónica de Brasil: playa, cultura, gastronomía y una energía única que no se parece a ningún otro lugar.</p>
-          <p class="ideal">Ideal para → <span>Ciudad + playa</span></p>
+          <span class="cta">Ver todo sobre Río de Janeiro <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20Macei%C3%B3" target="_blank" rel="noopener noreferrer">
-        <div class="bg" style="background-image:url('https://images.pexels.com/photos/1078983/pexels-photo-1078983.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Playa de aguas cristalinas en el nordeste de Brasil" loading="lazy"></div>
+      <a class="dest-card" href="/brasil/maceio.html">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/1078983/pexels-photo-1078983.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Playa de aguas cristalinas en Maceió, nordeste de Brasil"></div>
         <div class="grad"></div>
         <div class="info">
           <span class="tag">Nordeste</span>
           <h3>Maceió</h3>
           <p>Piscinas naturales a metros de la costa, agua verde esmeralda y playas que todavía no se llenaron de turismo masivo. El nordeste sin las multitudes.</p>
-          <p class="ideal">Ideal para → <span>Relax y playas vírgenes</span></p>
+          <span class="cta">Ver todo sobre Maceió <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
       <a class="dest-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20Natal" target="_blank" rel="noopener noreferrer">

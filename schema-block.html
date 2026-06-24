@@ -1,0 +1,170 @@
+<!-- ============================================================
+     SCHEMA JSON-LD — datos estructurados (SEO + GEO)
+     Pegar TODO esto justo antes de </body>.
+     Es invisible para el usuario; lo leen Google y las IA.
+     ============================================================ -->
+
+<!-- 1) AGENCIA + NEGOCIO LOCAL (la "ficha" principal de Legend) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "@id": "https://www.legendtravel.com.ar/#agencia",
+  "name": "Legend Travel",
+  "description": "Agencia de viajes con más de 35 años de trayectoria en Martínez, Buenos Aires. Especialistas en viajes a medida a Disney, Caribe, Europa, Brasil y cruceros, con atención humana real y financiación. Empresa familiar, miembros del Grupo GEA.",
+  "url": "https://www.legendtravel.com.ar/",
+  "logo": "https://www.legendtravel.com.ar/logo-wordmark.png",
+  "image": "https://www.legendtravel.com.ar/og-image.jpg",
+  "foundingDate": "1991",
+  "slogan": "Tu viaje, tu historia",
+  "priceRange": "$$",
+  "taxID": "30-64558435-6",
+  "vatID": "30-64558435-6",
+  "telephone": "+541147170344",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Paraná 3745",
+    "addressLocality": "Martínez",
+    "addressRegion": "Buenos Aires",
+    "addressCountry": "AR"
+  },
+  "areaServed": "AR",
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "10:00",
+    "closes": "20:00"
+  }],
+  "sameAs": [
+    "https://www.instagram.com/legendtraveloficial",
+    "https://www.facebook.com/LegendTravelOficial",
+    "https://www.tiktok.com/@legendtravel.ok"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "120",
+    "bestRating": "5"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+5491127489446",
+    "contactType": "customer service",
+    "areaServed": "AR",
+    "availableLanguage": "Spanish"
+  }
+}
+</script>
+
+<!-- 2) RESEÑAS (los testimonios reales de la web) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "@id": "https://www.legendtravel.com.ar/#agencia",
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {"@type":"Rating","ratingValue":"5","bestRating":"5"},
+      "author": {"@type":"Person","name":"María Fernanda G."},
+      "reviewBody": "Fuimos a Disney con los chicos y no tuvimos que pensar en nada. Carolina nos armó el día por día y hasta nos avisó qué parque convenía cada día."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {"@type":"Rating","ratingValue":"5","bestRating":"5"},
+      "author": {"@type":"Person","name":"Juan Pablo R."},
+      "reviewBody": "Hace más de 15 años que viajamos con Legend. La luna de miel también la armaron ellas: Maldivas y Dubai, impecable de punta a punta."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {"@type":"Rating","ratingValue":"5","bestRating":"5"},
+      "author": {"@type":"Person","name":"Silvia L."},
+      "reviewBody": "Se nos canceló un vuelo en plena escala y nos resolvieron todo por WhatsApp un domingo a la noche. Eso no te lo da ninguna página de internet."
+    }
+  ]
+}
+</script>
+
+<!-- 3) PREGUNTAS FRECUENTES (FAQPage — las IA citan esto casi textual) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Dónde queda Legend Travel?",
+      "acceptedAnswer": {"@type":"Answer","text":"Estamos en Paraná 3745, Martínez, zona norte de Buenos Aires. Podés venir al local sin turno o escribirnos por WhatsApp al +54 9 11 2748-9446."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hace cuánto existe la agencia?",
+      "acceptedAnswer": {"@type":"Answer","text":"Desde 1991. Somos una empresa familiar con más de 35 años de trayectoria, legajo 7553 habilitado por el Ministerio de Turismo de la Nación y miembros del Grupo GEA."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo pagar mi viaje en cuotas?",
+      "acceptedAnswer": {"@type":"Answer","text":"Sí. Trabajamos con todas las tarjetas de crédito y planes en pesos. También podés congelar el precio con una seña y armar un plan de pagos a tu medida."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hacen viajes a medida?",
+      "acceptedAnswer": {"@type":"Answer","text":"Es nuestra especialidad. Nos contás la idea —destino, fechas, presupuesto, estilo— y diseñamos el itinerario completo: aéreos, hoteles, traslados, excursiones y asistencia."}
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo consulto por WhatsApp?",
+      "acceptedAnswer": {"@type":"Answer","text":"Tocá cualquier botón Consultar por WhatsApp y te responde una asesora del equipo en el día. También podés llamarnos al 11 4717-0344 o visitarnos en el local de Martínez."}
+    }
+  ]
+}
+</script>
+
+<!-- 4) ARTÍCULOS DEL BLOG (Article — autoría real = más confianza para IA) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Article",
+        "headline": "¿Cuándo conviene viajar a Disney?",
+        "author": {"@type":"Person","name":"Carolina","worksFor":{"@type":"TravelAgency","name":"Legend Travel"}},
+        "publisher": {"@type":"Organization","name":"Legend Travel","logo":{"@type":"ImageObject","url":"https://www.legendtravel.com.ar/logo-wordmark.png"}},
+        "datePublished": "2026-06-01",
+        "image": "https://images.pexels.com/photos/12422683/pexels-photo-12422683.jpeg",
+        "about": "Mejor época para viajar a Disney Orlando desde Argentina"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Article",
+        "headline": "Punta Cana vs Cancún: cuál elegir",
+        "author": {"@type":"Person","name":"Pilar","worksFor":{"@type":"TravelAgency","name":"Legend Travel"}},
+        "publisher": {"@type":"Organization","name":"Legend Travel","logo":{"@type":"ImageObject","url":"https://www.legendtravel.com.ar/logo-wordmark.png"}},
+        "datePublished": "2026-05-01",
+        "image": "https://images.pexels.com/photos/1368502/pexels-photo-1368502.jpeg",
+        "about": "Comparativa entre Punta Cana y Cancún para viajeros argentinos"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Article",
+        "headline": "Primer viaje a Europa: cómo planificarlo",
+        "author": {"@type":"Person","name":"Luján","worksFor":{"@type":"TravelAgency","name":"Legend Travel"}},
+        "publisher": {"@type":"Organization","name":"Legend Travel","logo":{"@type":"ImageObject","url":"https://www.legendtravel.com.ar/logo-wordmark.png"}},
+        "datePublished": "2026-05-01",
+        "image": "https://images.pexels.com/photos/733830/pexels-photo-733830.jpeg",
+        "about": "Guía para planificar un primer viaje a Europa desde Argentina"
+      }
+    }
+  ]
+}
+</script>
