@@ -85,7 +85,7 @@
     ]
   }
   </script>
-<script>if(location.pathname.slice(-1)!=='/')location.replace(location.pathname+'/')</script>
+<script>(function(){var p=location.pathname;if(p.endsWith('/index.html')){location.replace(p.slice(0,-10));return;}if(p.slice(-1)!=='/')return location.replace(p+'/');document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('a[href]').forEach(function(a){var h=a.getAttribute('href');if(!h||/^(https?:|#|\/|tel:|mailto:)/.test(h))return;a.setAttribute('href',p+h);});});})()</script>
 </head>
 <body>
 
