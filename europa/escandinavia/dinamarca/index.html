@@ -96,6 +96,9 @@
     .contact{background:var(--bur);color:var(--white);text-align:center}.contact .h2{color:var(--white)}.contact .h2 em{color:var(--red3)}.contact .lead{color:rgba(255,255,255,.6);margin:24px auto 0;max-width:576px}.contact .bigbtn{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:var(--white);padding:16px 40px;border-radius:8px;font-size:18px;font-weight:500;margin-top:40px;transition:background .3s,transform .3s}.contact .bigbtn:hover{background:#7a0008;transform:translateY(-2px)}
     footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,255,255,.1);padding-top:64px;padding-bottom:32px}.fgrid{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:56px}@media(min-width:640px){.fgrid{grid-template-columns:1fr 1fr}}@media(min-width:1024px){.fgrid{grid-template-columns:1.4fr 1fr 1fr 1.2fr}}.fgrid h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.24em;color:var(--red3);margin-bottom:16px}.fgrid a,.fgrid p.t{display:block;font-size:14px;color:rgba(255,255,255,.6);margin-bottom:10px;width:fit-content;transition:color .25s}.fgrid a:hover{color:var(--white)}.fabout{font-size:14px;color:rgba(255,255,255,.55);margin-top:16px;max-width:300px;line-height:1.7}.fbot{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;color:rgba(255,255,255,.4)}.fbot .claim{color:rgba(255,255,255,.6)}
     .waf{position:fixed;right:24px;bottom:24px;z-index:50;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 32px rgba(0,0,0,.3);transition:transform .3s}.waf:hover{transform:scale(1.1)}
+    .trust{display:flex;flex-wrap:wrap;gap:32px;justify-content:center;padding:40px 0}.trust-item{text-align:center;min-width:100px}.trust-item b{display:block;font-size:22px;font-weight:700;color:var(--red);letter-spacing:-.02em}.trust-item span{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:rgba(14,35,45,.5);margin-top:4px}
+    .include-grid{display:grid;grid-template-columns:1fr;gap:16px}@media(min-width:640px){.include-grid{grid-template-columns:1fr 1fr}}@media(min-width:1024px){.include-grid{grid-template-columns:1fr 1fr 1fr}}.include-item{display:flex;align-items:flex-start;gap:14px;padding:20px;border-radius:12px;background:rgba(14,35,45,.03);border:1px solid rgba(14,35,45,.08)}.include-item .ic{width:36px;height:36px;border-radius:8px;background:rgba(172,10,16,.1);color:var(--red);display:flex;align-items:center;justify-content:center;flex:none}.include-item b{display:block;font-size:14px;font-weight:700;color:var(--black)}.include-item p{font-size:13px;color:rgba(14,35,45,.65);margin-top:3px}
+    .testi-inner{max-width:720px;margin:0 auto;background:rgba(14,35,45,.02);border-radius:20px;padding:48px;border-left:4px solid var(--red)}.testi-inner p{font-size:18px;line-height:1.8;color:rgba(14,35,45,.82);font-style:italic}.testi-inner cite{display:block;margin-top:20px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--red);font-style:normal}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv,.fade{opacity:1!important;transform:none!important}}
   </style>
 </head>
@@ -178,6 +181,18 @@
   </div>
 </div>
 
+
+<section class="px" style="padding-bottom:0;border-bottom:1px solid rgba(14,35,45,.08)">
+  <div class="mx">
+    <div class="trust rv">
+      <div class="trust-item"><b>+35 años</b><span>Organizando viajes</span></div>
+      <div class="trust-item"><b>Legajo 7553</b><span>Min. de Turismo</span></div>
+      <div class="trust-item"><b>Grupo GEA</b><span>Red de agencias</span></div>
+      <div class="trust-item"><b>⭐ 4.9</b><span>Google Reviews</span></div>
+    </div>
+  </div>
+</section>
+
 <!-- POR QUE -->
 <section class="sec" id="por-que">
   <div class="mx px">
@@ -258,26 +273,73 @@
   </div>
 </section>
 
-<!-- FIN / CTA CHIPS -->
-<section class="fin">
-  <div class="mx px">
-    <div class="rv">
-      <p class="kicker light">Armá tu viaje</p>
-      <h2 class="h2">¿Cómo querés<br><em>conocer Dinamarca?</em></h2>
-      <p class="lead">Diseñamos cada itinerario a medida. Desde solo Copenhague hasta el gran circuito de castillos y museos. Contanos qué te interesa y nosotros nos encargamos del resto.</p>
-      <div class="chips">
-        <span class="chip">Solo Copenhague</span>
-        <span class="chip">Castillos medievales</span>
-        <span class="chip">Louisiana Museum</span>
-        <span class="chip">Copenhague + Malmö</span>
-        <span class="chip">Dinamarca + Noruega</span>
+
+<section class="sec px" id="incluye">
+  <div class="mx">
+    <div class="rv" style="margin-bottom:48px;max-width:640px">
+      <p class="kicker">El paquete</p>
+      <h2 class="h2" style="font-size:40px">Todo lo que <em>armamos por vos.</em></h2>
+    </div>
+    <div class="include-grid rv">
+      <div class="include-item">
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <div><b>Vuelos internacionales BUE-CPH</b><p>Con una escala. SAS, Iberia vía Madrid, Lufthansa vía Fráncfort. Copenhague (CPH) es el hub escandinavo más conectado desde Argentina.</p></div>
+      </div>
+      <div class="include-item">
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+        <div><b>Hotel en Copenhague</b><p>Hotel 3-4 estrellas en Nyhavn (los muelles de colores), Vesterbro (el barrio más trendy) o Frederiksberg. Copenhague es peatonal y muy fácil de recorrer.</p></div>
+      </div>
+      <div class="include-item">
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16M10 4v16"/></svg></div>
+        <div><b>Copenhagen Card</b><p>Incluye metro (funciona 24h), buses y trenes, más acceso a más de 80 museos. La opción más conveniente para moverse y visitar la ciudad.</p></div>
+      </div>
+      <div class="include-item">
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg></div>
+        <div><b>Excursiones</b><p>Tivoli (el parque de diversiones más antiguo del mundo), Nyhavn, Castillo de Kronborg (el Hamlet de Shakespeare), Malmö (Suecia) en day trip (35 min en tren).</p></div>
+      </div>
+      <div class="include-item">
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+        <div><b>Sin visa para argentinos</b><p>Dinamarca es parte del espacio Schengen. Cuando entre en vigencia el ETIAS (pre-registro online), te asesoramos en el proceso.</p></div>
+      </div>
+      <div class="include-item">
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.8-.9L3 20l1-5.2a8.4 8.4 0 1 1 17-3.3Z"/></svg></div>
+        <div><b>Asistencia Legend</b><p>Asesor disponible durante todo el viaje. Dinamarca es cara pero tiene una calidad de vida que se nota en cada detalle del viaje.</p></div>
       </div>
     </div>
+    <div style="margin-top:48px" class="rv"><a class="btn-hero-main" href="https://wa.me/5491127489446?text=Hola%2C%20quiero%20consultar%20un%20viaje%20a%20Dinamarca" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg> Consultar por WhatsApp</a></div>
+  </div>
+</section>
+
+<!-- FIN / CTA CHIPS -->
+<section class="fin px" id="financiacion">
+  <div class="mx">
     <div class="rv">
-      <a href="https://wa.me/5491127489446?text=Hola%2C%20quiero%20consultar%20un%20viaje%20a%20Dinamarca" target="_blank" rel="noopener" class="btn-white">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.562 4.141 1.534 5.875L.057 23.882l6.197-1.623A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.943 0-3.755-.523-5.31-1.432l-.38-.226-3.68.964.982-3.588-.248-.369A9.818 9.818 0 012.182 12C2.182 6.578 6.578 2.182 12 2.182S21.818 6.578 21.818 12 17.422 21.818 12 21.818z"/></svg>
-        Consultar por WhatsApp
-      </a>
+      <p class="kicker light">Medios de pago</p>
+      <h2 class="h2">Reservá la fecha hoy,<br><em>pagá como te convenga.</em></h2>
+      <p class="lead">Con una seña pequeña reservás el precio y las fechas mientras organizás el resto. Trabajamos con todos los medios de pago.</p>
+      <div class="chips">
+        <span class="chip">Efectivo</span>
+        <span class="chip">Transferencia bancaria</span>
+        <span class="chip">Tarjeta de crédito</span>
+        <span class="chip">Seña para reservar fecha</span>
+        <span class="chip">Planes en pesos</span>
+        <span class="chip">Cuotas sin interés</span>
+      </div>
+    </div>
+    <a class="btn-white rv" href="https://wa.me/5491127489446?text=Hola%2C%20quiero%20consultar%20un%20viaje%20a%20Dinamarca" target="_blank" rel="noopener noreferrer">Consultar opciones de pago <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+
+<section class="sec px">
+  <div class="mx">
+    <div class="rv" style="margin-bottom:40px;max-width:640px">
+      <p class="kicker">Lo que dicen nuestros viajeros</p>
+      <h2 class="h2" style="font-size:36px">Experiencias <em>reales con Legend.</em></h2>
+    </div>
+    <div class="testi-inner rv">
+      <p>Copenhague nos enamoró. Nyhavn con sus casitas de colores, el Tivoli de noche y la cocina danesa. Una ciudad perfectamente organizada y llena de diseño y buen gusto.</p>
+      <cite>— Sofía y Matías, junio 2024</cite>
     </div>
   </div>
 </section>

@@ -33,6 +33,9 @@
 .contact{background:var(--bur);color:var(--white);text-align:center}.contact .h2{color:var(--white)}.contact .h2 em{color:var(--red3)}.contact .lead{color:rgba(255,255,255,.6);margin:24px auto 0;max-width:576px}.contact .bigbtn{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:var(--white);padding:16px 40px;border-radius:8px;font-size:18px;font-weight:500;margin-top:40px;transition:background .3s,transform .3s}.contact .bigbtn:hover{background:#7a0008;transform:translateY(-2px)}
 footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,255,255,.1);padding-top:64px;padding-bottom:32px}.fgrid{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:56px}@media(min-width:640px){.fgrid{grid-template-columns:1fr 1fr}}@media(min-width:1024px){.fgrid{grid-template-columns:1.4fr 1fr 1fr 1.2fr}}.fgrid h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.24em;color:var(--red3);margin-bottom:16px}.fgrid a,.fgrid p.t{display:block;font-size:14px;color:rgba(255,255,255,.6);margin-bottom:10px;width:fit-content;transition:color .25s}.fgrid a:hover{color:var(--white)}.fabout{font-size:14px;color:rgba(255,255,255,.55);margin-top:16px;max-width:300px;line-height:1.7}.fbot{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;color:rgba(255,255,255,.4)}.fbot .claim{color:rgba(255,255,255,.6)}
 .waf{position:fixed;right:24px;bottom:24px;z-index:50;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 32px rgba(0,0,0,.3);transition:transform .3s}.waf:hover{transform:scale(1.1)}
+.trust{display:flex;flex-wrap:wrap;gap:32px;justify-content:center;padding:40px 0}.trust-item{text-align:center;min-width:100px}.trust-item b{display:block;font-size:22px;font-weight:700;color:var(--red);letter-spacing:-.02em}.trust-item span{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:rgba(14,35,45,.5);margin-top:4px}
+.include-grid{display:grid;grid-template-columns:1fr;gap:16px}@media(min-width:640px){.include-grid{grid-template-columns:1fr 1fr}}@media(min-width:1024px){.include-grid{grid-template-columns:1fr 1fr 1fr}}.include-item{display:flex;align-items:flex-start;gap:14px;padding:20px;border-radius:12px;background:rgba(14,35,45,.03);border:1px solid rgba(14,35,45,.08)}.include-item .ic{width:36px;height:36px;border-radius:8px;background:rgba(172,10,16,.1);color:var(--red);display:flex;align-items:center;justify-content:center;flex:none}.include-item b{display:block;font-size:14px;font-weight:700;color:var(--black)}.include-item p{font-size:13px;color:rgba(14,35,45,.65);margin-top:3px}
+.testi-inner{max-width:720px;margin:0 auto;background:rgba(14,35,45,.02);border-radius:20px;padding:48px;border-left:4px solid var(--red)}.testi-inner p{font-size:18px;line-height:1.8;color:rgba(14,35,45,.82);font-style:italic}.testi-inner cite{display:block;margin-top:20px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--red);font-style:normal}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv,.fade{opacity:1!important;transform:none!important}}
 </style>
 </head>
@@ -103,6 +106,17 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
     <span>Gales</span>
   </div>
 </div>
+
+<section class="px" style="padding-bottom:0;border-bottom:1px solid rgba(14,35,45,.08)">
+  <div class="mx">
+    <div class="trust rv">
+      <div class="trust-item"><b>+35 años</b><span>Organizando viajes</span></div>
+      <div class="trust-item"><b>Legajo 7553</b><span>Min. de Turismo</span></div>
+      <div class="trust-item"><b>Grupo GEA</b><span>Red de agencias</span></div>
+      <div class="trust-item"><b>⭐ 4.9</b><span>Google Reviews</span></div>
+    </div>
+  </div>
+</section>
 
 <section class="sec px" id="por-que">
   <div class="mx">
@@ -186,24 +200,71 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   </div>
 </section>
 
-<section class="fin px">
+<section class="sec px" id="incluye">
   <div class="mx">
-    <div>
-      <p class="kicker light">Tu viaje a Gales</p>
-      <h2 class="h2">Cardiff o el<br><em>gran circuito galés.</em></h2>
-      <p class="lead">Armamos el itinerario a medida: desde un fin de semana en Cardiff hasta el circuito completo con castillos, Snowdonia y Pembrokeshire. Los requisitos de ingreso al Reino Unido son distintos al espacio Schengen — nuestro equipo te asesora sobre los documentos exactos vigentes al momento de tu viaje.</p>
-      <div class="chips">
-        <span class="chip">Cardiff</span>
-        <span class="chip">Castillos del norte</span>
-        <span class="chip">Snowdonia</span>
-        <span class="chip">Pembrokeshire</span>
-        <span class="chip">Gales + Inglaterra</span>
+    <div class="rv" style="margin-bottom:48px;max-width:640px">
+      <p class="kicker">El paquete</p>
+      <h2 class="h2" style="font-size:40px">Todo lo que <em>armamos por vos.</em></h2>
+    </div>
+    <div class="include-grid rv">
+      <div class="include-item">
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 16z"/></svg></div>
+        <div><b>Vuelos internacionales BUE-LHR o BUE-BHX</b><p>Con una escala. British Airways o Iberia vía Madrid a Heathrow (LHR), luego tren o coche a Gales. Birmingham (BHX) también es una opción cercana al norte de Gales.</p></div>
+      </div>
+      <div class="include-item">
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <div><b>Hotel en Cardiff y alojamientos en ruta</b><p>Hotel 3-4 estrellas en el centro de Cardiff (cerca del Castillo y la Cardiff Bay). Para Snowdonia y Pembrokeshire: B&amp;Bs de encanto en pequeños pueblos galeses.</p></div>
+      </div>
+      <div class="include-item">
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+        <div><b>Coche de alquiler para el circuito</b><p>Recomendado para el norte de Gales (Snowdonia y los castillos). El tren llega a Cardiff y algunas ciudades costeras, pero el coche permite flexibilidad total.</p></div>
+      </div>
+      <div class="include-item">
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <div><b>Excursiones</b><p>Castillo de Caernarfon, Conwy y Beaumaris (todos Patrimonio UNESCO), Snowdonia (el Snowdon Ranger Path), Pembrokeshire Coast, Brecon Beacons, Hay-on-Wye.</p></div>
+      </div>
+      <div class="include-item">
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div><b>Asesoramiento ingreso al Reino Unido</b><p>Gales es parte del RU, con requisitos distintos al espacio Schengen. Te informamos sobre las autorizaciones vigentes al momento de tu viaje.</p></div>
+      </div>
+      <div class="include-item">
+        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <div><b>Asistencia Legend</b><p>Asesor disponible durante todo el viaje. Gales combina perfectamente con Inglaterra en un circuito de Gran Bretaña con mucha variedad cultural y paisajística.</p></div>
       </div>
     </div>
-    <a class="btn-white" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje%20a%20Gales" target="_blank" rel="noopener noreferrer">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg>
-      Consultar ahora
-    </a>
+    <div style="margin-top:48px" class="rv"><a class="btn-hero-main" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje%20a%20Gales" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg> Consultar por WhatsApp</a></div>
+  </div>
+</section>
+
+<section class="fin px" id="financiacion">
+  <div class="mx">
+    <div class="rv">
+      <p class="kicker light">Medios de pago</p>
+      <h2 class="h2">Reservá la fecha hoy,<br><em>pagá como te convenga.</em></h2>
+      <p class="lead">Con una seña pequeña reservás el precio y las fechas mientras organizás el resto. Trabajamos con todos los medios de pago.</p>
+      <div class="chips">
+        <span class="chip">Efectivo</span>
+        <span class="chip">Transferencia bancaria</span>
+        <span class="chip">Tarjeta de crédito</span>
+        <span class="chip">Seña para reservar fecha</span>
+        <span class="chip">Planes en pesos</span>
+        <span class="chip">Cuotas sin interés</span>
+      </div>
+    </div>
+    <a class="btn-white rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje%20a%20Gales" target="_blank" rel="noopener noreferrer">Consultar opciones de pago <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="sec px">
+  <div class="mx">
+    <div class="rv" style="margin-bottom:40px;max-width:640px">
+      <p class="kicker">Lo que dicen nuestros viajeros</p>
+      <h2 class="h2" style="font-size:36px">Experiencias <em>reales con Legend.</em></h2>
+    </div>
+    <div class="testi-inner rv">
+      <p>"Gales fue la sorpresa del viaje. Nadie hablaba de Gales y resultó ser uno de los lugares más hermosos que pisé. Los castillos, Snowdonia, el acento galés. Totalmente diferente a Inglaterra."</p>
+      <cite>— Sebastián M., mayo 2025</cite>
+    </div>
   </div>
 </section>
 

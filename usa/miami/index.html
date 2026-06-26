@@ -159,6 +159,8 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 .fbot .claim{color:rgba(255,255,255,.6)}
 .waf{position:fixed;right:24px;bottom:24px;z-index:50;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 32px rgba(0,0,0,.3);transition:transform .3s}
 .waf:hover{transform:scale(1.1)}
+.trust{display:flex;flex-wrap:wrap;gap:32px;justify-content:center;padding:40px 0}.trust-item{text-align:center;min-width:100px}.trust-item b{display:block;font-size:22px;font-weight:700;color:var(--red);letter-spacing:-.02em}.trust-item span{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:rgba(14,35,45,.5);margin-top:4px}
+.testi-inner{max-width:720px;margin:0 auto;background:rgba(14,35,45,.02);border-radius:20px;padding:48px;border-left:4px solid var(--red)}.testi-inner p{font-size:18px;line-height:1.8;color:rgba(14,35,45,.82);font-style:italic}.testi-inner cite{display:block;margin-top:20px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--red);font-style:normal}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv,.fade{opacity:1!important;transform:none!important}}
 </style>
 </head>
@@ -226,6 +228,17 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
     <span>Miami</span>
   </div>
 </div>
+
+<section class="px" style="padding-bottom:0;border-bottom:1px solid rgba(14,35,45,.08)">
+  <div class="mx">
+    <div class="trust rv">
+      <div class="trust-item"><b>+35 años</b><span>Organizando viajes</span></div>
+      <div class="trust-item"><b>Legajo 7553</b><span>Min. de Turismo</span></div>
+      <div class="trust-item"><b>Grupo GEA</b><span>Red de agencias</span></div>
+      <div class="trust-item"><b>⭐ 4.9</b><span>Google Reviews</span></div>
+    </div>
+  </div>
+</section>
 
 <section class="px" id="ofrecemos" style="padding-top:72px;padding-bottom:72px;border-bottom:1px solid rgba(14,35,45,.08)">
   <div class="mx">
@@ -333,21 +346,31 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   <div class="mx">
     <div class="rv">
       <p class="kicker light">Medios de pago</p>
-      <h2 class="h2">Pagá como <em>más te convenga.</em></h2>
-      <p class="lead">Miami puede ser un destino muy accesible o muy premium según cómo se arme. Ofrecemos opciones para todos los presupuestos y la posibilidad de reservar con una seña mientras tramitás la visa.</p>
+      <h2 class="h2">Reservá la fecha hoy,<br><em>pagá como te convenga.</em></h2>
+      <p class="lead">Con una seña pequeña reservás el precio y las fechas mientras organizás el resto. Trabajamos con todos los medios de pago.</p>
       <div class="chips">
         <span class="chip">Efectivo</span>
         <span class="chip">Transferencia bancaria</span>
         <span class="chip">Tarjeta de crédito</span>
-        <span class="chip">Tarjeta de débito</span>
-        <span class="chip">Seña para congelar precio</span>
-        <span class="chip">Plan de pagos a medida</span>
+        <span class="chip">Seña para reservar fecha</span>
+        <span class="chip">Planes en pesos</span>
+        <span class="chip">Cuotas sin interés</span>
       </div>
     </div>
-    <a class="btn-white rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje%20a%20Miami" target="_blank" rel="noopener noreferrer">
-      Consultar opciones de pago
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
-    </a>
+    <a class="btn-white rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje%20a%20Miami" target="_blank" rel="noopener noreferrer">Consultar opciones de pago <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="sec px">
+  <div class="mx">
+    <div class="rv" style="margin-bottom:40px;max-width:640px">
+      <p class="kicker">Lo que dicen nuestros viajeros</p>
+      <h2 class="h2" style="font-size:36px">Experiencias <em>reales con Legend.</em></h2>
+    </div>
+    <div class="testi-inner rv">
+      <p>"Miami superó todas las expectativas. South Beach al atardecer, los restaurantes de Wynwood y una semana sin apurarnos. El hotel que eligió Legend era perfecto para la zona."</p>
+      <cite>— Patricia y Hernán, febrero 2025</cite>
+    </div>
   </div>
 </section>
 
