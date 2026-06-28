@@ -43,7 +43,7 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 .navlinks-mobile a:hover{color:var(--red3)}
 .navclose{position:absolute;top:24px;right:24px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:var(--white)}
 .btn-red{display:inline-block;background:var(--red);color:var(--white);padding:8px 24px;border-radius:8px;font-size:14px;font-weight:500;transition:background .3s}
-.btn-red:hover{background:var(--bur)}
+.btn-red:hover{background:var(--bur)}.navlinks .btn-red:hover{color:var(--white)}
 .hero{position:relative;min-height:100vh;color:var(--white);overflow:hidden}
 .hero-media{position:absolute;inset:0;overflow:hidden}
 .hero-media .scene{position:absolute;inset:-12%;background:url('https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=2200') center/cover no-repeat;will-change:transform;animation:cinematicFLO 24s ease-in-out infinite}
@@ -168,14 +168,16 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 <div class="navwrap px">
   <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
     <nav class="navlinks">
-      <a href="../index.html">← Inicio</a>
-      <a href="/brasil/">← Brasil</a>
-      <a href="#destino">El destino</a>
-      <a href="#incluye">Qué incluye</a>
-      <a href="#financiacion">Medios de pago</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contacto">Contacto</a>
-      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje%20a%20Florianop%C3%B3lis" target="_blank" rel="noopener noreferrer">Consultar</a>
+      <a href="/">Inicio</a>
+      <a href="/#destinos">Destinos</a>
+      <a href="/viajes-deportivos/">Viajes deportivos</a>
+      <a href="/lunas-de-miel/">Lunas de miel</a>
+      <a href="/financiacion/">Medios de pago</a>
+      <a href="https://www.legendtravel.com.ar/buscarxpaquetes">Paquetes</a>
+      <a href="/quienes-somos/">Qui&#233;nes somos</a>
+      <a href="/blog/">Gu&#237;as y consejos</a>
+      <a href="/#contacto">Contacto</a>
+      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar</a>
     </nav>
     <button class="navtoggle" id="navToggleBtn" aria-label="Abrir menú">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -183,14 +185,19 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   </div>
 </div>
 <div class="navlinks-mobile" id="navMobile">
-  <button class="navclose" id="navCloseBtn" aria-label="Cerrar menú"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
-  <a href="../index.html">← Inicio</a>
-  <a href="/brasil/">← Brasil</a>
-  <a href="#destino">El destino</a>
-  <a href="#incluye">Qué incluye</a>
-  <a href="#financiacion">Medios de pago</a>
-  <a href="#faq">FAQ</a>
-  <a href="#contacto">Contacto</a>
+  <button class="navclose" id="navCloseBtn" aria-label="Cerrar men&#250;">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <a href="/">Inicio</a>
+  <a href="/#destinos">Destinos</a>
+  <a href="/viajes-deportivos/">Viajes deportivos</a>
+  <a href="/lunas-de-miel/">Lunas de miel</a>
+  <a href="/financiacion/">Medios de pago</a>
+  <a href="https://www.legendtravel.com.ar/buscarxpaquetes">Paquetes</a>
+  <a href="/quienes-somos/">Qui&#233;nes somos</a>
+  <a href="/blog/">Gu&#237;as y consejos</a>
+  <a href="/#contacto">Contacto</a>
+  <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 </div>
 
 <!-- HERO -->

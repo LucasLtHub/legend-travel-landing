@@ -19,7 +19,7 @@
 .liquid-glass{background:rgba(0,0,0,0.4);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);position:relative;overflow:hidden}.liquid-glass::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1.4px;background:linear-gradient(180deg,rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 40%,rgba(255,255,255,0) 60%,rgba(255,255,255,0.3) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
 .navwrap{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:24px;display:flex;justify-content:center}.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:center}.navlinks{display:none;align-items:center;gap:14px}@media(min-width:1100px){.navlinks{display:flex}}.navlinks a{font-size:15px;color:var(--white);transition:color .3s;white-space:nowrap}.navlinks a:hover{color:var(--red3)}.nav-back{display:inline-flex;align-items:center;color:var(--white);transition:color .3s;padding:0}.nav-back:hover{color:var(--red3)}.nav-back-mobile{font-size:20px;color:var(--white);padding:14px 0;background:none;border:none;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:6px;transition:color .3s}.nav-back-mobile:hover{color:var(--red3)}.navtoggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;color:var(--white)}@media(min-width:1100px){.navtoggle{display:none}}
 .navlinks-mobile{position:fixed;inset:0;z-index:60;background:rgba(14,35,45,.97);backdrop-filter:blur(10px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}.navlinks-mobile.open{opacity:1;pointer-events:auto}.navlinks-mobile a{font-size:20px;color:var(--white);padding:14px 0}.navlinks-mobile a:hover{color:var(--red3)}.navclose{position:absolute;top:24px;right:24px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:var(--white)}
-.btn-red{display:inline-block;background:var(--red);color:var(--white);padding:8px 20px;border-radius:8px;font-size:13px;font-weight:500;transition:background .3s}.btn-red:hover{background:var(--bur)}
+.btn-red{display:inline-block;background:var(--red);color:var(--white);padding:8px 20px;border-radius:8px;font-size:13px;font-weight:500;transition:background .3s}.btn-red:hover{background:var(--bur)}.navlinks .btn-red:hover{color:var(--white)}
 .hero{position:relative;min-height:100vh;color:var(--white);overflow:hidden}.hero-media{position:absolute;inset:0;overflow:hidden}.hero-media .scene{position:absolute;inset:-12%;background:url('https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=2200') center 35%/cover no-repeat;will-change:transform;animation:cENG 28s ease-in-out infinite}@keyframes cENG{0%{transform:scale(1.06)}50%{transform:scale(1.11) translate(-1%,-1%)}100%{transform:scale(1.06)}}.hero-media .ground{position:absolute;left:0;right:0;bottom:0;height:80%;background:linear-gradient(180deg,rgba(14,35,45,0) 0%,rgba(14,35,45,.35) 40%,rgba(14,35,45,.78) 70%,rgba(14,35,45,.92) 100%)}.hero-media .top-grad{position:absolute;left:0;right:0;top:0;height:35%;background:linear-gradient(180deg,rgba(14,35,45,.5) 0%,rgba(14,35,45,0) 100%)}
 .hero-inner{position:relative;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:100vh;padding-top:100px;padding-bottom:60px}.hero-logo-main{margin-bottom:-20px}.hero-logo-main img{height:140px;width:auto;max-width:88vw;display:block;margin:0 auto;filter:brightness(0) invert(1) drop-shadow(0 4px 20px rgba(0,0,0,.5))}@media(min-width:768px){.hero-logo-main img{height:180px}}@media(min-width:1024px){.hero-logo-main img{height:220px}}
 .hero h1{font-size:36px;font-weight:700;line-height:1.04;letter-spacing:-.03em;color:var(--white);text-shadow:0 2px 24px rgba(14,35,45,.7);margin-bottom:20px}@media(min-width:768px){.hero h1{font-size:50px}}@media(min-width:1024px){.hero h1{font-size:62px}}.hero h1 em{font-style:normal;color:var(--red3)}.hero-sub{font-size:18px;color:rgba(255,255,255,.82);max-width:580px;margin:0 auto 32px;text-shadow:0 1px 16px rgba(14,35,45,.75)}.hero-btns{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}.btn-hero-main{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:var(--white);padding:14px 36px;border-radius:8px;font-size:17px;font-weight:600;transition:background .3s,transform .3s}.btn-hero-main:hover{background:var(--bur);transform:translateY(-2px)}.btn-glass{display:inline-block;border:1px solid rgba(255,255,255,.2);color:#fff;padding:14px 36px;border-radius:8px;font-weight:500;font-size:17px;transition:background .3s,color .3s}.btn-glass:hover{background:#fff;color:#000}
@@ -46,13 +46,17 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 <div class="navwrap px">
   <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
     
-    <nav class="navlinks"><button onclick="history.back()" class="nav-back" aria-label="Volver a la p&#225;gina anterior"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></button><a href="/">Home</a>
-      <a href="#por-que">Por qué Legend</a>
-      <a href="#testimonios">Testimonios</a>
-      <a href="#guia">Gu&#237;a de viaje</a>
-      <a href="#incluye">Qué incluye</a>
+    <nav class="navlinks">
+      <a href="/">Inicio</a>
+      <a href="/#destinos">Destinos</a>
+      <a href="/viajes-deportivos/">Viajes deportivos</a>
+      <a href="/lunas-de-miel/">Lunas de miel</a>
       <a href="/financiacion/">Medios de pago</a>
-      <a href="#faq">FAQ</a>
+      <a href="https://www.legendtravel.com.ar/buscarxpaquetes">Paquetes</a>
+      <a href="/quienes-somos/">Qui&#233;nes somos</a>
+      <a href="/blog/">Gu&#237;as y consejos</a>
+      <a href="/#contacto">Contacto</a>
+      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar</a>
     </nav>
     <button class="navtoggle" id="navToggleBtn" aria-label="Abrir menú">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -61,18 +65,19 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 </div>
 
 <div class="navlinks-mobile" id="navMobile">
-  <button class="navclose" id="navCloseBtn" aria-label="Cerrar menú">
+  <button class="navclose" id="navCloseBtn" aria-label="Cerrar men&#250;">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
   </button>
-  <a href="/">Home</a>
-  <button onclick="history.back()" class="nav-back-mobile" aria-label="Volver a la p&#225;gina anterior">&#8592; Volver</button>
-  <a href="#por-que">Por qué Legend</a>
-  <a href="#testimonios">Testimonios</a>
-      <a href="#guia">Gu&#237;a de viaje</a>
-      <a href="#incluye">Qué incluye</a>
+  <a href="/">Inicio</a>
+  <a href="/#destinos">Destinos</a>
+  <a href="/viajes-deportivos/">Viajes deportivos</a>
+  <a href="/lunas-de-miel/">Lunas de miel</a>
   <a href="/financiacion/">Medios de pago</a>
-  <a href="#faq">FAQ</a>
-  <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+  <a href="https://www.legendtravel.com.ar/buscarxpaquetes">Paquetes</a>
+  <a href="/quienes-somos/">Qui&#233;nes somos</a>
+  <a href="/blog/">Gu&#237;as y consejos</a>
+  <a href="/#contacto">Contacto</a>
+  <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 </div>
 
 <section class="hero">
