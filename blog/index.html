@@ -110,7 +110,7 @@ section{background:var(--white)}
 @media(min-width:900px){.navlinks{display:flex}}
 .navlinks a{font-size:15px;color:var(--white);transition:color .3s;white-space:nowrap}
 .navlinks a:hover,.navlinks a[aria-current]{color:var(--red3)}
-.navtoggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;color:var(--white)}
+.nav-back{display:inline-flex;align-items:center;color:var(--white);transition:color .3s;padding:0}.nav-back:hover{color:var(--red3)}.nav-back-mobile{font-size:20px;color:var(--white);padding:14px 0;background:none;border:none;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:6px;transition:color .3s}.nav-back-mobile:hover{color:var(--red3)}.navtoggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;color:var(--white)}
 @media(min-width:900px){.navtoggle{display:none}}
 .navlinks-mobile{position:fixed;inset:0;z-index:60;background:rgba(14,35,45,.97);backdrop-filter:blur(10px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
 .navlinks-mobile.open{opacity:1;pointer-events:auto}
@@ -216,10 +216,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- NAVBAR -->
 <div class="navwrap px">
   <div class="navbar liquid-glass">
-    <a href="/" class="brand" aria-label="Legend Travel — inicio">
-      <img src="../logo-wordmark.png" alt="Legend Travel">
-    </a>
-    <nav class="navlinks" aria-label="Navegación principal">
+    <nav class="navlinks" aria-label="Navegación principal"><button onclick="history.back()" class="nav-back" aria-label="Volver a la p&#225;gina anterior"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg></button>
       <a href="/">Destinos</a>
       <a href="/quienes-somos/">Nuestra historia</a>
       <a href="/financiacion/">Medios de pago</a>
@@ -238,6 +235,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <button class="navclose" id="navCloseBtn" aria-label="Cerrar men&#250;">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
   </button>
+  <button onclick="history.back()" class="nav-back-mobile" aria-label="Volver">&#8592; Volver</button>
   <a href="/">Destinos</a>
   <a href="/quienes-somos/">Nuestra historia</a>
   <a href="/financiacion/">Medios de pago</a>
