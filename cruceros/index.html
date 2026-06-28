@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cruceros desde Argentina | Legend Travel</title>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PMHNZSSJ');</script>
 <meta name="description" content="Cruceros desde Argentina con Legend Travel. Caribe, Mediterráneo y salidas desde Buenos Aires. Más de 35 años de experiencia. Elegimos el barco y la ruta para tu viaje. Consultá por WhatsApp.">
 <link rel="canonical" href="https://www.legendtravel.com.ar/cruceros">
 <meta property="og:title" content="Cruceros desde Argentina | Legend Travel">
@@ -36,13 +37,13 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 
 /* NAV */
 .navwrap{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:24px;display:flex;justify-content:center}
-.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:center}
+.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .navlinks{display:none;align-items:center;gap:26px}
-@media(min-width:900px){.navlinks{display:flex}}
+@media(min-width:1100px){.navlinks{display:flex}}
 .navlinks a{font-size:17px;color:var(--white);transition:color .3s;white-space:nowrap}
 .navlinks a:hover{color:var(--red3)}
 .navtoggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;color:var(--white)}
-@media(min-width:900px){.navtoggle{display:none}}
+@media(min-width:1100px){.navtoggle{display:none}}
 .navlinks-mobile{position:fixed;inset:0;z-index:60;background:rgba(14,35,45,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
 .navlinks-mobile.open{opacity:1;pointer-events:auto}
 .navlinks-mobile a{font-size:20px;color:var(--white);padding:14px 0}
@@ -221,26 +222,24 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   html{scroll-behavior:auto}
   .rv,.fade{opacity:1!important;transform:none!important}
 }
-</style>
+.testi-inner{max-width:720px;margin:0 auto;background:rgba(14,35,45,.02);border-radius:20px;padding:48px;border-left:4px solid var(--red)}.testi-inner p{font-size:18px;line-height:1.8;color:rgba(14,35,45,.82);font-style:italic}.testi-inner cite{display:block;margin-top:20px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--red);font-style:normal}</style>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMHNZSSJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- NAV -->
 <div class="navwrap px">
   <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
-    <a href="/" style="display:flex;align-items:center;flex:none;margin-right:auto"><img src="/logo-wordmark.png" alt="Legend Travel" style="height:26px;width:auto;filter:brightness(0) invert(1)"></a>
+    <a href="/" style="display:flex;align-items:center;flex:none"><img src="/logo-wordmark.png" alt="Legend Travel" loading="lazy" style="height:26px;width:auto;filter:brightness(0) invert(1)"></a>
     <nav class="navlinks">
-      <a href="/#destinos">Destinos</a>
-      <a href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">Paquetes</a>
-      <a href="/#diferenciales">Por qué Legend</a>
-      <a href="/#historia">Nuestra historia</a>
-      <a href="/#equipo">El equipo</a>
-      <a href="/#testimonios">Testimonios</a>
-      <a href="/#financiacion">Medios de pago</a>
-      <a href="/#guias">Guías y consejos</a>
-      <a href="/#faq">FAQ</a>
-      <a href="/#contacto">Contacto</a>
-      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+      <a href="#rutas">Rutas</a>
+      <a href="#por-que">Por qué Legend</a>
+      <a href="#ofrecemos">Qué ofrecemos</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#guia">Guía de viaje</a>
+      <a href="/financiacion/">Medios de pago</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto">Contacto</a>
     </nav>
     <button class="navtoggle" id="navToggleBtn" aria-label="Abrir menú">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -252,16 +251,14 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   <button class="navclose" id="navCloseBtn" aria-label="Cerrar menú">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
   </button>
-  <a href="/#destinos">Destinos</a>
-  <a href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">Paquetes</a>
-  <a href="/#diferenciales">Por qué Legend</a>
-  <a href="/#historia">Nuestra historia</a>
-  <a href="/#equipo">El equipo</a>
-  <a href="/#testimonios">Testimonios</a>
-  <a href="/#financiacion">Medios de pago</a>
-  <a href="/#guias">Guías y consejos</a>
-  <a href="/#faq">FAQ</a>
-  <a href="/#contacto">Contacto</a>
+  <a href="#rutas">Rutas</a>
+  <a href="#por-que">Por qué Legend</a>
+  <a href="#ofrecemos">Qué ofrecemos</a>
+  <a href="#testimonios">Testimonios</a>
+      <a href="#guia">Guía de viaje</a>
+  <a href="/financiacion/">Medios de pago</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contacto">Contacto</a>
   <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 </div>
 
@@ -353,6 +350,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       <h2 class="h2">¿A dónde querés<br><em>llegar navegando?</em></h2>
     </div>
     <div class="dest-grid rv">
+      <!-- TODO: enlazar a /cruceros/caribe cuando exista -->
       <a class="dest-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20crucero%20por%20el%20Caribe" target="_blank" rel="noopener noreferrer">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Playa del Caribe con agua turquesa" loading="lazy"></div>
         <div class="grad"></div>
@@ -363,6 +361,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <p class="ideal">Ideal para → <span>Familias y parejas</span></p>
         </div>
       </a>
+      <!-- TODO: enlazar a /cruceros/mediterraneo cuando exista -->
       <a class="dest-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20crucero%20por%20el%20Mediterr%C3%A1neo" target="_blank" rel="noopener noreferrer">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Casas blancas de Santorini sobre el mar Mediterráneo" loading="lazy"></div>
         <div class="grad"></div>
@@ -373,6 +372,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <p class="ideal">Ideal para → <span>Cultura y gastronomía</span></p>
         </div>
       </a>
+      <!-- TODO: enlazar a /cruceros/desde-buenos-aires cuando exista -->
       <a class="dest-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20crucero%20desde%20Buenos%20Aires" target="_blank" rel="noopener noreferrer">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/813011/pexels-photo-813011.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Crucero navegando en el océano Atlántico" loading="lazy"></div>
         <div class="grad"></div>
@@ -426,6 +426,18 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 </section>
 
 <!-- 5. GUÍA EXPERTA -->
+<section class="sec px" id="testimonios">
+  <div class="mx">
+    <div class="rv" style="margin-bottom:40px;max-width:640px">
+      <p class="kicker">Lo que dicen nuestros viajeros</p>
+      <h2 class="h2" style="font-size:36px">Experiencias <em>reales con Legend.</em></h2>
+    </div>
+    <div class="testi-inner rv">
+      <p>"El crucero por el Mediterráneo fue la mejor decisión de vacaciones que tomamos en años. Legend nos consiguió el camarote con balcón perfecto y organizó todas las excursiones en cada puerto. Ya reservamos el próximo."</p>
+      <cite>&#8212; Patricia y Martín, octubre 2024</cite>
+    </div>
+  </div>
+</section>
 <section class="sec px" id="guia">
   <div class="mx">
     <div class="rv" style="max-width:680px;margin-bottom:48px">
@@ -469,10 +481,13 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
         <span class="chip">Plan de pagos a medida</span>
       </div>
     </div>
-    <a class="btn-white rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20crucero" target="_blank" rel="noopener noreferrer">
-      Consultar opciones de pago
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
-    </a>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:20px" class="rv">
+      <a class="btn-white" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20crucero" target="_blank" rel="noopener noreferrer">
+        Consultar opciones de pago
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+      </a>
+      <a href="/financiacion/" style="color:rgba(255,255,255,.7);font-size:14px;font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:color .25s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.7)'">Ver todas las opciones de pago <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+    </div>
   </div>
 </section>
 
@@ -577,18 +592,20 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
         <a href="#ofrecemos">Qué ofrecemos</a>
         <a href="#por-que">Por qué Legend</a>
         <a href="#rutas">Rutas</a>
-        <a href="#guia">Guía experta</a>
-        <a href="#financiacion">Medios de pago</a>
+        <a href="#testimonios">Testimonios</a>
+      <a href="#guia">Guía experta</a>
+        <a href="/financiacion/">Medios de pago</a>
         <a href="#faq">FAQ</a>
         <a href="#contacto">Contacto</a>
       </div>
       <div>
-        <h4>Otros destinos</h4>
-        <a href="../disney/">Disney</a>
+        <h4>La agencia</h4>
+        <a href="/quienes-somos/">Quiénes somos</a>
+        <a href="/financiacion/">Medios de pago</a>
+        <a href="/lunas-de-miel/">Lunas de miel</a>
         <a href="../caribe/">Caribe</a>
         <a href="../europa/">Europa</a>
-        <a href="../brasil/">Brasil</a>
-        <a href="../index.html#destinos">Argentina</a>
+        <a href="../disney/">Disney</a>
       </div>
       <div>
         <h4>Contacto</h4>

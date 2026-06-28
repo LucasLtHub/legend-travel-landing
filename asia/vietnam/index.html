@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Viajes a Vietnam desde Argentina | Legend Travel</title>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PMHNZSSJ');</script>
 <meta name="description" content="Paquetes a Vietnam desde Argentina. Bahía de Ha Long, Hoi An, Hanói y Ho Chi Minh. Paisajes únicos, gastronomía extraordinaria y precios accesibles.">
 <link rel="canonical" href="https://www.legendtravel.com.ar/asia/vietnam">
 <meta property="og:title" content="Viajes a Vietnam desde Argentina | Legend Travel">
@@ -30,13 +31,13 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 .liquid-glass{background:rgba(0,0,0,0.4);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border:none;box-shadow:inset 0 1px 1px rgba(255,255,255,0.1);position:relative;overflow:hidden}
 .liquid-glass::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1.4px;background:linear-gradient(180deg,rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.1) 20%,rgba(255,255,255,0) 40%,rgba(255,255,255,0) 60%,rgba(255,255,255,0.1) 80%,rgba(255,255,255,0.3) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
 .navwrap{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:24px;display:flex;justify-content:center}
-.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:center}
+.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .navlinks{display:none;align-items:center;gap:26px}
-@media(min-width:900px){.navlinks{display:flex}}
+@media(min-width:1100px){.navlinks{display:flex}}
 .navlinks a{font-size:17px;color:var(--white);transition:color .3s;white-space:nowrap}
 .navlinks a:hover{color:var(--red3)}
 .navtoggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;color:var(--white)}
-@media(min-width:900px){.navtoggle{display:none}}
+@media(min-width:1100px){.navtoggle{display:none}}
 .navlinks-mobile{position:fixed;inset:0;z-index:60;background:rgba(14,35,45,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
 .navlinks-mobile.open{opacity:1;pointer-events:auto}
 .navlinks-mobile a{font-size:20px;color:var(--white);padding:14px 0}
@@ -165,22 +166,20 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 </style>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMHNZSSJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="navwrap px">
   <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
-    <a href="/" style="display:flex;align-items:center;flex:none;margin-right:auto"><img src="/logo-wordmark.png" alt="Legend Travel" style="height:26px;width:auto;filter:brightness(0) invert(1)"></a>
+    <a href="/" style="display:flex;align-items:center;flex:none"><img src="/logo-wordmark.png" alt="Legend Travel" loading="lazy" style="height:26px;width:auto;filter:brightness(0) invert(1)"></a>
     <nav class="navlinks">
-      <a href="/#destinos">Destinos</a>
-      <a href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">Paquetes</a>
-      <a href="/#diferenciales">Por qué Legend</a>
-      <a href="/#historia">Nuestra historia</a>
-      <a href="/#equipo">El equipo</a>
-      <a href="/#testimonios">Testimonios</a>
-      <a href="/#financiacion">Medios de pago</a>
-      <a href="/#guias">Guías y consejos</a>
-      <a href="/#faq">FAQ</a>
-      <a href="/#contacto">Contacto</a>
-      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+      <a href="#por-que">Por qué Legend</a>
+      <a href="#ofrecemos">Qué ofrecemos</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#guia">Gu&#237;a de viaje</a>
+      <a href="#incluye">Qué incluye</a>
+      <a href="/financiacion/">Medios de pago</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto">Contacto</a>
     </nav>
     <button class="navtoggle" id="navToggleBtn" aria-label="Abrir menú">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -192,16 +191,14 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   <button class="navclose" id="navCloseBtn" aria-label="Cerrar menú">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
   </button>
-  <a href="/#destinos">Destinos</a>
-  <a href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">Paquetes</a>
-  <a href="/#diferenciales">Por qué Legend</a>
-  <a href="/#historia">Nuestra historia</a>
-  <a href="/#equipo">El equipo</a>
-  <a href="/#testimonios">Testimonios</a>
-  <a href="/#financiacion">Medios de pago</a>
-  <a href="/#guias">Guías y consejos</a>
-  <a href="/#faq">FAQ</a>
-  <a href="/#contacto">Contacto</a>
+  <a href="#por-que">Por qué Legend</a>
+  <a href="#ofrecemos">Qué ofrecemos</a>
+  <a href="#testimonios">Testimonios</a>
+      <a href="#guia">Gu&#237;a de viaje</a>
+      <a href="#incluye">Qué incluye</a>
+  <a href="/financiacion/">Medios de pago</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contacto">Contacto</a>
   <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 </div>
 
@@ -355,6 +352,37 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   </div>
 </section>
 
+<section class="sec px" id="guia" style="background:rgba(14,35,45,.02)">
+  <div class="mx">
+    <div class="rv" style="margin-bottom:48px;max-width:680px">
+      <p class="kicker">Guía de viaje</p>
+      <h2 class="h2">Lo que tenés que saber <em>antes de ir a Vietnam.</em></h2>
+    </div>
+    <div class="guia-grid rv">
+      <div class="guia-item">
+        <h3>¿Los argentinos necesitan visa para Vietnam?</h3>
+        <p>Sí. Vietnam requiere visa para los ciudadanos argentinos. La opción más práctica es la <strong>e-Visa electrónica</strong> (evisa.xuatnhapcanh.gov.vn), que se tramita online en 3 a 5 días hábiles y cuesta 25 USD para estadías de hasta 90 días. También existe el <strong>Visa on Arrival</strong>, que requiere una carta de invitación previa obtenida online. Nuestro equipo asesora sobre la mejor opción según el itinerario y gestiona todos los trámites.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿En qué sentido recorrer Vietnam?</h3>
+        <p>Vietnam se recorre mejor de <strong>norte a sur o de sur a norte</strong>, aprovechando los vuelos internos. El itinerario más popular: <strong>Hanói</strong> (capital del norte, el casco histórico y la Bahía de Ha Long), <strong>centro</strong> (Hue y el complejo imperial, Hội An con sus linternas y su pasado comercial, el Parque Nacional de Phong Nha para las cuevas), y <strong>Hồ Chí Minh City</strong> (la ex Saigón, con el Delta del Mekong). Los vuelos internos entre ciudades cuestan entre 20 y 60 USD y ahorran decenas de horas de tren.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Cuántos días necesito para Vietnam?</h3>
+        <p>Para recorrer el país de norte a sur recomendamos <strong>14 a 18 días</strong>: 2-3 noches en Hanói + 2 noches en la Bahía de Ha Long (crucero de 2 días es la mejor experiencia) + 1-2 noches en Hội An + 1 noche en Hue + 3 noches en Hồ Chí Minh City + 1 día de excursión al Delta del Mekong. Si el tiempo es limitado, el triángulo Hanói-Hội An-Ciudad Ho Chi Minh en 10 días ya es una experiencia muy completa.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Cuál es la mejor época para ir a Vietnam?</h3>
+        <p>Vietnam es un país largo (1.650 km de norte a sur) con climas diferentes por zona. <strong>Noviembre a abril</strong> es la mejor época para el sur y el centro. <strong>Enero a junio</strong> es la mejor época para el norte. <strong>Enero a marzo</strong> es el período más estable para todo el país. El <strong>Tết</strong> (Año Nuevo Lunar, generalmente en enero-febrero) puede dificultar los traslados internos: muchos negocios cierran y los vuelos se llenan. Consultanos para armar la mejor ventana de viaje según tus fechas.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Cuánto cuesta viajar a Vietnam?</h3>
+        <p>Vietnam es uno de los destinos más <strong>económicos de Asia del Sudeste</strong>. Un plato de pho bo (sopa de fideos con carne) en un restaurante local cuesta 1,5 a 3 USD; una cena completa en restaurante de nivel medio entre 10 y 20 USD por persona. Los hoteles boutique de calidad en Hội An o Hà Nội desde 40 a 80 USD la noche. La moneda es el <strong>dong vietnamita (VND)</strong>; los cajeros automáticos son abundantes y las tarjetas se aceptan en los hoteles, aunque en los mercados locales conviene tener efectivo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="fin px" id="financiacion">
   <div class="mx">
     <div class="rv">
@@ -377,7 +405,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   </div>
 </section>
 
-<section class="sec px">
+<section class="sec px" id="testimonios">
   <div class="mx">
     <div class="rv" style="margin-bottom:40px;max-width:640px">
       <p class="kicker">Lo que dicen nuestros viajeros</p>
@@ -456,8 +484,10 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       <div>
         <h4>Esta página</h4>
         <a href="#destino">El destino</a>
-        <a href="#incluye">Qué incluye</a>
-        <a href="#financiacion">Medios de pago</a>
+        <a href="#testimonios">Testimonios</a>
+      <a href="#guia">Gu&#237;a de viaje</a>
+      <a href="#incluye">Qué incluye</a>
+        <a href="/financiacion/">Medios de pago</a>
         <a href="#faq">FAQ</a>
         <a href="#contacto">Contacto</a>
       </div>

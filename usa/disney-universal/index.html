@@ -1,9 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Viajes a Disney y Universal Orlando desde Argentina | Legend Travel</title>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PMHNZSSJ');</script>
 <meta name="description" content="Paquetes a Disney y Universal Orlando desde Argentina. Magic Kingdom, EPCOT, Islands of Adventure y más. Entradas, hotel y vuelos incluidos. Especialistas en familias y quinceañeras.">
 <link rel="canonical" href="https://www.legendtravel.com.ar/usa/disney-universal">
 <meta property="og:title" content="Viajes a Disney y Universal Orlando desde Argentina | Legend Travel">
@@ -30,13 +31,13 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 .liquid-glass{background:rgba(0,0,0,0.4);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border:none;box-shadow:inset 0 1px 1px rgba(255,255,255,0.1);position:relative;overflow:hidden}
 .liquid-glass::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1.4px;background:linear-gradient(180deg,rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.1) 20%,rgba(255,255,255,0) 40%,rgba(255,255,255,0) 60%,rgba(255,255,255,0.1) 80%,rgba(255,255,255,0.3) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
 .navwrap{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:24px;display:flex;justify-content:center}
-.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:center}
+.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .navlinks{display:none;align-items:center;gap:26px}
-@media(min-width:900px){.navlinks{display:flex}}
+@media(min-width:1100px){.navlinks{display:flex}}
 .navlinks a{font-size:17px;color:var(--white);transition:color .3s;white-space:nowrap}
 .navlinks a:hover{color:var(--red3)}
 .navtoggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;color:var(--white)}
-@media(min-width:900px){.navtoggle{display:none}}
+@media(min-width:1100px){.navtoggle{display:none}}
 .navlinks-mobile{position:fixed;inset:0;z-index:60;background:rgba(14,35,45,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
 .navlinks-mobile.open{opacity:1;pointer-events:auto}
 .navlinks-mobile a{font-size:20px;color:var(--white);padding:14px 0}
@@ -165,22 +166,20 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 </style>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMHNZSSJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="navwrap px">
   <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
-    <a href="/" style="display:flex;align-items:center;flex:none;margin-right:auto"><img src="/logo-wordmark.png" alt="Legend Travel" style="height:26px;width:auto;filter:brightness(0) invert(1)"></a>
+    <a href="/" style="display:flex;align-items:center;flex:none"><img src="/logo-wordmark.png" alt="Legend Travel" loading="lazy" style="height:26px;width:auto;filter:brightness(0) invert(1)"></a>
     <nav class="navlinks">
-      <a href="/#destinos">Destinos</a>
-      <a href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">Paquetes</a>
-      <a href="/#diferenciales">Por qué Legend</a>
-      <a href="/#historia">Nuestra historia</a>
-      <a href="/#equipo">El equipo</a>
-      <a href="/#testimonios">Testimonios</a>
-      <a href="/#financiacion">Medios de pago</a>
-      <a href="/#guias">Guías y consejos</a>
-      <a href="/#faq">FAQ</a>
-      <a href="/#contacto">Contacto</a>
-      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+      <a href="#por-que">Por qué Legend</a>
+      <a href="#ofrecemos">Qué ofrecemos</a>
+      <a href="#incluye">Qué incluye</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#guia">Guía de viaje</a>
+      <a href="/financiacion/">Medios de pago</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto">Contacto</a>
     </nav>
     <button class="navtoggle" id="navToggleBtn" aria-label="Abrir menú">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -192,16 +191,14 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   <button class="navclose" id="navCloseBtn" aria-label="Cerrar menú">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
   </button>
-  <a href="/#destinos">Destinos</a>
-  <a href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">Paquetes</a>
-  <a href="/#diferenciales">Por qué Legend</a>
-  <a href="/#historia">Nuestra historia</a>
-  <a href="/#equipo">El equipo</a>
-  <a href="/#testimonios">Testimonios</a>
-  <a href="/#financiacion">Medios de pago</a>
-  <a href="/#guias">Guías y consejos</a>
-  <a href="/#faq">FAQ</a>
-  <a href="/#contacto">Contacto</a>
+  <a href="#por-que">Por qué Legend</a>
+  <a href="#ofrecemos">Qué ofrecemos</a>
+  <a href="#incluye">Qué incluye</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#guia">Guía de viaje</a>
+  <a href="/financiacion/">Medios de pago</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contacto">Contacto</a>
   <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 </div>
 
@@ -353,6 +350,36 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   </div>
 </section>
 
+<section class="sec px" id="guia" style="background:rgba(14,35,45,.02)">
+  <div class="mx">
+    <div class="rv" style="margin-bottom:48px;max-width:680px">
+      <p class="kicker">Guía de viaje</p>
+      <h2 class="h2">Lo que tenés que saber <em>antes de ir a Disney y Universal.</em></h2>
+    </div>
+    <div class="guia-grid rv">
+      <div class="guia-item">
+        <h3>¿Cuántos días necesito para Disney y Universal?</h3>
+        <p>Para <strong>Disney con calma</strong> (Magic Kingdom, EPCOT, Hollywood Studios y Animal Kingdom) recomendamos 4 días de parques. Para <strong>Universal</strong> (Studios + Islands of Adventure + Epic Universe) se necesitan 2 a 3 días. Un viaje que combine los dos en forma completa requiere <strong>mínimo 9 a 11 días</strong> en Orlando. Si el tiempo es limitado, familias con chicos chicos priorizan Disney; adolescentes y adultos eligen Universal con el Wizarding World of Harry Potter.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Cuál es la mejor época para ir a los parques de Orlando?</h3>
+        <p><strong>Temporada baja</strong> (enero-febrero excepto feriados, septiembre-octubre entre semana): menos cola y mejor experiencia. <strong>Temporada alta</strong> (julio, Semana Santa, navidad): los parques se llenan con esperas de 2 horas por atracción. Para argentinos en diciembre-enero (verano local), coincide con la temporada navideña de Disney —decoración espectacular, pero con mucha gente. La primera quincena de diciembre suele ser el mejor balance.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Cómo se reservan las atracciones más populares?</h3>
+        <p>Disney tiene el sistema <strong>Lightning Lane</strong> (pago adicional por app) que permite reservar horarios y saltear la cola regular. Universal tiene el <strong>Express Pass</strong>, similar. Para las atracciones más nuevas y demandadas (Tron, Guardians of the Galaxy, Hagrid's en Universal) es clave reservar en la app al llegar al parque o con días de anticipación. Nuestros asesores que conocen los parques te orientan según la época del año.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Conviene alojarse dentro del complejo de Disney?</h3>
+        <p>Los hoteles <strong>dentro de Disney</strong> ofrecen acceso temprano a los parques (30 minutos antes que el público general) y transporte gratuito entre parques y hoteles. Los hoteles <strong>fuera del complejo</strong> (International Drive o Kissimmee) son considerablemente más baratos y están a 10-20 minutos en auto. Para familias con niños chicos o visitas cortas, el hotel on-site puede valer la diferencia; para grupos que priorizan presupuesto, los externos son perfectamente cómodos.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Necesito visa para viajar a Orlando desde Argentina?</h3>
+        <p>Sí. Florida es parte de Estados Unidos, por lo que se necesita <strong>visa B1/B2</strong>. El trámite incluye el formulario DS-160, el arancel y una entrevista en el consulado americano en Buenos Aires. Recomendamos tramitarla con al menos 3 meses de anticipación. Nuestro equipo te asesora en la documentación y cómo preparar la entrevista para maximizar las chances de aprobación.</p>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="fin px" id="financiacion">
   <div class="mx">
     <div class="rv">
@@ -369,10 +396,11 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       </div>
     </div>
     <a class="btn-white rv" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje%20a%20Disney%20y%20Universal%20Orlando" target="_blank" rel="noopener noreferrer">Consultar opciones de pago <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+    <a href="/financiacion/" style="color:rgba(255,255,255,.7);font-size:14px;font-weight:600;display:inline-flex;align-items:center;gap:6px;margin-top:16px">Ver todas las opciones de pago <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
   </div>
 </section>
 
-<section class="sec px">
+<section class="sec px" id="testimonios">
   <div class="mx">
     <div class="rv" style="margin-bottom:40px;max-width:640px">
       <p class="kicker">Lo que dicen nuestros viajeros</p>
@@ -452,7 +480,9 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
         <h4>Esta página</h4>
         <a href="#destino">Los parques</a>
         <a href="#incluye">Qué incluye</a>
-        <a href="#financiacion">Medios de pago</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#guia">Guía de viaje</a>
+        <a href="/financiacion/">Medios de pago</a>
         <a href="#faq">FAQ</a>
         <a href="#contacto">Contacto</a>
       </div>

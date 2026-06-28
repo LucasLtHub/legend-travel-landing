@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Viajes a Japón desde Argentina | Legend Travel</title>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PMHNZSSJ');</script>
 <meta name="description" content="Paquetes a Japón desde Argentina. Tokio, Kioto, Osaka, Nara. Tradición, tecnología y cerezos. Itinerarios a medida con más de 35 años de experiencia.">
 <link rel="canonical" href="https://www.legendtravel.com.ar/asia/japon">
 <meta property="og:title" content="Viajes a Japón desde Argentina | Legend Travel">
@@ -30,13 +31,13 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 .liquid-glass{background:rgba(0,0,0,0.4);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border:none;box-shadow:inset 0 1px 1px rgba(255,255,255,0.1);position:relative;overflow:hidden}
 .liquid-glass::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1.4px;background:linear-gradient(180deg,rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.1) 20%,rgba(255,255,255,0) 40%,rgba(255,255,255,0) 60%,rgba(255,255,255,0.1) 80%,rgba(255,255,255,0.3) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
 .navwrap{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:24px;display:flex;justify-content:center}
-.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:center}
+.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .navlinks{display:none;align-items:center;gap:26px}
-@media(min-width:900px){.navlinks{display:flex}}
+@media(min-width:1100px){.navlinks{display:flex}}
 .navlinks a{font-size:17px;color:var(--white);transition:color .3s;white-space:nowrap}
 .navlinks a:hover{color:var(--red3)}
 .navtoggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;color:var(--white)}
-@media(min-width:900px){.navtoggle{display:none}}
+@media(min-width:1100px){.navtoggle{display:none}}
 .navlinks-mobile{position:fixed;inset:0;z-index:60;background:rgba(14,35,45,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
 .navlinks-mobile.open{opacity:1;pointer-events:auto}
 .navlinks-mobile a{font-size:20px;color:var(--white);padding:14px 0}
@@ -165,22 +166,20 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 </style>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMHNZSSJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="navwrap px">
   <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
-    <a href="/" style="display:flex;align-items:center;flex:none;margin-right:auto"><img src="/logo-wordmark.png" alt="Legend Travel" style="height:26px;width:auto;filter:brightness(0) invert(1)"></a>
+    <a href="/" style="display:flex;align-items:center;flex:none"><img src="/logo-wordmark.png" alt="Legend Travel" loading="lazy" style="height:26px;width:auto;filter:brightness(0) invert(1)"></a>
     <nav class="navlinks">
-      <a href="/#destinos">Destinos</a>
-      <a href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">Paquetes</a>
-      <a href="/#diferenciales">Por qué Legend</a>
-      <a href="/#historia">Nuestra historia</a>
-      <a href="/#equipo">El equipo</a>
-      <a href="/#testimonios">Testimonios</a>
-      <a href="/#financiacion">Medios de pago</a>
-      <a href="/#guias">Guías y consejos</a>
-      <a href="/#faq">FAQ</a>
-      <a href="/#contacto">Contacto</a>
-      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+      <a href="#por-que">Por qué Legend</a>
+      <a href="#ofrecemos">Qué ofrecemos</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#guia">Gu&#237;a de viaje</a>
+      <a href="#incluye">Qué incluye</a>
+      <a href="/financiacion/">Medios de pago</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto">Contacto</a>
     </nav>
     <button class="navtoggle" id="navToggleBtn" aria-label="Abrir menú">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -192,16 +191,14 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   <button class="navclose" id="navCloseBtn" aria-label="Cerrar menú">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
   </button>
-  <a href="/#destinos">Destinos</a>
-  <a href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">Paquetes</a>
-  <a href="/#diferenciales">Por qué Legend</a>
-  <a href="/#historia">Nuestra historia</a>
-  <a href="/#equipo">El equipo</a>
-  <a href="/#testimonios">Testimonios</a>
-  <a href="/#financiacion">Medios de pago</a>
-  <a href="/#guias">Guías y consejos</a>
-  <a href="/#faq">FAQ</a>
-  <a href="/#contacto">Contacto</a>
+  <a href="#por-que">Por qué Legend</a>
+  <a href="#ofrecemos">Qué ofrecemos</a>
+  <a href="#testimonios">Testimonios</a>
+      <a href="#guia">Gu&#237;a de viaje</a>
+      <a href="#incluye">Qué incluye</a>
+  <a href="/financiacion/">Medios de pago</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contacto">Contacto</a>
   <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 </div>
 
@@ -355,6 +352,37 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   </div>
 </section>
 
+<section class="sec px" id="guia" style="background:rgba(14,35,45,.02)">
+  <div class="mx">
+    <div class="rv" style="margin-bottom:48px;max-width:680px">
+      <p class="kicker">Guía de viaje</p>
+      <h2 class="h2">Lo que tenés que saber <em>antes de ir a Japón.</em></h2>
+    </div>
+    <div class="guia-grid rv">
+      <div class="guia-item">
+        <h3>¿Los argentinos necesitan visa para Japón?</h3>
+        <p>No. Argentina tiene un acuerdo de exención de visa con Japón que permite ingresar sin visa por hasta <strong>90 días</strong>, solo con pasaporte vigente. Esto es una ventaja enorme: Japón exige visa a muchos países latinoamericanos, pero no a Argentina. El proceso de llegada al aeropuerto de Tokio (Narita o Haneda) es ordenado y muy eficiente.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Cuánto dura el vuelo y cuántos días necesito?</h3>
+        <p>Desde Buenos Aires a Tokio son entre 26 y 30 horas de viaje con una o dos escalas (vía Emiratos, España, Brasil o EE.UU.). La diferencia horaria con Argentina es de +12 horas en invierno y +11 en verano: los primeros 2 días de ajuste son clave. Para un primer viaje recomendamos <strong>mínimo 12 a 14 días</strong>: el circuito clásico es Tokio (3-4 noches) + Hakone o Nikko (1-2 noches) + Kioto y Nara (3-4 noches) + Osaka (2 noches).</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Cuál es la mejor época para ir a Japón?</h3>
+        <p>Japón tiene dos temporadas de viaje ideales. <strong>Primavera (finales de marzo a principios de mayo)</strong>: la floración de los cerezos (sakura), el evento más esperado del año japonés; las flores duran apenas 1 a 2 semanas según la latitud. <strong>Otoño (octubre-noviembre)</strong>: los colores dorados y rojos de los momiji (arces japoneses) crean paisajes espectaculares, especialmente en los templos de Kioto. El verano es húmedo y caluroso (tsuyu, la temporada de lluvias en junio); el invierno es frío pero permite ver el Monte Fuji nevado y el onsen (baños termales) en su máximo esplendor.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿El Japan Rail Pass vale la pena?</h3>
+        <p>Para itinerarios que incluyen al menos dos ciudades fuera de Tokio, el <strong>Japan Rail Pass</strong> (JR Pass) generalmente sí conviene. El pass de 14 días cuesta aproximadamente 500 USD y permite viajes ilimitados en los trenes Shinkansen (bala) de JR. El Tokio-Osaka en Shinkansen (Nozomi excluido pero Hikari incluido) dura 2h30 y solo ese trayecto de ida y vuelta ya justifica parte del costo. El pass debe comprarse antes de salir de Argentina.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Con cuánto dinero se viaja a Japón?</h3>
+        <p>Japón tiene fama de caro pero la devaluación del yen de los últimos años lo hace más accesible que nunca para viajeros latinoamericanos. Un ramen en un restaurante de ramen local cuesta 10-15 USD; una cena en izakaya (bar-restaurante japonés) entre 20 y 40 USD. La <strong>IC Card (Suica o Pasmo)</strong> recargable para el transporte urbano es indispensable. El <strong>efectivo</strong> sigue siendo importante en muchos comercios y templos (aunque esto está cambiando). Llevar yen en efectivo desde Argentina o cambiar en el aeropuerto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="fin px" id="financiacion">
   <div class="mx">
     <div class="rv">
@@ -377,7 +405,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   </div>
 </section>
 
-<section class="sec px">
+<section class="sec px" id="testimonios">
   <div class="mx">
     <div class="rv" style="margin-bottom:40px;max-width:640px">
       <p class="kicker">Lo que dicen nuestros viajeros</p>
@@ -456,8 +484,10 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       <div>
         <h4>Esta página</h4>
         <a href="#destino">El destino</a>
-        <a href="#incluye">Qué incluye</a>
-        <a href="#financiacion">Medios de pago</a>
+        <a href="#testimonios">Testimonios</a>
+      <a href="#guia">Gu&#237;a de viaje</a>
+      <a href="#incluye">Qué incluye</a>
+        <a href="/financiacion/">Medios de pago</a>
         <a href="#faq">FAQ</a>
         <a href="#contacto">Contacto</a>
       </div>

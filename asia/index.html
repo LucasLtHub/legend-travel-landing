@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Viajes a Asia desde Argentina | Legend Travel</title>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PMHNZSSJ');</script>
 <meta name="description" content="Viajes a Asia desde Argentina con Legend Travel. Japón, Tailandia, Dubái y Vietnam a medida. Asesoramiento humano, más de 35 años de experiencia. Consultá por WhatsApp.">
 <link rel="canonical" href="https://www.legendtravel.com.ar/asia">
 <meta property="og:title" content="Viajes a Asia desde Argentina | Legend Travel">
@@ -47,13 +48,13 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 }
 
 .navwrap{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:24px;display:flex;justify-content:center}
-.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:center}
+.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .navlinks{display:none;align-items:center;gap:26px}
-@media(min-width:900px){.navlinks{display:flex}}
+@media(min-width:1100px){.navlinks{display:flex}}
 .navlinks a{font-size:17px;color:var(--white);transition:color .3s;white-space:nowrap}
 .navlinks a:hover{color:var(--red3)}
 .navtoggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;color:var(--white)}
-@media(min-width:900px){.navtoggle{display:none}}
+@media(min-width:1100px){.navtoggle{display:none}}
 .navlinks-mobile{position:fixed;inset:0;z-index:60;background:rgba(14,35,45,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
 .navlinks-mobile.open{opacity:1;pointer-events:auto}
 .navlinks-mobile a{font-size:20px;color:var(--white);padding:14px 0}
@@ -128,7 +129,7 @@ section{background:var(--white)}
 
 .dest-grid{display:grid;grid-template-columns:1fr;gap:24px}
 @media(min-width:768px){.dest-grid{grid-template-columns:1fr 1fr}}
-@media(min-width:1024px){.dest-grid{grid-template-columns:1fr 1fr 1fr 1fr}}
+@media(min-width:1024px){.dest-grid{grid-template-columns:1fr 1fr 1fr}}
 .dest-card{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:3/4;display:block;box-shadow:0 8px 32px rgba(14,35,45,.12);transition:transform .4s,box-shadow .4s}
 .dest-card:hover{transform:translateY(-6px);box-shadow:0 24px 56px rgba(14,35,45,.2)}
 .dest-card .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .6s}
@@ -208,25 +209,23 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   html{scroll-behavior:auto}
   .rv,.fade{opacity:1!important;transform:none!important}
 }
-</style>
+.testi-inner{max-width:720px;margin:0 auto;background:rgba(14,35,45,.02);border-radius:20px;padding:48px;border-left:4px solid var(--red)}.testi-inner p{font-size:18px;line-height:1.8;color:rgba(14,35,45,.82);font-style:italic}.testi-inner cite{display:block;margin-top:20px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--red);font-style:normal}</style>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMHNZSSJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="navwrap px">
   <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
-    <a href="/" style="display:flex;align-items:center;flex:none;margin-right:auto"><img src="/logo-wordmark.png" alt="Legend Travel" style="height:26px;width:auto;filter:brightness(0) invert(1)"></a>
+    <a href="/" style="display:flex;align-items:center;flex:none"><img src="/logo-wordmark.png" alt="Legend Travel" loading="lazy" style="height:26px;width:auto;filter:brightness(0) invert(1)"></a>
     <nav class="navlinks">
-      <a href="/#destinos">Destinos</a>
-      <a href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">Paquetes</a>
-      <a href="/#diferenciales">Por qué Legend</a>
-      <a href="/#historia">Nuestra historia</a>
-      <a href="/#equipo">El equipo</a>
-      <a href="/#testimonios">Testimonios</a>
-      <a href="/#financiacion">Medios de pago</a>
-      <a href="/#guias">Guías y consejos</a>
-      <a href="/#faq">FAQ</a>
-      <a href="/#contacto">Contacto</a>
-      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+      <a href="#destinos">Destinos</a>
+      <a href="#por-que">Por qué Legend</a>
+      <a href="#guia">Gu&#237;a de viaje</a>
+      <a href="#ofrecemos">Qué ofrecemos</a>
+      <a href="/financiacion/">Medios de pago</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto">Contacto</a>
     </nav>
     <button class="navtoggle" id="navToggleBtn" aria-label="Abrir menú">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -238,16 +237,13 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   <button class="navclose" id="navCloseBtn" aria-label="Cerrar menú">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
   </button>
-  <a href="/#destinos">Destinos</a>
-  <a href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">Paquetes</a>
-  <a href="/#diferenciales">Por qué Legend</a>
-  <a href="/#historia">Nuestra historia</a>
-  <a href="/#equipo">El equipo</a>
-  <a href="/#testimonios">Testimonios</a>
-  <a href="/#financiacion">Medios de pago</a>
-  <a href="/#guias">Guías y consejos</a>
-  <a href="/#faq">FAQ</a>
-  <a href="/#contacto">Contacto</a>
+  <a href="#destinos">Destinos</a>
+  <a href="#por-que">Por qué Legend</a>
+  <a href="#ofrecemos">Qué ofrecemos</a>
+  <a href="/financiacion/">Medios de pago</a>
+  <a href="#testimonios">Testimonios</a>
+      <a href="#faq">FAQ</a>
+  <a href="#contacto">Contacto</a>
   <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 </div>
 
@@ -329,44 +325,104 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       <h2 class="h2">¿Qué rincón de Asia<br><em>te llama?</em></h2>
     </div>
     <div class="dest-grid rv">
-      <a class="dest-card" href="/asia/tailandia/">
-        <div class="bg" style="background-image:url('https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Templo Wat Arun en Bangkok, Tailandia"></div>
-        <div class="grad"></div>
-        <div class="info">
-          <span class="tag">Sudeste Asiático</span>
-          <h3>Tailandia</h3>
-          <p>Templos dorados, playas de agua turquesa, gastronomía explosiva y una cultura que te absorbe. Bangkok, Chiang Mai, Phuket o Koh Samui.</p>
-          <span class="cta">Ver todo sobre Tailandia <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
-        </div>
-      </a>
       <a class="dest-card" href="/asia/japon/">
-        <div class="bg" style="background-image:url('https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Torii gates de Fushimi Inari, Japón"></div>
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Torii gates de Fushimi Inari, Japón" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
-          <span class="tag">Asia Oriental</span>
+          <span class="tag">Asia Oriental ★</span>
           <h3>Japón</h3>
-          <p>Tradición milenaria y tecnología de vanguardia en una sola experiencia. Tokio, Kioto, Osaka, Nara. El destino que más sorprende a quien viaja por primera vez.</p>
+          <p>Tokio, Kioto, Osaka. Tradición milenaria y tecnología de vanguardia en un solo destino. El favorito de quienes viajan a Asia por primera vez.</p>
           <span class="cta">Ver todo sobre Japón <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="/asia/dubai/">
-        <div class="bg" style="background-image:url('https://images.pexels.com/photos/162031/dubai-tower-arab-khalifa-162031.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Skyline de Dubái con el Burj Khalifa"></div>
+      <a class="dest-card" href="/asia/tailandia/">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Templo Wat Arun en Bangkok, Tailandia" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
-          <span class="tag">Oriente Medio</span>
-          <h3>Dubái y Emiratos</h3>
-          <p>Lujo, arquitectura futurista y desiertos dorados. Dubái es una escala que muchos convierten en destino, y los Emiratos Árabes tienen mucho más para descubrir.</p>
-          <span class="cta">Ver todo sobre Dubái <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <span class="tag">Sudeste Asiático ★</span>
+          <h3>Tailandia</h3>
+          <p>Templos dorados, playas de agua turquesa, gastronomía explosiva. Bangkok, Chiang Mai, Phuket, Koh Samui.</p>
+          <span class="cta">Ver todo sobre Tailandia <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="dest-card" href="/asia/maldivas/">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=900');background-position:center 60%" role="img" aria-label="Bungalows sobre el agua en las Maldivas" loading="lazy"></div>
+        <div class="grad"></div>
+        <div class="info">
+          <span class="tag">Océano Índico</span>
+          <h3>Maldivas</h3>
+          <p>El destino luna de miel por excelencia. Overwater bungalows, arrecifes de coral, aguas cristalinas y resorts de lujo en el centro del Índico.</p>
+          <span class="cta">Ver todo sobre Maldivas <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
       <a class="dest-card" href="/asia/vietnam/">
-        <div class="bg" style="background-image:url('https://images.pexels.com/photos/2513925/pexels-photo-2513925.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Bahía de Ha Long, Vietnam"></div>
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/2513925/pexels-photo-2513925.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Bahía de Ha Long, Vietnam" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
           <span class="tag">Sudeste Asiático</span>
           <h3>Vietnam</h3>
-          <p>La Bahía de Ha Long, los arrozales de Sapa, Hoi An con sus linternas y la energía de Hanói y Ho Chi Minh. Un país que sorprende en cada etapa del recorrido.</p>
+          <p>Bahía de Ha Long, Hoi An, Hanói, Ho Chi Minh. Un país de norte a sur con historia, gastronomía y naturaleza a precio muy accesible.</p>
           <span class="cta">Ver todo sobre Vietnam <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="dest-card" href="/asia/china/">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/1141853/pexels-photo-1141853.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Gran Muralla China al atardecer" loading="lazy"></div>
+        <div class="grad"></div>
+        <div class="info">
+          <span class="tag">Asia Oriental</span>
+          <h3>China</h3>
+          <p>La Gran Muralla, la Ciudad Prohibida de Beijing, el moderno Shanghái y el Ejército de Terracota. Historia milenaria y contrastes únicos.</p>
+          <span class="cta">Ver todo sobre China <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="dest-card" href="/asia/india/">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/1603650/pexels-photo-1603650.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Taj Mahal al amanecer, Agra, India" loading="lazy"></div>
+        <div class="grad"></div>
+        <div class="info">
+          <span class="tag">Asia del Sur</span>
+          <h3>India</h3>
+          <p>El Taj Mahal, los palacios de Rajastán, el caos sagrado de Varanasi y el Triángulo Dorado. Un destino de color, espiritualidad y cultura intensa.</p>
+          <span class="cta">Ver todo sobre India <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="dest-card" href="/asia/singapur/">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/777059/pexels-photo-777059.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Gardens by the Bay en Singapur de noche" loading="lazy"></div>
+        <div class="grad"></div>
+        <div class="info">
+          <span class="tag">Sudeste Asiático</span>
+          <h3>Singapur</h3>
+          <p>La ciudad-estado más moderna del mundo. Limpia, eficiente, multicultural y el mejor hub de Asia para combinar con otros destinos del sudeste.</p>
+          <span class="cta">Ver todo sobre Singapur <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="dest-card" href="/asia/corea/">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/373290/pexels-photo-373290.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Seúl, Corea del Sur al atardecer" loading="lazy"></div>
+        <div class="grad"></div>
+        <div class="info">
+          <span class="tag">Asia Oriental</span>
+          <h3>Corea del Sur</h3>
+          <p>Seúl: tecnología, K-pop, palacetes Joseon, gastronomía de vanguardia y una energía urbana única. El destino asiático que más creció en popularidad.</p>
+          <span class="cta">Ver todo sobre Corea del Sur <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="dest-card" href="/asia/filipinas/">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/1430677/pexels-photo-1430677.jpeg?auto=compress&cs=tinysrgb&w=900');background-position:center 60%" role="img" aria-label="Playas e islas paradisíacas de Filipinas" loading="lazy"></div>
+        <div class="grad"></div>
+        <div class="info">
+          <span class="tag">Sudeste Asiático</span>
+          <h3>Filipinas</h3>
+          <p>Más de 7.600 islas, playas entre las mejores del mundo, arrecifes de coral para bucear y una hospitalidad que te hace sentir como en casa.</p>
+          <span class="cta">Ver todo sobre Filipinas <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="dest-card" href="/asia/malasia/">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/1388030/pexels-photo-1388030.jpeg?auto=compress&cs=tinysrgb&w=900');background-position:center 50%" role="img" aria-label="Torres Petronas y Kuala Lumpur, Malasia" loading="lazy"></div>
+        <div class="grad"></div>
+        <div class="info">
+          <span class="tag">Sudeste Asiático</span>
+          <h3>Malasia</h3>
+          <p>Kuala Lumpur, las Torres Petronas, la jungla de Borneo y las playas de Langkawi. Malasia sorprende por la mezcla de modernidad, naturaleza y diversidad cultural.</p>
+          <span class="cta">Ver todo sobre Malasia <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
     </div>
@@ -397,6 +453,49 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 </section>
 
 <!-- 6. FAQ -->
+<section class="sec px" id="guia" style="background:rgba(14,35,45,.02)">
+  <div class="mx">
+    <div class="rv" style="margin-bottom:48px;max-width:680px">
+      <p class="kicker">Guía de viaje</p>
+      <h2 class="h2">Lo que tenés que saber <em>antes de viajar a Asia.</em></h2>
+    </div>
+    <div class="guia-grid rv">
+      <div class="guia-item">
+        <h3>¿Por cuánto tiempo conviene planificar un viaje a Asia?</h3>
+        <p>Asia no se visita en una semana. Dado el largo del vuelo (más de 20 horas desde Buenos Aires), tiene sentido quedarse al menos <strong>15 a 21 días</strong>. Lo ideal es elegir 1 o 2 países y profundizar: un Japón completo en 14 días, un Sudeste Asiático (Tailandia + Vietnam) en 18-21 días, o un Dubai + Maldivas en 10 días de luna de miel. El error clásico es querer cubrir 5 países en 2 semanas: se pierde todo el ritmo y el placer del viaje.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Qué visas necesito para viajar a Asia?</h3>
+        <p>Varía por país. <strong>Dubai (EAU)</strong>: ingreso sin visa para argentinos (30 días). <strong>Japón</strong>: visa en el consulado japonés en Buenos Aires (gratuita, 10-15 días hábiles). <strong>Tailandia</strong>: no requiere visa para estadías hasta 30 días. <strong>Vietnam</strong>: e-visa online por el sitio oficial del gobierno vietnamita. <strong>Maldivas</strong>: visa de turista al llegar. <strong>India</strong>: e-visa online. <strong>China</strong>: visa en consulado. Siempre verificar con anticipación antes del viaje.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Cuál es la mejor época del año para viajar a Asia?</h3>
+        <p>Asia no tiene una sola estación: la geografía es enorme y los climas varían radicalmente. Para <strong>Japón</strong>, los cerezos (marzo-abril) y el otoño (octubre-noviembre) son los picos. Para <strong>Tailandia</strong>, la temporada seca es de noviembre a abril. Para <strong>Vietnam</strong>, el norte es mejor de octubre a abril. Para <strong>India</strong>, de octubre a marzo. Para <strong>Dubai</strong>, de octubre a abril. Contactanos con las fechas y te recomendamos el destino ideal para esa época.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Qué tan seguro es viajar a Asia?</h3>
+        <p>Asia es, en general, muy segura para el turista occidental. <strong>Japón, Singapur y los EAU</strong> tienen índices de criminalidad extremadamente bajos. <strong>Tailandia y Vietnam</strong> son destinos con millones de turistas anuales y una infraestructura turística muy desarrollada. La precaución aplica para los mismos factores de cualquier viaje: atención a las pertenencias en lugares concurridos y verificar alertas vigentes antes de viajar.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Se puede combinar más de un país asiático en un mismo viaje?</h3>
+        <p>Sí, y es una práctica muy común. Los circuitos más populares: <strong>Dubai + Maldivas</strong> (ideal de luna de miel, 10-14 días), <strong>Tailandia + Vietnam</strong> (naturaleza y cultura, 18-21 días), <strong>Singapur + Bali</strong> (ciudad + naturaleza), <strong>Japón + Corea</strong> (dos culturas de alto contraste en el mismo destino). Lo que hay que tener en cuenta: las distancias dentro de Asia son enormes y muchos vuelos entre países asiáticos son de varias horas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec px" id="testimonios">
+  <div class="mx">
+    <div class="rv" style="margin-bottom:40px;max-width:640px">
+      <p class="kicker">Lo que dicen nuestros viajeros</p>
+      <h2 class="h2" style="font-size:36px">Experiencias <em>reales con Legend.</em></h2>
+    </div>
+    <div class="testi-inner rv">
+      <p>"Tailandia fue nuestra primera experiencia en Asia con Legend. A partir de ahí no paramos: Vietnam, Japón, Maldivas... cada viaje superó al anterior."</p>
+      <cite>&#8212; Marcela y Diego, desde 2022</cite>
+    </div>
+  </div>
+</section>
 <section class="sec px" id="faq">
   <div class="faqwrap">
     <div class="center-head rv" style="margin-bottom:48px">
@@ -493,8 +592,9 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
         <a href="#ofrecemos">Qué ofrecemos</a>
         <a href="#por-que">Por qué Legend</a>
         <a href="#destinos">Destinos</a>
-        <a href="#financiacion">Medios de pago</a>
-        <a href="#faq">FAQ</a>
+        <a href="/financiacion/">Medios de pago</a>
+        <a href="#testimonios">Testimonios</a>
+      <a href="#faq">FAQ</a>
         <a href="#contacto">Contacto</a>
       </div>
       <div>

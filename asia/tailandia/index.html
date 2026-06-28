@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Viajes a Tailandia desde Argentina | Legend Travel</title>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PMHNZSSJ');</script>
 <meta name="description" content="Paquetes a Tailandia desde Argentina. Bangkok, Phuket, Krabi, Chiang Mai. Templos, playas y gastronomía del sudeste asiático a medida. Más de 35 años de experiencia.">
 <link rel="canonical" href="https://www.legendtravel.com.ar/asia/tailandia">
 <meta property="og:title" content="Viajes a Tailandia desde Argentina | Legend Travel">
@@ -30,13 +31,13 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 .liquid-glass{background:rgba(0,0,0,0.4);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border:none;box-shadow:inset 0 1px 1px rgba(255,255,255,0.1);position:relative;overflow:hidden}
 .liquid-glass::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1.4px;background:linear-gradient(180deg,rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.1) 20%,rgba(255,255,255,0) 40%,rgba(255,255,255,0) 60%,rgba(255,255,255,0.1) 80%,rgba(255,255,255,0.3) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
 .navwrap{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:24px;display:flex;justify-content:center}
-.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:center}
+.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .navlinks{display:none;align-items:center;gap:26px}
-@media(min-width:900px){.navlinks{display:flex}}
+@media(min-width:1100px){.navlinks{display:flex}}
 .navlinks a{font-size:17px;color:var(--white);transition:color .3s;white-space:nowrap}
 .navlinks a:hover{color:var(--red3)}
 .navtoggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;color:var(--white)}
-@media(min-width:900px){.navtoggle{display:none}}
+@media(min-width:1100px){.navtoggle{display:none}}
 .navlinks-mobile{position:fixed;inset:0;z-index:60;background:rgba(14,35,45,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
 .navlinks-mobile.open{opacity:1;pointer-events:auto}
 .navlinks-mobile a{font-size:20px;color:var(--white);padding:14px 0}
@@ -165,22 +166,20 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 </style>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMHNZSSJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="navwrap px">
   <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
-    <a href="/" style="display:flex;align-items:center;flex:none;margin-right:auto"><img src="/logo-wordmark.png" alt="Legend Travel" style="height:26px;width:auto;filter:brightness(0) invert(1)"></a>
+    <a href="/" style="display:flex;align-items:center;flex:none"><img src="/logo-wordmark.png" alt="Legend Travel" loading="lazy" style="height:26px;width:auto;filter:brightness(0) invert(1)"></a>
     <nav class="navlinks">
-      <a href="/#destinos">Destinos</a>
-      <a href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">Paquetes</a>
-      <a href="/#diferenciales">Por qué Legend</a>
-      <a href="/#historia">Nuestra historia</a>
-      <a href="/#equipo">El equipo</a>
-      <a href="/#testimonios">Testimonios</a>
-      <a href="/#financiacion">Medios de pago</a>
-      <a href="/#guias">Guías y consejos</a>
-      <a href="/#faq">FAQ</a>
-      <a href="/#contacto">Contacto</a>
-      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+      <a href="#por-que">Por qué Legend</a>
+      <a href="#ofrecemos">Qué ofrecemos</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#guia">Gu&#237;a de viaje</a>
+      <a href="#incluye">Qué incluye</a>
+      <a href="/financiacion/">Medios de pago</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto">Contacto</a>
     </nav>
     <button class="navtoggle" id="navToggleBtn" aria-label="Abrir menú">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -192,16 +191,14 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   <button class="navclose" id="navCloseBtn" aria-label="Cerrar menú">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
   </button>
-  <a href="/#destinos">Destinos</a>
-  <a href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">Paquetes</a>
-  <a href="/#diferenciales">Por qué Legend</a>
-  <a href="/#historia">Nuestra historia</a>
-  <a href="/#equipo">El equipo</a>
-  <a href="/#testimonios">Testimonios</a>
-  <a href="/#financiacion">Medios de pago</a>
-  <a href="/#guias">Guías y consejos</a>
-  <a href="/#faq">FAQ</a>
-  <a href="/#contacto">Contacto</a>
+  <a href="#por-que">Por qué Legend</a>
+  <a href="#ofrecemos">Qué ofrecemos</a>
+  <a href="#testimonios">Testimonios</a>
+      <a href="#guia">Gu&#237;a de viaje</a>
+      <a href="#incluye">Qué incluye</a>
+  <a href="/financiacion/">Medios de pago</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contacto">Contacto</a>
   <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 </div>
 
@@ -355,6 +352,37 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   </div>
 </section>
 
+<section class="sec px" id="guia" style="background:rgba(14,35,45,.02)">
+  <div class="mx">
+    <div class="rv" style="margin-bottom:48px;max-width:680px">
+      <p class="kicker">Guía de viaje</p>
+      <h2 class="h2">Lo que tenés que saber <em>antes de ir a Tailandia.</em></h2>
+    </div>
+    <div class="guia-grid rv">
+      <div class="guia-item">
+        <h3>¿Los argentinos necesitan visa para Tailandia?</h3>
+        <p>No. Tailandia tiene un acuerdo de exención de visa con Argentina para estadías de hasta <strong>30 días</strong> (ampliable a 60 días en algunos casos). Solo se necesita pasaporte vigente, boleto de regreso y suficiente dinero para la estadía. El ingreso por el aeropuerto de Bangkok (Suvarnabhumi, BKK) es rápido y sin inconvenientes para los argentinos. Para estadías más largas existe el visa on arrival o el tourist visa gestionado en el consulado tailandés.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Bangkok, el norte o las islas: cómo organizar el viaje?</h3>
+        <p>Tailandia tiene tres zonas bien diferenciadas para combinar. <strong>Bangkok</strong> (2-3 días): el Gran Palacio, el Templo del Buda Esmeralda, los canales de Thonburi y la vida nocturna más vibrante de Asia. <strong>Norte</strong> (Chiang Mai, 2-3 días): los templos de montaña, los santuarios de elefantes éticos y la gastronomía del norte. <strong>Las islas del sur</strong>: Koh Samui (más desarrollada), Koh Phangan (full moon party, playas), Koh Tao (el mejor buceo de Asia del Sudeste en precio/calidad), Koh Phi Phi, Krabi. Para un primer viaje de 14 días: Bangkok + Chiang Mai + 2 islas del sur.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Cuál es la mejor época para Tailandia?</h3>
+        <p>La <strong>temporada seca</strong> (noviembre a abril) es la ideal: cielos despejados, mar calmado y temperatura de 28-34°C. <strong>Noviembre a febrero</strong> son los meses perfectos: menos calor y poca lluvia. <strong>Marzo y abril</strong> son los más calurosos (hasta 40°C). La <strong>temporada de lluvias</strong> (mayo a octubre) tiene tormentas cortas e intensas que refrescan; las islas del golfo de Tailandia (Koh Samui, Koh Phangan) tienen su temporada de lluvias desplazada a octubre-diciembre, lo que las hace visitables en el monzón del Golfo.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Es necesario cuidarse con la comida callejera?</h3>
+        <p>La comida callejera tailandesa es parte fundamental de la experiencia y, en general, es completamente segura si seguís algunos criterios: elegí puestos con mucha concurrencia local (señal de frescura), preferí comida cocinada al momento, evitá ensaladas crudas en los primeros días hasta que el estómago se acostumbre. El <strong>pad thai</strong>, el som tum (ensalada de papaya verde), los satays y el mango sticky rice son seguros y extraordinariamente ricos. Agua: siempre embotellada, nunca del grifo.</p>
+      </div>
+      <div class="guia-item">
+        <h3>¿Cómo moverse dentro de Tailandia?</h3>
+        <p>Para las distancias largas (Bangkok-Chiang Mai, Bangkok-islas del sur), los <strong>vuelos internos</strong> son económicos y ahorran muchísimo tiempo (AirAsia, Thai Lion Air, Nok Air). Los <strong>trenes nocturnos</strong> entre Bangkok y Chiang Mai son una experiencia en sí misma y muy económicos. En las ciudades, los <strong>tuktuk</strong> y el Grab (el Uber de Asia) son las formas más cómodas. En las islas, los long-tail boats conectan las playas más alejadas. La moneda es el <strong>baht tailandés</strong>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="fin px" id="financiacion">
   <div class="mx">
     <div class="rv">
@@ -377,7 +405,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   </div>
 </section>
 
-<section class="sec px">
+<section class="sec px" id="testimonios">
   <div class="mx">
     <div class="rv" style="margin-bottom:40px;max-width:640px">
       <p class="kicker">Lo que dicen nuestros viajeros</p>
@@ -456,8 +484,10 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       <div>
         <h4>Esta página</h4>
         <a href="#destino">El destino</a>
-        <a href="#incluye">Qué incluye</a>
-        <a href="#financiacion">Medios de pago</a>
+        <a href="#testimonios">Testimonios</a>
+      <a href="#guia">Gu&#237;a de viaje</a>
+      <a href="#incluye">Qué incluye</a>
+        <a href="/financiacion/">Medios de pago</a>
         <a href="#faq">FAQ</a>
         <a href="#contacto">Contacto</a>
       </div>

@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Viajes por Argentina | Legend Travel</title>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PMHNZSSJ');</script>
 <meta name="description" content="Viajes por Argentina con Legend Travel. Patagonia, Bariloche, El Calafate, Ushuaia, Salta, Iguazú, Mendoza y más. Viajes a medida de norte a sur. Más de 35 años de experiencia. Consultá por WhatsApp.">
 <link rel="canonical" href="https://www.legendtravel.com.ar/argentina">
 <meta property="og:title" content="Viajes por Argentina | Legend Travel">
@@ -36,13 +37,13 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 
 /* NAV */
 .navwrap{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:24px;display:flex;justify-content:center}
-.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:center}
+.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .navlinks{display:none;align-items:center;gap:26px}
-@media(min-width:900px){.navlinks{display:flex}}
+@media(min-width:1100px){.navlinks{display:flex}}
 .navlinks a{font-size:17px;color:var(--white);transition:color .3s;white-space:nowrap}
 .navlinks a:hover{color:var(--red3)}
 .navtoggle{display:flex;align-items:center;justify-content:center;width:32px;height:32px;color:var(--white)}
-@media(min-width:900px){.navtoggle{display:none}}
+@media(min-width:1100px){.navtoggle{display:none}}
 .navlinks-mobile{position:fixed;inset:0;z-index:60;background:rgba(14,35,45,.97);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
 .navlinks-mobile.open{opacity:1;pointer-events:auto}
 .navlinks-mobile a{font-size:20px;color:var(--white);padding:14px 0}
@@ -127,6 +128,8 @@ section{background:var(--white)}
 .dest-card p{font-size:13px;color:rgba(255,255,255,.75);line-height:1.55}
 .dest-card .ideal{display:inline-block;margin-top:10px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.6)}
 .dest-card .ideal span{color:var(--red3)}
+.dest-card .cta{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--white);margin-top:14px;opacity:0;max-height:0;overflow:hidden;transition:opacity .3s,max-height .3s}
+.dest-card:hover .cta{opacity:1;max-height:32px}
 
 /* GUÍA */
 .guia-grid{display:grid;grid-template-columns:1fr;gap:28px;max-width:780px}
@@ -206,26 +209,24 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   html{scroll-behavior:auto}
   .rv,.fade{opacity:1!important;transform:none!important}
 }
-</style>
+.testi-inner{max-width:720px;margin:0 auto;background:rgba(14,35,45,.02);border-radius:20px;padding:48px;border-left:4px solid var(--red)}.testi-inner p{font-size:18px;line-height:1.8;color:rgba(14,35,45,.82);font-style:italic}.testi-inner cite{display:block;margin-top:20px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--red);font-style:normal}</style>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMHNZSSJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- NAV -->
 <div class="navwrap px">
   <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
-    <a href="/" style="display:flex;align-items:center;flex:none;margin-right:auto"><img src="/logo-wordmark.png" alt="Legend Travel" style="height:26px;width:auto;filter:brightness(0) invert(1)"></a>
+    <a href="/" style="display:flex;align-items:center;flex:none"><img src="/logo-wordmark.png" alt="Legend Travel" loading="lazy" style="height:26px;width:auto;filter:brightness(0) invert(1)"></a>
     <nav class="navlinks">
-      <a href="/#destinos">Destinos</a>
-      <a href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">Paquetes</a>
-      <a href="/#diferenciales">Por qué Legend</a>
-      <a href="/#historia">Nuestra historia</a>
-      <a href="/#equipo">El equipo</a>
-      <a href="/#testimonios">Testimonios</a>
-      <a href="/#financiacion">Medios de pago</a>
-      <a href="/#guias">Guías y consejos</a>
-      <a href="/#faq">FAQ</a>
-      <a href="/#contacto">Contacto</a>
-      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+      <a href="#destinos">Destinos</a>
+      <a href="#por-que">Por qué Legend</a>
+      <a href="#ofrecemos">Qué ofrecemos</a>
+      <a href="#guia">Guía de viaje</a>
+      <a href="/financiacion/">Medios de pago</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto">Contacto</a>
     </nav>
     <button class="navtoggle" id="navToggleBtn" aria-label="Abrir menú">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -237,16 +238,14 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   <button class="navclose" id="navCloseBtn" aria-label="Cerrar menú">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
   </button>
-  <a href="/#destinos">Destinos</a>
-  <a href="https://www.legendtravel.com.ar/buscarxpaquetes" target="_blank" rel="noopener noreferrer">Paquetes</a>
-  <a href="/#diferenciales">Por qué Legend</a>
-  <a href="/#historia">Nuestra historia</a>
-  <a href="/#equipo">El equipo</a>
-  <a href="/#testimonios">Testimonios</a>
-  <a href="/#financiacion">Medios de pago</a>
-  <a href="/#guias">Guías y consejos</a>
-  <a href="/#faq">FAQ</a>
-  <a href="/#contacto">Contacto</a>
+  <a href="#destinos">Destinos</a>
+  <a href="#por-que">Por qué Legend</a>
+  <a href="#ofrecemos">Qué ofrecemos</a>
+  <a href="#guia">Guía de viaje</a>
+  <a href="/financiacion/">Medios de pago</a>
+  <a href="#testimonios">Testimonios</a>
+      <a href="#faq">FAQ</a>
+  <a href="#contacto">Contacto</a>
   <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 </div>
 
@@ -338,64 +337,64 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       <h2 class="h2">¿A qué rincón de Argentina<br><em>querés ir?</em></h2>
     </div>
     <div class="dest-grid rv">
-      <a class="dest-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20Bariloche" target="_blank" rel="noopener noreferrer">
+      <a class="dest-card" href="/argentina/bariloche/index.html">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/7785553/pexels-photo-7785553.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Valles y montañas de la Patagonia argentina" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
           <span class="tag">Río Negro</span>
           <h3>Bariloche</h3>
           <p>Lagos, montañas y bosques de arrayanes. El destino patagónico más accesible y completo: esquí en invierno, trekking y kayak en verano, y chocolate durante todo el año.</p>
-          <p class="ideal">Ideal para → <span>Familias y parejas</span></p>
+          <span class="cta">Ver todo sobre Bariloche <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20El%20Calafate" target="_blank" rel="noopener noreferrer">
+      <a class="dest-card" href="/argentina/el-calafate/index.html">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/4057646/pexels-photo-4057646.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Paisaje de montañas y río en El Calafate, Patagonia" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
           <span class="tag">Santa Cruz</span>
           <h3>El Calafate y El Chaltén</h3>
           <p>El Perito Moreno y el Fitz Roy: los dos iconos más impresionantes de la Patagonia argentina. Un destino que no defrauda y que queda grabado para siempre. Se va de octubre a abril.</p>
-          <p class="ideal">Ideal para → <span>Naturaleza y aventura</span></p>
+          <span class="cta">Ver todo sobre El Calafate <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20Ushuaia" target="_blank" rel="noopener noreferrer">
+      <a class="dest-card" href="/argentina/ushuaia/index.html">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/16232828/pexels-photo-16232828.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Lagos y montañas en Ushuaia, Tierra del Fuego" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
           <span class="tag">Tierra del Fuego</span>
           <h3>Ushuaia</h3>
           <p>La ciudad más austral del mundo. El Canal de Beagle, el Parque Nacional Tierra del Fuego y la sensación de estar en el fin del mundo. Un destino que impresiona en cualquier estación.</p>
-          <p class="ideal">Ideal para → <span>Experiencia única</span></p>
+          <span class="cta">Ver todo sobre Ushuaia <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20Salta%20o%20Jujuy" target="_blank" rel="noopener noreferrer">
+      <a class="dest-card" href="/argentina/salta-jujuy/index.html">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/13430664/pexels-photo-13430664.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Casas coloridas y montañas en Purmamarca, Jujuy" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
           <span class="tag">Norte argentino</span>
           <h3>Salta y Jujuy</h3>
           <p>La Quebrada de Humahuaca, el Cerro de los Siete Colores, Tilcara y los valles calchaquíes. El norte argentino tiene una identidad visual única que no existe en ningún otro lugar del país.</p>
-          <p class="ideal">Ideal para → <span>Cultura y paisaje</span></p>
+          <span class="cta">Ver todo sobre Salta y Jujuy <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20las%20Cataratas%20del%20Igua%C3%BF%C3%BA" target="_blank" rel="noopener noreferrer">
+      <a class="dest-card" href="/argentina/cataratas-iguazu/index.html">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/623174/pexels-photo-623174.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Cataratas del Iguazú con vegetación selvática" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
           <span class="tag">Misiones</span>
           <h3>Cataratas del Iguazú</h3>
           <p>Una de las maravillas naturales del mundo. 275 cascadas que se extienden casi 3 km en medio de la selva misionera. El lado argentino tiene la Garganta del Diablo —la vista más impresionante.</p>
-          <p class="ideal">Ideal para → <span>Familias y primera vez</span></p>
+          <span class="cta">Ver todo sobre Cataratas del Iguazú <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20Mendoza" target="_blank" rel="noopener noreferrer">
+      <a class="dest-card" href="/argentina/mendoza/index.html">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/19046646/pexels-photo-19046646.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Viñedos con montañas al fondo en Mendoza, Argentina" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
           <span class="tag">Cuyo</span>
           <h3>Mendoza</h3>
           <p>La capital del vino argentino. Bodegas de clase mundial, gastronomía de primer nivel, rafting en el Mendoza y la travesía al Aconcagua para los más aventureros. Un destino que combina cultura, naturaleza y mesa.</p>
-          <p class="ideal">Ideal para → <span>Parejas y grupos</span></p>
+          <span class="cta">Ver todo sobre Mendoza <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
     </div>
@@ -454,6 +453,18 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 </section>
 
 <!-- 7. FAQ -->
+<section class="sec px" id="testimonios">
+  <div class="mx">
+    <div class="rv" style="margin-bottom:40px;max-width:640px">
+      <p class="kicker">Lo que dicen nuestros viajeros</p>
+      <h2 class="h2" style="font-size:36px">Experiencias <em>reales con Legend.</em></h2>
+    </div>
+    <div class="testi-inner rv">
+      <p>"Con Legend hicimos la vuelta a la Patagonia argentina: Bariloche, El Calafate y Ushuaia en 15 días. Todo perfectamente organizado y sin contratiempos."</p>
+      <cite>&#8212; Familia Gutiérrez, agosto 2024</cite>
+    </div>
+  </div>
+</section>
 <section class="sec px" id="faq">
   <div class="faqwrap">
     <div style="text-align:center;max-width:672px;margin:0 auto 48px" class="rv">
@@ -555,8 +566,9 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
         <a href="#por-que">Por qué Legend</a>
         <a href="#destinos">Destinos</a>
         <a href="#guia">Guía experta</a>
-        <a href="#financiacion">Medios de pago</a>
-        <a href="#faq">FAQ</a>
+        <a href="/financiacion/">Medios de pago</a>
+        <a href="#testimonios">Testimonios</a>
+      <a href="#faq">FAQ</a>
         <a href="#contacto">Contacto</a>
       </div>
       <div>
