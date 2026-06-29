@@ -91,7 +91,7 @@ section{background:var(--white)}
 .sep{color:rgba(14,35,45,.3)}
 .dest-grid{display:grid;grid-template-columns:1fr;gap:20px}
 @media(min-width:640px){.dest-grid{grid-template-columns:1fr 1fr}}
-@media(min-width:1024px){.dest-grid{grid-template-columns:repeat(5,1fr)}}
+@media(min-width:1024px){.dest-grid{grid-template-columns:repeat(4,1fr)}.dest-grid .dest-card:nth-child(9){grid-column:2}.dest-grid .dest-card:nth-child(10){grid-column:3}}
 .dest-card{position:relative;border-radius:20px;overflow:hidden;display:block;cursor:pointer;aspect-ratio:3/4;text-decoration:none;color:white;box-shadow:0 8px 28px rgba(14,35,45,.12);transition:transform .4s,box-shadow .4s}
 .dest-card:hover{transform:translateY(-6px);box-shadow:0 20px 48px rgba(14,35,45,.2)}
 .dest-card .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .8s cubic-bezier(.165,.84,.44,1)}
