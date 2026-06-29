@@ -91,7 +91,7 @@ section{background:var(--white)}
 .sep{color:rgba(14,35,45,.3)}
 .dest-grid{display:grid;grid-template-columns:1fr;gap:20px}
 @media(min-width:640px){.dest-grid{grid-template-columns:1fr 1fr}}
-@media(min-width:1024px){.dest-grid{grid-template-columns:1fr 1fr 1fr 1fr}}
+@media(min-width:1024px){.dest-grid{grid-template-columns:repeat(5,1fr)}}
 .dest-card{position:relative;border-radius:20px;overflow:hidden;display:block;cursor:pointer;aspect-ratio:3/4;text-decoration:none;color:white;box-shadow:0 8px 28px rgba(14,35,45,.12);transition:transform .4s,box-shadow .4s}
 .dest-card:hover{transform:translateY(-6px);box-shadow:0 20px 48px rgba(14,35,45,.2)}
 .dest-card .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .8s cubic-bezier(.165,.84,.44,1)}
@@ -103,9 +103,6 @@ section{background:var(--white)}
 .dest-card p{font-size:13px;color:rgba(255,255,255,.75);line-height:1.5}
 .dest-card .cta{display:block;margin-top:10px;font-size:12px;font-weight:700;color:var(--red3);text-transform:uppercase;letter-spacing:.08em;max-height:0;overflow:hidden;opacity:0;transition:max-height .4s,opacity .4s}
 .dest-card:hover .cta{max-height:32px;opacity:1}
-.dest-card-rd{grid-column:1/-1}
-@media(min-width:640px){.dest-card-rd{grid-column:span 2}}
-@media(min-width:1024px){.dest-card-rd{grid-column:span 2;aspect-ratio:2/1}}
 .vgrid{display:grid;grid-template-columns:1fr;gap:20px}
 @media(min-width:768px){.vgrid{grid-template-columns:1fr 1fr}}
 .vcard{height:100%;border-radius:16px;border:1px solid rgba(14,35,45,.1);background:rgba(14,35,45,.03);padding:32px;transition:transform .3s,border-color .3s,background .3s}
@@ -255,7 +252,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       <h2 class="h2">¿A qué parte<br>del Caribe <em>querés ir?</em></h2>
     </div>
     <div class="dest-grid rv">
-      <a class="dest-card dest-card-rd" href="/caribe/republica-dominicana/">
+      <a class="dest-card" href="/caribe/republica-dominicana/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1200');background-position:center 40%"></div>
         <div class="overlay"></div>
         <div class="content">
