@@ -80,7 +80,7 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 }
 
 .navwrap{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:24px;display:flex;justify-content:center}.navbar.liquid-glass{overflow:visible}
-.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:center}
+.navbar{border-radius:14px;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;width:100%;gap:32px}
 .brand{display:flex;align-items:center;gap:10px;color:var(--white)}
 .brand svg{width:32px;height:32px;flex:none}
 .brand span{font-size:24px;font-weight:600;letter-spacing:-.02em}
@@ -420,7 +420,16 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   html{scroll-behavior:auto}
   .rv,.fade,.hero h1 .ch{opacity:1!important;transform:none!important}
 }
-.testi-inner{max-width:720px;margin:0 auto;background:rgba(14,35,45,.02);border-radius:20px;padding:48px;border-left:4px solid var(--red)}.testi-inner p{font-size:18px;line-height:1.8;color:rgba(14,35,45,.82);font-style:italic}.testi-inner cite{display:block;margin-top:20px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--red);font-style:normal}</style>
+.testi-inner{max-width:720px;margin:0 auto;background:rgba(14,35,45,.02);border-radius:20px;padding:48px;border-left:4px solid var(--red)}.testi-inner p{font-size:18px;line-height:1.8;color:rgba(14,35,45,.82);font-style:italic}.testi-inner cite{display:block;margin-top:20px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--red);font-style:normal}
+/* NAV override */
+.navwrap{padding-top:12px}
+.navbar{padding:4px 20px;gap:36px;justify-content:flex-start}
+@media(min-width:900px){.navbar{width:auto}}
+.navlogo{display:flex;align-items:center;flex-shrink:0;text-decoration:none;margin-top:-10px;margin-bottom:-10px}
+.navlogo img{height:90px;width:auto;display:block;filter:brightness(0) invert(1)}
+.navlinks a{font-size:20px}
+.navtoggle{margin-left:auto}
+</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -430,19 +439,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="navwrap px">
   <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
+    <a href="./" class="navlogo" aria-label="Legend Travel">
+      <img src="logo-wordmark.png" alt="Legend Travel">
+    </a>
     <nav class="navlinks">
       <a href="#destinos">Destinos</a>
       <a href="#paquetes">Paquetes</a>
       <a href="#diferenciales">Por qu&#233; Legend</a>
-      <a href="#historia">Historia</a>
-      <a href="#equipo">El equipo</a>
-      <a href="#financiacion">Medios de pago</a>
       <a href="#guias">Gu&#237;as y consejos</a>
-      <a href="#faq">FAQ</a>
       <a href="#contacto">Contacto</a>
       <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar</a>
     </nav>
-    <button class="navtoggle" id="navToggleBtn" aria-label="Abrir menú">
+    <button class="navtoggle" id="navToggleBtn" aria-label="Abrir men&#250;">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
   </div>
@@ -455,11 +463,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a href="#destinos">Destinos</a>
   <a href="#paquetes">Paquetes</a>
   <a href="#diferenciales">Por qu&#233; Legend</a>
-  <a href="#historia">Historia</a>
-  <a href="#equipo">El equipo</a>
-  <a href="#financiacion">Medios de pago</a>
   <a href="#guias">Gu&#237;as y consejos</a>
-  <a href="#faq">FAQ</a>
   <a href="#contacto">Contacto</a>
   <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 </div>
@@ -1321,7 +1325,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   ]
 }
 </script>
-<script>(function(){var _b=document.querySelector('base'),_bp=_b?_b.getAttribute('href'):'/';if(window.location.pathname===_bp||window.location.pathname===_bp+'index.html'||window.location.pathname==='/')return;var _pp=window.location.pathname.replace(/\/$/,'').split('/').filter(function(p){return p;});var _par=_pp.length>1?'/'+_pp.slice(0,-1).join('/')+'/':'/';var _nlt=document.querySelector('.navlinks');if(_nlt){var _ba=document.createElement('a');_ba.href=_par;_ba.textContent=String.fromCharCode(8592);_nlt.insertBefore(_ba,_nlt.firstChild);var _bh=document.createElement('a');_bh.href=_bp;_bh.textContent='Home';_nlt.insertBefore(_bh,_ba.nextSibling);}var _mnt=document.getElementById('navMobile');if(_mnt){var _bam=document.createElement('a');_bam.href=_par;_bam.textContent=String.fromCharCode(8592);_mnt.insertBefore(_bam,_mnt.firstChild);var _bhm=document.createElement('a');_bhm.href=_bp;_bhm.textContent='Home';_mnt.insertBefore(_bhm,_bam.nextSibling);}var map=[['diferenciales','Por qué Legend'],['por-que','Por qué Legend'],['que-ver','Qué ver'],['ofrecemos','Qué ofrecemos'],['eventos','Eventos'],['cuando','Cuándo ir'],['epocas','Cuándo ir'],['rutas','Rutas'],['como-trabajamos','Cómo trabajamos'],['historia','Historia'],['equipo','El equipo'],['credenciales','Credenciales'],['local','Nuestro local'],['destino','El destino'],['destinos','Destinos'],['circuito','El circuito'],['regiones','Las regiones'],['islas','Las islas'],['que-hacer','Qué hacer'],['que-esperar','Qué esperar'],['experiencias','Experiencias'],['gps','Grandes Premios'],['grand-slams','Grand Slams'],['torneos','Torneos'],['la-experiencia','La experiencia'],['guia','Guía'],['testimonios','Testimonios'],['incluye','Incluye'],['que-incluye','Qué incluye'],['otros','Otros destinos'],['financiacion','Medios de pago'],['formas-de-pago','Formas de pago'],['sena','Cómo reservar'],['paquetes','Ver paquetes'],['faq','FAQ'],['contacto','Contacto']];var found=map.filter(function(s){return!!document.getElementById(s[0]);});if(!found.length)return;found.sort(function(a,b){var ea=document.getElementById(a[0]),eb=document.getElementById(b[0]);return ea.compareDocumentPosition(eb)&Node.DOCUMENT_POSITION_FOLLOWING?-1:1;});var removeH=['#destinos','#paquetes','#diferenciales','#historia','#equipo','#financiacion','#guias','#faq','#contacto','./','lunas-de-miel/','financiacion/','quienes-somos/','blog/'];var nl=document.querySelector('.navlinks');if(nl){Array.from(nl.querySelectorAll('a')).forEach(function(a){if(removeH.indexOf(a.getAttribute('href'))!==-1)a.parentNode.removeChild(a);});var paq=Array.from(nl.querySelectorAll('a')).find(function(a){return(a.getAttribute('href')||'').indexOf('buscarxpaquetes')!==-1;});var ref=paq||nl.querySelector('.btn-red');found.forEach(function(s){var a=document.createElement('a');a.href='#'+s[0];a.textContent=s[1];nl.insertBefore(a,ref);});if(paq)paq.parentNode.removeChild(paq);}var mn=document.getElementById('navMobile');if(mn){Array.from(mn.querySelectorAll('a')).forEach(function(a){if(removeH.indexOf(a.getAttribute('href'))!==-1)a.parentNode.removeChild(a);});var paqM=Array.from(mn.querySelectorAll('a')).find(function(a){return(a.getAttribute('href')||'').indexOf('buscarxpaquetes')!==-1;});var refM=paqM||mn.lastElementChild;found.forEach(function(s){var a=document.createElement('a');a.href='#'+s[0];a.textContent=s[1];mn.insertBefore(a,refM);});if(paqM)paqM.parentNode.removeChild(paqM);mn.addEventListener('click',function(e){if(e.target.tagName==='A'&&(e.target.getAttribute('href')||'').startsWith('#'))mn.classList.remove('open');});}})();</script>
+
 <script>(function(){document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href');if(!h||h.charAt(0)!=='#'||h.length<2)return;var t=document.getElementById(h.slice(1));if(!t)return;e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});var nm=document.getElementById('navMobile');if(nm)nm.classList.remove('open');});})();</script>
 </body>
 </html>
