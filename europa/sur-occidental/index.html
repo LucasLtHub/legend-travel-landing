@@ -48,7 +48,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 .navlinks a{font-size:20px}
 .navtoggle{margin-left:auto}
 </style>
-<script>(function(){var p=location.pathname;if(p.endsWith('/index.html')){location.replace(p.slice(0,-10));return;}if(p.slice(-1)!=='/')return location.replace(p+'/');document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('a[href]').forEach(function(a){var h=a.getAttribute('href');if(!h||/^(https?:|#|\/|tel:|mailto:)/.test(h))return;a.setAttribute('href',p+h);});});})()</script>
+<script>(function(){var p=location.pathname;if(p.endsWith('/index.html')){location.replace(p.slice(0,-10));return;}if(p.slice(-1)!=='/')return location.replace(p+'/');document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('a[href]').forEach(function(a){if(a.closest('#navcrumb'))return;var h=a.getAttribute('href');if(!h||/^(https?:|#|\/|tel:|mailto:)/.test(h))return;a.setAttribute('href',p+h);});});})()</script>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMHNZSSJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -101,8 +101,6 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
     </div>
   </div>
 </section>
-
-<div class="breadcrumb-bar px"><div class="mx"><a href="../../">Inicio</a><span class="sep">›</span><a href="../">Europa</a><span class="sep">›</span><span>Sur-Occidental</span></div></div>
 
 <section class="px" style="padding-top:72px;padding-bottom:72px;border-bottom:1px solid rgba(14,35,45,.08)">
   <div class="mx"><div class="rv" style="max-width:800px">

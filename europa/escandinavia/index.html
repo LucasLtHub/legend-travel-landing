@@ -90,7 +90,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 .navlinks a{font-size:20px}
 .navtoggle{margin-left:auto}
 </style>
-<script>(function(){var p=location.pathname;if(p.endsWith('/index.html')){location.replace(p.slice(0,-10));return;}if(p.slice(-1)!=='/')return location.replace(p+'/');document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('a[href]').forEach(function(a){var h=a.getAttribute('href');if(!h||/^(https?:|#|\/|tel:|mailto:)/.test(h))return;a.setAttribute('href',p+h);});});})()</script>
+<script>(function(){var p=location.pathname;if(p.endsWith('/index.html')){location.replace(p.slice(0,-10));return;}if(p.slice(-1)!=='/')return location.replace(p+'/');document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('a[href]').forEach(function(a){if(a.closest('#navcrumb'))return;var h=a.getAttribute('href');if(!h||/^(https?:|#|\/|tel:|mailto:)/.test(h))return;a.setAttribute('href',p+h);});});})()</script>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMHNZSSJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -150,16 +150,6 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 </section>
 
 <!-- BREADCRUMB -->
-<div class="breadcrumb-bar px">
-  <div class="mx">
-    <a href="../../">Inicio</a>
-    <span class="sep">›</span>
-    <a href="../">Europa</a>
-    <span class="sep">›</span>
-    <span>Escandinavia</span>
-  </div>
-</div>
-
 <!-- DESTINOS -->
 <section class="sec px" id="destinos">
   <div class="mx">
