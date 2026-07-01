@@ -38,14 +38,6 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 .waf{position:fixed;right:24px;bottom:24px;z-index:50;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 32px rgba(0,0,0,.3);transition:transform .3s}.waf:hover{transform:scale(1.1)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv,.fade{opacity:1!important;transform:none!important}}
 .testi-inner{max-width:720px;margin:0 auto;background:rgba(14,35,45,.02);border-radius:20px;padding:48px;border-left:4px solid var(--red)}.testi-inner p{font-size:18px;line-height:1.8;color:rgba(14,35,45,.82);font-style:italic}.testi-inner cite{display:block;margin-top:20px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--red);font-style:normal}
-/* REGIONES DROPDOWN */
-.nav-drop{position:relative;display:inline-flex;align-items:center}
-.nav-drop>button{display:inline-flex;align-items:center;gap:4px;font-size:20px;color:var(--white);cursor:pointer;background:none;border:0;font-family:inherit;padding:0;transition:color .3s;white-space:nowrap}
-.nav-drop:hover>button{color:var(--red3)}
-.drop-menu{position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%);background:rgba(14,35,45,.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:12px;padding:8px;min-width:200px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:100}
-.nav-drop:hover .drop-menu{opacity:1;pointer-events:auto}
-.drop-menu a{display:block;padding:9px 14px;color:rgba(255,255,255,.8);font-size:15px;font-weight:500;border-radius:8px;transition:background .15s,color .15s;white-space:nowrap}
-.drop-menu a:hover{background:rgba(255,255,255,.1);color:var(--red3)}
 /* NAV override */
 .navwrap{padding-top:12px}
 .navbar{padding:4px 20px;gap:36px;justify-content:flex-start}
@@ -69,16 +61,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
     </a>
     <nav class="navlinks">
       <a href="#por-que">Por qu&#233; Legend</a>
-      <div class="nav-drop">
-        <button>Regiones <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-top:1px"><path d="M6 9l6 6 6-6"/></svg></button>
-        <div class="drop-menu">
-          <a href="sur-occidental/">Sur-Occidental</a>
-          <a href="central/">Central</a>
-          <a href="del-este/">Del Este</a>
-          <a href="islas-britanicas/">Islas Brit&#225;nicas</a>
-          <a href="escandinavia/">Escandinavia</a>
-        </div>
-      </div>
+      <a href="#regiones">Regiones</a>
       <a href="#paquetes">Paquetes</a>
       <a href="#contacto">Contacto</a>
       <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar</a>
@@ -94,12 +77,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
   </button>
   <a href="#por-que">Por qu&#233; Legend</a>
-  <span style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.22em;color:rgba(255,255,255,.3);padding:4px 0">Regiones</span>
-  <a href="sur-occidental/" style="font-size:17px;padding:8px 0">Sur-Occidental</a>
-  <a href="central/" style="font-size:17px;padding:8px 0">Central</a>
-  <a href="del-este/" style="font-size:17px;padding:8px 0">Del Este</a>
-  <a href="islas-britanicas/" style="font-size:17px;padding:8px 0">Islas Brit&#225;nicas</a>
-  <a href="escandinavia/" style="font-size:17px;padding:8px 0">Escandinavia</a>
+  <a href="#regiones">Regiones</a>
   <a href="#paquetes">Paquetes</a>
   <a href="#contacto">Contacto</a>
   <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
