@@ -11,6 +11,10 @@
 <meta property="og:description" content="Europa en todas sus versiones: Roma, París, Barcelona, los fiordos de Noruega, los Alpes suizos, Praga. 24 destinos en 5 regiones. Legend Travel desde Argentina.">
 <meta property="og:url" content="https://www.legendtravel.com.ar/europa">
 <meta property="og:image" content="https://images.pexels.com/photos/1461974/pexels-photo-1461974.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -34,7 +38,20 @@
 .fin{background:var(--bur);color:var(--white);padding-top:80px;padding-bottom:80px}.fin .mx{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:40px}.fin .h2{color:var(--white)}.fin .h2 em{color:var(--red3)}.fin p.lead{margin-top:20px;max-width:520px;color:rgba(255,255,255,.8)}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.chip{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;border:1px solid rgba(255,255,255,.4);border-radius:100px;padding:6px 16px}.btn-white{display:inline-flex;align-items:center;gap:8px;background:var(--white);color:var(--bur);padding:14px 32px;border-radius:8px;font-weight:600;transition:background .3s,color .3s,transform .3s}.btn-white:hover{background:var(--red);color:var(--white);transform:translateY(-2px)}
 .faqwrap{max-width:768px;margin:0 auto}.faq{border-bottom:1px solid rgba(14,35,45,.1)}.faq:first-of-type{border-top:1px solid rgba(14,35,45,.1)}.faq button{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 4px;text-align:left;font-weight:700;font-size:16px;color:var(--black);transition:color .3s}@media(min-width:768px){.faq button{font-size:18px}}.faq button:hover{color:var(--red)}.faq .pm{width:32px;height:32px;border-radius:50%;border:1px solid rgba(14,35,45,.15);flex:none;display:flex;align-items:center;justify-content:center;transition:background .3s,border-color .3s,color .3s,transform .3s}.faq.open .pm{background:var(--red);border-color:var(--red);color:var(--white);transform:rotate(135deg)}.faq .pm svg .v{transition:opacity .2s}.faq.open .pm svg .v{opacity:0}.faq .ans{max-height:0;overflow:hidden;transition:max-height .4s ease}.faq .ans p{padding:0 4px 24px;font-size:15px;color:rgba(14,35,45,.6);max-width:640px;line-height:1.75}
 .contact{background:var(--bur);color:var(--white);text-align:center}.contact .h2{color:var(--white)}.contact .h2 em{color:var(--red3)}.contact .lead{color:rgba(255,255,255,.6);margin:24px auto 0;max-width:576px}.contact .bigbtn{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:var(--white);padding:16px 40px;border-radius:8px;font-size:18px;font-weight:500;margin-top:40px;transition:background .3s,transform .3s}.contact .bigbtn:hover{background:#7a0008;transform:translateY(-2px)}
-footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,255,255,.1);padding-top:64px;padding-bottom:32px}.fgrid{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:56px}@media(min-width:640px){.fgrid{grid-template-columns:1fr 1fr}}@media(min-width:1024px){.fgrid{grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr}}.fgrid h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.24em;color:var(--red3);margin-bottom:16px}.fgrid a,.fgrid p.t{display:block;font-size:14px;color:rgba(255,255,255,.6);margin-bottom:10px;width:fit-content;transition:color .25s}.fgrid a:hover{color:var(--white)}.fabout{font-size:14px;color:rgba(255,255,255,.55);margin-top:16px;max-width:300px;line-height:1.7}.fbot{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;color:rgba(255,255,255,.4)}.fbot .claim{color:rgba(255,255,255,.6)}
+footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,255,255,.1);padding-top:64px;padding-bottom:32px}
+.fsoc{display:flex;gap:10px;margin-top:16px;align-items:center}
+.fsoc a{color:rgba(255,255,255,.6);display:inline-flex;transition:color .2s,transform .2s}
+.fsoc a svg{width:22px;height:22px;display:block}
+.fsoc a:hover{color:#fff;transform:translateY(-2px)}
+.fgrid{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:56px}
+@media(min-width:640px){.fgrid{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.fgrid{grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr}.fdest{grid-column:span 2}}
+.fgrid h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.24em;color:var(--red3);margin-bottom:16px}.fgrid h4 a{display:inline;font-size:inherit;font-weight:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit;margin-bottom:0;width:auto}.fgrid h4 a:hover{color:var(--white)}
+.fgrid a,.fgrid p.t{display:block;font-size:14px;color:rgba(255,255,255,.6);margin-bottom:10px;width:fit-content;transition:color .25s}
+.fgrid a:hover{color:var(--white)}
+.fabout{font-size:14px;color:rgba(255,255,255,.55);margin-top:16px;max-width:320px;line-height:1.7}
+.fbot{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;color:rgba(255,255,255,.4)}
+.fbot .claim{color:rgba(255,255,255,.6)}
 .waf{position:fixed;right:24px;bottom:24px;z-index:50;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 32px rgba(0,0,0,.3);transition:transform .3s}.waf:hover{transform:scale(1.1)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv,.fade{opacity:1!important;transform:none!important}}
 .testi-inner{max-width:720px;margin:0 auto;background:rgba(14,35,45,.02);border-radius:20px;padding:48px;border-left:4px solid var(--red)}.testi-inner p{font-size:18px;line-height:1.8;color:rgba(14,35,45,.82);font-style:italic}.testi-inner cite{display:block;margin-top:20px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--red);font-style:normal}
@@ -56,15 +73,15 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 <!-- NAV -->
 <div class="navwrap px">
   <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
-    <a href="./" class="navlogo" aria-label="Legend Travel">
+    <a href="/" class="navlogo" aria-label="Legend Travel">
       <img src="logo-wordmark.png" alt="Legend Travel">
     </a>
     <nav class="navlinks">
-      <a href="#regiones">Regiones</a>
-      <a href="#por-que">Por qu&#233; Legend</a>
-      <a href="#paquetes">Paquetes</a>
+      <a href="#regiones">Las 5 regiones</a>
+      <a href="#por-que">Por qué con nosotros</a>
+      <a href="#paquetes">Paquetes disponibles</a>
       <a href="#contacto">Contacto</a>
-      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar</a>
+      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje%20a%20Europa" target="_blank" rel="noopener noreferrer">Consultar</a>
     </nav>
     <button class="navtoggle" id="navToggleBtn" aria-label="Abrir men&#250;">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -76,11 +93,11 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   <button class="navclose" id="navCloseBtn" aria-label="Cerrar men&#250;">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
   </button>
-  <a href="#regiones">Regiones</a>
-  <a href="#por-que">Por qu&#233; Legend</a>
-  <a href="#paquetes">Paquetes</a>
+  <a href="#regiones">Las 5 regiones</a>
+  <a href="#por-que">Por qué con nosotros</a>
+  <a href="#paquetes">Paquetes disponibles</a>
   <a href="#contacto">Contacto</a>
-  <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+  <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje%20a%20Europa" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 </div>
 
 <section class="hero">
@@ -125,7 +142,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       <p style="margin-top:16px;font-size:16px;color:rgba(14,35,45,.7)">Elegí la región que más te atrae o combiná dos o tres en un mismo viaje. Cada una tiene su carácter propio y sus temporadas ideales.</p>
     </div>
     <div class="dest-grid rv">
-      <a class="dest-card" href="sur-occidental/">
+      <a class="dest-card" href="/europa/sur-occidental/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/1582720/pexels-photo-1582720.jpeg?auto=compress&cs=tinysrgb&w=1400');background-position:center 55%"></div>
         <div class="ov"></div>
         <div class="dc">
@@ -135,7 +152,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <span class="cta-lnk">Explorar la región <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="central/">
+      <a class="dest-card" href="/europa/central/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/37120347/pexels-photo-37120347.jpeg?auto=compress&cs=tinysrgb&w=1000');background-position:center 40%"></div>
         <div class="ov"></div>
         <div class="dc">
@@ -145,7 +162,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <span class="cta-lnk">Explorar la región <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="del-este/">
+      <a class="dest-card" href="/europa/del-este/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/37921193/pexels-photo-37921193.jpeg?auto=compress&cs=tinysrgb&w=1000');background-position:center 50%"></div>
         <div class="ov"></div>
         <div class="dc">
@@ -155,7 +172,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <span class="cta-lnk">Explorar la región <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="islas-britanicas/">
+      <a class="dest-card" href="/europa/islas-britanicas/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/30624828/pexels-photo-30624828.jpeg?auto=compress&cs=tinysrgb&w=1000');background-position:center 45%"></div>
         <div class="ov"></div>
         <div class="dc">
@@ -165,7 +182,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <span class="cta-lnk">Explorar la región <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="escandinavia/">
+      <a class="dest-card" href="/europa/escandinavia/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/31291321/pexels-photo-31291321.jpeg?auto=compress&cs=tinysrgb&w=1000');background-position:center 40%"></div>
         <div class="ov"></div>
         <div class="dc">
@@ -180,37 +197,36 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 </section>
 
 <section class="sec px" id="por-que" style="background:rgba(14,35,45,.02)">
+<style>
+.pq-a-row{display:grid;grid-template-columns:1fr;padding:26px 0;border-top:1px solid rgba(14,35,45,.09)}
+@media(min-width:640px){.pq-a-row{padding:32px 0}}
+.pq-a-t{font-size:20px;font-weight:700;margin-bottom:8px;letter-spacing:-.01em;color:var(--black)}
+@media(min-width:640px){.pq-a-t{font-size:25px}}
+.pq-a-d{font-size:15px;color:var(--black);line-height:1.7}
+</style>
   <div class="mx">
     <div class="rv" style="margin-bottom:56px;max-width:640px">
       <p class="kicker">Por qué con nosotros</p>
       <h2 class="h2">Lo que hace diferente<br><em>viajar con Legend.</em></h2>
     </div>
-    <div class="vgrid rv">
-      <div class="vcard">
-        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Circuitos grupales y viajes a medida</h3>
-        <p>Tanto si querés sumarte a un grupo con guía en español como armar tu propio itinerario a medida, lo organizamos. Parejas, familias, grupos de amigos: cada formato tiene su versión ideal de Europa.</p>
-      </div>
-      <div class="vcard">
-        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-        <h3>ETIAS y documentación sin sorpresas</h3>
-        <p>Los argentinos no necesitan visa para el espacio Schengen, pero sí el ETIAS cuando esté en plena vigencia. Para el Reino Unido los requisitos son distintos. Nuestro equipo te asesora en cada caso para que no haya imprevistos.</p>
-      </div>
-      <div class="vcard">
-        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18M3 7c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/><path d="m8 12 2 2 4-4"/></svg></div>
-        <h3>Trenes europeos y logística</h3>
-        <p>Europa se recorre en tren. El Eurostar, el TGV, el Frecciarossa: sabemos qué pases conviene comprar, cuándo reservar con anticipación y cómo armar los traslados entre ciudades para que el viaje sea fluido sin improvisar.</p>
-      </div>
-      <div class="vcard">
-        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <h3>35+ años viajando a Europa</h3>
-        <p>Conocemos de primera mano los mejores hoteles en cada ciudad, las temporadas ideales para cada región y los errores más frecuentes del primer viaje europeo. Esa experiencia la ponemos al servicio de tu itinerario.</p>
-      </div>
+        <div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">Circuitos grupales y viajes a medida</h3><p class="pq-a-d">Tanto si querés sumarte a un grupo con guía en español como armar tu propio itinerario a medida, lo organizamos. Parejas, familias, grupos de amigos: cada formato tiene su versión ideal de Europa.</p></div>
+    </div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">ETIAS y documentación sin sorpresas</h3><p class="pq-a-d">Los argentinos no necesitan visa para el espacio Schengen, pero sí el ETIAS cuando esté en plena vigencia. Para el Reino Unido los requisitos son distintos. Nuestro equipo te asesora en cada caso para que no haya imprevistos.</p></div>
+    </div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">Trenes europeos y logística</h3><p class="pq-a-d">Europa se recorre en tren. El Eurostar, el TGV, el Frecciarossa: sabemos qué pases conviene comprar, cuándo reservar con anticipación y cómo armar los traslados entre ciudades para que el viaje sea fluido sin improvisar.</p></div>
+    </div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">35+ años viajando a Europa</h3><p class="pq-a-d">Conocemos de primera mano los mejores hoteles en cada ciudad, las temporadas ideales para cada región y los errores más frecuentes del primer viaje europeo. Esa experiencia la ponemos al servicio de tu itinerario.</p></div>
+    </div>
     </div>
   </div>
 </section>
 
-<section class="fin px">
+<section class="fin px" id="financiacion">
   <div class="mx">
     <div class="rv">
       <p class="kicker light">Pagá como querés</p>
@@ -336,50 +352,63 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   </div>
 </section>
 
-<footer class="px"><div class="mx">
-  <div class="fgrid">
-    <div>
-      <a href="../"><img src="logo-wordmark.png" alt="Legend Travel" loading="lazy" style="width:140px;height:auto;filter:brightness(0) invert(1)"></a>
-      <p class="fabout">Especialistas en viajes a Europa desde Argentina. Más de 35 años organizando el viaje de tu vida. Zona norte de Buenos Aires.</p>
+<footer class="px">
+  <div class="mx">
+    <div class="fgrid">
+      <div style="display:flex;align-items:center">
+        <a href="." class="brand">
+          <img src="logo-wordmark.png" alt="Legend Travel" class="brand-logo" style="width:360px;height:auto;filter:brightness(0) invert(1)">
+        </a>
+      </div>
+      <div class="fdest">
+        <h4><a href="./#destinos">Destinos</a></h4>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 24px">
+          <div>
+            <a href="caribe/">Caribe</a>
+            <a href="/europa/">Europa</a>
+            <a href="brasil/">Brasil</a>
+            <a href="usa/">USA</a>
+            <a href="cruceros/">Cruceros</a>
+            <a href="argentina/">Argentina</a>
+          </div>
+          <div>
+            <a href="asia/">Asia</a>
+            <a href="africa/">África</a>
+            <a href="oceania/">Oceanía</a>
+            <a href="latinoamerica/">Latinoamérica</a>
+            <a href="viajes-deportivos/">Viajes Deportivos</a>
+            <a href="lunas-de-miel/">Lunas de miel</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4><a href="./#diferenciales">La agencia</a></h4>
+        <a href="viajes-a-medida/">Viajes a medida</a><a href="./#diferenciales">Por qué Legend</a><a href="./#historia">Nuestra historia</a><a href="./#equipo">El equipo</a><a href="#testimonios">Testimonios</a><a href="#financiacion">Medios de pago</a><a href="./#guias">Guías y consejos</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a>
+      </div>
+      <div>
+        <h4><a href="#contacto">Contacto</a></h4>
+        <p class="t">Paraná 3745, Martínez<br>Buenos Aires</p>
+        <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20hacer%20una%20consulta">WhatsApp +54 9 11 2748-9446</a>
+        <a href="tel:+541147170344">Teléfono 11 4717-0344</a>
+        <div class="fsoc">
+          <a href="https://www.instagram.com/legendtraveloficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@legendtravel.ok" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-6.13 6.33 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.67a8.18 8.18 0 0 0 4.81 1.55V6.73a4.85 4.85 0 0 1-1.04-.04Z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/LegendTravelOficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
     </div>
-    <div>
-      <h4>Sur-Occidental</h4>
-      <a href="sur-occidental/">Ver región</a>
-      <a href="sur-occidental/espana/">España</a>
-      <a href="sur-occidental/italia/">Italia</a>
-      <a href="sur-occidental/francia/">Francia</a>
-      <a href="sur-occidental/portugal/">Portugal</a>
-      <a href="sur-occidental/grecia/">Grecia</a>
-    </div>
-    <div>
-      <h4>Central y del Este</h4>
-      <a href="central/">Europa Central</a>
-      <a href="central/alemania/">Alemania</a>
-      <a href="central/suiza/">Suiza</a>
-      <a href="central/croacia/">Croacia</a>
-      <a href="del-este/">Europa del Este</a>
-      <a href="del-este/republica-checa/">Rep. Checa</a>
-      <a href="del-este/austria/">Austria</a>
-      <a href="del-este/hungria/">Hungría</a>
-    </div>
-    <div>
-      <h4>Islas y Norte</h4>
-      <a href="islas-britanicas/">Islas Británicas</a>
-      <a href="islas-britanicas/inglaterra/">Inglaterra</a>
-      <a href="islas-britanicas/escocia/">Escocia</a>
-      <a href="escandinavia/">Escandinavia</a>
-      <a href="escandinavia/noruega/">Noruega</a>
-      <a href="escandinavia/islandia/">Islandia</a>
-    </div>
-    <div>
-      <h4>Contacto</h4>
-      <p class="t">Paraná 3745, Martínez, Bs. As.</p>
-      <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20Europa">WhatsApp +54 9 11 2748-9446</a>
-      <a href="tel:+541147170344">Teléfono 11 4717-0344</a>
+    <div class="fbot">
+      <span>© 2026 Legend Travel · Legajo 7553 — Ministerio de Turismo de la Nación · <a href="politica-de-privacidad/" style="color:inherit;opacity:.7">Privacidad</a> · <a href="terminos-y-condiciones/" style="color:inherit;opacity:.7">Términos</a></span>
+      <span class="claim">Tu viaje, tu historia.</span>
     </div>
   </div>
-  <div class="fbot"><span>© 2026 Legend Travel · Legajo 7553 — Ministerio de Turismo de la Nación</span><span class="claim">Tu viaje, tu historia.</span></div>
-</div></footer>
+</footer>
 
 <a class="waf" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje%20a%20Europa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg></a>
 
@@ -394,14 +423,15 @@ if(!(window.location.pathname===_bp||window.location.pathname===_bp+'index.html'
   var _segs=window.location.pathname.replace(_bp,'').replace(/\/index\.html$/,'/').replace(/\/$/,'').split('/').filter(Boolean);
   var _cn=(document.title||'').split(' | ')[0].replace(/ desde Argentina$/,'').replace(/ por Argentina$/,'').replace(/^Viajes (a los |a las |al |a la |a |por |de |en |)/,'').trim();
   if(!_cn)_cn=_sl(_segs[_segs.length-1]||'');
-  var _bci=[{t:'Inicio',h:'./'}];
+  var _bci=[{t:'Inicio',h:_bp}];
   for(var _i=0;_i<_segs.length-1;_i++){_bci.push({t:_sl(_segs[_i]),h:_segs.slice(0,_i+1).join('/')+'/'}); }
   _bci.push({t:_cn,h:null});
+  var _bst=document.createElement('style');_bst.textContent='#navcrumb a{color:rgba(255,255,255,.75);text-decoration:none;transition:color .2s;cursor:pointer}#navcrumb a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}';document.head.appendChild(_bst);
   var _bc=document.createElement('nav');_bc.id='navcrumb';_bc.setAttribute('aria-label','Ruta de navegaci\u00f3n');
-  _bc.style.cssText='position:fixed;left:0;right:0;z-index:48;padding:5px 48px;font-size:11px;font-family:inherit;letter-spacing:.02em';
-  var _bcH='';_bci.forEach(function(it,idx){if(idx>0)_bcH+='<span style="margin:0 5px;color:rgba(255,255,255,.35)">\u203a</span>';if(it.h){_bcH+='<a href="'+it.h+'" style="color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s">'+it.t+'</a>';}else{_bcH+='<span style="color:rgba(255,255,255,.85);font-weight:500">'+it.t+'</span>';}});
-  _bc.innerHTML=_bcH;document.body.appendChild(_bc);
-  var _nbPos=document.querySelector('.navbar');if(_nbPos){var _nrect=_nbPos.getBoundingClientRect();_bc.style.top=(_nrect.bottom+6)+'px';}
+  var _nw=document.querySelector('.navwrap');var _t=_nw?(_nw.getBoundingClientRect().bottom+4):96;
+  _bc.style.cssText='position:absolute;top:'+_t+'px;left:0;right:0;z-index:12;padding:9px 48px;font-size:20px;font-family:inherit;letter-spacing:.02em';
+  var _bcH='';_bci.forEach(function(it,idx){if(idx>0)_bcH+='<span style="margin:0 5px;color:rgba(255,255,255,.35)">\u203a</span>';if(it.h){_bcH+='<a href="'+it.h+'">'+it.t+'</a>';}else{_bcH+='<span style="color:rgba(255,255,255,.9);font-weight:600">'+it.t+'</span>';}});
+  _bc.innerHTML=_bcH;var _hEl=document.querySelector('.hero');if(_hEl){_hEl.insertBefore(_bc,_hEl.firstChild);}else{document.body.appendChild(_bc);}
   var _ldI=_bci.map(function(it,idx){var o={'@type':'ListItem','position':idx+1,'name':it.t};if(it.h){o.item=window.location.origin+_bp+(it.h==='./'?'':it.h);}else{o.item=window.location.href;}return o;});
   var _ldS=document.createElement('script');_ldS.type='application/ld+json';_ldS.textContent=JSON.stringify({'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':_ldI});document.head.appendChild(_ldS);
 }

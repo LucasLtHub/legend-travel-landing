@@ -13,6 +13,10 @@
 <meta property="og:url" content="https://www.legendtravel.com.ar/asia">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
@@ -193,10 +197,14 @@ section{background:var(--white)}
 .fsoc a svg{width:22px;height:22px;display:block}
 .fsoc a:hover{color:#fff;transform:translateY(-2px)}
 footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,255,255,.1);padding-top:64px;padding-bottom:32px}
+.fsoc{display:flex;gap:10px;margin-top:16px;align-items:center}
+.fsoc a{color:rgba(255,255,255,.6);display:inline-flex;transition:color .2s,transform .2s}
+.fsoc a svg{width:22px;height:22px;display:block}
+.fsoc a:hover{color:#fff;transform:translateY(-2px)}
 .fgrid{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:56px}
 @media(min-width:640px){.fgrid{grid-template-columns:1fr 1fr}}
-@media(min-width:1024px){.fgrid{grid-template-columns:1.4fr 1fr 1fr 1.2fr}}
-.fgrid h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.24em;color:var(--red3);margin-bottom:16px}
+@media(min-width:1024px){.fgrid{grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr}.fdest{grid-column:span 2}}
+.fgrid h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.24em;color:var(--red3);margin-bottom:16px}.fgrid h4 a{display:inline;font-size:inherit;font-weight:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit;margin-bottom:0;width:auto}.fgrid h4 a:hover{color:var(--white)}
 .fgrid a,.fgrid p.t{display:block;font-size:14px;color:rgba(255,255,255,.6);margin-bottom:10px;width:fit-content;transition:color .25s}
 .fgrid a:hover{color:var(--white)}
 .fabout{font-size:14px;color:rgba(255,255,255,.55);margin-top:16px;max-width:320px;line-height:1.7}
@@ -228,16 +236,16 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 <!-- NAV -->
 <div class="navwrap px">
   <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
-    <a href="./" class="navlogo" aria-label="Legend Travel">
+    <a href="/" class="navlogo" aria-label="Legend Travel">
       <img src="logo-wordmark.png" alt="Legend Travel">
     </a>
     <nav class="navlinks">
       <a href="#por-que">Por qu&#233; Legend</a>
       <a href="#destinos">Destinos</a>
-      <a href="#paquetes">Paquetes</a>
-      <a href="#guia">Gu&#237;as y consejos</a>
+      <a href="#paquetes">Paquetes disponibles</a>
+      <a href="#guia">Guía de viaje</a>
       <a href="#contacto">Contacto</a>
-      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar</a>
+      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje%20a%20Asia" target="_blank" rel="noopener noreferrer">Consultar</a>
     </nav>
     <button class="navtoggle" id="navToggleBtn" aria-label="Abrir men&#250;">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -251,10 +259,10 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   </button>
   <a href="#por-que">Por qu&#233; Legend</a>
   <a href="#destinos">Destinos</a>
-  <a href="#paquetes">Paquetes</a>
-  <a href="#guia">Gu&#237;as y consejos</a>
+  <a href="#paquetes">Paquetes disponibles</a>
+  <a href="#guia">Guía de viaje</a>
   <a href="#contacto">Contacto</a>
-  <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+  <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje%20a%20Asia" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 </div>
 
 <!-- 1. HERO -->
@@ -297,32 +305,31 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 
 <!-- 3. POR QUÉ ASIA CON LEGEND -->
 <section class="sec px" id="por-que">
+<style>
+.pq-a-row{display:grid;grid-template-columns:1fr;padding:26px 0;border-top:1px solid rgba(14,35,45,.09)}
+@media(min-width:640px){.pq-a-row{padding:32px 0}}
+.pq-a-t{font-size:20px;font-weight:700;margin-bottom:8px;letter-spacing:-.01em;color:var(--black)}
+@media(min-width:640px){.pq-a-t{font-size:25px}}
+.pq-a-d{font-size:15px;color:var(--black);line-height:1.7}
+</style>
   <div class="mx">
     <div class="rv" style="margin-bottom:64px;max-width:720px">
       <p class="kicker">Por qué Legend</p>
       <h2 class="h2">Asia es enorme.<br><em>Nosotros te ayudamos a elegir lo tuyo.</em></h2>
     </div>
-    <div class="vgrid">
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Asesoría experta en destinos lejanos</h3>
-        <p>Asia requiere más planificación que un destino cercano: visas, vacunas, escalas largas, diferencia horaria y barreras idiomáticas. Nuestros asesores conocen cada destino y resuelven todos estos detalles por vos antes de que salgas de casa.</p>
-      </div>
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z"/><path d="m8.2 13.9-1.7 7.6L12 18l5.5 3.5-1.7-7.6"/></svg></div>
-        <h3>Itinerarios armados a tu estilo</h3>
-        <p>No vendemos paquetes genéricos. Escuchamos qué buscás —cultura, naturaleza, gastronomía, lujo o aventura— y diseñamos el recorrido exacto para vos: ciudades, hoteles, rutas y excursiones seleccionadas una a una.</p>
-      </div>
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.8-.9L3 20l1-5.2a8.4 8.4 0 1 1 17-3.3Z"/></svg></div>
-        <h3>Acompañamiento antes, durante y después</h3>
-        <p>Tenés el WhatsApp de tu asesor en todo momento. Desde que reservás hasta que volvés. Si surge cualquier inconveniente en destino —un vuelo cambiado, una duda sobre visas, un cambio de planes— te respondemos en el acto.</p>
-      </div>
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
-        <h3>Financiación en pesos</h3>
-        <p>Asia no tiene que ser un viaje inalcanzable. Trabajamos con todas las tarjetas de crédito, planes en pesos y la posibilidad de congelar el precio con una seña mientras terminás de organizar el viaje.</p>
-      </div>
+        <div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">Asesoría experta en destinos lejanos</h3><p class="pq-a-d">Asia requiere más planificación que un destino cercano: visas, vacunas, escalas largas, diferencia horaria y barreras idiomáticas. Nuestros asesores conocen cada destino y resuelven todos estos detalles por vos antes de que salgas de casa.</p></div>
+    </div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">Itinerarios armados a tu estilo</h3><p class="pq-a-d">No vendemos paquetes genéricos. Escuchamos qué buscás —cultura, naturaleza, gastronomía, lujo o aventura— y diseñamos el recorrido exacto para vos: ciudades, hoteles, rutas y excursiones seleccionadas una a una.</p></div>
+    </div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">Acompañamiento antes, durante y después</h3><p class="pq-a-d">Tenés el WhatsApp de tu asesor en todo momento. Desde que reservás hasta que volvés. Si surge cualquier inconveniente en destino —un vuelo cambiado, una duda sobre visas, un cambio de planes— te respondemos en el acto.</p></div>
+    </div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">Financiación en pesos</h3><p class="pq-a-d">Asia no tiene que ser un viaje inalcanzable. Trabajamos con todas las tarjetas de crédito, planes en pesos y la posibilidad de congelar el precio con una seña mientras terminás de organizar el viaje.</p></div>
+    </div>
     </div>
   </div>
 </section>
@@ -335,7 +342,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       <h2 class="h2">¿Qué rincón de Asia<br><em>te llama?</em></h2>
     </div>
     <div class="dest-grid rv">
-      <a class="dest-card" href="asia/japon/">
+      <a class="dest-card" href="/asia/japon/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Torii gates de Fushimi Inari, Japón" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
@@ -345,7 +352,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <span class="cta">Ver todo sobre Japón <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="asia/tailandia/">
+      <a class="dest-card" href="/asia/tailandia/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Templo Wat Arun en Bangkok, Tailandia" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
@@ -355,7 +362,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <span class="cta">Ver todo sobre Tailandia <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="asia/maldivas/">
+      <a class="dest-card" href="/asia/maldivas/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=900');background-position:center 60%" role="img" aria-label="Bungalows sobre el agua en las Maldivas" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
@@ -365,7 +372,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <span class="cta">Ver todo sobre Maldivas <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="asia/vietnam/">
+      <a class="dest-card" href="/asia/vietnam/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/7276804/pexels-photo-7276804.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Bahía de Ha Long, Vietnam" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
@@ -375,7 +382,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <span class="cta">Ver todo sobre Vietnam <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="asia/china/">
+      <a class="dest-card" href="/asia/china/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/19031655/pexels-photo-19031655.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Gran Muralla China al atardecer" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
@@ -385,7 +392,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <span class="cta">Ver todo sobre China <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="asia/india/">
+      <a class="dest-card" href="/asia/india/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/1603650/pexels-photo-1603650.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Taj Mahal al amanecer, Agra, India" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
@@ -395,7 +402,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <span class="cta">Ver todo sobre India <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="asia/singapur/">
+      <a class="dest-card" href="/asia/singapur/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/777059/pexels-photo-777059.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Gardens by the Bay en Singapur de noche" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
@@ -405,7 +412,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <span class="cta">Ver todo sobre Singapur <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="asia/corea/">
+      <a class="dest-card" href="/asia/corea/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/373290/pexels-photo-373290.jpeg?auto=compress&cs=tinysrgb&w=900')" role="img" aria-label="Seúl, Corea del Sur al atardecer" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
@@ -415,7 +422,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <span class="cta">Ver todo sobre Corea del Sur <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="asia/filipinas/">
+      <a class="dest-card" href="/asia/filipinas/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/1430677/pexels-photo-1430677.jpeg?auto=compress&cs=tinysrgb&w=900');background-position:center 60%" role="img" aria-label="Playas e islas paradisíacas de Filipinas" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
@@ -425,7 +432,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <span class="cta">Ver todo sobre Filipinas <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-card" href="asia/malasia/">
+      <a class="dest-card" href="/asia/malasia/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/1388030/pexels-photo-1388030.jpeg?auto=compress&cs=tinysrgb&w=900');background-position:center 50%" role="img" aria-label="Torres Petronas y Kuala Lumpur, Malasia" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
@@ -624,35 +631,40 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 <footer class="px">
   <div class="mx">
     <div class="fgrid">
-      <div>
-        <a href="asia">
-          <img src="logo-wordmark.png" alt="Legend Travel" loading="lazy" style="width:140px;height:auto;filter:brightness(0) invert(1)">
+      <div style="display:flex;align-items:center">
+        <a href="." class="brand">
+          <img src="logo-wordmark.png" alt="Legend Travel" class="brand-logo" style="width:360px;height:auto;filter:brightness(0) invert(1)">
         </a>
-        <p class="fabout">Especialistas en viajes a Asia desde Argentina. Zona norte de Buenos Aires.</p>
+      </div>
+      <div class="fdest">
+        <h4><a href="#destinos">Destinos</a></h4>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 24px">
+          <div>
+            <a href="caribe/">Caribe</a>
+            <a href="europa/">Europa</a>
+            <a href="brasil/">Brasil</a>
+            <a href="usa/">USA</a>
+            <a href="cruceros/">Cruceros</a>
+            <a href="argentina/">Argentina</a>
+          </div>
+          <div>
+            <a href="/asia/">Asia</a>
+            <a href="africa/">África</a>
+            <a href="oceania/">Oceanía</a>
+            <a href="latinoamerica/">Latinoamérica</a>
+            <a href="viajes-deportivos/">Viajes Deportivos</a>
+            <a href="lunas-de-miel/">Lunas de miel</a>
+          </div>
+        </div>
       </div>
       <div>
-        <h4>Esta página</h4>
-        <a href="#ofrecemos">Qué ofrecemos</a>
-        <a href="#por-que">Por qué Legend</a>
-        <a href="#destinos">Destinos</a>
-        <a href="financiacion/">Medios de pago</a>
-        <a href="#testimonios">Testimonios</a>
-      <a href="#faq">FAQ</a>
-        <a href="#contacto">Contacto</a>
+        <h4><a href="./#diferenciales">La agencia</a></h4>
+        <a href="viajes-a-medida/">Viajes a medida</a><a href="./#diferenciales">Por qué Legend</a><a href="./#historia">Nuestra historia</a><a href="./#equipo">El equipo</a><a href="#testimonios">Testimonios</a><a href="#financiacion">Medios de pago</a><a href="./#guias">Guías y consejos</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a>
       </div>
       <div>
-        <h4>Otros destinos</h4>
-        <a href="asia">Disney</a>
-        <a href="asia">Caribe</a>
-        <a href="asia">Europa</a>
-        <a href="asia">Brasil</a>
-        <a href="asia">Cruceros</a>
-        <a href="asia">África</a>
-      </div>
-      <div>
-        <h4>Contacto</h4>
+        <h4><a href="#contacto">Contacto</a></h4>
         <p class="t">Paraná 3745, Martínez<br>Buenos Aires</p>
-        <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje%20a%20Asia">WhatsApp +54 9 11 2748-9446</a>
+        <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20hacer%20una%20consulta">WhatsApp +54 9 11 2748-9446</a>
         <a href="tel:+541147170344">Teléfono 11 4717-0344</a>
         <div class="fsoc">
           <a href="https://www.instagram.com/legendtraveloficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -668,7 +680,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       </div>
     </div>
     <div class="fbot">
-      <span>© 2026 Legend Travel · Legajo 7553 — Ministerio de Turismo de la Nación</span>
+      <span>© 2026 Legend Travel · Legajo 7553 — Ministerio de Turismo de la Nación · <a href="politica-de-privacidad/" style="color:inherit;opacity:.7">Privacidad</a> · <a href="terminos-y-condiciones/" style="color:inherit;opacity:.7">Términos</a></span>
       <span class="claim">Tu viaje, tu historia.</span>
     </div>
   </div>
@@ -757,13 +769,15 @@ if(!(window.location.pathname===_bp||window.location.pathname===_bp+'index.html'
   var _segs=window.location.pathname.replace(_bp,'').replace(/\/index\.html$/,'/').replace(/\/$/,'').split('/').filter(Boolean);
   var _cn=(document.title||'').split(' | ')[0].replace(/ desde Argentina$/,'').replace(/ por Argentina$/,'').replace(/^Viajes (a los |a las |al |a la |a |por |de |en |)/,'').trim();
   if(!_cn)_cn=_sl(_segs[_segs.length-1]||'');
-  var _bci=[{t:'Inicio',h:'./'}];
+  var _bci=[{t:'Inicio',h:_bp}];
   for(var _i=0;_i<_segs.length-1;_i++){_bci.push({t:_sl(_segs[_i]),h:_segs.slice(0,_i+1).join('/')+'/'}); }
   _bci.push({t:_cn,h:null});
+  var _bst=document.createElement('style');_bst.textContent='#navcrumb a{color:rgba(255,255,255,.75);text-decoration:none;transition:color .2s;cursor:pointer}#navcrumb a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}';document.head.appendChild(_bst);
   var _bc=document.createElement('nav');_bc.id='navcrumb';_bc.setAttribute('aria-label','Ruta de navegaci\u00f3n');
-  _bc.style.cssText='position:fixed;left:0;right:0;z-index:48;padding:5px 48px;font-size:11px;font-family:inherit;letter-spacing:.02em';
-  var _bcH='';_bci.forEach(function(it,idx){if(idx>0)_bcH+='<span style="margin:0 5px;color:rgba(255,255,255,.35)">\u203a</span>';if(it.h){_bcH+='<a href="'+it.h+'" style="color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s">'+it.t+'</a>';}else{_bcH+='<span style="color:rgba(255,255,255,.85);font-weight:500">'+it.t+'</span>';}});
-  _bc.innerHTML=_bcH;document.body.appendChild(_bc);
+  var _nw=document.querySelector('.navwrap');var _t=_nw?(_nw.getBoundingClientRect().bottom+4):96;
+  _bc.style.cssText='position:absolute;top:'+_t+'px;left:0;right:0;z-index:12;padding:9px 48px;font-size:20px;font-family:inherit;letter-spacing:.02em';
+  var _bcH='';_bci.forEach(function(it,idx){if(idx>0)_bcH+='<span style="margin:0 5px;color:rgba(255,255,255,.35)">\u203a</span>';if(it.h){_bcH+='<a href="'+it.h+'">'+it.t+'</a>';}else{_bcH+='<span style="color:rgba(255,255,255,.9);font-weight:600">'+it.t+'</span>';}});
+  _bc.innerHTML=_bcH;var _hEl=document.querySelector('.hero');if(_hEl){_hEl.insertBefore(_bc,_hEl.firstChild);}else{document.body.appendChild(_bc);}
   var _nbPos=document.querySelector('.navbar');if(_nbPos){var _nrect=_nbPos.getBoundingClientRect();_bc.style.top=(_nrect.bottom+6)+'px';}
   var _ldI=_bci.map(function(it,idx){var o={'@type':'ListItem','position':idx+1,'name':it.t};if(it.h){o.item=window.location.origin+_bp+(it.h==='./'?'':it.h);}else{o.item=window.location.href;}return o;});
   var _ldS=document.createElement('script');_ldS.type='application/ld+json';_ldS.textContent=JSON.stringify({'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':_ldI});document.head.appendChild(_ldS);

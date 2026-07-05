@@ -13,6 +13,10 @@
 <meta property="og:url" content="https://www.legendtravel.com.ar/quienes-somos">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
@@ -49,8 +53,7 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 /* HERO */
 .hero{position:relative;min-height:92vh;color:var(--white);overflow:hidden}
 .hero-media{position:absolute;inset:0;overflow:hidden}
-.hero-media .scene{position:absolute;inset:-12%;background:url('https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=2200') center 40%/cover no-repeat;will-change:transform;animation:cinematicQUIENES 30s ease-in-out infinite}
-@keyframes cinematicQUIENES{0%{transform:scale(1.05) translate(0,0)}30%{transform:scale(1.1) translate(.3%,-.3%)}65%{transform:scale(1.13) translate(-.2%,-.7%) rotate(.02deg)}88%{transform:scale(1.08) translate(.1%,-.1%)}100%{transform:scale(1.05) translate(0,0)}}
+.hero-media .scene{position:absolute;inset:0;background:url('quienes-somos/WhatsApp Image 2026-07-03 at 2.42.53 PM.jpeg') center center/cover no-repeat;image-rendering:auto}
 .hero-media .ground{position:absolute;left:0;right:0;bottom:0;height:80%;background:linear-gradient(180deg,rgba(14,35,45,0) 0%,rgba(14,35,45,.4) 36%,rgba(14,35,45,.85) 70%,rgba(14,35,45,.95) 100%);pointer-events:none}
 .hero-media .top-grad{position:absolute;left:0;right:0;top:0;height:35%;background:linear-gradient(180deg,rgba(14,35,45,.6) 0%,rgba(14,35,45,0) 100%);pointer-events:none}
 .hero-inner{position:relative;z-index:10;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:92vh;padding-top:100px;padding-bottom:60px}
@@ -71,12 +74,7 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 .fade{opacity:0;transition:opacity 1s}
 .fade.in{opacity:1}
 .rv{opacity:0;transform:translateY(32px);transition:opacity 1s ease-out,transform 1s ease-out}
-.rv.in{opacity:1;transform:none}
-.breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:13px;color:rgba(14,35,45,.55);padding:20px 0 0}
-.breadcrumb a{color:rgba(14,35,45,.55);transition:color .25s}
-.breadcrumb a:hover{color:var(--red)}
-.breadcrumb span{color:rgba(14,35,45,.35)}
-section{background:var(--white)}
+.rv.in{opacity:1;transform:none}section{background:var(--white)}
 .sec{padding-top:96px;padding-bottom:96px}
 @media(min-width:1024px){.sec{padding-top:128px;padding-bottom:128px}}
 .kicker{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.26em;color:var(--red);margin-bottom:16px}
@@ -151,10 +149,14 @@ section{background:var(--white)}
 .ccard p{font-size:14px;color:rgba(255,255,255,.6);margin-top:4px}
 /* FOOTER */
 footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,255,255,.1);padding-top:64px;padding-bottom:32px}
+.fsoc{display:flex;gap:10px;margin-top:16px;align-items:center}
+.fsoc a{color:rgba(255,255,255,.6);display:inline-flex;transition:color .2s,transform .2s}
+.fsoc a svg{width:22px;height:22px;display:block}
+.fsoc a:hover{color:#fff;transform:translateY(-2px)}
 .fgrid{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:56px}
 @media(min-width:640px){.fgrid{grid-template-columns:1fr 1fr}}
-@media(min-width:1024px){.fgrid{grid-template-columns:1.4fr 1fr 1fr 1.2fr}}
-.fgrid h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.24em;color:var(--red3);margin-bottom:16px}
+@media(min-width:1024px){.fgrid{grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr}.fdest{grid-column:span 2}}
+.fgrid h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.24em;color:var(--red3);margin-bottom:16px}.fgrid h4 a{display:inline;font-size:inherit;font-weight:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit;margin-bottom:0;width:auto}.fgrid h4 a:hover{color:var(--white)}
 .fgrid a,.fgrid p.t{display:block;font-size:14px;color:rgba(255,255,255,.6);margin-bottom:10px;width:fit-content;transition:color .25s}
 .fgrid a:hover{color:var(--white)}
 .fabout{font-size:14px;color:rgba(255,255,255,.55);margin-top:16px;max-width:320px;line-height:1.7}
@@ -173,6 +175,13 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 .navlogo:hover img{filter:brightness(0) invert(.49) sepia(1) saturate(3.3) hue-rotate(315deg)}
 .navlinks a{font-size:20px}
 .navtoggle{margin-left:auto}
+/* Split hero */
+.hero{display:flex;flex-direction:column;min-height:0}
+.hero-media{position:relative;height:55vh;flex:none;overflow:hidden}
+.hero-media .ground,.hero-media .top-grad{display:none}
+.hero-inner{position:static;min-height:0;background:var(--bur);padding-top:80px;padding-bottom:80px;flex:1;align-items:center;text-align:center}
+@media(min-width:768px){.hero{flex-direction:row;min-height:92vh}.hero-media{height:auto;flex:1;order:2}.hero-inner{align-items:flex-start;text-align:left;order:1;padding-top:140px;padding-bottom:80px;min-height:92vh}.hero-inner .hero-sub{margin-left:0;margin-right:0}}
+.faqwrap{max-width:768px;margin:0 auto}.faq{border-bottom:1px solid rgba(14,35,45,.1)}.faq:first-of-type{border-top:1px solid rgba(14,35,45,.1)}.faq button{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 4px;text-align:left;font-weight:700;font-size:16px;color:var(--black);transition:color .3s}@media(min-width:768px){.faq button{font-size:18px}}.faq button:hover{color:var(--red)}.faq .pm{width:32px;height:32px;border-radius:50%;border:1px solid rgba(14,35,45,.15);flex:none;display:flex;align-items:center;justify-content:center;transition:background .3s,border-color .3s,color .3s,transform .3s}.faq.open .pm{background:var(--red);border-color:var(--red);color:var(--white);transform:rotate(135deg)}.faq .pm svg .v{transition:opacity .2s}.faq.open .pm svg .v{opacity:0}.faq .ans{max-height:0;overflow:hidden;transition:max-height .4s ease}.faq .ans p{padding:0 4px 24px;font-size:15px;color:rgba(14,35,45,.6);max-width:640px;line-height:1.75}
 </style>
 </head>
 <body>
@@ -181,13 +190,17 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 <!-- NAV -->
 <div class="navwrap px">
   <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
-    <a href="./" class="navlogo" aria-label="Legend Travel">
+    <a href="/" class="navlogo" aria-label="Legend Travel">
       <img src="logo-wordmark.png" alt="Legend Travel">
     </a>
     <nav class="navlinks">
-      <a href="#diferenciales">Por qu&#233; Legend</a>
+      <a href="#quienes">Qui&#233;nes somos</a>
+      <a href="./#historia">Nuestra historia</a>
+      <a href="./#diferenciales">Qu&#233; nos diferencia</a>
+      <a href="#local">D&#243;nde estamos</a>
+      <a href="#faq">Preguntas frecuentes</a>
       <a href="#contacto">Contacto</a>
-      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar</a>
+      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer">Consultar</a>
     </nav>
     <button class="navtoggle" id="navToggleBtn" aria-label="Abrir men&#250;">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -199,9 +212,13 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   <button class="navclose" id="navCloseBtn" aria-label="Cerrar men&#250;">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
   </button>
-  <a href="#diferenciales">Por qu&#233; Legend</a>
+  <a href="#quienes">Qui&#233;nes somos</a>
+  <a href="./#historia">Nuestra historia</a>
+  <a href="./#diferenciales">Qu&#233; nos diferencia</a>
+  <a href="#local">D&#243;nde estamos</a>
+  <a href="#faq">Preguntas frecuentes</a>
   <a href="#contacto">Contacto</a>
-  <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+  <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 </div>
 
 <section class="hero">
@@ -211,27 +228,19 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
     <div class="top-grad"></div>
   </div>
   <div class="hero-inner px">
-    <div class="hero-logo-main fade" data-delay="100" data-dur="1000">
-      <img src="logo-wordmark.png" alt="Legend Travel — agencia de viajes zona norte Buenos Aires" loading="eager">
-    </div>
-    <h1 class="fade" data-delay="600" data-dur="900">Quiénes somos —<br><em>Legend Travel.</em></h1>
-    <p class="hero-sub fade" data-delay="900" data-dur="900">Una agencia de viajes familiar con más de 35 años de historia. Zona norte de Buenos Aires.</p>
-    <div class="hero-cred-row fade" data-delay="1200" data-dur="900">
-      <span class="hero-cred"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>Fundada en 1991</span>
-      <span class="hero-cred"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>Legajo 7553 — Ministerio de Turismo</span>
-      <span class="hero-cred"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>Grupo GEA</span>
-      <span class="hero-cred"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>4,8 en Google</span>
-    </div>
+    <p class="fade" data-delay="300" data-dur="800" style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.26em;color:var(--red3);margin-bottom:20px">Martínez, zona norte · Desde 1991</p>
+    <h1 class="fade" data-delay="500" data-dur="900">El equipo detrás<br>de cada viaje<br><em>que organizamos.</em></h1>
+    <p class="hero-sub fade" data-delay="800" data-dur="900" style="margin:24px 0 0;max-width:460px">Una agencia familiar con más de 35 años de historia. Personas reales que conocen cada destino y acompañan cada viaje de principio a fin.</p>
   </div>
 </section>
 
-<div class="px" style="background:var(--white);border-bottom:1px solid rgba(14,35,45,.07)">
+<div id="quienes" class="px" style="background:var(--white);border-bottom:1px solid rgba(14,35,45,.07)">
   <div class="mx">
-    <nav class="breadcrumb" aria-label="Miga de pan">
-      <a href="quienes-somos">Inicio</a><span>›</span>
-      <span aria-current="page" style="color:var(--black);font-weight:600">Quiénes somos</span>
-    </nav>
-    <div style="padding-top:48px;padding-bottom:64px;max-width:820px" class="rv">
+    <div style="padding-top:48px;padding-bottom:24px;max-width:820px" class="rv">
+      <p class="kicker">Quiénes somos</p>
+      <h2 class="h2" style="margin-bottom:0">Una agencia familiar <em>con historia.</em></h2>
+    </div>
+    <div style="padding-top:16px;padding-bottom:64px;max-width:820px" class="rv">
       <p style="font-size:18px;line-height:1.85;color:rgba(14,35,45,.78)"><strong>Legend Travel</strong> es una agencia de viajes familiar con sede en Martínez, zona norte de Buenos Aires. Fundada en 1991 por <strong>Fernando Pérez Grassi</strong> y <strong>Martín Pérez Balconi</strong>, la agencia nació con una convicción clara: que viajar transforma a las personas, y que un buen asesoramiento marca la diferencia entre un viaje ordinario y uno que se recuerda toda la vida. Más de 35 años después, esa convicción sigue siendo el corazón de todo lo que hacemos. Somos una agencia habilitada por el Ministerio de Turismo de la Nación (Legajo 7553), miembros del Grupo GEA, y tenemos una calificación de 4,8 estrellas en Google con más de 120 reseñas de clientes reales. Organizamos viajes a medida, lunas de miel, viajes en grupo, paquetes al Caribe, Disney, Asia, África, Oceanía y Europa. En Legend no atendemos con bots: cada consulta la responde una persona del equipo con nombre y apellido.</p>
     </div>
   </div>
@@ -293,85 +302,35 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 
 <!-- QUÉ NOS DIFERENCIA -->
 <section class="sec px" id="diferenciales">
-  <div class="mx">
-    <div class="rv" style="margin-bottom:56px;max-width:720px">
-      <p class="kicker">Qué nos diferencia</p>
-      <h2 class="h2">Lo que hacemos diferente,<br><em>desde siempre.</em></h2>
+<style>
+.pq-a-row{display:grid;grid-template-columns:1fr;padding:26px 0;border-top:1px solid rgba(14,35,45,.09)}
+@media(min-width:640px){.pq-a-row{padding:32px 0}}
+.pq-a-t{font-size:20px;font-weight:700;margin-bottom:8px;letter-spacing:-.01em;color:var(--black)}
+@media(min-width:640px){.pq-a-t{font-size:25px}}
+.pq-a-d{font-size:15px;color:var(--black);line-height:1.7}
+</style>
+<div class="mx">
+  <div class="rv" style="margin-bottom:48px;max-width:720px">
+    <p class="kicker">Qué nos diferencia</p>
+    <h2 class="h2">Lo que hacemos diferente,<br><em>desde siempre.</em></h2>
+  </div>
+  <div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">En 1991 arrancamos. Nunca paramos.</h3><p class="pq-a-d">Tres décadas de viajes, de clientes que vuelven y de destinos que conocemos de verdad.</p></div>
     </div>
-    <div class="vgrid">
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z"/><path d="m8.2 13.9-1.7 7.6L12 18l5.5 3.5-1.7-7.6"/></svg></div>
-        <h3>Más de 35 años de trayectoria real</h3>
-        <p>Desde 1991. Hemos organizado miles de viajes, atravesado todas las crisis del turismo argentino y salido más fuertes en cada una. Esa experiencia no se improvisa: sabemos qué funciona y qué evitar en cada destino, en cada temporada y en cada presupuesto.</p>
-      </div>
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-        <h3>Atención humana real, sin bots ni formularios</h3>
-        <p>Cuando contactás a Legend, te atiende una persona con nombre y apellido. No hay un chatbot que responde con respuestas genéricas. Hay una asesora que se toma el tiempo de escucharte, entender qué buscás y darte una respuesta útil. Eso marca una diferencia enorme cuando estás planificando un viaje importante.</p>
-      </div>
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.9 4.6L19 9.5l-4.1 2 .9 5-3.8-2.7L8.2 16.5l.9-5L5 9.5l5.1-1.9z"/></svg></div>
-        <h3>Viajes a medida, no paquetes enlatados</h3>
-        <p>Podemos vender paquetes estándar —y tenemos acceso a los mejores— pero nuestra especialidad es diseñar el viaje desde cero según lo que cada viajero busca. Destino, duración, tipo de alojamiento, ritmo, presupuesto: todo se adapta. No al revés.</p>
-      </div>
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.8-.9L3 20l1-5.2a8.4 8.4 0 1 1 17-3.3Z"/></svg></div>
-        <h3>Acompañamiento antes, durante y después</h3>
-        <p>El servicio de Legend no termina cuando salís de viaje. Si hay un imprevisto —un vuelo cancelado, un cambio de hotel, cualquier cosa— tenés a alguien real respondiendo por WhatsApp. Eso no te lo da ningún buscador de internet, y es lo que más valoran nuestros clientes.</p>
-      </div>
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-7-4.5-7-11a7 7 0 0 1 14 0c0 6.5-7 11-7 11Z"/><path d="m9 12 2 2 4-4"/></svg></div>
-        <h3>Precios transparentes, sin letra chica</h3>
-        <p>El precio que acordamos es el que pagás. Sin cargos ocultos, sin sorpresas al momento de confirmar. Esa transparencia es parte de la filosofía de Legend desde el primer día y es una de las razones por las que los clientes vuelven año tras año.</p>
-      </div>
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-        <h3>Local físico en Martínez, siempre</h3>
-        <p>Tenemos un local físico abierto de lunes a sábado. Podés venir sin turno, tomar un café y planificar tu viaje cara a cara con una asesora. Esa presencia física, en un mundo cada vez más digital, es una señal de seriedad y de compromiso con la zona norte de Buenos Aires.</p>
-      </div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">Atención humana, siempre</h3><p class="pq-a-d">Una asesora real con nombre y apellido te acompaña de principio a fin. Nada de bots, nada de formularios, nada de esperas.</p></div>
+    </div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">Tu viaje, a tu medida</h3><p class="pq-a-d">Nos contás la idea y la convertimos en un itinerario completo, ajustado a tu ritmo y presupuesto exacto. Sin moldes, sin paquetes genéricos.</p></div>
+    </div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">Respaldo y confianza</h3><p class="pq-a-d">Agencia habilitada por el Ministerio de Turismo (legajo 7553), miembros del Grupo GEA. Treinta años de clientes que vuelven no son un slogan.</p></div>
     </div>
   </div>
+</div>
 </section>
 
-<!-- CREDENCIALES -->
-<section class="sec px" id="credenciales" style="background:rgba(14,35,45,.02)">
-  <div class="mx">
-    <div class="rv" style="margin-bottom:8px;max-width:720px">
-      <p class="kicker">Credenciales</p>
-      <h2 class="h2">El respaldo de <em>35 años.</em></h2>
-      <p style="margin-top:20px;font-size:17px;color:rgba(14,35,45,.7);max-width:640px">Cuando le confiás tu viaje a una agencia, querés tener certeza de que están habilitados, que son reales y que tienen trayectoria. Acá están nuestras credenciales.</p>
-    </div>
-    <div class="cred-grid rv">
-      <div class="cred-card">
-        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <div><b>Legajo 7553</b><p>Habilitados por el Ministerio de Turismo de la Nación. Agencia de viajes registrada y regulada.</p></div>
-      </div>
-      <div class="cred-card">
-        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
-        <div>
-          <b>CUIT 30-64558435-6</b>
-          <p>Empresa registrada en AFIP. Podés verificar nuestros datos en el padrón público.</p>
-        </div>
-      </div>
-      <div class="cred-card">
-        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <div><b>Grupo GEA</b><p>Miembros de la red Grupo GEA, con acceso a los mejores operadores y mayoristas del mercado.</p></div>
-      </div>
-      <div class="cred-card">
-        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-        <div><b>+35 años en el mercado</b><p>Fundada en 1991. Tres décadas de historia ininterrumpida en zona norte de Buenos Aires.</p></div>
-      </div>
-      <div class="cred-card">
-        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
-        <div><b>4,8 en Google · 120+ reseñas</b><p>Calificación basada en cientos de reseñas reales de clientes que viajaron con nosotros.</p></div>
-      </div>
-      <div class="cred-card">
-        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-        <div><b>Local físico en Martínez</b><p>Paraná 3745, Martínez, Buenos Aires. Lunes a sábado y feriados, 10 a 20 h.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- EL EQUIPO -->
 <section class="sec px" id="equipo">
@@ -460,27 +419,27 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       <p class="kicker">Preguntas frecuentes</p>
       <h2 class="h2">Lo que nos preguntan <em>antes de trabajar con nosotros.</em></h2>
     </div>
-    <div class="faq-list">
-      <details class="faq-item rv">
-        <summary>¿Dónde está ubicada Legend Travel y cómo puedo contactarlos?</summary>
-        <p>Legend Travel opera desde Buenos Aires, Argentina. Podés contactarnos por WhatsApp al <a href="https://wa.me/5491127489446">+54 9 11 2748-9446</a>, por email o completando el formulario de contacto en esta página. Atendemos consultas de lunes a viernes de 9 a 18 h y sábados de 10 a 14 h. Para viajes de mayor complejidad, coordinamos reuniones presenciales o videollamadas según la preferencia del viajero.</p>
-      </details>
-      <details class="faq-item rv">
-        <summary>¿Legend está registrada como agencia de viajes?</summary>
-        <p>Sí. Legend Travel está registrada ante el <strong>Ministerio de Turismo y Deportes de la Nación</strong> como agencia de viajes habilitada. Trabajamos con proveedores internacionales verificados y pertenecemos a las principales redes de turismo del mercado local. Podés solicitarnos la documentación de registro ante cualquier consulta o duda.</p>
-      </details>
-      <details class="faq-item rv">
-        <summary>¿En qué se diferencia Legend de otras agencias de viajes?</summary>
-        <p>La diferencia principal es la <strong>especialización por destino</strong>. No somos una agencia generalista que vende todo a todos: tenemos equipos que conocen en profundidad cada región que ofrecemos. Cuando consultás sobre Japón, hablás con alguien que estuvo en Japón. Cuando preguntás por un safari en África, te responde alguien que conoce los parques. Eso se traduce en itinerarios más reales, recomendaciones que no encontrás en internet y soluciones cuando algo falla en viaje.</p>
-      </details>
-      <details class="faq-item rv">
-        <summary>¿Se puede pagar en cuotas sin interés?</summary>
-        <p>Sí. Ofrecemos <strong>financiación en cuotas sin interés</strong> con las principales tarjetas de crédito del mercado argentino. Las promociones vigentes varían según el banco y el período del año. También trabajamos con transferencia bancaria, con planes de ahorro programado para viajes a largo plazo y con distintas opciones según la anticipación de la reserva. Consultanos por las opciones disponibles al momento de tu consulta.</p>
-      </details>
-      <details class="faq-item rv">
-        <summary>¿Qué pasa si tengo un problema durante el viaje?</summary>
-        <p>Tenés soporte de nuestro equipo durante todo el viaje. Nuestro <strong>WhatsApp de emergencias</strong> está disponible las 24 horas para resolver situaciones urgentes: vuelos cancelados, problemas de alojamiento, documentación, cambios de itinerario. No cerramos cuando vos estás viajando. Esa tranquilidad es parte de lo que incluye trabajar con una agencia especializada.</p>
-      </details>
+    <div class="faqwrap">
+      <div class="faq rv">
+        <button>¿Dónde está ubicada Legend Travel y cómo puedo contactarlos?<span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/><path class="v" d="M5 12h14"/></svg></span></button>
+        <div class="ans"><p>Legend Travel opera desde Buenos Aires, Argentina. Podés contactarnos por WhatsApp al <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20hacer%20una%20consulta">+54 9 11 2748-9446</a>, por email o completando el formulario de contacto en esta página. Atendemos consultas de lunes a viernes de 9 a 18 h y sábados de 10 a 14 h. Para viajes de mayor complejidad, coordinamos reuniones presenciales o videollamadas según la preferencia del viajero.</p></div>
+      </div>
+      <div class="faq rv">
+        <button>¿Legend está registrada como agencia de viajes?<span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/><path class="v" d="M5 12h14"/></svg></span></button>
+        <div class="ans"><p>Sí. Legend Travel está registrada ante el <strong>Ministerio de Turismo y Deportes de la Nación</strong> como agencia de viajes habilitada. Trabajamos con proveedores internacionales verificados y pertenecemos a las principales redes de turismo del mercado local. Podés solicitarnos la documentación de registro ante cualquier consulta o duda.</p></div>
+      </div>
+      <div class="faq rv">
+        <button>¿En qué se diferencia Legend de otras agencias de viajes?<span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/><path class="v" d="M5 12h14"/></svg></span></button>
+        <div class="ans"><p>La diferencia principal es la <strong>especialización por destino</strong>. No somos una agencia generalista que vende todo a todos: tenemos equipos que conocen en profundidad cada región que ofrecemos. Cuando consultás sobre Japón, hablás con alguien que estuvo en Japón. Cuando preguntás por un safari en África, te responde alguien que conoce los parques. Eso se traduce en itinerarios más reales, recomendaciones que no encontrás en internet y soluciones cuando algo falla en viaje.</p></div>
+      </div>
+      <div class="faq rv">
+        <button>¿Se puede pagar en cuotas sin interés?<span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/><path class="v" d="M5 12h14"/></svg></span></button>
+        <div class="ans"><p>Sí. Ofrecemos <strong>financiación en cuotas sin interés</strong> con las principales tarjetas de crédito del mercado argentino. Las promociones vigentes varían según el banco y el período del año. También trabajamos con transferencia bancaria, con planes de ahorro programado para viajes a largo plazo y con distintas opciones según la anticipación de la reserva. Consultanos por las opciones disponibles al momento de tu consulta.</p></div>
+      </div>
+      <div class="faq rv">
+        <button>¿Qué pasa si tengo un problema durante el viaje?<span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/><path class="v" d="M5 12h14"/></svg></span></button>
+        <div class="ans"><p>Tenés soporte de nuestro equipo durante todo el viaje. Nuestro <strong>WhatsApp de emergencias</strong> está disponible las 24 horas para resolver situaciones urgentes: vuelos cancelados, problemas de alojamiento, documentación, cambios de itinerario. No cerramos cuando vos estás viajando. Esa tranquilidad es parte de lo que incluye trabajar con una agencia especializada.</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -495,7 +454,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       <p class="lead" style="color:rgba(255,255,255,.65);margin:20px auto 0;max-width:540px;text-align:center">Contanos adónde soñás ir. En minutos te responde una asesora de verdad.</p>
     </div>
     <div class="rv" style="text-align:center;margin-top:40px">
-      <a class="bigbtn" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">
+      <a class="bigbtn" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg>
         Consultar por WhatsApp
       </a>
@@ -511,41 +470,62 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 <footer class="px">
   <div class="mx">
     <div class="fgrid">
-      <div>
-        <a href="quienes-somos"><img src="logo-wordmark.png" alt="Legend Travel" loading="lazy" style="width:140px;height:auto;filter:brightness(0) invert(1)"></a>
-        <p class="fabout">Agencia de viajes familiar fundada en 1991. Legajo 7553 — Ministerio de Turismo de la Nación. Zona norte de Buenos Aires.</p>
+      <div style="display:flex;align-items:center">
+        <a href="." class="brand">
+          <img src="logo-wordmark.png" alt="Legend Travel" class="brand-logo" style="width:360px;height:auto;filter:brightness(0) invert(1)">
+        </a>
+      </div>
+      <div class="fdest">
+        <h4><a href="./#destinos">Destinos</a></h4>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 24px">
+          <div>
+            <a href="caribe/">Caribe</a>
+            <a href="europa/">Europa</a>
+            <a href="brasil/">Brasil</a>
+            <a href="usa/">USA</a>
+            <a href="cruceros/">Cruceros</a>
+            <a href="argentina/">Argentina</a>
+          </div>
+          <div>
+            <a href="asia/">Asia</a>
+            <a href="africa/">África</a>
+            <a href="oceania/">Oceanía</a>
+            <a href="latinoamerica/">Latinoamérica</a>
+            <a href="viajes-deportivos/">Viajes Deportivos</a>
+            <a href="lunas-de-miel/">Lunas de miel</a>
+          </div>
+        </div>
       </div>
       <div>
-        <h4>Destinos</h4>
-        <a href="caribe/">Caribe</a>
-        <a href="europa/">Europa</a>
-        <a href="asia/">Asia</a>
-        <a href="africa/">África</a>
-        <a href="oceania/">Oceanía</a>
+        <h4><a href="./#diferenciales">La agencia</a></h4>
+        <a href="viajes-a-medida/">Viajes a medida</a><a href="./#diferenciales">Por qué Legend</a><a href="./#historia">Nuestra historia</a><a href="./#equipo">El equipo</a><a href="#testimonios">Testimonios</a><a href="./#financiacion">Medios de pago</a><a href="./#guias">Guías y consejos</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a>
       </div>
       <div>
-        <h4>La agencia</h4>
-        <a href="quienes-somos/" style="color:var(--white)">Quiénes somos</a>
-        <a href="financiacion/">Medios de pago</a>
-        <a href="lunas-de-miel/">Lunas de miel</a>
-        <a href="index.html#testimonios">Testimonios</a>
-        <a href="index.html#faq">FAQ</a>
-      </div>
-      <div>
-        <h4>Contacto</h4>
+        <h4><a href="#contacto">Contacto</a></h4>
         <p class="t">Paraná 3745, Martínez<br>Buenos Aires</p>
-        <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje">WhatsApp +54 9 11 2748-9446</a>
+        <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20hacer%20una%20consulta">WhatsApp +54 9 11 2748-9446</a>
         <a href="tel:+541147170344">Teléfono 11 4717-0344</a>
+        <div class="fsoc">
+          <a href="https://www.instagram.com/legendtraveloficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@legendtravel.ok" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-6.13 6.33 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.67a8.18 8.18 0 0 0 4.81 1.55V6.73a4.85 4.85 0 0 1-1.04-.04Z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/LegendTravelOficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
       </div>
     </div>
     <div class="fbot">
-      <span>© 2026 Legend Travel · Legajo 7553 — Ministerio de Turismo de la Nación · CUIT 30-64558435-6</span>
+      <span>© 2026 Legend Travel · Legajo 7553 — Ministerio de Turismo de la Nación · <a href="politica-de-privacidad/" style="color:inherit;opacity:.7">Privacidad</a> · <a href="terminos-y-condiciones/" style="color:inherit;opacity:.7">Términos</a></span>
       <span class="claim">Tu viaje, tu historia.</span>
     </div>
   </div>
 </footer>
 
-<a class="waf" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp">
+<a class="waf" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp">
   <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg>
 </a>
 
@@ -558,6 +538,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   nm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nm.classList.remove('open');document.body.style.overflow=''})});
   var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
   document.querySelectorAll('.rv').forEach(function(el){obs.observe(el)});
+  document.querySelectorAll('.faq button').forEach(function(btn){btn.addEventListener('click',function(){var f=this.closest('.faq');var open=f.classList.contains('open');document.querySelectorAll('.faq.open').forEach(function(x){x.classList.remove('open');x.querySelector('.ans').style.maxHeight=null});if(!open){f.classList.add('open');f.querySelector('.ans').style.maxHeight=f.querySelector('.ans').scrollHeight+'px'}})});
 })();
 </script>
 
@@ -576,13 +557,15 @@ if(!(window.location.pathname===_bp||window.location.pathname===_bp+'index.html'
   var _segs=window.location.pathname.replace(_bp,'').replace(/\/index\.html$/,'/').replace(/\/$/,'').split('/').filter(Boolean);
   var _cn=(document.title||'').split(' | ')[0].replace(/ desde Argentina$/,'').replace(/ por Argentina$/,'').replace(/^Viajes (a los |a las |al |a la |a |por |de |en |)/,'').trim();
   if(!_cn)_cn=_sl(_segs[_segs.length-1]||'');
-  var _bci=[{t:'Inicio',h:'./'}];
+  var _bci=[{t:'Inicio',h:_bp}];
   for(var _i=0;_i<_segs.length-1;_i++){_bci.push({t:_sl(_segs[_i]),h:_segs.slice(0,_i+1).join('/')+'/'}); }
   _bci.push({t:_cn,h:null});
+  var _bst=document.createElement('style');_bst.textContent='#navcrumb a{color:rgba(255,255,255,.75);text-decoration:none;transition:color .2s;cursor:pointer}#navcrumb a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}';document.head.appendChild(_bst);
   var _bc=document.createElement('nav');_bc.id='navcrumb';_bc.setAttribute('aria-label','Ruta de navegaci\u00f3n');
-  _bc.style.cssText='position:fixed;left:0;right:0;z-index:48;padding:5px 48px;font-size:11px;font-family:inherit;letter-spacing:.02em';
-  var _bcH='';_bci.forEach(function(it,idx){if(idx>0)_bcH+='<span style="margin:0 5px;color:rgba(255,255,255,.35)">\u203a</span>';if(it.h){_bcH+='<a href="'+it.h+'" style="color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s">'+it.t+'</a>';}else{_bcH+='<span style="color:rgba(255,255,255,.85);font-weight:500">'+it.t+'</span>';}});
-  _bc.innerHTML=_bcH;document.body.appendChild(_bc);
+  var _nw=document.querySelector('.navwrap');var _t=_nw?(_nw.getBoundingClientRect().bottom+4):96;
+  _bc.style.cssText='position:absolute;top:'+_t+'px;left:0;right:0;z-index:12;padding:9px 48px;font-size:20px;font-family:inherit;letter-spacing:.02em';
+  var _bcH='';_bci.forEach(function(it,idx){if(idx>0)_bcH+='<span style="margin:0 5px;color:rgba(255,255,255,.35)">\u203a</span>';if(it.h){_bcH+='<a href="'+it.h+'">'+it.t+'</a>';}else{_bcH+='<span style="color:rgba(255,255,255,.9);font-weight:600">'+it.t+'</span>';}});
+  _bc.innerHTML=_bcH;var _hEl=document.querySelector('.hero');if(_hEl){_hEl.insertBefore(_bc,_hEl.firstChild);}else{document.body.appendChild(_bc);}
   var _nbPos=document.querySelector('.navbar');if(_nbPos){var _nrect=_nbPos.getBoundingClientRect();_bc.style.top=(_nrect.bottom+6)+'px';}
   var _ldI=_bci.map(function(it,idx){var o={'@type':'ListItem','position':idx+1,'name':it.t};if(it.h){o.item=window.location.origin+_bp+(it.h==='./'?'':it.h);}else{o.item=window.location.href;}return o;});
   var _ldS=document.createElement('script');_ldS.type='application/ld+json';_ldS.textContent=JSON.stringify({'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':_ldI});document.head.appendChild(_ldS);

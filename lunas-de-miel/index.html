@@ -13,6 +13,10 @@
 <meta property="og:url" content="https://www.legendtravel.com.ar/lunas-de-miel">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://images.pexels.com/photos/1024967/pexels-photo-1024967.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
@@ -71,12 +75,7 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 .hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:100px;padding:8px 20px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:28px;color:rgba(255,255,255,.9)}
 .hero-tag svg{color:var(--gold)}
 .fade{opacity:0;transition:opacity 1s}
-.fade.in{opacity:1}
-.breadcrumb{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:13px;color:rgba(14,35,45,.55);padding:20px 0 0}
-.breadcrumb a{color:rgba(14,35,45,.55);transition:color .25s}
-.breadcrumb a:hover{color:var(--red)}
-.breadcrumb span{color:rgba(14,35,45,.35)}
-section{background:var(--white)}
+.fade.in{opacity:1}section{background:var(--white)}
 .sec{padding-top:96px;padding-bottom:96px}
 @media(min-width:1024px){.sec{padding-top:128px;padding-bottom:128px}}
 .kicker{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.26em;color:var(--red);margin-bottom:16px}
@@ -183,10 +182,14 @@ section{background:var(--white)}
 .ccard p{font-size:14px;color:rgba(255,255,255,.6);margin-top:4px}
 /* FOOTER */
 footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,255,255,.1);padding-top:64px;padding-bottom:32px}
+.fsoc{display:flex;gap:10px;margin-top:16px;align-items:center}
+.fsoc a{color:rgba(255,255,255,.6);display:inline-flex;transition:color .2s,transform .2s}
+.fsoc a svg{width:22px;height:22px;display:block}
+.fsoc a:hover{color:#fff;transform:translateY(-2px)}
 .fgrid{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:56px}
 @media(min-width:640px){.fgrid{grid-template-columns:1fr 1fr}}
-@media(min-width:1024px){.fgrid{grid-template-columns:1.4fr 1fr 1fr 1.2fr}}
-.fgrid h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.24em;color:var(--red3);margin-bottom:16px}
+@media(min-width:1024px){.fgrid{grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr}.fdest{grid-column:span 2}}
+.fgrid h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.24em;color:var(--red3);margin-bottom:16px}.fgrid h4 a{display:inline;font-size:inherit;font-weight:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit;margin-bottom:0;width:auto}.fgrid h4 a:hover{color:var(--white)}
 .fgrid a,.fgrid p.t{display:block;font-size:14px;color:rgba(255,255,255,.6);margin-bottom:10px;width:fit-content;transition:color .25s}
 .fgrid a:hover{color:var(--white)}
 .fabout{font-size:14px;color:rgba(255,255,255,.55);margin-top:16px;max-width:320px;line-height:1.7}
@@ -219,15 +222,15 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 <!-- NAV -->
 <div class="navwrap px">
   <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
-    <a href="./" class="navlogo" aria-label="Legend Travel">
+    <a href="/" class="navlogo" aria-label="Legend Travel">
       <img src="logo-wordmark.png" alt="Legend Travel">
     </a>
     <nav class="navlinks">
       <a href="#por-que">Por qu&#233; Legend</a>
-      <a href="#destinos">Destinos</a>
-      <a href="#guia">Gu&#237;as y consejos</a>
+      <a href="#destinos">Destinos ideales</a>
+      <a href="#guia">Guía de viaje</a>
       <a href="#contacto">Contacto</a>
-      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar</a>
+      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20mi%20luna%20de%20miel" target="_blank" rel="noopener noreferrer">Consultar</a>
     </nav>
     <button class="navtoggle" id="navToggleBtn" aria-label="Abrir men&#250;">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -240,10 +243,10 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
   </button>
   <a href="#por-que">Por qu&#233; Legend</a>
-  <a href="#destinos">Destinos</a>
-  <a href="#guia">Gu&#237;as y consejos</a>
+  <a href="#destinos">Destinos ideales</a>
+  <a href="#guia">Guía de viaje</a>
   <a href="#contacto">Contacto</a>
-  <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+  <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20mi%20luna%20de%20miel" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 </div>
 
 <section class="hero">
@@ -256,11 +259,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
     <div class="hero-logo-main fade" data-delay="100" data-dur="1000">
       <img src="logo-wordmark.png" alt="Legend Travel — agencia de viajes zona norte Buenos Aires" loading="eager">
     </div>
-    <div class="hero-tag fade" data-delay="500" data-dur="800">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-      +35 años organizando el viaje de sus vidas
-    </div>
-    <h1 class="fade" data-delay="700" data-dur="900">Lunas de miel<br>a medida<br><em>desde Argentina.</em></h1>
+<h1 class="fade" data-delay="700" data-dur="900">Lunas de miel<br>a medida<br><em>desde Argentina.</em></h1>
     <p class="hero-sub fade" data-delay="1000" data-dur="900">Legend diseña cada detalle del viaje de sus vidas para que solo tengan que disfrutar.</p>
     <div class="hero-btns fade" data-delay="1200" data-dur="900">
       <a class="btn-hero-main" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20mi%20luna%20de%20miel" target="_blank" rel="noopener noreferrer">
@@ -274,67 +273,42 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 
 <div class="px" style="background:var(--white);border-bottom:1px solid rgba(14,35,45,.07)">
   <div class="mx">
-    <nav class="breadcrumb" aria-label="Miga de pan">
-      <a href="lunas-de-miel">Inicio</a><span>›</span>
-      <span aria-current="page" style="color:var(--black);font-weight:600">Lunas de miel</span>
-    </nav>
-    <div style="padding-top:48px;padding-bottom:64px;max-width:820px" class="rv">
+    <div style="padding-top:56px;padding-bottom:64px;max-width:820px" class="rv">
+      <p class="kicker">Lunas de miel</p>
+      <h2 class="h2" style="margin-bottom:24px">El viaje más importante de sus vidas,<br><em>diseñado a medida.</em></h2>
       <p style="font-size:18px;line-height:1.85;color:rgba(14,35,45,.78)">En Legend Travel organizamos <strong>lunas de miel a medida desde Argentina</strong> hace más de 35 años. No vendemos paquetes estándar: diseñamos cada viaje según el sueño, el presupuesto y el estilo de cada pareja. Destinos de ensueño como Maldivas, Caribe, Polinesia Francesa, Seychelles o Europa romántica, con todos los detalles resueltos —vuelos, hoteles, traslados, experiencias especiales y sorpresas— para que la única tarea de los novios sea disfrutar. Desde la primera consulta hasta el regreso, un asesor real los acompaña en cada paso. Así funciona Legend: cercanos, expertos y con el respaldo de +35 años y más de dos mil parejas que confiaron en nosotros su viaje más importante.</p>
-    </div>
-
-    <!-- TRUST / EEAT -->
-    <div class="rv" style="padding-bottom:64px">
-      <div class="trust-row">
-        <div class="trust-badge">
-          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-          <div><b>+35 años de experiencia</b><span>Lunas de miel desde 1989</span></div>
-        </div>
-        <div class="trust-badge">
-          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <div><b>Legajo 7553 — Ministerio de Turismo</b><span>Agencia habilitada y regulada</span></div>
-        </div>
-        <div class="trust-badge">
-          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-          <div><b>Grupo GEA</b><span>Red de agencias con respaldo nacional</span></div>
-        </div>
-        <div class="trust-badge">
-          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
-          <div><b>Rating Google</b><span>Cientos de familias y parejas recomiendan</span></div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
 
 <!-- POR QUÉ LEGEND -->
 <section class="sec px" id="por-que">
+<style>
+.pq-a-row{display:grid;grid-template-columns:1fr;padding:26px 0;border-top:1px solid rgba(14,35,45,.09)}
+@media(min-width:640px){.pq-a-row{padding:32px 0}}
+.pq-a-t{font-size:20px;font-weight:700;margin-bottom:8px;letter-spacing:-.01em;color:var(--black)}
+@media(min-width:640px){.pq-a-t{font-size:25px}}
+.pq-a-d{font-size:15px;color:var(--black);line-height:1.7}
+</style>
   <div class="mx">
     <div class="rv" style="margin-bottom:64px;max-width:720px">
       <p class="kicker">Por qué Legend</p>
       <h2 class="h2">Tu luna de miel merece<br><em>más que un paquete armado.</em></h2>
       <p style="margin-top:20px;font-size:17px;color:rgba(14,35,45,.7);max-width:640px">Cada pareja tiene su propio sueño. El nuestro es hacerlo realidad sin que tengan que preocuparse por nada.</p>
     </div>
-    <div class="vgrid">
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-        <h3>Diseñado exactamente a su gusto</h3>
-        <p>Ninguna luna de miel es igual a otra. Antes de proponer nada, escuchamos: cuántos días tienen, qué tipo de viaje imaginan (playa y relax total, cultura y ciudades, aventura, o una combinación), qué presupuesto manejan y cuáles son sus sueños. Con esa base diseñamos el viaje, no al revés.</p>
-      </div>
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
-        <h3>35 años organizando el viaje más importante</h3>
-        <p>La luna de miel es el viaje que más recuerdan las parejas. Por eso, en Legend lo tratamos con un nivel de atención diferente: cada detalle importa. Desde el tipo de habitación (con vista al mar, con jacuzzi, con acceso directo a la playa) hasta las sorpresas de bienvenida en el hotel. Sabemos qué esperar de cada destino y cómo hacer que cada momento sea especial.</p>
-      </div>
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <h3>Detalles especiales que marcan la diferencia</h3>
-        <p>Un upgrade de habitación, una cena romántica bajo las estrellas, flores y champagne al llegar al hotel, un traslado privado en lugar del shuttle compartido: son los detalles que transforman un buen viaje en uno inolvidable. Coordinamos estas sorpresas con los hoteles para que lleguen al destino y todo esté listo.</p>
-      </div>
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1 .37 1.97.72 2.9a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.93.35 1.9.59 2.9.72A2 2 0 0 1 22 16.92z"/></svg></div>
-        <h3>Un asesor real que los acompaña de principio a fin</h3>
-        <p>No hay un call center ni un chat automático. Desde la primera consulta hasta el regreso, tienen el contacto directo de su asesora. Si hay algún imprevisto durante el viaje —un vuelo con cambio de hora, una consulta de último momento— tienen a alguien real respondiendo. Eso vale muchísimo cuando están del otro lado del mundo.</p>
-      </div>
+        <div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">Diseñado exactamente a su gusto</h3><p class="pq-a-d">Ninguna luna de miel es igual a otra. Antes de proponer nada, escuchamos: cuántos días tienen, qué tipo de viaje imaginan (playa y relax total, cultura y ciudades, aventura, o una combinación), qué presupuesto manejan y cuáles son sus sueños. Con esa base diseñamos el viaje, no al revés.</p></div>
+    </div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">35 años organizando el viaje más importante</h3><p class="pq-a-d">La luna de miel es el viaje que más recuerdan las parejas. Por eso, en Legend lo tratamos con un nivel de atención diferente: cada detalle importa. Desde el tipo de habitación (con vista al mar, con jacuzzi, con acceso directo a la playa) hasta las sorpresas de bienvenida en el hotel. Sabemos qué esperar de cada destino y cómo hacer que cada momento sea especial.</p></div>
+    </div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">Detalles especiales que marcan la diferencia</h3><p class="pq-a-d">Un upgrade de habitación, una cena romántica bajo las estrellas, flores y champagne al llegar al hotel, un traslado privado en lugar del shuttle compartido: son los detalles que transforman un buen viaje en uno inolvidable. Coordinamos estas sorpresas con los hoteles para que lleguen al destino y todo esté listo.</p></div>
+    </div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">Un asesor real que los acompaña de principio a fin</h3><p class="pq-a-d">No hay un call center ni un chat automático. Desde la primera consulta hasta el regreso, tienen el contacto directo de su asesora. Si hay algún imprevisto durante el viaje —un vuelo con cambio de hora, una consulta de último momento— tienen a alguien real respondiendo. Eso vale muchísimo cuando están del otro lado del mundo.</p></div>
+    </div>
     </div>
   </div>
 </section>
@@ -399,54 +373,74 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
           <span class="cta">Ver Maldivas <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-luna-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20mi%20luna%20de%20miel%20en%20Seychelles" target="_blank" rel="noopener noreferrer">
+      <a class="dest-luna-card" href="oceania/bora-bora/">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center 45%" role="img" aria-label="Laguna turquesa de Bora Bora, Polinesia Francesa" loading="lazy"></div>
+        <div class="grad"></div>
+        <div class="info">
+          <span class="tag">El más soñado del mundo</span>
+          <h3>Bora Bora</h3>
+          <p>La laguna turquesa más famosa del planeta y los bungalows más icónicos del Pacífico Sur.</p>
+          <span class="cta">Ver Bora Bora <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="dest-luna-card" href="africa/seychelles/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center 40%" role="img" aria-label="Playa de granito en Seychelles" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
           <span class="tag">Naturaleza salvaje y lujo</span>
           <h3>Seychelles</h3>
-          <p>Rocas de granito, playas vírgenes y fauna única. Exclusividad tropical con pocos turistas.</p>
-          <span class="cta">Consultar por WhatsApp <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <p>Rocas de granito únicas, playas vírgenes y fauna exclusiva. El secreto mejor guardado del Índico.</p>
+          <span class="cta">Ver Seychelles <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-luna-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20mi%20luna%20de%20miel%20en%20Zanzibar" target="_blank" rel="noopener noreferrer">
+      <a class="dest-luna-card" href="africa/zanzibar/">
         <div class="bg" style="background-image:url('https://images.pexels.com/photos/1457812/pexels-photo-1457812.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center 35%" role="img" aria-label="Playa de arena blanca en Zanzíbar, Tanzania" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
           <span class="tag">Arena blanca e historia</span>
-          <h3>Zanzíbar</h3>
-          <p>Playa blanca, aguas cálidas y la antigua Stone Town. Ideal combinado con un safari en Tanzania.</p>
-          <span class="cta">Consultar por WhatsApp <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <h3>Zanz&#237;bar</h3>
+          <p>Playa blanca, aguas cálidas y Stone Town histórica. Ideal combinado con safari en el Serengeti.</p>
+          <span class="cta">Ver Zanz&#237;bar <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-luna-card" href="caribe/">
-        <div class="bg" style="background-image:url('https://images.pexels.com/photos/30447886/pexels-photo-30447886.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center 50%" role="img" aria-label="Playa caribeña de agua turquesa" loading="lazy"></div>
+      <a class="dest-luna-card" href="europa/sur-occidental/italia/">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center 50%" role="img" aria-label="Costa Amalfitana en Italia" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
-          <span class="tag">La opción más completa</span>
-          <h3>Caribe</h3>
-          <p>Punta Cana, Riviera Maya, Aruba, Jamaica: el Caribe tiene una opción para cada pareja y cada presupuesto.</p>
-          <span class="cta">Ver Caribe <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <span class="tag">Romántica e histórica</span>
+          <h3>Italia</h3>
+          <p>Roma, Toscana, Costa Amalfitana y Venecia. Europa romántica por excelencia con cultura y gastronomía.</p>
+          <span class="cta">Ver Italia <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-luna-card" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20mi%20luna%20de%20miel%20en%20Polinesia%20Francesa%20o%20Bora%20Bora" target="_blank" rel="noopener noreferrer">
-        <div class="bg" style="background-image:url('https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center 45%" role="img" aria-label="Bungalows sobre el agua en Bora Bora, Polinesia Francesa" loading="lazy"></div>
+      <a class="dest-luna-card" href="europa/sur-occidental/grecia/">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center 45%" role="img" aria-label="Iglesias azules de Santorini, Grecia" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
-          <span class="tag">El más soñado del mundo</span>
-          <h3>Polinesia / Bora Bora</h3>
-          <p>Las aguas más transparentes del planeta y los bungalows más icónicos. El sueño que sí se puede hacer realidad.</p>
-          <span class="cta">Consultar por WhatsApp <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <span class="tag">El atardecer más fotografiado</span>
+          <h3>Grecia</h3>
+          <p>Santorini, Mykonos y Atenas. Los atardeceres más románticos y las aguas más azules del Mediterráneo.</p>
+          <span class="cta">Ver Grecia <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="dest-luna-card" href="europa/">
-        <div class="bg" style="background-image:url('https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center 50%" role="img" aria-label="Romántica ciudad europea al atardecer" loading="lazy"></div>
+      <a class="dest-luna-card" href="europa/sur-occidental/francia/">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center 50%" role="img" aria-label="París al atardecer, Francia" loading="lazy"></div>
         <div class="grad"></div>
         <div class="info">
-          <span class="tag">Cultura y romanticismo</span>
-          <h3>Europa romántica</h3>
-          <p>París, Santorini, Venecia, Praga, Costa Amalfitana. Europa tiene una ciudad soñada para cada pareja.</p>
-          <span class="cta">Ver Europa <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+          <span class="tag">La ciudad del amor</span>
+          <h3>Francia</h3>
+          <p>París, la Riviera Francesa y la Provenza. El destino romántico más clásico de Europa.</p>
+          <span class="cta">Ver Francia <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="dest-luna-card" href="caribe/republica-dominicana/punta-cana/">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/30447886/pexels-photo-30447886.jpeg?auto=compress&cs=tinysrgb&w=800');background-position:center 50%" role="img" aria-label="Playa de Punta Cana en República Dominicana" loading="lazy"></div>
+        <div class="grad"></div>
+        <div class="info">
+          <span class="tag">All inclusive y relax total</span>
+          <h3>Punta Cana</h3>
+          <p>Arena blanca y todo incluido en los mejores resorts del Caribe. La luna de miel perfecta sin pensar en nada.</p>
+          <span class="cta">Ver Punta Cana <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
         </div>
       </a>
     </div>
@@ -635,34 +629,56 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 <footer class="px">
   <div class="mx">
     <div class="fgrid">
-      <div>
-        <a href="lunas-de-miel"><img src="logo-wordmark.png" alt="Legend Travel" loading="lazy" style="width:140px;height:auto;filter:brightness(0) invert(1)"></a>
-        <p class="fabout">Especialistas en viajes a medida y lunas de miel. Zona norte de Buenos Aires. Más de 35 años.</p>
+      <div style="display:flex;align-items:center">
+        <a href="." class="brand">
+          <img src="logo-wordmark.png" alt="Legend Travel" class="brand-logo" style="width:360px;height:auto;filter:brightness(0) invert(1)">
+        </a>
+      </div>
+      <div class="fdest">
+        <h4><a href="#destinos">Destinos</a></h4>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 24px">
+          <div>
+            <a href="caribe/">Caribe</a>
+            <a href="europa/">Europa</a>
+            <a href="brasil/">Brasil</a>
+            <a href="usa/">USA</a>
+            <a href="cruceros/">Cruceros</a>
+            <a href="argentina/">Argentina</a>
+          </div>
+          <div>
+            <a href="asia/">Asia</a>
+            <a href="africa/">África</a>
+            <a href="oceania/">Oceanía</a>
+            <a href="latinoamerica/">Latinoamérica</a>
+            <a href="viajes-deportivos/">Viajes Deportivos</a>
+            <a href="lunas-de-miel/">Lunas de miel</a>
+          </div>
+        </div>
       </div>
       <div>
-        <h4>Esta página</h4>
-        <a href="#por-que">Por qué Legend</a>
-        <a href="#como-trabajamos">Cómo trabajamos</a>
-        <a href="#destinos">Destinos ideales</a>
-        <a href="#guia">Gu&#237;a</a>
-      <a href="#testimonios">Testimonios</a>
-      <a href="#faq">FAQ</a>
+        <h4><a href="./#diferenciales">La agencia</a></h4>
+        <a href="viajes-a-medida/">Viajes a medida</a><a href="./#diferenciales">Por qué Legend</a><a href="./#historia">Nuestra historia</a><a href="./#equipo">El equipo</a><a href="#testimonios">Testimonios</a><a href="#financiacion">Medios de pago</a><a href="./#guias">Guías y consejos</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a>
       </div>
       <div>
-        <h4>Destinos románticos</h4>
-        <a href="asia/maldivas/">Maldivas</a>
-        <a href="caribe/">Caribe</a>
-        <a href="europa/">Europa</a>
-      </div>
-      <div>
-        <h4>Contacto</h4>
+        <h4><a href="#contacto">Contacto</a></h4>
         <p class="t">Paraná 3745, Martínez<br>Buenos Aires</p>
-        <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20mi%20luna%20de%20miel">WhatsApp +54 9 11 2748-9446</a>
+        <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20hacer%20una%20consulta">WhatsApp +54 9 11 2748-9446</a>
         <a href="tel:+541147170344">Teléfono 11 4717-0344</a>
+        <div class="fsoc">
+          <a href="https://www.instagram.com/legendtraveloficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@legendtravel.ok" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-6.13 6.33 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.67a8.18 8.18 0 0 0 4.81 1.55V6.73a4.85 4.85 0 0 1-1.04-.04Z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/LegendTravelOficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
       </div>
     </div>
     <div class="fbot">
-      <span>© 2026 Legend Travel · Legajo 7553 — Ministerio de Turismo de la Nación</span>
+      <span>© 2026 Legend Travel · Legajo 7553 — Ministerio de Turismo de la Nación · <a href="politica-de-privacidad/" style="color:inherit;opacity:.7">Privacidad</a> · <a href="terminos-y-condiciones/" style="color:inherit;opacity:.7">Términos</a></span>
       <span class="claim">Tu viaje, tu historia.</span>
     </div>
   </div>
@@ -708,15 +724,17 @@ if(!(window.location.pathname===_bp||window.location.pathname===_bp+'index.html'
   var _sn={'brasil':'Brasil','caribe':'Caribe','europa':'Europa','asia':'Asia','argentina':'Argentina','usa':'EE. UU.','latinoamerica':'Latinoam\u00e9rica','oceania':'Ocean\u00eda','africa':'\u00c1frica','cruceros':'Cruceros','disney':'Disney','lunas-de-miel':'Lunas de miel','financiacion':'Financiaci\u00f3n','quienes-somos':'Qui\u00e9nes somos','blog':'Blog','viajes-deportivos':'Viajes deportivos','central':'Europa Central','del-este':'Europa del Este','escandinavia':'Escandinavia','islas-britanicas':'Islas Brit\u00e1nicas','sur-occidental':'Sur-Occidental','republica-dominicana':'Rep\u00fablica Dominicana','cancun-riviera-maya':'Canc\u00fan y Riviera Maya','costa-oeste':'Costa Oeste','disney-universal':'Disney y Universal','formula-1':'F\u00f3rmula 1','grand-slams-tenis':'Grand Slams de Tenis','mundial-futbol':'Mundial de F\u00fatbol','bayahibe':'Bayah\u00edbe','punta-cana':'Punta Cana','samana':'Saman\u00e1','las-vegas':'Las Vegas','los-angeles':'Los \u00c1ngeles','san-francisco':'San Francisco'};
   function _sl(s){return _sn[s]||s.split('-').map(function(w){return w.charAt(0).toUpperCase()+w.slice(1);}).join(' ');}
   var _segs=window.location.pathname.replace(_bp,'').replace(/\/index\.html$/,'/').replace(/\/$/,'').split('/').filter(Boolean);
-  var _cn=(document.title||'').split(' | ')[0].replace(/ desde Argentina$/,'').replace(/ por Argentina$/,'').replace(/^Viajes (a los |a las |al |a la |a |por |de |en |)/,'').trim();
+  var _cn=(document.title||'').split(' | ')[0].replace(/ desde Argentina$/,'').replace(/ por Argentina$/,'').replace(/ a medida$/,'').replace(/^Viajes (a los |a las |al |a la |a |por |de |en |)/,'').trim();
   if(!_cn)_cn=_sl(_segs[_segs.length-1]||'');
-  var _bci=[{t:'Inicio',h:'./'}];
+  var _bci=[{t:'Inicio',h:_bp}];
   for(var _i=0;_i<_segs.length-1;_i++){_bci.push({t:_sl(_segs[_i]),h:_segs.slice(0,_i+1).join('/')+'/'}); }
   _bci.push({t:_cn,h:null});
+  var _bst=document.createElement('style');_bst.textContent='#navcrumb a{color:rgba(255,255,255,.75);text-decoration:none;transition:color .2s;cursor:pointer}#navcrumb a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}';document.head.appendChild(_bst);
   var _bc=document.createElement('nav');_bc.id='navcrumb';_bc.setAttribute('aria-label','Ruta de navegaci\u00f3n');
-  _bc.style.cssText='position:fixed;left:0;right:0;z-index:48;padding:5px 48px;font-size:11px;font-family:inherit;letter-spacing:.02em';
-  var _bcH='';_bci.forEach(function(it,idx){if(idx>0)_bcH+='<span style="margin:0 5px;color:rgba(255,255,255,.35)">\u203a</span>';if(it.h){_bcH+='<a href="'+it.h+'" style="color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s">'+it.t+'</a>';}else{_bcH+='<span style="color:rgba(255,255,255,.85);font-weight:500">'+it.t+'</span>';}});
-  _bc.innerHTML=_bcH;document.body.appendChild(_bc);
+  var _nw=document.querySelector('.navwrap');var _t=_nw?(_nw.getBoundingClientRect().bottom+4):96;
+  _bc.style.cssText='position:absolute;top:'+_t+'px;left:0;right:0;z-index:12;padding:9px 48px;font-size:20px;font-family:inherit;letter-spacing:.02em';
+  var _bcH='';_bci.forEach(function(it,idx){if(idx>0)_bcH+='<span style="margin:0 5px;color:rgba(255,255,255,.35)">\u203a</span>';if(it.h){_bcH+='<a href="'+it.h+'">'+it.t+'</a>';}else{_bcH+='<span style="color:rgba(255,255,255,.9);font-weight:600">'+it.t+'</span>';}});
+  _bc.innerHTML=_bcH;var _hEl=document.querySelector('.hero');if(_hEl){_hEl.insertBefore(_bc,_hEl.firstChild);}else{document.body.appendChild(_bc);}
   var _nbPos=document.querySelector('.navbar');if(_nbPos){var _nrect=_nbPos.getBoundingClientRect();_bc.style.top=(_nrect.bottom+6)+'px';}
   var _ldI=_bci.map(function(it,idx){var o={'@type':'ListItem','position':idx+1,'name':it.t};if(it.h){o.item=window.location.origin+_bp+(it.h==='./'?'':it.h);}else{o.item=window.location.href;}return o;});
   var _ldS=document.createElement('script');_ldS.type='application/ld+json';_ldS.textContent=JSON.stringify({'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':_ldI});document.head.appendChild(_ldS);

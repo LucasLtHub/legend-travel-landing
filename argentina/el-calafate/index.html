@@ -13,6 +13,10 @@
 <meta property="og:url" content="https://www.legendtravel.com.ar/argentina/el-calafate">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://images.pexels.com/photos/4057646/pexels-photo-4057646.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
@@ -173,10 +177,14 @@ section{background:var(--white)}
 .fsoc a svg{width:22px;height:22px;display:block}
 .fsoc a:hover{color:#fff;transform:translateY(-2px)}
 footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,255,255,.1);padding-top:64px;padding-bottom:32px}
+.fsoc{display:flex;gap:10px;margin-top:16px;align-items:center}
+.fsoc a{color:rgba(255,255,255,.6);display:inline-flex;transition:color .2s,transform .2s}
+.fsoc a svg{width:22px;height:22px;display:block}
+.fsoc a:hover{color:#fff;transform:translateY(-2px)}
 .fgrid{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:56px}
 @media(min-width:640px){.fgrid{grid-template-columns:1fr 1fr}}
-@media(min-width:1024px){.fgrid{grid-template-columns:1.4fr 1fr 1fr 1.2fr}}
-.fgrid h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.24em;color:var(--red3);margin-bottom:16px}
+@media(min-width:1024px){.fgrid{grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr}.fdest{grid-column:span 2}}
+.fgrid h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.24em;color:var(--red3);margin-bottom:16px}.fgrid h4 a{display:inline;font-size:inherit;font-weight:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit;margin-bottom:0;width:auto}.fgrid h4 a:hover{color:var(--white)}
 .fgrid a,.fgrid p.t{display:block;font-size:14px;color:rgba(255,255,255,.6);margin-bottom:10px;width:fit-content;transition:color .25s}
 .fgrid a:hover{color:var(--white)}
 .fabout{font-size:14px;color:rgba(255,255,255,.55);margin-top:16px;max-width:320px;line-height:1.7}
@@ -203,16 +211,16 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 <!-- NAV -->
 <div class="navwrap px">
   <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
-    <a href="./" class="navlogo" aria-label="Legend Travel">
+    <a href="/" class="navlogo" aria-label="Legend Travel">
       <img src="logo-wordmark.png" alt="Legend Travel">
     </a>
     <nav class="navlinks">
       <a href="#por-que">Por qu&#233; Legend</a>
       <a href="#que-hacer">Qu&#233; hacer</a>
-      <a href="#epocas">&#201;pocas</a>
-      <a href="#guia">Gu&#237;as y consejos</a>
+      <a href="#epocas">Cuándo ir</a>
+      <a href="#guia">Guía experta</a>
       <a href="#contacto">Contacto</a>
-      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar</a>
+      <a class="btn-red" href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje%20a%20El%20Calafate" target="_blank" rel="noopener noreferrer">Consultar</a>
     </nav>
     <button class="navtoggle" id="navToggleBtn" aria-label="Abrir men&#250;">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -226,10 +234,10 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   </button>
   <a href="#por-que">Por qu&#233; Legend</a>
   <a href="#que-hacer">Qu&#233; hacer</a>
-  <a href="#epocas">&#201;pocas</a>
-  <a href="#guia">Gu&#237;as y consejos</a>
+  <a href="#epocas">Cuándo ir</a>
+  <a href="#guia">Guía experta</a>
   <a href="#contacto">Contacto</a>
-  <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20planificar%20mi%20viaje" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+  <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20un%20viaje%20a%20El%20Calafate" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 </div>
 
 <!-- HERO -->
@@ -272,42 +280,31 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 
 <!-- POR QUÉ -->
 <section class="sec px" id="por-que">
+<style>
+.pq-a-row{display:grid;grid-template-columns:1fr;padding:26px 0;border-top:1px solid rgba(14,35,45,.09)}
+@media(min-width:640px){.pq-a-row{padding:32px 0}}
+.pq-a-t{font-size:20px;font-weight:700;margin-bottom:8px;letter-spacing:-.01em;color:var(--black)}
+@media(min-width:640px){.pq-a-t{font-size:25px}}
+.pq-a-d{font-size:15px;color:var(--black);line-height:1.7}
+</style>
   <div class="mx">
     <div class="rv" style="margin-bottom:64px;max-width:720px">
       <p class="kicker">Por qué Legend</p>
       <h2 class="h2">La Patagonia no<br><em>se improvisa.</em></h2>
     </div>
-    <div class="vgrid">
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z"/><path d="m8.2 13.9-1.7 7.6L12 18l5.5 3.5-1.7-7.6"/></svg></div>
-        <h3>Más de 35 años organizando viajes a la Patagonia</h3>
-        <p>Conocemos El Calafate y El Chaltén desde que eran destinos emergentes. Sabemos cuándo reservar para no quedarse sin hotel, qué excursiones son imprescindibles y cómo gestionar el viento patagónico en los itinerarios.</p>
-      </div>
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
-        <h3>Combinamos El Calafate y El Chaltén en un solo viaje</h3>
-        <p>Son destinos complementarios: El Calafate para los glaciares y el lago, El Chaltén para el trekking y el Fitz Roy. Armamos el circuito completo con el tiempo justo en cada lugar, sin que te falte ni sobre nada.</p>
-      </div>
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-        <h3>Un asesor real durante todo el viaje</h3>
-        <p>En Patagonia el clima puede cambiar todo: excursiones que se suspenden, vuelos retrasados, itinerarios que hay que ajustar. Tenés el WhatsApp de tu asesor para resolver cualquier imprevisto en el momento.</p>
-      </div>
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
-        <h3>Reservá con anticipación — los hoteles se agotan</h3>
-        <p>Los hoteles en El Calafate y El Chaltén en temporada alta (diciembre-febrero) se agotan meses antes. Con una seña pequeña congelás precio y lugar hoy, y pagás el resto en cuotas mientras llega la fecha.</p>
-      </div>
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg></div>
-        <h3>Excursiones incluidas o gestionadas</h3>
-        <p>El Perito Moreno, la navegación por el Lago Argentino, el safari náutico, los trekking en El Chaltén: gestionamos todas las excursiones para que llegues con todo confirmado y sin sorpresas.</p>
-      </div>
-      <div class="vcard rv">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-        <h3>Presupuesto gratis, sin compromiso</h3>
-        <p>Mandanos un WhatsApp con las fechas, cuántos viajan y si querés hacer solo El Calafate o combinarlo con El Chaltén. En menos de 24 horas tenés opciones reales para tu presupuesto.</p>
-      </div>
+        <div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">Más de 35 años organizando viajes a la Patagonia</h3><p class="pq-a-d">Conocemos El Calafate y El Chaltén desde que eran destinos emergentes. Sabemos cuándo reservar para no quedarse sin hotel, qué excursiones son imprescindibles y cómo gestionar el viento patagónico en los itinerarios.</p></div>
+    </div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">Combinamos El Calafate y El Chaltén en un solo viaje</h3><p class="pq-a-d">Son destinos complementarios: El Calafate para los glaciares y el lago, El Chaltén para el trekking y el Fitz Roy. Armamos el circuito completo con el tiempo justo en cada lugar, sin que te falte ni sobre nada.</p></div>
+    </div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">Un asesor real durante todo el viaje</h3><p class="pq-a-d">En Patagonia el clima puede cambiar todo: excursiones que se suspenden, vuelos retrasados, itinerarios que hay que ajustar. Tenés el WhatsApp de tu asesor para resolver cualquier imprevisto en el momento.</p></div>
+    </div>
+    <div class="pq-a-row rv">
+      <div><h3 class="pq-a-t">Reservá con anticipación — los hoteles se agotan</h3><p class="pq-a-d">Los hoteles en El Calafate y El Chaltén en temporada alta (diciembre-febrero) se agotan meses antes. Con una seña pequeña congelás precio y lugar hoy, y pagás el resto en cuotas mientras llega la fecha.</p></div>
+    </div>
     </div>
   </div>
 </section>
@@ -584,46 +581,56 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 <footer class="px">
   <div class="mx">
     <div class="fgrid">
-      <div>
-        <a href="./">
-          <img src="logo-wordmark.png" alt="Legend Travel" loading="lazy" style="width:140px;height:auto;filter:brightness(0) invert(1)">
+      <div style="display:flex;align-items:center">
+        <a href="." class="brand">
+          <img src="logo-wordmark.png" alt="Legend Travel" class="brand-logo" style="width:360px;height:auto;filter:brightness(0) invert(1)">
         </a>
-        <p class="fabout">Especialistas en turismo nacional desde 1991. Paraná 3745, Martínez, zona norte de Buenos Aires.</p>
+      </div>
+      <div class="fdest">
+        <h4><a href="./#destinos">Destinos</a></h4>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 24px">
+          <div>
+            <a href="caribe/">Caribe</a>
+            <a href="europa/">Europa</a>
+            <a href="brasil/">Brasil</a>
+            <a href="usa/">USA</a>
+            <a href="cruceros/">Cruceros</a>
+            <a href="argentina/">Argentina</a>
+          </div>
+          <div>
+            <a href="asia/">Asia</a>
+            <a href="africa/">África</a>
+            <a href="oceania/">Oceanía</a>
+            <a href="latinoamerica/">Latinoamérica</a>
+            <a href="viajes-deportivos/">Viajes Deportivos</a>
+            <a href="lunas-de-miel/">Lunas de miel</a>
+          </div>
+        </div>
       </div>
       <div>
-        <h4>Esta página</h4>
-        <a href="#ofrecemos">Qué ofrecemos</a>
-        <a href="#que-hacer">Qué hacer</a>
-        <a href="#epocas">Cuándo ir</a>
-        <a href="#testimonios">Testimonios</a>
-      <a href="#guia">Guía experta</a>
-        <a href="financiacion/">Medios de pago</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contacto">Contacto</a>
+        <h4><a href="./#diferenciales">La agencia</a></h4>
+        <a href="viajes-a-medida/">Viajes a medida</a><a href="./#diferenciales">Por qué Legend</a><a href="./#historia">Nuestra historia</a><a href="./#equipo">El equipo</a><a href="#testimonios">Testimonios</a><a href="#financiacion">Medios de pago</a><a href="./#guias">Guías y consejos</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a>
       </div>
       <div>
-        <h4>Argentina</h4>
-        <a href="argentina/index.html">Todos los destinos</a>
-        <a href="argentina/bariloche/index.html">Bariloche</a>
-        <a href="argentina/ushuaia/index.html">Ushuaia</a>
-        <a href="argentina/salta-jujuy/index.html">Salta y Jujuy</a>
-        <a href="argentina/cataratas-iguazu/index.html">Cataratas del Iguazú</a>
-        <a href="argentina/mendoza/index.html">Mendoza</a>
-      </div>
-      <div>
-        <h4>Contacto</h4>
+        <h4><a href="#contacto">Contacto</a></h4>
         <p class="t">Paraná 3745, Martínez<br>Buenos Aires</p>
-        <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20sobre%20El%20Calafate">WhatsApp +54 9 11 2748-9446</a>
+        <a href="https://wa.me/5491127489446?text=Hola%20Legend%20Travel%2C%20quiero%20hacer%20una%20consulta">WhatsApp +54 9 11 2748-9446</a>
         <a href="tel:+541147170344">Teléfono 11 4717-0344</a>
         <div class="fsoc">
-          <a href="https://www.instagram.com/legendtraveloficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
-          <a href="https://www.tiktok.com/@legendtravel.ok" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-6.13 6.33 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.67a8.18 8.18 0 0 0 4.81 1.55V6.73a4.85 4.85 0 0 1-1.04-.04Z"/></svg></a>
-          <a href="https://www.facebook.com/LegendTravelOficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/legendtraveloficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@legendtravel.ok" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-6.13 6.33 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.67a8.18 8.18 0 0 0 4.81 1.55V6.73a4.85 4.85 0 0 1-1.04-.04Z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/LegendTravelOficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
         </div>
       </div>
     </div>
     <div class="fbot">
-      <span>© 2026 Legend Travel · Legajo 7553 — Ministerio de Turismo de la Nación</span>
+      <span>© 2026 Legend Travel · Legajo 7553 — Ministerio de Turismo de la Nación · <a href="politica-de-privacidad/" style="color:inherit;opacity:.7">Privacidad</a> · <a href="terminos-y-condiciones/" style="color:inherit;opacity:.7">Términos</a></span>
       <span class="claim">Tu viaje, tu historia.</span>
     </div>
   </div>
@@ -693,13 +700,15 @@ if(!(window.location.pathname===_bp||window.location.pathname===_bp+'index.html'
   var _segs=window.location.pathname.replace(_bp,'').replace(/\/index\.html$/,'/').replace(/\/$/,'').split('/').filter(Boolean);
   var _cn=(document.title||'').split(' | ')[0].replace(/ desde Argentina$/,'').replace(/ por Argentina$/,'').replace(/^Viajes (a los |a las |al |a la |a |por |de |en |)/,'').trim();
   if(!_cn)_cn=_sl(_segs[_segs.length-1]||'');
-  var _bci=[{t:'Inicio',h:'./'}];
+  var _bci=[{t:'Inicio',h:_bp}];
   for(var _i=0;_i<_segs.length-1;_i++){_bci.push({t:_sl(_segs[_i]),h:_segs.slice(0,_i+1).join('/')+'/'}); }
   _bci.push({t:_cn,h:null});
+  var _bst=document.createElement('style');_bst.textContent='#navcrumb a{color:rgba(255,255,255,.75);text-decoration:none;transition:color .2s;cursor:pointer}#navcrumb a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}';document.head.appendChild(_bst);
   var _bc=document.createElement('nav');_bc.id='navcrumb';_bc.setAttribute('aria-label','Ruta de navegaci\u00f3n');
-  _bc.style.cssText='position:fixed;left:0;right:0;z-index:48;padding:5px 48px;font-size:11px;font-family:inherit;letter-spacing:.02em';
-  var _bcH='';_bci.forEach(function(it,idx){if(idx>0)_bcH+='<span style="margin:0 5px;color:rgba(255,255,255,.35)">\u203a</span>';if(it.h){_bcH+='<a href="'+it.h+'" style="color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s">'+it.t+'</a>';}else{_bcH+='<span style="color:rgba(255,255,255,.85);font-weight:500">'+it.t+'</span>';}});
-  _bc.innerHTML=_bcH;document.body.appendChild(_bc);
+  var _nw=document.querySelector('.navwrap');var _t=_nw?(_nw.getBoundingClientRect().bottom+4):96;
+  _bc.style.cssText='position:absolute;top:'+_t+'px;left:0;right:0;z-index:12;padding:9px 48px;font-size:20px;font-family:inherit;letter-spacing:.02em';
+  var _bcH='';_bci.forEach(function(it,idx){if(idx>0)_bcH+='<span style="margin:0 5px;color:rgba(255,255,255,.35)">\u203a</span>';if(it.h){_bcH+='<a href="'+it.h+'">'+it.t+'</a>';}else{_bcH+='<span style="color:rgba(255,255,255,.9);font-weight:600">'+it.t+'</span>';}});
+  _bc.innerHTML=_bcH;var _hEl=document.querySelector('.hero');if(_hEl){_hEl.insertBefore(_bc,_hEl.firstChild);}else{document.body.appendChild(_bc);}
   var _nbPos=document.querySelector('.navbar');if(_nbPos){var _nrect=_nbPos.getBoundingClientRect();_bc.style.top=(_nrect.bottom+6)+'px';}
   var _ldI=_bci.map(function(it,idx){var o={'@type':'ListItem','position':idx+1,'name':it.t};if(it.h){o.item=window.location.origin+_bp+(it.h==='./'?'':it.h);}else{o.item=window.location.href;}return o;});
   var _ldS=document.createElement('script');_ldS.type='application/ld+json';_ldS.textContent=JSON.stringify({'@context':'https://schema.org','@type':'BreadcrumbList','itemListElement':_ldI});document.head.appendChild(_ldS);
