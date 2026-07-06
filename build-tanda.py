@@ -98,18 +98,8 @@ HREF_RE = re.compile(r'\bhref=["\']([^"\']*)["\']', re.IGNORECASE)
 WA_NUMBER  = "5491127489446"
 WA_TEMPLATE = "Hola Legend Travel, quiero más información sobre un viaje a {destino}"
 
-# Texto que reemplaza el contenido del <span class="cta"> en cards redirigidas.
-WA_CTA = (
-    'Consultar por WhatsApp '
-    '<svg width="13" height="13" viewBox="0 0 24 24" fill="#25D366" '
-    'style="vertical-align:middle">'
-    '<path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z'
-    'm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1'
-    'c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6'
-    'l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2'
-    ' 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/>'
-    '</svg>'
-)
+# Texto del <span class="cta"> en cards redirigidas a WhatsApp.
+WA_CTA = 'Consultar más información →'  # sin rojo, sin icono
 
 
 def extract_h3_text(inner_html: str) -> str | None:
@@ -127,10 +117,11 @@ def build_wa_url(destino: str) -> str:
 
 
 def replace_cta(inner_html: str) -> str:
-    """Reemplaza el contenido de <span class="cta"> por el texto de WhatsApp."""
+    """Reemplaza el span cta/cta-lnk completo, forzando color neutro."""
+    replacement = f'<span class="cta" style="color:rgba(255,255,255,.8)">{WA_CTA}</span>'
     return re.sub(
-        r'(<span\s+class="cta"[^>]*>).*?(</span>)',
-        rf'\g<1>{WA_CTA}\g<2>',
+        r'<span\s+class="cta(?:-lnk)?"[^>]*>.*?</span>',
+        replacement,
         inner_html, count=1, flags=re.DOTALL | re.IGNORECASE,
     )
 
@@ -316,8 +307,13 @@ def main():
 
     # 1. Limpiar y crear destino
     if DEST.exists():
-        shutil.rmtree(DEST)
-    DEST.mkdir(parents=True)
+        try:
+            shutil.rmtree(DEST)
+        except PermissionError:
+            # Windows: algún proceso (Explorer, IDE) tiene la carpeta abierta.
+            # Se eliminan archivos internos y se sobreescribe en su lugar.
+            shutil.rmtree(DEST, ignore_errors=True)
+    DEST.mkdir(parents=True, exist_ok=True)
     print(f"\n✓  Destino limpiado y recreado: {DEST}")
 
     # 2. Archivos raíz
