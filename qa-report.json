@@ -1,0 +1,1597 @@
+[
+  {
+    "sev": "C_MENOR",
+    "page": "africa/index.html",
+    "msg": "Meta description: 190 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "africa/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "africa/seychelles/index.html",
+    "msg": "Largo de <title> = 84 chars (ideal 25-70): 'Viajes a Seychelles desde Argentina | Luna de Miel y Playas Vírgenes | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "africa/seychelles/index.html",
+    "msg": "Meta description: 189 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "africa/seychelles/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "africa/zanzibar/index.html",
+    "msg": "Largo de <title> = 78 chars (ideal 25-70): 'Viajes a Zanzíbar desde Argentina | Playa y Safari en Tanzania | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "africa/zanzibar/index.html",
+    "msg": "Meta description: 181 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "africa/zanzibar/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "argentina/bariloche/index.html",
+    "msg": "Meta description: 203 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "argentina/bariloche/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "argentina/cataratas-iguazu/index.html",
+    "msg": "Meta description: 203 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "argentina/cataratas-iguazu/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "argentina/el-calafate/index.html",
+    "msg": "Meta description: 167 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "argentina/el-calafate/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "argentina/index.html",
+    "msg": "Meta description: 199 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "argentina/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "argentina/mendoza/index.html",
+    "msg": "Meta description: 178 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "argentina/mendoza/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "argentina/salta-jujuy/index.html",
+    "msg": "Meta description: 191 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "argentina/salta-jujuy/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "argentina/ushuaia/index.html",
+    "msg": "Meta description: 181 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "argentina/ushuaia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/china/index.html",
+    "msg": "Largo de <title> = 81 chars (ideal 25-70): 'Viajes a China desde Argentina | Gran Muralla, Beijing y Shanghái | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "asia/china/index.html",
+    "msg": "Meta description: 205 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/china/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/corea/index.html",
+    "msg": "Largo de <title> = 78 chars (ideal 25-70): 'Viajes a Corea del Sur desde Argentina | Seúl, K-pop y Cultura | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "asia/corea/index.html",
+    "msg": "Meta description: 214 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/corea/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/dubai/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/filipinas/index.html",
+    "msg": "Largo de <title> = 78 chars (ideal 25-70): 'Viajes a Filipinas desde Argentina | Islas, Playas y Arrecifes | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "asia/filipinas/index.html",
+    "msg": "Meta description: 208 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/filipinas/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "asia/index.html",
+    "msg": "Meta description: 168 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/india/index.html",
+    "msg": "Largo de <title> = 87 chars (ideal 25-70): 'Viajes a India desde Argentina | Taj Mahal, Triángulo Dorado y Rajastán | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "asia/india/index.html",
+    "msg": "Meta description: 205 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/india/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/japon/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/malasia/index.html",
+    "msg": "Largo de <title> = 82 chars (ideal 25-70): 'Viajes a Malasia desde Argentina | Kuala Lumpur, Borneo y Langkawi | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "asia/malasia/index.html",
+    "msg": "Meta description: 225 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/malasia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/maldivas/index.html",
+    "msg": "Largo de <title> = 71 chars (ideal 25-70): 'Viajes a Maldivas desde Argentina | Luna de Miel y Lujo | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "asia/maldivas/index.html",
+    "msg": "Meta description: 201 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/maldivas/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/singapur/index.html",
+    "msg": "Largo de <title> = 75 chars (ideal 25-70): 'Viajes a Singapur desde Argentina | Ciudad Estado Futurista | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "asia/singapur/index.html",
+    "msg": "Meta description: 214 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/singapur/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/tailandia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "asia/vietnam/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "blog/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: Blog)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "brasil/index.html",
+    "msg": "Meta description: 192 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "brasil/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "caribe/aruba/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "caribe/bahamas/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "caribe/cancun-riviera-maya/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "caribe/cuba/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "caribe/curazao/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "caribe/index.html",
+    "msg": "Meta description: 178 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "caribe/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "caribe/jamaica/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "caribe/republica-dominicana/bayahibe/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "caribe/republica-dominicana/index.html",
+    "msg": "Meta description: 172 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "caribe/republica-dominicana/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "caribe/republica-dominicana/miches/index.html",
+    "msg": "Meta description: 168 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "caribe/republica-dominicana/miches/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "caribe/republica-dominicana/punta-cana/index.html",
+    "msg": "Meta description: 169 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "caribe/republica-dominicana/punta-cana/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "caribe/republica-dominicana/samana/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "caribe/saint-maarten/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "caribe/san-andres/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "caribe/turks-caicos/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "cruceros/index.html",
+    "msg": "Meta description: 191 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "cruceros/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "disney/index.html",
+    "msg": "Meta description: 186 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "disney/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/central/alemania/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/central/belgica/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "europa/central/croacia/index.html",
+    "msg": "Meta description: 166 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/central/croacia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/central/eslovenia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/central/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/central/index.html",
+    "msg": "Link interno roto: 'alemania/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/central/index.html",
+    "msg": "Link interno roto: 'suiza/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/central/index.html",
+    "msg": "Link interno roto: 'belgica/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/central/index.html",
+    "msg": "Link interno roto: 'paises-bajos/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/central/index.html",
+    "msg": "Link interno roto: 'croacia/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/central/index.html",
+    "msg": "Link interno roto: 'eslovenia/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/central/paises-bajos/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/central/suiza/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "europa/del-este/austria/index.html",
+    "msg": "Meta description: 171 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/del-este/austria/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/del-este/hungria/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/del-este/index.html",
+    "msg": "Sin <meta property=og:image>"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/del-este/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/del-este/index.html",
+    "msg": "Link interno roto: 'republica-checa/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/del-este/index.html",
+    "msg": "Link interno roto: 'austria/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/del-este/index.html",
+    "msg": "Link interno roto: 'hungria/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/del-este/index.html",
+    "msg": "Link interno roto: 'polonia/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/del-este/polonia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/del-este/republica-checa/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "europa/escandinavia/dinamarca/index.html",
+    "msg": "Meta description: 180 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/escandinavia/dinamarca/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "europa/escandinavia/finlandia/index.html",
+    "msg": "Meta description: 183 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/escandinavia/finlandia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/escandinavia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/escandinavia/index.html",
+    "msg": "Link interno roto: 'noruega/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/escandinavia/index.html",
+    "msg": "Link interno roto: 'islandia/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/escandinavia/index.html",
+    "msg": "Link interno roto: 'suecia/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/escandinavia/index.html",
+    "msg": "Link interno roto: 'dinamarca/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/escandinavia/index.html",
+    "msg": "Link interno roto: 'finlandia/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "europa/escandinavia/islandia/index.html",
+    "msg": "Meta description: 169 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/escandinavia/islandia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "europa/escandinavia/noruega/index.html",
+    "msg": "Meta description: 170 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/escandinavia/noruega/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "europa/escandinavia/suecia/index.html",
+    "msg": "Meta description: 177 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/escandinavia/suecia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "europa/index.html",
+    "msg": "Meta description: 171 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/index.html",
+    "msg": "Link interno roto: 'sur-occidental/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/index.html",
+    "msg": "Link interno roto: 'central/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/index.html",
+    "msg": "Link interno roto: 'del-este/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/index.html",
+    "msg": "Link interno roto: 'islas-britanicas/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/index.html",
+    "msg": "Link interno roto: 'escandinavia/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "europa/islas-britanicas/escocia/index.html",
+    "msg": "Meta description: 169 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/islas-britanicas/escocia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/islas-britanicas/gales/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "europa/islas-britanicas/index.html",
+    "msg": "Meta description: 168 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/islas-britanicas/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/islas-britanicas/index.html",
+    "msg": "Link interno roto: 'inglaterra/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/islas-britanicas/index.html",
+    "msg": "Link interno roto: 'escocia/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/islas-britanicas/index.html",
+    "msg": "Link interno roto: 'irlanda/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/islas-britanicas/index.html",
+    "msg": "Link interno roto: 'gales/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "europa/islas-britanicas/inglaterra/index.html",
+    "msg": "Meta description: 167 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/islas-britanicas/inglaterra/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/islas-britanicas/irlanda/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/sur-occidental/espana/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/sur-occidental/francia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/sur-occidental/grecia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/sur-occidental/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/sur-occidental/index.html",
+    "msg": "Link interno roto: 'espana/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/sur-occidental/index.html",
+    "msg": "Link interno roto: 'italia/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/sur-occidental/index.html",
+    "msg": "Link interno roto: 'francia/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/sur-occidental/index.html",
+    "msg": "Link interno roto: 'portugal/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "europa/sur-occidental/index.html",
+    "msg": "Link interno roto: 'grecia/' -> no existe en el filesystem"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/sur-occidental/italia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "europa/sur-occidental/portugal/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "financiacion/index.html",
+    "msg": "Meta description: 197 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "financiacion/index.html",
+    "msg": "JSON-LD con error de sintaxis: Expecting ',' delimiter: line 9 column 313 (char 1931)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "financiacion/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "index.html",
+    "msg": "Meta description: 208 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "latinoamerica/chile/index.html",
+    "msg": "Largo de <title> = 73 chars (ideal 25-70): 'Viajes a Chile desde Argentina | Atacama, Patagonia y más | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "latinoamerica/chile/index.html",
+    "msg": "Meta description: 167 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "latinoamerica/chile/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "latinoamerica/colombia/index.html",
+    "msg": "Largo de <title> = 77 chars (ideal 25-70): 'Viajes a Colombia desde Argentina | Cartagena, Medellín y más | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "latinoamerica/colombia/index.html",
+    "msg": "Meta description: 186 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "latinoamerica/colombia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "latinoamerica/costa-rica/index.html",
+    "msg": "Largo de <title> = 83 chars (ideal 25-70): 'Viajes a Costa Rica desde Argentina | Naturaleza, volcanes y playas | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "latinoamerica/costa-rica/index.html",
+    "msg": "Meta description: 178 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "latinoamerica/costa-rica/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "latinoamerica/guatemala/index.html",
+    "msg": "Largo de <title> = 82 chars (ideal 25-70): 'Viajes a Guatemala desde Argentina | Tikal, Antigua y Lago Atitlán | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "latinoamerica/guatemala/index.html",
+    "msg": "Meta description: 213 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "latinoamerica/guatemala/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "latinoamerica/index.html",
+    "msg": "Meta description: 206 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "latinoamerica/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "latinoamerica/panama/index.html",
+    "msg": "Largo de <title> = 85 chars (ideal 25-70): 'Viajes a Panamá desde Argentina | Canal, Casco Viejo y Bocas del Toro | Legend Travel'"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "latinoamerica/panama/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "latinoamerica/peru/index.html",
+    "msg": "Largo de <title> = 73 chars (ideal 25-70): 'Viajes a Perú desde Argentina | Machu Picchu, Cusco y más | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "latinoamerica/peru/index.html",
+    "msg": "Meta description: 169 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "latinoamerica/peru/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "lunas-de-miel/index.html",
+    "msg": "Meta description: 219 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "lunas-de-miel/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "oceania/australia/index.html",
+    "msg": "Largo de <title> = 85 chars (ideal 25-70): 'Viajes a Australia desde Argentina | Sídney, Gran Barrera y Melbourne | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "oceania/australia/index.html",
+    "msg": "Meta description: 209 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "oceania/australia/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "oceania/bora-bora/index.html",
+    "msg": "Largo de <title> = 78 chars (ideal 25-70): 'Viajes a Bora Bora desde Argentina | Luna de Miel en Polinesia | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "oceania/bora-bora/index.html",
+    "msg": "Meta description: 227 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "oceania/bora-bora/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "oceania/index.html",
+    "msg": "Largo de <title> = 76 chars (ideal 25-70): 'Viajes a Oceanía desde Argentina | Australia y Nueva Zelanda | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "oceania/index.html",
+    "msg": "Meta description: 201 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "oceania/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "oceania/nueva-zelanda/index.html",
+    "msg": "Largo de <title> = 83 chars (ideal 25-70): 'Viajes a Nueva Zelanda desde Argentina | Fiordos, Queenstown y LOTR | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "oceania/nueva-zelanda/index.html",
+    "msg": "Meta description: 201 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "oceania/nueva-zelanda/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "quienes-somos/index.html",
+    "msg": "Largo de <title> = 75 chars (ideal 25-70): 'Quiénes somos | Legend Travel — agencia de viajes en Martínez, Buenos Aires'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "quienes-somos/index.html",
+    "msg": "Meta description: 190 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "quienes-somos/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "A_CRITICO",
+    "page": "quienes-somos/index.html",
+    "msg": "WhatsApp sin ?text= (sin mensaje precargado): 'https://wa.me/5491127489446'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "usa/costa-oeste/index.html",
+    "msg": "Meta description: 169 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "usa/costa-oeste/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "usa/costa-oeste/las-vegas/index.html",
+    "msg": "Meta description: 166 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "usa/costa-oeste/las-vegas/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "usa/costa-oeste/los-angeles/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "usa/costa-oeste/san-francisco/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "usa/disney-universal/index.html",
+    "msg": "Meta description: 182 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "usa/disney-universal/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "usa/hawaii/index.html",
+    "msg": "Meta description: 169 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "usa/hawaii/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "usa/index.html",
+    "msg": "Meta description: 183 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "usa/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "usa/miami/index.html",
+    "msg": "Meta description: 183 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "usa/miami/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "usa/nueva-york/index.html",
+    "msg": "Meta description: 174 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "usa/nueva-york/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "viajes-deportivos/formula-1/index.html",
+    "msg": "Largo de <title> = 86 chars (ideal 25-70): 'Viajes a la Fórmula 1 desde Argentina | Mónaco, Las Vegas, Silverstone | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "viajes-deportivos/formula-1/index.html",
+    "msg": "Meta description: 189 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "viajes-deportivos/formula-1/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "viajes-deportivos/grand-slams-tenis/index.html",
+    "msg": "Largo de <title> = 101 chars (ideal 25-70): 'Viajes a los Grand Slams de Tenis desde Argentina | Roland Garros, Wimbledon, US Open | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "viajes-deportivos/grand-slams-tenis/index.html",
+    "msg": "Meta description: 195 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "viajes-deportivos/grand-slams-tenis/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "viajes-deportivos/index.html",
+    "msg": "Largo de <title> = 81 chars (ideal 25-70): 'Viajes a Eventos Deportivos desde Argentina | F1, Mundiales y más | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "viajes-deportivos/index.html",
+    "msg": "Meta description: 179 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "viajes-deportivos/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "viajes-deportivos/mundial-futbol/index.html",
+    "msg": "Largo de <title> = 82 chars (ideal 25-70): 'Viajes al Mundial de Fútbol desde Argentina | Seguí a la Selección | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "viajes-deportivos/mundial-futbol/index.html",
+    "msg": "Meta description: 185 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "viajes-deportivos/mundial-futbol/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "viajes-deportivos/rugby/index.html",
+    "msg": "Largo de <title> = 87 chars (ideal 25-70): 'Viajes de Rugby desde Argentina | Mundial de Rugby, Seis Naciones y más | Legend Travel'"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "viajes-deportivos/rugby/index.html",
+    "msg": "Meta description: 174 chars (ideal 70-165)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "viajes-deportivos/rugby/index.html",
+    "msg": "Sin BreadcrumbList en JSON-LD (tipos: ninguno)"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/usa/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/usa/costa-oeste/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/usa/costa-oeste/las-vegas/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/usa/costa-oeste/los-angeles/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/usa/costa-oeste/san-francisco/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/usa/miami/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/usa/nueva-york/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/usa/hawaii/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/usa/disney-universal/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/caribe/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/caribe/cancun-riviera-maya/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/caribe/aruba/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/caribe/cuba/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/caribe/jamaica/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/caribe/turks-caicos/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/caribe/bahamas/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/caribe/curazao/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/caribe/saint-maarten/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/caribe/san-andres/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/caribe/republica-dominicana/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/caribe/republica-dominicana/punta-cana/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/caribe/republica-dominicana/bayahibe/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/caribe/republica-dominicana/samana/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/caribe/republica-dominicana/miches/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/sur-occidental/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/sur-occidental/espana/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/sur-occidental/italia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/sur-occidental/francia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/sur-occidental/grecia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/sur-occidental/portugal/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/central/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/central/alemania/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/central/belgica/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/central/paises-bajos/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/central/suiza/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/central/croacia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/central/eslovenia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/del-este/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/del-este/austria/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/del-este/hungria/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/del-este/republica-checa/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/del-este/polonia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/escandinavia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/escandinavia/noruega/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/escandinavia/suecia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/escandinavia/dinamarca/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/escandinavia/finlandia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/escandinavia/islandia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/islas-britanicas/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/islas-britanicas/inglaterra/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/islas-britanicas/escocia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/islas-britanicas/irlanda/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/europa/islas-britanicas/gales/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/brasil/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/argentina/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/argentina/bariloche/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/argentina/mendoza/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/argentina/ushuaia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/argentina/el-calafate/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/argentina/salta-jujuy/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/argentina/cataratas-iguazu/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/latinoamerica/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/latinoamerica/peru/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/latinoamerica/colombia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/latinoamerica/chile/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/latinoamerica/costa-rica/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/latinoamerica/panama/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/latinoamerica/guatemala/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/viajes-deportivos/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/viajes-deportivos/formula-1/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/viajes-deportivos/rugby/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/viajes-deportivos/grand-slams-tenis/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/viajes-deportivos/mundial-futbol/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/asia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/asia/japon/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/asia/tailandia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/asia/india/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/asia/china/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/asia/vietnam/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/asia/dubai/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/asia/maldivas/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/asia/singapur/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/asia/malasia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/asia/filipinas/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/asia/corea/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/africa/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/africa/seychelles/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/africa/zanzibar/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/oceania/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/oceania/australia/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/oceania/nueva-zelanda/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/oceania/bora-bora/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/cruceros/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/disney/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/financiacion/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/lunas-de-miel/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/quienes-somos/"
+  },
+  {
+    "sev": "B_IMPORTANTE",
+    "page": "sitemap.xml",
+    "msg": "URL posiblemente ausente: https://www.legendtravel.com.ar/blog/"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "medio-oriente/index.html",
+    "msg": "Pagina FALTANTE (esperada en estructura)"
+  },
+  {
+    "sev": "C_MENOR",
+    "page": "viajes-a-medida/index.html",
+    "msg": "Pagina FALTANTE (esperada en estructura)"
+  }
+]
