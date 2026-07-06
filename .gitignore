@@ -1,0 +1,9 @@
+# Carpetas generadas por build-tanda.py — no van al repo
+dist-tanda1/
+dist-tanda2/
+dist-tanda3/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
