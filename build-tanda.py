@@ -9,7 +9,7 @@ NUNCA modifica el proyecto original.
 
 Uso: python build-tanda.py
 """
-import os, sys, shutil, re, datetime
+import sys, shutil, re, datetime, urllib.parse, html
 from pathlib import Path
 
 # Forzar UTF-8 en stdout (Windows CP1252 no soporta símbolos unicode)
@@ -24,8 +24,9 @@ SRC = Path(__file__).parent  # raíz del proyecto
 
 DOMAIN = "https://www.legendtravel.com.ar"
 
-# Carpeta destino. Queda fuera del árbol de git (ver .gitignore).
-DEST = SRC / "dist-tanda1"
+# Carpeta destino — FUERA de OneDrive para evitar bloqueos de sincronización.
+# FileZilla: apuntar a esta ruta cuando subas.
+DEST = Path.home() / "legend-tanda1"
 
 # Archivos sueltos en la raíz del proyecto
 ROOT_FILES = [
@@ -78,12 +79,12 @@ EXCLUIDAS_NOTA = [
 ]
 
 # ============================================================
-# TRANSFORMACIÓN "PRÓXIMAMENTE"
+# TRANSFORMACIÓN → WHATSAPP
 # ============================================================
 # Clases de cards que se transforman si su destino no está en la tanda.
 CARD_CLASSES = ['dcard', 'dest-card', 'dest-luna-card']
 
-# Regex para encontrar un elemento <a class="dcard|dest-card|dest-luna-card" ...>...</a>
+# Regex para encontrar <a class="dcard|dest-card|dest-luna-card" ...>...</a>
 _cls_pat = '|'.join(re.escape(c) for c in CARD_CLASSES)
 CARD_RE = re.compile(
     r'<a\b([^>]*\bclass="[^"]*\b(?:' + _cls_pat + r')\b[^"]*"[^>]*)>'
@@ -94,21 +95,44 @@ CARD_RE = re.compile(
 
 HREF_RE = re.compile(r'\bhref=["\']([^"\']*)["\']', re.IGNORECASE)
 
-# CSS que se inyecta en el <head> de cada HTML que tenga cards transformadas.
-PROX_CSS = (
-    '\n<style>'
-    '.prox-card{opacity:.7;pointer-events:none;cursor:default;position:relative;}'
-    '.prox-badge{'
-    'position:absolute;top:12px;right:12px;z-index:20;'
-    'background:rgba(14,35,45,.88);color:#F2B33D;'
-    'font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;'
-    'padding:5px 10px;border-radius:5px;'
-    'border:1px solid rgba(242,179,61,.35);'
-    'backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);'
-    'font-family:inherit;line-height:1;white-space:nowrap;'
-    '}'
-    '</style>'
+WA_NUMBER  = "5491127489446"
+WA_TEMPLATE = "Hola Legend Travel, quiero más información sobre un viaje a {destino}"
+
+# Texto que reemplaza el contenido del <span class="cta"> en cards redirigidas.
+WA_CTA = (
+    'Consultar por WhatsApp '
+    '<svg width="13" height="13" viewBox="0 0 24 24" fill="#25D366" '
+    'style="vertical-align:middle">'
+    '<path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z'
+    'm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1'
+    'c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6'
+    'l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2'
+    ' 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/>'
+    '</svg>'
 )
+
+
+def extract_h3_text(inner_html: str) -> str | None:
+    """Texto plano del primer <h3> dentro del HTML de una card."""
+    m = re.search(r'<h3[^>]*>(.*?)</h3>', inner_html, re.DOTALL | re.IGNORECASE)
+    if not m:
+        return None
+    text = html.unescape(re.sub(r'<[^>]+>', '', m.group(1))).strip()
+    return text or None
+
+
+def build_wa_url(destino: str) -> str:
+    msg = WA_TEMPLATE.format(destino=destino)
+    return f"https://wa.me/{WA_NUMBER}?text={urllib.parse.quote(msg)}"
+
+
+def replace_cta(inner_html: str) -> str:
+    """Reemplaza el contenido de <span class="cta"> por el texto de WhatsApp."""
+    return re.sub(
+        r'(<span\s+class="cta"[^>]*>).*?(</span>)',
+        rf'\g<1>{WA_CTA}\g<2>',
+        inner_html, count=1, flags=re.DOTALL | re.IGNORECASE,
+    )
 
 
 def build_published_set() -> set:
@@ -161,54 +185,47 @@ def has_base_root(html_text: str) -> bool:
     return False
 
 
-def transform_html(html_text: str, published: set) -> tuple:
+def transform_html(html_text: str, published: set, wa_examples: list) -> tuple:
     """
-    Transforma cards en html_text: los que apuntan a páginas no publicadas
-    pasan a <div class="prox-card"> con badge "Próximamente".
-    Devuelve (nuevo_html, n_transformados, n_activos).
+    Transforma cards cuyo destino no está publicado: cambia href a WhatsApp
+    con el nombre del destino y reemplaza el CTA por "Consultar por WhatsApp".
+    Devuelve (nuevo_html, n_transformados).
     """
-    count_prox = [0]
-    count_ok = [0]
+    count_wa = [0]
 
     def replace_card(m):
-        attrs   = m.group(1)   # atributos del <a ...>
-        inner   = m.group(2)   # contenido interior
+        attrs = m.group(1)
+        inner = m.group(2)
 
         href_m = HREF_RE.search(attrs)
         href   = href_m.group(1) if href_m else ''
 
-        # Externo → nunca transformar
+        # Externo (WhatsApp existente, redes, etc.) → nunca transformar
         if any(href.startswith(p) for p in ('http://', 'https://', '//', 'mailto:', 'tel:')):
-            count_ok[0] += 1
             return m.group(0)
 
         path = normalize_card_href(href)
-        if path is None:
-            count_ok[0] += 1
+        if path is None or path in published:
             return m.group(0)
 
-        if path in published:
-            count_ok[0] += 1
-            return m.group(0)
+        # Nombre del destino desde <h3> o fallback desde URL
+        destino = (extract_h3_text(inner)
+                   or path.rstrip('/').split('/')[-1].replace('-', ' ').title())
 
-        # Transformar → quitar href, agregar clase prox-card, badge
-        new_attrs = HREF_RE.sub('', attrs).strip()
-        # Añadir prox-card a la clase existente
-        new_attrs = re.sub(
-            r'(class="[^"]*)',
-            lambda ma: ma.group(1) + ' prox-card',
-            new_attrs, count=1,
-        )
-        badge = '<span class="prox-badge">Próximamente</span>'
-        count_prox[0] += 1
-        return f'<div {new_attrs}>{badge}{inner}</div>'
+        wa_url = build_wa_url(destino)
+
+        # Reemplazar href; añadir target/_blank si no está
+        new_attrs = HREF_RE.sub(f'href="{wa_url}"', attrs, count=1)
+        if 'target=' not in new_attrs:
+            new_attrs = new_attrs.rstrip() + ' target="_blank" rel="noopener noreferrer"'
+
+        new_inner = replace_cta(inner)
+        count_wa[0] += 1
+        wa_examples.append((destino, wa_url))
+        return f'<a {new_attrs}>{new_inner}</a>'
 
     new_html = CARD_RE.sub(replace_card, html_text)
-
-    if count_prox[0] > 0:
-        new_html = new_html.replace('</head>', PROX_CSS + '\n</head>', 1)
-
-    return new_html, count_prox[0], count_ok[0]
+    return new_html, count_wa[0]
 
 
 # ============================================================
@@ -221,24 +238,25 @@ def copy_file(src_path: Path, dest_path: Path):
 
 
 def copy_html_transformed(src_path: Path, dest_path: Path,
-                          published: set, transform_log: dict):
-    """Lee un HTML, aplica transformación y guarda en destino."""
+                          published: set, transform_log: dict,
+                          wa_examples: list):
+    """Lee un HTML, aplica transformación WhatsApp y guarda en destino."""
     dest_path.parent.mkdir(parents=True, exist_ok=True)
     text = src_path.read_text(encoding='utf-8', errors='ignore')
-    new_text, n_prox, n_ok = transform_html(text, published)
+    new_text, n_wa = transform_html(text, published, wa_examples)
     dest_path.write_text(new_text, encoding='utf-8')
-    if n_prox > 0:
+    if n_wa > 0:
         rel = dest_path.relative_to(DEST).as_posix()
-        transform_log[rel] = n_prox
+        transform_log[rel] = n_wa
 
 
-def make_copytree_fn(published: set, transform_log: dict):
+def make_copytree_fn(published: set, transform_log: dict, wa_examples: list):
     """Devuelve un copy_function compatible con shutil.copytree."""
     def _copy(src, dst):
         src_p, dst_p = Path(src), Path(dst)
         dst_p.parent.mkdir(parents=True, exist_ok=True)
         if src_p.suffix.lower() == '.html':
-            copy_html_transformed(src_p, dst_p, published, transform_log)
+            copy_html_transformed(src_p, dst_p, published, transform_log, wa_examples)
         else:
             shutil.copy2(src, dst)
     return _copy
@@ -287,7 +305,8 @@ def main():
     copied_files:    list[str] = []
     warnings:        list[str] = []
     notes:           list[str] = []
-    transform_log:   dict      = {}   # html_rel → n_cards transformadas
+    transform_log:   dict      = {}   # html_rel → n_cards → WhatsApp
+    wa_examples:     list      = []   # (destino, wa_url) para el resumen
 
     published = build_published_set()
 
@@ -311,7 +330,7 @@ def main():
             continue
         dest = DEST / name
         if src.suffix.lower() == '.html':
-            copy_html_transformed(src, dest, published, transform_log)
+            copy_html_transformed(src, dest, published, transform_log, wa_examples)
         else:
             copy_file(src, dest)
         copied_files.append(name)
@@ -319,7 +338,7 @@ def main():
 
     # 3. Servicios completos
     print("\n→  Servicios (completos):")
-    copyfn = make_copytree_fn(published, transform_log)
+    copyfn = make_copytree_fn(published, transform_log, wa_examples)
     for d in FULL_DIRS:
         src_dir = SRC / d
         dest_dir = DEST / d
@@ -347,7 +366,7 @@ def main():
         extras = []
         idx = src_dir / "index.html"
         if idx.exists():
-            copy_html_transformed(idx, dest_dir / "index.html", published, transform_log)
+            copy_html_transformed(idx, dest_dir / "index.html", published, transform_log, wa_examples)
             copied_files.append(f"{d}/index.html")
         else:
             warnings.append(f"Madre: '{d}/index.html' no encontrado")
@@ -361,7 +380,7 @@ def main():
         if subcarpetas:
             notes.append(f"'{d}/': subcarpetas omitidas → {', '.join(subcarpetas)}")
         label = "index.html" + (f" + {', '.join(extras)}" if extras else "")
-        prox_label = f"  [{transform_log.get(f'{d}/index.html', 0)} cards → prox]" \
+        prox_label = f"  [{transform_log[f'{d}/index.html']} cards → WA]" \
                      if f'{d}/index.html' in transform_log else ""
         print(f"   {d}/  ({label}){prox_label}")
 
@@ -381,12 +400,16 @@ def main():
     (DEST / "sitemap.xml").write_text('\n'.join(lines), encoding='utf-8')
     print(f"\n✓  sitemap.xml generado ({len(sitemap_paths)} URLs)")
 
-    # 6. Transformaciones "Próximamente"
-    total_prox = sum(transform_log.values())
+    # 6. Transformaciones → WhatsApp
+    total_wa = sum(transform_log.values())
     if transform_log:
-        print(f"\n→  Cards transformadas a 'Próximamente' ({total_prox} en {len(transform_log)} páginas):")
+        print(f"\n→  Cards redirigidas a WhatsApp ({total_wa} en {len(transform_log)} páginas):")
         for rel, n in sorted(transform_log.items()):
             print(f"   {rel}: {n} card{'s' if n != 1 else ''}")
+        print(f"\n   Ejemplos de mensajes generados (primeros 5):")
+        for destino, url in wa_examples[:5]:
+            decoded = urllib.parse.unquote(url.split('text=')[1])
+            print(f"   · {destino}: \"{decoded}\"")
     else:
         print("\n→  Sin cards transformadas (todas las páginas destino están incluidas)")
 
@@ -430,7 +453,7 @@ def main():
     print(f"{'='*62}")
     print(f"  Archivos copiados       : {len(copied_files)}")
     print(f"  Páginas en sitemap      : {len(sitemap_paths)}")
-    print(f"  Cards → Próximamente    : {total_prox} (en {len(transform_log)} páginas)")
+    print(f"  Cards → WhatsApp        : {total_wa} (en {len(transform_log)} páginas)")
     print(f"  Carpeta destino         : {DEST}")
     print(f"\n  Páginas incluidas:")
     for p in sitemap_paths:
