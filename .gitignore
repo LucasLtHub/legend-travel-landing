@@ -7,3 +7,6 @@ dist-tanda3/
 .venv/
 __pycache__/
 *.pyc
+
+# Fotos originales del equipo (crudas, no publicadas — la web usa /equipo optimizadas)
+Fotos de equipo/
