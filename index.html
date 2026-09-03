@@ -280,13 +280,13 @@ section{background:var(--white)}
 .tgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media(min-width:640px){.tgrid{grid-template-columns:repeat(3,1fr)}}
 @media(min-width:1024px){.tgrid{grid-template-columns:repeat(3,1fr);gap:24px}}
-.tcard{display:block;background:#fff;border:1px solid rgba(14,35,45,.1);border-radius:16px;padding:28px 24px;text-align:center;transition:transform .3s,box-shadow .3s,border-color .3s}
+.tcard{display:block;background:var(--red);border:1px solid var(--red);border-radius:16px;padding:28px 24px;text-align:center;transition:transform .3s,box-shadow .3s,border-color .3s}
 .tcard:hover{transform:translateY(-6px);box-shadow:0 18px 44px rgba(14,35,45,.12);border-color:transparent}
 .tcard .av{width:104px;height:104px;border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:700;color:var(--white);background:linear-gradient(140deg,var(--red2),var(--bur));transition:transform .3s}
-.tcard img.av{object-fit:cover;display:block}
+.tcard img.av{object-fit:cover;display:block;background:#fff}
 .tcard:hover .av{transform:scale(1.05) rotate(-3deg)}
-.tcard b{display:block;font-weight:700;color:var(--black)}
-.tcard .role{font-size:13px;color:rgba(14,35,45,.55);margin-top:6px}
+.tcard b{display:block;font-weight:700;color:var(--white)}
+.tcard .role{font-size:13px;color:rgba(255,255,255,.78);margin-top:6px}
 /* HISTORIA */
 #historia{background:var(--bur)}
 #historia .kicker{color:var(--red3)}
@@ -758,15 +758,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="lead">Una empresa familiar, un solo equipo. Personas reales con las que vas a poder hablar cuando lo necesités.</p>
     </div>
     <div class="tgrid">
-      <div class="tcard rv"><div class="av">C</div><b>Carolina</b><p class="role">Agente de Viajes</p></div>
-      <div class="tcard rv"><div class="av">L</div><b>Luján</b><p class="role">Agente de Viajes</p></div>
-      <div class="tcard rv"><div class="av">L</div><b>Luciana</b><p class="role">Agente de Viajes</p></div>
-      <div class="tcard rv"><div class="av">C</div><b>Claudia</b><p class="role">Agente de Viajes</p></div>
-      <div class="tcard rv"><div class="av">X</div><b>Xiomara</b><p class="role">Agente de Viajes</p></div>
-      <div class="tcard rv"><div class="av">P</div><b>Pilar</b><p class="role">Agente de Viajes</p></div>
-      <div class="tcard rv"><div class="av">S</div><b>Silvia</b><p class="role">Departamento de Ventas</p></div>
+      <div class="tcard rv"><img class="av" src="equipo/carolina.png" alt="Carolina, Agente de Viajes de Legend Travel" width="104" height="104" loading="lazy"><b>Carolina</b><p class="role">Agente de Viajes</p></div>
+      <div class="tcard rv"><img class="av" src="equipo/lujan.png" alt="Luján, Agente de Viajes de Legend Travel" width="104" height="104" loading="lazy"><b>Luján</b><p class="role">Agente de Viajes</p></div>
+      <div class="tcard rv"><img class="av" src="equipo/luciana.png" alt="Luciana, Agente de Viajes de Legend Travel" width="104" height="104" loading="lazy"><b>Luciana</b><p class="role">Agente de Viajes</p></div>
+      <div class="tcard rv"><img class="av" src="equipo/claudia.png" alt="Claudia, Agente de Viajes de Legend Travel" width="104" height="104" loading="lazy"><b>Claudia</b><p class="role">Agente de Viajes</p></div>
+      <div class="tcard rv"><img class="av" src="equipo/xiomara.png" alt="Xiomara, Agente de Viajes de Legend Travel" width="104" height="104" loading="lazy"><b>Xiomara</b><p class="role">Agente de Viajes</p></div>
+      <div class="tcard rv"><img class="av" src="equipo/pilar.png" alt="Pilar, Agente de Viajes de Legend Travel" width="104" height="104" loading="lazy"><b>Pilar</b><p class="role">Agente de Viajes</p></div>
+      <div class="tcard rv"><img class="av" src="equipo/silvia.png" alt="Silvia, Departamento de Ventas de Legend Travel" width="104" height="104" loading="lazy"><b>Silvia</b><p class="role">Departamento de Ventas</p></div>
       <div class="tcard rv"><img class="av" src="equipo/fernando.png" alt="Fernando Pérez Grassi, Socio Gerente de Legend Travel" width="104" height="104" loading="lazy"><b>Fernando</b><p class="role">Socio Gerente</p></div>
-      <div class="tcard rv"><div class="av">L</div><b>Lucas</b><p class="role">Administrativo</p></div>
+      <div class="tcard rv"><img class="av" src="equipo/lucas.png" alt="Lucas, Administrativo de Legend Travel" width="104" height="104" loading="lazy"><b>Lucas</b><p class="role">Administrativo</p></div>
     </div>
   </div>
 </section>
