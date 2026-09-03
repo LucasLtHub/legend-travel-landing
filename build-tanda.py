@@ -44,6 +44,11 @@ ROOT_FILES = [
     "logo-wordmark.png",
 ]
 
+# Carpetas de assets en la raíz: se copian COMPLETAS, tal cual (sin transformar).
+ROOT_DIRS = [
+    "equipo",   # fotos del equipo (PNG) referenciadas por index.html y quienes-somos
+]
+
 # Carpetas de servicios: se copian COMPLETAS (index.html + todos sus assets)
 FULL_DIRS = [
     "quienes-somos",
@@ -331,6 +336,19 @@ def main():
             copy_file(src, dest)
         copied_files.append(name)
         print(f"   {name}")
+    for name in ROOT_DIRS:
+        src_dir = SRC / name
+        if not src_dir.exists():
+            warnings.append(f"Raíz: carpeta '{name}/' no encontrada")
+            print(f"   ⚠  {name}/ — NO ENCONTRADA")
+            continue
+        shutil.copytree(src_dir, DEST / name)
+        n = 0
+        for f in (DEST / name).rglob('*'):
+            if f.is_file():
+                copied_files.append(f.relative_to(DEST).as_posix())
+                n += 1
+        print(f"   {name}/  ({n} archivos)")
 
     # 3. Servicios completos
     print("\n→  Servicios (completos):")
