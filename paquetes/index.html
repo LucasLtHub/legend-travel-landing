@@ -111,6 +111,52 @@ section{background:var(--white)}
 .pk-disc{margin-top:40px;font-size:12.5px;color:rgba(14,35,45,.45);line-height:1.7;max-width:820px}
 
 /* ============================================================
+   COMO FUNCIONA — molde de pasos del sitio (igual que viajes-a-medida)
+   ============================================================ */
+.steps{display:grid;grid-template-columns:1fr;gap:0}
+.step{display:grid;grid-template-columns:48px 1fr;gap:0 24px;padding:32px 0;border-bottom:1px solid rgba(14,35,45,.08)}
+.step:first-child{border-top:1px solid rgba(14,35,45,.08)}
+.step-num{width:48px;height:48px;border-radius:50%;background:var(--red);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;flex:none;margin-top:4px}
+.step h3{font-size:20px;font-weight:700;letter-spacing:-.01em;color:var(--black);margin-bottom:8px}
+@media(min-width:640px){.step h3{font-size:24px}}
+.step p{font-size:15px;color:rgba(14,35,45,.7);line-height:1.75;max-width:600px}
+.paq-link{display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:700;color:var(--red);border-bottom:1.5px solid rgba(172,10,16,.25);padding-bottom:3px;transition:color .25s,border-color .25s}
+.paq-link:hover{color:var(--bur);border-color:var(--bur)}
+.paq-link svg{width:16px;height:16px;flex:none}
+
+/* ============================================================
+   A MEDIDA — panel sobrio, no compite con el CTA final
+   ============================================================ */
+.amedida{display:flex;flex-wrap:wrap;gap:40px;align-items:center;justify-content:space-between;background:rgba(14,35,45,.025);border:1px solid rgba(14,35,45,.08);border-radius:20px;padding:40px}
+@media(min-width:768px){.amedida{padding:56px}}
+.amedida-txt{flex:1;min-width:280px}
+.amedida-txt .h2{font-size:32px}
+@media(min-width:768px){.amedida-txt .h2{font-size:40px}}
+.amedida-txt .lead{margin-top:18px;max-width:520px}
+.amedida-btns{display:flex;flex-direction:column;gap:14px;flex:none}
+.btn-amedida{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--red);color:#fff;padding:14px 30px;border-radius:9px;font-size:15px;font-weight:600;transition:background .3s,transform .3s}
+.btn-amedida:hover{background:var(--bur);transform:translateY(-1px)}
+.btn-amedida svg{width:16px;height:16px;flex:none}
+.btn-amedida.ghost{background:#fff;color:var(--black);border:1.5px solid rgba(14,35,45,.14)}
+.btn-amedida.ghost:hover{background:var(--black);color:#fff;border-color:var(--black)}
+
+/* ============================================================
+   FAQ — mismo acordeon que las paginas de destino
+   ============================================================ */
+.faqwrap{max-width:768px;margin:0 auto}
+.faq{border-bottom:1px solid rgba(14,35,45,.1)}
+.faq:first-of-type{border-top:1px solid rgba(14,35,45,.1)}
+.faq button{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 4px;text-align:left;font-weight:700;font-size:16px;color:var(--black);transition:color .3s}
+@media(min-width:768px){.faq button{font-size:18px}}
+.faq button:hover{color:var(--red)}
+.faq .pm{width:32px;height:32px;border-radius:50%;border:1px solid rgba(14,35,45,.15);flex:none;display:flex;align-items:center;justify-content:center;transition:background .3s,border-color .3s,color .3s,transform .3s}
+.faq.open .pm{background:var(--red);border-color:var(--red);color:var(--white);transform:rotate(135deg)}
+.faq .pm svg .v{transition:opacity .2s}
+.faq.open .pm svg .v{opacity:0}
+.faq .ans{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq .ans p{padding:0 4px 24px;font-size:15px;color:rgba(14,35,45,.65);line-height:1.8;max-width:640px}
+
+/* ============================================================
    CIERRE / CONTACTO
    ============================================================ */
 .contact{background:var(--bur);color:var(--white);text-align:center}
@@ -149,7 +195,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 .navlogo{display:flex;align-items:center;flex-shrink:0;text-decoration:none;margin-top:-10px;margin-bottom:-10px}
 .navlogo img{height:90px;width:auto;display:block;filter:brightness(0) invert(1)}
 .navlogo:hover img{filter:brightness(0) invert(.49) sepia(1) saturate(3.3) hue-rotate(315deg)}
-.navlinks a{font-size:20px}
+.navlinks a{font-size:17px}
 .navtoggle{margin-left:auto}
 </style>
 </head>
@@ -160,10 +206,9 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
     <a href="/" class="navlogo" aria-label="Legend Travel"><img src="logo-wordmark.png" alt="Legend Travel" loading="eager"></a>
     <nav class="navlinks">
-      <a href="#paquetes">Paquetes</a>
-      <a href="./#destinos">Destinos</a>
-      <a href="viajes-a-medida/">Viajes a medida</a>
-      <a href="financiacion/">Financiaci&#243;n</a>
+      <a href="#paquetes">Paquetes destacados</a>
+      <a href="#como-funciona">C&#243;mo funciona</a>
+      <a href="#preguntas">Preguntas</a>
       <a href="#contacto">Contacto</a>
       <a class="btn-red" href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20por%20los%20paquetes" target="_blank" rel="noopener noreferrer">Consultar</a>
     </nav>
@@ -173,10 +218,9 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 
 <div class="navlinks-mobile" id="navMobile">
   <button class="navclose" id="navCloseBtn" aria-label="Cerrar men&#250;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
-  <a href="#paquetes">Paquetes</a>
-  <a href="./#destinos">Destinos</a>
-  <a href="viajes-a-medida/">Viajes a medida</a>
-  <a href="financiacion/">Financiaci&#243;n</a>
+  <a href="#paquetes">Paquetes destacados</a>
+  <a href="#como-funciona">C&#243;mo funciona</a>
+  <a href="#preguntas">Preguntas</a>
   <a href="#contacto">Contacto</a>
   <a href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20por%20los%20paquetes" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
 </div>
@@ -192,7 +236,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
       <img src="logo-wordmark.png" alt="Legend Travel" loading="eager">
     </div>
     <h1 class="fade" data-delay="500" data-dur="900">Salidas y paquetes<br><em>destacados.</em></h1>
-    <p class="hero-sub fade" data-delay="800" data-dur="900">Seleccionados por nuestro equipo &middot; Tarifas verificadas con vigencia a la vista.</p>
+    <p class="hero-sub fade" data-delay="800" data-dur="900">Seleccionados por nuestro equipo &middot; Tarifas verificadas &middot; Financiaci&#243;n en cuotas.</p>
     <div class="hero-btns fade" data-delay="1100" data-dur="900">
       <a class="btn-hero-main" href="#paquetes">
         Ver las salidas
@@ -391,21 +435,105 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   </div>
 </section>
 
+<!-- 4 — COMO FUNCIONA -->
+<section class="sec px" id="como-funciona">
+  <div class="mx">
+    <div class="rv" style="margin-bottom:64px;max-width:680px">
+      <p class="kicker">C&#243;mo funciona</p>
+      <h2 class="h2">Reservar tu paquete<br><em>en 3 pasos.</em></h2>
+    </div>
+    <div class="steps rv" style="max-width:820px">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Eleg&#237; tu paquete</h3>
+          <p>Mir&#225; las salidas de arriba y filtr&#225; por regi&#243;n hasta encontrar la que te cierra. Cada una muestra el precio desde, la fecha de salida, cu&#225;ntas noches son y todo lo que incluye &#8212; sin letra chica ni sorpresas al final.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Te asesoramos por WhatsApp</h3>
+          <p>Toc&#225;s &laquo;Consultar&raquo; y te responde una asesora real, no un bot. Te confirma disponibilidad para tus fechas, la tarifa final con impuestos incluidos y las opciones de pago que te convienen.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Congel&#225;s el precio con la se&#241;a</h3>
+          <p>Reserv&#225;s con una se&#241;a y el precio queda congelado. Si la tarifa sube despu&#233;s, no te afecta: lo tuyo ya est&#225; cerrado. Desde ah&#237; segu&#237;s con la misma asesora hasta que vuelvas del viaje.</p>
+        </div>
+      </div>
+    </div>
+    <p class="rv" style="margin-top:44px">
+      <a class="paq-link" href="financiacion/">Conoc&#233; todas las formas de pago y cuotas <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+    </p>
+  </div>
+</section>
+
+<!-- 5 — A MEDIDA -->
+<section class="sec px" id="a-medida" style="padding-top:0">
+  <div class="mx">
+    <div class="amedida rv">
+      <div class="amedida-txt">
+        <p class="kicker">A medida</p>
+        <h2 class="h2">&#191;No encontr&#225;s<br><em>tu viaje?</em></h2>
+        <p class="lead">Estas son las salidas que tenemos armadas hoy. Si tu destino, tus fechas o tu presupuesto son otros, lo armamos desde cero con vos &#8212; sin costo de planificaci&#243;n.</p>
+      </div>
+      <div class="amedida-btns">
+        <a class="btn-amedida" href="viajes-a-medida/">Armar mi viaje a medida <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        <a class="btn-amedida ghost" href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20armar%20un%20viaje%20a%20medida" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 — FAQ -->
+<!-- FAQ BORRADOR: validar respuestas con el equipo de viajes -->
+<section class="sec px" id="preguntas">
+  <div class="faqwrap">
+    <div style="text-align:center;max-width:672px;margin:0 auto 48px" class="rv">
+      <p class="kicker">Preguntas</p>
+      <h2 class="h2" style="font-size:36px">Lo que m&#225;s nos preguntan<br><em>sobre los paquetes.</em></h2>
+    </div>
+    <div class="rv">
+      <div class="faq">
+        <button aria-expanded="false">&#191;Los precios incluyen impuestos?<span class="pm"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></span></button>
+        <div class="ans"><p>Los precios que ves son <strong>&laquo;desde&raquo;, por persona en base doble</strong>. La tarifa final &#8212; con impuestos, tasas y percepciones vigentes &#8212; te la confirmamos en la consulta, siempre antes de que reserves. Los impuestos sobre viajes al exterior cambian seg&#250;n la normativa vigente, por eso no los fijamos en la card: preferimos darte el n&#250;mero real del d&#237;a en que reserv&#225;s.</p></div>
+      </div>
+      <div class="faq">
+        <button aria-expanded="false">&#191;Puedo pagar en cuotas?<span class="pm"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></span></button>
+        <div class="ans"><p>S&#237;. Seg&#250;n el paquete y el medio de pago hay planes en cuotas, algunos sin inter&#233;s con tarjetas de bancos determinados. Como las promociones bancarias rotan, tu asesora te confirma cu&#225;les est&#225;n vigentes para tu caso. Pod&#233;s ver el detalle en <a href="financiacion/" style="color:var(--red);font-weight:600">medios de pago y financiaci&#243;n</a>.</p></div>
+      </div>
+      <div class="faq">
+        <button aria-expanded="false">&#191;Qu&#233; pasa si la tarifa cambia antes de que reserve?<span class="pm"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></span></button>
+        <div class="ans"><p>Cada salida tiene su fecha de vigencia a la vista en la card (&laquo;Tarifa v&#225;lida hasta&hellip;&raquo;). Dentro de ese plazo sostenemos el precio publicado. Y cuando dej&#225;s la se&#241;a, el precio queda <strong>congelado</strong>: si la tarifa sube despu&#233;s, no te afecta.</p></div>
+      </div>
+      <div class="faq">
+        <button aria-expanded="false">&#191;Puedo cambiar la fecha o el destino despu&#233;s de reservar?<span class="pm"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></span></button>
+        <div class="ans"><p>Depende de las condiciones del operador mayorista de cada paquete: algunos permiten cambios con un cargo, otros no lo permiten una vez emitido. Te informamos las condiciones exactas <strong>por escrito y antes de que reserves</strong>, para que decidas sabiendo a qu&#233; atenerte. Sin letra chica.</p></div>
+      </div>
+      <div class="faq">
+        <button aria-expanded="false">&#191;Qu&#233; incluye exactamente cada paquete?<span class="pm"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></span></button>
+        <div class="ans"><p>Lo que figura en el &laquo;Incluye&raquo; de cada card: vuelos, traslados, categor&#237;a de hotel, r&#233;gimen de comidas y asistencia al viajero, seg&#250;n el caso. En la consulta te pasamos el detalle completo por escrito &#8212; hoteles concretos, horarios de vuelo y tambi&#233;n qu&#233; <em>no</em> est&#225; incluido &#8212; para que no queden dudas.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 — CTA FINAL -->
 <section class="sec px contact" id="contacto">
   <div class="mx">
     <div class="rv">
-      <p class="kicker light" style="color:var(--red3)">A medida</p>
-      <h2 class="h2">&#191;No encontr&#225;s<br>lo que <em>busc&#225;s</em>?</h2>
-      <p class="lead">Estas son las salidas que tenemos armadas hoy. Si tu destino, tus fechas o tu presupuesto son otros, lo armamos desde cero con vos &#8212; sin costo de planificaci&#243;n.</p>
+      <p class="kicker light" style="color:var(--red3)">Contacto</p>
+      <h2 class="h2">Tu pr&#243;ximo viaje<br>empieza con <em>un mensaje.</em></h2>
+      <p class="lead">Contanos qu&#233; salida te interes&#243; o qu&#233; ten&#233;s en mente. Te responde una asesora real &#8212; con nombre, no un formulario.</p>
       <div class="contact-btns">
-        <a class="bigbtn" href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20por%20un%20viaje%20a%20medida" target="_blank" rel="noopener noreferrer">
+        <a class="bigbtn" href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20consultar%20por%20los%20paquetes" target="_blank" rel="noopener noreferrer">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg>
           Consultar por WhatsApp
         </a>
-        <a class="btn-outline" href="viajes-a-medida/">
-          Armamos tu viaje a medida
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
-        </a>
+        <a class="btn-outline" href="tel:+541147170344">Llamar al 11 4717-0344</a>
       </div>
     </div>
   </div>
@@ -450,7 +578,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 </a>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.legendtravel.com.ar/"},{"@type":"ListItem","position":2,"name":"Paquetes","item":"https://www.legendtravel.com.ar/paquetes"}]}
+{"@context":"https://schema.org","@graph":[{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Los precios incluyen impuestos?","acceptedAnswer":{"@type":"Answer","text":"Los precios que ves son «desde», por persona en base doble. La tarifa final — con impuestos, tasas y percepciones vigentes — te la confirmamos en la consulta, siempre antes de que reserves. Los impuestos sobre viajes al exterior cambian según la normativa vigente, por eso no los fijamos en la card: preferimos darte el número real del día en que reservás."}},{"@type":"Question","name":"¿Puedo pagar en cuotas?","acceptedAnswer":{"@type":"Answer","text":"Sí. Según el paquete y el medio de pago hay planes en cuotas, algunos sin interés con tarjetas de bancos determinados. Como las promociones bancarias rotan, tu asesora te confirma cuáles están vigentes para tu caso. Podés ver el detalle en medios de pago y financiación."}},{"@type":"Question","name":"¿Qué pasa si la tarifa cambia antes de que reserve?","acceptedAnswer":{"@type":"Answer","text":"Cada salida tiene su fecha de vigencia a la vista en la card («Tarifa válida hasta…»). Dentro de ese plazo sostenemos el precio publicado. Y cuando dejás la seña, el precio queda congelado: si la tarifa sube después, no te afecta."}},{"@type":"Question","name":"¿Puedo cambiar la fecha o el destino después de reservar?","acceptedAnswer":{"@type":"Answer","text":"Depende de las condiciones del operador mayorista de cada paquete: algunos permiten cambios con un cargo, otros no lo permiten una vez emitido. Te informamos las condiciones exactas por escrito y antes de que reserves, para que decidas sabiendo a qué atenerte. Sin letra chica."}},{"@type":"Question","name":"¿Qué incluye exactamente cada paquete?","acceptedAnswer":{"@type":"Answer","text":"Lo que figura en el «Incluye» de cada card: vuelos, traslados, categoría de hotel, régimen de comidas y asistencia al viajero, según el caso. En la consulta te pasamos el detalle completo por escrito — hoteles concretos, horarios de vuelo y también qué no está incluido — para que no queden dudas."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.legendtravel.com.ar/"},{"@type":"ListItem","position":2,"name":"Paquetes","item":"https://www.legendtravel.com.ar/paquetes"}]}]}
 </script>
 
 <script>
@@ -462,6 +590,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   navMobile.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){navMobile.classList.remove('open');document.body.style.overflow=''})});
   var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
   document.querySelectorAll('.rv').forEach(function(el){obs.observe(el)});
+  document.querySelectorAll('.faq').forEach(function(f){var btn=f.querySelector('button'),ans=f.querySelector('.ans');btn.addEventListener('click',function(){var open=f.classList.toggle('open');btn.setAttribute('aria-expanded',open);ans.style.maxHeight=open?ans.scrollHeight+'px':0})});
 })();
 </script>
 
