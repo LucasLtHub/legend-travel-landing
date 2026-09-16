@@ -1,12 +1,22 @@
 #!/usr/bin/env python3
 """
 build-paquetes.py
-Genera la grilla de paquetes de paquetes/index.html a partir de data/paquetes.json.
+Genera TODA la presencia de paquetes del sitio a partir de data/paquetes.json.
+
+Escribe en dos lugares, siempre entre marcadores y nunca fuera de ellos:
+
+  1. paquetes/index.html   → <!-- PAQUETES:START --> ... <!-- PAQUETES:END -->
+     La seccion completa: chips de filtro + todas las salidas.
+
+  2. <region>/index.html   → <!-- PAQUETES-REGION:START --> ... <!-- PAQUETES-REGION:END -->
+     Dentro de cada madre, un apartado con SOLO las salidas de esa region.
+     Los marcadores se insertan solos la primera vez (al final de la seccion
+     #paquetes, debajo del modulo existente, sin tocarlo).
 
 - Los paquetes viven como DATOS. El HTML se genera. NUNCA editar las cards a mano.
-- Solo reemplaza el bloque entre <!-- PAQUETES:START --> y <!-- PAQUETES:END -->.
-  El resto de la pagina no se toca jamas.
 - Excluye automaticamente lo inactivo y lo vencido: nada vencido llega a la web.
+- Si una region se queda sin salidas, su apartado se vacia solo y la madre vuelve
+  a mostrar unicamente el modulo con el CTA. No queda nada colgado.
 
 Uso: python build-paquetes.py
 """
@@ -27,6 +37,8 @@ WA_TEXTO = "Hola Legend Travel, quiero información sobre el paquete: {titulo}"
 
 START = "<!-- PAQUETES:START -->"
 END = "<!-- PAQUETES:END -->"
+R_START = "<!-- PAQUETES-REGION:START -->"
+R_END = "<!-- PAQUETES-REGION:END -->"
 
 OBLIGATORIOS = ["id", "titulo", "destino", "region", "precio_desde", "moneda",
                 "salida", "noches", "regimen", "incluye", "vigencia", "imagen"]
@@ -38,6 +50,16 @@ REGIONES = {
     "latinoamerica": "Latinoamérica", "medio-oriente": "Medio Oriente",
     "cruceros": "Cruceros", "disney": "Disney", "lunas-de-miel": "Lunas de miel",
     "viajes-deportivos": "Viajes deportivos",
+}
+
+# Como se lee la region en una frase: "3 salidas {...} con fecha y precio".
+REGIONES_FRASE = {
+    "caribe": "al Caribe", "brasil": "a Brasil", "europa": "a Europa",
+    "usa": "a Estados Unidos", "argentina": "por Argentina", "asia": "a Asia",
+    "africa": "a África", "oceania": "a Oceanía", "latinoamerica": "a Latinoamérica",
+    "medio-oriente": "a Medio Oriente", "cruceros": "en crucero",
+    "disney": "a Disney", "lunas-de-miel": "de luna de miel",
+    "viajes-deportivos": "a eventos deportivos",
 }
 
 MESES = {"enero": 1, "febrero": 2, "marzo": 3, "abril": 4, "mayo": 5, "junio": 6,
@@ -53,6 +75,55 @@ IC_RELOJ = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-wi
 IC_ESTRELLA = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>'
 IC_WA = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg>'
 IC_BRUJULA = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5.5-5.5 2 2-5.5z"/></svg>'
+IC_FLECHA = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>'
+
+# ============================================================
+# CSS de las cards — FUENTE UNICA.
+# Se inyecta tanto en paquetes/index.html como en cada madre, asi las cards
+# se ven identicas en todos lados y hay un solo lugar donde tocarlas.
+# ============================================================
+CARD_CSS = """<style>
+.pk-grid{display:grid;grid-template-columns:1fr;gap:28px}
+@media(min-width:680px){.pk-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1080px){.pk-grid{grid-template-columns:1fr 1fr 1fr}}
+.pk-card{display:flex;flex-direction:column;background:#fff;border:1px solid rgba(14,35,45,.09);border-radius:18px;overflow:hidden;transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}
+.pk-card:hover{transform:translateY(-4px);border-color:rgba(14,35,45,.14);box-shadow:0 18px 40px -18px rgba(14,35,45,.28)}
+.pk-media{position:relative;aspect-ratio:16/10;overflow:hidden;background:rgba(14,35,45,.06)}
+.pk-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s cubic-bezier(.2,.6,.2,1)}
+.pk-card:hover .pk-media img{transform:scale(1.06)}
+.pk-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,35,45,.3) 0%,rgba(14,35,45,0) 42%);pointer-events:none}
+.pk-badge{position:absolute;top:14px;left:14px;z-index:2;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:var(--bur);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;padding:6px 12px;border-radius:100px;box-shadow:0 2px 10px rgba(14,35,45,.14)}
+.pk-badge svg{width:11px;height:11px;color:var(--gold)}
+.pk-nota{position:absolute;bottom:14px;left:14px;z-index:2;background:rgba(172,10,16,.94);color:#fff;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;padding:6px 12px;border-radius:100px}
+.pk-body{display:flex;flex-direction:column;flex:1;padding:24px 24px 22px}
+.pk-dest{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--red);margin-bottom:9px}
+.pk-t{font-size:20px;font-weight:700;letter-spacing:-.015em;line-height:1.25;color:var(--black);margin-bottom:16px}
+.pk-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.pk-meta span{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;color:rgba(14,35,45,.62);background:rgba(14,35,45,.04);border:1px solid rgba(14,35,45,.07);border-radius:8px;padding:5px 11px}
+.pk-meta svg{width:13px;height:13px;color:var(--red);flex:none}
+.pk-inc{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:7px}
+.pk-inc li{display:flex;align-items:flex-start;gap:9px;font-size:13.5px;color:rgba(14,35,45,.72);line-height:1.5}
+.pk-inc svg{width:13px;height:13px;color:var(--red);flex:none;margin-top:4px}
+.pk-foot{margin-top:auto;padding-top:18px;border-top:1px solid rgba(14,35,45,.08)}
+.pk-price{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.pk-price .lbl{font-size:12px;font-weight:600;color:rgba(14,35,45,.5);text-transform:uppercase;letter-spacing:.1em}
+.pk-price .amt{font-size:28px;font-weight:700;letter-spacing:-.03em;color:var(--black);line-height:1}
+.pk-price .cur{font-size:15px;font-weight:700;color:rgba(14,35,45,.55);letter-spacing:-.01em}
+.pk-pnota{font-size:12px;color:rgba(14,35,45,.5);margin-top:5px}
+.pk-cta{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;margin-top:16px;background:var(--red);color:#fff;padding:13px 20px;border-radius:9px;font-size:15px;font-weight:600;transition:background .3s,transform .3s}
+.pk-cta:hover{background:var(--bur);transform:translateY(-1px)}
+.pk-cta svg{width:17px;height:17px}
+.pk-vig{display:flex;align-items:center;gap:7px;margin-top:13px;font-size:11.5px;color:rgba(14,35,45,.45)}
+.pk-vig svg{width:12px;height:12px;flex:none}
+.pk-vig b{font-weight:600;color:rgba(14,35,45,.62)}
+.pk-rhead{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:34px}
+.pk-rhead h3{font-size:27px;font-weight:700;letter-spacing:-.022em;line-height:1.15;color:var(--black);max-width:620px}
+.pk-rhead h3 em{font-style:normal;color:var(--red)}
+.pk-rall{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:700;color:var(--red);border-bottom:1.5px solid rgba(172,10,16,.25);padding-bottom:3px;white-space:nowrap;transition:color .25s,border-color .25s}
+.pk-rall:hover{color:var(--bur);border-color:var(--bur)}
+.pk-rall svg{width:15px;height:15px}
+.pk-rsep{border:0;border-top:1px solid rgba(14,35,45,.09);margin:72px 0 0}
+</style>"""
 
 PLACEHOLDER_SVG = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Imagen no disponible">
   <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
@@ -133,6 +204,12 @@ def wa_link(titulo):
 def e(x):
     """Escape para HTML (incluye comillas, sirve en atributos)."""
     return html.escape(str(x), quote=True)
+
+
+def reemplazar_bloque(texto, ini, fin, bloque):
+    """Reemplaza lo que haya entre ini y fin (inclusive) por bloque."""
+    return re.sub(re.escape(ini) + r".*?" + re.escape(fin),
+                  lambda _: bloque, texto, count=1, flags=re.S)
 
 
 # ============================================================
@@ -234,13 +311,78 @@ def render_vacio():
         ic_wa=IC_WA)
 
 
+def grid_style(n):
+    """Con pocas salidas la grilla se acota para que las cards no se deformen."""
+    if n == 1:
+        return ' style="max-width:400px"'
+    if n == 2:
+        return ' style="max-width:820px"'
+    return ''
+
+
+def render_region_block(region, items, hoy):
+    """Apartado de una madre: SOLO las salidas de esa region."""
+    n = len(items)
+    frase = REGIONES_FRASE.get(region, "a " + REGIONES.get(region, region))
+    titulo = "{n} {sal} {frase} con <em>fecha y precio cerrado</em>.".format(
+        n=n, sal="salida" if n == 1 else "salidas", frase=e(frase))
+
+    cards = "\n".join(render_card(p, v) for p, v in items)
+
+    return "\n".join([
+        R_START,
+        "<!-- Generado por build-paquetes.py el {}. NO editar a mano: se pisa. -->".format(
+            hoy.isoformat()),
+        CARD_CSS,
+        '  <hr class="pk-rsep">',
+        '  <div class="mx" style="margin-top:72px">',
+        '    <div class="pk-rhead rv">',
+        '      <div>',
+        '        <p class="kicker">Salidas confirmadas</p>',
+        '        <h3>{}</h3>'.format(titulo),
+        '      </div>',
+        '      <a class="pk-rall" href="paquetes/#{r}">Ver todas las salidas{ic}</a>'.format(
+            r=e(region), ic=IC_FLECHA),
+        '    </div>',
+        '    <div class="pk-grid rv"{}>'.format(grid_style(n)),
+        cards,
+        '    </div>',
+        '  </div>',
+        R_END,
+    ])
+
+
+# ============================================================
+# Marcadores en las madres
+# ============================================================
+def asegurar_marcadores(texto):
+    """
+    Inserta los marcadores de region al final de la seccion #paquetes,
+    justo antes de su </section>. Idempotente: si ya estan, no hace nada.
+    Devuelve (texto, insertados: bool) o (texto, None) si no encontro la seccion.
+    """
+    if R_START in texto and R_END in texto:
+        return texto, False
+
+    m = re.search(r'<section\b[^>]*\bid="paquetes"[^>]*>', texto)
+    if not m:
+        return texto, None
+
+    cierre = texto.find("</section>", m.end())
+    if cierre == -1:
+        return texto, None
+
+    marcadores = "\n{}\n{}\n".format(R_START, R_END)
+    return texto[:cierre] + marcadores + texto[cierre:], True
+
+
 # ============================================================
 # Main
 # ============================================================
 def main():
     hoy = datetime.date.today()
     print("build-paquetes.py  —  {}".format(hoy.isoformat()))
-    print("=" * 62)
+    print("=" * 64)
 
     if not DATA.exists():
         sys.exit("ERROR: no existe {}".format(DATA))
@@ -256,7 +398,6 @@ def main():
     if not isinstance(paquetes, list):
         sys.exit('ERROR: se esperaba una lista en la clave "paquetes".')
 
-    # placeholder e img/paquetes/
     IMGDIR.mkdir(parents=True, exist_ok=True)
     ph = ROOT / PLACEHOLDER
     if not ph.exists():
@@ -296,7 +437,6 @@ def main():
             vencidos.append((ident, vig))
             continue
 
-        # imagen: URL se usa tal cual; ruta local tiene que existir
         if not es_url(p["imagen"]):
             if not (ROOT / p["imagen"]).exists():
                 avisos.append("{}: no existe la imagen {} -> uso placeholder"
@@ -314,6 +454,10 @@ def main():
         if str(p["titulo"]).strip().upper().startswith("[EJEMPLO]"):
             avisos.append("{}: sigue marcado [EJEMPLO] — no publicar asi".format(ident))
 
+        if p["region"] not in REGIONES:
+            avisos.append('{}: region "{}" no esta en el mapa de REGIONES'
+                          .format(ident, p["region"]))
+
         publicados.append((p, vig))
 
     if errores:
@@ -328,11 +472,12 @@ def main():
         parse_salida(t[0]["salida"]) or t[1],
     ))
 
-    # armar el bloque
+    # ---------- 1. La pagina /paquetes/ ----------
     if publicados:
         bloque = "\n".join([
             START,
             "<!-- Generado por build-paquetes.py el {}. NO editar a mano: se pisa. -->".format(hoy.isoformat()),
+            CARD_CSS,
             render_chips(publicados),
             '    <div class="pk-grid rv">',
             "\n".join(render_card(p, v) for p, v in publicados),
@@ -351,22 +496,66 @@ def main():
     pagina = PAGE.read_text(encoding="utf-8")
     if START not in pagina or END not in pagina:
         sys.exit("ERROR: faltan los marcadores {} / {} en {}".format(START, END, PAGE))
-
-    nuevo = re.sub(
-        re.escape(START) + r".*?" + re.escape(END),
-        lambda _: bloque,
-        pagina, count=1, flags=re.S,
-    )
-    if nuevo == pagina:
-        print("\n=  sin cambios en paquetes/index.html")
+    nueva = reemplazar_bloque(pagina, START, END, bloque)
+    if nueva != pagina:
+        PAGE.write_text(nueva, encoding="utf-8")
+        print("\nOK  paquetes/index.html  ({} salidas)".format(len(publicados)))
     else:
-        PAGE.write_text(nuevo, encoding="utf-8")
-        print("\nOK  paquetes/index.html actualizado")
+        print("\n=   paquetes/index.html sin cambios")
 
-    # ---- resumen ----
-    print("\n" + "=" * 62)
+    # ---------- 2. El apartado de cada madre ----------
+    por_region = {}
+    for p, v in publicados:
+        por_region.setdefault(p["region"], []).append((p, v))
+
+    # Toda madre que exista como carpeta entra: las que tienen salidas reciben
+    # su apartado, las que no, se les vacia (por si antes tenian).
+    madres = sorted(set(list(REGIONES.keys()) + list(por_region.keys())))
+
+    print("\n→  Apartados por region:")
+    tocadas, vaciadas, sin_seccion, sin_pagina = [], [], [], []
+
+    for region in madres:
+        f = ROOT / region / "index.html"
+        if not f.exists():
+            if region in por_region:
+                sin_pagina.append(region)
+            continue
+
+        texto = f.read_text(encoding="utf-8")
+        texto, insertados = asegurar_marcadores(texto)
+        if insertados is None:
+            if region in por_region:
+                sin_seccion.append(region)
+            continue
+
+        items = por_region.get(region, [])
+        if items:
+            bloque_r = render_region_block(region, items, hoy)
+        else:
+            bloque_r = R_START + "\n" + R_END
+
+        nuevo = reemplazar_bloque(texto, R_START, R_END, bloque_r)
+
+        if nuevo != f.read_text(encoding="utf-8"):
+            f.write_text(nuevo, encoding="utf-8")
+            if items:
+                tocadas.append((region, len(items), insertados))
+                print("   {:<18} {} salida(s){}".format(
+                    region + "/", len(items), "  [marcadores insertados]" if insertados else ""))
+            else:
+                vaciadas.append(region)
+
+    if vaciadas:
+        for r in vaciadas:
+            print("   {:<18} sin salidas — apartado vacio".format(r + "/"))
+    if not tocadas and not vaciadas:
+        print("   (sin cambios)")
+
+    # ---------- resumen ----------
+    print("\n" + "=" * 64)
     print("RESUMEN")
-    print("=" * 62)
+    print("=" * 64)
     print("  Publicados            : {}".format(len(publicados)))
     for p, v in publicados:
         print("      - {}{}  ({}, vence {})".format(
@@ -381,9 +570,16 @@ def main():
     for ident in inactivos:
         print("      - {}  (activo: false)".format(ident))
 
+    print("  Madres con apartado   : {}".format(len(tocadas)))
+    print("  Madres vaciadas       : {}".format(len(vaciadas)))
+
     print("  Advertencias          : {}".format(len(avisos)))
     for a in avisos:
         print("      !  {}".format(a))
+    for r in sin_pagina:
+        print("      !  region '{}' tiene salidas pero no existe {}/index.html".format(r, r))
+    for r in sin_seccion:
+        print("      !  {}/index.html no tiene <section id=\"paquetes\"> — sin apartado".format(r))
 
     if publicados:
         regs = []
