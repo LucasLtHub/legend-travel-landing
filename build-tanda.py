@@ -47,7 +47,12 @@ ROOT_FILES = [
 # Carpetas de assets en la raíz: se copian COMPLETAS, tal cual (sin transformar).
 ROOT_DIRS = [
     "equipo",   # fotos del equipo (PNG) referenciadas por index.html y quienes-somos
+    "img",      # img/paquetes/ — fotos y placeholder de la sección /paquetes/
 ]
+
+# NO se publica: data/  → es la FUENTE de los paquetes (paquetes.json), no un
+# entregable. Lo que se sube es el HTML que genera build-paquetes.py.
+# Correr build-paquetes.py ANTES de build-tanda.py.
 
 # Carpetas de servicios: se copian COMPLETAS (index.html + todos sus assets)
 FULL_DIRS = [
@@ -55,6 +60,7 @@ FULL_DIRS = [
     "financiacion",
     "viajes-a-medida",
     "lunas-de-miel",
+    "paquetes",
     "politica-de-privacidad",
     "terminos-y-condiciones",
 ]

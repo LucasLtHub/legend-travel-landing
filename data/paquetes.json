@@ -1,0 +1,111 @@
+{
+  "_leeme": [
+    "FUENTE DE VERDAD de la seccion /paquetes/. Se edita a mano; el HTML se genera.",
+    "Flujo: editar este archivo -> python build-paquetes.py -> python build-tanda.py -> subir.",
+    "NUNCA editar las cards a mano en paquetes/index.html: el generador las pisa.",
+    "activo:false  -> no se publica, pero el renglon queda como historial.",
+    "vigencia pasada -> se excluye AUTOMATICAMENTE, no puede llegar a la web.",
+    "operador es dato INTERNO: no se muestra nunca en la web.",
+    "imagen: acepta ruta local (img/paquetes/foo.jpg) o URL http(s) (Pexels).",
+    "REGLA DE ORO: los [EJEMPLO] no salen a produccion. Precios validados por la agencia."
+  ],
+  "paquetes": [
+    {
+      "id": "punta-cana-nov-2026",
+      "activo": true,
+      "destacado": true,
+      "titulo": "[EJEMPLO] Punta Cana — 7 noches all inclusive",
+      "destino": "Punta Cana",
+      "region": "caribe",
+      "precio_desde": 1450,
+      "moneda": "USD",
+      "precio_nota": "por persona, base doble",
+      "salida": "12 de noviembre 2026",
+      "noches": 7,
+      "regimen": "All inclusive",
+      "incluye": [
+        "Vuelos desde Buenos Aires",
+        "Traslados aeropuerto / hotel",
+        "Hotel 5* all inclusive",
+        "Asistencia al viajero"
+      ],
+      "operador": "Julia Tours",
+      "vigencia": "2026-10-20",
+      "imagen": "https://images.pexels.com/photos/1268871/pexels-photo-1268871.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "nota": "Cupos limitados"
+    },
+    {
+      "id": "buzios-ene-2027",
+      "activo": true,
+      "destacado": false,
+      "titulo": "[EJEMPLO] Búzios — 6 noches con desayuno",
+      "destino": "Búzios",
+      "region": "brasil",
+      "precio_desde": 890,
+      "moneda": "USD",
+      "precio_nota": "por persona, base doble",
+      "salida": "8 de enero 2027",
+      "noches": 6,
+      "regimen": "Desayuno",
+      "incluye": [
+        "Vuelos a Río de Janeiro",
+        "Traslado Río / Búzios",
+        "Posada 4* frente al mar",
+        "Asistencia al viajero"
+      ],
+      "operador": "VieTur",
+      "vigencia": "2026-11-15",
+      "imagen": "https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "nota": ""
+    },
+    {
+      "id": "italia-clasica-abr-2027",
+      "activo": true,
+      "destacado": true,
+      "titulo": "[EJEMPLO] Italia clásica — Roma, Florencia y Venecia",
+      "destino": "Italia",
+      "region": "europa",
+      "precio_desde": 2980,
+      "moneda": "USD",
+      "precio_nota": "por persona, base doble",
+      "salida": "5 de abril 2027",
+      "noches": 11,
+      "regimen": "Desayuno",
+      "incluye": [
+        "Vuelos desde Buenos Aires",
+        "Trenes de alta velocidad entre ciudades",
+        "Hoteles 4* céntricos",
+        "City tour en cada ciudad",
+        "Asistencia al viajero"
+      ],
+      "operador": "Station",
+      "vigencia": "2026-12-05",
+      "imagen": "https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "nota": ""
+    },
+    {
+      "id": "bariloche-jul-2027",
+      "activo": true,
+      "destacado": false,
+      "titulo": "[EJEMPLO] Bariloche — 7 noches en temporada de nieve",
+      "destino": "Bariloche",
+      "region": "argentina",
+      "precio_desde": 1180000,
+      "moneda": "ARS",
+      "precio_nota": "por persona, base doble · hasta 12 cuotas",
+      "salida": "18 de julio 2027",
+      "noches": 7,
+      "regimen": "Media pensión",
+      "incluye": [
+        "Vuelos desde Buenos Aires",
+        "Traslados aeropuerto / hotel",
+        "Hotel 4* con media pensión",
+        "Asistencia al viajero"
+      ],
+      "operador": "Julia Tours",
+      "vigencia": "2026-10-31",
+      "imagen": "https://images.pexels.com/photos/7785553/pexels-photo-7785553.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      "nota": ""
+    }
+  ]
+}
