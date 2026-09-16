@@ -22,7 +22,7 @@ PAGE = ROOT / "paquetes" / "index.html"
 IMGDIR = ROOT / "img" / "paquetes"
 PLACEHOLDER = "img/paquetes/placeholder.svg"
 
-WA_NUMERO = "5491127489446"
+WA_NUMERO = "5491176554362"
 WA_TEXTO = "Hola Legend Travel, quiero información sobre el paquete: {titulo}"
 
 START = "<!-- PAQUETES:START -->"

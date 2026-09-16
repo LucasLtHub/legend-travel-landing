@@ -106,7 +106,7 @@ CARD_RE = re.compile(
 
 HREF_RE = re.compile(r'\bhref=["\']([^"\']*)["\']', re.IGNORECASE)
 
-WA_NUMBER  = "5491127489446"
+WA_NUMBER  = "5491176554362"
 WA_TEMPLATE = "Hola Legend Travel, quiero más información sobre un viaje a {destino}"
 
 # Texto del <span class="cta"> en cards redirigidas a WhatsApp.
