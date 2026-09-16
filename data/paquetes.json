@@ -1,111 +1,2062 @@
 {
-  "_leeme": [
-    "FUENTE DE VERDAD de la seccion /paquetes/. Se edita a mano; el HTML se genera.",
-    "Flujo: editar este archivo -> python build-paquetes.py -> python build-tanda.py -> subir.",
-    "NUNCA editar las cards a mano en paquetes/index.html: el generador las pisa.",
-    "activo:false  -> no se publica, pero el renglon queda como historial.",
-    "vigencia pasada -> se excluye AUTOMATICAMENTE, no puede llegar a la web.",
-    "operador es dato INTERNO: no se muestra nunca en la web.",
-    "imagen: acepta ruta local (img/paquetes/foo.jpg) o URL http(s) (Pexels).",
-    "REGLA DE ORO: los [EJEMPLO] no salen a produccion. Precios validados por la agencia."
-  ],
   "paquetes": [
     {
-      "id": "punta-cana-nov-2026",
       "activo": true,
       "destacado": true,
-      "titulo": "[EJEMPLO] Punta Cana — 7 noches all inclusive",
-      "destino": "Punta Cana",
-      "region": "caribe",
-      "precio_desde": 1450,
-      "moneda": "USD",
-      "precio_nota": "por persona, base doble",
-      "salida": "12 de noviembre 2026",
-      "noches": 7,
-      "regimen": "All inclusive",
-      "incluye": [
-        "Vuelos desde Buenos Aires",
-        "Traslados aeropuerto / hotel",
-        "Hotel 5* all inclusive",
-        "Asistencia al viajero"
+      "motivo_inactivo": "",
+      "regimen": "",
+      "nota_impuestos": "Tarifa no incluye 2,9% de gasto administrativo. Si se abona en pesos se aplica el tipo de cambio del día de pago y la percepción RG 4815.",
+      "condiciones": [
+        "Tarifas sujetas a modificación y disponibilidad al momento de la reserva.",
+        "Los hoteles y/o servicios previstos podrán ser reemplazados por otros de similar categoría."
       ],
-      "operador": "Julia Tours",
-      "vigencia": "2026-10-20",
-      "imagen": "https://images.pexels.com/photos/1268871/pexels-photo-1268871.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      "nota": "Cupos limitados"
-    },
-    {
-      "id": "buzios-ene-2027",
-      "activo": true,
-      "destacado": false,
-      "titulo": "[EJEMPLO] Búzios — 6 noches con desayuno",
-      "destino": "Búzios",
-      "region": "brasil",
-      "precio_desde": 890,
-      "moneda": "USD",
-      "precio_nota": "por persona, base doble",
-      "salida": "8 de enero 2027",
-      "noches": 6,
-      "regimen": "Desayuno",
-      "incluye": [
-        "Vuelos a Río de Janeiro",
-        "Traslado Río / Búzios",
-        "Posada 4* frente al mar",
-        "Asistencia al viajero"
+      "no_incluye": [],
+      "hoteles": [],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "ARS 1.741.290"
+        }
       ],
-      "operador": "VieTur",
-      "vigencia": "2026-11-15",
-      "imagen": "https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      "nota": ""
-    },
-    {
-      "id": "italia-clasica-abr-2027",
-      "activo": true,
-      "destacado": true,
-      "titulo": "[EJEMPLO] Italia clásica — Roma, Florencia y Venecia",
-      "destino": "Italia",
-      "region": "europa",
-      "precio_desde": 2980,
-      "moneda": "USD",
-      "precio_nota": "por persona, base doble",
-      "salida": "5 de abril 2027",
-      "noches": 11,
-      "regimen": "Desayuno",
-      "incluye": [
-        "Vuelos desde Buenos Aires",
-        "Trenes de alta velocidad entre ciudades",
-        "Hoteles 4* céntricos",
-        "City tour en cada ciudad",
-        "Asistencia al viajero"
-      ],
-      "operador": "Station",
-      "vigencia": "2026-12-05",
-      "imagen": "https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      "nota": ""
-    },
-    {
-      "id": "bariloche-jul-2027",
-      "activo": true,
-      "destacado": false,
-      "titulo": "[EJEMPLO] Bariloche — 7 noches en temporada de nieve",
-      "destino": "Bariloche",
+      "id": "tulipanes-bariloche-puelo",
+      "titulo": "Campo de Tulipanes: Bariloche & Lago Puelo",
       "region": "argentina",
-      "precio_desde": 1180000,
-      "moneda": "ARS",
-      "precio_nota": "por persona, base doble · hasta 12 cuotas",
-      "salida": "18 de julio 2027",
-      "noches": 7,
-      "regimen": "Media pensión",
-      "incluye": [
-        "Vuelos desde Buenos Aires",
-        "Traslados aeropuerto / hotel",
-        "Hotel 4* con media pensión",
-        "Asistencia al viajero"
+      "destinos": [
+        "Bariloche",
+        "El Bolsón",
+        "Lago Puelo"
       ],
-      "operador": "Julia Tours",
-      "vigencia": "2026-10-31",
-      "imagen": "https://images.pexels.com/photos/7785553/pexels-photo-7785553.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      "nota": ""
+      "resumen": "Descubrí la primavera patagónica y uno de los campos de tulipanes más espectaculares de Argentina. Paisajes de postal sin salir del país.",
+      "precio_desde": {
+        "valor": 1741290,
+        "moneda": "ARS",
+        "nota": "por persona, base doble"
+      },
+      "salida": "14 de octubre 2026 (salida única)",
+      "vigencia": "2026-10-14",
+      "noches": 4,
+      "operador": "",
+      "ref": "PXX486-591",
+      "incluye": [
+        "Pasajes aéreos desde Buenos Aires",
+        "Traslados de llegada y salida",
+        "2 noches en Nevada Hotel (Bariloche)",
+        "2 noches en Cabañas Refugio de Puelo",
+        "Circuito Tulipanes: El Bolsón, Travelin, Campo de Tulipanes, Cascadas Nant y Fall, El Hoyo, Lago Puelo",
+        "Asistencia médica"
+      ],
+      "imagen": "img/paquetes/tulipanes-bariloche.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "",
+      "nota_impuestos": "Tarifa no incluye 2,9% de gasto administrativo. Si se abona en pesos se aplica el tipo de cambio del día de pago y la percepción RG 4815.",
+      "condiciones": [
+        "Tarifas sujetas a modificación y disponibilidad al momento de la reserva.",
+        "Los hoteles y/o servicios previstos podrán ser reemplazados por otros de similar categoría."
+      ],
+      "no_incluye": [],
+      "hoteles": [],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "ARS 1.322.790"
+        }
+      ],
+      "id": "cruce-andino-bariloche-puerto-varas",
+      "titulo": "Cruce Andino: Bariloche & Puerto Varas",
+      "region": "argentina",
+      "destinos": [
+        "Bariloche",
+        "Puerto Varas (Chile)"
+      ],
+      "resumen": "Una de las travesías más aventureras de Sudamérica: unir Argentina y Chile a través de lagos, montañas y bosques, navegando entre volcanes.",
+      "precio_desde": {
+        "valor": 1322790,
+        "moneda": "ARS",
+        "nota": "por persona, base doble"
+      },
+      "salida": "Salidas del 16/09 al 30/12/2026",
+      "vigencia": "2026-12-30",
+      "noches": 5,
+      "operador": "",
+      "ref": "PXX489-593",
+      "incluye": [
+        "Pasajes aéreos desde Buenos Aires",
+        "Traslados de llegada y salida",
+        "3 noches en Huinid Pioneros Hotel (Bariloche)",
+        "2 noches en Hotel Cabaña del Lago (Puerto Varas)",
+        "Travesía Cruce Andino",
+        "Asistencia médica"
+      ],
+      "imagen": "img/paquetes/cruce-andino.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "",
+      "nota_impuestos": "Tarifa no incluye 2,9% de gasto administrativo. Si se abona en pesos se aplica el tipo de cambio del día de pago y la percepción RG 4815.",
+      "condiciones": [
+        "Tarifas sujetas a modificación y disponibilidad al momento de la reserva.",
+        "Los hoteles y/o servicios previstos podrán ser reemplazados por otros de similar categoría."
+      ],
+      "no_incluye": [],
+      "hoteles": [],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "ARS 642.990"
+        }
+      ],
+      "id": "mendoza-vinedos",
+      "titulo": "Mendoza: Experiencia entre Viñedos",
+      "region": "argentina",
+      "destinos": [
+        "Mendoza"
+      ],
+      "resumen": "Viñedos, bodegas y sabores únicos. Escapada con salidas todos los lunes para combinar montaña, gastronomía y la región vitivinícola más reconocida de Sudamérica.",
+      "precio_desde": {
+        "valor": 642990,
+        "moneda": "ARS",
+        "nota": "por persona, base doble"
+      },
+      "salida": "Salidas los lunes, del 16/09 al 28/12/2026",
+      "vigencia": "2026-12-28",
+      "noches": 3,
+      "operador": "",
+      "ref": "PXX493-597",
+      "incluye": [
+        "Pasajes aéreos desde Buenos Aires",
+        "Traslados de llegada y salida",
+        "3 noches en Hotel Raíces Aconcagua",
+        "Excursión Camino del Vino - El Sol",
+        "Asistencia médica"
+      ],
+      "imagen": "img/paquetes/mendoza-vinedos.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "",
+      "nota_impuestos": "Tarifa no incluye 2,9% de gasto administrativo. Si se abona en pesos se aplica el tipo de cambio del día de pago y la percepción RG 4815.",
+      "condiciones": [
+        "Tarifas sujetas a modificación y disponibilidad al momento de la reserva.",
+        "Los hoteles y/o servicios previstos podrán ser reemplazados por otros de similar categoría."
+      ],
+      "no_incluye": [],
+      "hoteles": [],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "ARS 1.198.657"
+        }
+      ],
+      "id": "puerto-madryn-ballenas",
+      "titulo": "Puerto Madryn: Puerto Pirámides con Avistaje de Ballenas",
+      "region": "argentina",
+      "destinos": [
+        "Puerto Madryn",
+        "Puerto Pirámides"
+      ],
+      "resumen": "Avistaje embarcado de ballenas, la experiencia nocturna bajo la luna llena en El Doradillo y la fauna patagónica en uno de los destinos naturales más increíbles del país.",
+      "precio_desde": {
+        "valor": 1198657,
+        "moneda": "ARS",
+        "nota": "por persona, base doble"
+      },
+      "salida": "Salidas del 16/09 al 31/12/2026",
+      "vigencia": "2026-12-31",
+      "noches": 3,
+      "operador": "",
+      "ref": "PXX480-584",
+      "incluye": [
+        "Pasajes aéreos desde Buenos Aires",
+        "Traslados de llegada y salida",
+        "3 noches de alojamiento con desayuno",
+        "Excursión Puerto Pirámides con embarcación para avistaje de ballenas",
+        "Asistencia médica"
+      ],
+      "imagen": "img/paquetes/puerto-madryn.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": true,
+      "motivo_inactivo": "",
+      "regimen": "Pensión completa a bordo",
+      "nota_impuestos": "",
+      "condiciones": [
+        "Tarifas finales por pasajero, sujetas a modificación y disponibilidad al momento de la reserva.",
+        "El itinerario y horarios podrán sufrir cambios por razones operativas o climáticas propias de la navegación."
+      ],
+      "no_incluye": [
+        "Excursiones",
+        "Servicios personales",
+        "Wi-Fi"
+      ],
+      "hoteles": [],
+      "itinerario": [
+        {
+          "dia": "Día 1 · Dom 27/12",
+          "titulo": "Buenos Aires",
+          "texto": "Embarque. Salida 19:00 hs."
+        },
+        {
+          "dia": "Día 2 · Lun 28/12",
+          "titulo": "Montevideo",
+          "texto": "En puerto de 07:00 a 17:00 hs."
+        },
+        {
+          "dia": "Día 3 · Mar 29/12",
+          "titulo": "Navegación",
+          "texto": "Jornada completa navegando."
+        },
+        {
+          "dia": "Día 4 · Mié 30/12",
+          "titulo": "Camboriú",
+          "texto": "En puerto de 10:00 a 16:00 hs."
+        },
+        {
+          "dia": "Día 5 · Jue 31/12",
+          "titulo": "Ilha Grande (Abraão)",
+          "texto": "En puerto de 12:00 a 18:00 hs. Año Nuevo a bordo."
+        },
+        {
+          "dia": "Día 6 · Vie 01/01",
+          "titulo": "Río de Janeiro",
+          "texto": "En puerto de 07:00 a 21:00 hs."
+        },
+        {
+          "dia": "Día 7 · Sáb 02/01",
+          "titulo": "Ilhabela",
+          "texto": "En puerto de 07:00 a 16:00 hs."
+        },
+        {
+          "dia": "Día 8 · Dom 03/01",
+          "titulo": "Navegación"
+        },
+        {
+          "dia": "Día 9 · Lun 04/01",
+          "titulo": "Navegación"
+        },
+        {
+          "dia": "Día 10 · Mar 05/01",
+          "titulo": "Buenos Aires",
+          "texto": "Arribo 08:00 hs."
+        }
+      ],
+      "tarifas": [
+        {
+          "etiqueta": "Cabina interna",
+          "precio": "USD 2.158"
+        },
+        {
+          "etiqueta": "Cabina externa",
+          "precio": "USD 2.326"
+        },
+        {
+          "etiqueta": "Cabina con balcón",
+          "precio": "USD 2.461"
+        },
+        {
+          "etiqueta": "3° o 4° pasajero adulto",
+          "precio": "USD 1.688"
+        },
+        {
+          "etiqueta": "3° o 4° pasajero menor (1-13)",
+          "precio": "USD 1.137"
+        }
+      ],
+      "id": "anio-nuevo-costa-serena",
+      "titulo": "Año Nuevo a bordo del Costa Serena",
+      "region": "cruceros",
+      "destinos": [
+        "Montevideo",
+        "Camboriú",
+        "Ilha Grande (Abraão)",
+        "Río de Janeiro",
+        "Ilhabela"
+      ],
+      "resumen": "Recibí el Año Nuevo navegando por las costas más lindas de Sudamérica: playas de Brasil, Río de Janeiro el 1° de enero y la experiencia Costa completa.",
+      "precio_desde": {
+        "valor": 2158,
+        "moneda": "USD",
+        "nota": "por persona, cabina interna, base doble — tarifa final"
+      },
+      "salida": "27 de diciembre 2026 — embarque en Buenos Aires",
+      "vigencia": "2026-12-27",
+      "noches": 9,
+      "operador": "",
+      "ref": "BTR8337",
+      "incluye": [
+        "9 noches en cabina a bordo del Costa Serena en base doble",
+        "Bebidas en almuerzo y cena",
+        "Entretenimiento a bordo para todas las edades",
+        "Asistencia al viajero Universal Assistance",
+        "Propinas",
+        "Tasas e impuestos",
+        "Gastos administrativos"
+      ],
+      "imagen": "img/paquetes/costa-serena-anio-nuevo.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Pensión completa a bordo",
+      "nota_impuestos": "",
+      "condiciones": [
+        "Tarifas finales por pasajero, sujetas a modificación y disponibilidad al momento de la reserva.",
+        "El itinerario y horarios podrán sufrir cambios por razones operativas o climáticas propias de la navegación."
+      ],
+      "no_incluye": [
+        "Excursiones",
+        "Servicios personales",
+        "Wi-Fi"
+      ],
+      "hoteles": [],
+      "itinerario": [
+        {
+          "dia": "Día 1 · Mié 23/12",
+          "titulo": "Buenos Aires",
+          "texto": "Embarque. Salida 18:00 hs."
+        },
+        {
+          "dia": "Día 2 · Jue 24/12",
+          "titulo": "Montevideo",
+          "texto": "En puerto de 08:00 a 16:00 hs. Nochebuena a bordo."
+        },
+        {
+          "dia": "Día 3 · Vie 25/12",
+          "titulo": "Navegación",
+          "texto": "Navidad en el mar."
+        },
+        {
+          "dia": "Día 4 · Sáb 26/12",
+          "titulo": "Itajaí",
+          "texto": "En puerto de 10:00 a 17:00 hs."
+        },
+        {
+          "dia": "Día 5 · Dom 27/12",
+          "titulo": "Santos",
+          "texto": "En puerto de 08:00 a 17:00 hs."
+        },
+        {
+          "dia": "Día 6 · Lun 28/12",
+          "titulo": "Navegación"
+        },
+        {
+          "dia": "Día 7 · Mar 29/12",
+          "titulo": "Navegación"
+        },
+        {
+          "dia": "Día 8 · Mié 30/12",
+          "titulo": "Buenos Aires",
+          "texto": "Arribo 08:00 hs."
+        }
+      ],
+      "tarifas": [
+        {
+          "etiqueta": "Cabina interna",
+          "precio": "USD 1.334"
+        },
+        {
+          "etiqueta": "Cabina externa",
+          "precio": "USD 1.482"
+        },
+        {
+          "etiqueta": "Cabina con balcón",
+          "precio": "USD 1.569"
+        },
+        {
+          "etiqueta": "3° o 4° pasajero adulto",
+          "precio": "USD 1.086"
+        },
+        {
+          "etiqueta": "3° o 4° pasajero menor (1-13)",
+          "precio": "USD 770"
+        }
+      ],
+      "id": "navidad-costa-diadema",
+      "titulo": "Navidad a bordo del Costa Diadema",
+      "region": "cruceros",
+      "destinos": [
+        "Montevideo",
+        "Itajaí",
+        "Santos"
+      ],
+      "resumen": "Una Navidad diferente navegando por el Atlántico Sur: relax, entretenimiento y escalas en Uruguay y Brasil con toda la experiencia Costa.",
+      "precio_desde": {
+        "valor": 1334,
+        "moneda": "USD",
+        "nota": "por persona, cabina interna, base doble — tarifa final"
+      },
+      "salida": "23 de diciembre 2026 — embarque en Buenos Aires",
+      "vigencia": "2026-12-23",
+      "noches": 7,
+      "operador": "",
+      "ref": "BTR8338",
+      "incluye": [
+        "7 noches en cabina a bordo del Costa Diadema en base doble",
+        "Bebidas en almuerzo y cena",
+        "Entretenimiento a bordo para todas las edades",
+        "Asistencia al viajero Universal Assistance",
+        "Propinas",
+        "Tasas e impuestos",
+        "Gastos administrativos"
+      ],
+      "imagen": "img/paquetes/costa-diadema-navidad.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Pensión completa a bordo",
+      "nota_impuestos": "",
+      "condiciones": [
+        "Tarifas finales por pasajero, sujetas a modificación y disponibilidad al momento de la reserva.",
+        "El itinerario y horarios podrán sufrir cambios por razones operativas o climáticas propias de la navegación."
+      ],
+      "no_incluye": [
+        "Excursiones",
+        "Servicios personales",
+        "Wi-Fi"
+      ],
+      "hoteles": [],
+      "itinerario": [
+        {
+          "dia": "Día 1 · Mié 30/12",
+          "titulo": "Buenos Aires",
+          "texto": "Embarque. Salida 18:00 hs."
+        },
+        {
+          "dia": "Día 2 · Jue 31/12",
+          "titulo": "Montevideo",
+          "texto": "En puerto de 08:00 a 16:00 hs. Año Nuevo a bordo."
+        },
+        {
+          "dia": "Día 3 · Vie 01/01",
+          "titulo": "Navegación"
+        },
+        {
+          "dia": "Día 4 · Sáb 02/01",
+          "titulo": "Itajaí",
+          "texto": "En puerto de 10:00 a 17:00 hs."
+        },
+        {
+          "dia": "Día 5 · Dom 03/01",
+          "titulo": "Santos",
+          "texto": "En puerto de 08:00 a 17:00 hs."
+        },
+        {
+          "dia": "Día 6 · Lun 04/01",
+          "titulo": "Navegación"
+        },
+        {
+          "dia": "Día 7 · Mar 05/01",
+          "titulo": "Navegación"
+        },
+        {
+          "dia": "Día 8 · Mié 06/01",
+          "titulo": "Buenos Aires",
+          "texto": "Arribo 08:00 hs."
+        }
+      ],
+      "tarifas": [
+        {
+          "etiqueta": "Cabina interna",
+          "precio": "USD 1.536"
+        },
+        {
+          "etiqueta": "Cabina externa",
+          "precio": "USD 1.685"
+        },
+        {
+          "etiqueta": "Cabina con balcón",
+          "precio": "USD 1.773"
+        },
+        {
+          "etiqueta": "3° o 4° pasajero adulto",
+          "precio": "USD 1.225"
+        },
+        {
+          "etiqueta": "3° o 4° pasajero menor (1-13)",
+          "precio": "USD 844"
+        }
+      ],
+      "id": "2027-altamar-costa-diadema",
+      "titulo": "Recibí el 2027 en Altamar — Costa Diadema",
+      "region": "cruceros",
+      "destinos": [
+        "Montevideo",
+        "Itajaí",
+        "Santos"
+      ],
+      "resumen": "Arrancá el 2027 navegando: fiestas a bordo, Atlántico Sur y paradas en los puntos más lindos de Uruguay y Brasil.",
+      "precio_desde": {
+        "valor": 1536,
+        "moneda": "USD",
+        "nota": "por persona, cabina interna, base doble — tarifa final"
+      },
+      "salida": "30 de diciembre 2026 — embarque en Buenos Aires",
+      "vigencia": "2026-12-30",
+      "noches": 7,
+      "operador": "",
+      "ref": "BTR8339",
+      "incluye": [
+        "7 noches en cabina a bordo del Costa Diadema en base doble",
+        "Bebidas en almuerzo y cena",
+        "Entretenimiento a bordo para todas las edades",
+        "Asistencia al viajero Universal Assistance",
+        "Propinas",
+        "Tasas e impuestos",
+        "Gastos administrativos"
+      ],
+      "imagen": "img/paquetes/costa-diadema-2027.jpg"
+    },
+    {
+      "activo": false,
+      "destacado": false,
+      "motivo_inactivo": "Fecha de salida del portal (27/04/2026) vencida e incoherente con un viaje navideño. Verificar fecha real con el operador antes de activar.",
+      "regimen": "",
+      "nota_impuestos": "",
+      "condiciones": [],
+      "no_incluye": [
+        "Bebidas en las comidas",
+        "Entradas no especificadas"
+      ],
+      "hoteles": [
+        "Milán: Dei Cavalieri Milano Duomo",
+        "Zurich: Hotel St. Gotthard",
+        "Friburgo: Colombi Hotel",
+        "Estrasburgo: AC Hotel Strasbourg",
+        "Heidelberg: Heidelberg Marriott",
+        "Coblenza: Mercure Koblenz",
+        "Luxemburgo: Grand Hotel Cravat",
+        "Bruselas: Radisson Collection Grand Place",
+        "Brujas: Hotel Aragon"
+      ],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "USD 11.715"
+        },
+        {
+          "etiqueta": "Single",
+          "precio": "USD 13.940"
+        }
+      ],
+      "id": "mercadillos-navidenos-bernina",
+      "titulo": "Mercadillos Navideños con Tren de Bernina",
+      "region": "europa",
+      "destinos": [
+        "Milán",
+        "Bernina Express",
+        "Zurich",
+        "Friburgo",
+        "Colmar",
+        "Estrasburgo",
+        "Heidelberg",
+        "Coblenza",
+        "Luxemburgo",
+        "Bruselas",
+        "Gante",
+        "Brujas"
+      ],
+      "resumen": "Los mercados navideños más mágicos de Europa en salida grupal con todo incluido: Bernina Express, Alsacia, valle del Rin y Flandes, con acompañamiento desde Argentina.",
+      "precio_desde": {
+        "valor": 11715,
+        "moneda": "USD",
+        "nota": "por persona, base doble — total con impuestos"
+      },
+      "salida": "Fecha a confirmar",
+      "vigencia": "2026-04-27",
+      "noches": 15,
+      "operador": "",
+      "ref": "PXX371-437",
+      "incluye": [
+        "Aéreos Buenos Aires/Milán – Bruselas/Buenos Aires con ITA Airways",
+        "Acompañamiento desde Argentina durante todo el recorrido",
+        "Todos los traslados",
+        "15 noches con desayuno",
+        "14 comidas según itinerario",
+        "Tren Bernina Express 2° clase Tirano/Chur",
+        "Buses exclusivos para el grupo",
+        "Guía en español",
+        "Entradas y visitas según itinerario",
+        "Maleteros en hoteles",
+        "Asistencia Integral al Pasajero Premium",
+        "Propinas, impuestos y tasas",
+        "Noche previa en hotel de Buenos Aires y traslado a Ezeiza",
+        "Kit de viaje Premium",
+        "Habitación a compartir garantizada para pasajeras mujeres"
+      ],
+      "imagen": "img/paquetes/mercadillos-bernina.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": true,
+      "motivo_inactivo": "",
+      "regimen": "",
+      "nota_impuestos": "",
+      "condiciones": [],
+      "no_incluye": [],
+      "hoteles": [],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Madrid"
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Madrid ✈ Copenhague"
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Copenhague"
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Copenhague — Crucero DFDS"
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Oslo"
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "Oslo ✈ Tromsø"
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Tromsø & Auroras Boreales"
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Tromsø — Experiencia Sami"
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Tromsø ✈ Oslo"
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Oslo → Estocolmo (tren)"
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Estocolmo"
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Estocolmo ✈ Madrid"
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Buenos Aires"
+        }
+      ],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "USD 7.878"
+        }
+      ],
+      "id": "auroras-boreales-grupal",
+      "titulo": "Auroras Boreales — Salida grupal",
+      "region": "europa",
+      "destinos": [
+        "Copenhague",
+        "Oslo",
+        "Tromsø",
+        "Estocolmo"
+      ],
+      "resumen": "Posibilidad real de ver auroras boreales: capitales nórdicas, crucero escandinavo, tren panorámico, trineo de renos y experiencia Sami alrededor del fuego.",
+      "precio_desde": {
+        "valor": 7878,
+        "moneda": "USD",
+        "nota": "por persona, base doble"
+      },
+      "salida": "24 de enero 2027",
+      "vigencia": "2027-01-24",
+      "noches": 10,
+      "operador": "",
+      "ref": "PXX398-476",
+      "incluye": [
+        "Aéreos Buenos Aires/Copenhague – Estocolmo/Buenos Aires con Iberia (vía Madrid)",
+        "Traslados en todas las ciudades",
+        "9 noches en hoteles 4* superior con desayuno buffet",
+        "1 noche en crucero DFDS (camarote exterior) con cena buffet",
+        "Guía de habla hispana",
+        "Visitas panorámicas en Copenhague, Oslo, Tromsø y Estocolmo",
+        "Vuelo interno Oslo–Tromsø–Oslo",
+        "Tren rápido Oslo–Estocolmo 2ª clase",
+        "Parque Vigeland",
+        "Teleférico Fjellheisen",
+        "Trineo tirado por renos",
+        "Experiencia Sami con cena alrededor del fuego",
+        "Asistencia Universal Assistance (hasta 70 años) con seguro de cancelación"
+      ],
+      "imagen": "img/paquetes/auroras-boreales.jpg"
+    },
+    {
+      "activo": false,
+      "destacado": false,
+      "motivo_inactivo": "El plazo de reservas del operador venció el 15/09/2026. Confirmar con EstiloPlus si se extendió antes de activar.",
+      "regimen": "",
+      "nota_impuestos": "En caso de abonar en pesos: percepción RG 5463/23 de USD 127 por persona.",
+      "condiciones": [
+        "Seña USD 500 · Saldo 45 días antes de la salida",
+        "Cancelaciones: +61 días sin cargo · 60-30 días 30% · 29-15 días 50% · 14 días 100%",
+        "Opcional C2C Pack (Toledo, Duero, Aveiro, Sintra, Alhambra, Sagrada Familia): USD 550 + USD 25 IVA/adm"
+      ],
+      "no_incluye": [
+        "Excursiones y entradas no indicadas como incluidas",
+        "Propinas",
+        "Maleteros",
+        "Comidas y bebidas no especificadas",
+        "Exceso de equipaje"
+      ],
+      "hoteles": [
+        "Madrid: Hotel Mayorazgo",
+        "Santiago: Oca Puerta Camino de Santiago",
+        "Oporto: AC Hotel Porto",
+        "Lisboa: VIP Grand Lisbon",
+        "Sevilla: NH Plaza de Armas",
+        "Ronda: Hotel Maestranza",
+        "Granada: Dwo Urban",
+        "Córdoba: Sercotel Medina Azahara",
+        "Barcelona: Catalonia Park Putxet"
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1 · Sáb 07/11",
+          "titulo": "Buenos Aires — vuelo internacional"
+        },
+        {
+          "dia": "Días 2-3",
+          "titulo": "Madrid"
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Madrid – Santiago de Compostela"
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Santiago – Oporto"
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "Oporto"
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Oporto – Aveiro – Óbidos – Lisboa"
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Lisboa"
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Lisboa – Évora – Mérida – Sevilla"
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Sevilla"
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Sevilla – Jerez – Cádiz – Ronda"
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Ronda – Málaga – Granada"
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Granada – Córdoba"
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Córdoba – Barcelona"
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "Barcelona"
+        },
+        {
+          "dia": "Días 16-17",
+          "titulo": "Barcelona – Madrid – Buenos Aires"
+        }
+      ],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "USD 5.387"
+        },
+        {
+          "etiqueta": "Single",
+          "precio": "USD 6.669"
+        }
+      ],
+      "id": "espana-portugal-con-estilo",
+      "titulo": "España y Portugal con Estilo",
+      "region": "europa",
+      "destinos": [
+        "Madrid",
+        "Santiago de Compostela",
+        "Oporto",
+        "Aveiro",
+        "Lisboa",
+        "Sevilla",
+        "Ronda",
+        "Granada",
+        "Córdoba",
+        "Barcelona"
+      ],
+      "resumen": "Gran circuito por la península ibérica: 14 noches recorriendo lo mejor de España y Portugal con guía de habla hispana y vuelos Iberia confirmados.",
+      "precio_desde": {
+        "valor": 5387,
+        "moneda": "USD",
+        "nota": "por persona, base doble — tarifa final con impuestos"
+      },
+      "salida": "7 de noviembre 2026 (salida única)",
+      "vigencia": "2026-09-15",
+      "noches": 14,
+      "operador": "EstiloPlus (Legajo 16477)",
+      "ref": "PXX283-347",
+      "incluye": [
+        "Aéreo clase turista con Iberia según plan de vuelos",
+        "Traslados con asistencia en español",
+        "14 noches de alojamiento con desayuno",
+        "Guía correo de habla hispana y guías locales",
+        "Tasas hoteleras",
+        "Seguro de asistencia GLOBAL (Terrawind) — consultar suplemento +75 años",
+        "Maleta de 23 kg + equipaje de mano en vuelo"
+      ],
+      "imagen": "img/paquetes/espana-portugal.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": true,
+      "motivo_inactivo": "",
+      "regimen": "",
+      "nota_impuestos": "No incluye percepción RG 5463 (30% sobre servicios terrestres) si se abona en pesos, ni RS 3819 (5%) de corresponder.",
+      "condiciones": [
+        "La hotelería prevista puede modificarse según reconfirmación del operador.",
+        "Impuestos y cargos de combustible sujetos a cambio hasta la emisión del ticket.",
+        "Documentación definitiva 10 días antes de la salida."
+      ],
+      "no_incluye": [
+        "Cualquier servicio no especificado como incluido"
+      ],
+      "hoteles": [],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires — vuelo a Roma vía Madrid"
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Roma",
+          "texto": "Llegada, traslado y tiempo libre."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Roma",
+          "texto": "Panorámica de 3 horas: Roma Imperial, Coliseo (exterior), Foros, Vaticano. Traslado al Trastévere."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Roma – Abadía S. Giovanni in Venere – Térmoli – Bari"
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Bari – Bríndisi – Lecce – Gallipoli",
+          "texto": "La Florencia del sur y la ciudad griega del Jónico."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "Alberobello – Matera – Nápoles",
+          "texto": "Trulli y Sassi, dos Patrimonios de la Humanidad. Almuerzo incluido."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Nápoles – Capri – Sorrento – Salerno",
+          "texto": "Ferry a Capri y tarde en Sorrento."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Salerno – Paola – Messina – Taormina",
+          "texto": "Cruce a Sicilia. Cena incluida."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Taormina",
+          "texto": "Al pie del Etna. Cena incluida."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Catania – Siracusa – Agrigento",
+          "texto": "Barroco UNESCO, Ortigia y Valle de los Templos. Cena incluida."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Valle de los Templos – Marsala – Erice – Palermo",
+          "texto": "Con guía local. Cena incluida."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Palermo – Monreale – ferry nocturno",
+          "texto": "Catedrales y mosaicos. Noche a bordo."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Pompeya – Nápoles – Roma",
+          "texto": "Entrada y guía local en Pompeya."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Roma",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Días 15-16",
+          "titulo": "Roma – Madrid – Buenos Aires"
+        }
+      ],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "USD 5.428"
+        },
+        {
+          "etiqueta": "Single",
+          "precio": "USD 6.547"
+        }
+      ],
+      "id": "sur-italia-sicilia-puglia",
+      "titulo": "Sur de Italia y Sicilia con Puglia — Salida grupal acompañada",
+      "region": "europa",
+      "destinos": [
+        "Roma",
+        "Bari",
+        "Lecce",
+        "Alberobello",
+        "Matera",
+        "Nápoles",
+        "Capri",
+        "Taormina",
+        "Siracusa",
+        "Agrigento",
+        "Palermo",
+        "Pompeya"
+      ],
+      "resumen": "El gran tour del sur italiano: trulli de Alberobello, sassi de Matera, Capri, el Valle de los Templos y Pompeya, con acompañante desde Buenos Aires.",
+      "precio_desde": {
+        "valor": 5428,
+        "moneda": "USD",
+        "nota": "por persona, base doble — IVA y gastos administrativos incluidos"
+      },
+      "salida": "9 de marzo 2027 — vuelos Iberia IB106/IB654",
+      "vigencia": "2027-03-09",
+      "noches": 14,
+      "operador": "Organización Piamonte",
+      "ref": "PXX548-676",
+      "incluye": [
+        "Aéreo económica Bs As/Roma/Bs As con Iberia (vía Madrid)",
+        "Traslados de llegada y salida",
+        "13 noches de hotel con desayuno buffet + 1 noche en ferry (camarote doble con baño)",
+        "Tour: Roma (4N), Bari, Lecce, Gallipoli, Alberobello, Matera, Nápoles, Capri, Sorrento, Salerno, Taormina (2N), Catania, Siracusa, Agrigento, Marsala, Erice, Palermo, Pompeya",
+        "Panorámicas en Agrigento, Palermo y Pompeya",
+        "Entradas: Abadía S. Giovanni in Venere, Valle de los Templos, catedrales de Palermo y Monreale, Pompeya",
+        "Ferries: Nápoles/Capri/Sorrento, San Giovanni/Messina, Palermo/Nápoles (nocturno)",
+        "5 almuerzos o cenas",
+        "Bus con guía de habla hispana",
+        "Universal Assistance con seguro de cancelación (hasta 70 años)",
+        "Acompañante de Organización Piamonte desde Buenos Aires (mín. 20 pax)"
+      ],
+      "imagen": "img/paquetes/sur-italia-sicilia.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": true,
+      "motivo_inactivo": "",
+      "regimen": "All inclusive",
+      "nota_impuestos": "",
+      "condiciones": [
+        "Tarifas sujetas a modificación y disponibilidad al momento de la reserva.",
+        "Hoteles y servicios podrán ser reemplazados por otros de similar categoría."
+      ],
+      "no_incluye": [
+        "Propinas",
+        "Gastos personales",
+        "Servicios no especificados"
+      ],
+      "hoteles": [],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Base triple",
+          "precio": "USD 2.350"
+        },
+        {
+          "etiqueta": "Base doble",
+          "precio": "USD 2.490"
+        },
+        {
+          "etiqueta": "Single",
+          "precio": "USD 3.660"
+        }
+      ],
+      "id": "punta-cana-all-inclusive",
+      "titulo": "Punta Cana All Inclusive",
+      "region": "caribe",
+      "destinos": [
+        "Punta Cana"
+      ],
+      "resumen": "10 noches de playa, all inclusive y descanso total en el destino más elegido del Caribe.",
+      "precio_desde": {
+        "valor": 2350,
+        "moneda": "USD",
+        "nota": "por persona, base triple — tarifa final"
+      },
+      "salida": "15 de febrero 2027",
+      "vigencia": "2027-02-15",
+      "noches": 10,
+      "operador": "",
+      "ref": "PXX560-691",
+      "incluye": [
+        "Aéreos con LATAM",
+        "10 noches en Punta Cana con régimen All Inclusive",
+        "Traslados de llegada y salida",
+        "Universal Assistance Master Plus (hasta 70 años)"
+      ],
+      "imagen": "img/paquetes/punta-cana.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "All inclusive",
+      "nota_impuestos": "",
+      "condiciones": [
+        "Tarifas sujetas a modificación y disponibilidad al momento de la reserva.",
+        "Hoteles y servicios podrán ser reemplazados por otros de similar categoría."
+      ],
+      "no_incluye": [
+        "Propinas",
+        "Gastos personales",
+        "Servicios no especificados"
+      ],
+      "hoteles": [],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Base triple",
+          "precio": "USD 3.220"
+        },
+        {
+          "etiqueta": "Base doble",
+          "precio": "USD 3.310"
+        },
+        {
+          "etiqueta": "Single",
+          "precio": "USD 4.490"
+        }
+      ],
+      "id": "riviera-maya-costa-mujeres",
+      "titulo": "Riviera Maya All Inclusive — Costa Mujeres + Riviera Maya",
+      "region": "caribe",
+      "destinos": [
+        "Costa Mujeres",
+        "Riviera Maya",
+        "Cancún"
+      ],
+      "resumen": "Dos de los destinos más exclusivos del Caribe mexicano en un solo viaje: 5 noches en Costa Mujeres y 5 en Riviera Maya, todo all inclusive.",
+      "precio_desde": {
+        "valor": 3220,
+        "moneda": "USD",
+        "nota": "por persona, base triple — tarifa final"
+      },
+      "salida": "4 de enero 2027",
+      "vigencia": "2027-01-04",
+      "noches": 10,
+      "operador": "",
+      "ref": "PXX557-688",
+      "incluye": [
+        "Aéreos Buenos Aires/Cancún/Buenos Aires con LATAM",
+        "5 noches en Costa Mujeres All Inclusive",
+        "5 noches en Riviera Maya All Inclusive",
+        "Traslados de llegada, salida e internos",
+        "Universal Assistance (hasta 70 años)"
+      ],
+      "imagen": "img/paquetes/riviera-maya.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "All inclusive",
+      "nota_impuestos": "",
+      "condiciones": [
+        "Tarifas sujetas a modificación y disponibilidad al momento de la reserva.",
+        "Hoteles y servicios podrán ser reemplazados por otros de similar categoría."
+      ],
+      "no_incluye": [
+        "Propinas",
+        "Gastos personales",
+        "Servicios no especificados"
+      ],
+      "hoteles": [],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "USD 2.400"
+        },
+        {
+          "etiqueta": "Single",
+          "precio": "USD 3.440"
+        }
+      ],
+      "id": "punta-cana-bayahibe",
+      "titulo": "Punta Cana & Bayahíbe All Inclusive",
+      "region": "caribe",
+      "destinos": [
+        "Bayahíbe",
+        "Punta Cana"
+      ],
+      "resumen": "La combinación perfecta: las playas tranquilas de Bayahíbe y la energía de Punta Cana. Diez noches de relax all inclusive.",
+      "precio_desde": {
+        "valor": 2400,
+        "moneda": "USD",
+        "nota": "por persona, base doble — tarifa final"
+      },
+      "salida": "2 de enero 2027",
+      "vigencia": "2027-01-02",
+      "noches": 10,
+      "operador": "",
+      "ref": "PXX558-689",
+      "incluye": [
+        "Aéreos con LATAM",
+        "6 noches en Bayahíbe All Inclusive",
+        "4 noches en Punta Cana All Inclusive",
+        "Todos los traslados",
+        "Universal Assistance Master Plus (hasta 70 años)"
+      ],
+      "imagen": "img/paquetes/punta-cana-bayahibe.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "All inclusive",
+      "nota_impuestos": "",
+      "condiciones": [
+        "Tarifas sujetas a modificación y disponibilidad al momento de la reserva.",
+        "Hoteles y servicios podrán ser reemplazados por otros de similar categoría."
+      ],
+      "no_incluye": [
+        "Propinas",
+        "Gastos personales",
+        "Servicios no especificados"
+      ],
+      "hoteles": [],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Base triple",
+          "precio": "USD 3.710"
+        },
+        {
+          "etiqueta": "Base doble",
+          "precio": "USD 3.840"
+        },
+        {
+          "etiqueta": "Single",
+          "precio": "USD 5.020"
+        }
+      ],
+      "id": "cancun-all-inclusive",
+      "titulo": "Cancún All Inclusive",
+      "region": "caribe",
+      "destinos": [
+        "Cancún"
+      ],
+      "resumen": "10 noches en Cancún con sistema all inclusive: playas turquesa, gastronomía y descanso sin preocupaciones.",
+      "precio_desde": {
+        "valor": 3710,
+        "moneda": "USD",
+        "nota": "por persona, base triple — tarifa final"
+      },
+      "salida": "8 de febrero 2027",
+      "vigencia": "2027-02-08",
+      "noches": 10,
+      "operador": "",
+      "ref": "PXX559-690",
+      "incluye": [
+        "Aéreos con LATAM",
+        "10 noches en Cancún All Inclusive",
+        "Traslados de llegada y salida",
+        "Universal Assistance Master Plus (hasta 70 años)"
+      ],
+      "imagen": "img/paquetes/cancun.jpg"
+    },
+    {
+      "activo": false,
+      "destacado": false,
+      "motivo_inactivo": "Sale el 12/10/2026 (en menos de un mes): confirmar con el operador si el grupo sigue vendible antes de activar.",
+      "regimen": "Media pensión",
+      "nota_impuestos": "",
+      "condiciones": [],
+      "no_incluye": [
+        "IVA y tasas aeroportuarias (impuestos aéreos sujetos a cambio hasta emisión)",
+        "Bebidas",
+        "Propinas obligatorias",
+        "ETA / requisitos migratorios",
+        "Asistencia al viajero",
+        "Gastos personales"
+      ],
+      "hoteles": [],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "USD 5.650"
+        }
+      ],
+      "id": "israel-para-todos",
+      "titulo": "Israel Para Todos — Salida grupal acompañada",
+      "region": "medio-oriente",
+      "destinos": [
+        "Jerusalén",
+        "Belén",
+        "Galilea",
+        "Tel Aviv",
+        "Mar Muerto",
+        "Petra (opcional)"
+      ],
+      "resumen": "Recorrido completo por Tierra Santa: historia, espiritualidad y cultura, con la posibilidad de sumar Petra en Jordania.",
+      "precio_desde": {
+        "valor": 5650,
+        "moneda": "USD",
+        "nota": "por persona, base doble"
+      },
+      "salida": "12 de octubre 2026",
+      "vigencia": "2026-10-12",
+      "noches": 13,
+      "operador": "",
+      "ref": "PXX396-465",
+      "incluye": [
+        "Aéreos Buenos Aires/Tel Aviv vía Europa",
+        "Traslados grupales",
+        "13 noches en hoteles categoría primera",
+        "Media pensión (desayuno y cena)",
+        "Excursiones, visitas y entradas según itinerario",
+        "Guía de habla hispana",
+        "Bus de lujo con aire acondicionado"
+      ],
+      "imagen": "img/paquetes/israel.jpg"
+    },
+    {
+      "activo": false,
+      "destacado": false,
+      "motivo_inactivo": "Fecha del portal (27/04/2026) vencida e incoherente: el festival Yee Peng es en noviembre. Verificar fecha real con el operador antes de activar.",
+      "regimen": "",
+      "nota_impuestos": "",
+      "condiciones": [],
+      "no_incluye": [
+        "Visa de Laos (aprox. USD 35, on arrival)",
+        "Bebidas y comidas no especificadas",
+        "Gastos personales"
+      ],
+      "hoteles": [
+        "Bangkok: Montien Surawong 4*",
+        "Chiang Rai: The Riverie by Katathani 4* Sup",
+        "Chiang Mai: Centara Riverside 4*",
+        "Luang Prabang: Victoria Xiengthong Palace 4*",
+        "Phuket: Pullman Panwa Beach Resort 4*"
+      ],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "USD 9.605"
+        },
+        {
+          "etiqueta": "Single",
+          "precio": "USD 11.685"
+        }
+      ],
+      "id": "festival-luces-tailandia",
+      "titulo": "Festival de las Luces en Tailandia (+ Laos)",
+      "region": "asia",
+      "destinos": [
+        "Bangkok",
+        "Chiang Rai",
+        "Chiang Mai",
+        "Luang Prabang",
+        "Phuket"
+      ],
+      "resumen": "Templos, mercados y tradiciones del Sudeste Asiático, con la experiencia única del Festival Yee Peng: miles de linternas iluminando el cielo de Chiang Mai.",
+      "precio_desde": {
+        "valor": 9605,
+        "moneda": "USD",
+        "nota": "por persona, base doble — total con impuestos"
+      },
+      "salida": "Fecha a confirmar",
+      "vigencia": "2026-04-27",
+      "noches": 17,
+      "operador": "",
+      "ref": "PXX374-440",
+      "incluye": [
+        "Aéreo internacional con Turkish Airlines",
+        "Vuelos domésticos y regionales (Bangkok/Luang Prabang/Phuket)",
+        "Traslados",
+        "13 noches con desayuno según itinerario (Bangkok, Chiang Rai, Chiang Mai, Luang Prabang, Phuket con late check-out)",
+        "Comidas según itinerario",
+        "Excursiones y entradas mencionadas",
+        "Guía de habla hispana",
+        "Universal Assistance Excellence hasta USD 150.000",
+        "Reunión informativa previa",
+        "Tour leader desde Argentina (mín. 10 pax)"
+      ],
+      "imagen": "img/paquetes/tailandia-yee-peng.jpg"
+    },
+    {
+      "activo": false,
+      "destacado": false,
+      "motivo_inactivo": "Sale el 06/10/2026 (en tres semanas): confirmar con el operador si el grupo sigue vendible antes de activar.",
+      "regimen": "",
+      "nota_impuestos": "",
+      "condiciones": [
+        "Pasaporte con 6 meses de vigencia mínima.",
+        "Certificado obligatorio de vacunación contra la fiebre amarilla.",
+        "China sin visa para argentinos hasta el 31/12/2026 (estadías de hasta 30 días)."
+      ],
+      "no_incluye": [
+        "Maleteros",
+        "Bebidas",
+        "Propinas",
+        "Gastos personales"
+      ],
+      "hoteles": [],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "USD 8.375"
+        }
+      ],
+      "id": "gran-tour-china",
+      "titulo": "Gran Tour de China",
+      "region": "asia",
+      "destinos": [
+        "Beijing",
+        "Xi'an",
+        "Chengdu",
+        "Chongqing",
+        "Zhangjiajie",
+        "Shanghái",
+        "Suzhou",
+        "Guilin",
+        "Hong Kong"
+      ],
+      "resumen": "De la Gran Muralla a los paisajes de Avatar en Zhangjiajie, los pandas de Chengdu, el río Li y Hong Kong. China profunda y moderna en 19 noches.",
+      "precio_desde": {
+        "valor": 8375,
+        "moneda": "USD",
+        "nota": "por persona, base doble — total con impuestos"
+      },
+      "salida": "6 de octubre 2026",
+      "vigencia": "2026-10-06",
+      "noches": 19,
+      "operador": "",
+      "ref": "PXX393-464",
+      "incluye": [
+        "Aéreos Ezeiza/Beijing – Hong Kong/Ezeiza con Ethiopian Airlines",
+        "19 noches con desayuno",
+        "Late check-out en Hong Kong",
+        "10 almuerzos + 3 cenas (sin bebidas) + lunch box en crucero por el río Li",
+        "Vuelos internos en China",
+        "Trenes de alta velocidad (2ª clase)",
+        "Traslados privados",
+        "Guías locales de habla hispana",
+        "Coordinador desde Argentina",
+        "Asistencia al viajero hasta 70 años",
+        "Bolso de viaje y guía virtual"
+      ],
+      "imagen": "img/paquetes/gran-tour-china.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": true,
+      "motivo_inactivo": "",
+      "regimen": "",
+      "nota_impuestos": "",
+      "condiciones": [],
+      "no_incluye": [
+        "Visa electrónica de Vietnam",
+        "Visa electrónica de Camboya",
+        "Bebidas",
+        "Entradas no detalladas",
+        "Servicios no especificados"
+      ],
+      "hoteles": [
+        "Hanoi: Pan Pacific",
+        "Halong: Ambassador Cruise",
+        "Hoi An: Royal Hoi An",
+        "Ho Chi Minh: Caravelle Saigon",
+        "Siem Reap: Shoka Angkor",
+        "Bangkok: Montien Surawong",
+        "Chiang Rai: Le Méridien",
+        "Chiang Mai: InterContinental The Mae Ping",
+        "Krabi: Sofitel Phokeethra",
+        "Phuket: SAii Laguna (late check-out)"
+      ],
+      "itinerario": [
+        {
+          "dia": "Días 1-2",
+          "titulo": "Buenos Aires – Guarulhos – Hanoi"
+        },
+        {
+          "dia": "Días 3-4",
+          "titulo": "Hanoi"
+        },
+        {
+          "dia": "Días 5-6",
+          "titulo": "Bahía de Halong – Hoi An"
+        },
+        {
+          "dia": "Días 7-10",
+          "titulo": "Hoi An – Ho Chi Minh"
+        },
+        {
+          "dia": "Días 11-13",
+          "titulo": "Siem Reap (Angkor)"
+        },
+        {
+          "dia": "Días 14-16",
+          "titulo": "Bangkok"
+        },
+        {
+          "dia": "Días 17-20",
+          "titulo": "Chiang Rai – Chiang Mai"
+        },
+        {
+          "dia": "Días 21-23",
+          "titulo": "Krabi – Phuket"
+        },
+        {
+          "dia": "Días 24-26",
+          "titulo": "Phuket – Buenos Aires"
+        }
+      ],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "USD 14.330"
+        }
+      ],
+      "id": "vietnam-camboya-tailandia",
+      "titulo": "Vietnam, Camboya & Tailandia",
+      "region": "asia",
+      "destinos": [
+        "Hanoi",
+        "Bahía de Halong",
+        "Hoi An",
+        "Ho Chi Minh",
+        "Siem Reap",
+        "Bangkok",
+        "Chiang Rai",
+        "Chiang Mai",
+        "Krabi",
+        "Phuket"
+      ],
+      "resumen": "El gran viaje del Sudeste Asiático acompañado desde Argentina: la bahía de Halong, los templos de Angkor, el Triángulo de Oro y las playas de Tailandia, con 35 comidas incluidas.",
+      "precio_desde": {
+        "valor": 14330,
+        "moneda": "USD",
+        "nota": "por persona, base doble — total con impuestos"
+      },
+      "salida": "7 de noviembre 2026",
+      "vigencia": "2026-11-07",
+      "noches": 22,
+      "operador": "",
+      "ref": "PXX576-720",
+      "incluye": [
+        "Aéreo Buenos Aires–Guarulhos con LATAM y Guarulhos–Hanoi / Phuket–Buenos Aires con Turkish (vía Estambul)",
+        "Acompañamiento desde Argentina durante todo el recorrido",
+        "Todos los traslados",
+        "22 noches con desayuno",
+        "Late check-out en Phuket",
+        "35 comidas según itinerario",
+        "Vuelos internos",
+        "Transporte exclusivo para el grupo",
+        "Guía acompañante de habla hispana",
+        "Todas las excursiones del itinerario",
+        "Asistencia Premium (hasta 85 años)",
+        "Propinas, impuestos y tasas",
+        "Noche previa en hotel de Buenos Aires con traslado",
+        "Habitación a compartir garantizada para pasajeras que viajen solas"
+      ],
+      "imagen": "img/paquetes/vietnam-camboya-tailandia.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": true,
+      "motivo_inactivo": "",
+      "regimen": "",
+      "nota_impuestos": "No incluye percepción RS 3819 (5%) en caso de corresponder.",
+      "condiciones": [
+        "Acompañante desde Buenos Aires con mínimo de 20 pasajeros inscriptos.",
+        "Itinerario y hotelería sujetos a reconfirmación del operador.",
+        "Impuestos y cargos de combustible sujetos a cambio hasta la emisión.",
+        "Documentación definitiva 10 días antes de la salida."
+      ],
+      "no_incluye": [
+        "Cualquier servicio no especificado como incluido"
+      ],
+      "hoteles": [],
+      "itinerario": [
+        {
+          "dia": "Días 1-2",
+          "titulo": "Buenos Aires – Addis Abeba – Seúl"
+        },
+        {
+          "dia": "Días 3-5",
+          "titulo": "Seúl",
+          "texto": "DMZ de Cheorwon, Palacio Changdeokgung, Bukchon Hanok Village, Gangnam, Lotte World Tower, Myeongdong."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "Seúl – Suwon – Jeonju",
+          "texto": "Cambio de guardia en Gyeongbokgung, Fortaleza Hwaseong y Hanok Village de Jeonju."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Jeonju – Damyang – Haeinsa – Busan",
+          "texto": "Experiencia Gochujang, Bosque de Bambú y templo Haeinsa (UNESCO)."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Busan – Fukuoka",
+          "texto": "Templo Haedong Yonggungsa frente al mar y vuelo a Japón."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Iwakuni – Miyajima – Hiroshima",
+          "texto": "Puente Kintai-Kyo, torii flotante de Itsukushima y Memorial de la Paz."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Hiroshima – Matsuyama",
+          "texto": "Ferry a Shikoku, castillo y baños termales Dogo Onsen."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Kotohira – Takamatsu – Naruto – Kobe",
+          "texto": "Jardines Ritsurin y remolinos de Naruto."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Kobe – Monte Koya",
+          "texto": "Noche en monasterio budista: meditación zen y cena vegetariana tradicional."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Monte Koya – Kioto",
+          "texto": "Fushimi Inari, Palacio Imperial, Pabellón Dorado y Gion."
+        },
+        {
+          "dia": "Días 14-17",
+          "titulo": "Tokio",
+          "texto": "Tren bala. Panorámica completa + 2 días libres."
+        },
+        {
+          "dia": "Días 18-19",
+          "titulo": "Tokio – Addis Abeba – Buenos Aires"
+        }
+      ],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "USD 8.070"
+        }
+      ],
+      "id": "tesoros-corea-japon",
+      "titulo": "Tesoros de Corea y Japón — Salida grupal acompañada",
+      "region": "asia",
+      "destinos": [
+        "Seúl",
+        "DMZ",
+        "Suwon",
+        "Jeonju",
+        "Busan",
+        "Fukuoka",
+        "Miyajima",
+        "Hiroshima",
+        "Matsuyama",
+        "Kobe",
+        "Monte Koya",
+        "Kioto",
+        "Tokio"
+      ],
+      "resumen": "Dos culturas fascinantes en un solo viaje: la DMZ coreana, templos patrimonio, la noche en un monasterio budista del Monte Koya, tren bala y Tokio.",
+      "precio_desde": {
+        "valor": 8070,
+        "moneda": "USD",
+        "nota": "por persona, base doble — tarifa final con impuestos"
+      },
+      "salida": "5 de marzo 2027 — Ethiopian ET507/672 ida, ET673/506 vuelta",
+      "vigencia": "2027-03-05",
+      "noches": 15,
+      "operador": "",
+      "ref": "PXX372-438",
+      "incluye": [
+        "Aéreos Buenos Aires–Seúl / Tokio–Buenos Aires vía Addis Abeba",
+        "Traslados de llegada y salida",
+        "15 noches con desayuno",
+        "11 almuerzos y/o cenas según itinerario",
+        "Excursión a la DMZ en Cheorwon",
+        "Panorámicas en Seúl, Busan, Kioto y Tokio",
+        "Traslados nocturnos a Myeongdong, Gion y Shinjuku",
+        "Experiencia de elaboración de salsa Gochujang",
+        "Entradas a palacios, templos, jardines y museos del itinerario",
+        "Ferry Hiroshima–Matsuyama",
+        "Funicular al Castillo de Matsuyama",
+        "Tren bala Kioto–Tokio",
+        "Universal Assistance con seguro de cancelación (hasta 70 años)"
+      ],
+      "imagen": "img/paquetes/corea-japon.jpg"
+    },
+    {
+      "activo": false,
+      "destacado": false,
+      "motivo_inactivo": "Fecha de salida del portal (08/07/2026) vencida. Verificar si hay nueva salida con el operador antes de activar.",
+      "regimen": "",
+      "nota_impuestos": "",
+      "condiciones": [],
+      "no_incluye": [
+        "IVA y tasas aeroportuarias",
+        "Asistencia al viajero",
+        "Bebidas",
+        "Propinas obligatorias",
+        "Gastos personales"
+      ],
+      "hoteles": [
+        "Málaga: Eurostars Málaga",
+        "Tánger: Kenzi Solazur",
+        "Casablanca: Kenzi Basma",
+        "Fez: Zalagh Parc Palace",
+        "Marrakech: Palm Plaza",
+        "Zagora: Hôtel Reda",
+        "Erfoud: Erfoud Palace",
+        "Ouarzazate: Karam Palace"
+      ],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "USD 5.390"
+        }
+      ],
+      "id": "marruecos-costa-del-sol",
+      "titulo": "Marruecos & Costa del Sol",
+      "region": "africa",
+      "destinos": [
+        "Málaga",
+        "Tánger",
+        "Chefchaouen",
+        "Casablanca",
+        "Fez",
+        "Marrakech",
+        "Zagora",
+        "Erfoud",
+        "Ouarzazate"
+      ],
+      "resumen": "Ciudades imperiales, medinas milenarias y paisajes desérticos de Marruecos, coronados con la Costa del Sol española.",
+      "precio_desde": {
+        "valor": 5390,
+        "moneda": "USD",
+        "nota": "por persona, base doble — total con impuestos"
+      },
+      "salida": "Fecha a confirmar",
+      "vigencia": "2026-07-08",
+      "noches": 15,
+      "operador": "",
+      "ref": "PXX573-717",
+      "incluye": [
+        "Aéreos Buenos Aires–Madrid–Málaga ida y vuelta",
+        "Ferry Tánger–Algeciras",
+        "Traslados grupales",
+        "15 noches en hoteles Primera / Primera Superior",
+        "Desayunos y comidas según itinerario",
+        "Excursiones, visitas y entradas del programa",
+        "Guías locales de habla hispana",
+        "Bus de lujo con aire acondicionado"
+      ],
+      "imagen": "img/paquetes/marruecos.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": true,
+      "motivo_inactivo": "",
+      "regimen": "",
+      "nota_impuestos": "",
+      "condiciones": [],
+      "no_incluye": [
+        "Bebidas durante el crucero",
+        "Comidas y bebidas no especificadas",
+        "Gastos personales"
+      ],
+      "hoteles": [
+        "El Cairo: Sofitel Cairo Downtown 4*",
+        "Crucero Nilo: Blue Shadow / Opera 4*",
+        "Amman: The Boulevard Arjaan by Rotana 4*",
+        "Petra: Mövenpick Resort Petra 4*",
+        "Wadi Rum: Mazayen Luxury Camp – Martian Tents",
+        "Mar Muerto: Holiday Inn Dead Sea 4*"
+      ],
+      "itinerario": [
+        {
+          "dia": "Días 1-2",
+          "titulo": "Buenos Aires – Addis Abeba – El Cairo"
+        },
+        {
+          "dia": "Días 3-5",
+          "titulo": "El Cairo",
+          "texto": "Pirámides y tesoros del Antiguo Egipto."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "El Cairo – Luxor",
+          "texto": "Inicio del crucero por el Nilo."
+        },
+        {
+          "dia": "Días 7-9",
+          "titulo": "Luxor – Edfu – Kom Ombo – Aswan",
+          "texto": "Navegación con pensión completa."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Aswan – El Cairo"
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "El Cairo – Amman"
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Amman – Madaba – Monte Nebo – Shobak – Petra"
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Petra",
+          "texto": "Día completo en la ciudad rosada."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Petra – Wadi Rum",
+          "texto": "Noche en campamento de lujo (Martian Tents)."
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "Wadi Rum – Mar Muerto"
+        },
+        {
+          "dia": "Días 16-17",
+          "titulo": "Mar Muerto – Amman – Buenos Aires"
+        }
+      ],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "USD 8.420"
+        }
+      ],
+      "id": "egipto-jordania",
+      "titulo": "Egipto & Jordania",
+      "region": "africa",
+      "destinos": [
+        "El Cairo",
+        "Luxor",
+        "Edfu",
+        "Aswan",
+        "Amman",
+        "Petra",
+        "Wadi Rum",
+        "Mar Muerto"
+      ],
+      "resumen": "Las Pirámides de Giza, 4 noches de crucero por el Nilo, Petra, el desierto de Wadi Rum en campamento de lujo y las aguas del Mar Muerto. El viaje de la vida.",
+      "precio_desde": {
+        "valor": 8420,
+        "moneda": "USD",
+        "nota": "por persona, base doble — total con impuestos"
+      },
+      "salida": "17 de marzo 2027",
+      "vigencia": "2027-03-17",
+      "noches": 15,
+      "operador": "",
+      "ref": "PXX699-930",
+      "incluye": [
+        "Aéreos desde Buenos Aires con Ethiopian Airlines",
+        "Vuelos internos en Egipto y aéreo El Cairo–Amman",
+        "5 noches en El Cairo con desayuno",
+        "4 noches de crucero por el Nilo con pensión completa",
+        "1 noche en Amman + 2 en Petra + 1 en Wadi Rum + 2 en Mar Muerto con media pensión",
+        "Traslados, visitas y excursiones según programa",
+        "Guías de habla hispana",
+        "Universal Assistance Maximum hasta USD 300.000",
+        "Reunión informativa previa",
+        "Tour leader desde Argentina (mín. 10 pax)"
+      ],
+      "imagen": "img/paquetes/egipto-jordania.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": true,
+      "motivo_inactivo": "",
+      "regimen": "",
+      "nota_impuestos": "",
+      "condiciones": [
+        "El itinerario puede sufrir modificaciones en el orden de los servicios, manteniéndose el contenido del programa."
+      ],
+      "no_incluye": [
+        "Comidas y bebidas no especificadas",
+        "Gastos personales"
+      ],
+      "hoteles": [
+        "Johannesburgo: Permont D'Oreale 5*",
+        "Área Kruger: Tintswalo Private Reserve 5*",
+        "Mauritius: Hilton Mauritius Resort & Spa 4*",
+        "Ciudad del Cabo: Southern Sun Waterfront / Park Inn Foreshore 4*"
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires – San Pablo – Johannesburgo"
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Johannesburgo – Mpumalanga – Reserva privada Kruger",
+          "texto": "Llegada al lodge. Cena."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Reserva privada — safaris",
+          "texto": "Safari fotográfico 4x4 al amanecer y al atardecer. Pensión en el lodge."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Último safari – Johannesburgo"
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Johannesburgo – Mauritius"
+        },
+        {
+          "dia": "Días 6-8",
+          "titulo": "Mauritius",
+          "texto": "Días libres de playa con media pensión."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Mauritius – Ciudad del Cabo"
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Península del Cabo",
+          "texto": "Cabo de Buena Esperanza, Isla de las Focas y pingüinos. Almuerzo incluido."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "City tour + Table Mountain + viñedos",
+          "texto": "Bo-Kaap, teleférico (sujeto a clima), Stellenbosch/Franschhoek con degustación."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Ciudad del Cabo",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Ciudad del Cabo – San Pablo – Buenos Aires"
+        }
+      ],
+      "tarifas": [
+        {
+          "etiqueta": "Base doble",
+          "precio": "USD 10.360"
+        }
+      ],
+      "id": "sudafrica-mauritius",
+      "titulo": "Sudáfrica & Mauritius",
+      "region": "africa",
+      "destinos": [
+        "Johannesburgo",
+        "Parque Kruger",
+        "Mauritius",
+        "Ciudad del Cabo"
+      ],
+      "resumen": "Safari en reserva privada del área Kruger con lodge 5*, playas paradisíacas de Mauritius y Ciudad del Cabo con Table Mountain y viñedos. África premium.",
+      "precio_desde": {
+        "valor": 10360,
+        "moneda": "USD",
+        "nota": "por persona, base doble — total con impuestos"
+      },
+      "salida": "16 de noviembre 2026 — South African Airways vía San Pablo",
+      "vigencia": "2026-11-16",
+      "noches": 11,
+      "operador": "",
+      "ref": "PXX648-839",
+      "incluye": [
+        "Aéreos desde Buenos Aires vía San Pablo con South African Airways",
+        "1 noche en Johannesburgo con desayuno",
+        "2 noches en reserva privada área Kruger con media pensión",
+        "4 noches en Mauritius con media pensión",
+        "4 noches en Ciudad del Cabo con desayuno",
+        "2 almuerzos según itinerario",
+        "Safaris en vehículo 4x4 con guía de habla hispana",
+        "Excursión Península del Cabo (Cabo de Buena Esperanza, focas y pingüinos)",
+        "City tour + Table Mountain + viñedos con degustación",
+        "Traslados, visitas y excursiones según programa",
+        "Universal Assistance Excellence de cortesía (hasta USD 150.000)",
+        "Reunión informativa previa",
+        "Tour leader desde Argentina"
+      ],
+      "imagen": "img/paquetes/sudafrica-mauritius.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": true,
+      "motivo_inactivo": "",
+      "regimen": "Pensión completa",
+      "nota_impuestos": "",
+      "condiciones": [
+        "Salidas programadas: enero-febrero, junio-julio y diciembre de 2027 y 2028.",
+        "Los valores incluyen DNT, IVA, tasas aeroportuarias, impuestos hoteleros, propinas y maleteros."
+      ],
+      "no_incluye": [],
+      "hoteles": [],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Salidas 2027 (total c/imp.)",
+          "precio": "USD 6.860"
+        },
+        {
+          "etiqueta": "Salidas 2028 (total c/imp.)",
+          "precio": "USD 6.960"
+        }
+      ],
+      "id": "enjoy-disney-usa-xv",
+      "titulo": "Enjoy Disney USA — Viaje de Quinceañeras",
+      "region": "quinceaneras",
+      "destinos": [
+        "Orlando",
+        "Walt Disney World",
+        "Universal",
+        "Miami"
+      ],
+      "resumen": "El viaje de 15 soñado: 11 noches entre Orlando y Miami, resorts de Disney con pensión completa, todos los parques, coordinación permanente y evento con personajes.",
+      "precio_desde": {
+        "valor": 6860,
+        "moneda": "USD",
+        "nota": "por persona — total con impuestos, salidas 2027"
+      },
+      "salida": "Salidas 2027 y 2028: enero-febrero, junio-julio y diciembre · desde Buenos Aires, Córdoba y Rosario",
+      "vigencia": "2028-12-01",
+      "noches": 11,
+      "operador": "",
+      "ref": "BOL1781",
+      "incluye": [
+        "Vuelos con aerolíneas de primer nivel desde Buenos Aires, Córdoba y Rosario",
+        "Traslados en bus privado con pantallas y música exclusiva",
+        "10 noches en Walt Disney World Resort (All Star / Pop Century) con pensión completa y Disney Mug de bebidas ilimitadas",
+        "1 noche en Miami frente al mar con pensión completa",
+        "Parques Disney: Magic Kingdom, Epcot, Hollywood Studios, Animal Kingdom",
+        "Parques acuáticos: Blizzard Beach y Typhoon Lagoon",
+        "Universal Studios e Islands of Adventure con Hogwarts Express",
+        "Disney Springs y Premium Outlets",
+        "City tour Miami: Ocean Drive, Wynwood, Bayside",
+        "Evento con personajes Disney",
+        "Coordinador/a cada 15 pasajeras + equipo médico, operativo y directivo",
+        "Assist-Card con cobertura hasta USD 1.000.000",
+        "Reuniones pre-viaje para chicas y padres",
+        "Kit de viaje completo (mochila, remera, campera, piloto, botella, porta documentos)",
+        "Seguimiento diario online con fotos y videos",
+        "Asesoramiento en trámites migratorios (VISA/ESTA)"
+      ],
+      "imagen": "img/paquetes/enjoy-disney-usa.jpg"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Pensión completa con merienda",
+      "nota_impuestos": "",
+      "condiciones": [
+        "Salida septiembre 2027. Referencia del operador a confirmar con el equipo."
+      ],
+      "no_incluye": [],
+      "hoteles": [
+        "Londres: Royal National o similar",
+        "París: Campanile Val de France / Dream Castle",
+        "Port Aventura: Hotel Caribe / Gold River / El Paso",
+        "Madrid: Ayre Colón / Palladium / Sterling Gran Vía"
+      ],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Total por persona (c/imp.)",
+          "precio": "USD 7.464"
+        }
+      ],
+      "id": "disney-europa-premium-xv",
+      "titulo": "Disney Europa Premium — Viaje de Quinceañeras",
+      "region": "quinceaneras",
+      "destinos": [
+        "Londres",
+        "París",
+        "Disneyland París",
+        "Barcelona",
+        "Port Aventura",
+        "Madrid"
+      ],
+      "resumen": "Los 15 por Europa: Londres con Harry Potter Studios, Disneyland París, Port Aventura y Ferrari Land, Parque Warner Madrid. 12 noches con pensión completa y coordinación permanente.",
+      "precio_desde": {
+        "valor": 7464,
+        "moneda": "USD",
+        "nota": "por persona — total con impuestos"
+      },
+      "salida": "Septiembre 2027 · desde Buenos Aires, Córdoba y Rosario",
+      "vigencia": "2027-09-01",
+      "noches": 12,
+      "operador": "",
+      "ref": "",
+      "incluye": [
+        "Vuelos internacionales desde Buenos Aires, Córdoba y Rosario",
+        "Traslados en bus privado ejecutivo exclusivo con la Enjoy15 Playlist",
+        "Pensión completa con merienda durante todo el viaje",
+        "Londres (3N): city tour + Warner Bros Studio Tour Harry Potter + Harrods, Oxford St y Covent Garden",
+        "París (3N): city tour con ascenso a Torre Eiffel, Sena, Louvre + Disneyland Park y Walt Disney Studios con Early Park Entry",
+        "Barcelona/Port Aventura (3N): Port Aventura Park + Ferrari Land + playa de Salou + city tour",
+        "Madrid (3N): city tour + Parque Warner + shopping de primeras marcas",
+        "Assist-Card internacional hasta USD 1.000.000",
+        "Coordinadores exclusivos permanentes + equipo de gerentes y guías locales"
+      ],
+      "imagen": "img/paquetes/disney-europa-xv.jpg"
     }
   ]
 }

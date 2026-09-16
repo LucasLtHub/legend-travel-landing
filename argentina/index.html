@@ -474,33 +474,42 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 .pk-grid{display:grid;grid-template-columns:1fr;gap:28px}
 @media(min-width:680px){.pk-grid{grid-template-columns:1fr 1fr}}
 @media(min-width:1080px){.pk-grid{grid-template-columns:1fr 1fr 1fr}}
-.pk-card{display:flex;flex-direction:column;background:#fff;border:1px solid rgba(14,35,45,.09);border-radius:18px;overflow:hidden;transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}
+.pk-card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid rgba(14,35,45,.09);border-radius:18px;overflow:hidden;transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}
 .pk-card:hover{transform:translateY(-4px);border-color:rgba(14,35,45,.14);box-shadow:0 18px 40px -18px rgba(14,35,45,.28)}
+/* la card entera es un link; el boton de WhatsApp va por encima (z-index) */
+.pk-stretch{position:absolute;inset:0;z-index:1}
+.pk-card:focus-within{border-color:rgba(172,10,16,.45);box-shadow:0 0 0 3px rgba(172,10,16,.12)}
 .pk-media{position:relative;aspect-ratio:16/10;overflow:hidden;background:rgba(14,35,45,.06)}
 .pk-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s cubic-bezier(.2,.6,.2,1)}
 .pk-card:hover .pk-media img{transform:scale(1.06)}
 .pk-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,35,45,.3) 0%,rgba(14,35,45,0) 42%);pointer-events:none}
-.pk-badge{position:absolute;top:14px;left:14px;z-index:2;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:var(--bur);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;padding:6px 12px;border-radius:100px;box-shadow:0 2px 10px rgba(14,35,45,.14)}
+.pk-badge{position:absolute;top:14px;left:14px;z-index:2;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:var(--bur);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;padding:6px 12px;border-radius:100px;box-shadow:0 2px 10px rgba(14,35,45,.14);pointer-events:none}
 .pk-badge svg{width:11px;height:11px;color:var(--gold)}
-.pk-nota{position:absolute;bottom:14px;left:14px;z-index:2;background:rgba(172,10,16,.94);color:#fff;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;padding:6px 12px;border-radius:100px}
 .pk-body{display:flex;flex-direction:column;flex:1;padding:24px 24px 22px}
-.pk-dest{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.2em;color:var(--red);margin-bottom:9px}
-.pk-t{font-size:20px;font-weight:700;letter-spacing:-.015em;line-height:1.25;color:var(--black);margin-bottom:16px}
+.pk-dest{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.18em;color:var(--red);margin-bottom:9px;line-height:1.45}
+.pk-t{font-size:19px;font-weight:700;letter-spacing:-.015em;line-height:1.28;color:var(--black);margin-bottom:12px}
+.pk-resumen{font-size:14px;color:rgba(14,35,45,.62);line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-clamp:2;overflow:hidden}
 .pk-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
 .pk-meta span{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;color:rgba(14,35,45,.62);background:rgba(14,35,45,.04);border:1px solid rgba(14,35,45,.07);border-radius:8px;padding:5px 11px}
 .pk-meta svg{width:13px;height:13px;color:var(--red);flex:none}
-.pk-inc{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:7px}
+.pk-inc{list-style:none;margin:0 0 8px;padding:0;display:grid;gap:7px}
 .pk-inc li{display:flex;align-items:flex-start;gap:9px;font-size:13.5px;color:rgba(14,35,45,.72);line-height:1.5}
 .pk-inc svg{width:13px;height:13px;color:var(--red);flex:none;margin-top:4px}
+.pk-mas{font-size:12.5px;color:rgba(14,35,45,.45);margin-bottom:20px;padding-left:22px}
 .pk-foot{margin-top:auto;padding-top:18px;border-top:1px solid rgba(14,35,45,.08)}
 .pk-price{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
 .pk-price .lbl{font-size:12px;font-weight:600;color:rgba(14,35,45,.5);text-transform:uppercase;letter-spacing:.1em}
-.pk-price .amt{font-size:28px;font-weight:700;letter-spacing:-.03em;color:var(--black);line-height:1}
+.pk-price .amt{font-size:27px;font-weight:700;letter-spacing:-.03em;color:var(--black);line-height:1}
 .pk-price .cur{font-size:15px;font-weight:700;color:rgba(14,35,45,.55);letter-spacing:-.01em}
-.pk-pnota{font-size:12px;color:rgba(14,35,45,.5);margin-top:5px}
-.pk-cta{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;margin-top:16px;background:var(--red);color:#fff;padding:13px 20px;border-radius:9px;font-size:15px;font-weight:600;transition:background .3s,transform .3s}
+.pk-pnota{font-size:12px;color:rgba(14,35,45,.5);margin-top:5px;line-height:1.5}
+.pk-acts{display:flex;align-items:center;gap:12px;margin-top:16px}
+.pk-cta{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;gap:9px;flex:1;background:var(--red);color:#fff;padding:12px 16px;border-radius:9px;font-size:14.5px;font-weight:600;transition:background .3s,transform .3s}
 .pk-cta:hover{background:var(--bur);transform:translateY(-1px)}
-.pk-cta svg{width:17px;height:17px}
+.pk-cta svg{width:17px;height:17px;flex:none}
+.pk-ver{flex:none;display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:700;color:var(--red);white-space:nowrap}
+.pk-card:hover .pk-ver{color:var(--bur)}
+.pk-ver svg{width:14px;height:14px;transition:transform .3s}
+.pk-card:hover .pk-ver svg{transform:translateX(3px)}
 .pk-vig{display:flex;align-items:center;gap:7px;margin-top:13px;font-size:11.5px;color:rgba(14,35,45,.45)}
 .pk-vig svg{width:12px;height:12px;flex:none}
 .pk-vig b{font-weight:600;color:rgba(14,35,45,.62)}
@@ -517,37 +526,133 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
     <div class="pk-rhead rv">
       <div>
         <p class="kicker">Salidas confirmadas</p>
-        <h3>1 salida por Argentina con <em>fecha y precio cerrado</em>.</h3>
+        <h3>4 salidas por Argentina con <em>fecha y precio cerrado</em>.</h3>
       </div>
       <a class="pk-rall" href="paquetes/#argentina">Ver todas las salidas<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
     </div>
-    <div class="pk-grid rv" style="max-width:400px">
+    <div class="pk-grid rv">
       <article class="pk-card" data-r="argentina">
+        <a class="pk-stretch" href="paquetes/tulipanes-bariloche-puelo/" aria-label="Ver detalle: Campo de Tulipanes: Bariloche &amp; Lago Puelo"></a>
         <div class="pk-media">
-          <img src="https://images.pexels.com/photos/7785553/pexels-photo-7785553.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200" alt="Bariloche" loading="lazy">
+          <img src="img/paquetes/placeholder.svg" alt="Bariloche" loading="lazy">
+        <span class="pk-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>Destacado</span>
         </div>
         <div class="pk-body">
-          <p class="pk-dest">Bariloche</p>
-          <h3 class="pk-t">[EJEMPLO] Bariloche — 7 noches en temporada de nieve</h3>
+          <p class="pk-dest">Bariloche &middot; El Bolsón &middot; Lago Puelo</p>
+          <h3 class="pk-t">Campo de Tulipanes: Bariloche &amp; Lago Puelo</h3>
+          <p class="pk-resumen">Descubrí la primavera patagónica y uno de los campos de tulipanes más espectaculares de Argentina. Paisajes de postal sin salir del país.</p>
           <div class="pk-meta">
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>18 de julio 2027</span>
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6M3 18h18M3 18v2M21 18v2M6 10V7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3"/></svg>7 noches</span>
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 20h16M6 16h12M7 16a5 5 0 0 1 10 0M12 4v3M10.5 5.5h3"/></svg>Media pensión</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>14 de octubre 2026 (salida única)</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6M3 18h18M3 18v2M21 18v2M6 10V7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3"/></svg>4 noches</span>
           </div>
           <ul class="pk-inc">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Vuelos desde Buenos Aires</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Traslados aeropuerto / hotel</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Hotel 4* con media pensión</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Asistencia al viajero</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Pasajes aéreos desde Buenos Aires</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Traslados de llegada y salida</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>2 noches en Nevada Hotel (Bariloche)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>2 noches en Cabañas Refugio de Puelo</li>
           </ul>
+          <p class="pk-mas">+2 &#237;tems m&#225;s en el detalle</p>
           <div class="pk-foot">
-            <div class="pk-price"><span class="lbl">Desde</span><span class="cur">ARS</span><span class="amt">1.180.000</span></div>
-          <p class="pk-pnota">por persona, base doble · hasta 12 cuotas</p>
-            <a class="pk-cta" href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%3A%20%5BEJEMPLO%5D%20Bariloche%20%E2%80%94%207%20noches%20en%20temporada%20de%20nieve" target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg>
-              Consultar por WhatsApp
-            </a>
-            <p class="pk-vig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>Tarifa v&aacute;lida hasta <b>31/10/2026</b></p>
+            <div class="pk-price"><span class="lbl">Desde</span><span class="cur">ARS</span><span class="amt">1.741.290</span></div>
+            <p class="pk-pnota">por persona, base doble</p>
+            <div class="pk-acts">
+              <a class="pk-cta" href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%3A%20Campo%20de%20Tulipanes%3A%20Bariloche%20%26%20Lago%20Puelo" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg>Consultar</a>
+              <span class="pk-ver">Ver detalle<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+            </div>
+            <p class="pk-vig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>Tarifa v&aacute;lida hasta <b>14/10/2026</b></p>
+          </div>
+        </div>
+      </article>
+      <article class="pk-card" data-r="argentina">
+        <a class="pk-stretch" href="paquetes/cruce-andino-bariloche-puerto-varas/" aria-label="Ver detalle: Cruce Andino: Bariloche &amp; Puerto Varas"></a>
+        <div class="pk-media">
+          <img src="img/paquetes/placeholder.svg" alt="Bariloche" loading="lazy">
+        </div>
+        <div class="pk-body">
+          <p class="pk-dest">Bariloche &middot; Puerto Varas (Chile)</p>
+          <h3 class="pk-t">Cruce Andino: Bariloche &amp; Puerto Varas</h3>
+          <p class="pk-resumen">Una de las travesías más aventureras de Sudamérica: unir Argentina y Chile a través de lagos, montañas y bosques, navegando entre volcanes.</p>
+          <div class="pk-meta">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>Salidas del 16/09 al 30/12/2026</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6M3 18h18M3 18v2M21 18v2M6 10V7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3"/></svg>5 noches</span>
+          </div>
+          <ul class="pk-inc">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Pasajes aéreos desde Buenos Aires</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Traslados de llegada y salida</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>3 noches en Huinid Pioneros Hotel (Bariloche)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>2 noches en Hotel Cabaña del Lago (Puerto Varas)</li>
+          </ul>
+          <p class="pk-mas">+2 &#237;tems m&#225;s en el detalle</p>
+          <div class="pk-foot">
+            <div class="pk-price"><span class="lbl">Desde</span><span class="cur">ARS</span><span class="amt">1.322.790</span></div>
+            <p class="pk-pnota">por persona, base doble</p>
+            <div class="pk-acts">
+              <a class="pk-cta" href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%3A%20Cruce%20Andino%3A%20Bariloche%20%26%20Puerto%20Varas" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg>Consultar</a>
+              <span class="pk-ver">Ver detalle<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+            </div>
+            <p class="pk-vig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>Tarifa v&aacute;lida hasta <b>30/12/2026</b></p>
+          </div>
+        </div>
+      </article>
+      <article class="pk-card" data-r="argentina">
+        <a class="pk-stretch" href="paquetes/mendoza-vinedos/" aria-label="Ver detalle: Mendoza: Experiencia entre Viñedos"></a>
+        <div class="pk-media">
+          <img src="img/paquetes/placeholder.svg" alt="Mendoza" loading="lazy">
+        </div>
+        <div class="pk-body">
+          <p class="pk-dest">Mendoza</p>
+          <h3 class="pk-t">Mendoza: Experiencia entre Viñedos</h3>
+          <p class="pk-resumen">Viñedos, bodegas y sabores únicos. Escapada con salidas todos los lunes para combinar montaña, gastronomía y la región vitivinícola más reconocida de Sudamérica.</p>
+          <div class="pk-meta">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>Salidas los lunes, del 16/09 al 28/12/2026</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6M3 18h18M3 18v2M21 18v2M6 10V7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3"/></svg>3 noches</span>
+          </div>
+          <ul class="pk-inc">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Pasajes aéreos desde Buenos Aires</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Traslados de llegada y salida</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>3 noches en Hotel Raíces Aconcagua</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Excursión Camino del Vino - El Sol</li>
+          </ul>
+          <p class="pk-mas">+1 &#237;tems m&#225;s en el detalle</p>
+          <div class="pk-foot">
+            <div class="pk-price"><span class="lbl">Desde</span><span class="cur">ARS</span><span class="amt">642.990</span></div>
+            <p class="pk-pnota">por persona, base doble</p>
+            <div class="pk-acts">
+              <a class="pk-cta" href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%3A%20Mendoza%3A%20Experiencia%20entre%20Vi%C3%B1edos" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg>Consultar</a>
+              <span class="pk-ver">Ver detalle<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+            </div>
+            <p class="pk-vig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>Tarifa v&aacute;lida hasta <b>28/12/2026</b></p>
+          </div>
+        </div>
+      </article>
+      <article class="pk-card" data-r="argentina">
+        <a class="pk-stretch" href="paquetes/puerto-madryn-ballenas/" aria-label="Ver detalle: Puerto Madryn: Puerto Pirámides con Avistaje de Ballenas"></a>
+        <div class="pk-media">
+          <img src="img/paquetes/placeholder.svg" alt="Puerto Madryn" loading="lazy">
+        </div>
+        <div class="pk-body">
+          <p class="pk-dest">Puerto Madryn &middot; Puerto Pirámides</p>
+          <h3 class="pk-t">Puerto Madryn: Puerto Pirámides con Avistaje de Ballenas</h3>
+          <p class="pk-resumen">Avistaje embarcado de ballenas, la experiencia nocturna bajo la luna llena en El Doradillo y la fauna patagónica en uno de los destinos naturales más increíbles del país.</p>
+          <div class="pk-meta">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>Salidas del 16/09 al 31/12/2026</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6M3 18h18M3 18v2M21 18v2M6 10V7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3"/></svg>3 noches</span>
+          </div>
+          <ul class="pk-inc">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Pasajes aéreos desde Buenos Aires</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Traslados de llegada y salida</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>3 noches de alojamiento con desayuno</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Excursión Puerto Pirámides con embarcación para avistaje de ballenas</li>
+          </ul>
+          <p class="pk-mas">+1 &#237;tems m&#225;s en el detalle</p>
+          <div class="pk-foot">
+            <div class="pk-price"><span class="lbl">Desde</span><span class="cur">ARS</span><span class="amt">1.198.657</span></div>
+            <p class="pk-pnota">por persona, base doble</p>
+            <div class="pk-acts">
+              <a class="pk-cta" href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%3A%20Puerto%20Madryn%3A%20Puerto%20Pir%C3%A1mides%20con%20Avistaje%20de%20Ballenas" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg>Consultar</a>
+              <span class="pk-ver">Ver detalle<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+            </div>
+            <p class="pk-vig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>Tarifa v&aacute;lida hasta <b>31/12/2026</b></p>
           </div>
         </div>
       </article>

@@ -409,6 +409,12 @@ def main():
     sitemap_paths = ["/"]
     for d in FULL_DIRS:
         sitemap_paths.append(f"/{d}/")
+        # Subpaginas generadas dentro de un servicio (hoy: paquetes/<id>/,
+        # una por paquete activo). Se leen de lo que quedo COPIADO en la
+        # tanda, asi lo inactivo o vencido nunca entra al sitemap.
+        for sub in sorted((DEST / d).iterdir()) if (DEST / d).exists() else []:
+            if sub.is_dir() and (sub / "index.html").exists():
+                sitemap_paths.append(f"/{d}/{sub.name}/")
     for d in MADRE_DIRS:
         sitemap_paths.append(f"/{d}/")
 
