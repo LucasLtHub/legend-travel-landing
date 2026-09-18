@@ -64,7 +64,7 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 .hero h1{font-size:40px;font-weight:700;line-height:1.04;letter-spacing:-.035em;color:var(--white);text-shadow:0 2px 24px rgba(14,35,45,.7);margin-bottom:20px}
 @media(min-width:768px){.hero h1{font-size:58px}}
 @media(min-width:1024px){.hero h1{font-size:68px}}
-.hero h1 em{font-style:normal;color:var(--red3)}
+.hero h1 em{font-style:normal;color:inherit}
 .hero-sub{font-size:18px;color:rgba(255,255,255,.82);max-width:600px;margin:0 auto 32px;text-shadow:0 1px 16px rgba(14,35,45,.75)}
 @media(min-width:768px){.hero-sub{font-size:21px}}
 .hero-btns{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
@@ -256,7 +256,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
     </div>
 
 <!-- PAQUETES:START -->
-<!-- Generado por build-paquetes.py el 2026-09-16. NO editar a mano: se pisa. -->
+<!-- Generado por build-paquetes.py el 2026-09-18. NO editar a mano: se pisa. -->
 <style>
 .pk-grid{display:grid;grid-template-columns:1fr;gap:28px}
 @media(min-width:680px){.pk-grid{grid-template-columns:1fr 1fr}}
@@ -307,6 +307,21 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 .pk-rall:hover{color:var(--bur);border-color:var(--bur)}
 .pk-rall svg{width:15px;height:15px}
 .pk-rsep{border:0;border-top:1px solid rgba(14,35,45,.09);margin:72px 0 0}
+/* card COMPACTA: la que va en las madres. Sin foto, no compite con el
+   contenido propio de la pagina; solo lo que decide un click. */
+.pkc-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:760px){.pkc-grid{grid-template-columns:repeat(3,1fr)}}
+.pkc{display:flex;flex-direction:column;gap:9px;background:#fff;border:1px solid rgba(14,35,45,.1);border-radius:14px;padding:24px;transition:transform .3s,box-shadow .3s,border-color .3s}
+.pkc:hover{transform:translateY(-3px);border-color:rgba(14,35,45,.16);box-shadow:0 14px 32px -16px rgba(14,35,45,.28)}
+.pkc .k{display:flex;align-items:center;gap:7px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--red)}
+.pkc .k svg{width:12px;height:12px;flex:none}
+.pkc .t{font-size:16px;font-weight:700;line-height:1.35;color:var(--black)}
+.pkc .s{font-size:12.5px;color:rgba(14,35,45,.55);line-height:1.5}
+.pkc .p{margin-top:auto;padding-top:12px;border-top:1px solid rgba(14,35,45,.07);display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.pkc .p b{font-size:18px;font-weight:700;letter-spacing:-.025em;color:var(--black)}
+.pkc .p b small{font-size:12px;font-weight:600;color:rgba(14,35,45,.5);margin-right:3px}
+.pkc .p span{font-size:12.5px;font-weight:700;color:var(--red);white-space:nowrap}
+.pkc:hover .p span{color:var(--bur)}
 </style>
     <div class="pk-filters rv" role="group" aria-label="Filtrar por regi&oacute;n">
       <button class="pk-chip on" data-r="all" aria-pressed="true">Todos <span class="n">19</span></button>

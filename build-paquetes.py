@@ -74,8 +74,23 @@ REGIONES_FRASE = {
     "viajes-deportivos": "a eventos deportivos", "quinceaneras": "de quinceañera",
 }
 
-# Regiones sin pagina madre propia: no se reportan como faltante.
-SIN_MADRE = {"quinceaneras"}
+# En que carpeta madre se muestran las salidas de cada region.
+# quinceaneras -> disney/ : los viajes de XV viven ahi.
+REGION_MADRE = {
+    "argentina": "argentina", "caribe": "caribe", "europa": "europa",
+    "asia": "asia", "africa": "africa", "medio-oriente": "medio-oriente",
+    "cruceros": "cruceros", "quinceaneras": "disney", "disney": "disney",
+    "usa": "usa", "brasil": "brasil", "oceania": "oceania",
+    "latinoamerica": "latinoamerica", "lunas-de-miel": "lunas-de-miel",
+    "viajes-deportivos": "viajes-deportivos",
+}
+
+MAX_REGION_CARDS = 3      # en la madre, hasta 3 salidas; el resto en /paquetes/
+MAX_RELACIONADOS = 3      # al pie del detalle
+ORG_ID = DOMINIO + "/#organization"   # la TravelAgency que ya declara el sitio
+LLMS = ROOT / "llms.txt"
+LLMS_START = "<!-- PAQUETES:START -->"
+LLMS_END = "<!-- PAQUETES:END -->"
 
 MESES = {"enero": 1, "febrero": 2, "marzo": 3, "abril": 4, "mayo": 5, "junio": 6,
          "julio": 7, "agosto": 8, "septiembre": 9, "setiembre": 9, "octubre": 10,
@@ -151,6 +166,21 @@ CARD_CSS = """<style>
 .pk-rall:hover{color:var(--bur);border-color:var(--bur)}
 .pk-rall svg{width:15px;height:15px}
 .pk-rsep{border:0;border-top:1px solid rgba(14,35,45,.09);margin:72px 0 0}
+/* card COMPACTA: la que va en las madres. Sin foto, no compite con el
+   contenido propio de la pagina; solo lo que decide un click. */
+.pkc-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:760px){.pkc-grid{grid-template-columns:repeat(3,1fr)}}
+.pkc{display:flex;flex-direction:column;gap:9px;background:#fff;border:1px solid rgba(14,35,45,.1);border-radius:14px;padding:24px;transition:transform .3s,box-shadow .3s,border-color .3s}
+.pkc:hover{transform:translateY(-3px);border-color:rgba(14,35,45,.16);box-shadow:0 14px 32px -16px rgba(14,35,45,.28)}
+.pkc .k{display:flex;align-items:center;gap:7px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--red)}
+.pkc .k svg{width:12px;height:12px;flex:none}
+.pkc .t{font-size:16px;font-weight:700;line-height:1.35;color:var(--black)}
+.pkc .s{font-size:12.5px;color:rgba(14,35,45,.55);line-height:1.5}
+.pkc .p{margin-top:auto;padding-top:12px;border-top:1px solid rgba(14,35,45,.07);display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.pkc .p b{font-size:18px;font-weight:700;letter-spacing:-.025em;color:var(--black)}
+.pkc .p b small{font-size:12px;font-weight:600;color:rgba(14,35,45,.5);margin-right:3px}
+.pkc .p span{font-size:12.5px;font-weight:700;color:var(--red);white-space:nowrap}
+.pkc:hover .p span{color:var(--bur)}
 </style>"""
 
 PLACEHOLDER_SVG = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Imagen no disponible">
@@ -258,6 +288,70 @@ def noches_txt(n):
     return "{} {}".format(n, "noche" if str(n) == "1" else "noches")
 
 
+def salida_corta(s):
+    """"5 de marzo 2027 - Ethiopian ET507" -> "5 de marzo 2027" (para metas)."""
+    s = str(s or "").strip()
+    for corte in (" \u2014 ", " - ", " \u00b7 ", " ("):
+        if corte in s:
+            s = s.split(corte)[0].strip()
+    return s.rstrip(" .,")
+
+
+def titulo_tag(titulo):
+    """
+    "<Titulo> desde Buenos Aires | Legend Travel", y si pasa de ~65 caracteres
+    cae a la version corta. No se recorta el titulo del paquete: mutilarlo es
+    peor que un title largo.
+    """
+    largo = "{} desde Buenos Aires | Legend Travel".format(titulo)
+    return largo if len(largo) <= 65 else "{} | Legend Travel".format(titulo)
+
+
+# Palabras que no pueden quedar al final de una frase recortada.
+COLGADAS = {"el", "la", "los", "las", "un", "una", "unos", "unas", "de", "del",
+            "y", "e", "o", "u", "en", "con", "sin", "por", "para", "a", "al",
+            "que", "su", "sus", "mas", "m\u00e1s", "entre", "sobre", "desde", "hasta"}
+
+
+def recortar(texto, limite):
+    """
+    Recorta a `limite` cortando en la ultima coma o punto si hay uno razonable;
+    si no, en el ultimo espacio, y descarta las palabras funcionales que queden
+    colgando al final ("...Capri, el" -> "...Capri").
+    """
+    if len(texto) <= limite:
+        return texto
+    trozo = texto[:limite]
+    corte = max(trozo.rfind(","), trozo.rfind(";"), trozo.rfind("."))
+    if corte >= limite * 0.6:
+        trozo = trozo[:corte]
+    else:
+        trozo = trozo.rsplit(" ", 1)[0]
+    palabras = trozo.rstrip(" .,;:").split(" ")
+    while len(palabras) > 1 and palabras[-1].lower().strip(",.;:") in COLGADAS:
+        palabras.pop()
+    return " ".join(palabras).rstrip(" .,;:")
+
+
+def meta_desc(p, limite=158):
+    """
+    Descripcion armada SOLO con datos del JSON: salida, duracion, resumen,
+    precio y CTA. Si no entra todo, lo primero que se recorta es el resumen.
+    """
+    pd = p["precio_desde"]
+    sal = salida_corta(p["salida"])
+    # Varios paquetes traen "Salidas del ... al ...": no anteponer "Salida".
+    cabeza = ("{}. {}." if sal.lower().startswith("salida")
+              else "Salida {}. {}.").format(sal, noches_txt(p["noches"]))
+    cola = "Desde {} {}. Consult\u00e1 por WhatsApp.".format(
+        pd.get("moneda", ""), fmt_precio(pd.get("valor")))
+    hueco = limite - len(cabeza) - len(cola) - 2
+    resumen = txt(p, "resumen")
+    if resumen and hueco >= 45:
+        return "{} {}. {}".format(cabeza, recortar(resumen.rstrip(" ."), hueco - 1), cola)
+    return "{} {}".format(cabeza, cola)
+
+
 def reemplazar_bloque(texto, ini, fin, bloque):
     return re.sub(re.escape(ini) + r".*?" + re.escape(fin),
                   lambda _: bloque, texto, count=1, flags=re.S)
@@ -360,6 +454,24 @@ def render_vacio():
             urllib.parse.quote("Hola Legend Travel, quiero consultar por una salida", safe=''))))
 
 
+def render_card_compacta(p, vig):
+    """Card chica para las madres y para 'otros paquetes': lo minimo que
+    hace falta para decidir un click (titulo, salida, duracion, precio)."""
+    pd = p["precio_desde"]
+    dests = lista(p, "destinos")
+    return '''      <a class="pkc" href="paquetes/{id}/">
+        <span class="k">{ic}{dest}</span>
+        <span class="t">{titulo}</span>
+        <span class="s">{salida} &middot; {noches}</span>
+        <span class="p"><b><small>Desde</small> {moneda} {precio}</b><span>Ver detalle &rarr;</span></span>
+      </a>'''.format(
+        id=e(p["id"]), ic=IC_BRUJULA,
+        dest=e(dests[0] if dests else REGIONES.get(p["region"], p["region"])),
+        titulo=e(p["titulo"]), salida=e(salida_corta(p["salida"])),
+        noches=e(noches_txt(p["noches"])),
+        moneda=e(pd.get("moneda", "")), precio=fmt_precio(pd.get("valor")))
+
+
 def grid_style(n):
     if n == 1:
         return ' style="max-width:400px"'
@@ -368,27 +480,44 @@ def grid_style(n):
     return ''
 
 
-def render_region_block(region, items, hoy):
-    n = len(items)
-    frase = REGIONES_FRASE.get(region, "a " + REGIONES.get(region, region))
-    titulo = "{n} {sal} {frase} con <em>fecha y precio cerrado</em>.".format(
-        n=n, sal="salida" if n == 1 else "salidas", frase=e(frase))
-    return "\n".join([
+def render_region_block(carpeta, items, hoy):
+    """
+    Modulo "Salidas destacadas" de una madre: hasta MAX_REGION_CARDS cards
+    compactas + link a /paquetes/. Si la carpeta junta mas de una region
+    (disney/ recibe quinceaneras), el titulo cae a una version neutra.
+    """
+    muestra = items[:MAX_REGION_CARDS]
+    regs = {p["region"] for p, _ in items}
+    if len(regs) == 1:
+        r = list(regs)[0]
+        frase = REGIONES_FRASE.get(r, "a " + REGIONES.get(r, r))
+        titulo = "Salidas {frase} con <em>fecha y precio cerrado</em>.".format(frase=e(frase))
+        ancla = "paquetes/#{}".format(e(r))
+    else:
+        titulo = "Salidas con <em>fecha y precio cerrado</em>."
+        ancla = "paquetes/"
+
+    if len(items) > len(muestra):
+        ver = "Ver las {} salidas".format(len(items))
+    else:
+        ver = "Ver todos los paquetes"
+
+    NL = chr(10)
+    return NL.join([
         R_START,
         "<!-- Generado por build-paquetes.py el {}. NO editar a mano: se pisa. -->".format(hoy.isoformat()),
         CARD_CSS,
         '  <hr class="pk-rsep">',
-        '  <div class="mx" style="margin-top:72px">',
+        '  <div class="mx" style="margin-top:64px">',
         '    <div class="pk-rhead rv">',
         '      <div>',
-        '        <p class="kicker">Salidas confirmadas</p>',
+        '        <p class="kicker">Salidas destacadas</p>',
         '        <h3>{}</h3>'.format(titulo),
         '      </div>',
-        '      <a class="pk-rall" href="paquetes/#{r}">Ver todas las salidas{ic}</a>'.format(
-            r=e(region), ic=IC_FLECHA),
+        '      <a class="pk-rall" href="{a}">{v}{ic}</a>'.format(a=ancla, v=ver, ic=IC_FLECHA),
         '    </div>',
-        '    <div class="pk-grid rv"{}>'.format(grid_style(n)),
-        "\n".join(render_card(p, v) for p, v in items),
+        '    <div class="pkc-grid rv">',
+        NL.join(render_card_compacta(p, v) for p, v in muestra),
         '    </div>',
         '  </div>',
         R_END,
@@ -408,11 +537,42 @@ def _sec(titulo, cuerpo, extra=""):
 </section>'''.format(t=titulo, c=cuerpo, x=extra)
 
 
-def render_detalle(p, vig, plantilla):
+def render_relacionados(p, todos):
+    """
+    C2: hasta MAX_RELACIONADOS salidas para seguir mirando. Primero las de la
+    misma region; si no alcanzan, se completa con otras. Nunca la actual.
+    """
+    otros = [(q, v) for q, v in todos if q["id"] != p["id"]]
+    if not otros:
+        return ""
+    misma = [x for x in otros if x[0]["region"] == p["region"]]
+    resto = [x for x in otros if x[0]["region"] != p["region"]]
+    elegidos = (misma + resto)[:MAX_RELACIONADOS]
+
+    if len(misma) >= 1:
+        sub = "Otras salidas {}".format(REGIONES_FRASE.get(p["region"], ""))
+    else:
+        sub = "Otras salidas"
+    NL = chr(10)
+    return NL.join([
+        '',
+        '<section class="dsec px">',
+        '  <div class="dwrap rv">',
+        '    <h2 class="dh2">{} <em>que te pueden interesar</em></h2>'.format(e(sub.strip())),
+        '    <div class="drel">',
+        NL.join(render_card_compacta(q, v) for q, v in elegidos),
+        '    </div>',
+        '  </div>',
+        '</section>',
+    ])
+
+
+def render_detalle(p, vig, plantilla, todos=()):
     pd = p["precio_desde"]
     dests = lista(p, "destinos")
     titulo_txt = txt(p, "titulo")
     resumen = txt(p, "resumen")
+    relacionados = render_relacionados(p, todos)
 
     # --- barra de datos rapidos (solo lo que existe) ---
     facts = [("Salida", IC_CAL, e(p["salida"]), ""),
@@ -506,22 +666,89 @@ def render_detalle(p, vig, plantilla):
     hero_linea = '<span class="sep">|</span>'.join(
         "<span>{}</span>".format(x) for x in partes)
 
+    # --- C3: link a la madre de la region ---
+    carpeta = REGION_MADRE.get(p["region"])
+    hero_madre = ""
+    if carpeta and (ROOT / carpeta / "index.html").exists():
+        hero_madre = (
+            '\n      <p style="margin-top:14px">'
+            '<a href="{c}/" style="display:inline-flex;align-items:center;gap:7px;'
+            'font-size:13.5px;font-weight:600;color:rgba(255,255,255,.8);'
+            'border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:2px">'
+            'Ver m&aacute;s viajes a {n} {ic}</a></p>'
+        ).format(c=e(carpeta), n=e(REGIONES.get(p["region"], p["region"])), ic=IC_FLECHA)
+
+    # --- E: urgencia, solo con datos reales (vigencia y fecha de salida) ---
+    urg = ['<span>{}Tarifa v&aacute;lida hasta {}</span>'.format(IC_RELOJ, fmt_fecha_ar(vig))]
+    if "salida única" in str(p["salida"]).lower() or "salida unica" in str(p["salida"]).lower():
+        urg.append('<span>{}Salida &uacute;nica &mdash; {}</span>'.format(
+            IC_CAL, e(salida_corta(p["salida"]))))
+    urgencia = '    <div class="durg">' + "".join(urg) + '</div>'
+
+    # --- B: schema. BreadcrumbList + TouristTrip, SIN precios (rotan) ---
     canonical = "{}/paquetes/{}".format(DOMINIO, p["id"])
+    trip = {
+        "@type": "TouristTrip",
+        "@id": canonical + "#trip",
+        "name": titulo_txt,
+        "description": resumen,
+        "url": canonical,
+        "provider": {"@id": ORG_ID},
+    }
+    if dests:
+        trip["touristType"] = (REGIONES["quinceaneras"] if p["region"] == "quinceaneras"
+                               else "Viajeros desde Argentina")
+        trip["itinerary"] = {
+            "@type": "ItemList",
+            "numberOfItems": len(dests),
+            "itemListElement": [
+                {"@type": "ListItem", "position": i + 1,
+                 "item": {"@type": "Place", "name": d}}
+                for i, d in enumerate(dests)],
+        }
+    dias = [i for i in lista(p, "itinerario") if isinstance(i, dict)]
+    if dias:
+        trip["subjectOf"] = {
+            "@type": "ItemList", "name": "Itinerario dia a dia",
+            "numberOfItems": len(dias),
+            "itemListElement": [
+                {"@type": "ListItem", "position": i + 1,
+                 "name": " - ".join(x for x in [str(d.get("dia") or "").strip(),
+                                                str(d.get("titulo") or "").strip()] if x)}
+                for i, d in enumerate(dias)],
+        }
     schema = json.dumps({
-        "@context": "https://schema.org", "@type": "BreadcrumbList",
-        "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Inicio", "item": DOMINIO + "/"},
-            {"@type": "ListItem", "position": 2, "name": "Paquetes", "item": DOMINIO + "/paquetes"},
-            {"@type": "ListItem", "position": 3, "name": titulo_txt, "item": canonical},
+        "@context": "https://schema.org",
+        "@graph": [
+            {"@type": "BreadcrumbList", "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Inicio", "item": DOMINIO + "/"},
+                {"@type": "ListItem", "position": 2, "name": "Paquetes", "item": DOMINIO + "/paquetes"},
+                {"@type": "ListItem", "position": 3, "name": titulo_txt, "item": canonical},
+            ]},
+            trip,
         ]}, ensure_ascii=False, separators=(',', ':'))
 
-    desc = resumen if len(resumen) <= 160 else resumen[:157].rsplit(" ", 1)[0] + "…"
-    ogimg = p["imagen"] if es_url(p["imagen"]) else DOMINIO + "/" + p["imagen"].lstrip("/")
+    # --- A: metas. og:image absoluta; con placeholder cae a la del sitio ---
+    desc = meta_desc(p)
+    if es_url(p["imagen"]):
+        ogimg = p["imagen"]
+    elif p["imagen"] == PLACEHOLDER:
+        ogimg = DOMINIO + "/og-image.jpg"
+    else:
+        ogimg = DOMINIO + "/" + p["imagen"].lstrip("/")
     pnota = str(pd.get("nota") or "").strip()
+    og_titulo = "{} &mdash; desde {} {}".format(
+        titulo_txt, pd.get("moneda", ""), fmt_precio(pd.get("valor")))
 
     vals = {
+        "{{TITULO_TAG}}": e(titulo_tag(titulo_txt)),
+        "{{OG_TITULO}}": e(html.unescape(og_titulo)),
+        "{{OG_DESC}}": e(resumen),
         "{{TITULO_TXT}}": e(titulo_txt),
         "{{TITULO}}": e(titulo_txt),
+        "{{HERO_MADRE}}": hero_madre,
+        "{{URGENCIA}}": urgencia,
+        "{{RELACIONADOS}}": relacionados,
         "{{DESC}}": e(desc),
         "{{ALT}}": e(dests[0] if dests else titulo_txt),
         "{{KICKER}}": e(REGIONES.get(p["region"], p["region"])),
@@ -643,6 +870,72 @@ def cargar(hoy):
 
 
 # ============================================================
+# D — GEO: llms.txt con la oferta viva
+# ============================================================
+def actualizar_llms(publicados, hoy):
+    """
+    Reescribe SOLO el bloque entre marcadores de llms.txt con las salidas
+    vigentes. Lo que lee una IA es siempre la oferta de hoy, nunca una
+    tarifa muerta. El resto del archivo no se toca.
+    """
+    if not LLMS.exists():
+        print("\n!  no existe llms.txt — salteado")
+        return
+
+    original = LLMS.read_text(encoding="utf-8")
+    t = original
+
+    NL = chr(10)
+    filas = []
+    for p, vig in publicados:
+        pd = p["precio_desde"]
+        filas.append("- {titulo} — desde {mon} {val} — Salida: {sal} — Tarifa válida hasta {vig} — {url}".format(
+            titulo=txt(p, "titulo"), mon=pd.get("moneda", ""),
+            val=fmt_precio(pd.get("valor")), sal=salida_corta(p["salida"]),
+            vig=fmt_fecha_ar(vig), url="{}/paquetes/{}".format(DOMINIO, p["id"])))
+
+    bloque = NL.join([
+        LLMS_START,
+        "## Salidas y paquetes actuales",
+        "Generado el {} desde data/paquetes.json. Solo salidas vigentes:".format(hoy.isoformat()),
+        "lo inactivo o con tarifa vencida se retira de esta lista automáticamente.",
+        "Precios por persona en base doble, sujetos a confirmación al reservar.",
+        "",
+    ] + filas + [
+        "",
+        "Listado completo: {}/paquetes".format(DOMINIO),
+        LLMS_END,
+    ]) if filas else NL.join([
+        LLMS_START,
+        "## Salidas y paquetes actuales",
+        "En este momento no hay salidas publicadas. Consultar por WhatsApp.",
+        LLMS_END,
+    ])
+
+    if LLMS_START in t and LLMS_END in t:
+        t = reemplazar_bloque(t, LLMS_START, LLMS_END, bloque)
+    elif "## Contacto" in t:
+        t = t.replace("## Contacto", bloque + NL + NL + "## Contacto", 1)
+    else:
+        t = t.rstrip() + NL + NL + bloque + NL
+
+    # Correccion de una linea que describia el buscador de GEA, ya dado de baja.
+    viejo = "- Buscador de paquetes con precios en tiempo real"
+    if viejo in t:
+        t = t.replace(
+            viejo,
+            "- Salidas y paquetes con precio, fecha y vigencia publicados en /paquetes",
+            1)
+        print("\n!  llms.txt: corregida la linea del buscador de GEA (ya no existe)")
+
+    if t != original:
+        LLMS.write_text(t, encoding="utf-8")
+        print("OK  llms.txt actualizado ({} salidas)".format(len(filas)))
+    else:
+        print("=   llms.txt sin cambios")
+
+
+# ============================================================
 # Main
 # ============================================================
 def main():
@@ -697,7 +990,7 @@ def main():
         d.mkdir(parents=True, exist_ok=True)
         f = d / "index.html"
         existia = f.exists()
-        out = render_detalle(p, v, plantilla)
+        out = render_detalle(p, v, plantilla, publicados)
         if not existia or f.read_text(encoding="utf-8") != out:
             f.write_text(out, encoding="utf-8")
             if existia:
@@ -715,41 +1008,50 @@ def main():
     if borradas:
         print("   borradas (ya no activas): {}".format(", ".join(borradas)))
 
-    # ---------- 3. apartados por region ----------
-    por_region = {}
+    # ---------- 3. modulo "Salidas destacadas" en las madres ----------
+    # Se agrupa por CARPETA, no por region: disney/ recibe las de quinceaneras.
+    por_carpeta = {}
     for p, v in publicados:
-        por_region.setdefault(p["region"], []).append((p, v))
-    madres = sorted(set(list(REGIONES.keys()) + list(por_region.keys())))
+        carpeta = REGION_MADRE.get(p["region"])
+        if carpeta:
+            por_carpeta.setdefault(carpeta, []).append((p, v))
 
-    print("\n→  Apartados por region:")
+    candidatas = sorted(set(list(REGION_MADRE.values()) + list(por_carpeta.keys())))
+
+    print("\n→  Salidas destacadas en las madres:")
     tocadas, vaciadas, sin_seccion, sin_pagina = [], [], [], []
-    for region in madres:
-        f = ROOT / region / "index.html"
+    for carpeta in candidatas:
+        f = ROOT / carpeta / "index.html"
         if not f.exists():
-            if region in por_region and region not in SIN_MADRE:
-                sin_pagina.append(region)
+            if carpeta in por_carpeta:
+                sin_pagina.append(carpeta)
             continue
         texto = f.read_text(encoding="utf-8")
         texto, insertados = asegurar_marcadores(texto)
         if insertados is None:
-            if region in por_region:
-                sin_seccion.append(region)
+            if carpeta in por_carpeta:
+                sin_seccion.append(carpeta)
             continue
-        items = por_region.get(region, [])
-        bloque_r = (render_region_block(region, items, hoy) if items
+        items = por_carpeta.get(carpeta, [])
+        bloque_r = (render_region_block(carpeta, items, hoy) if items
                     else R_START + "\n" + R_END)
         nuevo = reemplazar_bloque(texto, R_START, R_END, bloque_r)
         if nuevo != f.read_text(encoding="utf-8"):
             f.write_text(nuevo, encoding="utf-8")
             if items:
-                tocadas.append(region)
-                print("   {:<18} {} salida(s)".format(region + "/", len(items)))
+                tocadas.append(carpeta)
             else:
-                vaciadas.append(region)
+                vaciadas.append(carpeta)
+        if items:
+            print("   {:<18} {} de {} salida(s)".format(
+                carpeta + "/", min(len(items), MAX_REGION_CARDS), len(items)))
     for r in vaciadas:
-        print("   {:<18} sin salidas — apartado vacio".format(r + "/"))
+        print("   {:<18} sin salidas — modulo vaciado".format(r + "/"))
     if not tocadas and not vaciadas:
         print("   (sin cambios)")
+
+    # ---------- 4. llms.txt (GEO) ----------
+    actualizar_llms(publicados, hoy)
 
     # ---------- resumen ----------
     print("\n" + "=" * 66)

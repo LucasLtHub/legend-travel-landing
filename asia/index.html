@@ -481,7 +481,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
   </div>
 
 <!-- PAQUETES-REGION:START -->
-<!-- Generado por build-paquetes.py el 2026-09-16. NO editar a mano: se pisa. -->
+<!-- Generado por build-paquetes.py el 2026-09-18. NO editar a mano: se pisa. -->
 <style>
 .pk-grid{display:grid;grid-template-columns:1fr;gap:28px}
 @media(min-width:680px){.pk-grid{grid-template-columns:1fr 1fr}}
@@ -532,81 +532,44 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 .pk-rall:hover{color:var(--bur);border-color:var(--bur)}
 .pk-rall svg{width:15px;height:15px}
 .pk-rsep{border:0;border-top:1px solid rgba(14,35,45,.09);margin:72px 0 0}
+/* card COMPACTA: la que va en las madres. Sin foto, no compite con el
+   contenido propio de la pagina; solo lo que decide un click. */
+.pkc-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:760px){.pkc-grid{grid-template-columns:repeat(3,1fr)}}
+.pkc{display:flex;flex-direction:column;gap:9px;background:#fff;border:1px solid rgba(14,35,45,.1);border-radius:14px;padding:24px;transition:transform .3s,box-shadow .3s,border-color .3s}
+.pkc:hover{transform:translateY(-3px);border-color:rgba(14,35,45,.16);box-shadow:0 14px 32px -16px rgba(14,35,45,.28)}
+.pkc .k{display:flex;align-items:center;gap:7px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--red)}
+.pkc .k svg{width:12px;height:12px;flex:none}
+.pkc .t{font-size:16px;font-weight:700;line-height:1.35;color:var(--black)}
+.pkc .s{font-size:12.5px;color:rgba(14,35,45,.55);line-height:1.5}
+.pkc .p{margin-top:auto;padding-top:12px;border-top:1px solid rgba(14,35,45,.07);display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.pkc .p b{font-size:18px;font-weight:700;letter-spacing:-.025em;color:var(--black)}
+.pkc .p b small{font-size:12px;font-weight:600;color:rgba(14,35,45,.5);margin-right:3px}
+.pkc .p span{font-size:12.5px;font-weight:700;color:var(--red);white-space:nowrap}
+.pkc:hover .p span{color:var(--bur)}
 </style>
   <hr class="pk-rsep">
-  <div class="mx" style="margin-top:72px">
+  <div class="mx" style="margin-top:64px">
     <div class="pk-rhead rv">
       <div>
-        <p class="kicker">Salidas confirmadas</p>
-        <h3>2 salidas a Asia con <em>fecha y precio cerrado</em>.</h3>
+        <p class="kicker">Salidas destacadas</p>
+        <h3>Salidas a Asia con <em>fecha y precio cerrado</em>.</h3>
       </div>
-      <a class="pk-rall" href="paquetes/#asia">Ver todas las salidas<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      <a class="pk-rall" href="paquetes/#asia">Ver todos los paquetes<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
     </div>
-    <div class="pk-grid rv" style="max-width:820px">
-      <article class="pk-card" data-r="asia">
-        <a class="pk-stretch" href="paquetes/vietnam-camboya-tailandia/" aria-label="Ver detalle: Vietnam, Camboya &amp; Tailandia"></a>
-        <div class="pk-media">
-          <img src="img/paquetes/placeholder.svg" alt="Hanoi" loading="lazy">
-        <span class="pk-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>Destacado</span>
-        </div>
-        <div class="pk-body">
-          <p class="pk-dest">Hanoi &middot; Bahía de Halong &middot; Hoi An &middot; +7</p>
-          <h3 class="pk-t">Vietnam, Camboya &amp; Tailandia</h3>
-          <p class="pk-resumen">El gran viaje del Sudeste Asiático acompañado desde Argentina: la bahía de Halong, los templos de Angkor, el Triángulo de Oro y las playas de Tailandia, con 35 comidas incluidas.</p>
-          <div class="pk-meta">
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>7 de noviembre 2026</span>
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6M3 18h18M3 18v2M21 18v2M6 10V7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3"/></svg>22 noches</span>
-          </div>
-          <ul class="pk-inc">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Aéreo Buenos Aires–Guarulhos con LATAM y Guarulhos–Hanoi / Phuket–Buenos Aires con Turkish (vía Estambul)</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Acompañamiento desde Argentina durante todo el recorrido</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Todos los traslados</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>22 noches con desayuno</li>
-          </ul>
-          <p class="pk-mas">+10 &#237;tems m&#225;s en el detalle</p>
-          <div class="pk-foot">
-            <div class="pk-price"><span class="lbl">Desde</span><span class="cur">USD</span><span class="amt">14.330</span></div>
-            <p class="pk-pnota">por persona, base doble — total con impuestos</p>
-            <div class="pk-acts">
-              <a class="pk-cta" href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%3A%20Vietnam%2C%20Camboya%20%26%20Tailandia" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg>Consultar</a>
-              <span class="pk-ver">Ver detalle<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
-            </div>
-            <p class="pk-vig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>Tarifa v&aacute;lida hasta <b>07/11/2026</b></p>
-          </div>
-        </div>
-      </article>
-      <article class="pk-card" data-r="asia">
-        <a class="pk-stretch" href="paquetes/tesoros-corea-japon/" aria-label="Ver detalle: Tesoros de Corea y Japón — Salida grupal acompañada"></a>
-        <div class="pk-media">
-          <img src="img/paquetes/placeholder.svg" alt="Seúl" loading="lazy">
-        <span class="pk-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>Destacado</span>
-        </div>
-        <div class="pk-body">
-          <p class="pk-dest">Seúl &middot; DMZ &middot; Suwon &middot; +10</p>
-          <h3 class="pk-t">Tesoros de Corea y Japón — Salida grupal acompañada</h3>
-          <p class="pk-resumen">Dos culturas fascinantes en un solo viaje: la DMZ coreana, templos patrimonio, la noche en un monasterio budista del Monte Koya, tren bala y Tokio.</p>
-          <div class="pk-meta">
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>5 de marzo 2027 — Ethiopian ET507/672 ida, ET673/506 vuelta</span>
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6M3 18h18M3 18v2M21 18v2M6 10V7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3"/></svg>15 noches</span>
-          </div>
-          <ul class="pk-inc">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Aéreos Buenos Aires–Seúl / Tokio–Buenos Aires vía Addis Abeba</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>Traslados de llegada y salida</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>15 noches con desayuno</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="m4 12 5.5 5.5L20 7"/></svg>11 almuerzos y/o cenas según itinerario</li>
-          </ul>
-          <p class="pk-mas">+9 &#237;tems m&#225;s en el detalle</p>
-          <div class="pk-foot">
-            <div class="pk-price"><span class="lbl">Desde</span><span class="cur">USD</span><span class="amt">8.070</span></div>
-            <p class="pk-pnota">por persona, base doble — tarifa final con impuestos</p>
-            <div class="pk-acts">
-              <a class="pk-cta" href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20paquete%3A%20Tesoros%20de%20Corea%20y%20Jap%C3%B3n%20%E2%80%94%20Salida%20grupal%20acompa%C3%B1ada" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg>Consultar</a>
-              <span class="pk-ver">Ver detalle<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
-            </div>
-            <p class="pk-vig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>Tarifa v&aacute;lida hasta <b>05/03/2027</b></p>
-          </div>
-        </div>
-      </article>
+    <div class="pkc-grid rv">
+      <a class="pkc" href="paquetes/vietnam-camboya-tailandia/">
+        <span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5.5-5.5 2 2-5.5z"/></svg>Hanoi</span>
+        <span class="t">Vietnam, Camboya &amp; Tailandia</span>
+        <span class="s">7 de noviembre 2026 &middot; 22 noches</span>
+        <span class="p"><b><small>Desde</small> USD 14.330</b><span>Ver detalle &rarr;</span></span>
+      </a>
+      <a class="pkc" href="paquetes/tesoros-corea-japon/">
+        <span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5.5-5.5 2 2-5.5z"/></svg>Seúl</span>
+        <span class="t">Tesoros de Corea y Japón — Salida grupal acompañada</span>
+        <span class="s">5 de marzo 2027 &middot; 15 noches</span>
+        <span class="p"><b><small>Desde</small> USD 8.070</b><span>Ver detalle &rarr;</span></span>
+      </a>
     </div>
   </div>
 <!-- PAQUETES-REGION:END -->
