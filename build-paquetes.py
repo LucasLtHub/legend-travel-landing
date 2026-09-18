@@ -85,6 +85,33 @@ REGION_MADRE = {
     "viajes-deportivos": "viajes-deportivos",
 }
 
+# Titulo de cada bloque de la grilla. Descriptivos a proposito: no afirman
+# nada que pueda quedar falso cuando cambien los paquetes de adentro.
+REGIONES_TITULO = {
+    "caribe": "Escapadas al Caribe",
+    "cruceros": "Salidas en crucero",
+    "europa": "Descubr&iacute; el continente europeo",
+    "argentina": "Descubr&iacute; Argentina",
+    "asia": "Grandes viajes por Asia",
+    "africa": "Descubr&iacute; &Aacute;frica",
+    "quinceaneras": "Viajes de Quincea&ntilde;eras",
+    "brasil": "Descubr&iacute; Brasil",
+    "usa": "Descubr&iacute; Estados Unidos",
+    "medio-oriente": "Descubr&iacute; Medio Oriente",
+    "latinoamerica": "Descubr&iacute; Latinoam&eacute;rica",
+    "oceania": "Descubr&iacute; Ocean&iacute;a",
+    "disney": "Disney y Orlando",
+    "lunas-de-miel": "Lunas de miel",
+    "viajes-deportivos": "Viajes deportivos",
+}
+
+# Orden de los bloques en /paquetes/. Editar aca para reordenar la pagina.
+# Lo que no figure en la lista va al final, alfabetico.
+ORDEN_REGIONES = ["caribe", "cruceros", "europa", "argentina", "asia", "africa",
+                  "quinceaneras", "brasil", "usa", "medio-oriente",
+                  "latinoamerica", "oceania", "disney", "lunas-de-miel",
+                  "viajes-deportivos"]
+
 MAX_REGION_CARDS = 3      # en la madre, hasta 3 salidas; el resto en /paquetes/
 MAX_RELACIONADOS = 3      # al pie del detalle
 ORG_ID = DOMINIO + "/#organization"   # la TravelAgency que ya declara el sitio
@@ -166,6 +193,14 @@ CARD_CSS = """<style>
 .pk-rall:hover{color:var(--bur);border-color:var(--bur)}
 .pk-rall svg{width:15px;height:15px}
 .pk-rsep{border:0;border-top:1px solid rgba(14,35,45,.09);margin:72px 0 0}
+/* bloques por region en /paquetes/. Sin .rv a proposito: la grilla no puede
+   depender de un observador para ser visible (ya nos paso una vez). */
+.pk-group{margin-top:72px}
+.pk-group:first-of-type{margin-top:0}
+.pk-ghead{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-bottom:16px;margin-bottom:30px;border-bottom:1px solid rgba(14,35,45,.11)}
+.pk-ghead h3{font-size:23px;font-weight:700;letter-spacing:-.022em;line-height:1.2;color:var(--black)}
+@media(min-width:768px){.pk-ghead h3{font-size:28px}}
+.pk-ghead .n{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:rgba(14,35,45,.4);white-space:nowrap}
 /* card COMPACTA: la que va en las madres. Sin foto, no compite con el
    contenido propio de la pagina; solo lo que decide un click. */
 .pkc-grid{display:grid;grid-template-columns:1fr;gap:16px}
@@ -420,22 +455,53 @@ def render_card(p, vig_date):
 
 
 def render_chips(publicados):
-    orden, cuenta = [], {}
-    for p, _ in publicados:
-        r = p["region"]
-        if r not in cuenta:
-            orden.append(r)
-            cuenta[r] = 0
-        cuenta[r] += 1
+    # Mismo orden que los bloques de la grilla: el chip N-esimo corresponde al
+    # bloque N-esimo. Si no coinciden, la pagina se lee desprolija.
     chips = ['      <button class="pk-chip on" data-r="all" aria-pressed="true">'
              'Todos <span class="n">{}</span></button>'.format(len(publicados))]
-    for r in orden:
+    for r, items in agrupar(publicados):
         chips.append('      <button class="pk-chip" data-r="{r}" aria-pressed="false">'
                      '{lbl} <span class="n">{n}</span></button>'.format(
                          r=e(r), lbl=e(REGIONES.get(r, r.replace("-", " ").title())),
-                         n=cuenta[r]))
+                         n=len(items)))
     return ('    <div class="pk-filters rv" role="group" aria-label="Filtrar por regi&oacute;n">\n'
             + "\n".join(chips) + "\n    </div>")
+
+
+def agrupar(publicados):
+    """
+    Agrupa las salidas por region y devuelve [(region, [(p, vig), ...]), ...]
+    en el orden de ORDEN_REGIONES. Dentro de cada grupo se conserva el orden
+    que ya traia: destacados primero y despues por fecha de salida.
+    """
+    grupos = {}
+    for p, v in publicados:
+        grupos.setdefault(p["region"], []).append((p, v))
+    def clave(r):
+        return (ORDEN_REGIONES.index(r) if r in ORDEN_REGIONES else len(ORDEN_REGIONES), r)
+    return [(r, grupos[r]) for r in sorted(grupos, key=clave)]
+
+
+def render_grupos(publicados):
+    """La grilla dividida en bloques con titulo, uno por region."""
+    NL = chr(10)
+    bloques = []
+    for region, items in agrupar(publicados):
+        titulo = REGIONES_TITULO.get(
+            region, "Descubr&iacute; " + e(REGIONES.get(region, region)))
+        n = len(items)
+        bloques.append(NL.join([
+            '    <section class="pk-group" data-r="{}">'.format(e(region)),
+            '      <div class="pk-ghead">',
+            '        <h3>{}</h3>'.format(titulo),
+            '        <span class="n">{} {}</span>'.format(n, "salida" if n == 1 else "salidas"),
+            '      </div>',
+            '      <div class="pk-grid">',
+            NL.join(render_card(p, v) for p, v in items),
+            '      </div>',
+            '    </section>',
+        ]))
+    return NL.join(bloques)
 
 
 def render_vacio():
@@ -970,9 +1036,7 @@ def main():
             "<!-- Generado por build-paquetes.py el {}. NO editar a mano: se pisa. -->".format(hoy.isoformat()),
             CARD_CSS,
             render_chips(publicados),
-            '    <div class="pk-grid rv">',
-            "\n".join(render_card(p, v) for p, v in publicados),
-            "    </div>",
+            render_grupos(publicados),
             '    <p class="pk-nores">No hay salidas en esa regi&oacute;n por ahora.</p>',
             END,
         ])

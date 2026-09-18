@@ -388,6 +388,14 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 .pk-rall:hover{color:var(--bur);border-color:var(--bur)}
 .pk-rall svg{width:15px;height:15px}
 .pk-rsep{border:0;border-top:1px solid rgba(14,35,45,.09);margin:72px 0 0}
+/* bloques por region en /paquetes/. Sin .rv a proposito: la grilla no puede
+   depender de un observador para ser visible (ya nos paso una vez). */
+.pk-group{margin-top:72px}
+.pk-group:first-of-type{margin-top:0}
+.pk-ghead{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-bottom:16px;margin-bottom:30px;border-bottom:1px solid rgba(14,35,45,.11)}
+.pk-ghead h3{font-size:23px;font-weight:700;letter-spacing:-.022em;line-height:1.2;color:var(--black)}
+@media(min-width:768px){.pk-ghead h3{font-size:28px}}
+.pk-ghead .n{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:rgba(14,35,45,.4);white-space:nowrap}
 /* card COMPACTA: la que va en las madres. Sin foto, no compite con el
    contenido propio de la pagina; solo lo que decide un click. */
 .pkc-grid{display:grid;grid-template-columns:1fr;gap:16px}
