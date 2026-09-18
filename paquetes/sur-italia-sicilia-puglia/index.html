@@ -14,12 +14,12 @@
 <meta property="og:description" content="El gran tour del sur italiano: trulli de Alberobello, sassi de Matera, Capri, el Valle de los Templos y Pompeya, con acompañante desde Buenos Aires.">
 <meta property="og:url" content="https://www.legendtravel.com.ar/paquetes/sur-italia-sicilia-puglia">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://www.legendtravel.com.ar/og-image.jpg">
+<meta property="og:image" content="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600">
 <meta property="og:image:alt" content="Roma">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Sur de Italia y Sicilia con Puglia — Salida grupal acompañada — desde USD 5.428">
 <meta name="twitter:description" content="El gran tour del sur italiano: trulli de Alberobello, sassi de Matera, Capri, el Valle de los Templos y Pompeya, con acompañante desde Buenos Aires.">
-<meta name="twitter:image" content="https://www.legendtravel.com.ar/og-image.jpg">
+<meta name="twitter:image" content="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600">
 <link rel="icon" type="image/x-icon" href="favicon.ico?v=8">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=8">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=8">
@@ -62,15 +62,18 @@ button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit
 .btn-red:hover{background:var(--bur)}.navlinks .btn-red:hover{color:var(--white)}
 
 /* ---------- HERO COMPACTO ---------- */
-.dhero{position:relative;color:var(--white);overflow:hidden;padding-top:150px;padding-bottom:56px}
-@media(min-width:768px){.dhero{padding-top:170px;padding-bottom:72px}}
+.dhero{position:relative;color:var(--white);overflow:hidden;padding-top:150px;padding-bottom:52px;min-height:56vh;display:flex;align-items:flex-end}
+.dhero > .mx{width:100%}
+@media(min-width:768px){.dhero{padding-top:170px;padding-bottom:76px;min-height:64vh}}
 .dhero-media{position:absolute;inset:0;overflow:hidden;background:var(--bur)}
-.dhero-media img{width:100%;height:100%;object-fit:cover;display:block;opacity:.55}
-.dhero-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,35,45,.82) 0%,rgba(14,35,45,.62) 45%,rgba(14,35,45,.9) 100%)}
+.dhero-media img{width:100%;height:100%;object-fit:cover;display:block;will-change:transform;animation:dkenburns 30s ease-in-out infinite}
+@keyframes dkenburns{0%{transform:scale(1.05)}50%{transform:scale(1.13)}100%{transform:scale(1.05)}}
+.dhero-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,35,45,.78) 0%,rgba(14,35,45,.38) 38%,rgba(14,35,45,.72) 72%,rgba(14,35,45,.93) 100%)}
+.dhero-media::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(14,35,45,.55) 0%,rgba(14,35,45,.12) 45%,rgba(14,35,45,0) 70%)}
 .dhero-in{position:relative;z-index:10;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:36px}
 .dhero-txt{flex:1;min-width:280px}
 .dhero .kicker{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.22em;color:var(--red3);margin-bottom:14px}
-.dhero h1{font-size:32px;font-weight:700;line-height:1.08;letter-spacing:-.03em;color:#fff;text-shadow:0 2px 24px rgba(14,35,45,.6);max-width:760px}
+.dhero h1{font-size:32px;font-weight:700;line-height:1.08;letter-spacing:-.03em;color:#fff;text-shadow:0 2px 28px rgba(14,35,45,.75);max-width:760px}
 @media(min-width:768px){.dhero h1{font-size:46px}}
 @media(min-width:1024px){.dhero h1{font-size:54px}}
 .dhero-linea{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:18px;font-size:14px;color:rgba(255,255,255,.78)}
@@ -239,7 +242,7 @@ footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,25
 </div>
 
 <section class="dhero px">
-  <div class="dhero-media"><img src="img/paquetes/placeholder.svg" alt="Roma" loading="eager"></div>
+  <div class="dhero-media"><img src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=2200" alt="Roma" loading="eager"></div>
   <div class="mx dhero-in">
     <div class="dhero-txt">
       <p class="kicker">Europa</p>

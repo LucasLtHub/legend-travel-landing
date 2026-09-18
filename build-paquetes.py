@@ -740,7 +740,14 @@ def render_detalle(p, vig, plantilla, todos=()):
     og_titulo = "{} &mdash; desde {} {}".format(
         titulo_txt, pd.get("moneda", ""), fmt_precio(pd.get("valor")))
 
+    # El hero se ve a pantalla completa: si la foto es de Pexels se pide una
+    # variante mas grande. La card sigue con la chica (no hace falta mas).
+    img_hero = p["imagen"]
+    if "images.pexels.com" in img_hero:
+        img_hero = re.sub(r'([?&]w=)\d+', r'\g<1>2200', img_hero)
+
     vals = {
+        "{{IMAGEN_HERO}}": e(img_hero),
         "{{TITULO_TAG}}": e(titulo_tag(titulo_txt)),
         "{{OG_TITULO}}": e(html.unescape(og_titulo)),
         "{{OG_DESC}}": e(resumen),

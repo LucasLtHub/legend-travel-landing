@@ -46,7 +46,7 @@
         "Circuito Tulipanes: El Bolsón, Travelin, Campo de Tulipanes, Cascadas Nant y Fall, El Hoyo, Lago Puelo",
         "Asistencia médica"
       ],
-      "imagen": "img/paquetes/tulipanes-bariloche.jpg"
+      "imagen": "https://images.pexels.com/photos/7785553/pexels-photo-7785553.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": true,
@@ -93,7 +93,7 @@
         "Travesía Cruce Andino",
         "Asistencia médica"
       ],
-      "imagen": "img/paquetes/cruce-andino.jpg"
+      "imagen": "https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": true,
@@ -138,7 +138,7 @@
         "Excursión Camino del Vino - El Sol",
         "Asistencia médica"
       ],
-      "imagen": "img/paquetes/mendoza-vinedos.jpg"
+      "imagen": "https://images.pexels.com/photos/19046646/pexels-photo-19046646.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": true,
@@ -184,7 +184,7 @@
         "Excursión Puerto Pirámides con embarcación para avistaje de ballenas",
         "Asistencia médica"
       ],
-      "imagen": "img/paquetes/puerto-madryn.jpg"
+      "imagen": "https://images.pexels.com/photos/4057646/pexels-photo-4057646.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": true,
@@ -304,7 +304,7 @@
         "Tasas e impuestos",
         "Gastos administrativos"
       ],
-      "imagen": "img/paquetes/costa-serena-anio-nuevo.jpg"
+      "imagen": "https://images.pexels.com/photos/14121113/pexels-photo-14121113.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": true,
@@ -412,7 +412,7 @@
         "Tasas e impuestos",
         "Gastos administrativos"
       ],
-      "imagen": "img/paquetes/costa-diadema-navidad.jpg"
+      "imagen": "https://images.pexels.com/photos/813011/pexels-photo-813011.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": true,
@@ -519,7 +519,7 @@
         "Tasas e impuestos",
         "Gastos administrativos"
       ],
-      "imagen": "img/paquetes/costa-diadema-2027.jpg"
+      "imagen": "https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": false,
@@ -705,7 +705,7 @@
         "Experiencia Sami con cena alrededor del fuego",
         "Asistencia Universal Assistance (hasta 70 años) con seguro de cancelación"
       ],
-      "imagen": "img/paquetes/auroras-boreales.jpg"
+      "imagen": "https://images.pexels.com/photos/1585325/pexels-photo-1585325.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": false,
@@ -985,7 +985,7 @@
         "Universal Assistance con seguro de cancelación (hasta 70 años)",
         "Acompañante de Organización Piamonte desde Buenos Aires (mín. 20 pax)"
       ],
-      "imagen": "img/paquetes/sur-italia-sicilia.jpg"
+      "imagen": "https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": true,
@@ -1041,7 +1041,7 @@
         "Traslados de llegada y salida",
         "Universal Assistance Master Plus (hasta 70 años)"
       ],
-      "imagen": "img/paquetes/punta-cana.jpg"
+      "imagen": "https://images.pexels.com/photos/1938348/pexels-photo-1938348.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": true,
@@ -1100,7 +1100,7 @@
         "Traslados de llegada, salida e internos",
         "Universal Assistance (hasta 70 años)"
       ],
-      "imagen": "img/paquetes/riviera-maya.jpg"
+      "imagen": "https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": true,
@@ -1154,7 +1154,7 @@
         "Todos los traslados",
         "Universal Assistance Master Plus (hasta 70 años)"
       ],
-      "imagen": "img/paquetes/punta-cana-bayahibe.jpg"
+      "imagen": "https://images.pexels.com/photos/1430676/pexels-photo-1430676.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": true,
@@ -1210,7 +1210,7 @@
         "Traslados de llegada y salida",
         "Universal Assistance Master Plus (hasta 70 años)"
       ],
-      "imagen": "img/paquetes/cancun.jpg"
+      "imagen": "https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": false,
@@ -1510,7 +1510,7 @@
         "Noche previa en hotel de Buenos Aires con traslado",
         "Habitación a compartir garantizada para pasajeras que viajen solas"
       ],
-      "imagen": "img/paquetes/vietnam-camboya-tailandia.jpg"
+      "imagen": "https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": true,
@@ -1638,7 +1638,7 @@
         "Tren bala Kioto–Tokio",
         "Universal Assistance con seguro de cancelación (hasta 70 años)"
       ],
-      "imagen": "img/paquetes/corea-japon.jpg"
+      "imagen": "https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": false,
@@ -1821,7 +1821,7 @@
         "Reunión informativa previa",
         "Tour leader desde Argentina (mín. 10 pax)"
       ],
-      "imagen": "img/paquetes/egipto-jordania.jpg"
+      "imagen": "https://images.pexels.com/photos/1631665/pexels-photo-1631665.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": true,
@@ -1935,7 +1935,7 @@
         "Reunión informativa previa",
         "Tour leader desde Argentina"
       ],
-      "imagen": "img/paquetes/sudafrica-mauritius.jpg"
+      "imagen": "https://images.pexels.com/photos/26926276/pexels-photo-26926276.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": true,
@@ -1998,7 +1998,7 @@
         "Seguimiento diario online con fotos y videos",
         "Asesoramiento en trámites migratorios (VISA/ESTA)"
       ],
-      "imagen": "img/paquetes/enjoy-disney-usa.jpg"
+      "imagen": "https://images.pexels.com/photos/12422683/pexels-photo-12422683.jpeg?auto=compress&cs=tinysrgb&w=1600"
     },
     {
       "activo": true,
@@ -2056,7 +2056,7 @@
         "Assist-Card internacional hasta USD 1.000.000",
         "Coordinadores exclusivos permanentes + equipo de gerentes y guías locales"
       ],
-      "imagen": "img/paquetes/disney-europa-xv.jpg"
+      "imagen": "https://images.pexels.com/photos/1461974/pexels-photo-1461974.jpeg?auto=compress&cs=tinysrgb&w=1600"
     }
   ]
 }
