@@ -90,6 +90,30 @@ EXCLUIDAS_NOTA = [
 ]
 
 # ============================================================
+# LINKS A PÁGINAS QUE NO ENTRAN EN LA TANDA
+# ============================================================
+# La transformación a WhatsApp sólo alcanza a las CARDS (ver CARD_CLASSES).
+# Cualquier otro <a> interno que apunte a una página no publicada quedaba
+# como 404 en producción: los chips de viajes-a-medida, el botón del blog,
+# el "Ver más viajes a ..." de las páginas de paquete.
+#
+# Regla general: se redirige solo al ancestro publicado más cercano.
+#     asia/japon/                    → asia/
+#     medio-oriente/jordania/        → medio-oriente/
+# El texto del link no se toca: sigue nombrando un destino que esa madre cubre.
+#
+# Cuando NO hay ancestro publicado hay que decidir a mano. Se declara acá:
+#     "QUITAR"   → se elimina el <a>...</a> completo
+#     "ruta/"    → se reemplaza el destino por esa ruta
+# Si un caso no figura, el build avisa y NO lo toca (mejor visible que oculto).
+SIN_ANCESTRO = {
+    # Las guías ya se leen en el home; el blog completo no viaja en esta tanda.
+    "blog/": "QUITAR",
+    # disney/ no está en la tanda. Los viajes de XV se listan en /paquetes/.
+    "disney/": "paquetes/#quinceaneras",
+}
+
+# ============================================================
 # TRANSFORMACIÓN → WHATSAPP
 # ============================================================
 # Clases de cards que se transforman si su destino no está en la tanda.
@@ -135,6 +159,85 @@ def replace_cta(inner_html: str) -> str:
         replacement,
         inner_html, count=1, flags=re.DOTALL | re.IGNORECASE,
     )
+
+
+def _publicada(dest_root: Path, ruta: str) -> bool:
+    """¿La ruta root-relativa tiene archivo en la tanda ya copiada?"""
+    r = ruta.strip('/')
+    if not r:
+        return (dest_root / 'index.html').exists()
+    p = r if r.endswith('.html') else f'{r}/index.html'
+    return (dest_root / p).exists()
+
+
+def _ancestro_publicado(dest_root: Path, ruta: str) -> str | None:
+    """asia/japon/ → 'asia/' si asia/ está publicada. None si no hay ancestro."""
+    partes = ruta.strip('/').split('/')
+    for corte in range(len(partes) - 1, 0, -1):
+        cand = '/'.join(partes[:corte]) + '/'
+        if _publicada(dest_root, cand):
+            return cand
+    return None
+
+
+def arreglar_links_no_publicados(dest_root: Path) -> tuple:
+    """
+    Pasada final sobre TODOS los <a> internos de la tanda ya copiada.
+
+    Los que apuntan a una página que no entró se redirigen a su ancestro
+    publicado; si no hay, se resuelven con SIN_ANCESTRO; si tampoco, se
+    reportan y se dejan intactos (un 404 visible es mejor que uno tapado).
+
+    Devuelve (redirigidos, quitados, sustituidos, sin_resolver)
+    """
+    SKIP = ('http://', 'https://', '//', 'mailto:', 'tel:', '#', 'javascript:', 'data:')
+    redirigidos, quitados, sustituidos, sin_resolver = [], [], [], []
+
+    for f in sorted(dest_root.rglob('*.html')):
+        rel = f.relative_to(dest_root).as_posix()
+        texto = original = f.read_text(encoding='utf-8')
+
+        # Se recorren los href de una vez y se decide por destino, no por <a>:
+        # así un mismo destino roto se arregla igual en toda la página.
+        destinos = set()
+        for m in re.finditer(r'<a\b[^>]*\bhref="([^"]+)"', texto):
+            h = m.group(1)
+            # Las plantillas JS ('+it.h+') no son links: llevan comillas o +
+            if h.startswith(SKIP) or "'" in h or '+' in h:
+                continue
+            destinos.add(h)
+
+        for h in sorted(destinos):
+            ruta = h.split('#')[0].split('?')[0]
+            if not ruta or _publicada(dest_root, ruta):
+                continue
+            anc = _ancestro_publicado(dest_root, ruta)
+            if anc:
+                texto = texto.replace(f'href="{h}"', f'href="{anc}"')
+                redirigidos.append((rel, h, anc))
+                continue
+            accion = SIN_ANCESTRO.get(ruta) or SIN_ANCESTRO.get(ruta.rstrip('/') + '/')
+            if accion == 'QUITAR':
+                enlace = r'<a\b[^>]*\bhref="' + re.escape(h) + r'"[^>]*>.*?</a>'
+                # Si el link es lo único que hay dentro de su <div>, se va el
+                # div también: si no, queda un contenedor vacío ocupando aire.
+                nuevo = re.sub(r'\s*<div\b[^>]*>\s*' + enlace + r'\s*</div>',
+                               '', texto, flags=re.DOTALL)
+                if nuevo == texto:
+                    nuevo = re.sub(enlace, '', texto, flags=re.DOTALL)
+                if nuevo != texto:
+                    texto = nuevo
+                    quitados.append((rel, h))
+            elif accion:
+                texto = texto.replace(f'href="{h}"', f'href="{accion}"')
+                sustituidos.append((rel, h, accion))
+            else:
+                sin_resolver.append((rel, h))
+
+        if texto != original:
+            f.write_text(texto, encoding='utf-8')
+
+    return redirigidos, quitados, sustituidos, sin_resolver
 
 
 def build_published_set() -> set:
@@ -403,6 +506,21 @@ def main():
         prox_label = f"  [{transform_log[f'{d}/index.html']} cards → WA]" \
                      if f'{d}/index.html' in transform_log else ""
         print(f"   {d}/  ({label}){prox_label}")
+
+    # 4b. Links internos a páginas que no entraron en la tanda
+    print("\n→  Links a páginas no publicadas:")
+    redir, quit_, sust, sin_res = arreglar_links_no_publicados(DEST)
+    for rel, h, a in redir:
+        print(f"   {rel:<40} {h}  →  {a}")
+    for rel, h in quit_:
+        print(f"   {rel:<40} {h}  →  <a> eliminado")
+    for rel, h, a in sust:
+        print(f"   {rel:<40} {h}  →  {a}")
+    for rel, h in sin_res:
+        warnings.append(f"Link sin resolver: {rel} → {h} (agregalo a SIN_ANCESTRO)")
+        print(f"   ⚠  {rel:<40} {h}  →  SIN RESOLVER")
+    if not (redir or quit_ or sust or sin_res):
+        print("   (ninguno: todos los links internos resuelven)")
 
     # 5. Generar sitemap
     today = datetime.date.today().isoformat()
