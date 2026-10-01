@@ -46,6 +46,7 @@ ROOT_FILES = [
 
 # Carpetas de assets en la raíz: se copian COMPLETAS, tal cual (sin transformar).
 ROOT_DIRS = [
+    "assets",   # design.css + design.js: el diseño compartido por todas las páginas
     "equipo",   # fotos del equipo (PNG) referenciadas por index.html y quienes-somos
     "img",      # img/paquetes/ — fotos y placeholder de la sección /paquetes/
 ]
