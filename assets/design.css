@@ -38,7 +38,7 @@ section{counter-reset:pq}
 section[style*="background:rgba(14,35,45"],section[style*="background:#fff"],div.px[style*="background:var(--white)"]{background:var(--white)!important}
 
 /* bloques oscuros: los acentos pasan a dorado */
-.hero,.fin,.contact,.cierre,.sena-block,.mid-cta,.hist-section,.navlinks-mobile{--red3:var(--gold);--red2:var(--gold)}
+.hero,.fin,.contact,.cierre,.incluye,.sena-block,.mid-cta,.hist-section,.navlinks-mobile{--red3:var(--gold);--red2:var(--gold)}
 
 /* ---------- tipografía ---------- */
 .h2{font-size:clamp(34px,4.8vw,68px);font-weight:700;letter-spacing:-.035em;line-height:1.03;color:var(--ink);padding-bottom:.06em;text-wrap:balance}
@@ -159,17 +159,18 @@ section[style*="background:rgba(14,35,45"],section[style*="background:#fff"],div
 
 /* cards de destino */
 .dest-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
-.dest-card{position:relative;display:block;flex:0 0 100%;aspect-ratio:4/3;border-radius:var(--r-lg);overflow:hidden;background:var(--bur);color:#fff;isolation:isolate;box-shadow:none;transition:none}
+.dest-card{position:relative;display:block;flex:0 0 100%;aspect-ratio:1/1.04;border-radius:var(--r-lg);overflow:hidden;background:var(--bur);color:#fff;isolation:isolate;box-shadow:none;transition:none}
 .dest-card:hover{transform:none;box-shadow:none}
 @media(min-width:640px){.dest-card{flex-basis:calc((100% - 14px)/2);aspect-ratio:1/1.05}}
 @media(min-width:1024px){.dest-grid{gap:16px}.dest-card{flex-basis:calc((100% - 48px)/4);aspect-ratio:3/4}}
 .dest-card .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 1.4s var(--ease)}
 .dest-card:hover .bg{transform:scale(1.06)}
-.dest-card .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,35,45,.18) 0%,rgba(14,35,45,.04) 16%,rgba(14,35,45,.72) 46%,rgba(14,35,45,.95) 100%)}
-.dest-card .content{position:absolute;left:0;right:0;bottom:0;padding:22px}
+.dest-card .overlay,.dest-card .grad{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,35,45,.18) 0%,rgba(14,35,45,.04) 16%,rgba(14,35,45,.72) 46%,rgba(14,35,45,.95) 100%)}
+.dest-card .content,.dest-card .info{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:22px}
 .dest-card .tag{display:block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border:0;border-radius:0;padding:0;margin-bottom:10px}
 .dest-card h3{font-size:clamp(21px,1.8vw,26px);font-weight:700;letter-spacing:-.025em;line-height:1.08;color:#fff;margin:0}
 .dest-card p{margin-top:8px;font-size:14px;line-height:1.45;color:rgba(255,255,255,.84)}
+.dest-card .cta svg{display:inline-block;width:14px;height:14px;vertical-align:-2px;margin-left:4px}
 .dest-card .cta{display:block;margin-top:12px;font-size:13px;font-weight:700;letter-spacing:0;text-transform:none;color:var(--gold);max-height:none;overflow:visible;opacity:1}
 @media(hover:hover) and (min-width:1024px){
   .dest-card .cta{opacity:0;transform:translateY(8px);transition:opacity .5s var(--ease),transform .6s var(--ease)}
@@ -310,6 +311,86 @@ section[style*="background:rgba(14,35,45"],section[style*="background:#fff"],div
 .legal-body ul li{margin-bottom:6px}
 .legal-body strong{color:var(--ink);font-weight:700}
 .legal-body a{color:var(--red);text-decoration:underline;text-underline-offset:3px}
+
+/* encabezado centrado */
+.center-head{text-align:center;max-width:860px;margin:0 auto clamp(40px,6vh,64px)}
+
+/* variante de card de destino (regiones de Europa, cruceros) */
+.dest-card .ov{position:absolute;inset:0;opacity:1;background:linear-gradient(180deg,rgba(14,35,45,.18) 0%,rgba(14,35,45,.04) 16%,rgba(14,35,45,.72) 46%,rgba(14,35,45,.95) 100%)}
+.dest-card .dc{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:22px}
+.dest-card p.sub{margin:8px 0 0;font-size:14px;line-height:1.45;color:rgba(255,255,255,.84)}
+.dest-card .cta-lnk{display:inline-flex;align-items:center;gap:7px;margin-top:12px;font-size:13px;font-weight:700;color:var(--gold);opacity:1;transform:none}
+.dest-card .ideal{display:block;margin-top:10px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+.dest-card .ideal span{color:var(--gold)}
+@media(hover:hover) and (min-width:1024px){
+  .dest-card .cta-lnk{opacity:0;transform:translateY(8px);transition:opacity .5s var(--ease),transform .6s var(--ease)}
+  .dest-card:hover .cta-lnk,.dest-card:focus-visible .cta-lnk{opacity:1;transform:none}
+}
+
+/* grillas de 3, 5 o 6 destinos: tres columnas parejas en escritorio */
+@media(min-width:1024px){
+  .dest-grid:has(> .dest-card:nth-child(3):last-child) .dest-card,
+  .dest-grid:has(> .dest-card:nth-child(5):last-child) .dest-card,
+  .dest-grid:has(> .dest-card:nth-child(6):last-child) .dest-card{flex-basis:calc((100% - 32px)/3);aspect-ratio:1/1.02}
+  .dest-grid:has(> .dest-card:nth-child(3):last-child) .dest-card :is(.content,.dc,.info),
+  .dest-grid:has(> .dest-card:nth-child(5):last-child) .dest-card :is(.content,.dc,.info),
+  .dest-grid:has(> .dest-card:nth-child(6):last-child) .dest-card :is(.content,.dc,.info){padding:28px}
+}
+
+/* bloque de notas en línea (disney): dos columnas a todo el ancho */
+@media(min-width:900px){div[style*="display:grid"][style*="max-width:780px"]{max-width:none!important;grid-template-columns:1fr 1fr!important;gap:16px!important}}
+
+/* qué incluye: dos columnas (cruceros) o tarjetas sobre bordó (disney) */
+.inc-grid{display:grid;column-gap:clamp(32px,5vw,88px);margin-top:clamp(32px,5vh,56px)}
+@media(min-width:768px){.inc-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.inc-grid:has(.inc-card){grid-template-columns:repeat(4,1fr);column-gap:clamp(24px,3vw,48px)}}
+.inc-box{padding:30px 0;border:0;border-top:1px solid var(--line);border-radius:0;background:none}
+.inc-box.si,.inc-box.no{background:none;border-left:0;border-right:0;border-bottom:0}
+.inc-box h3{display:flex;align-items:center;gap:12px;font-size:clamp(21px,2vw,28px);font-weight:700;letter-spacing:-.025em;line-height:1.15;margin-bottom:22px;color:var(--ink)}
+.inc-box.no h3{color:var(--red)}
+.inc-list{list-style:none;display:flex;flex-direction:column;gap:12px}
+.inc-list li{display:flex;align-items:flex-start;gap:12px;font-size:16px;line-height:1.5;color:var(--ink-2)}
+.inc-list li::before{flex:none;font-size:15px;font-weight:700;line-height:1.6}
+.inc-box.si .inc-list li::before{content:'✓';color:var(--red)}
+.inc-box.no .inc-list li::before{content:'✗';color:var(--ink-3)}
+.incluye{background:var(--bur);color:#fff}
+.incluye .h2{color:#fff}
+.incluye .kicker{color:var(--gold)}
+.inc-card{padding:28px 0;border:0;border-top:1px solid rgba(255,255,255,.16);border-radius:0;background:none;transition:none}
+.inc-card:hover{background:none;transform:none}
+.inc-card .ic{width:42px;height:42px;border-radius:50%;background:none;color:var(--gold);box-shadow:inset 0 0 0 1px rgba(242,179,61,.5);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.inc-card b{display:block;font-size:18px;font-weight:700;letter-spacing:-.01em;line-height:1.25;color:#fff;margin-bottom:6px}
+.inc-card p{font-size:15px;line-height:1.55;color:rgba(255,255,255,.7)}
+
+/* temporadas (disney) */
+.temp-grid{display:grid;gap:14px;margin-top:clamp(32px,5vh,56px)}
+@media(min-width:768px){.temp-grid{grid-template-columns:1fr 1fr;gap:16px}}
+.temp-card{position:relative;overflow:hidden;padding:clamp(24px,2.6vw,36px);border:0;border-radius:var(--r-lg)}
+.temp-card.best{background:var(--bur);color:#fff}
+.temp-card.ok{background:none;color:var(--ink);box-shadow:inset 0 0 0 1px rgba(14,35,45,.16)}
+.temp-card.avoid{background:none;color:var(--ink);box-shadow:inset 0 0 0 1px rgba(172,10,16,.3)}
+.temp-badge{display:block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border-radius:0;padding:0;margin-bottom:16px;background:none!important}
+.temp-card.best .temp-badge{color:var(--gold)}
+.temp-card.ok .temp-badge{color:var(--ink-3)}
+.temp-card.avoid .temp-badge{color:var(--red)}
+.temp-card h3{font-size:clamp(21px,2vw,28px);font-weight:700;letter-spacing:-.025em;line-height:1.12;margin-bottom:12px}
+.temp-card.best h3{color:#fff}
+.temp-card p{font-size:15.5px;line-height:1.6}
+.temp-card.best p{color:rgba(255,255,255,.76)}
+.temp-card.ok p,.temp-card.avoid p{color:var(--ink-2)}
+
+/* redes en el cierre */
+.soc-row{margin-top:0;padding-top:36px;border-top:0}
+.soc-label{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:18px}
+.soc-icons{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.soc-link{display:inline-flex;flex-direction:row;align-items:center;gap:10px;min-width:0;padding:12px 20px;border:0;border-radius:999px;background:none;box-shadow:inset 0 0 0 1px rgba(255,255,255,.24);color:rgba(255,255,255,.88);transition:background .4s var(--ease),color .3s,transform .5s var(--ease)}
+.soc-link svg{width:18px;height:18px}
+.soc-link span{font-size:14px;font-weight:700;letter-spacing:0}
+.soc-link:hover{background:rgba(255,255,255,.1);border-color:transparent;color:#fff;transform:translateY(-2px)}
+
+/* restos de estilo en línea: botones a pastilla y sin tintes azulados */
+a[style*="border-radius:8px"],a[style*="border-radius:10px"]{border-radius:999px!important}
+div[style*="background:rgba(14,35,45,.0"]{background:transparent!important;border-radius:var(--r-md)!important}
 
 /* qué incluye / datos del local */
 .include-grid{display:grid;column-gap:clamp(24px,3vw,48px)}
