@@ -159,14 +159,15 @@ section[style*="background:rgba(14,35,45"],section[style*="background:#fff"],div
 
 /* cards de destino */
 .dest-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+:has(+ .dest-grid){margin-bottom:clamp(36px,5.5vh,56px)!important}
 .dest-card{position:relative;display:block;flex:0 0 100%;aspect-ratio:1/1.04;border-radius:var(--r-lg);overflow:hidden;background:var(--bur);color:#fff;isolation:isolate;box-shadow:none;transition:none}
 .dest-card:hover{transform:none;box-shadow:none}
 @media(min-width:640px){.dest-card{flex-basis:calc((100% - 14px)/2);aspect-ratio:1/1.05}}
 @media(min-width:1024px){.dest-grid{gap:16px}.dest-card{flex-basis:calc((100% - 48px)/4);aspect-ratio:3/4}}
-.dest-card .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 1.4s var(--ease)}
-.dest-card:hover .bg{transform:scale(1.06)}
-.dest-card .overlay,.dest-card .grad{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,35,45,.18) 0%,rgba(14,35,45,.04) 16%,rgba(14,35,45,.72) 46%,rgba(14,35,45,.95) 100%)}
-.dest-card .content,.dest-card .info{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:22px}
+.dest-card .bg,.dest-card .dest-img{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 1.4s var(--ease)}
+.dest-card:hover .bg,.dest-card:hover .dest-img{transform:scale(1.06)}
+.dest-card .overlay,.dest-card .grad,.dest-card .dest-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,35,45,.18) 0%,rgba(14,35,45,.04) 16%,rgba(14,35,45,.72) 46%,rgba(14,35,45,.95) 100%)}
+.dest-card .content,.dest-card .info,.dest-card .dest-content{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:22px}
 .dest-card .tag{display:block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border:0;border-radius:0;padding:0;margin-bottom:10px}
 .dest-card h3{font-size:clamp(21px,1.8vw,26px);font-weight:700;letter-spacing:-.025em;line-height:1.08;color:#fff;margin:0}
 .dest-card p{margin-top:8px;font-size:14px;line-height:1.45;color:rgba(255,255,255,.84)}
@@ -332,9 +333,9 @@ section[style*="background:rgba(14,35,45"],section[style*="background:#fff"],div
   .dest-grid:has(> .dest-card:nth-child(3):last-child) .dest-card,
   .dest-grid:has(> .dest-card:nth-child(5):last-child) .dest-card,
   .dest-grid:has(> .dest-card:nth-child(6):last-child) .dest-card{flex-basis:calc((100% - 32px)/3);aspect-ratio:1/1.02}
-  .dest-grid:has(> .dest-card:nth-child(3):last-child) .dest-card :is(.content,.dc,.info),
-  .dest-grid:has(> .dest-card:nth-child(5):last-child) .dest-card :is(.content,.dc,.info),
-  .dest-grid:has(> .dest-card:nth-child(6):last-child) .dest-card :is(.content,.dc,.info){padding:28px}
+  .dest-grid:has(> .dest-card:nth-child(3):last-child) .dest-card :is(.content,.dc,.info,.dest-content),
+  .dest-grid:has(> .dest-card:nth-child(5):last-child) .dest-card :is(.content,.dc,.info,.dest-content),
+  .dest-grid:has(> .dest-card:nth-child(6):last-child) .dest-card :is(.content,.dc,.info,.dest-content){padding:28px}
 }
 
 /* bloque de notas en línea (disney): dos columnas a todo el ancho */
