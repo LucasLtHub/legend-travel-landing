@@ -17,7 +17,7 @@
   /* cabecera: transparente arriba de todo, sólida apenas se scrollea.
      (Un testigo invisible de 140px al tope de la página; sin scroll listeners.) */
   var nav = d.querySelector('.navwrap');
-  var hero = d.querySelector('.hero');
+  var hero = d.querySelector('.hero, .dhero');
   if (nav) {
     if (hero && io) {
       var testigo = d.createElement('div');
@@ -61,7 +61,7 @@
       es.forEach(function (e) {
         if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
       });
-    }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
+    }, { threshold: 0, rootMargin: '0px 0px -8% 0px' }); /* threshold 0: un bloque más alto que la pantalla nunca llega a un % visible */
     rvs.forEach(function (el) { obs.observe(el); });
   } else {
     rvs.forEach(function (el) { el.classList.add('in'); });

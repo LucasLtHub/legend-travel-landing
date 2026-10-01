@@ -24,7 +24,7 @@
 
 <!-- PAQUETES:START -->
 ## Salidas y paquetes actuales
-Generado el 2026-09-18 desde data/paquetes.json. Solo salidas vigentes:
+Generado el 2026-10-01 desde data/paquetes.json. Solo salidas vigentes:
 lo inactivo o con tarifa vencida se retira de esta lista automáticamente.
 Precios por persona en base doble, sujetos a confirmación al reservar.
 
