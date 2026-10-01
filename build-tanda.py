@@ -60,6 +60,7 @@ FULL_DIRS = [
     "financiacion",
     "viajes-a-medida",
     "lunas-de-miel",
+    "quinceaneras",
     "paquetes",
     "politica-de-privacidad",
     "terminos-y-condiciones",
