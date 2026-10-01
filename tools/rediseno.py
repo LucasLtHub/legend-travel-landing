@@ -75,6 +75,21 @@ def css_de_pagina(css_viejo: str) -> str:
         u = URL_RE.search(escena)
         url, pos = u.group(2), (u.group(3) or '').strip() or 'center'
         out.append(f".hero-media .scene{{background-image:url('{url}');background-position:{pos}}}")
+    # otras fotos definidas en el CSS de la página (ej. el fondo del cierre)
+    sin_coment = re.sub(r'/\*.*?\*/', '', css_viejo, flags=re.S)
+    for m in re.finditer(r'([^{}]+)\{([^{}]*url\([^{}]*)\}', sin_coment):
+        sel, cuerpo = m.group(1).strip(), m.group(2)
+        if sel.startswith('@') or '.scene' in sel:
+            continue
+        u = URL_RE.search(cuerpo)
+        if not u or u.group(2).startswith('data:'):
+            continue
+        pos = (u.group(3) or '').strip() or 'center'
+        out.append(f"{sel}{{background-image:url('{u.group(2)}');background-position:{pos}}}")
+    # hero compacto (páginas legales): sin foto y de poca altura
+    mh = re.search(r"\.hero\{[^}]*min-height:(\d+)vh", css_viejo)
+    if mh and int(mh.group(1)) <= 60 and not escena:
+        out.append(f".hero{{min-height:{mh.group(1)}vh}}")
     # hero partido: el CSS original pasaba .hero a flex en fila
     if re.search(r"\.hero\{[^}]*flex-direction:row", css_viejo) or \
        re.search(r"\.hero\{display:flex;flex-direction:column", css_viejo):
@@ -108,12 +123,17 @@ def aplicar(rel: str) -> str:
     head = head[:m.start()] + nuevo + head[m.end():]
 
     resto, n = OLD_JS_RE.subn(JS_TAG, resto, count=1)
+    nota = ''
     if n != 1:
-        return 'ERROR: no encontré el script inline de comportamiento'
+        if ".fade'" in resto or 'class="rv' in resto or ' rv"' in resto:
+            return 'ERROR: usa .fade/.rv pero no encontré su script inline'
+        i = resto.rindex('</body>')
+        resto = resto[:i] + JS_TAG + '\n' + resto[i:]
+        nota = ' (sin script previo: design.js agregado al final)'
 
     t = head + resto
     f.write_bytes((t.replace('\n', '\r\n') if crlf else t).encode('utf-8'))
-    return 'ok' + (' (hero partido)' if 'flex-direction:row' in propio else '')
+    return 'ok' + (' (hero partido)' if 'flex-direction:row' in propio else '') + nota
 
 
 # ---------------------------------------------------------------------------
@@ -218,11 +238,12 @@ def auditar(rel: str, ref: str) -> list:
     if marc(nuevo) != marc(viejo): prob.append('el bloque PAQUETES-REGION cambió')
     img = lambda t: re.findall(r'<img\b[^>]*\bsrc="([^"]+)"', t) + re.findall(r"background-image:url\('([^']+)'\)", t[t.index('<body'):])
     if img(nuevo) != img(viejo): prob.append('las fotos del cuerpo cambiaron')
-    # la foto del hero vivía en el CSS viejo: tiene que seguir en el <style> nuevo
-    ev = [m for m in SCENE_RE.finditer(viejo) if 'url(' in m.group(1)]
-    if ev:
-        url = URL_RE.search(ev[-1].group(1)).group(2)
-        if url not in nuevo[:nuevo.index('</head>')]: prob.append('se perdió la foto del hero')
+    # las fotos que vivían en el CSS viejo tienen que seguir en el <style> nuevo
+    css_v = ''.join(HEAD_STYLE_RE.findall(viejo[:viejo.index('</head>')]))
+    head_n = nuevo[:nuevo.index('</head>')]
+    for u in sorted(set(re.findall(r"url\(['\"]?([^'\")]+)", re.sub(r'/\*.*?\*/', '', css_v, flags=re.S)))):
+        if not u.startswith('data:') and u not in head_n:
+            prob.append(f'se perdió una foto del CSS: {u[:70]}')
     return prob
 
 

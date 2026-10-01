@@ -21,61 +21,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script>document.write('<link rel="stylesheet" href="assets/design.css?v=1">')</script>
+<noscript><link rel="stylesheet" href="/assets/design.css?v=1"></noscript>
 <style>
-:root{--red:#AC0A10;--red2:#D33838;--red3:#D5464C;--bur:#491417;--white:#F8F8F8;--black:#0E232D;--gold:#F2B33D}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Satoshi','Inter',sans-serif;-webkit-font-smoothing:antialiased;background:var(--white);color:var(--black);font-size:16px;line-height:1.6;overflow-x:hidden}
-::selection{background:var(--red);color:var(--white)}
-a{color:inherit;text-decoration:none}
-button{font-family:inherit;background:none;border:0;cursor:pointer;color:inherit}
-.px{padding-left:24px;padding-right:24px}
-@media(min-width:768px){.px{padding-left:48px;padding-right:48px}}
-@media(min-width:1024px){.px{padding-left:64px;padding-right:64px}}
-.mx{max-width:1280px;margin-left:auto;margin-right:auto}
-.liquid-glass{background:rgba(0,0,0,0.4);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border:none;box-shadow:inset 0 1px 1px rgba(255,255,255,0.1);position:relative;overflow:hidden}
-.liquid-glass::before{content:'';position:absolute;inset:0;border-radius:inherit;padding:1.4px;background:linear-gradient(180deg,rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.1) 20%,rgba(255,255,255,0) 40%,rgba(255,255,255,0) 60%,rgba(255,255,255,0.1) 80%,rgba(255,255,255,0.3) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
-.navwrap{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:24px;display:flex;justify-content:center}.navbar.liquid-glass{overflow:visible}
-.navbar{border-radius:14px;padding:13px 28px;display:flex;align-items:center;justify-content:center}
-.nav-back{display:inline-flex;align-items:center;gap:8px;color:var(--white);transition:color .3s;font-size:15px;font-weight:500}
-.nav-back:hover{color:var(--red3)}
-/* HERO */
-.hero{position:relative;min-height:38vh;background:var(--bur);color:var(--white);overflow:hidden}
-.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(172,10,16,.15) 0%,transparent 60%);pointer-events:none}
-.hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:38vh;padding-top:110px;padding-bottom:48px}
-.hero-kicker{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.28em;color:var(--red3);margin-bottom:16px}
-.hero-kicker::before{content:'// '}
-.hero h1{font-size:32px;font-weight:700;line-height:1.08;letter-spacing:-.03em;color:var(--white);max-width:640px}
-@media(min-width:768px){.hero h1{font-size:44px}}
-/* CONTENT */
-.legal-body{padding-top:72px;padding-bottom:96px}
-.legal-body .mx{max-width:820px}
-.legal-body h2{font-size:22px;font-weight:700;color:var(--black);margin:48px 0 12px;letter-spacing:-.01em}
-.legal-body h2:first-child{margin-top:0}
-.legal-body p{font-size:15px;color:rgba(14,35,45,.78);line-height:1.8;margin-bottom:14px}
-.legal-body ul{margin:8px 0 14px 20px}
-.legal-body ul li{font-size:15px;color:rgba(14,35,45,.78);line-height:1.8;margin-bottom:6px}
-.legal-body a{color:var(--red);text-decoration:underline;text-underline-offset:3px}
-.legal-body .meta{font-size:13px;color:rgba(14,35,45,.45);margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid rgba(14,35,45,.08)}
-/* FOOTER */
-footer{background:var(--bur);color:var(--white);border-top:1px solid rgba(255,255,255,.1);padding-top:64px;padding-bottom:32px}
-.fsoc{display:flex;gap:10px;margin-top:16px;align-items:center}
-.fsoc a{color:rgba(255,255,255,.6);display:inline-flex;transition:color .2s,transform .2s}
-.fsoc a svg{width:22px;height:22px;display:block}
-.fsoc a:hover{color:#fff;transform:translateY(-2px)}
-.fgrid{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:56px}
-@media(min-width:640px){.fgrid{grid-template-columns:1fr 1fr}}
-@media(min-width:1024px){.fgrid{grid-template-columns:1.4fr 1fr 1fr 1fr}.fdest{grid-column:span 2}}
-.fgrid h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.24em;color:var(--red3);margin-bottom:16px}
-.fgrid h4 a{display:inline;font-size:inherit;font-weight:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit;margin-bottom:0;width:auto}.fgrid h4 a:hover{color:var(--white)}
-.fgrid a,.fgrid p.t{display:block;font-size:14px;color:rgba(255,255,255,.6);margin-bottom:10px;width:fit-content;transition:color .25s}
-.fgrid a:hover{color:var(--white)}
-.fbot{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;color:rgba(255,255,255,.4)}
-.fbot .claim{color:rgba(255,255,255,.6)}
-.fbot a{display:inline;font-size:inherit;color:inherit;width:auto;transition:color .2s}
-.fbot a:hover{color:var(--white)}
-.waf{position:fixed;bottom:28px;right:28px;z-index:100;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:transform .3s,box-shadow .3s}
-.waf:hover{transform:translateY(-3px) scale(1.08);box-shadow:0 8px 30px rgba(37,211,102,.5)}
+.hero{min-height:38vh}
 </style>
 </head>
 <body>
@@ -243,5 +192,6 @@ if(!(window.location.pathname===_bp||window.location.pathname===_bp+'index.html'
 }
 document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href');if(!h||h.charAt(0)!=='#'||h.length<2)return;e.preventDefault();var t=document.getElementById(h.slice(1));if(!t)return;t.scrollIntoView({behavior:'smooth',block:'start'});});
 })();</script>
+<script>(function(){var s=document.createElement('script');s.src='assets/design.js?v=1';document.body.appendChild(s)})()</script>
 </body>
 </html>
