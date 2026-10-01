@@ -130,6 +130,7 @@ section[style*="background:rgba(14,35,45"],section[style*="background:#fff"],div
 @media(max-width:767px){.hero-media .ground{background:linear-gradient(180deg,rgba(14,35,45,.62) 0%,rgba(14,35,45,.54) 34%,rgba(14,35,45,.6) 66%,rgba(14,35,45,.88) 100%)}}
 .hero-media .top-grad{display:none}
 .hero-inner{position:relative;z-index:10;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:0;padding-top:calc(var(--nav-h) + 44px);padding-bottom:clamp(40px,7vh,72px)}
+@media(max-width:767px){.hero-inner{padding-top:calc(var(--nav-h) + 66px)}}
 .hero-logo-main{display:none}
 .hero h1{font-size:clamp(36px,6vw,92px);font-weight:700;letter-spacing:-.04em;line-height:1;color:#fff;text-shadow:0 2px 40px rgba(14,35,45,.35);margin:0;padding-bottom:.08em;max-width:18ch;text-wrap:balance}
 .hero-sub{margin:clamp(18px,3vh,28px) auto 0;max-width:60ch;font-size:clamp(16px,1.25vw,19px);line-height:1.55;font-weight:400;color:rgba(255,255,255,.88);text-shadow:0 1px 18px rgba(14,35,45,.5)}
@@ -203,7 +204,8 @@ section[style*="background:rgba(14,35,45"],section[style*="background:#fff"],div
 
 /* medios de pago */
 .fin{background:var(--bur);color:#fff;padding-top:clamp(80px,11vh,128px);padding-bottom:clamp(80px,11vh,128px)}
-.fin .mx{display:grid;gap:40px;align-items:end}
+.fin .mx{display:grid;grid-template-columns:minmax(0,1fr);gap:40px;align-items:end}
+@media(max-width:640px){.fin .mx>a{max-width:100%;white-space:normal;text-align:left;line-height:1.25}}
 @media(min-width:1024px){.fin .mx{grid-template-columns:1.25fr .75fr;gap:96px}.fin .mx>a{justify-self:end}}
 .fin .mx>a{justify-self:start}
 .fin .h2{color:#fff}
@@ -221,7 +223,7 @@ section[style*="background:rgba(14,35,45"],section[style*="background:#fff"],div
 .guia{display:grid;column-gap:clamp(32px,5vw,88px)}
 @media(min-width:900px){.guia{grid-template-columns:1fr 1fr}}
 .guia .guia-item{display:grid;grid-template-columns:auto 1fr;gap:clamp(16px,2vw,28px);align-items:start;padding:36px 0;border-top:1px solid var(--line)}
-.guia-num,.step-num,.step-num-circle{width:auto;height:auto;min-width:.9em;background:none;border-radius:0;display:block;color:var(--bur);font-size:clamp(48px,5.4vw,84px);font-weight:300;letter-spacing:-.05em;line-height:.84}
+.guia-num,.gnum,.step-num,.step-num-circle{width:auto;height:auto;min-width:.9em;background:none;border-radius:0;display:block;color:var(--bur);font-size:clamp(48px,5.4vw,84px);font-weight:300;letter-spacing:-.05em;line-height:.84}
 
 /* pasos numerados */
 .steps,.steps-list{display:block;max-width:980px;margin:0}
@@ -392,6 +394,66 @@ section[style*="background:rgba(14,35,45"],section[style*="background:#fff"],div
 /* restos de estilo en línea: botones a pastilla y sin tintes azulados */
 a[style*="border-radius:8px"],a[style*="border-radius:10px"]{border-radius:999px!important}
 div[style*="background:rgba(14,35,45,.0"]{background:transparent!important;border-radius:var(--r-md)!important}
+
+/* ===== hijas ===== */
+/* seguí explorando: otros destinos */
+.otros-grid{display:flex;flex-wrap:wrap;gap:12px;margin-top:0}
+:has(+ .otros-grid),:has(+ .acts-grid),:has(+ .epocas-grid),:has(+ .guia-steps){margin-bottom:clamp(32px,5vh,52px)!important}
+.otro-card{position:relative;display:block;flex:1 1 calc(50% - 6px);height:clamp(190px,52vw,240px);aspect-ratio:auto;border-radius:var(--r-md);overflow:hidden;background:var(--bur);color:#fff;isolation:isolate;box-shadow:none;transition:none}
+.otro-card:hover{transform:none;box-shadow:none}
+@media(min-width:768px){.otros-grid{gap:16px}.otro-card{flex:1 1 0;min-width:0;height:clamp(240px,24vw,340px);border-radius:var(--r-lg)}}
+.otro-card .bg,.otro-card .obg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 1.4s var(--ease)}
+.otro-card:hover .bg,.otro-card:hover .obg{transform:scale(1.06)}
+.otro-card .grad,.otro-card .ograd{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,35,45,.1) 0%,rgba(14,35,45,.06) 34%,rgba(14,35,45,.78) 74%,rgba(14,35,45,.94) 100%)}
+.otro-card .info{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:18px 20px}
+.otro-card h4,.otro-card .oname{font-size:clamp(18px,1.5vw,22px);font-weight:700;letter-spacing:-.02em;line-height:1.12;color:#fff;margin:0}
+.otro-card .oname{position:absolute;left:20px;right:20px;bottom:18px;z-index:2;text-align:left}
+.otro-card p{margin-top:6px;font-size:13.5px;line-height:1.4;color:rgba(255,255,255,.82)}
+
+/* qué hacer: actividades con foto */
+.acts-grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:640px){.acts-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.acts-grid{grid-template-columns:repeat(4,1fr);gap:16px}}
+.act-card{position:relative;display:block;aspect-ratio:1/1.04;border-radius:var(--r-lg);overflow:hidden;background:var(--bur);color:#fff;isolation:isolate;box-shadow:none;transition:none}
+@media(min-width:640px){.act-card{aspect-ratio:4/5}}
+.act-card:hover{transform:none;box-shadow:none}
+.act-card .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 1.4s var(--ease)}
+.act-card:hover .bg{transform:scale(1.06)}
+.act-card .grad{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,35,45,.14) 0%,rgba(14,35,45,.04) 20%,rgba(14,35,45,.74) 52%,rgba(14,35,45,.95) 100%)}
+.act-card .info{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:22px}
+.act-card h3{font-size:clamp(20px,1.6vw,23px);font-weight:700;letter-spacing:-.02em;line-height:1.12;color:#fff;margin:0 0 8px}
+.act-card p{font-size:14px;line-height:1.5;color:rgba(255,255,255,.84)}
+
+/* cuándo ir: épocas */
+.epocas-grid{display:grid;grid-template-columns:1fr;column-gap:clamp(24px,3vw,48px)}
+@media(min-width:640px){.epocas-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.epocas-grid{grid-template-columns:repeat(4,1fr)}}
+.epoca{padding:28px 0 32px;border:0;border-top:1px solid var(--line);border-radius:0;background:none}
+.epoca .season,.guia-item p.gi-label{line-height:1.4;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+.epoca h3{font-size:clamp(20px,1.7vw,24px);font-weight:700;letter-spacing:-.02em;line-height:1.2;color:var(--ink);margin-bottom:10px}
+.epoca p{font-size:15px;line-height:1.65;color:var(--ink-2)}
+.epoca .badge{display:inline-block;margin-top:16px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--red);background:none;box-shadow:inset 0 0 0 1px rgba(172,10,16,.35);border-radius:999px;padding:6px 12px}
+
+/* pasos en dos columnas */
+.guia-steps{display:grid;grid-template-columns:1fr;column-gap:clamp(32px,5vw,88px)}
+@media(min-width:900px){.guia-steps{grid-template-columns:1fr 1fr}}
+.guia-steps .step{border-bottom:0}
+.guia-steps .step-num{font-size:clamp(40px,3.8vw,60px)}
+.guia-steps .step h3,.guia-steps .step-body h3{font-size:clamp(19px,1.6vw,23px)}
+
+/* etiqueta sobre una ventaja, chip de luna de miel, migas dentro del hero, pie */
+.vcard .tag{display:block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);background:none;border-radius:0;padding:0;margin-bottom:16px}
+p.lm-chip{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin:0;line-height:1.7}
+p.lm-chip a{color:var(--red);text-decoration:none}
+p.lm-chip a:hover{opacity:1;color:var(--bur)}
+.breadcrumb{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.74);margin-bottom:24px}
+.breadcrumb a{color:rgba(255,255,255,.74);transition:color .3s}
+.breadcrumb a:hover{color:var(--gold)}
+.breadcrumb span{color:rgba(255,255,255,.5)}
+.breadcrumb span:last-child{color:#fff}
+.hero:has(#navcrumb) .breadcrumb{display:none}
+.fabout{font-size:14px;line-height:1.7;color:var(--ink-3);margin-top:16px;max-width:320px}
+.fgrid img[style*="invert"]{filter:none!important}
 
 /* qué incluye / datos del local */
 .include-grid{display:grid;column-gap:clamp(24px,3vw,48px)}

@@ -227,7 +227,8 @@ def auditar(rel: str, ref: str) -> list:
     if 'BreadcrumbList' in viejo and 'BreadcrumbList' not in nuevo: prob.append('se perdió el schema de migas')
 
     # 5. GTM, WhatsApp, links, marcadores
-    if nuevo.count(GTM) != viejo.count(GTM) or nuevo.count(GTM) < 2: prob.append('GTM cambió o falta')
+    if nuevo.count(GTM) != viejo.count(GTM): prob.append('GTM cambió')
+    elif nuevo.count(GTM) < 2: prob.append('AVISO preexistente: la página no tiene GTM (tampoco antes del rediseño)')
     wa = lambda t: re.findall(r'https://wa\.me/(\d+)(\?text=[^"\']*)?', t)
     if wa(nuevo) != wa(viejo): prob.append('los links de WhatsApp cambiaron')
     if any(n != WA for n, _ in wa(nuevo)): prob.append('hay un wa.me con otro número')
@@ -262,9 +263,10 @@ def main():
             fallas += r.startswith('ERROR')
         else:
             p = auditar(rel, ref)
-            print(f'  {rel:<62} ' + ('✓' if not p else '✗'))
+            graves = [x for x in p if not x.startswith('AVISO')]
+            print(f'  {rel:<62} ' + ('✓' if not p else ('✗' if graves else '✓ con aviso')))
             for x in p: print(f'      - {x}')
-            fallas += bool(p)
+            fallas += bool(graves)
     print(f'\n{len(args)} páginas, {fallas} con problemas' if modo == 'auditar' else f'\n{len(args)} páginas procesadas, {fallas} errores')
     return 1 if fallas else 0
 
