@@ -101,6 +101,9 @@ def css_de_pagina(css_viejo: str) -> str:
 # aplicar
 # ---------------------------------------------------------------------------
 HEAD_STYLE_RE = re.compile(r'<style\b[^>]*>(.*?)</style>', re.S)
+# Páginas cuyo script inline ES contenido (el blog arma sus notas con JS):
+# se conserva tal cual y design.js se agrega al final.
+SCRIPT_PROPIO = {'blog/index.html'}
 OLD_JS_RE = re.compile(r'<script>\s*\(function\(\)\{\s*document\.querySelectorAll\(\'\.fade\'\).*?</script>', re.S)
 
 
@@ -125,11 +128,12 @@ def aplicar(rel: str) -> str:
     resto, n = OLD_JS_RE.subn(JS_TAG, resto, count=1)
     nota = ''
     if n != 1:
-        if ".fade'" in resto or 'class="rv' in resto or ' rv"' in resto:
+        if rel not in SCRIPT_PROPIO and (".fade'" in resto or 'class="rv' in resto or ' rv"' in resto):
             return 'ERROR: usa .fade/.rv pero no encontré su script inline'
         i = resto.rindex('</body>')
         resto = resto[:i] + JS_TAG + '\n' + resto[i:]
-        nota = ' (sin script previo: design.js agregado al final)'
+        nota = (' (script propio conservado: design.js agregado al final)' if rel in SCRIPT_PROPIO
+                else ' (sin script previo: design.js agregado al final)')
 
     t = head + resto
     f.write_bytes((t.replace('\n', '\r\n') if crlf else t).encode('utf-8'))

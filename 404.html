@@ -14,53 +14,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--red:#AC0A10;--red2:#D33838;--red3:#D5464C;--bur:#491417;--white:#F8F8F8;--black:#0E232D;--gold:#F2B33D}
-*{margin:0;padding:0;box-sizing:border-box}
-html,body{height:100%}
-body{font-family:'Satoshi','Inter',sans-serif;-webkit-font-smoothing:antialiased;background:var(--white);color:var(--black);display:flex;flex-direction:column;min-height:100vh}
-::selection{background:var(--red);color:var(--white)}
-a{color:inherit;text-decoration:none}
-.px{padding-left:24px;padding-right:24px}
-@media(min-width:768px){.px{padding-left:48px;padding-right:48px}}
-@media(min-width:1024px){.px{padding-left:64px;padding-right:64px}}
-.mx{max-width:1280px;margin-left:auto;margin-right:auto}
-/* HERO */
-.hero{position:relative;background:var(--bur);color:var(--white);overflow:hidden;flex:1;display:flex;align-items:center;justify-content:center;min-height:70vh}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 60% 40%,rgba(172,10,16,.18) 0%,transparent 65%)}
-.hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding-top:80px;padding-bottom:64px;gap:0}
-.code{font-size:120px;font-weight:700;line-height:1;letter-spacing:-.06em;color:var(--red);opacity:.18;user-select:none;margin-bottom:-20px}
-@media(min-width:768px){.code{font-size:180px}}
-.hero-kicker{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.28em;color:var(--red3);margin-bottom:14px}
-.hero-kicker::before{content:'// '}
-.hero h1{font-size:28px;font-weight:700;line-height:1.1;letter-spacing:-.02em;color:var(--white);max-width:520px;margin-bottom:12px}
-@media(min-width:768px){.hero h1{font-size:38px}}
-.hero p{font-size:15px;color:rgba(255,255,255,.6);max-width:440px;line-height:1.7;margin-bottom:36px}
-.btn-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;transition:all .25s}
-.btn-red{background:var(--red);color:#fff}
-.btn-red:hover{background:var(--red2);transform:translateY(-2px)}
-.btn-wa{background:#25D366;color:#fff}
-.btn-wa:hover{background:#1DAA55;transform:translateY(-2px)}
-/* DESTINOS */
-.destinos{padding:64px 0;background:var(--white)}
-.destinos h2{text-align:center;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.22em;color:rgba(14,35,45,.4);margin-bottom:32px}
-.dest-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-@media(min-width:640px){.dest-grid{grid-template-columns:repeat(4,1fr)}}
-.dest-card{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/5}
-@media(min-width:640px){.dest-card{aspect-ratio:3/4}}
-.dest-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-.dest-card:hover img{transform:scale(1.06)}
-.dest-card .overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,20,.7) 0%,transparent 50%)}
-.dest-card .label{position:absolute;bottom:0;left:0;right:0;padding:16px;color:#fff;font-weight:700;font-size:15px;letter-spacing:-.01em}
-/* FOOTER */
-footer{background:var(--bur);color:var(--white);padding:24px 0}
-.fbot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;font-size:12px;color:rgba(255,255,255,.4)}
-.fbot a{display:inline;font-size:inherit;color:inherit;transition:color .2s}
-.fbot a:hover{color:var(--white)}
-.waf{position:fixed;bottom:28px;right:28px;z-index:100;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:transform .3s,box-shadow .3s}
-.waf:hover{transform:translateY(-3px) scale(1.08);box-shadow:0 8px 30px rgba(37,211,102,.5)}
-</style>
+<script>document.write('<link rel="stylesheet" href="assets/design.css?v=1">')</script>
+<noscript><link rel="stylesheet" href="/assets/design.css?v=1"></noscript>
 </head>
 <body>
 
@@ -124,5 +79,6 @@ footer{background:var(--bur);color:var(--white);padding:24px 0}
   <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg>
 </a>
 
+<script>(function(){var s=document.createElement('script');s.src='assets/design.js?v=1';document.body.appendChild(s)})()</script>
 </body>
 </html>

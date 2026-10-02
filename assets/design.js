@@ -17,7 +17,7 @@
   /* cabecera: transparente arriba de todo, sólida apenas se scrollea.
      (Un testigo invisible de 140px al tope de la página; sin scroll listeners.) */
   var nav = d.querySelector('.navwrap');
-  var hero = d.querySelector('.hero, .dhero');
+  var hero = d.querySelector('.hero, .dhero, .blog-hero');
   if (nav) {
     if (hero && io) {
       var testigo = d.createElement('div');
