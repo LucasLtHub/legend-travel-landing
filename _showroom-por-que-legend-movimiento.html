@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<script>(function(){var p=location.pathname,r='/legend-travel-landing/';document.write('<base href="'+(p.indexOf(r)===0?r:'/')+'">');})()</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Showroom · Por qué Legend con movimiento — 3 opciones</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico?v=8">
+<!-- misma carga de tipografia que el head de la home: pesos normales aca, italicas en el @import -->
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+<style>
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@301,401,501,701&display=swap');
+/* ============================================================
+   BASE — copiada tal cual de la home aprobada (tokens, tipografía,
+   botones, reveal). Las variantes no inventan otro sistema.
+   ============================================================ */
+:root{
+  --red:#AC0A10;--bur:#491417;--white:#F8F8F8;--black:#0E232D;--gold:#F2B33D;
+  --ink:#0E232D;--ink-2:rgba(14,35,45,.64);--ink-3:rgba(14,35,45,.44);--line:rgba(14,35,45,.1);
+  --ease:cubic-bezier(.16,1,.3,1);
+  --r-lg:24px;--r-md:16px;
+  --gutter:20px;--nav-h:96px;
+}
+@media(min-width:768px){:root{--gutter:40px}}
+@media(min-width:1200px){:root{--gutter:72px}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Satoshi',system-ui,sans-serif;background:var(--white);color:var(--ink);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+ul,ol{list-style:none}
+::selection{background:var(--red);color:#fff}
+:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:4px}
+.wrap{max-width:1360px;margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+.sec{padding:112px 0}
+@media(min-width:1024px){.sec{padding:168px 0}}
+.h2{font-size:clamp(40px,6vw,88px);font-weight:700;letter-spacing:-.035em;line-height:1.02;padding-bottom:.06em;text-wrap:balance}
+.h2.md{font-size:clamp(36px,4.6vw,68px)}
+.h2 em{font-style:italic;font-weight:400}
+.dark{background:var(--bur);color:#fff}
+.dark .h2{color:#fff}
+.btn{position:relative;display:inline-flex;align-items:center;gap:14px;padding:7px 7px 7px 26px;border-radius:999px;font-weight:700;font-size:15px;line-height:1;white-space:nowrap;background:var(--red);color:#fff;transition:background .45s var(--ease),transform .6s var(--ease),box-shadow .45s var(--ease);will-change:transform}
+.btn .ic{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.16);display:grid;place-items:center;flex:none;transition:transform .5s var(--ease),background .4s}
+.btn .ic svg{width:16px;height:16px}
+.btn:hover{background:var(--bur)}
+.btn:hover .ic{transform:translate(2px,-2px)}
+.btn:active{transform:scale(.97)!important}
+.btn.light{background:var(--white);color:var(--bur)}
+.btn.light .ic{background:rgba(73,20,23,.1)}
+.btn.light:hover{background:#fff}
+.rv{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1.1s var(--ease);transition-delay:var(--d,0ms)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1!important;transform:none!important}
+}
+
+/* ============================================================
+   CROMO DEL SHOWROOM — no forma parte del diseño.
+   ============================================================ */
+.sr-top{background:var(--ink);color:#fff;padding:22px 0}
+.sr-top .wrap{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px}
+.sr-top b{font-size:15px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.sr-top span{font-size:14px;color:rgba(255,255,255,.7)}
+.sr-top a{color:var(--gold);font-weight:700}
+.optbar{position:sticky;top:0;z-index:30;height:var(--nav-h);background:var(--gold);color:var(--ink);display:flex;align-items:center;box-shadow:0 1px 0 rgba(14,35,45,.18)}
+.optbar .wrap{width:100%;display:flex;align-items:center;gap:clamp(12px,2.4vw,36px)}
+.optbar .lbl{flex:none;font-size:clamp(22px,3.4vw,44px);font-weight:700;letter-spacing:-.035em;line-height:1;white-space:nowrap}
+.optbar .con{flex:1;min-width:0;display:grid;gap:3px}
+.optbar .con b{font-size:clamp(13.5px,1.25vw,18px);font-weight:700;letter-spacing:-.01em;line-height:1.2}
+.optbar .con i{font-style:normal;font-size:clamp(11.5px,1vw,14px);line-height:1.28;color:rgba(14,35,45,.82)}
+.optbar .jump{flex:none;display:none;gap:6px}
+@media(min-width:900px){.optbar .jump{display:flex}}
+.optbar .jump a{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:14px;font-weight:700;box-shadow:inset 0 0 0 1px rgba(14,35,45,.3);transition:background .4s var(--ease),color .3s}
+.optbar .jump a:hover,.optbar .jump a.is{background:var(--ink);color:var(--gold)}
+.opt>section{margin-top:calc(-1*var(--nav-h))}
+.sr-end{background:var(--ink);color:rgba(255,255,255,.7);padding:40px 0;font-size:14px}
+
+/* ============================================================
+   PIEZAS VISUALES (las usan G y H): una por cada diferencial, todas
+   con material real del sitio.
+   1 · foto del equipo en el local   2 · tres asesoras con su nombre
+   3 · postales de destinos de la home   4 · sello con el legajo
+   ============================================================ */
+.vz{position:relative;display:block;overflow:hidden;border-radius:var(--r-lg);background:var(--bur);isolation:isolate;container-type:size}
+.vz-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 34%}
+.vz-team .av{position:absolute;width:46%;aspect-ratio:1;border-radius:50%;overflow:hidden;background:var(--gold)}
+.vz-team .av img{position:absolute;left:0;top:6%;width:100%;height:100%;object-fit:cover}
+.vz-team .av:nth-of-type(1){left:7%;top:7%}
+.vz-team .av:nth-of-type(2){right:6%;top:27%;background:var(--white)}
+.vz-team .av:nth-of-type(3){left:17%;bottom:6%;background:var(--red)}
+.vz-team b{position:absolute;z-index:1;padding:5px 11px;border-radius:999px;background:var(--white);color:var(--ink);font-size:12px;font-weight:700;line-height:1.2;box-shadow:0 8px 18px -8px rgba(0,0,0,.5)}
+.vz-team b:nth-of-type(1){left:36%;top:5%}
+.vz-team b:nth-of-type(2){right:5%;top:61%}
+.vz-team b:nth-of-type(3){left:8%;bottom:9%}
+.vz-trip{background:var(--gold)}
+.vz-trip img{position:absolute;object-fit:cover;border:6px solid var(--white);border-radius:14px;box-shadow:0 18px 30px -16px rgba(14,35,45,.6)}
+.vz-trip img:nth-child(1){left:7%;top:7%;width:56%;height:52%;transform:rotate(-6deg)}
+.vz-trip img:nth-child(2){right:6%;top:24%;width:50%;height:46%;transform:rotate(5deg)}
+.vz-trip img:nth-child(3){left:18%;bottom:6%;width:54%;height:36%;transform:rotate(-2deg)}
+.vz-seal{background:var(--white);box-shadow:inset 0 0 0 1px var(--line);display:grid;place-items:center}
+.vz-seal svg{width:auto;height:76%;max-width:80%;color:var(--red);transform:rotate(-10deg)}
+@container (min-aspect-ratio:5/4){
+  .vz-team .av{width:auto;height:58%}
+  .vz-team .av:nth-of-type(1){left:5%;top:10%}
+  .vz-team .av:nth-of-type(2){left:50%;right:auto;top:30%;transform:translateX(-50%)}
+  .vz-team .av:nth-of-type(3){left:auto;right:5%;bottom:auto;top:10%}
+  .vz-team b:nth-of-type(1){left:6%;top:auto;bottom:9%}
+  .vz-team b:nth-of-type(2){left:50%;right:auto;top:8%;transform:translateX(-50%)}
+  .vz-team b:nth-of-type(3){left:auto;right:6%;bottom:9%}
+  .vz-trip img:nth-child(1){left:4%;top:11%;width:35%;height:78%}
+  .vz-trip img:nth-child(2){left:32.5%;right:auto;top:15%;width:35%;height:74%}
+  .vz-trip img:nth-child(3){left:auto;right:4%;bottom:auto;top:10%;width:35%;height:77%}
+}
+
+/* ============================================================
+   OPCIÓN G — LISTA CON IMAGEN QUE SIGUE AL MOUSE
+   Cuatro renglones enormes. Al pasar por uno se abre su explicación
+   y aparece una pieza visual que sigue al cursor. En el celular cada
+   renglón se abre al tocarlo, con su pieza adentro.
+   ============================================================ */
+.dmG{background:var(--white)}
+.dmG-head{display:grid;gap:32px;margin-bottom:44px}
+.dmG-head .h2{max-width:17ch}
+.dmG-list{border-bottom:1px solid var(--line)}
+.dmG-list li{border-top:1px solid var(--line)}
+.dmG-list h3{font:inherit}
+.dmG-list button{display:grid;grid-template-columns:auto 1fr auto;align-items:baseline;gap:14px;width:100%;padding:22px 0;text-align:left;color:var(--ink-3);transition:color .5s var(--ease)}
+.dmG-list .n{font-size:12px;font-weight:700;letter-spacing:.16em;font-variant-numeric:tabular-nums;transition:color .5s var(--ease)}
+.dmG-list .t{font-size:clamp(25px,6.6vw,34px);font-weight:700;letter-spacing:-.035em;line-height:1.06;transition:transform .8s var(--ease)}
+.dmG-list .ar{align-self:center;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;color:var(--ink);box-shadow:inset 0 0 0 1px rgba(14,35,45,.2);transition:transform .7s var(--ease),background .5s var(--ease),color .4s,box-shadow .4s}
+.dmG-list .ar svg{width:13px;height:13px}
+.dmG-list li.on button{color:var(--ink)}
+.dmG-list li.on .n{color:var(--red)}
+.dmG-list li.on .ar{background:var(--red);color:#fff;box-shadow:inset 0 0 0 1px var(--red);transform:rotate(90deg)}
+.dmG-list .d{display:grid;grid-template-rows:0fr;transition:grid-template-rows .8s var(--ease)}
+.dmG-list .d>div{min-height:0;overflow:hidden}
+.dmG-list li.on .d{grid-template-rows:1fr}
+.dmG-list .d p{padding:0 0 26px;font-size:17px;line-height:1.6;color:var(--ink-2);max-width:52ch}
+.dmG-list .vz{height:230px;margin-bottom:18px}
+@media(min-width:1024px){
+  .dmG-head{grid-template-columns:1fr auto;align-items:end;gap:64px;margin-bottom:clamp(40px,6vh,64px)}
+  .dmG-list button{grid-template-columns:clamp(70px,8vw,120px) 1fr auto;gap:0 28px;padding:clamp(20px,3.2vh,32px) 0;cursor:default}
+  .dmG-list .n{font-size:13px}
+  .dmG-list .t{font-size:clamp(32px,4vw,62px)}
+  .dmG-list li.on .t{transform:translateX(14px)}
+  .dmG-list .ar{width:44px;height:44px;opacity:0;transform:translateX(-14px)}
+  .dmG-list .ar svg{width:16px;height:16px}
+  .dmG-list li.on .ar{opacity:1;transform:none}
+  .dmG-list .d p{padding:0 0 clamp(22px,3.4vh,34px) calc(clamp(70px,8vw,120px) + 42px);font-size:clamp(17px,1.35vw,20px)}
+}
+@media(min-width:1024px) and (hover:hover) and (pointer:fine){
+  /* la pieza visual sale del renglón y sigue al cursor */
+  .dmG-list .vz{position:fixed;left:0;top:0;z-index:20;width:clamp(240px,21vw,310px);height:clamp(300px,27vw,390px);margin:0;pointer-events:none;opacity:0;transform:translate3d(var(--fx,0px),var(--fy,0px),0) rotate(var(--fr,0deg)) scale(.82);transition:opacity .35s var(--ease);box-shadow:0 40px 70px -30px rgba(14,35,45,.6);will-change:transform}
+  .dmG-list.hot li.on .vz{opacity:1;transform:translate3d(var(--fx,0px),var(--fy,0px),0) rotate(var(--fr,0deg)) scale(1);transition:opacity .5s var(--ease)}
+}
+
+/* ============================================================
+   OPCIÓN H — RECORRIDO HORIZONTAL
+   La sección queda fija y, al scrollear, los cuatro paneles pasan de
+   costado, cada uno con su pieza visual y un leve desfase entre el
+   número y la imagen. Con movimiento reducido son paneles apilados.
+   ============================================================ */
+.dmH{padding:112px 0}
+.dmH-head{display:grid;gap:28px;margin-bottom:40px}
+.dmH-head .h2{max-width:18ch}
+.dmH-track{display:grid;gap:14px}
+.dmH-track li{display:grid;gap:22px;padding:22px;border-radius:var(--r-lg);background:var(--white);color:var(--ink);overflow:hidden}
+.dmH-track .vz{height:200px;border-radius:var(--r-md)}
+.dmH-track .n{display:block;font-size:clamp(84px,22vw,120px);font-weight:300;font-style:italic;letter-spacing:-.06em;line-height:.8;color:var(--red);font-variant-numeric:tabular-nums;margin:0 0 20px -.04em}
+.dmH-track h3{font-size:clamp(24px,2.6vw,38px);font-weight:700;letter-spacing:-.03em;line-height:1.06;text-wrap:balance}
+.dmH-track p{margin-top:12px;font-size:clamp(16px,1.2vw,18px);line-height:1.55;color:var(--ink-2);max-width:46ch}
+.dmH-bar{display:none}
+@media(min-width:1024px){
+  .dmH{padding:168px 0}
+  .dmH-head{grid-template-columns:1fr auto;align-items:end;gap:64px;margin-bottom:56px}
+  .dmH-track li{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,3vw,48px);padding:clamp(24px,2.6vw,40px);min-height:420px}
+  .dmH-track .tx{display:flex;flex-direction:column;justify-content:space-between}
+  .dmH-track .vz{height:auto;order:2;border-radius:var(--r-lg)}
+  .dmH-track .n{font-size:clamp(110px,11vw,170px)}
+}
+/* modo fijo (lo activa el JS) */
+.dmH.pin{padding:0}
+.dmH.pin .dmH-stage{position:sticky;top:0;height:100vh;height:100svh;display:flex;flex-direction:column;justify-content:center;gap:clamp(16px,3vh,36px);padding:calc(var(--nav-h) + clamp(12px,2.4vh,28px)) 0 clamp(18px,3.4vh,40px);overflow:hidden}
+.dmH.pin .dmH-stage>.wrap{width:100%}
+.dmH.pin .dmH-head{margin-bottom:0;gap:16px}
+.dmH.pin .dmH-head .h2{font-size:clamp(28px,min(3.4vw,6.2vh),52px);max-width:22ch}
+.dmH.pin .dmH-track{display:flex;gap:16px;width:max-content;padding:0 var(--pad);transform:translate3d(var(--x,0px),0,0);will-change:transform}
+.dmH.pin .dmH-track li{flex:none;width:min(84vw,340px);height:clamp(380px,56vh,460px);align-content:start}
+.dmH.pin .dmH-track .vz{order:-1;height:150px;transform:translate3d(calc(var(--px,0)*26px),0,0)}
+.dmH.pin .dmH-track .n{margin-bottom:14px;font-size:clamp(72px,18vw,96px);transform:translate3d(calc(var(--px,0)*-36px),0,0)}
+.dmH.pin .dmH-bar{display:flex;align-items:center;gap:16px;font-size:12px;font-weight:700;letter-spacing:.16em;color:rgba(255,255,255,.72);font-variant-numeric:tabular-nums}
+.dmH.pin .dmH-bar .line{position:relative;flex:1;height:2px;border-radius:2px;background:rgba(255,255,255,.2);overflow:hidden}
+.dmH.pin .dmH-bar .line i{position:absolute;inset:0;background:var(--gold);transform-origin:left;transform:scaleX(var(--p,0))}
+@media(min-width:1024px){
+  .dmH.pin .dmH-head{grid-template-columns:1fr auto;align-items:end}
+  .dmH.pin .dmH-track{gap:20px}
+  .dmH.pin .dmH-track li{width:clamp(620px,62vw,900px);height:clamp(300px,calc(100vh - var(--nav-h) - 260px),560px);min-height:0;align-content:stretch}
+  .dmH.pin .dmH-track .vz{order:2;height:auto;transform:translate3d(calc(var(--px,0)*46px),0,0)}
+  .dmH.pin .dmH-track .n{font-size:clamp(96px,min(11vw,20vh),170px);transform:translate3d(calc(var(--px,0)*-70px),0,0)}
+}
+
+/* ============================================================
+   OPCIÓN I — SELLOS
+   Objeto: cuatro sellos de tinta sobre una hoja. Caen uno por uno al
+   entrar en pantalla; al pasar el mouse o tocar un sello se entinta,
+   su leyenda gira y la explicación aparece al lado.
+   ============================================================ */
+.dmI{background:var(--white);overflow:hidden}
+.dmI-grid{display:grid;gap:32px}
+.dmI-grid>div:first-child{display:contents}
+.dmI-grid .h2{order:1}
+.dmI-sheet{order:2}
+.dmI-pans{order:3}
+.dmI-cta{order:4}
+.dmI .h2{max-width:17ch}
+.dmI-cta{margin-top:0}
+.dmI-pans{display:grid;margin-top:0}
+.dmI-pans .pan{grid-area:1/1;opacity:0;visibility:hidden;transform:translateY(16px);transition:opacity .35s var(--ease),transform .35s var(--ease),visibility 0s linear .35s}
+.dmI-pans .pan.on{opacity:1;visibility:visible;transform:none;transition:opacity .8s var(--ease) .1s,transform .9s var(--ease) .1s,visibility 0s}
+.dmI-pans .n{display:block;font-size:12px;font-weight:700;letter-spacing:.16em;color:var(--red);font-variant-numeric:tabular-nums;margin-bottom:14px}
+.dmI-pans h3{font-size:clamp(26px,3vw,44px);font-weight:700;letter-spacing:-.03em;line-height:1.06;text-wrap:balance}
+.dmI-pans p{margin-top:14px;font-size:clamp(16px,1.3vw,19px);line-height:1.58;color:var(--ink-2);max-width:48ch}
+.dmI-sheet{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:clamp(10px,2vw,28px);padding:clamp(18px,3vw,44px);border-radius:var(--r-lg);background:#fff radial-gradient(rgba(14,35,45,.13) 1px,transparent 1.4px) 0 0/18px 18px;box-shadow:inset 0 0 0 1px var(--line)}
+.dmI-st{position:relative;display:grid;place-items:center;aspect-ratio:1;border-radius:50%;color:var(--c);opacity:0;transform:rotate(var(--r)) scale(1.9);-webkit-tap-highlight-color:transparent}
+.dmI-st::before{content:'';position:absolute;inset:6%;border-radius:50%;background:var(--c);opacity:0;transform:scale(.6);transition:opacity .6s var(--ease),transform .8s var(--ease)}
+.dmI-st svg{position:relative;width:100%;height:auto;overflow:visible;transition:transform .7s var(--ease)}
+.dmI-st .ring{transform-origin:100px 100px}
+.dmI-st:nth-child(1){--c:var(--red);--r:-8deg}
+.dmI-st:nth-child(2){--c:var(--bur);--r:6deg}
+.dmI-st:nth-child(3){--c:var(--ink);--r:-4deg}
+.dmI-st:nth-child(4){--c:var(--red);--r:9deg}
+.dmI-sheet.in .dmI-st{animation:dmIstamp .46s cubic-bezier(.2,.8,.3,1.22) forwards;animation-delay:calc(var(--i)*.16s + .1s)}
+@keyframes dmIstamp{to{opacity:1;transform:rotate(var(--r)) scale(1)}}
+@keyframes dmIspin{to{transform:rotate(360deg)}}
+.dmI-st.on::before{opacity:.1;transform:none}
+.dmI-st.on svg{transform:scale(1.05)}
+.dmI-st.on .ring{animation:dmIspin 26s linear infinite}
+.dmI-st:active svg{transform:scale(.93)}
+@media(min-width:1024px){
+  .dmI-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(48px,6vw,112px);align-items:center}
+  .dmI-grid>div:first-child{display:block}
+  .dmI-pans{margin-top:clamp(36px,6vh,64px)}
+  .dmI-cta{margin-top:36px}
+}
+@media(prefers-reduced-motion:reduce){
+  .dmI-st{opacity:1;transform:rotate(var(--r))}
+  .dmI-st.on .ring{animation:none}
+}
+</style>
+</head>
+<body>
+
+<div class="sr-top"><div class="wrap"><b>Showroom · Tanda 1 · con movimiento</b><span>Sección Por qué Legend — tres opciones con objetos, fotos y animación (G, H, I). Para comparar: <a href="_showroom-por-que-legend.html">interactivas (A, B, C)</a> · <a href="_showroom-por-que-legend-estaticas.html">sin interacción (D, E, F)</a>.</span></div></div>
+
+<!-- ============================ OPCIÓN G ============================ -->
+<div class="opt" id="g">
+  <div class="optbar"><div class="wrap">
+    <span class="lbl">OPCIÓN G</span>
+    <span class="con"><b>G — Lista con imagen que sigue al mouse</b><i>Interacción: al pasar por un renglón se abre y aparece su imagen siguiendo al cursor. En el celular se abre al tocarlo.</i></span>
+    <nav class="jump" aria-label="Opciones"><a class="is" href="_showroom-por-que-legend-movimiento.html#g">G</a><a href="_showroom-por-que-legend-movimiento.html#h">H</a><a href="_showroom-por-que-legend-movimiento.html#i">I</a></nav>
+  </div></div>
+
+  <section class="sec dmG" data-variant="G">
+    <div class="wrap">
+      <div class="dmG-head">
+        <h2 class="h2 md rv">Lo que nos diferencia no es lo que decimos, <em>es lo que hacemos.</em></h2>
+        <div class="rv" style="--d:120ms">
+          <a class="btn" data-magnet href="viajes-a-medida/">Conocé cómo trabajamos <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></a>
+        </div>
+      </div>
+      <ol class="dmG-list rv" style="--d:160ms" id="dmG">
+        <li class="on">
+          <h3><button type="button" aria-expanded="true" aria-controls="dmG-1"><span class="n">01</span><span class="t">En 1991 arrancamos. Nunca paramos.</span><i class="ar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></button></h3>
+          <div class="d" id="dmG-1"><div>
+            <span class="vz vz-photo" aria-hidden="true"><img src="_showroom-img/equipo-local.webp" alt="" loading="lazy" decoding="async"></span>
+            <p>Tres décadas de viajes, de clientes que vuelven y de destinos que conocemos de verdad.</p>
+          </div></div>
+        </li>
+        <li>
+          <h3><button type="button" aria-expanded="false" aria-controls="dmG-2"><span class="n">02</span><span class="t">Atención humana, siempre</span><i class="ar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></button></h3>
+          <div class="d" id="dmG-2"><div>
+            <span class="vz vz-team" aria-hidden="true">
+              <span class="av"><img src="equipo/carolina.png" alt="" loading="lazy" decoding="async"></span><span class="av"><img src="equipo/pilar.png" alt="" loading="lazy" decoding="async"></span><span class="av"><img src="equipo/lujan.png" alt="" loading="lazy" decoding="async"></span>
+              <b>Carolina</b><b>Pilar</b><b>Luján</b>
+            </span>
+            <p>Una asesora real con nombre y apellido te acompaña de principio a fin. Nada de bots, nada de formularios, nada de esperas.</p>
+          </div></div>
+        </li>
+        <li>
+          <h3><button type="button" aria-expanded="false" aria-controls="dmG-3"><span class="n">03</span><span class="t">Tu viaje, a tu medida</span><i class="ar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></button></h3>
+          <div class="d" id="dmG-3"><div>
+            <span class="vz vz-trip" aria-hidden="true"><img src="https://images.pexels.com/photos/30447886/pexels-photo-30447886.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" loading="lazy" decoding="async"><img src="https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" loading="lazy" decoding="async"><img src="https://images.pexels.com/photos/889954/pexels-photo-889954.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" loading="lazy" decoding="async"></span>
+            <p>Nos contás la idea y la convertimos en un itinerario completo, ajustado a tu ritmo y presupuesto exacto. Sin moldes, sin paquetes genéricos.</p>
+          </div></div>
+        </li>
+        <li>
+          <h3><button type="button" aria-expanded="false" aria-controls="dmG-4"><span class="n">04</span><span class="t">Respaldo y confianza</span><i class="ar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></button></h3>
+          <div class="d" id="dmG-4"><div>
+            <span class="vz vz-seal" aria-hidden="true"><svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="95" stroke="currentColor" stroke-width="4"/><circle cx="100" cy="100" r="60" stroke="currentColor" stroke-width="2"/><defs><path id="dmG-arc" d="M100 100m-76 0a76 76 0 1 1 152 0a76 76 0 1 1 -152 0"/></defs><text fill="currentColor" font-family="Satoshi,system-ui,sans-serif" font-size="15" font-weight="700"><textPath href="#dmG-arc" textLength="470" lengthAdjust="spacing">MINISTERIO DE TURISMO · GRUPO GEA ·</textPath></text><text x="100" y="92" text-anchor="middle" fill="currentColor" font-family="Satoshi,system-ui,sans-serif" font-size="13" font-weight="700" letter-spacing="3">LEGAJO</text><text x="100" y="128" text-anchor="middle" fill="currentColor" font-family="Satoshi,system-ui,sans-serif" font-size="36" font-weight="700" letter-spacing="-1">7553</text></svg></span>
+            <p>Agencia habilitada por el Ministerio de Turismo (legajo 7553), miembros del Grupo GEA. Treinta años de clientes que vuelven no son un slogan.</p>
+          </div></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+</div>
+
+<!-- ============================ OPCIÓN H ============================ -->
+<div class="opt" id="h">
+  <div class="optbar"><div class="wrap">
+    <span class="lbl">OPCIÓN H</span>
+    <span class="con"><b>H — Recorrido horizontal</b><i>Interacción: la sección queda fija y, al scrollear, los cuatro paneles pasan de costado con sus fotos.</i></span>
+    <nav class="jump" aria-label="Opciones"><a href="_showroom-por-que-legend-movimiento.html#g">G</a><a class="is" href="_showroom-por-que-legend-movimiento.html#h">H</a><a href="_showroom-por-que-legend-movimiento.html#i">I</a></nav>
+  </div></div>
+
+  <section class="dark dmH" data-variant="H" id="dmH">
+    <div class="dmH-stage">
+      <div class="wrap">
+        <div class="dmH-head">
+          <h2 class="h2 md">Lo que nos diferencia no es lo que decimos, <em>es lo que hacemos.</em></h2>
+          <div>
+            <a class="btn light" data-magnet href="viajes-a-medida/">Conocé cómo trabajamos <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="dmH-rail">
+        <ol class="dmH-track" id="dmH-track">
+          <li>
+            <div class="tx"><span class="n">01</span><div><h3>En 1991 arrancamos. Nunca paramos.</h3><p>Tres décadas de viajes, de clientes que vuelven y de destinos que conocemos de verdad.</p></div></div>
+            <span class="vz vz-photo" aria-hidden="true"><img src="_showroom-img/equipo-local.webp" alt="" loading="lazy" decoding="async"></span>
+          </li>
+          <li>
+            <div class="tx"><span class="n">02</span><div><h3>Atención humana, siempre</h3><p>Una asesora real con nombre y apellido te acompaña de principio a fin. Nada de bots, nada de formularios, nada de esperas.</p></div></div>
+            <span class="vz vz-team" aria-hidden="true">
+              <span class="av"><img src="equipo/carolina.png" alt="" loading="lazy" decoding="async"></span><span class="av"><img src="equipo/pilar.png" alt="" loading="lazy" decoding="async"></span><span class="av"><img src="equipo/lujan.png" alt="" loading="lazy" decoding="async"></span>
+              <b>Carolina</b><b>Pilar</b><b>Luján</b>
+            </span>
+          </li>
+          <li>
+            <div class="tx"><span class="n">03</span><div><h3>Tu viaje, a tu medida</h3><p>Nos contás la idea y la convertimos en un itinerario completo, ajustado a tu ritmo y presupuesto exacto. Sin moldes, sin paquetes genéricos.</p></div></div>
+            <span class="vz vz-trip" aria-hidden="true"><img src="https://images.pexels.com/photos/30447886/pexels-photo-30447886.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" loading="lazy" decoding="async"><img src="https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" loading="lazy" decoding="async"><img src="https://images.pexels.com/photos/889954/pexels-photo-889954.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" loading="lazy" decoding="async"></span>
+          </li>
+          <li>
+            <div class="tx"><span class="n">04</span><div><h3>Respaldo y confianza</h3><p>Agencia habilitada por el Ministerio de Turismo (legajo 7553), miembros del Grupo GEA. Treinta años de clientes que vuelven no son un slogan.</p></div></div>
+            <span class="vz vz-seal" aria-hidden="true"><svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="95" stroke="currentColor" stroke-width="4"/><circle cx="100" cy="100" r="60" stroke="currentColor" stroke-width="2"/><defs><path id="dmH-arc" d="M100 100m-76 0a76 76 0 1 1 152 0a76 76 0 1 1 -152 0"/></defs><text fill="currentColor" font-family="Satoshi,system-ui,sans-serif" font-size="15" font-weight="700"><textPath href="#dmH-arc" textLength="470" lengthAdjust="spacing">MINISTERIO DE TURISMO · GRUPO GEA ·</textPath></text><text x="100" y="92" text-anchor="middle" fill="currentColor" font-family="Satoshi,system-ui,sans-serif" font-size="13" font-weight="700" letter-spacing="3">LEGAJO</text><text x="100" y="128" text-anchor="middle" fill="currentColor" font-family="Satoshi,system-ui,sans-serif" font-size="36" font-weight="700" letter-spacing="-1">7553</text></svg></span>
+          </li>
+        </ol>
+      </div>
+      <div class="wrap">
+        <div class="dmH-bar" aria-hidden="true"><span id="dmH-num">01</span><span class="line"><i></i></span><span>04</span></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================ OPCIÓN I ============================ -->
+<div class="opt" id="i">
+  <div class="optbar"><div class="wrap">
+    <span class="lbl">OPCIÓN I</span>
+    <span class="con"><b>I — Sellos</b><i>Interacción: los cuatro sellos caen al entrar en pantalla. Al pasar el mouse o tocar uno, se entinta y muestra su explicación.</i></span>
+    <nav class="jump" aria-label="Opciones"><a href="_showroom-por-que-legend-movimiento.html#g">G</a><a href="_showroom-por-que-legend-movimiento.html#h">H</a><a class="is" href="_showroom-por-que-legend-movimiento.html#i">I</a></nav>
+  </div></div>
+
+  <section class="sec dmI" data-variant="I">
+    <div class="wrap">
+      <div class="dmI-grid">
+        <div>
+          <h2 class="h2 md rv">Lo que nos diferencia no es lo que decimos, <em>es lo que hacemos.</em></h2>
+          <div class="dmI-pans rv" style="--d:120ms" id="dmI-pans">
+            <div class="pan on" id="dmI-p1"><span class="n">01</span><h3>En 1991 arrancamos. Nunca paramos.</h3><p>Tres décadas de viajes, de clientes que vuelven y de destinos que conocemos de verdad.</p></div>
+            <div class="pan" id="dmI-p2" aria-hidden="true"><span class="n">02</span><h3>Atención humana, siempre</h3><p>Una asesora real con nombre y apellido te acompaña de principio a fin. Nada de bots, nada de formularios, nada de esperas.</p></div>
+            <div class="pan" id="dmI-p3" aria-hidden="true"><span class="n">03</span><h3>Tu viaje, a tu medida</h3><p>Nos contás la idea y la convertimos en un itinerario completo, ajustado a tu ritmo y presupuesto exacto. Sin moldes, sin paquetes genéricos.</p></div>
+            <div class="pan" id="dmI-p4" aria-hidden="true"><span class="n">04</span><h3>Respaldo y confianza</h3><p>Agencia habilitada por el Ministerio de Turismo (legajo 7553), miembros del Grupo GEA. Treinta años de clientes que vuelven no son un slogan.</p></div>
+          </div>
+          <div class="dmI-cta rv" style="--d:200ms">
+            <a class="btn" data-magnet href="viajes-a-medida/">Conocé cómo trabajamos <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></a>
+          </div>
+        </div>
+        <div class="dmI-sheet" id="dmI">
+          <button type="button" class="dmI-st on" style="--i:0" aria-controls="dmI-p1" aria-pressed="true" aria-label="01"><svg viewBox="0 0 200 200" fill="none" aria-hidden="true"><circle cx="100" cy="100" r="96" stroke="currentColor" stroke-width="4"/><circle cx="100" cy="100" r="62" stroke="currentColor" stroke-width="2"/><defs><path id="dmI-a1" d="M100 100m-77 0a77 77 0 1 1 154 0a77 77 0 1 1 -154 0"/></defs><text class="ring" fill="currentColor" font-family="Satoshi,system-ui,sans-serif" font-size="14" font-weight="700"><textPath href="#dmI-a1" textLength="476" lengthAdjust="spacing">EN 1991 ARRANCAMOS · NUNCA PARAMOS ·</textPath></text><text x="97" y="124" text-anchor="middle" fill="currentColor" font-family="Satoshi,system-ui,sans-serif" font-size="68" font-weight="300" font-style="italic" letter-spacing="-4">01</text></svg></button>
+          <button type="button" class="dmI-st" style="--i:1" aria-controls="dmI-p2" aria-pressed="false" aria-label="02"><svg viewBox="0 0 200 200" fill="none" aria-hidden="true"><circle cx="100" cy="100" r="96" stroke="currentColor" stroke-width="4"/><circle cx="100" cy="100" r="88" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 6"/><circle cx="100" cy="100" r="60" stroke="currentColor" stroke-width="2"/><defs><path id="dmI-a2" d="M100 100m-74 0a74 74 0 1 1 148 0a74 74 0 1 1 -148 0"/></defs><text class="ring" fill="currentColor" font-family="Satoshi,system-ui,sans-serif" font-size="13" font-weight="700"><textPath href="#dmI-a2" textLength="458" lengthAdjust="spacing">ATENCIÓN HUMANA, SIEMPRE · ATENCIÓN HUMANA, SIEMPRE ·</textPath></text><text x="97" y="124" text-anchor="middle" fill="currentColor" font-family="Satoshi,system-ui,sans-serif" font-size="68" font-weight="300" font-style="italic" letter-spacing="-4">02</text></svg></button>
+          <button type="button" class="dmI-st" style="--i:2" aria-controls="dmI-p3" aria-pressed="false" aria-label="03"><svg viewBox="0 0 200 200" fill="none" aria-hidden="true"><circle cx="100" cy="100" r="96" stroke="currentColor" stroke-width="2"/><circle cx="100" cy="100" r="90" stroke="currentColor" stroke-width="4"/><circle cx="100" cy="100" r="60" stroke="currentColor" stroke-width="2"/><defs><path id="dmI-a3" d="M100 100m-74 0a74 74 0 1 1 148 0a74 74 0 1 1 -148 0"/></defs><text class="ring" fill="currentColor" font-family="Satoshi,system-ui,sans-serif" font-size="13" font-weight="700"><textPath href="#dmI-a3" textLength="458" lengthAdjust="spacing">TU VIAJE, A TU MEDIDA · TU VIAJE, A TU MEDIDA ·</textPath></text><text x="97" y="124" text-anchor="middle" fill="currentColor" font-family="Satoshi,system-ui,sans-serif" font-size="68" font-weight="300" font-style="italic" letter-spacing="-4">03</text></svg></button>
+          <button type="button" class="dmI-st" style="--i:3" aria-controls="dmI-p4" aria-pressed="false" aria-label="04"><svg viewBox="0 0 200 200" fill="none" aria-hidden="true"><circle cx="100" cy="100" r="96" stroke="currentColor" stroke-width="4"/><circle cx="100" cy="100" r="62" stroke="currentColor" stroke-width="2"/><circle cx="100" cy="100" r="56" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 5"/><defs><path id="dmI-a4" d="M100 100m-77 0a77 77 0 1 1 154 0a77 77 0 1 1 -154 0"/></defs><text class="ring" fill="currentColor" font-family="Satoshi,system-ui,sans-serif" font-size="13" font-weight="700"><textPath href="#dmI-a4" textLength="476" lengthAdjust="spacing">RESPALDO Y CONFIANZA · LEGAJO 7553 · GRUPO GEA ·</textPath></text><text x="97" y="124" text-anchor="middle" fill="currentColor" font-family="Satoshi,system-ui,sans-serif" font-size="68" font-weight="300" font-style="italic" letter-spacing="-4">04</text></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="sr-end"><div class="wrap">Fin del showroom de Por qué Legend con movimiento. El otro de este grupo: <a href="_showroom-paquetes-movimiento.html" style="color:var(--gold);font-weight:700">Paquetes con movimiento</a>.</div></div>
+
+<script>
+(function(){
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hoverFine=window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  var hasIO='IntersectionObserver' in window;
+  function clamp(v,a,b){return v<a?a:v>b?b:v}
+
+  /* ---------- base de la home: reveal y CTAs magnéticos ---------- */
+  var rvs=document.querySelectorAll('.rv');
+  if(hasIO&&!reduce){
+    var obs=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}});
+    },{threshold:.1,rootMargin:'0px 0px -8% 0px'});
+    rvs.forEach(function(el){obs.observe(el)});
+  }else{rvs.forEach(function(el){el.classList.add('in')})}
+  if(hoverFine&&!reduce){
+    document.querySelectorAll('[data-magnet]').forEach(function(b){
+      var raf=null,tx=0,ty=0;
+      function paint(){b.style.transform='translate('+tx+'px,'+ty+'px)';raf=null}
+      b.addEventListener('pointermove',function(e){
+        var r=b.getBoundingClientRect();
+        tx=(e.clientX-(r.left+r.width/2))*.22;
+        ty=(e.clientY-(r.top+r.height/2))*.3;
+        if(!raf)raf=requestAnimationFrame(paint);
+      });
+      b.addEventListener('pointerleave',function(){tx=0;ty=0;if(!raf)raf=requestAnimationFrame(paint)});
+    });
+  }
+
+  /* ---------- OPCIÓN G: lista + imagen que sigue al cursor ---------- */
+  (function(){
+    var list=document.getElementById('dmG');if(!list)return;
+    var items=[].slice.call(list.children);
+    function pick(li){
+      items.forEach(function(x){var on=x===li;x.classList.toggle('on',on);x.querySelector('button').setAttribute('aria-expanded',on)});
+    }
+    items.forEach(function(li){
+      var b=li.querySelector('button');
+      b.addEventListener('click',function(){pick(li)});
+      b.addEventListener('focus',function(){pick(li)});
+      if(hoverFine)li.addEventListener('pointerenter',function(){pick(li)});
+    });
+    if(!hoverFine||reduce)return;
+    /* la imagen persigue al cursor con un poco de retraso y se ladea según la velocidad */
+    var tx=0,ty=0,x=0,y=0,r=0,raf=null,first=true;
+    function loop(){
+      var dx=tx-x,dy=ty-y;
+      x+=dx*.14;y+=dy*.14;r+=(clamp(dx*.09,-9,9)-r)*.16;
+      list.style.setProperty('--fx',x.toFixed(1)+'px');list.style.setProperty('--fy',y.toFixed(1)+'px');list.style.setProperty('--fr',r.toFixed(2)+'deg');
+      raf=(Math.abs(dx)>.3||Math.abs(dy)>.3||Math.abs(r)>.05)?requestAnimationFrame(loop):null;
+    }
+    list.addEventListener('pointermove',function(e){
+      var v=list.querySelector('li.on .vz'),w=v?v.offsetWidth:300,h=v?v.offsetHeight:380;
+      tx=Math.min(e.clientX+34,window.innerWidth-w-16);
+      ty=clamp(e.clientY-h*.55,112,window.innerHeight-h-16);
+      if(first){x=tx;y=ty;first=false}
+      list.classList.add('hot');
+      if(!raf)raf=requestAnimationFrame(loop);
+    });
+    list.addEventListener('pointerleave',function(){list.classList.remove('hot');first=true});
+  })();
+
+  /* ---------- OPCIÓN H: recorrido horizontal con la sección fija ---------- */
+  (function(){
+    var sec=document.getElementById('dmH');if(!sec||reduce)return;
+    if(!(window.CSS&&CSS.supports&&CSS.supports('position','sticky')))return;
+    var stage=sec.querySelector('.dmH-stage'),track=document.getElementById('dmH-track'),panels=[].slice.call(track.children),num=document.getElementById('dmH-num');
+    var travel=0,raf=null,vivo=false,cur=-1;
+    sec.classList.add('pin');
+    function measure(){
+      var w=sec.querySelector('.wrap'),cs=getComputedStyle(w),pad=w.getBoundingClientRect().left+parseFloat(cs.paddingLeft);
+      track.style.setProperty('--pad',pad+'px');
+      travel=Math.max(0,track.scrollWidth-window.innerWidth);
+      sec.style.height=(stage.offsetHeight+travel)+'px';
+    }
+    function paint(){
+      raf=null;
+      var range=sec.offsetHeight-stage.offsetHeight,p=range>0?clamp(-sec.getBoundingClientRect().top/range,0,1):0;
+      track.style.setProperty('--x',(-p*travel).toFixed(1)+'px');
+      sec.style.setProperty('--p',p.toFixed(3));
+      var vw=window.innerWidth,best=0,bd=1e9;
+      panels.forEach(function(li,i){
+        var r=li.getBoundingClientRect(),c=(r.left+r.width/2-vw/2)/vw;
+        li.style.setProperty('--px',clamp(c,-1.2,1.2).toFixed(3));
+        if(Math.abs(c)<bd){bd=Math.abs(c);best=i}
+      });
+      if(best!==cur){cur=best;num.textContent='0'+(best+1)}
+    }
+    function ask(){if(vivo&&!raf)raf=requestAnimationFrame(paint)}
+    window.addEventListener('scroll',ask,{passive:true});
+    window.addEventListener('resize',function(){measure();paint()});
+    if(hasIO)new IntersectionObserver(function(es){vivo=es[0].isIntersecting;ask()},{rootMargin:'10% 0px 10% 0px'}).observe(sec);else vivo=true;
+    if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){measure();paint()});
+    window.addEventListener('load',function(){measure();paint()});
+    measure();paint();
+  })();
+
+  /* ---------- OPCIÓN I: sellos ---------- */
+  (function(){
+    var sheet=document.getElementById('dmI');if(!sheet)return;
+    var sts=[].slice.call(sheet.querySelectorAll('.dmI-st')),pans=[].slice.call(document.querySelectorAll('#dmI-pans .pan'));
+    function pick(i){
+      sts.forEach(function(s,k){s.classList.toggle('on',k===i);s.setAttribute('aria-pressed',k===i)});
+      pans.forEach(function(p,k){p.classList.toggle('on',k===i);if(k===i)p.removeAttribute('aria-hidden');else p.setAttribute('aria-hidden','true')});
+    }
+    sts.forEach(function(s,i){
+      s.addEventListener('click',function(){pick(i)});
+      s.addEventListener('focus',function(){pick(i)});
+      if(hoverFine)s.addEventListener('pointerenter',function(){pick(i)});
+    });
+    /* los sellos caen cuando la hoja entra en pantalla */
+    if(hasIO&&!reduce)new IntersectionObserver(function(es,o){if(es[0].isIntersecting){sheet.classList.add('in');o.disconnect()}},{threshold:.35}).observe(sheet);
+    else sheet.classList.add('in');
+  })();
+})();
+</script>
+</body>
+</html>
