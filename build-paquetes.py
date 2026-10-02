@@ -657,7 +657,9 @@ def render_detalle(p, vig, plantilla, todos=()):
     # --- linea del hero ---
     partes = []
     if dests:
-        partes.append("<b>{}</b>".format(e(" &middot; ".join(dests[:4]))))
+        # se escapa cada destino por separado: escapar la cadena ya unida
+        # convertia el separador en texto literal ("&middot;")
+        partes.append("<b>{}</b>".format(" &middot; ".join(e(d) for d in dests[:4])))
     partes.append(e(noches_txt(p["noches"])))
     partes.append(e(p["salida"]))
     hero_linea = '<span class="sep">|</span>'.join(
