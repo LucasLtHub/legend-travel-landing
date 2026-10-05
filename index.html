@@ -428,8 +428,16 @@ footer{background:var(--white);color:var(--ink);padding:72px 0 28px}
 .fqH-typing i:nth-child(2){animation-delay:.2s}.fqH-typing i:nth-child(3){animation-delay:.4s}
 @keyframes fqHdots{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-4px);opacity:1}}
 @media(min-width:1024px){
-  .fqH-grid{grid-template-columns:5fr 7fr;gap:96px;align-items:start}
-  .fqH-head{position:sticky;top:calc(var(--nav-h) + 32px)}
+  /* una sola pantalla: la sección mide el alto de la ventana y la conversación se achica con la altura; si igual no entra, scrollea adentro */
+  .fqH{min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:calc(var(--nav-h) + clamp(12px,2.6vh,40px)) 0 clamp(16px,3vh,40px)}
+  .fqH>.wrap{width:100%}
+  .fqH .h2{font-size:clamp(34px,min(3.6vw,7vh),60px)}
+  .fqH-grid{grid-template-columns:5fr 7fr;gap:clamp(48px,6vw,96px);align-items:center}
+  .fqH-chat{gap:clamp(5px,.9vh,12px);max-width:none;max-height:calc(100svh - var(--nav-h) - clamp(28px,5.6vh,80px));overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.25) transparent;padding-right:6px}
+  .fqH-b{padding:clamp(6px,1.1vh,12px) clamp(12px,1.7vh,18px);max-width:92%}
+  .fqH-b.q .q{font-size:clamp(14px,1.8vh,17px)}
+  .fqH-b.a p{font-size:clamp(13px,1.65vh,15.5px);line-height:1.45}
+  .fqH-typing.on{padding:clamp(6px,1.1vh,12px) 16px}
 }
 @media(prefers-reduced-motion:reduce){.fqH-b{opacity:1;transform:none;transition:none}.fqH-typing{display:none}}
 
@@ -487,8 +495,17 @@ a.ci:hover .ci-v u{background-size:100% 1px}
 .ctH.in .ci:nth-child(3) .ci-ic svg path{animation:ctHclock 8s linear infinite}
 @keyframes ctHclock{to{transform:rotate(360deg)}}
 .ctH .ci-v{font-size:clamp(22px,1.9vw,30px)}
-.ctH-soc{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:40px;padding-top:28px;border-top:1px solid rgba(255,255,255,.12)}
-.ctH .so{padding:8px 0}
+.ctH-soc{display:grid;margin-top:40px;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+.ctH .so{padding:20px 0}
+.ctH .so+.so{border-top:1px solid rgba(255,255,255,.12)}
+@media(min-width:900px){
+  /* las tres redes ocupan todo el ancho, en tres columnas iguales separadas por líneas */
+  .ctH-soc{grid-template-columns:repeat(3,1fr)}
+  .ctH .so{padding:26px 40px}
+  .ctH .so:first-child{padding-left:0}
+  .ctH .so:last-child{padding-right:0}
+  .ctH .so+.so{border-top:0;border-left:1px solid rgba(255,255,255,.12)}
+}
 @media(min-width:1024px){
   .ctH{min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:calc(var(--nav-h) + clamp(12px,2.6vh,44px)) 0 clamp(16px,3.4vh,56px)}
   .ctH>.wrap{width:100%}
@@ -1415,9 +1432,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     function next(){
       if(i>=bs.length){typ.classList.remove('on');return}
       var b=bs[i];
-      if(b.classList.contains('a')){typ.classList.add('on');chat.appendChild(typ);setTimeout(function(){typ.classList.remove('on');b.classList.add('in');i++;setTimeout(next,500)},900)}
-      else{b.classList.add('in');i++;setTimeout(next,700)}
+      if(b.classList.contains('a')){typ.classList.add('on');chat.appendChild(typ);abajo();setTimeout(function(){typ.classList.remove('on');b.classList.add('in');i++;abajo();setTimeout(next,500)},900)}
+      else{b.classList.add('in');i++;abajo();setTimeout(next,700)}
     }
+    /* si la conversación scrollea adentro (pantallas bajas), sigue al último mensaje como un chat */
+    function abajo(){if(chat.scrollHeight>chat.clientHeight+4)chat.scrollTo({top:chat.scrollHeight,behavior:'smooth'})}
     new IntersectionObserver(function(es,io){if(es[0].isIntersecting&&!started){started=true;io.disconnect();setTimeout(next,300)}},{threshold:.2}).observe(chat);
   })();
 
