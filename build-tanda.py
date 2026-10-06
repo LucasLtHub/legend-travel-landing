@@ -65,7 +65,11 @@ FULL_DIRS = [
     "paquetes",
     "politica-de-privacidad",
     "terminos-y-condiciones",
+    "sorteo",       # campaña temporal (landing + sorteo-submit.php + data/ protegida); noindex, fuera del sitemap
 ]
+
+# Servicios que NO van al sitemap (páginas temporales con noindex)
+SITEMAP_EXCLUIR = ["sorteo"]
 
 # Las 12 madres: se copia SOLO index.html + logo-wordmark.png si existe.
 # Las subcarpetas (hijas/nietas) NO se copian.
@@ -528,6 +532,8 @@ def main():
     today = datetime.date.today().isoformat()
     sitemap_paths = ["/"]
     for d in FULL_DIRS:
+        if d in SITEMAP_EXCLUIR:
+            continue
         sitemap_paths.append(f"/{d}/")
         # Subpaginas generadas dentro de un servicio (hoy: paquetes/<id>/,
         # una por paquete activo). Se leen de lo que quedo COPIADO en la
@@ -621,6 +627,13 @@ def main():
     print(f"\n  Sub-madres NO incluidas en tanda 1 (para tu revisión):")
     for e in EXCLUIDAS_NOTA:
         print(f"    - {e}")
+
+    if "sorteo" in FULL_DIRS:
+        print("\n  Sorteo Río (campaña temporal, noindex, fuera del sitemap):")
+        print("    - /sorteo/ + sorteo/sorteo-submit.php publicados; el popup se apaga con SORTEO_ACTIVO=false en assets/sorteo.js")
+        print("    - Datos personales: el PHP guarda el CSV FUERA de public_html (../sorteo-data/) si el hosting lo permite;")
+        print("      si no, en sorteo/data/ (protegida con .htaccess 'Deny from all'). Verificar tras subir que")
+        print("      https://www.legendtravel.com.ar/sorteo/data/sorteo-rio-participantes.csv da 403.")
 
     print()
     return 1 if warnings else 0

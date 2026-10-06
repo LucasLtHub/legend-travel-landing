@@ -1,0 +1,5 @@
+# Datos personales del sorteo: esta carpeta nunca se sirve por URL.
+# (El PHP intenta primero guardar FUERA de public_html; esto cubre el caso
+#  en que el hosting no lo permita.)
+Require all denied
+Deny from all
