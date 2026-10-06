@@ -32,9 +32,7 @@ def sustituir(css, viejo, nuevo, nombre):
     return css.replace(viejo, nuevo, 1)
 
 def main():
-    v1 = git('HEAD:assets/design.css') or (ROOT / 'assets/design.css').read_text(encoding='utf-8')
-    if 'design.css v2' in v1[:400]:
-        v1 = git('0d4de2c:assets/design.css')  # última v1 conocida
+    v1 = git('d3f37ba:assets/design.css')  # última v1 commiteada (antes del lote 1 del v2)
     home = (ROOT / 'index.html').read_text(encoding='utf-8')
     hcss = home[home.index('<style>') + 7:home.index('</style>')]
     css = v1
@@ -177,9 +175,11 @@ def main():
 @media(prefers-reduced-motion:reduce){.chips{transform:none!important}.chip{color:#fff}.chip::before{background:var(--gold);border-color:var(--gold)}}
 
 /* ---------- preguntas frecuentes: conversación (FAQ H de la home) ---------- */
-.mx:has(>.faqwrap){display:grid;gap:40px}
-.mx:has(>.faqwrap)>.rv{margin-bottom:0!important;max-width:none!important}
-.faqwrap{max-width:640px;margin:0;display:grid;gap:clamp(10px,1.4vh,14px)}
+/* dos estructuras: servicios (.mx > título.rv + .faqwrap) y madres/hijas (.faqwrap > título.rv + .rv > .faq) */
+.mx:has(>.faqwrap),.faqwrap:has(>.rv>.faq){display:grid;gap:40px;max-width:none;margin:0}
+.mx:has(>.faqwrap)>.rv,.faqwrap:has(>.rv>.faq)>.rv:first-child{margin:0!important;max-width:none!important;text-align:left!important}
+.faqwrap:has(>.rv>.faq)>.rv:first-child .h2,.faqwrap:has(>.rv>.faq)>.rv:first-child .kicker{text-align:left!important}
+.faqwrap:not(:has(>.rv>.faq)),.faqwrap>.rv:has(>.faq){max-width:640px;margin:0;display:grid;gap:clamp(10px,1.4vh,14px)}
 .faq{display:grid;gap:clamp(10px,1.4vh,14px);border:0!important}
 .faq.rv{opacity:1;transform:none}
 .faq button,.faq .ans{position:relative;max-width:88%;padding:14px 18px;border-radius:18px;opacity:0;transform:translateY(14px) scale(.96);transition:opacity .45s var(--ease),transform .6s var(--ease)}
@@ -197,9 +197,9 @@ def main():
 .faq-typing i:nth-child(2){animation-delay:.2s}.faq-typing i:nth-child(3){animation-delay:.4s}
 @keyframes faqDots{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-4px);opacity:1}}
 @media(min-width:1024px){
-  .mx:has(>.faqwrap){grid-template-columns:5fr 7fr;gap:96px;align-items:start}
-  .mx:has(>.faqwrap)>.rv{position:sticky;top:calc(var(--nav-h) + 32px)}
-  .faqwrap{max-width:none}
+  .mx:has(>.faqwrap),.faqwrap:has(>.rv>.faq){grid-template-columns:5fr 7fr;gap:96px;align-items:start}
+  .mx:has(>.faqwrap)>.rv,.faqwrap:has(>.rv>.faq)>.rv:first-child{position:sticky;top:calc(var(--nav-h) + 32px)}
+  .faqwrap:not(:has(>.rv>.faq)),.faqwrap>.rv:has(>.faq){max-width:none}
 }
 @media(prefers-reduced-motion:reduce){.faq button,.faq .ans{opacity:1;transform:none;transition:none}.faq-typing{display:none}}
 
@@ -208,7 +208,7 @@ def main():
 .cierre::before{content:'';position:absolute;inset:0;background-size:cover;background-repeat:no-repeat;opacity:.16;pointer-events:none}
 .contact>.mx,.cierre>.mx{position:relative;z-index:1;max-width:1360px!important;display:grid;gap:40px}
 .contact .kicker,.cierre .kicker{color:var(--gold);text-align:left!important}
-.contact .h2,.cierre .h2{color:#fff;font-size:clamp(44px,7vw,96px);max-width:none;margin:0}
+.contact .h2,.cierre .h2{color:#fff;font-size:clamp(44px,7vw,96px)!important;max-width:none;margin:0;text-align:left!important}
 .contact .lead,.cierre .lead{color:rgba(255,255,255,.72)!important;margin:28px 0 0!important;max-width:52ch!important;text-align:left!important;font-size:clamp(17px,1.3vw,20px)}
 .contact .mx>.rv[style*="text-align:center"],.cierre .mx>.rv[style*="text-align:center"]{text-align:left!important;margin-top:0!important}
 .contact .bigbtn,.cierre .bigbtn{margin-top:0}

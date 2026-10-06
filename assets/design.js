@@ -137,12 +137,13 @@
     if (!bs.length) return;
     typ.className = 'faq-typing'; typ.setAttribute('aria-hidden', 'true'); typ.innerHTML = '<i></i><i></i><i></i>';
     if (reduce || !io) { bs.forEach(function (b) { b.classList.add('in'); }); return; }
-    wrap.appendChild(typ);
+    var lista = wrap.querySelector('.faq').parentElement; /* en madres e hijas los .faq van dentro de un .rv */
+    lista.appendChild(typ);
     function next() {
       if (i >= bs.length) { typ.classList.remove('on'); return; }
       var b = bs[i];
       if (b.classList.contains('ans')) {
-        typ.classList.add('on'); wrap.appendChild(typ);
+        typ.classList.add('on'); lista.appendChild(typ);
         setTimeout(function () { typ.classList.remove('on'); b.classList.add('in'); i++; setTimeout(next, 500); }, 900);
       } else { b.classList.add('in'); i++; setTimeout(next, 700); }
     }
