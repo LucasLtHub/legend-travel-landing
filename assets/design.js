@@ -79,6 +79,9 @@
     rvs.forEach(function (el) { el.classList.add('in'); });
   }
 
+  /* popup del sorteo de Río (campaña temporal): todo vive en assets/sorteo.js, que se apaga con SORTEO_ACTIVO=false */
+  (function () { var s = d.createElement('script'); s.src = 'assets/sorteo.js?v=1'; s.async = true; d.body.appendChild(s); })();
+
   /* hilo dorado de progreso (decorativo, solo escritorio) */
   if (!reduce && !d.querySelector('.thread')) {
     var t = d.createElement('div');
