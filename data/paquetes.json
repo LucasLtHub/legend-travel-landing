@@ -46,7 +46,7 @@
         "Circuito Tulipanes: El Bolsón, Travelin, Campo de Tulipanes, Cascadas Nant y Fall, El Hoyo, Lago Puelo",
         "Asistencia médica"
       ],
-      "imagen": "https://images.pexels.com/photos/7785553/pexels-photo-7785553.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/7785553-1600.jpg"
     },
     {
       "activo": true,
@@ -93,7 +93,7 @@
         "Travesía Cruce Andino",
         "Asistencia médica"
       ],
-      "imagen": "https://images.pexels.com/photos/14866540/pexels-photo-14866540.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/14866540-1600.jpg"
     },
     {
       "activo": true,
@@ -138,7 +138,7 @@
         "Excursión Camino del Vino - El Sol",
         "Asistencia médica"
       ],
-      "imagen": "https://images.pexels.com/photos/19046646/pexels-photo-19046646.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/19046646-1600.jpg"
     },
     {
       "activo": true,
@@ -184,7 +184,7 @@
         "Excursión Puerto Pirámides con embarcación para avistaje de ballenas",
         "Asistencia médica"
       ],
-      "imagen": "https://images.pexels.com/photos/14019374/pexels-photo-14019374.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/14019374-1600.jpg"
     },
     {
       "activo": true,
@@ -304,7 +304,7 @@
         "Tasas e impuestos",
         "Gastos administrativos"
       ],
-      "imagen": "https://images.pexels.com/photos/14121113/pexels-photo-14121113.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/14121113-1600.jpg"
     },
     {
       "activo": true,
@@ -412,7 +412,7 @@
         "Tasas e impuestos",
         "Gastos administrativos"
       ],
-      "imagen": "https://images.pexels.com/photos/813011/pexels-photo-813011.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/813011-1600.jpg"
     },
     {
       "activo": true,
@@ -519,7 +519,7 @@
         "Tasas e impuestos",
         "Gastos administrativos"
       ],
-      "imagen": "https://images.pexels.com/photos/17719807/pexels-photo-17719807.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/17719807-1600.jpg"
     },
     {
       "activo": false,
@@ -705,7 +705,7 @@
         "Experiencia Sami con cena alrededor del fuego",
         "Asistencia Universal Assistance (hasta 70 años) con seguro de cancelación"
       ],
-      "imagen": "https://images.pexels.com/photos/20743085/pexels-photo-20743085.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/20743085-1600.jpg"
     },
     {
       "activo": false,
@@ -985,7 +985,7 @@
         "Universal Assistance con seguro de cancelación (hasta 70 años)",
         "Acompañante de Organización Piamonte desde Buenos Aires (mín. 20 pax)"
       ],
-      "imagen": "https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/2064827-1600.jpg"
     },
     {
       "activo": true,
@@ -1041,7 +1041,7 @@
         "Traslados de llegada y salida",
         "Universal Assistance Master Plus (hasta 70 años)"
       ],
-      "imagen": "https://images.pexels.com/photos/2646066/pexels-photo-2646066.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/2646066-1600.jpg"
     },
     {
       "activo": true,
@@ -1100,7 +1100,7 @@
         "Traslados de llegada, salida e internos",
         "Universal Assistance (hasta 70 años)"
       ],
-      "imagen": "https://images.pexels.com/photos/16116483/pexels-photo-16116483.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/16116483-1600.jpg"
     },
     {
       "activo": true,
@@ -1154,7 +1154,7 @@
         "Todos los traslados",
         "Universal Assistance Master Plus (hasta 70 años)"
       ],
-      "imagen": "https://images.pexels.com/photos/10816914/pexels-photo-10816914.png?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/10816914-1600.jpg"
     },
     {
       "activo": true,
@@ -1210,7 +1210,7 @@
         "Traslados de llegada y salida",
         "Universal Assistance Master Plus (hasta 70 años)"
       ],
-      "imagen": "https://images.pexels.com/photos/18118993/pexels-photo-18118993.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/18118993-1600.jpg"
     },
     {
       "activo": false,
@@ -1510,7 +1510,7 @@
         "Noche previa en hotel de Buenos Aires con traslado",
         "Habitación a compartir garantizada para pasajeras que viajen solas"
       ],
-      "imagen": "https://images.pexels.com/photos/18008781/pexels-photo-18008781.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/18008781-1600.jpg"
     },
     {
       "activo": true,
@@ -1638,7 +1638,7 @@
         "Tren bala Kioto–Tokio",
         "Universal Assistance con seguro de cancelación (hasta 70 años)"
       ],
-      "imagen": "https://images.pexels.com/photos/15121561/pexels-photo-15121561.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/15121561-1600.jpg"
     },
     {
       "activo": false,
@@ -1821,7 +1821,7 @@
         "Reunión informativa previa",
         "Tour leader desde Argentina (mín. 10 pax)"
       ],
-      "imagen": "https://images.pexels.com/photos/1631665/pexels-photo-1631665.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/1631665-1600.jpg"
     },
     {
       "activo": true,
@@ -1935,7 +1935,7 @@
         "Reunión informativa previa",
         "Tour leader desde Argentina"
       ],
-      "imagen": "https://images.pexels.com/photos/3889918/pexels-photo-3889918.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/3889918-1600.jpg"
     },
     {
       "activo": true,
@@ -1998,7 +1998,7 @@
         "Seguimiento diario online con fotos y videos",
         "Asesoramiento en trámites migratorios (VISA/ESTA)"
       ],
-      "imagen": "https://images.pexels.com/photos/12422683/pexels-photo-12422683.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/12422683-1600.jpg"
     },
     {
       "activo": true,
@@ -2056,7 +2056,7 @@
         "Assist-Card internacional hasta USD 1.000.000",
         "Coordinadores exclusivos permanentes + equipo de gerentes y guías locales"
       ],
-      "imagen": "https://images.pexels.com/photos/1461974/pexels-photo-1461974.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      "imagen": "assets/img/pexels/1461974-1600.jpg"
     }
   ]
 }

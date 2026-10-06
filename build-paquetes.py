@@ -744,6 +744,13 @@ def render_detalle(p, vig, plantilla, todos=()):
     img_hero = p["imagen"]
     if "images.pexels.com" in img_hero:
         img_hero = re.sub(r'([?&]w=)\d+', r'\g<1>2200', img_hero)
+    elif img_hero.startswith("assets/img/pexels/"):
+        # foto local (tools/fotos_locales.py): se usa la variante grande si existe
+        grande = re.sub(r'-\d+\.jpg$', '-1800.jpg', img_hero)
+        if (ROOT / grande).exists():
+            img_hero = grande
+        # ruta absoluta: el navegador pide esta foto antes de leer el <base> y una ruta relativa daba 404 en /paquetes/<id>/
+        img_hero = "/" + img_hero
 
     vals = {
         "{{IMAGEN_HERO}}": e(img_hero),
@@ -992,6 +999,11 @@ def main():
     for p, v in publicados:
         d = PAQDIR / p["id"]
         d.mkdir(parents=True, exist_ok=True)
+        # copia del logo en cada carpeta: el navegador lo pide relativo a la carpeta antes de leer el <base> (404 si no está)
+        logo_src = ROOT / "logo-wordmark.png"
+        for carpeta in (PAQDIR, d):
+            if logo_src.exists() and not (carpeta / "logo-wordmark.png").exists():
+                shutil.copy2(logo_src, carpeta / "logo-wordmark.png")
         f = d / "index.html"
         existia = f.exists()
         out = render_detalle(p, v, plantilla, publicados)
