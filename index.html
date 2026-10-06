@@ -384,13 +384,13 @@ footer{background:var(--white);color:var(--ink);padding:72px 0 28px}
    ============================================================ */
 .psD{position:relative;min-height:100vh;min-height:100svh;color:#fff;background:var(--bur);overflow:hidden;isolation:isolate}
 .psD-media{position:absolute;inset:0;z-index:-2}
-.psD-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(14,35,45,.56) 0%,rgba(14,35,45,.1) 30%,rgba(14,35,45,.5) 58%,rgba(14,35,45,.95) 100%)}
+.psD-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(14,35,45,.86) 0%,rgba(14,35,45,.55) 42%,rgba(14,35,45,.08) 100%),linear-gradient(180deg,rgba(14,35,45,.45) 0%,rgba(14,35,45,0) 28%,rgba(14,35,45,.35) 70%,rgba(14,35,45,.94) 100%)}
 .psD-in{display:flex;flex-direction:column;min-height:100vh;min-height:100svh;padding-top:calc(var(--nav-h) + clamp(20px,3.5vh,36px));padding-bottom:clamp(28px,5vh,56px)}
 .psD-cap{align-self:flex-end;margin-bottom:auto;display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.9)}
 .psD-cap i{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px rgba(242,179,61,.24)}
-.psD-main{display:grid;gap:26px;margin-top:clamp(120px,24vh,260px)}
-.psD .h2{font-size:clamp(46px,min(8.4vw,15.5vh),136px);letter-spacing:-.045em;line-height:.93;color:#fff;margin-left:-.03em}
-.psD .lead{margin-top:0;color:rgba(255,255,255,.84);font-size:clamp(15px,1.2vw,18px);max-width:46ch}
+.psD-main{display:grid;gap:18px;margin-top:auto}
+.psD .h2{font-size:clamp(46px,min(8.4vw,15.5vh),136px);letter-spacing:-.045em;line-height:.93;color:#fff;margin-left:-.03em;text-shadow:0 2px 24px rgba(14,35,45,.45)}
+.psD .lead{margin-top:0;color:rgba(255,255,255,.88);font-size:clamp(15px,1.2vw,18px);max-width:52ch;text-shadow:0 1px 12px rgba(14,35,45,.5)}
 .psD .paq-cta{margin-top:26px}
 .psD-feats{display:grid;margin-top:clamp(30px,5vh,56px)}
 .psD .feat{padding:18px 0;border-top:1px solid rgba(255,255,255,.2)}
@@ -398,7 +398,10 @@ footer{background:var(--white);color:var(--ink);padding:72px 0 28px}
 .psD .feat p{font-size:14px;line-height:1.5;color:rgba(255,255,255,.68);margin-top:5px}
 @media(min-width:640px){.psD-feats{grid-template-columns:1fr 1fr;column-gap:32px}}
 @media(min-width:1024px){
-  .psD-main{grid-template-columns:1.32fr .68fr;gap:64px;align-items:end;margin-top:0}
+  /* texto abajo a la izquierda, sobre la parte en sombra del video */
+  .psD-main{grid-template-columns:minmax(0,60ch);gap:22px;margin-top:auto}
+  .psD .h2{font-size:clamp(46px,min(7.2vw,13.5vh),118px)}
+  .psD .lead{font-size:clamp(15px,1.15vw,18px)}
   .psD-feats{grid-template-columns:repeat(4,1fr);column-gap:0;border-top:1px solid rgba(255,255,255,.24)}
   .psD .feat{border-top:0;padding:clamp(14px,2.4vh,22px) 28px 0}
   .psD .feat:first-child{padding-left:0}
@@ -902,12 +905,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="psD" id="paquetes">
     <div class="psD-media pv" aria-hidden="true">
-      <img class="poster" src="https://images.pexels.com/videos/4022224/beach-resort-drone-camera-drone-footage-drone-photography-4022224.jpeg?auto=compress&cs=tinysrgb&w=1440" alt="" loading="lazy" decoding="async">
-      <video muted playsinline loop preload="none" disablepictureinpicture data-src="https://videos.pexels.com/video-files/4022224/4022224-hd_1920_1080_25fps.mp4"></video>
+      <img class="poster" src="assets/img/paquetes-cancun.jpg" alt="" loading="lazy" decoding="async">
+      <video muted playsinline loop preload="none" disablepictureinpicture data-src="https://videos.pexels.com/video-files/4645384/4645384-hd_1920_1080_30fps.mp4"></video>
     </div>
     <div class="psD-scrim" aria-hidden="true"></div>
     <div class="wrap psD-in">
-      <a class="psD-cap rv" href="paquetes/" aria-label="Ver paquetes disponibles"><i></i><span>Maldivas</span></a>
+      <a class="psD-cap rv" href="paquetes/" aria-label="Ver paquetes disponibles"><i></i><span>Cancún, México</span></a>
       <div class="psD-main">
         <h2 class="h2 rv">Salidas armadas, <em>precio cerrado.</em></h2>
         <div class="rv" style="--d:120ms">
