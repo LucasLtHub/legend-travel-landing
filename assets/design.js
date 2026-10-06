@@ -10,6 +10,10 @@
   var io = 'IntersectionObserver' in window;
   function clamp(v, a, b) { return v < a ? a : v > b ? b : v; }
 
+  /* títulos largos del hero: bajan de tamaño para entrar en pantalla */
+  var h1 = d.querySelector('.hero h1');
+  if (h1) { var n = (h1.textContent || '').trim().length; if (n > 78) h1.classList.add('h1-xlong'); else if (n > 62) h1.classList.add('h1-long'); }
+
   /* entrada escalonada del hero (.fade con data-delay) */
   d.querySelectorAll('.fade').forEach(function (el) {
     if (reduce) { el.classList.add('in'); return; }
