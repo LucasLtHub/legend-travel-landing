@@ -23,28 +23,30 @@
   function gtm(ev) { try { (window.dataLayer = window.dataLayer || []).push({ event: ev }); } catch (e) {} }
 
   /* la capa es fija: no mueve nada del documento (sin layout shift) */
-  var css = '.srp{position:fixed;inset:0;z-index:80;display:flex;align-items:flex-end;justify-content:center;background:rgba(14,35,45,.6);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .45s cubic-bezier(.16,1,.3,1)}'
+  var css = '.srp{position:fixed;inset:0;z-index:80;display:flex;align-items:flex-end;justify-content:center;background:rgba(14,35,45,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);opacity:0;pointer-events:none;transition:opacity .5s cubic-bezier(.16,1,.3,1)}'
     + '.srp.on{opacity:1;pointer-events:auto}'
-    + '.srp-box{position:relative;width:100%;max-height:80vh;max-height:80svh;overflow:auto;background:#0E232D;color:#F8F8F8;border-radius:24px 24px 0 0;transform:translateY(40px);transition:transform .6s cubic-bezier(.16,1,.3,1);font-family:Satoshi,system-ui,sans-serif;-webkit-font-smoothing:antialiased;box-shadow:0 -20px 60px -20px rgba(0,0,0,.5)}'
+    + '.srp-box{position:relative;outline:0;width:100%;max-height:80vh;max-height:80svh;overflow:auto;background:#F8F8F8;color:#0E232D;border-radius:24px 24px 0 0;transform:translateY(40px);transition:transform .7s cubic-bezier(.16,1,.3,1);font-family:Satoshi,system-ui,sans-serif;-webkit-font-smoothing:antialiased;box-shadow:0 40px 80px -30px rgba(14,35,45,.6)}'
     + '.srp.on .srp-box{transform:none}'
-    + '.srp-img{position:relative;height:min(38vh,220px);background:#0E232D url(' + FOTO + ') center/cover no-repeat}'
-    + '.srp-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,35,45,0) 35%,#0E232D 100%)}'
-    + '.srp-tag{position:absolute;left:20px;top:18px;z-index:1;display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:#F2B33D;color:#0E232D;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}'
-    + '.srp-x{position:absolute;right:14px;top:14px;z-index:2;width:44px;height:44px;border-radius:50%;background:rgba(14,35,45,.6);color:#fff;border:0;display:grid;place-items:center;cursor:pointer;transition:background .3s,transform .5s cubic-bezier(.16,1,.3,1)}'
-    + '.srp-x:hover,.srp-x:focus-visible{background:#F2B33D;color:#0E232D;transform:rotate(90deg);outline:0}'
-    + '.srp-x svg{width:18px;height:18px}'
-    + '.srp-body{position:relative;padding:4px 24px 26px;margin-top:-24px}'
-    + '.srp-k{margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#F2B33D}'
-    + '.srp-h{font-size:clamp(24px,6vw,34px);font-weight:700;letter-spacing:-.035em;line-height:1.04;margin:0;color:#F8F8F8}'
-    + '.srp-h em{font-style:italic;font-weight:400;color:#F2B33D}'
-    + '.srp-p{margin:10px 0 0;font-size:15px;line-height:1.5;color:rgba(248,248,248,.74)}'
-    + '.srp-a{display:inline-flex;align-items:center;gap:14px;margin-top:18px;padding:7px 7px 7px 24px;border-radius:999px;background:#F2B33D;color:#0E232D;font-weight:700;font-size:15px;line-height:1;text-decoration:none;transition:background .45s cubic-bezier(.16,1,.3,1),color .3s}'
-    + '.srp-a:hover{background:#F8F8F8;color:#0E232D}'
-    + '.srp-a:focus-visible{outline:2px solid #F8F8F8;outline-offset:3px}'
-    + '.srp-a i{width:38px;height:38px;border-radius:50%;background:rgba(14,35,45,.14);display:grid;place-items:center;font-style:normal}'
+    + '.srp-img{position:relative;height:min(34vh,200px);background:#491417 url(' + FOTO + ') center/cover no-repeat}'
+    + '.srp-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,35,45,.1) 0%,rgba(14,35,45,0) 40%,rgba(73,20,23,.55) 100%)}'
+    + '.srp-tag{position:absolute;left:22px;bottom:16px;z-index:1;display:flex;align-items:center;gap:10px;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#F8F8F8}'
+    + '.srp-tag i{width:7px;height:7px;border-radius:50%;background:#F2B33D;box-shadow:0 0 0 4px rgba(242,179,61,.25)}'
+    + '.srp-x{position:absolute;right:14px;top:14px;z-index:2;width:42px;height:42px;border-radius:50%;background:rgba(248,248,248,.92);color:#0E232D;border:0;display:grid;place-items:center;cursor:pointer;box-shadow:0 6px 20px -8px rgba(14,35,45,.4);transition:background .3s,color .3s,transform .5s cubic-bezier(.16,1,.3,1)}'
+    + '.srp-x:hover{background:#AC0A10;color:#fff;transform:rotate(90deg)}.srp-x:focus-visible{outline:2px solid #F2B33D;outline-offset:2px}'
+    + '.srp-x svg{width:16px;height:16px}'
+    + '.srp-body{position:relative;padding:22px 24px 28px}'
+    + '.srp-k{margin:0 0 12px;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#AC0A10}'
+    + '.srp-h{font-size:clamp(28px,7vw,38px);font-weight:700;letter-spacing:-.035em;line-height:1.02;margin:0;color:#0E232D;padding-bottom:.06em}'
+    + '.srp-h em{font-style:italic;font-weight:400;color:#AC0A10}'
+    + '.srp-p{margin:12px 0 0;font-size:15px;line-height:1.55;color:rgba(14,35,45,.64);max-width:34ch}'
+    + '.srp-a{display:inline-flex;align-items:center;gap:14px;margin-top:22px;padding:7px 7px 7px 26px;border-radius:999px;background:#AC0A10;color:#fff;font-weight:700;font-size:15px;line-height:1;white-space:nowrap;text-decoration:none;transition:background .45s cubic-bezier(.16,1,.3,1)}'
+    + '.srp-a:hover{background:#491417}.srp-a:focus-visible{outline:2px solid #F2B33D;outline-offset:3px}'
+    + '.srp-a i{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.16);display:grid;place-items:center;font-style:normal;transition:transform .5s cubic-bezier(.16,1,.3,1)}'
+    + '.srp-a:hover i{transform:translate(2px,-2px)}'
     + '.srp-a svg{width:16px;height:16px}'
-    + '@media(min-width:720px){.srp{align-items:center;padding:24px}.srp-box{width:min(92vw,760px);display:grid;grid-template-columns:1fr 1.05fr;border-radius:24px;transform:translateY(24px) scale(.97)}.srp-img{height:auto;min-height:100%}.srp-img::after{background:linear-gradient(90deg,rgba(14,35,45,0) 50%,#0E232D 100%)}.srp-body{padding:40px 40px 36px 4px;margin:0;display:flex;flex-direction:column;justify-content:center}.srp-h{font-size:clamp(28px,3.2vw,40px)}}'
-    + '@media(prefers-reduced-motion:reduce){.srp,.srp-box,.srp-x{transition:none}}';
+    + '.srp-f{margin:18px 0 0;font-size:12px;color:rgba(14,35,45,.44)}'
+    + '@media(min-width:720px){.srp{align-items:center;padding:24px}.srp-box{width:min(90vw,820px);display:grid;grid-template-columns:5fr 6fr;border-radius:24px;transform:translateY(24px) scale(.97)}.srp-img{height:auto;min-height:360px}.srp-img::after{background:linear-gradient(180deg,rgba(14,35,45,.08) 0%,rgba(14,35,45,0) 40%,rgba(73,20,23,.6) 100%)}.srp-body{padding:48px 48px 44px 44px;display:flex;flex-direction:column;justify-content:center}.srp-h{font-size:clamp(34px,3.6vw,48px)}.srp-x{right:18px;top:18px}}'
+    + '@media(prefers-reduced-motion:reduce){.srp,.srp-box,.srp-x,.srp-a i{transition:none}}';
 
   function abrir() {
     if (abrir.hecho) return; abrir.hecho = true;
@@ -52,11 +54,12 @@
     var st = d.createElement('style'); st.textContent = css; d.head.appendChild(st);
     var root = d.createElement('div'); root.className = 'srp'; root.setAttribute('role', 'dialog'); root.setAttribute('aria-modal', 'true'); root.setAttribute('aria-labelledby', 'srp-h');
     root.innerHTML = '<div class="srp-box">'
-      + '<div class="srp-img" aria-hidden="true"><span class="srp-tag">Sorteo · hasta el 27/10</span></div>'
+      + '<div class="srp-img" aria-hidden="true"><span class="srp-tag"><i></i>Sorteo · hasta el 27/10</span></div>'
       + '<button type="button" class="srp-x" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>'
-      + '<div class="srp-body"><p class="srp-k">Legend Travel × Río de Janeiro</p><h2 class="srp-h" id="srp-h">Ganate 3 noches <em>en Copacabana</em></h2>'
-      + '<p class="srp-p">Para 2 personas, con desayuno. Participás en 1 minuto.</p>'
-      + '<a class="srp-a" href="' + URL_SORTEO + '">Quiero participar <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></a></div></div>';
+      + '<div class="srp-body"><p class="srp-k">Legend Travel × Río de Janeiro</p><h2 class="srp-h" id="srp-h">Ganate 3 noches <em>en Copacabana.</em></h2>'
+      + '<p class="srp-p">Para 2 personas, con desayuno. Participás en un minuto.</p>'
+      + '<a class="srp-a" href="' + URL_SORTEO + '">Quiero participar <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></i></a>'
+      + '<p class="srp-f">Participación gratuita, sin obligación de compra.</p></div></div>';
     d.body.appendChild(root);
     var ultimo = d.activeElement, foco = root.querySelectorAll('button, a');
     function cerrar() { marcar(); root.classList.remove('on'); d.removeEventListener('keydown', tecla); setTimeout(function () { root.remove(); }, reduce ? 0 : 450); if (ultimo && ultimo.focus) ultimo.focus(); }
@@ -71,7 +74,7 @@
     root.addEventListener('click', function (e) { if (e.target === root) cerrar(); });
     root.querySelector('.srp-a').addEventListener('click', function () { marcar(); gtm('sorteo_popup_click'); });
     d.addEventListener('keydown', tecla);
-    requestAnimationFrame(function () { requestAnimationFrame(function () { root.classList.add('on'); root.querySelector('.srp-a').focus({ preventScroll: true }); }); });
+    requestAnimationFrame(function () { requestAnimationFrame(function () { root.classList.add('on'); root.querySelector('.srp-box').setAttribute('tabindex', '-1'); root.querySelector('.srp-box').focus({ preventScroll: true }); }); });
     gtm('sorteo_popup_visto');
   }
   var timer = setTimeout(abrir, 8000);
