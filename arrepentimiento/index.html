@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<script>(function(){var p=location.pathname,r='/legend-travel-landing/';document.write('<base href="'+(p.indexOf(r)===0?r:'/')+'">');})()</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Botón de arrepentimiento | Legend Travel</title>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PMHNZSSJ');</script>
+<meta name="description" content="Botón de arrepentimiento de Legend Travel: solicitá la revocación de tu compra dentro de los 10 días corridos, según la Ley 24.240. Te respondemos en 24 horas hábiles.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.legendtravel.com.ar/arrepentimiento/">
+<meta property="og:title" content="Botón de arrepentimiento | Legend Travel">
+<meta property="og:description" content="Solicitá la revocación de tu compra dentro de los 10 días corridos, según la Ley 24.240.">
+<meta property="og:url" content="https://www.legendtravel.com.ar/arrepentimiento/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.legendtravel.com.ar/og-image.jpg">
+<link rel="icon" type="image/x-icon" href="favicon.ico?v=6">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=6">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=6">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=6">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+<script>document.write('<link rel="stylesheet" href="assets/design.css?v=2">')</script>
+<noscript><link rel="stylesheet" href="/assets/design.css?v=2"></noscript>
+<style>
+/* ---- propio del botón de arrepentimiento ---- */
+/* hero compacto centrado: el H1 y el subtítulo traen align-self:end de la grilla del hero grande */
+.hero:has(.hero-kicker) .hero-inner>*{align-self:center;margin-left:auto;margin-right:auto}
+.hero:has(.hero-kicker) .hero-sub{max-width:58ch;text-align:center}
+/* formulario (mismo molde que el del sorteo) */
+.ar-grid{display:grid;gap:40px}
+@media(min-width:1024px){.ar-grid{grid-template-columns:5fr 7fr;gap:clamp(48px,6vw,110px);align-items:start}.ar-grid>.rv:first-child{position:sticky;top:calc(var(--nav-h) + 32px)}}
+.ar-form{display:grid;gap:18px;padding:clamp(24px,3vw,44px);border-radius:var(--r-lg);background:#fff;color:var(--ink);box-shadow:0 0 0 1px var(--line),0 40px 70px -50px rgba(14,35,45,.35)}
+.ar-form .f2{display:grid;gap:18px}
+@media(min-width:640px){.ar-form .f2{grid-template-columns:1fr 1fr}}
+.ar-field label{display:block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px}
+.ar-field input,.ar-field textarea{width:100%;padding:15px 16px;border-radius:14px;border:0;box-shadow:inset 0 0 0 1px rgba(14,35,45,.18);background:#fff;color:var(--ink);font:inherit;font-size:16px;transition:box-shadow .3s;appearance:none;-webkit-appearance:none}
+.ar-field textarea{min-height:140px;resize:vertical;line-height:1.5}
+.ar-field input:focus,.ar-field textarea:focus{outline:0;box-shadow:inset 0 0 0 2px var(--red)}
+.ar-field.err input,.ar-field.err textarea{box-shadow:inset 0 0 0 2px var(--red)}
+.ar-field .e{display:none;margin-top:6px;font-size:13px;color:var(--red);font-weight:700}
+.ar-field.err .e{display:block}
+.ar-check{display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:var(--ink-2);cursor:pointer}
+.ar-check input{flex:none;width:22px;height:22px;margin-top:1px;accent-color:var(--red)}
+.ar-check.err{color:var(--red)}
+.ar-hp{position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;opacity:0}
+.ar-form .btn{justify-content:center;margin-top:6px}
+.ar-form .btn[disabled]{opacity:.6;pointer-events:none}
+.ar-msg{display:none;padding:14px 16px;border-radius:14px;background:rgba(172,10,16,.08);color:var(--red);font-size:14px;font-weight:700;line-height:1.45}
+.ar-msg.on{display:block}
+.ar-ok{display:none;text-align:center;padding:clamp(32px,5vw,56px) clamp(20px,3vw,40px)}
+.ar-ok.on{display:block}
+.ar-ok h3{font-size:clamp(28px,3vw,40px);font-weight:700;letter-spacing:-.035em;line-height:1.05;color:var(--ink)}
+.ar-ok .num{display:inline-block;margin-top:18px;padding:10px 18px;border-radius:999px;background:var(--ink);color:#fff;font-weight:700;letter-spacing:.06em}
+.ar-ok p{margin:16px auto 0;max-width:44ch;font-size:16px;line-height:1.6;color:var(--ink-2)}
+.ar-pasos{display:grid;gap:12px;margin-top:40px}
+.ar-pasos .it{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-top:1px solid var(--line)}
+.ar-pasos .it:last-child{border-bottom:1px solid var(--line)}
+.ar-pasos svg{flex:none;width:42px;height:42px;padding:12px;border-radius:50%;color:var(--red);box-shadow:inset 0 0 0 1px rgba(172,10,16,.35)}
+.ar-pasos b{display:block;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.ar-pasos span{display:block;margin-top:6px;font-size:16px;line-height:1.5;color:var(--ink-2)}
+.ar-legal{max-width:760px}
+.ar-legal .borrador{display:inline-block;margin-bottom:18px;padding:8px 14px;border-radius:999px;background:rgba(242,179,61,.18);color:#7a5410;font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.ar-legal p{font-size:16px;line-height:1.75;color:var(--ink-2);margin-bottom:14px}
+.ar-legal p strong{color:var(--ink)}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMHNZSSJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- NAV -->
+<div class="navwrap px">
+  <div class="navbar liquid-glass fade" data-delay="100" data-dur="900">
+    <a href="/" class="navlogo" aria-label="Legend Travel">
+      <img src="logo-wordmark.png" alt="Legend Travel" loading="eager">
+    </a>
+    <nav class="navlinks">
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#formulario">Formulario</a>
+      <a href="#bases">Información legal</a>
+      <a class="btn-red" href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer">Consultar</a>
+    </nav>
+    <button class="navtoggle" id="navToggleBtn" aria-label="Abrir men&#250;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</div>
+
+<div class="navlinks-mobile" id="navMobile">
+  <button class="navclose" id="navCloseBtn" aria-label="Cerrar men&#250;">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <a href="#como-funciona">Cómo funciona</a>
+  <a href="#formulario">Formulario</a>
+  <a href="#bases">Información legal</a>
+  <a href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+</div>
+
+<!-- HERO (compacto, como las páginas legales) -->
+<section class="hero">
+  <div class="hero-inner px">
+    <p class="hero-kicker">Legend Travel</p>
+    <h1>Botón de arrepentimiento</h1>
+    <p class="hero-sub">Si contrataste un viaje con nosotros a distancia (web, WhatsApp, mail o teléfono) y te arrepentiste, podés revocar la compra dentro de los 10 días corridos. Completá el formulario y te respondemos en 24 horas hábiles.</p>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section class="sec px" id="como-funciona">
+  <div class="mx">
+    <div class="rv" style="margin-bottom:64px;max-width:680px">
+      <p class="kicker">C&#243;mo funciona</p>
+      <h2 class="h2">Tres pasos <em>y queda registrado.</em></h2>
+    </div>
+    <div class="steps rv" style="max-width:820px">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Completás el formulario</h3>
+          <p>Con tus datos y el número de reserva o el detalle de lo que contrataste. No hace falta que expliques el motivo.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Recibís un número de solicitud</h3>
+          <p>Al enviarlo te mostramos el número de tu solicitud y te mandamos un mail de constancia. Guardalo: es tu comprobante.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Te respondemos en 24 horas hábiles</h3>
+          <p>Una asesora te escribe al mail con los pasos a seguir y los plazos de devolución según lo contratado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULARIO -->
+<section class="sec px" id="formulario" style="background:rgba(14,35,45,.02)">
+  <div class="mx ar-grid">
+    <div class="rv">
+      <p class="kicker">Solicitud</p>
+      <h2 class="h2">Dejanos tus datos <em>y la reserva.</em></h2>
+      <p class="lead">Usamos estos datos solo para gestionar tu solicitud.</p>
+      <div class="ar-pasos">
+        <div class="it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Plazo</b><span>10 días corridos desde la contratación o desde la recepción de la documentación del viaje.</span></div></div>
+        <div class="it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg><div><b>También por mail</b><span>Podés enviar tu solicitud a <a href="mailto:lucas@legendtravel.com.ar" style="color:var(--red);font-weight:700">lucas@legendtravel.com.ar</a> indicando tu número de reserva.</span></div></div>
+      </div>
+    </div>
+    <div class="rv" style="--d:120ms">
+      <form class="ar-form" id="ar-form" action="arrepentimiento/enviar.php" method="post" novalidate>
+        <div class="ar-field">
+          <label for="a-nombre">Nombre y apellido</label>
+          <input id="a-nombre" name="nombre" type="text" required minlength="2" maxlength="120" autocomplete="name">
+          <span class="e">Ingresá tu nombre y apellido.</span>
+        </div>
+        <div class="f2">
+          <div class="ar-field">
+            <label for="a-email">Email</label>
+            <input id="a-email" name="email" type="email" required maxlength="120" autocomplete="email" inputmode="email">
+            <span class="e">Revisá el email.</span>
+          </div>
+          <div class="ar-field">
+            <label for="a-telefono">Teléfono</label>
+            <input id="a-telefono" name="telefono" type="tel" required autocomplete="tel" inputmode="tel" placeholder="11 1234 5678">
+            <span class="e">Ingresá un teléfono con código de área.</span>
+          </div>
+        </div>
+        <div class="ar-field">
+          <label for="a-reserva">Número de reserva o detalle de la compra</label>
+          <input id="a-reserva" name="reserva" type="text" required maxlength="300" placeholder="Ej.: reserva 12345 o paquete Punta Cana, salida 14/03">
+          <span class="e">Indicá el número de reserva o qué contrataste.</span>
+        </div>
+        <div class="ar-field">
+          <label for="a-mensaje">Mensaje</label>
+          <textarea id="a-mensaje" name="mensaje" required maxlength="3000" placeholder="Contanos qué querés revocar y cómo preferís que te contactemos."></textarea>
+          <span class="e">Contanos brevemente tu solicitud.</span>
+        </div>
+        <label class="ar-check"><input id="a-acepto" name="acepto" type="checkbox" value="si" required><span>Confirmo que los datos son correctos y que soy la persona titular de la compra.</span></label>
+        <div class="ar-hp" aria-hidden="true"><label for="a-website">No completar</label><input id="a-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        <input type="hidden" name="t" id="a-t" value="">
+        <div class="ar-msg" id="ar-msg" role="alert"></div>
+        <button class="btn lg" type="submit" id="ar-btn">Enviar la solicitud <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></button>
+      </form>
+      <div class="ar-form ar-ok" id="ar-ok" aria-live="polite">
+        <h3>Recibimos tu solicitud.</h3>
+        <span class="num" id="ar-num"></span>
+        <p>Te enviamos un mail de constancia. En las próximas 24 horas hábiles te respondemos con los pasos a seguir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INFORMACIÓN LEGAL -->
+<section class="sec px" id="bases">
+  <div class="mx">
+    <div class="rv" style="margin-bottom:40px;max-width:680px">
+      <p class="kicker">Información legal</p>
+      <h2 class="h2 md">Tu derecho <em>a arrepentirte.</em></h2>
+    </div>
+    <div class="ar-legal rv">
+      <span class="borrador">Borrador a validar</span>
+      <p><strong>Derecho de revocación.</strong> Conforme al artículo 34 de la Ley 24.240 de Defensa del Consumidor y a la Resolución 424/2020 de la Secretaría de Comercio Interior, si contrataste un servicio a distancia (por internet, WhatsApp, correo electrónico o teléfono) tenés derecho a revocar la aceptación durante el plazo de <strong>diez (10) días corridos</strong> contados a partir de la fecha de celebración del contrato o de la recepción de la documentación, lo que ocurra después, sin responsabilidad alguna y sin necesidad de expresar motivos.</p>
+      <p><strong>Cómo ejercerlo.</strong> Completando este formulario o enviando un correo a lucas@legendtravel.com.ar con tus datos y el número de reserva. Dentro de las 24 horas hábiles te enviaremos el número de solicitud y, dentro del plazo legal, la confirmación de la revocación y los pasos para la devolución de las sumas abonadas.</p>
+      <p><strong>Alcance.</strong> La revocación aplica a los servicios contratados a distancia. Para pasajes aéreos, alojamientos y otros servicios turísticos prestados por terceros rigen además las condiciones de cada proveedor, que te informamos al momento de la contratación. Legend Travel SRL, Legajo 7553, Paraná 3745, Martínez, Buenos Aires.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="px">
+  <div class="mx">
+    <div class="ftop">
+      <a href="." class="flogo" aria-label="Legend Travel"><img src="logo-wordmark.png" alt="Legend Travel" loading="lazy"></a>
+      <p class="fclaim">Tu viaje, <em>tu historia.</em></p>
+    </div>
+    <div class="fgrid">
+      <div class="fdest">
+        <h4><a href="./#destinos">Destinos</a></h4>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 24px">
+          <div>
+            <a href="caribe/">Caribe</a>
+            <a href="europa/">Europa</a>
+            <a href="brasil/">Brasil</a>
+            <a href="usa/">USA</a>
+            <a href="cruceros/">Cruceros</a>
+            <a href="argentina/">Argentina</a>
+          </div>
+          <div>
+            <a href="asia/">Asia</a>
+            <a href="africa/">África</a>
+            <a href="oceania/">Oceanía</a>
+            <a href="latinoamerica/">Latinoamérica</a>
+            <a href="viajes-deportivos/">Viajes Deportivos</a>
+            <a href="lunas-de-miel/">Lunas de miel</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4><a href="./#diferenciales">La agencia</a></h4>
+        <a href="viajes-a-medida/">Viajes a medida</a><a href="./#diferenciales">Por qué Legend</a><a href="./#historia">Nuestra historia</a><a href="./#equipo">El equipo</a><a href="quienes-somos/#testimonios">Testimonios</a><a href="financiacion/">Medios de pago</a><a href="./#guias">Guías y consejos</a><a href="./#faq">FAQ</a><a href="./#contacto">Contacto</a>
+      </div>
+      <div>
+        <h4><a href="./#contacto">Contacto</a></h4>
+        <p class="t">Paraná 3745, Martínez<br>Buenos Aires</p>
+        <a href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20hacer%20una%20consulta">WhatsApp +54 9 11 7655-4362</a>
+        <a href="tel:+541147170344">Teléfono 11 4717-0344</a>
+        <div class="fsoc">
+          <a href="https://www.instagram.com/legendtraveloficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@legendtravel.ok" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V6.69h-.01a6.3 6.3 0 0 0-.79-.05 6.34 6.34 0 1 0 6.34 6.34V9.4a8.16 8.16 0 0 0 4.77 1.52V7.47a4.85 4.85 0 0 1-1-.78Z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/LegendTravelOficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 Legend Travel · Legajo 7553 — Ministerio de Turismo de la Nación · <a href="politica-de-privacidad/" style="color:inherit;opacity:.7">Privacidad</a> · <a href="terminos-y-condiciones/" style="color:inherit;opacity:.7">Términos</a> · <a href="arrepentimiento/" style="color:inherit;opacity:.7">Botón de arrepentimiento</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="waf" href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg>
+</a>
+
+<script>(function(){var s=document.createElement('script');s.src='assets/design.js?v=2';document.body.appendChild(s)})()</script>
+<script>
+(function(){
+  var f=document.getElementById('ar-form'),ok=document.getElementById('ar-ok'),msg=document.getElementById('ar-msg'),btn=document.getElementById('ar-btn');
+  if(!f)return;
+  document.getElementById('a-t').value=String(Date.now());
+  function marcar(nombre,malo){var el=f.querySelector('[name="'+nombre+'"]');var w=el&&(el.closest('.ar-field')||el.closest('.ar-check'));if(w)w.classList.toggle('err',!!malo);return !malo}
+  function validar(){
+    var v=function(n){return (f.elements[n].value||'').trim()},todo=true;
+    todo=marcar('nombre',v('nombre').length<2)&&todo;
+    todo=marcar('email',!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v('email')))&&todo;
+    var dig=v('telefono').replace(/\D+/g,'');todo=marcar('telefono',dig.length<8||dig.length>20)&&todo;
+    todo=marcar('reserva',v('reserva').length<3)&&todo;
+    todo=marcar('mensaje',v('mensaje').length<10)&&todo;
+    todo=marcar('acepto',!f.elements.acepto.checked)&&todo;
+    return todo;
+  }
+  f.querySelectorAll('input,textarea').forEach(function(el){el.addEventListener('input',function(){var w=el.closest('.ar-field')||el.closest('.ar-check');if(w)w.classList.remove('err')})});
+  f.addEventListener('submit',function(e){
+    e.preventDefault();msg.classList.remove('on');
+    if(!validar()){var p=f.querySelector('.err');if(p)p.scrollIntoView({block:'center',behavior:'smooth'});return}
+    btn.disabled=true;
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(r){
+      btn.disabled=false;
+      if(r.ok){f.style.display='none';document.getElementById('ar-num').textContent='Solicitud '+r.numero;ok.classList.add('on');ok.scrollIntoView({block:'center',behavior:'smooth'});try{(window.dataLayer=window.dataLayer||[]).push({event:'arrepentimiento_enviado'})}catch(x){}return}
+      if(r.campos){Object.keys(r.campos).forEach(function(k){marcar(k,true)})}
+      msg.textContent=r.msg||'No pudimos registrar la solicitud. Probá de nuevo en un momento.';msg.classList.add('on');
+    }).catch(function(){btn.disabled=false;msg.textContent='No pudimos conectar con el servidor. Revisá tu conexión y probá de nuevo.';msg.classList.add('on')});
+  });
+})();
+</script>
+<script>(function(){document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href');if(!h||h.charAt(0)!=='#'||h.length<2)return;e.preventDefault();var t=document.getElementById(h.slice(1));if(!t)return;t.scrollIntoView({behavior:'smooth',block:'start'});var nm=document.getElementById('navMobile');if(nm)nm.classList.remove('open');});})();</script>
+</body>
+</html>

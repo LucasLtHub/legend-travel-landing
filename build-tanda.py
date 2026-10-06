@@ -65,6 +65,7 @@ FULL_DIRS = [
     "paquetes",
     "politica-de-privacidad",
     "terminos-y-condiciones",
+    "arrepentimiento",  # botón de arrepentimiento (Ley 24.240): index.html + enviar.php + data/ protegida
     "sorteo",       # campaña temporal (landing + sorteo-submit.php + data/ protegida); noindex, fuera del sitemap
 ]
 
@@ -539,6 +540,8 @@ def main():
         # una por paquete activo). Se leen de lo que quedo COPIADO en la
         # tanda, asi lo inactivo o vencido nunca entra al sitemap.
         for sub in sorted((DEST / d).iterdir()) if (DEST / d).exists() else []:
+            if sub.name == "data":   # carpeta de datos protegida (index.html vacio), nunca al sitemap
+                continue
             if sub.is_dir() and (sub / "index.html").exists():
                 sitemap_paths.append(f"/{d}/{sub.name}/")
     for d in MADRE_DIRS:
@@ -628,6 +631,12 @@ def main():
     for e in EXCLUIDAS_NOTA:
         print(f"    - {e}")
 
+    if "arrepentimiento" in FULL_DIRS:
+        print("
+  Botón de arrepentimiento (/arrepentimiento/, en el sitemap):")
+        print("    - El PHP guarda el CSV en ../sorteo-data/ (fuera de public_html) o en arrepentimiento/data/ (Deny from all).")
+        print("      Verificar tras subir que https://www.legendtravel.com.ar/arrepentimiento/data/arrepentimiento-solicitudes.csv da 403.")
+        print("    - El texto legal de la página es BORRADOR a validar.")
     if "sorteo" in FULL_DIRS:
         print("\n  Sorteo Río (campaña temporal, noindex, fuera del sitemap):")
         print("    - /sorteo/ + sorteo/sorteo-submit.php publicados; el popup se apaga con SORTEO_ACTIVO=false en assets/sorteo.js")
