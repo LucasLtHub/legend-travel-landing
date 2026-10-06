@@ -36,7 +36,7 @@ CSS_LINK = ("<script>document.write('<link rel=\"stylesheet\" href=\"assets/desi
 JS_TAG = ("<script>(function(){var s=document.createElement('script');"
           "s.src='assets/design.js?v=" + VER + "';document.body.appendChild(s)})()</script>")
 WA = '5491176554362'
-GTM = 'GTM-PMHNZSSJ'
+GTM = 'GTM-NNPCCJFX'
 
 # ---------------------------------------------------------------------------
 # CSS propio de página

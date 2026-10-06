@@ -41,7 +41,7 @@ except ImportError:
 # ─────────────────────────────────────────────────────────────────────
 # CONFIG — ajustá estos valores a tu sitio
 # ─────────────────────────────────────────────────────────────────────
-EXPECTED_GTM = "GTM-PMHNZSSJ"           # tu contenedor de Google Tag Manager
+EXPECTED_GTM = "GTM-NNPCCJFX"           # tu contenedor de Google Tag Manager
 CANONICAL_DOMAIN = "legendtravel.com.ar"  # dominio sin protocolo
 # Carpetas/patrones de páginas de destino que DEBEN tener CTA de WhatsApp.
 # Si una ruta contiene alguno de estos textos, se exige link de WhatsApp.
