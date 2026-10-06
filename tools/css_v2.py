@@ -93,6 +93,8 @@ def main():
         '.hero h1 .ln>span{display:block;transform:translateY(112%);animation:rise 1.3s var(--ease) forwards}\n'
         '.hero h1 .ln:nth-child(1)>span{animation-delay:.2s}.hero h1 .ln:nth-child(2)>span{animation-delay:.34s}.hero h1 .ln:nth-child(3)>span{animation-delay:.48s}.hero h1 .ln:nth-child(4)>span{animation-delay:.62s}\n'
         '@keyframes rise{to{transform:translateY(0)}}\n'
+        '/* títulos largos (design.js marca h1-long / h1-xlong según la cantidad de caracteres) */\n'
+        '.hero h1.h1-long{font-size:clamp(40px,6.6vw,104px)}\n.hero h1.h1-xlong{font-size:clamp(36px,5.6vw,88px)}\n'
         '@media(min-width:1024px){\n'
         '  .hero-inner{grid-template-columns:1.25fr .75fr;grid-template-areas:"h1 sub" "h1 btns" "stats stats";column-gap:64px;row-gap:22px;align-items:end}\n'
         '  .hero h1{grid-area:h1;align-self:end}.hero-sub{grid-area:sub;align-self:end}.hero-btns{grid-area:btns}.hero-stats,.hero-cred-row,.hero-chips{grid-area:stats}\n'
@@ -139,7 +141,10 @@ def main():
     # ================= bloques nuevos (extraídos de la home y adaptados) =================
     btn = home_block(hcss, '/* Buttons */', '/* Reveal */')
     footer = home_block(hcss, '/* Footer */', '/* WhatsApp float */')
-    footer = footer.replace('footer{', 'footer.px{').replace('\n.fgrid h4', '\n.fgrid h4')  # mismas reglas que la home
+    # mismas reglas que la home, sin pisar el padding lateral que .px le da al pie de las subpáginas
+    footer = footer.replace('footer{background:var(--white);color:var(--ink);padding:72px 0 28px}', 'footer.px{background:var(--white);color:var(--ink);padding-top:72px;padding-bottom:28px}')
+    footer = footer.replace('@media(min-width:1024px){footer{padding:96px 0 28px}}', '@media(min-width:1024px){footer.px{padding-top:96px}}')
+    assert 'footer{' not in footer, footer[:200]
     # (las secciones elegidas de la home —tarjeta de pago, conversación, contacto, historia—
     #  se adaptan abajo a las clases de las subpáginas, con los mismos valores que index.html)
 
