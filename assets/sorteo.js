@@ -20,6 +20,8 @@
   if (leer()) return;
 
   var d = document, reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* la foto se pide ya mismo, así cuando el popup aparece no se ve el fondo vacío */
+  var foto = new Image(); foto.src = FOTO;
   function gtm(ev) { try { (window.dataLayer = window.dataLayer || []).push({ event: ev }); } catch (e) {} }
 
   /* la capa es fija: no mueve nada del documento (sin layout shift) */
@@ -50,6 +52,11 @@
 
   function abrir() {
     if (abrir.hecho) return; abrir.hecho = true;
+    /* espera a que la foto esté decodificada (máximo 1,5 s) y recién entonces muestra el popup */
+    var listo = foto.complete && foto.naturalWidth ? Promise.resolve() : new Promise(function (ok) { foto.onload = foto.onerror = ok; setTimeout(ok, 1500); });
+    listo.then(mostrar);
+  }
+  function mostrar() {
     marcar();
     var st = d.createElement('style'); st.textContent = css; d.head.appendChild(st);
     var root = d.createElement('div'); root.className = 'srp'; root.setAttribute('role', 'dialog'); root.setAttribute('aria-modal', 'true'); root.setAttribute('aria-labelledby', 'srp-h');

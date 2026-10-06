@@ -676,6 +676,7 @@ a.ci:hover .ci-v u{background-size:100% 1px}
 }
 @media(prefers-reduced-motion:reduce){.gb-prog{display:none}}
 </style>
+<link rel="preload" as="image" href="assets/img/hero-venecia.jpg" imagesrcset="assets/img/hero-venecia-sm.jpg 900w, assets/img/hero-venecia.jpg 1600w" imagesizes="100vw" fetchpriority="high">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -712,7 +713,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="hero" id="hero">
   <div class="hero-media" id="heroMedia" aria-hidden="true">
-    <img class="poster" src="https://images.pexels.com/videos/39397971/pexels-photo-39397971.jpeg?auto=compress&cs=tinysrgb&w=1440" alt="" fetchpriority="high" decoding="async">
+    <img class="poster" src="assets/img/hero-venecia.jpg" srcset="assets/img/hero-venecia-sm.jpg 900w, assets/img/hero-venecia.jpg 1600w" sizes="100vw" alt="" fetchpriority="high" decoding="async">
     <video muted playsinline preload="none" disablepictureinpicture></video>
     <video muted playsinline preload="none" disablepictureinpicture></video>
   </div>
@@ -1388,13 +1389,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   });
   bars.forEach(function(b,k){b.addEventListener('click',function(){play(k)})});
   function start(){if(started)return;started=true;play(0)}
-  if('IntersectionObserver' in window){
-    new IntersectionObserver(function(es){
-      visible=es[0].isIntersecting;
-      if(visible){start();var v=vids[active];if(v.dataset.i!==undefined&&v.paused){var p=v.play();if(p&&p.catch)p.catch(function(){})}}
-      else vids.forEach(function(v){v.pause()});
-    },{threshold:.05}).observe(media);
-  }else start();
+  /* el video recién se pide cuando la foto de portada ya está en pantalla: así no compiten por la conexión */
+  function iniciar(){
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){
+        visible=es[0].isIntersecting;
+        if(visible){start();var v=vids[active];if(v.dataset.i!==undefined&&v.paused){var p=v.play();if(p&&p.catch)p.catch(function(){})}}
+        else vids.forEach(function(v){v.pause()});
+      },{threshold:.05}).observe(media);
+    }else start();
+  }
+  var poster=media.querySelector('.poster');
+  if(poster&&!(poster.complete&&poster.naturalWidth)){poster.addEventListener('load',iniciar,{once:true});poster.addEventListener('error',iniciar,{once:true})}else iniciar();
   var pv=document.querySelector('.paq-video video');
   if(pv&&'IntersectionObserver' in window){
     new IntersectionObserver(function(es){
