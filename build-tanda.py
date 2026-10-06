@@ -632,8 +632,7 @@ def main():
         print(f"    - {e}")
 
     if "arrepentimiento" in FULL_DIRS:
-        print("
-  Botón de arrepentimiento (/arrepentimiento/, en el sitemap):")
+        print("\n  Botón de arrepentimiento (/arrepentimiento/, en el sitemap):")
         print("    - El PHP guarda el CSV en ../sorteo-data/ (fuera de public_html) o en arrepentimiento/data/ (Deny from all).")
         print("      Verificar tras subir que https://www.legendtravel.com.ar/arrepentimiento/data/arrepentimiento-solicitudes.csv da 403.")
         print("    - El texto legal de la página es BORRADOR a validar.")
