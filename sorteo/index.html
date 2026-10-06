@@ -62,7 +62,19 @@
 .srt-ok .big{font-size:64px;line-height:1;margin-bottom:18px}
 .srt-ok h3{font-size:clamp(28px,3vw,40px);font-weight:700;letter-spacing:-.035em;line-height:1.05;color:var(--ink)}
 .srt-ok p{margin:16px auto 0;max-width:40ch;font-size:16px;line-height:1.6;color:var(--ink-2)}
-.srt-ok .tlink{margin-top:28px;color:var(--red)}
+.srt-ok .sub{margin-top:36px;padding-top:28px;border-top:1px solid var(--line);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.srt-mini{display:grid;gap:12px;margin-top:18px;text-align:left}
+@media(min-width:640px){.srt-mini{grid-template-columns:repeat(3,1fr)}}
+.srt-mini a{position:relative;display:block;aspect-ratio:4/3;border-radius:var(--r-md);overflow:hidden;background:var(--bur);color:#fff;isolation:isolate}
+.srt-mini .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 1.4s var(--ease)}
+.srt-mini a:hover .bg{transform:scale(1.06)}
+.srt-mini .gr{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,35,45,.1) 0%,rgba(14,35,45,.06) 34%,rgba(14,35,45,.82) 100%)}
+.srt-mini .tx{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:16px}
+.srt-mini .tx small{display:block;font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.srt-mini .tx b{display:block;font-size:17px;font-weight:700;letter-spacing:-.02em;line-height:1.15}
+.srt-ok .btn{margin-top:28px}
+.srt-ok .cuenta{margin-top:18px;font-size:13px;color:var(--ink-3)}
+.srt-ok .cuenta button{background:none;border:0;padding:0;font:inherit;color:var(--red);font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 .srt-fechas{display:grid;gap:12px;margin-top:40px}
 .srt-fechas .it{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-top:1px solid rgba(255,255,255,.14)}
 .srt-fechas .it:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
@@ -242,7 +254,14 @@
         <div class="big">🎉</div>
         <h3>¡Ya estás participando!</h3>
         <p>El 28/10 anunciamos al ganador en nuestras stories de @legendtraveloficial. ¡Mucha suerte!</p>
-        <a class="tlink" href="paquetes/">Mientras tanto, mirá nuestras salidas <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        <p class="sub">Mientras esperás el sorteo, mirá esto</p>
+        <div class="srt-mini">
+          <a href="brasil/"><span class="bg" style="background-image:url('https://images.pexels.com/photos/16109113/pexels-photo-16109113.jpeg?auto=compress&cs=tinysrgb&w=800')"></span><span class="gr"></span><span class="tx"><small>Destino</small><b>Viajes a Brasil 🇧🇷</b></span></a>
+          <a href="paquetes/#caribe"><span class="bg" style="background-image:url('https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&w=800')"></span><span class="gr"></span><span class="tx"><small>Salidas armadas</small><b>Paquetes al Caribe</b></span></a>
+          <a href="viajes-a-medida/"><span class="bg" style="background-image:url('https://images.pexels.com/photos/4858577/pexels-photo-4858577.jpeg?auto=compress&cs=tinysrgb&w=800')"></span><span class="gr"></span><span class="tx"><small>A tu manera</small><b>Viajes a medida</b></span></a>
+        </div>
+        <a class="btn lg" id="srt-home" href="./">Conocer la web nueva <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></a>
+        <p class="cuenta" id="srt-cuenta" aria-live="polite"></p>
       </div>
     </div>
   </div>
@@ -346,7 +365,17 @@
     return todo;
   }
   f.querySelectorAll('input,select').forEach(function(el){el.addEventListener('input',function(){var w=el.closest('.srt-field')||el.closest('.srt-check');if(w)w.classList.remove('err')})});
-  function exito(){f.style.display='none';ok.classList.add('on');ls('lt_sorteo_participo','1');gtm('sorteo_form_enviado');ok.scrollIntoView({block:'center',behavior:'smooth'})}
+  function exito(){
+    f.style.display='none';ok.classList.add('on');ls('lt_sorteo_participo','1');gtm('sorteo_form_enviado');ok.scrollIntoView({block:'center',behavior:'smooth'});
+    /* si no toca nada, a los 6 s lo llevamos a la home; cualquier gesto cancela la cuenta */
+    var cuenta=document.getElementById('srt-cuenta'),seg=6,timer=null,cancelado=false;
+    function pintar(){cuenta.innerHTML='Te llevamos a la home en '+seg+' s\u2026 <button type="button" id="srt-quedar">Quedarme ac\u00e1</button>'}
+    function cancelar(){if(cancelado)return;cancelado=true;clearInterval(timer);cuenta.textContent=''}
+    pintar();
+    timer=setInterval(function(){seg--;if(seg<=0){clearInterval(timer);if(!cancelado)location.href=document.getElementById('srt-home').href;return}pintar()},1000);
+    cuenta.addEventListener('click',function(e){if(e.target&&e.target.id==='srt-quedar')cancelar()});
+    setTimeout(function(){['pointerdown','keydown','wheel','touchstart'].forEach(function(ev){document.addEventListener(ev,cancelar,{once:true,passive:true})})},800);
+  }
   f.addEventListener('submit',function(e){
     e.preventDefault();msg.classList.remove('on');
     if(!validar()){var p=f.querySelector('.err');if(p)p.scrollIntoView({block:'center',behavior:'smooth'});return}
