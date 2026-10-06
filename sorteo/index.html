@@ -381,6 +381,7 @@
   if(!f)return;
   document.getElementById('f-t').value=String(Date.now());
   function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+  ls('lt_sorteo_visto','1'); /* quien ya llegó al sorteo no vuelve a ver el popup de la home */
   function gtm(ev){try{(window.dataLayer=window.dataLayer||[]).push({event:ev})}catch(e){}}
   function marcar(nombre,malo){var el=f.querySelector('[name="'+nombre+'"]');var w=el&&(el.closest('.srt-field')||el.closest('.srt-check'));if(w)w.classList.toggle('err',!!malo);return !malo}
   function validar(){
