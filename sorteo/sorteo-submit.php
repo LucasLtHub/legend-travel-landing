@@ -3,8 +3,12 @@
  * sorteo-submit.php — recibe las participaciones del sorteo de Río.
  *
  *  - Valida todos los campos del lado del servidor.
- *  - Anti-spam: campo trampa (honeypot) + rechazo de envíos a menos de 3 s
- *    de haber cargado la página.
+ *  - Anti-spam: campo trampa (honeypot) + rechazo de envíos a menos de
+ *    MIN_MS de haber cargado la página. El navegador manda cuánto tiempo
+ *    pasó desde la carga (campo "elapsed", medido con performance.now()),
+ *    NO la hora de su reloj: comparar la hora del cliente con la del servidor
+ *    rechazaba a cualquier persona con el reloj de su equipo adelantado.
+ *  - Cada fallo tiene su propio code/msg para poder diagnosticarlo.
  *  - Guarda cada participación como una fila de CSV en una carpeta que NO
  *    es accesible por URL: primero intenta FUERA del docroot
  *    (…/sorteo-data/, hermana de public_html); si no puede, usa
@@ -13,7 +17,9 @@
  *  - Avisa por mail a NOTIFICAR; si mail() falla no bloquea: el CSV es la
  *    fuente de verdad y el fallo queda anotado en el log.
  *
- * Respuesta: JSON {ok:true} o {ok:false, code, msg}.
+ * Respuesta: JSON {ok:true, mail:"ok"|"fallo"} o {ok:false, code, msg}.
+ *   code: method | nojs | fast | invalid | storage_dir | storage_open |
+ *         storage_write | dup
  */
 declare(strict_types=1);
 ini_set('display_errors', '0');   // nunca mezclar avisos de PHP con la respuesta JSON
@@ -24,13 +30,14 @@ const REMITENTE = 'no-reply@legendtravel.com.ar';
 const CSV_NOMBRE = 'sorteo-rio-participantes.csv';
 const DESTINOS = ['Caribe', 'Brasil', 'Europa', 'USA y Disney', 'Argentina', 'Cruceros', 'Otro'];
 const CUANDO = ['En los próximos 6 meses', 'Este año', 'En 2027', 'Todavía no lo sé'];
+const MIN_MS = 1500;   // tiempo mínimo entre cargar la página y enviar (un humano, aun con autocompletado, tarda más)
 
 header('Content-Type: application/json; charset=utf-8');
 header('X-Robots-Tag: noindex, nofollow');
 header('Cache-Control: no-store');
 
-function responder(bool $ok, string $code = '', string $msg = ''): void {
-    echo json_encode(['ok' => $ok, 'code' => $code, 'msg' => $msg], JSON_UNESCAPED_UNICODE);
+function responder(bool $ok, string $code = '', string $msg = '', array $extra = []): void {
+    echo json_encode(array_merge(['ok' => $ok, 'code' => $code, 'msg' => $msg], $extra), JSON_UNESCAPED_UNICODE);
     exit;
 }
 function campo(string $k): string {
@@ -47,10 +54,13 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
 if (campo('website') !== '') {            // campo trampa: un humano nunca lo completa
     responder(true);                        // se le responde "ok" para no dar pistas
 }
-$t = (int) campo('t');                     // momento en que se cargó la página (ms)
-$ahora = (int) round(microtime(true) * 1000);
-if ($t <= 0 || ($ahora - $t) < 3000) {
-    responder(false, 'spam', 'Esperá un momento y volvé a intentar.');
+$elapsed = campo('elapsed');              // ms desde que se cargó la página, medidos por el navegador
+if ($elapsed === '' || !is_numeric($elapsed)) {
+    // formulario enviado sin el script de la página (JS desactivado, página vieja en caché, bot)
+    responder(false, 'nojs', 'El formulario no terminó de cargar. Recargá la página y volvé a intentar.');
+}
+if ((float) $elapsed < MIN_MS) {
+    responder(false, 'fast', 'Fue muy rápido: revisá los datos y volvé a enviar.');
 }
 
 /* ---- validación ---- */
@@ -95,16 +105,16 @@ function carpeta_datos(): ?string {
 $dir = carpeta_datos();
 if ($dir === null) {
     http_response_code(500);
-    responder(false, 'storage', 'No pudimos guardar tu participación. Escribinos por WhatsApp y la registramos a mano.');
+    responder(false, 'storage_dir', 'No pudimos guardar tu participación (carpeta de datos sin permisos). Escribinos por WhatsApp y la registramos a mano.');
 }
 $csv = $dir . DIRECTORY_SEPARATOR . CSV_NOMBRE;
 $log = $dir . DIRECTORY_SEPARATOR . 'sorteo-rio.log';
 
 /* ---- guardar (con bloqueo) y deduplicar por email ---- */
-$fh = fopen($csv, 'c+');
+$fh = @fopen($csv, 'c+');
 if ($fh === false) {
     http_response_code(500);
-    responder(false, 'storage', 'No pudimos guardar tu participación. Escribinos por WhatsApp y la registramos a mano.');
+    responder(false, 'storage_open', 'No pudimos guardar tu participación (no se pudo abrir el archivo). Escribinos por WhatsApp y la registramos a mano.');
 }
 flock($fh, LOCK_EX);
 $nuevo = fstat($fh)['size'] === 0;
@@ -122,10 +132,14 @@ if ($duplicado) {
 fseek($fh, 0, SEEK_END);
 if ($nuevo) fputcsv($fh, ['fecha', 'nombre', 'email', 'whatsapp', 'instagram', 'destino', 'cuando', 'acepto']);
 $fecha = date('Y-m-d H:i:s');
-fputcsv($fh, [$fecha, $nombre, $email, $whatsapp, '@' . $instagram, $destino, $cuando, 'si']);
+$escrito = fputcsv($fh, [$fecha, $nombre, $email, $whatsapp, '@' . $instagram, $destino, $cuando, 'si']);
 fflush($fh);
 flock($fh, LOCK_UN);
 fclose($fh);
+if ($escrito === false) {
+    http_response_code(500);
+    responder(false, 'storage_write', 'No pudimos guardar tu participación (fallo al escribir). Escribinos por WhatsApp y la registramos a mano.');
+}
 
 /* ---- aviso por mail (no bloquea) ---- */
 $asunto = 'Sorteo Río — nueva participación: ' . $nombre;
@@ -140,4 +154,4 @@ try {
 } catch (Throwable $e) { $enviado = false; }
 @file_put_contents($log, "$fecha\t$email\tmail=" . ($enviado ? 'ok' : 'FALLO') . "\n", FILE_APPEND);
 
-responder(true);
+responder(true, '', '', ['mail' => $enviado ? 'ok' : 'fallo']);   // la participación quedó guardada aunque el mail falle

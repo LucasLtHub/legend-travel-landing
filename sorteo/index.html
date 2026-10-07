@@ -283,7 +283,7 @@
         </div>
         <label class="srt-check" id="f-acepto-wrap"><input id="f-acepto" name="acepto" type="checkbox" value="si" required><span>Acepto las <a href="#bases">bases y condiciones</a> y quiero recibir ofertas y novedades de Legend Travel por email.</span></label>
         <div class="srt-hp" aria-hidden="true"><label for="f-website">No completar</label><input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
-        <input type="hidden" name="t" id="f-t" value="">
+        <input type="hidden" name="elapsed" id="f-elapsed" value="">
         <div class="srt-msg" id="srt-msg" role="alert"></div>
         <button class="btn lg" type="submit" id="srt-btn">Participar del sorteo <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></button>
       </form>
@@ -380,7 +380,7 @@
   /* formulario del sorteo: validación en el navegador, envío por fetch, pantalla de éxito */
   var f=document.getElementById('srt-form'),ok=document.getElementById('srt-ok'),msg=document.getElementById('srt-msg'),btn=document.getElementById('srt-btn');
   if(!f)return;
-  document.getElementById('f-t').value=String(Date.now());
+  var t0=(window.performance&&performance.now)?performance.now():null,T0=Date.now(); /* tiempo desde la carga; nunca la hora del reloj del equipo */
   function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
   ls('lt_sorteo_visto','1'); /* quien ya llegó al sorteo no vuelve a ver el popup de la home */
   function gtm(ev){try{(window.dataLayer=window.dataLayer||[]).push({event:ev})}catch(e){}}
@@ -409,6 +409,7 @@
     e.preventDefault();msg.classList.remove('on');
     if(!validar()){var p=f.querySelector('.err');if(p)p.scrollIntoView({block:'center',behavior:'smooth'});return}
     btn.disabled=true;
+    document.getElementById('f-elapsed').value=String(Math.round(t0!==null?performance.now()-t0:Date.now()-T0));
     fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(r){
       btn.disabled=false;
       if(r.ok)return exito();

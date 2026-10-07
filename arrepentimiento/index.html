@@ -180,7 +180,7 @@
         </div>
         <label class="ar-check"><input id="a-acepto" name="acepto" type="checkbox" value="si" required><span>Confirmo que los datos son correctos y que soy la persona titular de la compra.</span></label>
         <div class="ar-hp" aria-hidden="true"><label for="a-website">No completar</label><input id="a-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
-        <input type="hidden" name="t" id="a-t" value="">
+        <input type="hidden" name="elapsed" id="a-elapsed" value="">
         <div class="ar-msg" id="ar-msg" role="alert"></div>
         <button class="btn lg" type="submit" id="ar-btn">Enviar la solicitud <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></button>
       </form>
@@ -274,7 +274,7 @@
 (function(){
   var f=document.getElementById('ar-form'),ok=document.getElementById('ar-ok'),msg=document.getElementById('ar-msg'),btn=document.getElementById('ar-btn');
   if(!f)return;
-  document.getElementById('a-t').value=String(Date.now());
+  var t0=(window.performance&&performance.now)?performance.now():null,T0=Date.now();
   function marcar(nombre,malo){var el=f.querySelector('[name="'+nombre+'"]');var w=el&&(el.closest('.ar-field')||el.closest('.ar-check'));if(w)w.classList.toggle('err',!!malo);return !malo}
   function validar(){
     var v=function(n){return (f.elements[n].value||'').trim()},todo=true;
@@ -291,6 +291,7 @@
     e.preventDefault();msg.classList.remove('on');
     if(!validar()){var p=f.querySelector('.err');if(p)p.scrollIntoView({block:'center',behavior:'smooth'});return}
     btn.disabled=true;
+    document.getElementById('a-elapsed').value=String(Math.round(t0!==null?performance.now()-t0:Date.now()-T0));
     fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}}).then(function(r){return r.json()}).then(function(r){
       btn.disabled=false;
       if(r.ok){f.style.display='none';document.getElementById('ar-num').textContent='Solicitud '+r.numero;ok.classList.add('on');ok.scrollIntoView({block:'center',behavior:'smooth'});try{(window.dataLayer=window.dataLayer||[]).push({event:'arrepentimiento_enviado'})}catch(x){}return}

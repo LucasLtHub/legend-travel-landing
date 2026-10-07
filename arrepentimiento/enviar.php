@@ -32,8 +32,9 @@ function campo(string $k): string { $v = $_POST[$k] ?? ''; return is_string($v) 
 
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') { http_response_code(405); responder(false, 'method', 'Método no permitido.'); }
 if (campo('website') !== '') responder(true, '', '', ['numero' => 'AR-0']);   // campo trampa
-$t = (int) campo('t'); $ahora = (int) round(microtime(true) * 1000);
-if ($t <= 0 || ($ahora - $t) < 3000) responder(false, 'spam', 'Esperá un momento y volvé a intentar.');
+$elapsed = campo('elapsed');   // ms desde la carga, medidos por el navegador (no la hora de su reloj)
+if ($elapsed === '' || !is_numeric($elapsed)) responder(false, 'nojs', 'El formulario no terminó de cargar. Recargá la página y volvé a intentar.');
+if ((float) $elapsed < 1500) responder(false, 'fast', 'Fue muy rápido: revisá los datos y volvé a enviar.');
 
 $nombre = campo('nombre'); $email = strtolower(campo('email')); $telefono = campo('telefono');
 $reserva = campo('reserva'); $mensaje = campo('mensaje'); $acepto = campo('acepto');
@@ -62,10 +63,10 @@ function carpeta_datos(): ?string {
     return null;
 }
 $dir = carpeta_datos();
-if ($dir === null) { http_response_code(500); responder(false, 'storage', 'No pudimos registrar la solicitud. Escribinos a ' . NOTIFICAR . ' o por WhatsApp.'); }
+if ($dir === null) { http_response_code(500); responder(false, 'storage_dir', 'No pudimos registrar la solicitud (carpeta de datos sin permisos). Escribinos a ' . NOTIFICAR . ' o por WhatsApp.'); }
 $csv = $dir . DIRECTORY_SEPARATOR . CSV_NOMBRE; $log = $dir . DIRECTORY_SEPARATOR . 'arrepentimiento.log';
-$fh = fopen($csv, 'c+');
-if ($fh === false) { http_response_code(500); responder(false, 'storage', 'No pudimos registrar la solicitud. Escribinos a ' . NOTIFICAR . ' o por WhatsApp.'); }
+$fh = @fopen($csv, 'c+');
+if ($fh === false) { http_response_code(500); responder(false, 'storage_open', 'No pudimos registrar la solicitud. Escribinos a ' . NOTIFICAR . ' o por WhatsApp.'); }
 flock($fh, LOCK_EX);
 $nuevo = fstat($fh)['size'] === 0; $n = 0;
 if (!$nuevo) { rewind($fh); while (fgetcsv($fh) !== false) $n++; $n--; }
