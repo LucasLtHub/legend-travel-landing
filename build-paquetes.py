@@ -371,7 +371,6 @@ def render_card(p, vig_date):
               <a class="pk-cta" href="{wa}" target="_blank" rel="noopener noreferrer">{ic_wa}Consultar</a>
               <span class="pk-ver">Ver detalle{ic_fl}</span>
             </div>
-            <p class="pk-vig">{ic_reloj}Tarifa v&aacute;lida hasta <b>{vigencia}</b></p>
           </div>
         </div>
       </article>'''.format(
@@ -576,8 +575,6 @@ def render_detalle(p, vig, plantilla, todos=()):
              ("Duraci&oacute;n", IC_CAMA, e(noches_txt(p["noches"])), "")]
     if txt(p, "regimen"):
         facts.append(("R&eacute;gimen", IC_PLATO, e(txt(p, "regimen")), ""))
-    facts.append(("Vigencia de tarifa", IC_RELOJ,
-                  "Tarifa v&aacute;lida hasta " + fmt_fecha_ar(vig), " vig"))
     datos = "\n".join(
         '    <div class="dfact{cls}"><span class="k">{ic}{k}</span><span class="v">{v}</span></div>'
         .format(cls=cls, ic=ic, k=k, v=v) for k, ic, v, cls in facts)
@@ -678,11 +675,11 @@ def render_detalle(p, vig, plantilla, todos=()):
         ).format(c=e(carpeta), n=e(REGIONES.get(p["region"], p["region"])), ic=IC_FLECHA)
 
     # --- E: urgencia, solo con datos reales (vigencia y fecha de salida) ---
-    urg = ['<span>{}Tarifa v&aacute;lida hasta {}</span>'.format(IC_RELOJ, fmt_fecha_ar(vig))]
+    urg = []   # P2: la vigencia de tarifa no se muestra (sigue retirando vencidos)
     if "salida única" in str(p["salida"]).lower() or "salida unica" in str(p["salida"]).lower():
         urg.append('<span>{}Salida &uacute;nica &mdash; {}</span>'.format(
             IC_CAL, e(salida_corta(p["salida"]))))
-    urgencia = '    <div class="durg">' + "".join(urg) + '</div>'
+    urgencia = ('    <div class="durg">' + "".join(urg) + '</div>') if urg else ''
 
     # --- B: schema. BreadcrumbList + TouristTrip, SIN precios (rotan) ---
     canonical = "{}/paquetes/{}".format(DOMINIO, p["id"])
@@ -902,16 +899,16 @@ def actualizar_llms(publicados, hoy):
     filas = []
     for p, vig in publicados:
         pd = p["precio_desde"]
-        filas.append("- {titulo} — desde {mon} {val} — Salida: {sal} — Tarifa válida hasta {vig} — {url}".format(
+        filas.append("- {titulo} — desde {mon} {val} — Salida: {sal} — {url}".format(
             titulo=txt(p, "titulo"), mon=pd.get("moneda", ""),
             val=fmt_precio(pd.get("valor")), sal=salida_corta(p["salida"]),
-            vig=fmt_fecha_ar(vig), url="{}/paquetes/{}".format(DOMINIO, p["id"])))
+            url="{}/paquetes/{}".format(DOMINIO, p["id"])))
 
     bloque = NL.join([
         LLMS_START,
         "## Salidas y paquetes actuales",
         "Generado el {} desde data/paquetes.json. Solo salidas vigentes:".format(hoy.isoformat()),
-        "lo inactivo o con tarifa vencida se retira de esta lista automáticamente.",
+        "lo inactivo o vencido se retira de esta lista automáticamente.",
         "Precios por persona en base doble, sujetos a confirmación al reservar.",
         "",
     ] + filas + [
@@ -937,7 +934,7 @@ def actualizar_llms(publicados, hoy):
     if viejo in t:
         t = t.replace(
             viejo,
-            "- Salidas y paquetes con precio, fecha y vigencia publicados en /paquetes",
+            "- Salidas y paquetes con precio y fecha publicados en /paquetes",
             1)
         print("\n!  llms.txt: corregida la linea del buscador de GEA (ya no existe)")
 
