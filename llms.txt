@@ -5,7 +5,7 @@
 > Legajo 7553 del Ministerio de Turismo de la Nación. Empresa familiar,
 > miembros del Grupo GEA. Especialistas en viajes a medida a Disney,
 > Caribe, Europa, Brasil, cruceros y Argentina, con atención humana real
-> y financiación en cuotas. Atención de lunes a sábados y feriados, de 10
+> y atención humana real. Atención de lunes a sábados y feriados, de 10
 > a 20 h. Consultas por WhatsApp al +54 9 11 7655-4362.
 
 ## Destinos
@@ -19,7 +19,7 @@
 ## Servicios
 - Viajes a medida (especialidad)
 - Salidas y paquetes con precio, fecha y vigencia publicados en /paquetes
-- Financiación: efectivo, transferencia, tarjetas de crédito y débito
+- Formas de pago: paquetes internacionales en efectivo en dólares billete o transferencia bancaria en dólares (o pesos al tipo de cambio del día); paquetes nacionales en efectivo, transferencia o tarjeta de crédito en cuotas. Reserva internacional: seña del 50% y saldo hasta un mes antes (cruceros: 2 meses antes); nacionales: pago total dentro de las 48 horas
 - Acompañamiento antes, durante y después del viaje
 
 <!-- PAQUETES:START -->
@@ -54,6 +54,6 @@ Listado completo: https://www.legendtravel.com.ar/paquetes
 ## Contacto
 - WhatsApp: +54 9 11 7655-4362
 - Teléfono: 11 4717-0344
-- Local: Paraná 3745, Martínez, Buenos Aires
+- Local: Unicenter Shopping — Paraná 3745, Martínez, Buenos Aires
 - Instagram: https://www.instagram.com/legendtraveloficial
 - Web: https://www.legendtravel.com.ar
