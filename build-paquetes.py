@@ -975,15 +975,15 @@ RS_CSS = """<style>
 .rsG-stars{display:inline-flex;gap:2px;margin-top:5px;color:var(--gold)}
 .rsG-stars svg{width:15px;height:15px}
 .rsG-card p{margin:0;font-size:15.5px;line-height:1.6;color:var(--ink-2)}
-.rsG-more{margin-top:40px}
+.rsG-more{margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px}
 </style>"""
 
 
 def actualizar_resenas():
     """
-    Reescribe en index.html la sección "Nuestros pasajeros" (entre RS_START y
-    RS_END) y el schema Review (entre RSS_START y RSS_END) con las reseñas de
-    data/resenas-google.json. Para sumar una reseña alcanza con editar el JSON
+    Reescribe "Nuestros pasajeros" con las reseñas de data/resenas-google.json:
+    en index.html las primeras "en_home" (entre RS_START y RS_END, y su schema
+    Review entre RSS_START y RSS_END) y en quienes-somos/index.html todas. Para sumar una reseña alcanza con editar el JSON
     y volver a correr este script: no se toca HTML a mano.
     """
     if not RES_JSON.exists():
@@ -992,74 +992,111 @@ def actualizar_resenas():
     data = json.loads(RES_JSON.read_text(encoding="utf-8"))
     rs = [r for r in data.get("resenas", []) if str(r.get("nombre", "")).strip() and str(r.get("texto", "")).strip()]
     url = str(data.get("url_google") or "").strip()
+    try:
+        en_home = max(1, int(data.get("en_home") or 3))
+    except (TypeError, ValueError):
+        en_home = 3
+    FLECHA = ('<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" '
+              'stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>')
+    GEN = "<!-- Generado por build-paquetes.py desde data/resenas-google.json. NO editar a mano: se pisa. -->"
+
+    def iniciales(nombre):
+        partes = [p for p in nombre.replace("-", " ").split() if p]
+        return (partes[0][0] + (partes[1][0] if len(partes) > 1 else "")).upper()
+
+    def estrellas(r):
+        return max(1, min(5, int(r.get("estrellas", 5) or 5)))
+
+    def cards(lista):
+        out = []
+        for i, r in enumerate(lista):
+            n = estrellas(r)
+            out.append(
+                '      <article class="rsG-card rv" style="--d:{d}ms">\n'
+                '        <div class="rsG-top"><span class="rsG-av" aria-hidden="true">{ini}</span>'
+                '<div><b>{nombre}</b><span class="rsG-stars" role="img" aria-label="{n} de 5 estrellas">{stars}</span></div></div>\n'
+                '        <p>{texto}</p>\n'
+                '      </article>'.format(d=min(i, 8) * 70, ini=e(iniciales(r["nombre"])), nombre=e(r["nombre"]),
+                                          n=n, stars=RS_STAR * n, texto=e(r["texto"])))
+        return "\n".join(out)
+
+    def schema(lista, org_id):
+        return "\n".join(['<script type="application/ld+json">', json.dumps({
+            "@context": "https://schema.org", "@type": "TravelAgency", "@id": org_id,
+            "review": [{
+                "@type": "Review",
+                "reviewRating": {"@type": "Rating", "ratingValue": str(estrellas(r)), "bestRating": "5"},
+                "author": {"@type": "Person", "name": r["nombre"]},
+                "reviewBody": r["texto"],
+            } for r in lista]}, ensure_ascii=False, indent=2), '</script>'])
+
+    google = ('<a class="{cls}" href="{u}" target="_blank" rel="noopener noreferrer">'
+              'Ver todas las rese&ntilde;as en Google {fl}</a>')
+
+    # ---------- home: solo las primeras; el resto se lee en /quienes-somos/ ----------
     home = ROOT / "index.html"
     t = home.read_text(encoding="utf-8")
     original = t
     if RS_START not in t or RS_END not in t or RSS_START not in t or RSS_END not in t:
         print("\n!  index.html no tiene los marcadores RESENAS — salteado")
         return
-
-    def iniciales(nombre):
-        partes = [p for p in nombre.replace("-", " ").split() if p]
-        return (partes[0][0] + (partes[1][0] if len(partes) > 1 else "")).upper()
-
-    cards = []
-    for i, r in enumerate(rs):
-        n = max(1, min(5, int(r.get("estrellas", 5) or 5)))
-        cards.append(
-            '      <article class="rsG-card rv" style="--d:{d}ms">\n'
-            '        <div class="rsG-top"><span class="rsG-av" aria-hidden="true">{ini}</span>'
-            '<div><b>{nombre}</b><span class="rsG-stars" role="img" aria-label="{n} de 5 estrellas">{stars}</span></div></div>\n'
-            '        <p>{texto}</p>\n'
-            '      </article>'.format(d=min(i, 8) * 70, ini=e(iniciales(r["nombre"])), nombre=e(r["nombre"]),
-                                      n=n, stars=RS_STAR * n, texto=e(r["texto"])))
-    link = ""
+    primeras = rs[:en_home]
+    acciones = ['<a class="btn" data-magnet href="quienes-somos/#pasajeros">Ver m&aacute;s rese&ntilde;as {}</a>'.format(FLECHA)]
     if url:
-        link = ('\n    <div class="rsG-more rv"><a class="btn" data-magnet href="{u}" target="_blank" rel="noopener noreferrer">'
-                'Ver todas las rese&ntilde;as en Google <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
-                'stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></a></div>'
-                ).format(u=e(url))
+        acciones.append(google.format(cls="tlink", u=e(url), fl='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+                        'stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>'))
     bloque = "\n".join([
-        RS_START,
-        "<!-- Generado por build-paquetes.py desde data/resenas-google.json. NO editar a mano: se pisa. -->",
+        RS_START, GEN,
         '<section class="sec rsG" id="pasajeros">',
         RS_CSS,
         '  <div class="wrap">',
         '    <div class="rv"><p class="kicker">Nuestros pasajeros</p><h2 class="h2">Lo que dicen <em>quienes ya viajaron.</em></h2></div>',
         '    <div class="rsG-grid">',
-        "\n".join(cards),
-        '    </div>' + link,
+        cards(primeras),
+        '    </div>',
+        '    <div class="rsG-more rv">' + "".join(acciones) + '</div>',
         '  </div>',
         '</section>',
         RS_END,
     ])
-    schema = {
-        "@context": "https://schema.org",
-        "@type": "TravelAgency",
-        "@id": DOMINIO + "/#agencia",
-        "review": [{
-            "@type": "Review",
-            "reviewRating": {"@type": "Rating", "ratingValue": str(max(1, min(5, int(r.get("estrellas", 5) or 5)))), "bestRating": "5"},
-            "author": {"@type": "Person", "name": r["nombre"]},
-            "reviewBody": r["texto"],
-        } for r in rs],
-    }
-    bloque_schema = "\n".join([
-        RSS_START,
-        "<!-- Generado por build-paquetes.py desde data/resenas-google.json. NO editar a mano: se pisa. -->",
-        '<script type="application/ld+json">',
-        json.dumps(schema, ensure_ascii=False, indent=2),
-        '</script>',
-        RSS_END,
-    ])
     t = reemplazar_bloque(t, RS_START, RS_END, bloque)
-    t = reemplazar_bloque(t, RSS_START, RSS_END, bloque_schema)
+    t = reemplazar_bloque(t, RSS_START, RSS_END, "\n".join([RSS_START, GEN, schema(primeras, DOMINIO + "/#agencia"), RSS_END]))
     if t != original:
         home.write_text(t, encoding="utf-8")
-        print("OK  index.html: seccion 'Nuestros pasajeros' ({} resenas{})".format(
-            len(rs), "" if url else "; sin link a Google porque url_google esta vacio"))
+        print("OK  index.html: 'Nuestros pasajeros' con {} de {} resenas".format(len(primeras), len(rs)))
     else:
         print("=   index.html: resenas sin cambios")
+
+    # ---------- /quienes-somos/: todas las reseñas ----------
+    qs = ROOT / "quienes-somos" / "index.html"
+    if not qs.exists():
+        return
+    t = qs.read_text(encoding="utf-8")
+    original = t
+    if RS_START not in t or RS_END not in t:
+        print("!  quienes-somos/index.html no tiene los marcadores RESENAS — salteado")
+        return
+    link = ('\n    <div class="rsG-more rv">' + google.format(cls="btn", u=e(url), fl=FLECHA) + '</div>') if url else ""
+    bloque = "\n".join([
+        RS_START, GEN,
+        '<section class="sec px rsG" id="pasajeros">',
+        RS_CSS,
+        '  <div class="mx">',
+        '    <div class="rv" style="max-width:720px"><p class="kicker">Nuestros pasajeros</p><h2 class="h2">Lo que dicen <em>quienes ya viajaron.</em></h2></div>',
+        '    <div class="rsG-grid">',
+        cards(rs),
+        '    </div>' + link,
+        '  </div>',
+        '</section>',
+        schema(rs, ORG_ID),
+        RS_END,
+    ])
+    t = reemplazar_bloque(t, RS_START, RS_END, bloque)
+    if t != original:
+        qs.write_text(t, encoding="utf-8")
+        print("OK  quienes-somos/index.html: las {} resenas".format(len(rs)))
+    else:
+        print("=   quienes-somos/index.html: resenas sin cambios")
 
 
 def main():
