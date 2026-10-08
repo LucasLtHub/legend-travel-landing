@@ -51,6 +51,7 @@ END = "<!-- PAQUETES:END -->"
 # Titulos propios del apartado "Salidas destacadas" (AR5, AF4); el resto usa el generico.
 REGIONES_TITULO = {
     "argentina": "Salidas por Argentina <em>listas para reservar</em>.",
+    "africa": "Salidas a &Aacute;frica con <em>itinerarios pensados y fechas fijas</em>.",
 }
 R_START = "<!-- PAQUETES-REGION:START -->"
 R_END = "<!-- PAQUETES-REGION:END -->"
