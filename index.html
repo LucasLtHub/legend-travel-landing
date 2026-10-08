@@ -1097,34 +1097,56 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<section class="sec fq fqH" id="faq">
-  <div class="wrap"><div class="fqH-grid">
-    <div class="fqH-head rv"><h2 class="h2 md">Lo que todos <em>nos preguntan.</em></h2></div>
-    <style>
-/* H3: las preguntas se abren al hacer clic (sin secuencia automática); accesible con teclado */
-.fqH-b.q{opacity:1;transform:none;border:0;font:inherit;cursor:pointer;display:flex;align-items:center;gap:14px;color:#fff;transition:background .3s,transform .5s var(--ease)}
-.fqH-b.q:hover{background:#c20d14}
-.fqH-b.q:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.fqH-b.q .q{text-align:left}
-.fqH-pm{position:relative;flex:none;width:22px;height:22px;border-radius:50%;border:1.5px solid rgba(255,255,255,.7)}
-.fqH-pm::before,.fqH-pm::after{content:'';position:absolute;left:50%;top:50%;width:10px;height:2px;background:#fff;transform:translate(-50%,-50%);transition:transform .35s var(--ease)}
-.fqH-pm::after{transform:translate(-50%,-50%) rotate(90deg)}
-.fqH-b.q[aria-expanded="true"] .fqH-pm::after{transform:translate(-50%,-50%) rotate(0)}
-.fqH-b.a[hidden]{display:none}
+<section class="sec dark faqsec" id="faq">
+<style>
+/* FAQ: lista con desplegables (la sección original de la home) */
+.faqsec .faq-grid{display:grid;gap:40px}
+.faqsec .faq{border-top:1px solid rgba(255,255,255,.14)}
+.faqsec .faq:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
+.faqsec .faq button{width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 0;border:0;background:none;text-align:left;font:inherit;font-size:clamp(17px,1.4vw,21px);font-weight:700;letter-spacing:-.015em;line-height:1.25;color:#fff;cursor:pointer;transition:color .3s}
+.faqsec .faq button:hover{color:var(--gold)}
+.faqsec .faq button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.faqsec .faq .pm{width:38px;height:38px;border-radius:50%;flex:none;display:grid;place-items:center;box-shadow:inset 0 0 0 1px rgba(255,255,255,.28);transition:background .4s var(--ease),transform .6s var(--ease),color .3s}
+.faqsec .faq .pm svg{width:14px;height:14px}
+.faqsec .faq.open .pm{background:var(--gold);color:var(--bur);box-shadow:none;transform:rotate(135deg)}
+.faqsec .faq .pm .v{transition:opacity .2s}
+.faqsec .faq.open .pm .v{opacity:0}
+.faqsec .faq .ans{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s var(--ease)}
+.faqsec .faq .ans>div{overflow:hidden;min-height:0}
+.faqsec .faq.open .ans{grid-template-rows:1fr}
+.faqsec .faq .ans p{margin:0;padding-bottom:28px;font-size:16px;line-height:1.65;color:rgba(255,255,255,.66);max-width:56ch}
+@media(min-width:1024px){.faqsec .faq-grid{grid-template-columns:5fr 7fr;gap:96px}.faqsec .faq-head{position:sticky;top:128px;align-self:start}}
+@media(prefers-reduced-motion:reduce){.faqsec .faq .ans,.faqsec .faq .pm{transition:none}}
 </style>
-<div class="fqH-chat" id="fqH-chat">
-      <button class="fqH-b q" type="button" id="fqH-q1" aria-expanded="false" aria-controls="fqH-a1"><span class="q">¿Dónde queda Legend Travel?</span><span class="fqH-pm" aria-hidden="true"></span></button>
-      <div class="fqH-b a" id="fqH-a1" role="region" aria-labelledby="fqH-q1" hidden><p>Estamos en Unicenter Shopping, Martínez, zona norte de Buenos Aires. Podés venir al local sin turno o escribirnos por WhatsApp.</p></div>
-      <button class="fqH-b q" type="button" id="fqH-q2" aria-expanded="false" aria-controls="fqH-a2"><span class="q">¿Hace cuánto existe la agencia?</span><span class="fqH-pm" aria-hidden="true"></span></button>
-      <div class="fqH-b a" id="fqH-a2" role="region" aria-labelledby="fqH-q2" hidden><p>Desde 1991. Somos una empresa familiar con más de 35 años de trayectoria, legajo habilitado por el Ministerio de Turismo de la Nación y miembros del Grupo GEA.</p></div>
-      <button class="fqH-b q" type="button" id="fqH-q3" aria-expanded="false" aria-controls="fqH-a3"><span class="q">¿Puedo pagar mi viaje en cuotas?</span><span class="fqH-pm" aria-hidden="true"></span></button>
-      <div class="fqH-b a" id="fqH-a3" role="region" aria-labelledby="fqH-q3" hidden><p>Depende del viaje. Los paquetes nacionales se pagan en efectivo, transferencia o tarjeta de crédito en cuotas (consultá la financiación disponible). Los internacionales, en efectivo en dólares billete o transferencia bancaria en dólares, o en pesos al tipo de cambio del día.</p></div>
-      <button class="fqH-b q" type="button" id="fqH-q4" aria-expanded="false" aria-controls="fqH-a4"><span class="q">¿Hacen viajes a medida?</span><span class="fqH-pm" aria-hidden="true"></span></button>
-      <div class="fqH-b a" id="fqH-a4" role="region" aria-labelledby="fqH-q4" hidden><p>Es nuestra especialidad. Nos contás la idea —destino, fechas, presupuesto, estilo— y diseñamos el itinerario completo: aéreos, hoteles, traslados, excursiones y asistencia.</p></div>
-      <button class="fqH-b q" type="button" id="fqH-q5" aria-expanded="false" aria-controls="fqH-a5"><span class="q">¿Cómo consulto por WhatsApp?</span><span class="fqH-pm" aria-hidden="true"></span></button>
-      <div class="fqH-b a" id="fqH-a5" role="region" aria-labelledby="fqH-q5" hidden><p>Tocá cualquier botón "Consultar por WhatsApp" y te responde una asesora del equipo en el día. También podés llamarnos o visitarnos en el local.</p></div>
+  <div class="wrap">
+    <div class="faq-grid">
+      <div class="faq-head rv">
+        <h2 class="h2 md">Lo que todos <em>nos preguntan.</em></h2>
+      </div>
+      <div class="rv" style="--d:100ms">
+        <div class="faq">
+          <button aria-expanded="false">¿Dónde queda Legend Travel?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></span></button>
+          <div class="ans"><div><p>Estamos en Unicenter Shopping, Martínez, zona norte de Buenos Aires. Podés venir al local sin turno o escribirnos por WhatsApp.</p></div></div>
+        </div>
+        <div class="faq">
+          <button aria-expanded="false">¿Hace cuánto existe la agencia?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></span></button>
+          <div class="ans"><div><p>Desde 1991. Somos una empresa familiar con más de 35 años de trayectoria, legajo habilitado por el Ministerio de Turismo de la Nación y miembros del Grupo GEA.</p></div></div>
+        </div>
+        <div class="faq">
+          <button aria-expanded="false">¿Puedo pagar mi viaje en cuotas?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></span></button>
+          <div class="ans"><div><p>Depende del viaje. Los paquetes nacionales se pagan en efectivo, transferencia o tarjeta de crédito en cuotas (consultá la financiación disponible). Los internacionales, en efectivo en dólares billete o transferencia bancaria en dólares, o en pesos al tipo de cambio del día.</p></div></div>
+        </div>
+        <div class="faq">
+          <button aria-expanded="false">¿Hacen viajes a medida?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></span></button>
+          <div class="ans"><div><p>Es nuestra especialidad. Nos contás la idea —destino, fechas, presupuesto, estilo— y diseñamos el itinerario completo: aéreos, hoteles, traslados, excursiones y asistencia.</p></div></div>
+        </div>
+        <div class="faq">
+          <button aria-expanded="false">¿Cómo consulto por WhatsApp?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/><path class="v" d="M12 5v14"/></svg></span></button>
+          <div class="ans"><div><p>Tocá cualquier botón "Consultar por WhatsApp" y te responde una asesora del equipo en el día. También podés llamarnos o visitarnos en el local.</p></div></div>
+        </div>
+      </div>
     </div>
-  </div></div>
+  </div>
 </section>
 
 <section class="sec ct-dark ctH" id="contacto">
@@ -1503,17 +1525,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
 
 
-  (function(){
-    var chat=document.getElementById('fqH-chat');if(!chat)return;
-    /* cada pregunta se abre al hacer clic (o con Enter/espacio: son botones) y muestra su respuesta */
-    chat.addEventListener('click',function(e){
-      var q=e.target.closest('.fqH-b.q');if(!q)return;
-      var open=q.getAttribute('aria-expanded')==='true',a=document.getElementById(q.getAttribute('aria-controls'));
-      q.setAttribute('aria-expanded',open?'false':'true');if(!a)return;
-      if(open){a.classList.remove('in');a.hidden=true}
-      else{a.hidden=false;requestAnimationFrame(function(){a.classList.add('in')})}
-    });
-  })();
 
 
   (function(){

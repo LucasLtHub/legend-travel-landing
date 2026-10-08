@@ -130,28 +130,11 @@
     }
   });
 
-  /* preguntas frecuentes: aparecen como una conversación (llega la pregunta, Legend escribe, llega la respuesta) */
-  d.querySelectorAll('.faqwrap').forEach(function (wrap) {
-    var bs = [], typ = d.createElement('div'), i = 0, started = false;
-    wrap.querySelectorAll('.faq').forEach(function (f) {
-      var b = f.querySelector('button'), a = f.querySelector('.ans');
-      if (b) { b.setAttribute('aria-expanded', 'true'); b.tabIndex = -1; bs.push(b); }
-      if (a) { a.style.maxHeight = ''; bs.push(a); }
-    });
-    if (!bs.length) return;
-    typ.className = 'faq-typing'; typ.setAttribute('aria-hidden', 'true'); typ.innerHTML = '<i></i><i></i><i></i>';
-    if (reduce || !io) { bs.forEach(function (b) { b.classList.add('in'); }); return; }
-    var lista = wrap.querySelector('.faq').parentElement; /* en madres e hijas los .faq van dentro de un .rv */
-    lista.appendChild(typ);
-    function next() {
-      if (i >= bs.length) { typ.classList.remove('on'); return; }
-      var b = bs[i];
-      if (b.classList.contains('ans')) {
-        typ.classList.add('on'); lista.appendChild(typ);
-        setTimeout(function () { typ.classList.remove('on'); b.classList.add('in'); i++; setTimeout(next, 500); }, 900);
-      } else { b.classList.add('in'); i++; setTimeout(next, 700); }
-    }
-    new IntersectionObserver(function (es, o) { if (es[0].isIntersecting && !started) { started = true; o.disconnect(); setTimeout(next, 300); } }, { threshold: .2 }).observe(wrap);
+  /* preguntas frecuentes: cada pregunta se abre al hacer clic (o con Enter/espacio) y muestra su respuesta */
+  d.querySelectorAll('.faqwrap .faq').forEach(function (f) {
+    var b = f.querySelector('button'); if (!b) return;
+    b.setAttribute('aria-expanded', f.classList.contains('open') ? 'true' : 'false');
+    b.addEventListener('click', function () { var open = f.classList.toggle('open'); b.setAttribute('aria-expanded', open ? 'true' : 'false'); });
   });
 
   /* cierre de contacto: los íconos cobran vida al aparecer (pin que cae y late, WhatsApp que vibra, reloj que gira) */
