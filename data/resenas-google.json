@@ -1,6 +1,6 @@
 {
   "_nota": "Reseñas de Google que se muestran en la home (sección 'Nuestros pasajeros') y en el schema Review. build-paquetes.py las vuelca en index.html entre <!-- RESENAS:START --> y <!-- RESENAS:END -->. Para sumar una reseña, agregar un objeto a 'resenas' y correr python build-paquetes.py. Esta carpeta no se publica.",
-  "url_google": "",
+  "url_google": "https://maps.app.goo.gl/5nj18FsxNfwWpVJNA",
   "_url_google": "URL del perfil de Google de la agencia para el link 'Ver todas las reseñas en Google'. Vacío = no se muestra el link.",
   "resenas": [
     {"nombre": "Tomas Balbin", "estrellas": 5, "texto": "Recomiendo mucho a Legend Travel por la excelente experiencia que tuvimos. Desde el primer momento recibimos un trato muy profesional y cercano. Un agradecimiento especial a Xiomara, quien estuvo siempre atenta, respondiendo todas nuestras dudas con claridad y con rapidez. Sin dudas, volveríamos a elegirlos!!"},
