@@ -951,6 +951,115 @@ def actualizar_llms(publicados, hoy):
 # ============================================================
 # Main
 # ============================================================
+# ============================================================
+# E — Reseñas de Google en la home (data/resenas-google.json)
+# ============================================================
+RES_JSON = ROOT / "data" / "resenas-google.json"
+RS_START = "<!-- RESENAS:START -->"
+RS_END = "<!-- RESENAS:END -->"
+RSS_START = "<!-- RESENAS-SCHEMA:START -->"
+RSS_END = "<!-- RESENAS-SCHEMA:END -->"
+RS_STAR = ('<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 17.27 18.18 21l-1.64-7.03'
+           'L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>')
+RS_CSS = """<style>
+.rsG{background:var(--white)}
+.rsG-grid{display:grid;gap:18px;margin-top:48px}
+@media(min-width:720px){.rsG-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1100px){.rsG-grid{grid-template-columns:repeat(3,1fr);gap:22px}}
+.rsG-card{display:flex;flex-direction:column;gap:16px;padding:clamp(22px,2.4vw,30px);border-radius:var(--r-lg);background:#fff;box-shadow:0 0 0 1px var(--line),0 30px 60px -48px rgba(14,35,45,.35)}
+.rsG-top{display:flex;align-items:center;gap:14px}
+.rsG-av{flex:none;width:48px;height:48px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:700;font-size:16px;letter-spacing:.04em}
+.rsG-top b{display:block;font-size:16px;color:var(--ink);line-height:1.2}
+.rsG-stars{display:inline-flex;gap:2px;margin-top:5px;color:var(--gold)}
+.rsG-stars svg{width:15px;height:15px}
+.rsG-card p{margin:0;font-size:15.5px;line-height:1.6;color:var(--ink-2)}
+.rsG-more{margin-top:40px}
+</style>"""
+
+
+def actualizar_resenas():
+    """
+    Reescribe en index.html la sección "Nuestros pasajeros" (entre RS_START y
+    RS_END) y el schema Review (entre RSS_START y RSS_END) con las reseñas de
+    data/resenas-google.json. Para sumar una reseña alcanza con editar el JSON
+    y volver a correr este script: no se toca HTML a mano.
+    """
+    if not RES_JSON.exists():
+        print("\n!  no existe data/resenas-google.json — salteado")
+        return
+    data = json.loads(RES_JSON.read_text(encoding="utf-8"))
+    rs = [r for r in data.get("resenas", []) if str(r.get("nombre", "")).strip() and str(r.get("texto", "")).strip()]
+    url = str(data.get("url_google") or "").strip()
+    home = ROOT / "index.html"
+    t = home.read_text(encoding="utf-8")
+    original = t
+    if RS_START not in t or RS_END not in t or RSS_START not in t or RSS_END not in t:
+        print("\n!  index.html no tiene los marcadores RESENAS — salteado")
+        return
+
+    def iniciales(nombre):
+        partes = [p for p in nombre.replace("-", " ").split() if p]
+        return (partes[0][0] + (partes[1][0] if len(partes) > 1 else "")).upper()
+
+    cards = []
+    for i, r in enumerate(rs):
+        n = max(1, min(5, int(r.get("estrellas", 5) or 5)))
+        cards.append(
+            '      <article class="rsG-card rv" style="--d:{d}ms">\n'
+            '        <div class="rsG-top"><span class="rsG-av" aria-hidden="true">{ini}</span>'
+            '<div><b>{nombre}</b><span class="rsG-stars" role="img" aria-label="{n} de 5 estrellas">{stars}</span></div></div>\n'
+            '        <p>{texto}</p>\n'
+            '      </article>'.format(d=min(i, 8) * 70, ini=e(iniciales(r["nombre"])), nombre=e(r["nombre"]),
+                                      n=n, stars=RS_STAR * n, texto=e(r["texto"])))
+    link = ""
+    if url:
+        link = ('\n    <div class="rsG-more rv"><a class="btn" data-magnet href="{u}" target="_blank" rel="noopener noreferrer">'
+                'Ver todas las rese&ntilde;as en Google <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+                'stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span></a></div>'
+                ).format(u=e(url))
+    bloque = "\n".join([
+        RS_START,
+        "<!-- Generado por build-paquetes.py desde data/resenas-google.json. NO editar a mano: se pisa. -->",
+        '<section class="sec rsG" id="pasajeros">',
+        RS_CSS,
+        '  <div class="wrap">',
+        '    <div class="rv"><p class="kicker">Nuestros pasajeros</p><h2 class="h2">Lo que dicen <em>quienes ya viajaron.</em></h2></div>',
+        '    <div class="rsG-grid">',
+        "\n".join(cards),
+        '    </div>' + link,
+        '  </div>',
+        '</section>',
+        RS_END,
+    ])
+    schema = {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "@id": DOMINIO + "/#agencia",
+        "review": [{
+            "@type": "Review",
+            "reviewRating": {"@type": "Rating", "ratingValue": str(max(1, min(5, int(r.get("estrellas", 5) or 5)))), "bestRating": "5"},
+            "author": {"@type": "Person", "name": r["nombre"]},
+            "reviewBody": r["texto"],
+        } for r in rs],
+    }
+    bloque_schema = "\n".join([
+        RSS_START,
+        "<!-- Generado por build-paquetes.py desde data/resenas-google.json. NO editar a mano: se pisa. -->",
+        '<script type="application/ld+json">',
+        json.dumps(schema, ensure_ascii=False, indent=2),
+        '</script>',
+        RSS_END,
+    ])
+    t = reemplazar_bloque(t, RS_START, RS_END, bloque)
+    t = reemplazar_bloque(t, RSS_START, RSS_END, bloque_schema)
+    if t != original:
+        home.write_text(t, encoding="utf-8")
+        print("OK  index.html: seccion 'Nuestros pasajeros' ({} resenas{})".format(
+            len(rs), "" if url else "; sin link a Google porque url_google esta vacio"))
+    else:
+        print("=   index.html: resenas sin cambios")
+
+
 def main():
     hoy = datetime.date.today()
     print("build-paquetes.py  —  {}".format(hoy.isoformat()))
@@ -1068,6 +1177,9 @@ def main():
 
     # ---------- 4. llms.txt (GEO) ----------
     actualizar_llms(publicados, hoy)
+
+    # ---------- 5. resenas de Google en la home ----------
+    actualizar_resenas()
 
     # ---------- resumen ----------
     print("\n" + "=" * 66)
