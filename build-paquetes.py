@@ -48,6 +48,10 @@ WA_TEXTO = "Hola Legend Travel, quiero información sobre el paquete: {titulo}"
 
 START = "<!-- PAQUETES:START -->"
 END = "<!-- PAQUETES:END -->"
+# Titulos propios del apartado "Salidas destacadas" (AR5, AF4); el resto usa el generico.
+REGIONES_TITULO = {
+    "argentina": "Salidas por Argentina <em>listas para reservar</em>.",
+}
 R_START = "<!-- PAQUETES-REGION:START -->"
 R_END = "<!-- PAQUETES-REGION:END -->"
 
@@ -487,7 +491,7 @@ def render_region_block(carpeta, items, hoy):
     if len(regs) == 1:
         r = list(regs)[0]
         frase = REGIONES_FRASE.get(r, "a " + REGIONES.get(r, r))
-        titulo = "Salidas {frase} con <em>fecha y precio cerrado</em>.".format(frase=e(frase))
+        titulo = REGIONES_TITULO.get(r) or "Salidas {frase} con <em>fecha y precio cerrado</em>.".format(frase=e(frase))
         ancla = "paquetes/#{}".format(e(r))
     else:
         titulo = "Salidas con <em>fecha y precio cerrado</em>."
