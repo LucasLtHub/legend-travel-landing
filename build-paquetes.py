@@ -61,7 +61,8 @@ OBLIGATORIOS = ["id", "titulo", "region", "destinos", "resumen",
                 "precio_desde", "salida", "vigencia", "noches", "incluye", "imagen"]
 # Todo lo demas es opcional y su modulo se omite si viene vacio:
 #   regimen, tarifas, itinerario, hoteles, no_incluye, condiciones,
-#   nota_impuestos, motivo_inactivo, operador, ref, destacado
+#   nota_impuestos, motivo_inactivo, operador, ref, destacado,
+#   precios, vuelos, crucero, foto_portada (P1/P2, ver docs/planilla-paquetes.md)
 
 REGIONES = {
     "caribe": "Caribe", "brasil": "Brasil", "europa": "Europa", "usa": "EE. UU.",
@@ -492,10 +493,10 @@ def render_region_block(carpeta, items, hoy):
     if len(regs) == 1:
         r = list(regs)[0]
         frase = REGIONES_FRASE.get(r, "a " + REGIONES.get(r, r))
-        titulo = REGIONES_TITULO.get(r) or "Salidas {frase} con <em>fecha y precio cerrado</em>.".format(frase=e(frase))
+        titulo = REGIONES_TITULO.get(r) or "Salidas {frase} <em>con fecha confirmada</em>.".format(frase=e(frase))
         ancla = "paquetes/#{}".format(e(r))
     else:
-        titulo = "Salidas con <em>fecha y precio cerrado</em>."
+        titulo = "Pr&oacute;ximas <em>salidas</em>."
         ancla = "paquetes/"
 
     if len(items) > len(muestra):
@@ -528,6 +529,60 @@ def render_region_block(carpeta, items, hoy):
 # ============================================================
 # Render — PAGINA DE DETALLE
 # ============================================================
+# P1/P2 — campos del detalle. Todos opcionales: lo que no esta cargado no se muestra.
+BASES = {"single": "Base single", "doble": "Base doble", "triple": "Base triple",
+         "cuadruple": "Base cu&aacute;druple"}
+BASES_ORDEN = ["single", "doble", "triple", "cuadruple"]
+HOTEL_CAMPOS = ["ciudad", "nombre", "categoria", "noches", "web"]
+VUELO_CAMPOS = ["aerolinea", "ruta", "clase", "fecha", "horario", "numero", "equipaje"]
+CRUCERO_CAMPOS = [("naviera", "Naviera"), ("barco", "Barco"), ("cabina", "Tipo de cabina"),
+                  ("bebidas", "Bebidas"), ("propinas", "Propinas"), ("wifi", "Wi-Fi"),
+                  ("asistencia", "Asistencia al viajero")]
+
+
+def _v(d, k):
+    """Valor de texto de un campo; vacio si no esta o es "a confirmar"."""
+    x = d.get(k) if isinstance(d, dict) else None
+    s = "" if x is None else str(x).strip()
+    return "" if s.lower() in ("a confirmar", "-", "n/a") else s
+
+
+def render_hotel(h):
+    if not isinstance(h, dict):   # formato viejo: "Ciudad: Hotel 4*"
+        return e(h)
+    partes = []
+    nombre = _v(h, "nombre")
+    cab = "<b>{}</b>".format(e(nombre)) if nombre else ""
+    cat = _v(h, "categoria")
+    if cat:
+        cat = re.sub(r'^(\d)\s*\*', lambda m: m.group(1) + "&#9733;", e(cat))
+        cab += " " + cat
+    if cab:
+        partes.append(cab.strip())
+    if _v(h, "ciudad"):
+        partes.append(e(_v(h, "ciudad")))
+    if _v(h, "noches"):
+        n = int(_v(h, "noches"))
+        partes.append("{} {}".format(n, "noche" if n == 1 else "noches"))
+    out = " &middot; ".join(partes)
+    if es_url(_v(h, "web")):
+        out += (' &middot; <a href="{}" target="_blank" rel="noopener noreferrer" '
+                'style="color:var(--red);font-weight:600">Web oficial</a>').format(e(_v(h, "web")))
+    return out
+
+
+def render_vuelo(v):
+    cab = " &middot; ".join(x for x in [
+        "<b>{}</b>".format(e(_v(v, "aerolinea"))) if _v(v, "aerolinea") else "",
+        e(_v(v, "ruta"))] if x)
+    datos = [(lbl, _v(v, k)) for k, lbl in [("clase", "Clase"), ("fecha", "Fecha"),
+             ("horario", "Horario"), ("numero", "Vuelo"), ("equipaje", "Equipaje")] if _v(v, k)]
+    if datos:
+        cab += ("<br>" if cab else "") + " &middot; ".join(
+            "{} {}".format(lbl, e(x)) for lbl, x in datos)
+    return cab
+
+
 def _sec(titulo, cuerpo, extra=""):
     return '''
 <section class="dsec px">
@@ -623,30 +678,64 @@ def render_detalle(p, vig, plantilla, todos=()):
             '      <li>{}<span>{}</span></li>'.format(IC_CRUZ, e(x)) for x in noinc)
         + '\n    </ul>') if noinc else ""
 
-    # --- hoteles (opcional) ---
+    # --- hoteles (opcional). P2: nombre, categoria, noches y web oficial ---
     hot = lista(p, "hoteles")
     hoteles_html = _sec(
         "Hoteles <em>previstos</em>",
         '    <ul class="dlist si">\n' + "\n".join(
-            '      <li>{}<span>{}</span></li>'.format(IC_HOTEL, e(x)) for x in hot)
+            '      <li>{}<span>{}</span></li>'.format(IC_HOTEL, render_hotel(x)) for x in hot)
         + '\n    </ul>',
         '\n    <p class="dnota">Hoteles previstos o similares, sujetos a disponibilidad '
         'al momento de la reserva.</p>') if hot else ""
 
-    # --- tarifas (opcional) ---
-    tar = [t for t in lista(p, "tarifas") if isinstance(t, dict)]
+    # --- vuelos (opcional). P2: aerolinea, clase, fecha, horario, numero, equipaje ---
+    vue = [v for v in lista(p, "vuelos") if isinstance(v, dict) and any(_v(v, k) for k in VUELO_CAMPOS)]
+    vuelos_html = _sec(
+        "Los <em>vuelos</em>",
+        '    <ul class="dlist si">\n' + "\n".join(
+            '      <li>{}<span>{}</span></li>'.format(IC_CHECK, render_vuelo(v)) for v in vue)
+        + '\n    </ul>') if vue else ""
+
+    # --- crucero (opcional). P2: naviera, barco, cabina, bebidas, propinas, wifi, asistencia, web ---
+    cru = p.get("crucero") if isinstance(p.get("crucero"), dict) else {}
+    filas_cru = [(lbl, _v(cru, k)) for k, lbl in CRUCERO_CAMPOS if _v(cru, k)]
+    crucero_html = ""
+    if filas_cru:
+        web = _v(cru, "web")
+        extra = ('\n    <p class="dnota"><a href="{}" target="_blank" rel="noopener noreferrer" '
+                 'style="color:var(--red);font-weight:600">Web oficial de {}</a></p>'.format(
+                     e(web), e(_v(cru, "naviera") or "la naviera"))) if es_url(web) else ""
+        crucero_html = _sec("El <em>crucero</em>", '    <dl class="dtar dtar-info">\n' + "\n".join(
+            '      <div><dt>{}</dt><dd>{}</dd></div>'.format(lbl, e(v)) for lbl, v in filas_cru)
+            + '\n    </dl>', extra)
+
+    # --- precios por base (P1) + otras tarifas que no son una base ---
+    filas = []
+    precios = [x for x in lista(p, "precios") if isinstance(x, dict) and x.get("base") in BASES]
+    # single, doble, triple, cuadruple; en cruceros se respeta el orden de cabinas cargado
+    if not any(x.get("cabina") for x in precios):
+        precios.sort(key=lambda x: BASES_ORDEN.index(x["base"]))
+    mon = e(pd.get("moneda", ""))
+    for x in precios:
+        etq = BASES[x["base"]]
+        if x.get("cabina"):
+            etq = "Cabina {} &middot; {}".format(e(str(x["cabina"]).lower()), etq.lower())
+        # se resalta la fila del precio destacado (base doble, la cabina mas economica)
+        on = ' class="on"' if x["base"] == "doble" and x["valor"] == pd.get("valor") else ""
+        filas.append('      <div{}><dt>{}</dt><dd>{} {}</dd></div>'.format(on, etq, mon, fmt_precio(x["valor"])))
+    for t in lista(p, "tarifas"):
+        if isinstance(t, dict):
+            filas.append('      <div><dt>{}</dt><dd>{}</dd></div>'.format(
+                e(str(t.get("etiqueta") or "")), e(str(t.get("precio") or ""))))
     tarifas_html = ""
-    if tar:
-        filas = "\n".join(
-            '      <div><dt>{}</dt><dd>{}</dd></div>'.format(
-                e(str(t.get("etiqueta") or "")), e(str(t.get("precio") or "")))
-            for t in tar)
+    if filas:
         nota = txt(p, "nota_impuestos")
         extra = '\n    <p class="dnota">{}</p>'.format(e(nota)) if nota else ""
         extra += ('\n    <p class="dnota">Precios por persona, sujetos a disponibilidad '
                   'y a confirmaci&oacute;n al momento de la reserva.</p>')
-        tarifas_html = _sec("Tarifas <em>por base</em>",
-                            '    <dl class="dtar">\n' + filas + '\n    </dl>', extra)
+        tarifas_html = _sec("Precios <em>por base</em>" if precios else "Tarifas",
+                            '    <dl class="dtar{}">\n'.format(" dtar-base" if precios else "")
+                            + "\n".join(filas) + '\n    </dl>', extra)
 
     # --- condiciones (opcional) ---
     cond = lista(p, "condiciones")
@@ -744,6 +833,9 @@ def render_detalle(p, vig, plantilla, todos=()):
     # El hero se ve a pantalla completa: si la foto es de Pexels se pide una
     # variante mas grande. La card sigue con la chica (no hace falta mas).
     img_hero = p["imagen"]
+    # P2: foto de portada propia del detalle (en cruceros, la oficial del barco) si esta cargada
+    if txt(p, "foto_portada"):
+        img_hero = txt(p, "foto_portada")
     if "images.pexels.com" in img_hero:
         img_hero = re.sub(r'([?&]w=)\d+', r'\g<1>2200', img_hero)
     elif img_hero.startswith("assets/img/pexels/"):
@@ -753,6 +845,8 @@ def render_detalle(p, vig, plantilla, todos=()):
             img_hero = grande
         # ruta absoluta: el navegador pide esta foto antes de leer el <base> y una ruta relativa daba 404 en /paquetes/<id>/
         img_hero = "/" + img_hero
+    elif not es_url(img_hero) and not img_hero.startswith("/"):
+        img_hero = "/" + img_hero   # misma razon: se pide antes de leer el <base>
 
     vals = {
         "{{IMAGEN_HERO}}": e(img_hero),
@@ -781,6 +875,8 @@ def render_detalle(p, vig, plantilla, todos=()):
         "{{INCLUYE}}": incluye_html,
         "{{NO_INCLUYE}}": noinc_html,
         "{{HOTELES}}": hoteles_html,
+        "{{VUELOS}}": vuelos_html,
+        "{{CRUCERO}}": crucero_html,
         "{{TARIFAS}}": tarifas_html,
         "{{CONDICIONES}}": cond_html,
         "{{WA}}": e(wa_link(p["titulo"])),
@@ -813,6 +909,45 @@ def asegurar_marcadores(texto):
 # ============================================================
 # Carga y validacion
 # ============================================================
+def validar_detalle(p):
+    """Formato de los campos de P1/P2. Devuelve la lista de problemas."""
+    err = []
+    pr = p.get("precios", [])
+    if not isinstance(pr, list):
+        err.append('"precios" tiene que ser una lista')
+    else:
+        for x in pr:
+            if not isinstance(x, dict) or x.get("base") not in BASES:
+                err.append('precios: base "{}" no es single, doble, triple ni cuadruple'.format(
+                    x.get("base") if isinstance(x, dict) else x))
+            elif not isinstance(x.get("valor"), int) or x["valor"] <= 0:
+                err.append('precios: el valor de la base {} tiene que ser un numero entero'.format(x["base"]))
+    for campo, claves in (("hoteles", HOTEL_CAMPOS), ("vuelos", VUELO_CAMPOS)):
+        val = p.get(campo, [])
+        if not isinstance(val, list):
+            err.append('"{}" tiene que ser una lista'.format(campo))
+            continue
+        for x in val:
+            if isinstance(x, str) and campo == "hoteles":
+                continue   # formato viejo, se sigue aceptando
+            if not isinstance(x, dict) or set(x) - set(claves):
+                err.append('{}: campos no reconocidos {}'.format(
+                    campo, sorted(set(x) - set(claves)) if isinstance(x, dict) else x))
+            elif campo == "hoteles" and _v(x, "noches") and not _v(x, "noches").isdigit():
+                err.append('hoteles: noches "{}" tiene que ser un numero'.format(_v(x, "noches")))
+            elif _v(x, "web") and not es_url(_v(x, "web")):
+                err.append('{}: la web "{}" tiene que empezar con https://'.format(campo, _v(x, "web")))
+    cru = p.get("crucero", {})
+    if cru not in (None, {}) and not isinstance(cru, dict):
+        err.append('"crucero" tiene que ser un objeto')
+    elif cru and _v(cru, "web") and not es_url(_v(cru, "web")):
+        err.append('crucero: la web "{}" tiene que empezar con https://'.format(_v(cru, "web")))
+    foto = txt(p, "foto_portada")
+    if foto and not es_url(foto) and not (ROOT / foto.lstrip("/")).exists():
+        err.append('foto_portada "{}" no existe'.format(foto))
+    return err
+
+
 def cargar(hoy):
     """Devuelve (publicados, vencidos, inactivos, avisos, fotos). Corta si hay errores."""
     raw = json.loads(DATA.read_text(encoding="utf-8"))
@@ -843,6 +978,14 @@ def cargar(hoy):
         if not isinstance(p.get("precio_desde"), dict) or "valor" not in p["precio_desde"]:
             errores.append('{}: "precio_desde" tiene que ser un objeto con valor y moneda'.format(ident))
             continue
+        err = validar_detalle(p)
+        if err:
+            errores.extend("{}: {}".format(ident, x) for x in err)
+            continue
+        # P1: el precio destacado es siempre el de base doble (en cruceros, la cabina mas economica)
+        dobles = [x["valor"] for x in lista(p, "precios") if x.get("base") == "doble"]
+        if dobles:
+            p["precio_desde"]["valor"] = min(dobles)
 
         vig = parse_vigencia(p["vigencia"])
         if vig is None:

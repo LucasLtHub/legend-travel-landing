@@ -13,3 +13,6 @@ Fotos de equipo/
 
 # páginas de comparación locales (no se publican)
 _showroom-*
+
+# copias que deja planilla-paquetes.py antes de importar (no van al repo)
+data/respaldos/

@@ -124,9 +124,14 @@
       card.addEventListener('pointermove', function (e) { var r = card.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height; ry = (x - .5) * 22; rx = -(y - .5) * 16; mx = x * 100; my = y * 100; if (!raf) raf = requestAnimationFrame(paint); });
       card.addEventListener('pointerleave', function () { rx = 0; ry = 0; mx = 30; my = 20; if (!raf) raf = requestAnimationFrame(paint); });
     } else {
-      var sraf = null;
+      /* P-MP: antes esto corría en cada frame de scroll de TODA la página (medía la tarjeta, reiniciaba la
+         transición de .9s y repintaba el brillo), y la página se trababa al llegar a "Medios de pago".
+         Ahora solo trabaja mientras la tarjeta está cerca de la pantalla, y sin transición: el rAF ya la suaviza. */
+      var sraf = null, cerca = !io;
       var onScroll = function () { sraf = null; var r = card.getBoundingClientRect(), c = (r.top + r.height / 2) / innerHeight; rx = clamp((c - .5) * -26, -14, 14); ry = clamp((c - .5) * 10, -6, 6); mx = 50 + (c - .5) * 60; my = 20 + (c - .5) * 80; paint(); };
-      addEventListener('scroll', function () { if (!sraf) sraf = requestAnimationFrame(onScroll); }, { passive: true }); onScroll();
+      card.classList.add('scrub');
+      if (io) new IntersectionObserver(function (es) { cerca = es[0].isIntersecting; if (cerca && !sraf) sraf = requestAnimationFrame(onScroll); }, { rootMargin: '25% 0px' }).observe(card);
+      addEventListener('scroll', function () { if (cerca && !sraf) sraf = requestAnimationFrame(onScroll); }, { passive: true }); onScroll();
     }
   });
 

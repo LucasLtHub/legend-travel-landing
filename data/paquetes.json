@@ -59,14 +59,24 @@
         "Los hoteles y/o servicios previstos podrán ser reemplazados por otros de similar categoría."
       ],
       "no_incluye": [],
-      "hoteles": [],
-      "itinerario": [],
-      "tarifas": [
+      "hoteles": [
         {
-          "etiqueta": "Base doble",
-          "precio": "ARS 1.322.790"
+          "ciudad": "Bariloche",
+          "nombre": "Huinid Pioneros Hotel",
+          "categoria": "",
+          "noches": 3,
+          "web": ""
+        },
+        {
+          "ciudad": "Puerto Varas",
+          "nombre": "Hotel Cabaña del Lago",
+          "categoria": "",
+          "noches": 2,
+          "web": ""
         }
       ],
+      "itinerario": [],
+      "tarifas": [],
       "id": "cruce-andino-bariloche-puerto-varas",
       "titulo": "Cruce Andino: Bariloche & Puerto Varas",
       "region": "argentina",
@@ -78,7 +88,7 @@
       "precio_desde": {
         "valor": 1322790,
         "moneda": "ARS",
-        "nota": "por persona, base doble"
+        "nota": "por persona en base doble"
       },
       "salida": "Salidas del 16/09 al 30/12/2026",
       "vigencia": "2026-12-30",
@@ -93,7 +103,14 @@
         "Travesía Cruce Andino",
         "Asistencia médica"
       ],
-      "imagen": "assets/img/pexels/14866540-1600.jpg"
+      "imagen": "assets/img/pexels/14866540-1600.jpg",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 1322790
+        }
+      ],
+      "foto_portada": ""
     },
     {
       "activo": true,
@@ -106,14 +123,17 @@
         "Los hoteles y/o servicios previstos podrán ser reemplazados por otros de similar categoría."
       ],
       "no_incluye": [],
-      "hoteles": [],
-      "itinerario": [],
-      "tarifas": [
+      "hoteles": [
         {
-          "etiqueta": "Base doble",
-          "precio": "ARS 642.990"
+          "ciudad": "Mendoza",
+          "nombre": "Hotel Raíces Aconcagua",
+          "categoria": "",
+          "noches": 3,
+          "web": ""
         }
       ],
+      "itinerario": [],
+      "tarifas": [],
       "id": "mendoza-vinedos",
       "titulo": "Mendoza: Experiencia entre Viñedos",
       "region": "argentina",
@@ -124,7 +144,7 @@
       "precio_desde": {
         "valor": 642990,
         "moneda": "ARS",
-        "nota": "por persona, base doble"
+        "nota": "por persona en base doble"
       },
       "salida": "Salidas los lunes, del 16/09 al 28/12/2026",
       "vigencia": "2026-12-28",
@@ -138,7 +158,14 @@
         "Excursión Camino del Vino - El Sol",
         "Asistencia médica"
       ],
-      "imagen": "assets/img/pexels/19046646-1600.jpg"
+      "imagen": "assets/img/pexels/19046646-1600.jpg",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 642990
+        }
+      ],
+      "foto_portada": ""
     },
     {
       "activo": true,
@@ -153,12 +180,7 @@
       "no_incluye": [],
       "hoteles": [],
       "itinerario": [],
-      "tarifas": [
-        {
-          "etiqueta": "Base doble",
-          "precio": "ARS 1.198.657"
-        }
-      ],
+      "tarifas": [],
       "id": "puerto-madryn-ballenas",
       "titulo": "Puerto Madryn: Puerto Pirámides con Avistaje de Ballenas",
       "region": "argentina",
@@ -170,7 +192,7 @@
       "precio_desde": {
         "valor": 1198657,
         "moneda": "ARS",
-        "nota": "por persona, base doble"
+        "nota": "por persona en base doble"
       },
       "salida": "Salidas del 16/09 al 31/12/2026",
       "vigencia": "2026-12-31",
@@ -184,7 +206,14 @@
         "Excursión Puerto Pirámides con embarcación para avistaje de ballenas",
         "Asistencia médica"
       ],
-      "imagen": "assets/img/pexels/14019374-1600.jpg"
+      "imagen": "assets/img/pexels/14019374-1600.jpg",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 1198657
+        }
+      ],
+      "foto_portada": ""
     },
     {
       "activo": true,
@@ -254,18 +283,6 @@
       ],
       "tarifas": [
         {
-          "etiqueta": "Cabina interna",
-          "precio": "USD 2.158"
-        },
-        {
-          "etiqueta": "Cabina externa",
-          "precio": "USD 2.326"
-        },
-        {
-          "etiqueta": "Cabina con balcón",
-          "precio": "USD 2.461"
-        },
-        {
           "etiqueta": "3° o 4° pasajero adulto",
           "precio": "USD 1.688"
         },
@@ -288,7 +305,7 @@
       "precio_desde": {
         "valor": 2158,
         "moneda": "USD",
-        "nota": "por persona, cabina interna, base doble — tarifa final"
+        "nota": "por persona en base doble, cabina interna — tarifa final"
       },
       "salida": "27 de diciembre 2026 — embarque en Buenos Aires",
       "vigencia": "2026-12-27",
@@ -304,7 +321,35 @@
         "Tasas e impuestos",
         "Gastos administrativos"
       ],
-      "imagen": "assets/img/pexels/2868242-1800.jpg"
+      "imagen": "assets/img/pexels/2868242-1800.jpg",
+      "precios": [
+        {
+          "base": "doble",
+          "cabina": "Interna",
+          "valor": 2158
+        },
+        {
+          "base": "doble",
+          "cabina": "Externa",
+          "valor": 2326
+        },
+        {
+          "base": "doble",
+          "cabina": "Con balcón",
+          "valor": 2461
+        }
+      ],
+      "crucero": {
+        "naviera": "Costa Cruceros",
+        "barco": "Costa Serena",
+        "cabina": "Interna, externa o con balcón",
+        "bebidas": "En almuerzo y cena",
+        "propinas": "Incluidas",
+        "wifi": "No incluido",
+        "asistencia": "Universal Assistance",
+        "web": ""
+      },
+      "foto_portada": ""
     },
     {
       "activo": true,
@@ -364,18 +409,6 @@
       ],
       "tarifas": [
         {
-          "etiqueta": "Cabina interna",
-          "precio": "USD 1.334"
-        },
-        {
-          "etiqueta": "Cabina externa",
-          "precio": "USD 1.482"
-        },
-        {
-          "etiqueta": "Cabina con balcón",
-          "precio": "USD 1.569"
-        },
-        {
           "etiqueta": "3° o 4° pasajero adulto",
           "precio": "USD 1.086"
         },
@@ -396,7 +429,7 @@
       "precio_desde": {
         "valor": 1334,
         "moneda": "USD",
-        "nota": "por persona, cabina interna, base doble — tarifa final"
+        "nota": "por persona en base doble, cabina interna — tarifa final"
       },
       "salida": "23 de diciembre 2026 — embarque en Buenos Aires",
       "vigencia": "2026-12-23",
@@ -412,7 +445,35 @@
         "Tasas e impuestos",
         "Gastos administrativos"
       ],
-      "imagen": "assets/img/pexels/1001682-1800.jpg"
+      "imagen": "assets/img/pexels/1001682-1800.jpg",
+      "precios": [
+        {
+          "base": "doble",
+          "cabina": "Interna",
+          "valor": 1334
+        },
+        {
+          "base": "doble",
+          "cabina": "Externa",
+          "valor": 1482
+        },
+        {
+          "base": "doble",
+          "cabina": "Con balcón",
+          "valor": 1569
+        }
+      ],
+      "crucero": {
+        "naviera": "Costa Cruceros",
+        "barco": "Costa Diadema",
+        "cabina": "Interna, externa o con balcón",
+        "bebidas": "En almuerzo y cena",
+        "propinas": "Incluidas",
+        "wifi": "No incluido",
+        "asistencia": "Universal Assistance",
+        "web": ""
+      },
+      "foto_portada": ""
     },
     {
       "activo": true,
@@ -471,18 +532,6 @@
       ],
       "tarifas": [
         {
-          "etiqueta": "Cabina interna",
-          "precio": "USD 1.536"
-        },
-        {
-          "etiqueta": "Cabina externa",
-          "precio": "USD 1.685"
-        },
-        {
-          "etiqueta": "Cabina con balcón",
-          "precio": "USD 1.773"
-        },
-        {
           "etiqueta": "3° o 4° pasajero adulto",
           "precio": "USD 1.225"
         },
@@ -503,7 +552,7 @@
       "precio_desde": {
         "valor": 1536,
         "moneda": "USD",
-        "nota": "por persona, cabina interna, base doble — tarifa final"
+        "nota": "por persona en base doble, cabina interna — tarifa final"
       },
       "salida": "30 de diciembre 2026 — embarque en Buenos Aires",
       "vigencia": "2026-12-30",
@@ -519,7 +568,35 @@
         "Tasas e impuestos",
         "Gastos administrativos"
       ],
-      "imagen": "assets/img/pexels/18149722-1800.jpg"
+      "imagen": "assets/img/pexels/18149722-1800.jpg",
+      "precios": [
+        {
+          "base": "doble",
+          "cabina": "Interna",
+          "valor": 1536
+        },
+        {
+          "base": "doble",
+          "cabina": "Externa",
+          "valor": 1685
+        },
+        {
+          "base": "doble",
+          "cabina": "Con balcón",
+          "valor": 1773
+        }
+      ],
+      "crucero": {
+        "naviera": "Costa Cruceros",
+        "barco": "Costa Diadema",
+        "cabina": "Interna, externa o con balcón",
+        "bebidas": "En almuerzo y cena",
+        "propinas": "Incluidas",
+        "wifi": "No incluido",
+        "asistencia": "Universal Assistance",
+        "web": ""
+      },
+      "foto_portada": ""
     },
     {
       "activo": false,
@@ -664,12 +741,7 @@
           "titulo": "Buenos Aires"
         }
       ],
-      "tarifas": [
-        {
-          "etiqueta": "Base doble",
-          "precio": "USD 7.878"
-        }
-      ],
+      "tarifas": [],
       "id": "auroras-boreales-grupal",
       "titulo": "Auroras Boreales — Salida grupal",
       "region": "europa",
@@ -683,7 +755,7 @@
       "precio_desde": {
         "valor": 7878,
         "moneda": "USD",
-        "nota": "por persona, base doble"
+        "nota": "por persona en base doble"
       },
       "salida": "24 de enero 2027",
       "vigencia": "2027-01-24",
@@ -705,7 +777,34 @@
         "Experiencia Sami con cena alrededor del fuego",
         "Asistencia Universal Assistance (hasta 70 años) con seguro de cancelación"
       ],
-      "imagen": "assets/img/pexels/20743085-1600.jpg"
+      "imagen": "assets/img/pexels/20743085-1600.jpg",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 7878
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Buenos Aires/Copenhague – Estocolmo/Buenos Aires (vía Madrid)",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "",
+          "ruta": "Vuelo interno Oslo–Tromsø–Oslo",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": ""
     },
     {
       "activo": false,
@@ -934,16 +1033,7 @@
           "titulo": "Roma – Madrid – Buenos Aires"
         }
       ],
-      "tarifas": [
-        {
-          "etiqueta": "Base doble",
-          "precio": "USD 5.428"
-        },
-        {
-          "etiqueta": "Single",
-          "precio": "USD 6.547"
-        }
-      ],
+      "tarifas": [],
       "id": "sur-italia-sicilia-puglia",
       "titulo": "Sur de Italia y Sicilia con Puglia — Salida grupal acompañada",
       "region": "europa",
@@ -965,7 +1055,7 @@
       "precio_desde": {
         "valor": 5428,
         "moneda": "USD",
-        "nota": "por persona, base doble — IVA y gastos administrativos incluidos"
+        "nota": "por persona en base doble — IVA y gastos administrativos incluidos"
       },
       "salida": "9 de marzo 2027 — vuelos Iberia IB106/IB654",
       "vigencia": "2027-03-09",
@@ -985,7 +1075,29 @@
         "Universal Assistance con seguro de cancelación (hasta 70 años)",
         "Acompañante de Organización Piamonte desde Buenos Aires (mín. 20 pax)"
       ],
-      "imagen": "assets/img/pexels/2064827-1600.jpg"
+      "imagen": "assets/img/pexels/2064827-1600.jpg",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 5428
+        },
+        {
+          "base": "single",
+          "valor": 6547
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Buenos Aires/Roma/Buenos Aires (vía Madrid)",
+          "clase": "Económica",
+          "fecha": "",
+          "horario": "",
+          "numero": "",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": ""
     },
     {
       "activo": true,
@@ -1004,20 +1116,7 @@
       ],
       "hoteles": [],
       "itinerario": [],
-      "tarifas": [
-        {
-          "etiqueta": "Base triple",
-          "precio": "USD 2.350"
-        },
-        {
-          "etiqueta": "Base doble",
-          "precio": "USD 2.490"
-        },
-        {
-          "etiqueta": "Single",
-          "precio": "USD 3.660"
-        }
-      ],
+      "tarifas": [],
       "id": "punta-cana-all-inclusive",
       "titulo": "Punta Cana All Inclusive",
       "region": "caribe",
@@ -1026,9 +1125,9 @@
       ],
       "resumen": "10 noches de playa, all inclusive y descanso total en el destino más elegido del Caribe.",
       "precio_desde": {
-        "valor": 2350,
+        "valor": 2490,
         "moneda": "USD",
-        "nota": "por persona, base triple — tarifa final"
+        "nota": "por persona en base doble — tarifa final"
       },
       "salida": "15 de febrero 2027",
       "vigencia": "2027-02-15",
@@ -1041,7 +1140,33 @@
         "Traslados de llegada y salida",
         "Universal Assistance Master Plus (hasta 70 años)"
       ],
-      "imagen": "assets/img/pexels/2646066-1600.jpg"
+      "imagen": "assets/img/pexels/2646066-1600.jpg",
+      "precios": [
+        {
+          "base": "triple",
+          "valor": 2350
+        },
+        {
+          "base": "doble",
+          "valor": 2490
+        },
+        {
+          "base": "single",
+          "valor": 3660
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "LATAM",
+          "ruta": "",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": ""
     },
     {
       "activo": true,
@@ -1060,20 +1185,7 @@
       ],
       "hoteles": [],
       "itinerario": [],
-      "tarifas": [
-        {
-          "etiqueta": "Base triple",
-          "precio": "USD 3.220"
-        },
-        {
-          "etiqueta": "Base doble",
-          "precio": "USD 3.310"
-        },
-        {
-          "etiqueta": "Single",
-          "precio": "USD 4.490"
-        }
-      ],
+      "tarifas": [],
       "id": "riviera-maya-costa-mujeres",
       "titulo": "Riviera Maya All Inclusive — Costa Mujeres + Riviera Maya",
       "region": "caribe",
@@ -1084,9 +1196,9 @@
       ],
       "resumen": "Dos de los destinos más exclusivos del Caribe mexicano en un solo viaje: 5 noches en Costa Mujeres y 5 en Riviera Maya, todo all inclusive.",
       "precio_desde": {
-        "valor": 3220,
+        "valor": 3310,
         "moneda": "USD",
-        "nota": "por persona, base triple — tarifa final"
+        "nota": "por persona en base doble — tarifa final"
       },
       "salida": "4 de enero 2027",
       "vigencia": "2027-01-04",
@@ -1100,7 +1212,33 @@
         "Traslados de llegada, salida e internos",
         "Universal Assistance (hasta 70 años)"
       ],
-      "imagen": "assets/img/pexels/16116483-1600.jpg"
+      "imagen": "assets/img/pexels/16116483-1600.jpg",
+      "precios": [
+        {
+          "base": "triple",
+          "valor": 3220
+        },
+        {
+          "base": "doble",
+          "valor": 3310
+        },
+        {
+          "base": "single",
+          "valor": 4490
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Buenos Aires/Cancún/Buenos Aires",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": ""
     },
     {
       "activo": true,
@@ -1119,16 +1257,7 @@
       ],
       "hoteles": [],
       "itinerario": [],
-      "tarifas": [
-        {
-          "etiqueta": "Base doble",
-          "precio": "USD 2.400"
-        },
-        {
-          "etiqueta": "Single",
-          "precio": "USD 3.440"
-        }
-      ],
+      "tarifas": [],
       "id": "punta-cana-bayahibe",
       "titulo": "Punta Cana & Bayahíbe All Inclusive",
       "region": "caribe",
@@ -1140,7 +1269,7 @@
       "precio_desde": {
         "valor": 2400,
         "moneda": "USD",
-        "nota": "por persona, base doble — tarifa final"
+        "nota": "por persona en base doble — tarifa final"
       },
       "salida": "2 de enero 2027",
       "vigencia": "2027-01-02",
@@ -1154,7 +1283,29 @@
         "Todos los traslados",
         "Universal Assistance Master Plus (hasta 70 años)"
       ],
-      "imagen": "assets/img/pexels/10816914-1600.jpg"
+      "imagen": "assets/img/pexels/10816914-1600.jpg",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 2400
+        },
+        {
+          "base": "single",
+          "valor": 3440
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "LATAM",
+          "ruta": "",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": ""
     },
     {
       "activo": true,
@@ -1173,20 +1324,7 @@
       ],
       "hoteles": [],
       "itinerario": [],
-      "tarifas": [
-        {
-          "etiqueta": "Base triple",
-          "precio": "USD 3.710"
-        },
-        {
-          "etiqueta": "Base doble",
-          "precio": "USD 3.840"
-        },
-        {
-          "etiqueta": "Single",
-          "precio": "USD 5.020"
-        }
-      ],
+      "tarifas": [],
       "id": "cancun-all-inclusive",
       "titulo": "Cancún All Inclusive",
       "region": "caribe",
@@ -1195,9 +1333,9 @@
       ],
       "resumen": "10 noches en Cancún con sistema all inclusive: playas turquesa, gastronomía y descanso sin preocupaciones.",
       "precio_desde": {
-        "valor": 3710,
+        "valor": 3840,
         "moneda": "USD",
-        "nota": "por persona, base triple — tarifa final"
+        "nota": "por persona en base doble — tarifa final"
       },
       "salida": "8 de febrero 2027",
       "vigencia": "2027-02-08",
@@ -1210,7 +1348,33 @@
         "Traslados de llegada y salida",
         "Universal Assistance Master Plus (hasta 70 años)"
       ],
-      "imagen": "assets/img/pexels/18118993-1600.jpg"
+      "imagen": "assets/img/pexels/18118993-1600.jpg",
+      "precios": [
+        {
+          "base": "triple",
+          "valor": 3710
+        },
+        {
+          "base": "doble",
+          "valor": 3840
+        },
+        {
+          "base": "single",
+          "valor": 5020
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "LATAM",
+          "ruta": "",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": ""
     },
     {
       "activo": false,
@@ -1413,16 +1577,76 @@
         "Servicios no especificados"
       ],
       "hoteles": [
-        "Hanoi: Pan Pacific",
-        "Halong: Ambassador Cruise",
-        "Hoi An: Royal Hoi An",
-        "Ho Chi Minh: Caravelle Saigon",
-        "Siem Reap: Shoka Angkor",
-        "Bangkok: Montien Surawong",
-        "Chiang Rai: Le Méridien",
-        "Chiang Mai: InterContinental The Mae Ping",
-        "Krabi: Sofitel Phokeethra",
-        "Phuket: SAii Laguna (late check-out)"
+        {
+          "ciudad": "Hanoi",
+          "nombre": "Pan Pacific",
+          "categoria": "",
+          "noches": null,
+          "web": ""
+        },
+        {
+          "ciudad": "Halong",
+          "nombre": "Ambassador Cruise",
+          "categoria": "",
+          "noches": null,
+          "web": ""
+        },
+        {
+          "ciudad": "Hoi An",
+          "nombre": "Royal Hoi An",
+          "categoria": "",
+          "noches": null,
+          "web": ""
+        },
+        {
+          "ciudad": "Ho Chi Minh",
+          "nombre": "Caravelle Saigon",
+          "categoria": "",
+          "noches": null,
+          "web": ""
+        },
+        {
+          "ciudad": "Siem Reap",
+          "nombre": "Shoka Angkor",
+          "categoria": "",
+          "noches": null,
+          "web": ""
+        },
+        {
+          "ciudad": "Bangkok",
+          "nombre": "Montien Surawong",
+          "categoria": "",
+          "noches": null,
+          "web": ""
+        },
+        {
+          "ciudad": "Chiang Rai",
+          "nombre": "Le Méridien",
+          "categoria": "",
+          "noches": null,
+          "web": ""
+        },
+        {
+          "ciudad": "Chiang Mai",
+          "nombre": "InterContinental The Mae Ping",
+          "categoria": "",
+          "noches": null,
+          "web": ""
+        },
+        {
+          "ciudad": "Krabi",
+          "nombre": "Sofitel Phokeethra",
+          "categoria": "",
+          "noches": null,
+          "web": ""
+        },
+        {
+          "ciudad": "Phuket",
+          "nombre": "SAii Laguna (late check-out)",
+          "categoria": "",
+          "noches": null,
+          "web": ""
+        }
       ],
       "itinerario": [
         {
@@ -1462,12 +1686,7 @@
           "titulo": "Phuket – Buenos Aires"
         }
       ],
-      "tarifas": [
-        {
-          "etiqueta": "Base doble",
-          "precio": "USD 14.330"
-        }
-      ],
+      "tarifas": [],
       "id": "vietnam-camboya-tailandia",
       "titulo": "Vietnam, Camboya & Tailandia",
       "region": "asia",
@@ -1487,7 +1706,7 @@
       "precio_desde": {
         "valor": 14330,
         "moneda": "USD",
-        "nota": "por persona, base doble — total con impuestos"
+        "nota": "por persona en base doble — total con impuestos"
       },
       "salida": "7 de noviembre 2026",
       "vigencia": "2026-11-07",
@@ -1510,7 +1729,34 @@
         "Noche previa en hotel de Buenos Aires con traslado",
         "Habitación a compartir garantizada para pasajeras que viajen solas"
       ],
-      "imagen": "assets/img/pexels/18008781-1600.jpg"
+      "imagen": "assets/img/pexels/18008781-1600.jpg",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 14330
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Buenos Aires–Guarulhos",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Guarulhos–Hanoi / Phuket–Buenos Aires (vía Estambul)",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": ""
     },
     {
       "activo": true,
@@ -1588,12 +1834,7 @@
           "titulo": "Tokio – Addis Abeba – Buenos Aires"
         }
       ],
-      "tarifas": [
-        {
-          "etiqueta": "Base doble",
-          "precio": "USD 8.070"
-        }
-      ],
+      "tarifas": [],
       "id": "tesoros-corea-japon",
       "titulo": "Tesoros de Corea y Japón — Salida grupal acompañada",
       "region": "asia",
@@ -1616,7 +1857,7 @@
       "precio_desde": {
         "valor": 8070,
         "moneda": "USD",
-        "nota": "por persona, base doble — tarifa final con impuestos"
+        "nota": "por persona en base doble — tarifa final con impuestos"
       },
       "salida": "5 de marzo 2027 — Ethiopian ET507/672 ida, ET673/506 vuelta",
       "vigencia": "2027-03-05",
@@ -1638,7 +1879,25 @@
         "Tren bala Kioto–Tokio",
         "Universal Assistance con seguro de cancelación (hasta 70 años)"
       ],
-      "imagen": "assets/img/pexels/15121561-1600.jpg"
+      "imagen": "assets/img/pexels/15121561-1600.jpg",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 8070
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "",
+          "ruta": "Buenos Aires–Seúl / Tokio–Buenos Aires (vía Addis Abeba)",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": ""
     },
     {
       "activo": false,
@@ -1721,12 +1980,48 @@
         "Gastos personales"
       ],
       "hoteles": [
-        "El Cairo: Sofitel Cairo Downtown 4*",
-        "Crucero Nilo: Blue Shadow / Opera 4*",
-        "Amman: The Boulevard Arjaan by Rotana 4*",
-        "Petra: Mövenpick Resort Petra 4*",
-        "Wadi Rum: Mazayen Luxury Camp – Martian Tents",
-        "Mar Muerto: Holiday Inn Dead Sea 4*"
+        {
+          "ciudad": "El Cairo",
+          "nombre": "Sofitel Cairo Downtown",
+          "categoria": "4*",
+          "noches": 5,
+          "web": ""
+        },
+        {
+          "ciudad": "Crucero Nilo",
+          "nombre": "Blue Shadow / Opera",
+          "categoria": "4*",
+          "noches": 4,
+          "web": ""
+        },
+        {
+          "ciudad": "Amman",
+          "nombre": "The Boulevard Arjaan by Rotana",
+          "categoria": "4*",
+          "noches": 1,
+          "web": ""
+        },
+        {
+          "ciudad": "Petra",
+          "nombre": "Mövenpick Resort Petra",
+          "categoria": "4*",
+          "noches": 2,
+          "web": ""
+        },
+        {
+          "ciudad": "Wadi Rum",
+          "nombre": "Mazayen Luxury Camp – Martian Tents",
+          "categoria": "",
+          "noches": 1,
+          "web": ""
+        },
+        {
+          "ciudad": "Mar Muerto",
+          "nombre": "Holiday Inn Dead Sea",
+          "categoria": "4*",
+          "noches": 2,
+          "web": ""
+        }
       ],
       "itinerario": [
         {
@@ -1779,12 +2074,7 @@
           "titulo": "Mar Muerto – Amman – Buenos Aires"
         }
       ],
-      "tarifas": [
-        {
-          "etiqueta": "Base doble",
-          "precio": "USD 8.420"
-        }
-      ],
+      "tarifas": [],
       "id": "egipto-jordania",
       "titulo": "Egipto & Jordania",
       "region": "africa",
@@ -1802,7 +2092,7 @@
       "precio_desde": {
         "valor": 8420,
         "moneda": "USD",
-        "nota": "por persona, base doble — total con impuestos"
+        "nota": "por persona en base doble — total con impuestos"
       },
       "salida": "17 de marzo 2027",
       "vigencia": "2027-03-17",
@@ -1821,7 +2111,25 @@
         "Reunión informativa previa",
         "Tour leader desde Argentina (mín. 10 pax)"
       ],
-      "imagen": "assets/img/pexels/1631665-1600.jpg"
+      "imagen": "assets/img/pexels/1631665-1600.jpg",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 8420
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Ethiopian Airlines",
+          "ruta": "Desde Buenos Aires",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": ""
     },
     {
       "activo": true,
@@ -1837,10 +2145,34 @@
         "Gastos personales"
       ],
       "hoteles": [
-        "Johannesburgo: Permont D'Oreale 5*",
-        "Área Kruger: Tintswalo Private Reserve 5*",
-        "Mauritius: Hilton Mauritius Resort & Spa 4*",
-        "Ciudad del Cabo: Southern Sun Waterfront / Park Inn Foreshore 4*"
+        {
+          "ciudad": "Johannesburgo",
+          "nombre": "Permont D'Oreale",
+          "categoria": "5*",
+          "noches": 1,
+          "web": ""
+        },
+        {
+          "ciudad": "Área Kruger",
+          "nombre": "Tintswalo Private Reserve",
+          "categoria": "5*",
+          "noches": 2,
+          "web": ""
+        },
+        {
+          "ciudad": "Mauritius",
+          "nombre": "Hilton Mauritius Resort & Spa",
+          "categoria": "4*",
+          "noches": 4,
+          "web": ""
+        },
+        {
+          "ciudad": "Ciudad del Cabo",
+          "nombre": "Southern Sun Waterfront / Park Inn Foreshore",
+          "categoria": "4*",
+          "noches": 4,
+          "web": ""
+        }
       ],
       "itinerario": [
         {
@@ -1894,12 +2226,7 @@
           "titulo": "Ciudad del Cabo – San Pablo – Buenos Aires"
         }
       ],
-      "tarifas": [
-        {
-          "etiqueta": "Base doble",
-          "precio": "USD 10.360"
-        }
-      ],
+      "tarifas": [],
       "id": "sudafrica-mauritius",
       "titulo": "Sudáfrica & Mauritius",
       "region": "africa",
@@ -1913,7 +2240,7 @@
       "precio_desde": {
         "valor": 10360,
         "moneda": "USD",
-        "nota": "por persona, base doble — total con impuestos"
+        "nota": "por persona en base doble — total con impuestos"
       },
       "salida": "16 de noviembre 2026 — South African Airways vía San Pablo",
       "vigencia": "2026-11-16",
@@ -1935,7 +2262,25 @@
         "Reunión informativa previa",
         "Tour leader desde Argentina"
       ],
-      "imagen": "assets/img/pexels/3889918-1600.jpg"
+      "imagen": "assets/img/pexels/3889918-1600.jpg",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 10360
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "South African Airways",
+          "ruta": "Desde Buenos Aires, vía San Pablo",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": ""
     },
     {
       "activo": true,
@@ -1948,7 +2293,15 @@
         "Los valores incluyen DNT, IVA, tasas aeroportuarias, impuestos hoteleros, propinas y maleteros."
       ],
       "no_incluye": [],
-      "hoteles": [],
+      "hoteles": [
+        {
+          "ciudad": "Orlando",
+          "nombre": "Walt Disney World Resort (All Star / Pop Century)",
+          "categoria": "",
+          "noches": 10,
+          "web": ""
+        }
+      ],
       "itinerario": [],
       "tarifas": [
         {
@@ -1997,7 +2350,19 @@
         "Kit de viaje completo (mochila, remera, campera, piloto, botella, porta documentos)",
         "Seguimiento diario online con fotos y videos"
       ],
-      "imagen": "assets/img/pexels/12422683-1600.jpg"
+      "imagen": "assets/img/pexels/12422683-1600.jpg",
+      "vuelos": [
+        {
+          "aerolinea": "",
+          "ruta": "Desde Buenos Aires, Córdoba y Rosario",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": ""
     },
     {
       "activo": true,
@@ -2010,10 +2375,34 @@
       ],
       "no_incluye": [],
       "hoteles": [
-        "Londres: Royal National o similar",
-        "París: Campanile Val de France / Dream Castle",
-        "Port Aventura: Hotel Caribe / Gold River / El Paso",
-        "Madrid: Ayre Colón / Palladium / Sterling Gran Vía"
+        {
+          "ciudad": "Londres",
+          "nombre": "Royal National o similar",
+          "categoria": "",
+          "noches": null,
+          "web": ""
+        },
+        {
+          "ciudad": "París",
+          "nombre": "Campanile Val de France / Dream Castle",
+          "categoria": "",
+          "noches": null,
+          "web": ""
+        },
+        {
+          "ciudad": "Port Aventura",
+          "nombre": "Hotel Caribe / Gold River / El Paso",
+          "categoria": "",
+          "noches": null,
+          "web": ""
+        },
+        {
+          "ciudad": "Madrid",
+          "nombre": "Ayre Colón / Palladium / Sterling Gran Vía",
+          "categoria": "",
+          "noches": null,
+          "web": ""
+        }
       ],
       "itinerario": [],
       "tarifas": [
@@ -2055,7 +2444,19 @@
         "Assist-Card internacional hasta USD 1.000.000",
         "Coordinadores exclusivos permanentes + equipo de gerentes y guías locales"
       ],
-      "imagen": "assets/img/pexels/1461974-1600.jpg"
+      "imagen": "assets/img/pexels/1461974-1600.jpg",
+      "vuelos": [
+        {
+          "aerolinea": "",
+          "ruta": "Desde Buenos Aires, Córdoba y Rosario",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": ""
     }
   ]
 }

@@ -622,6 +622,11 @@ p.lm-chip a:hover{opacity:1;color:var(--bur)}
 .dtar dd{font-size:19px;font-weight:700;color:var(--ink);letter-spacing:-.025em;white-space:nowrap}
 .dtar>div:first-child{background:none}
 .dtar>div:first-child dd{color:var(--red)}
+/* P2: datos del crucero (texto, no precios) */
+.dtar-info dd{font-size:16px;font-weight:600;letter-spacing:0;white-space:normal;text-align:right}
+.dtar-info>div:first-child dd{color:var(--ink)}
+.dtar-base>div:first-child dd{color:var(--ink)}
+.dtar-base>div.on dd{color:var(--red)}
 
 .dcta{background:var(--bur);color:#fff;text-align:center;padding-top:clamp(88px,13vh,150px);padding-bottom:clamp(88px,13vh,150px);--red3:var(--gold)}
 .dcta h2{font-size:clamp(40px,6vw,88px);font-weight:700;letter-spacing:-.045em;line-height:.98;color:#fff}
@@ -889,6 +894,7 @@ footer{background:var(--white);color:var(--ink);border-top:0;padding-top:72px;pa
   .fin .mx>a{max-width:calc(50% - clamp(24px,3vw,55px))}
   .fin .mx>.rv>.chips{position:absolute;right:0;top:50%;width:calc(50% - clamp(24px,3vw,55px));max-width:none;margin:0;transform:translateY(-50%) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg))}
 }
+.chips.scrub{transition:none} /* P-MP: en pantallas táctiles la inclina el scroll, frame a frame */
 @media(prefers-reduced-motion:reduce){.chips{transform:none!important}.chip{color:#fff}.chip::before{background:var(--gold);border-color:var(--gold)}}
 
 /* ---------- preguntas frecuentes: lista con desplegables sobre fondo borravino (FAQ de la home) ---------- */
