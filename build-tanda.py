@@ -66,6 +66,7 @@ FULL_DIRS = [
     "politica-de-privacidad",
     "terminos-y-condiciones",
     # "arrepentimiento",  # botón de arrepentimiento (Ley 24.240): despublicado el 2026-10-07; descomentar para volver a publicarlo (index.html + enviar.php + data/ protegida)
+    "contacto",     # formulario de consulta (index.html + enviar.php + data/ protegida)
     "sorteo",       # campaña temporal (landing + sorteo-submit.php + data/ protegida); noindex, fuera del sitemap
 ]
 
