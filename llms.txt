@@ -23,6 +23,11 @@
 - Formas de pago: paquetes internacionales en efectivo en dólares billete o transferencia bancaria en dólares (o pesos al tipo de cambio del día); paquetes nacionales en efectivo, transferencia o tarjeta de crédito en cuotas. Reserva internacional: seña del 50% y saldo hasta un mes antes (cruceros: 2 meses antes); nacionales: pago total dentro de las 48 horas
 - Acompañamiento antes, durante y después del viaje
 
+## Guías y artículos
+- Nuevo sistema EES: cómo es ahora el ingreso a Europa (información verificada en octubre de 2026): https://www.legendtravel.com.ar/#guias
+- Escalas en Lima: la tasa para pasajeros en conexión (información verificada en octubre de 2026): https://www.legendtravel.com.ar/#guias
+- Sargazo en el Caribe: qué es y cómo elegir bien la fecha y el destino (información verificada en octubre de 2026): https://www.legendtravel.com.ar/#guias
+
 <!-- PAQUETES:START -->
 ## Salidas y paquetes actuales
 Generado el 2026-10-08 desde data/paquetes.json. Solo salidas vigentes:
