@@ -16,3 +16,6 @@ _showroom-*
 
 # copias que deja planilla-paquetes.py antes de importar (no van al repo)
 data/respaldos/
+
+# capturas de la auditoría (revisión local, pesadas)
+tools/capturas-ronda2/
