@@ -1614,7 +1614,11 @@
           "mapa": "HM Alma de Bayahíbe, Bayahíbe",
           "destacados": [
             {
-              "texto": "Hotel solo para adultos frente al mar Caribe",
+              "texto": "Hotel solo para adultos",
+              "fuente": "https://www.hmhotels.com/hm-alma-de-bayahibe/"
+            },
+            {
+              "texto": "Frente al mar Caribe",
               "fuente": "https://www.hmhotels.com/hm-alma-de-bayahibe/"
             },
             {
@@ -1668,7 +1672,7 @@
         "Bayahíbe",
         "Punta Cana"
       ],
-      "resumen": "La combinación perfecta: las playas tranquilas de Bayahíbe y la energía de Punta Cana. Diez noches de relax all inclusive.",
+      "resumen": "La combinación perfecta: las playas tranquilas de Bayahíbe y la energía de Punta Cana. Diez noches de relax all inclusive. En Bayahíbe el alojamiento es en el HM Alma de Bayahíbe, hotel solo para adultos.",
       "precio_desde": {
         "valor": 2400,
         "moneda": "USD",
@@ -1712,7 +1716,14 @@
       "fuente_detalle": {
         "url": "https://www.legendtravel.com.ar/paquetes?id=558&salidaId=689&adultsQty=2",
         "fecha": "2026-10-13"
-      }
+      },
+      "resumen_fuentes": [
+        {
+          "dato": "HM Alma de Bayahíbe: hotel solo para adultos",
+          "fuente": "https://www.hmhotels.com/hm-alma-de-bayahibe/",
+          "fecha": "2026-10-13"
+        }
+      ]
     },
     {
       "activo": true,
