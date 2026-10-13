@@ -130,8 +130,8 @@ ul{list-style:none}
 .nav.solid{color:var(--ink);box-shadow:0 1px 0 var(--line)}
 .nav.solid::before{opacity:1}
 .nav .wrap{position:relative;display:flex;align-items:center;justify-content:space-between;width:100%;gap:24px}
-.nav-logo{display:flex;align-items:center;margin:-16px 0 -16px calc(-40px - var(--gutter)/2)}
-.nav-logo img{height:128px;width:auto;filter:brightness(0) invert(1);transition:filter .5s var(--ease)}
+.nav-logo{display:flex;align-items:center;flex:none;margin:-16px 0 -16px calc(-40px - var(--gutter)/2)}
+.nav-logo img{height:128px;width:auto;max-width:none;filter:brightness(0) invert(1);transition:filter .5s var(--ease)}
 .nav.solid .nav-logo img{filter:none}
 .nav-links{display:none;align-items:center;gap:34px;font-size:15px;font-weight:500}
 @media(min-width:1024px){.nav-links{display:flex}}
