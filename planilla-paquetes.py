@@ -30,7 +30,7 @@ RESPALDOS = ROOT / "data" / "respaldos"
 BASES = ["single", "doble", "triple", "cuadruple"]
 MONEDAS = ["USD", "ARS", "EUR"]
 MAX_CABINAS, MAX_HOTELES, MAX_VUELOS = 4, 12, 4
-HOTEL = ["ciudad", "nombre", "categoria", "noches", "web"]
+HOTEL = ["ciudad", "nombre", "categoria", "noches", "regimen", "habitacion", "web"]
 VUELO = ["aerolinea", "ruta", "clase", "fecha", "horario", "numero", "equipaje"]
 CRUCERO = ["naviera", "barco", "cabina", "bebidas", "propinas", "wifi", "asistencia", "web"]
 NO_VALE = ("a confirmar", "a definir", "consultar", "-", "n/a", "s/d")
@@ -274,7 +274,7 @@ def importar(probar):
                 while len(items) < i:
                     items.append({c: ("" if c != "noches" else None) for c in campos})
                 if isinstance(items[i - 1], str):
-                    items[i - 1] = {"ciudad": "", "nombre": items[i - 1], "categoria": "", "noches": None, "web": ""}
+                    items[i - 1] = {"ciudad": "", "nombre": items[i - 1], "categoria": "", "noches": None, "regimen": "", "habitacion": "", "web": ""}
                 for c, v in celdas.items():
                     if not v.strip():
                         continue

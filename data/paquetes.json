@@ -63,16 +63,20 @@
         {
           "ciudad": "Bariloche",
           "nombre": "Huinid Pioneros Hotel",
-          "categoria": "",
+          "categoria": "3*",
           "noches": 3,
-          "web": ""
+          "web": "",
+          "habitacion": "Habitación estándar",
+          "regimen": ""
         },
         {
           "ciudad": "Puerto Varas",
           "nombre": "Hotel Cabaña del Lago",
-          "categoria": "",
+          "categoria": "4*",
           "noches": 2,
-          "web": ""
+          "web": "",
+          "habitacion": "Habitación estándar",
+          "regimen": ""
         }
       ],
       "itinerario": [],
@@ -110,7 +114,11 @@
           "valor": 1322790
         }
       ],
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/paquetes?id=489&salidaId=593&adultsQty=2",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": true,
@@ -127,9 +135,11 @@
         {
           "ciudad": "Mendoza",
           "nombre": "Hotel Raíces Aconcagua",
-          "categoria": "",
+          "categoria": "4*",
           "noches": 3,
-          "web": ""
+          "web": "",
+          "habitacion": "Habitación estándar",
+          "regimen": ""
         }
       ],
       "itinerario": [],
@@ -165,7 +175,11 @@
           "valor": 642990
         }
       ],
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/paquetes?id=493&salidaId=597&adultsQty=2",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": true,
@@ -178,7 +192,17 @@
         "Los hoteles y/o servicios previstos podrán ser reemplazados por otros de similar categoría."
       ],
       "no_incluye": [],
-      "hoteles": [],
+      "hoteles": [
+        {
+          "ciudad": "Puerto Madryn",
+          "nombre": "Hotel Tolosa",
+          "categoria": "3*",
+          "noches": 3,
+          "regimen": "",
+          "habitacion": "Habitación estándar",
+          "web": ""
+        }
+      ],
       "itinerario": [],
       "tarifas": [],
       "id": "puerto-madryn-ballenas",
@@ -213,7 +237,11 @@
           "valor": 1198657
         }
       ],
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/paquetes?id=480&salidaId=584&adultsQty=2",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": true,
@@ -347,9 +375,13 @@
         "propinas": "Incluidas",
         "wifi": "No incluido",
         "asistencia": "Universal Assistance",
-        "web": ""
+        "web": "https://www.costacruceros.com/"
       },
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/consulta/8337/ano-nuevo-a-bordo-de-costa-serena",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": true,
@@ -471,9 +503,13 @@
         "propinas": "Incluidas",
         "wifi": "No incluido",
         "asistencia": "Universal Assistance",
-        "web": ""
+        "web": "https://www.costacruceros.com/"
       },
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/consulta/8338/navidad-a-bordo-del-costa-diadema",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": true,
@@ -594,9 +630,13 @@
         "propinas": "Incluidas",
         "wifi": "No incluido",
         "asistencia": "Universal Assistance",
-        "web": ""
+        "web": "https://www.costacruceros.com/"
       },
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/consulta/8339/recibi-el-2027-en-altamar",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": false,
@@ -804,7 +844,11 @@
           "equipaje": ""
         }
       ],
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/paquetes?id=398&salidaId=476&adultsQty=2",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": false,
@@ -958,7 +1002,53 @@
       "no_incluye": [
         "Cualquier servicio no especificado como incluido"
       ],
-      "hoteles": [],
+      "hoteles": [
+        {
+          "ciudad": "Roma",
+          "nombre": "Ergife Palace Hotel",
+          "categoria": "4*",
+          "noches": 4,
+          "regimen": "Desayuno",
+          "habitacion": "Standard",
+          "web": ""
+        },
+        {
+          "ciudad": "Bari",
+          "nombre": "Parco dei Principi Hotel Congress & Spa",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "Standard",
+          "web": ""
+        },
+        {
+          "ciudad": "Salerno",
+          "nombre": "Grand Hotel Salerno",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "Standard",
+          "web": ""
+        },
+        {
+          "ciudad": "Taormina",
+          "nombre": "Excelsior Palace",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "Standard",
+          "web": ""
+        },
+        {
+          "ciudad": "Palermo",
+          "nombre": "San Paolo Palace",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "Standard",
+          "web": ""
+        }
+      ],
       "itinerario": [
         {
           "dia": "Día 1",
@@ -1089,15 +1179,28 @@
       "vuelos": [
         {
           "aerolinea": "Iberia",
-          "ruta": "Buenos Aires/Roma/Buenos Aires (vía Madrid)",
+          "ruta": "Buenos Aires – Roma (1 escala)",
           "clase": "Económica",
-          "fecha": "",
-          "horario": "",
-          "numero": "",
+          "fecha": "09/03/2027 – 10/03/2027",
+          "horario": "19:10 – 15:30",
+          "numero": "IB 106",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Roma – Buenos Aires (1 escala)",
+          "clase": "Económica",
+          "fecha": "23/03/2027 – 24/03/2027",
+          "horario": "21:35 – 08:45",
+          "numero": "IB 654",
           "equipaje": ""
         }
       ],
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/paquetes?id=548&salidaId=676&adultsQty=2",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": true,
@@ -1114,7 +1217,17 @@
         "Gastos personales",
         "Servicios no especificados"
       ],
-      "hoteles": [],
+      "hoteles": [
+        {
+          "ciudad": "Punta Cana",
+          "nombre": "WHALA! BAVARO",
+          "categoria": "5*",
+          "noches": 10,
+          "regimen": "All Inclusive",
+          "habitacion": "Habitación estándar",
+          "web": ""
+        }
+      ],
       "itinerario": [],
       "tarifas": [],
       "id": "punta-cana-all-inclusive",
@@ -1166,7 +1279,11 @@
           "equipaje": ""
         }
       ],
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/paquetes?id=560&salidaId=691&adultsQty=2",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": true,
@@ -1183,7 +1300,26 @@
         "Gastos personales",
         "Servicios no especificados"
       ],
-      "hoteles": [],
+      "hoteles": [
+        {
+          "ciudad": "Riviera Maya",
+          "nombre": "BlueBay Grand Esmeralda",
+          "categoria": "5*",
+          "noches": 5,
+          "regimen": "All Inclusive",
+          "habitacion": "Habitación estándar",
+          "web": ""
+        },
+        {
+          "ciudad": "Costa Mujeres",
+          "nombre": "Catalonia Grand Costa Mujeres All Suites & Spa",
+          "categoria": "5*",
+          "noches": 5,
+          "regimen": "All Inclusive",
+          "habitacion": "Habitación estándar",
+          "web": ""
+        }
+      ],
       "itinerario": [],
       "tarifas": [],
       "id": "riviera-maya-costa-mujeres",
@@ -1238,7 +1374,11 @@
           "equipaje": ""
         }
       ],
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/paquetes?id=557&salidaId=688&adultsQty=2",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": true,
@@ -1255,7 +1395,26 @@
         "Gastos personales",
         "Servicios no especificados"
       ],
-      "hoteles": [],
+      "hoteles": [
+        {
+          "ciudad": "Bayahíbe",
+          "nombre": "HM Alma de Bayahibe",
+          "categoria": "4*",
+          "noches": 6,
+          "regimen": "All Inclusive",
+          "habitacion": "Habitación estándar",
+          "web": ""
+        },
+        {
+          "ciudad": "Punta Cana",
+          "nombre": "WHALA! BAVARO",
+          "categoria": "5*",
+          "noches": 4,
+          "regimen": "All Inclusive",
+          "habitacion": "Habitación estándar",
+          "web": ""
+        }
+      ],
       "itinerario": [],
       "tarifas": [],
       "id": "punta-cana-bayahibe",
@@ -1305,7 +1464,11 @@
           "equipaje": ""
         }
       ],
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/paquetes?id=558&salidaId=689&adultsQty=2",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": true,
@@ -1322,7 +1485,17 @@
         "Gastos personales",
         "Servicios no especificados"
       ],
-      "hoteles": [],
+      "hoteles": [
+        {
+          "ciudad": "Cancún",
+          "nombre": "Hotel Riu Caribe",
+          "categoria": "5*",
+          "noches": 10,
+          "regimen": "All Inclusive",
+          "habitacion": "Habitación estándar",
+          "web": ""
+        }
+      ],
       "itinerario": [],
       "tarifas": [],
       "id": "cancun-all-inclusive",
@@ -1374,7 +1547,11 @@
           "equipaje": ""
         }
       ],
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/paquetes?id=559&salidaId=690&adultsQty=2",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": false,
@@ -1582,70 +1759,90 @@
           "nombre": "Pan Pacific",
           "categoria": "",
           "noches": null,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Halong",
           "nombre": "Ambassador Cruise",
           "categoria": "",
           "noches": null,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Hoi An",
           "nombre": "Royal Hoi An",
           "categoria": "",
           "noches": null,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Ho Chi Minh",
           "nombre": "Caravelle Saigon",
           "categoria": "",
           "noches": null,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Siem Reap",
           "nombre": "Shoka Angkor",
           "categoria": "",
           "noches": null,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Bangkok",
           "nombre": "Montien Surawong",
           "categoria": "",
           "noches": null,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Chiang Rai",
           "nombre": "Le Méridien",
           "categoria": "",
           "noches": null,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Chiang Mai",
           "nombre": "InterContinental The Mae Ping",
           "categoria": "",
           "noches": null,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Krabi",
           "nombre": "Sofitel Phokeethra",
           "categoria": "",
           "noches": null,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Phuket",
           "nombre": "SAii Laguna (late check-out)",
           "categoria": "",
           "noches": null,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         }
       ],
       "itinerario": [
@@ -1756,7 +1953,11 @@
           "equipaje": ""
         }
       ],
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/paquetes?id=576&salidaId=720&adultsQty=2",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": true,
@@ -1773,7 +1974,89 @@
       "no_incluye": [
         "Cualquier servicio no especificado como incluido"
       ],
-      "hoteles": [],
+      "hoteles": [
+        {
+          "ciudad": "Seúl",
+          "nombre": "Mercure Ambassador Seoul Hongdae",
+          "categoria": "4*",
+          "noches": 4,
+          "regimen": "Desayuno",
+          "habitacion": "Standard",
+          "web": ""
+        },
+        {
+          "ciudad": "Jeonju",
+          "nombre": "Best Western Plus Jeonju Hotel",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "Standard",
+          "web": ""
+        },
+        {
+          "ciudad": "Busan",
+          "nombre": "Ramada Encore by Wyndham Busan Station",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "Standard",
+          "web": ""
+        },
+        {
+          "ciudad": "Hiroshima",
+          "nombre": "Hilton Hiroshima",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "Standard",
+          "web": ""
+        },
+        {
+          "ciudad": "Matsuyama",
+          "nombre": "ANA Crowne Plaza Matsuyama by IHG",
+          "categoria": "3*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "Standard",
+          "web": ""
+        },
+        {
+          "ciudad": "Kobe",
+          "nombre": "Kobe Meriken Park Oriental",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "Standard",
+          "web": ""
+        },
+        {
+          "ciudad": "Monte Koya",
+          "nombre": "Koyasan Shukubo Hojoin",
+          "categoria": "3*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "Standard",
+          "web": ""
+        },
+        {
+          "ciudad": "Kioto",
+          "nombre": "Miyako Hotel Kyoto Hachijo",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "Standard",
+          "web": ""
+        },
+        {
+          "ciudad": "Tokio",
+          "nombre": "Shinagawa Prince Hotel",
+          "categoria": "3*",
+          "noches": 4,
+          "regimen": "Desayuno",
+          "habitacion": "Standard",
+          "web": ""
+        }
+      ],
       "itinerario": [
         {
           "dia": "Días 1-2",
@@ -1888,16 +2171,29 @@
       ],
       "vuelos": [
         {
-          "aerolinea": "",
-          "ruta": "Buenos Aires–Seúl / Tokio–Buenos Aires (vía Addis Abeba)",
+          "aerolinea": "Ethiopian Airlines",
+          "ruta": "Buenos Aires – Seúl (1 escala)",
           "clase": "",
-          "fecha": "",
-          "horario": "",
-          "numero": "",
+          "fecha": "05/03/2027 – 07/03/2027",
+          "horario": "21:30 – 15:45",
+          "numero": "ET507 ET672",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Ethiopian Airlines",
+          "ruta": "Tokio – Buenos Aires (1 escala)",
+          "clase": "",
+          "fecha": "22/03/2027 – 24/03/2027",
+          "horario": "20:30 – 19:45",
+          "numero": "ET 673 ET 506",
           "equipaje": ""
         }
       ],
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/paquetes?id=372&salidaId=438&adultsQty=2",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": false,
@@ -1985,42 +2281,54 @@
           "nombre": "Sofitel Cairo Downtown",
           "categoria": "4*",
           "noches": 5,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Crucero Nilo",
           "nombre": "Blue Shadow / Opera",
           "categoria": "4*",
           "noches": 4,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Amman",
           "nombre": "The Boulevard Arjaan by Rotana",
           "categoria": "4*",
           "noches": 1,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Petra",
           "nombre": "Mövenpick Resort Petra",
           "categoria": "4*",
           "noches": 2,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Wadi Rum",
           "nombre": "Mazayen Luxury Camp – Martian Tents",
           "categoria": "",
           "noches": 1,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Mar Muerto",
           "nombre": "Holiday Inn Dead Sea",
           "categoria": "4*",
           "noches": 2,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         }
       ],
       "itinerario": [
@@ -2129,7 +2437,11 @@
           "equipaje": ""
         }
       ],
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/paquetes?id=699&salidaId=930&adultsQty=2",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": true,
@@ -2150,28 +2462,36 @@
           "nombre": "Permont D'Oreale",
           "categoria": "5*",
           "noches": 1,
-          "web": ""
+          "web": "",
+          "regimen": "Desayuno",
+          "habitacion": "Habitación estándar"
         },
         {
           "ciudad": "Área Kruger",
           "nombre": "Tintswalo Private Reserve",
           "categoria": "5*",
           "noches": 2,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Mauritius",
           "nombre": "Hilton Mauritius Resort & Spa",
           "categoria": "4*",
           "noches": 4,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Ciudad del Cabo",
           "nombre": "Southern Sun Waterfront / Park Inn Foreshore",
           "categoria": "4*",
           "noches": 4,
-          "web": ""
+          "web": "",
+          "regimen": "Desayuno",
+          "habitacion": "Habitación estándar"
         }
       ],
       "itinerario": [
@@ -2280,7 +2600,11 @@
           "equipaje": ""
         }
       ],
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/paquetes?id=648&salidaId=839&adultsQty=2",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": true,
@@ -2299,6 +2623,17 @@
           "nombre": "Walt Disney World Resort (All Star / Pop Century)",
           "categoria": "",
           "noches": 10,
+          "web": "",
+          "regimen": "Pensión completa",
+          "habitacion": ""
+        },
+        {
+          "ciudad": "Miami",
+          "nombre": "Riu Florida Beach, Holiday Inn, Miami Beach Resort & Spa o similar",
+          "categoria": "",
+          "noches": 1,
+          "regimen": "Pensión completa con bebidas incluidas",
+          "habitacion": "",
           "web": ""
         }
       ],
@@ -2362,7 +2697,11 @@
           "equipaje": ""
         }
       ],
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/consulta/1781/enjoy-disney-usa",
+        "fecha": "2026-10-13"
+      }
     },
     {
       "activo": true,
@@ -2380,28 +2719,36 @@
           "nombre": "Royal National o similar",
           "categoria": "",
           "noches": null,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "París",
           "nombre": "Campanile Val de France / Dream Castle",
           "categoria": "",
           "noches": null,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Port Aventura",
           "nombre": "Hotel Caribe / Gold River / El Paso",
           "categoria": "",
           "noches": null,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         },
         {
           "ciudad": "Madrid",
           "nombre": "Ayre Colón / Palladium / Sterling Gran Vía",
           "categoria": "",
           "noches": null,
-          "web": ""
+          "web": "",
+          "regimen": "",
+          "habitacion": ""
         }
       ],
       "itinerario": [],
@@ -2456,7 +2803,11 @@
           "equipaje": ""
         }
       ],
-      "foto_portada": ""
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.legendtravel.com.ar/consulta/1782/disney-europa-premium",
+        "fecha": "2026-10-13"
+      }
     }
   ]
 }

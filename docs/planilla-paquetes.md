@@ -50,6 +50,8 @@ Hay lugar para 12 hoteles por paquete: hotel1, hotel2, y así hasta hotel12. Cad
 | hotel1_nombre | Nombre del hotel | Huinid Pioneros Hotel |
 | hotel1_categoria | Estrellas: el número solo, o "4 Sup" si es superior | 4 |
 | hotel1_noches | Cuántas noches se duerme ahí, solo el número | 3 |
+| hotel1_regimen | Régimen de comidas en ese hotel | All Inclusive |
+| hotel1_habitacion | Tipo de habitación | Habitación estándar |
 | hotel1_web | Página oficial del hotel, completa | https://www.hotel.com |
 
 - Cargá los hoteles en el orden del viaje.

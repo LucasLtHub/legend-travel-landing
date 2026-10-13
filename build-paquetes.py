@@ -63,6 +63,7 @@ OBLIGATORIOS = ["id", "titulo", "region", "destinos", "resumen",
 #   regimen, tarifas, itinerario, hoteles, no_incluye, condiciones,
 #   nota_impuestos, motivo_inactivo, operador, ref, destacado,
 #   precios, vuelos, crucero, foto_portada (P1/P2, ver docs/planilla-paquetes.md)
+#   fuente_detalle (interno: de donde salio el detalle; no se publica)
 
 REGIONES = {
     "caribe": "Caribe", "brasil": "Brasil", "europa": "Europa", "usa": "EE. UU.",
@@ -533,7 +534,7 @@ def render_region_block(carpeta, items, hoy):
 BASES = {"single": "Base single", "doble": "Base doble", "triple": "Base triple",
          "cuadruple": "Base cu&aacute;druple"}
 BASES_ORDEN = ["single", "doble", "triple", "cuadruple"]
-HOTEL_CAMPOS = ["ciudad", "nombre", "categoria", "noches", "web"]
+HOTEL_CAMPOS = ["ciudad", "nombre", "categoria", "noches", "regimen", "habitacion", "web"]
 VUELO_CAMPOS = ["aerolinea", "ruta", "clase", "fecha", "horario", "numero", "equipaje"]
 CRUCERO_CAMPOS = [("naviera", "Naviera"), ("barco", "Barco"), ("cabina", "Tipo de cabina"),
                   ("bebidas", "Bebidas"), ("propinas", "Propinas"), ("wifi", "Wi-Fi"),
@@ -564,6 +565,9 @@ def render_hotel(h):
     if _v(h, "noches"):
         n = int(_v(h, "noches"))
         partes.append("{} {}".format(n, "noche" if n == 1 else "noches"))
+    for k in ("regimen", "habitacion"):   # regimen de comidas y tipo de habitacion, si estan cargados
+        if _v(h, k):
+            partes.append(e(_v(h, k)))
     out = " &middot; ".join(partes)
     if es_url(_v(h, "web")):
         out += (' &middot; <a href="{}" target="_blank" rel="noopener noreferrer" '
