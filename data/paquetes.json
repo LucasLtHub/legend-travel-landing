@@ -65,18 +65,60 @@
           "nombre": "Huinid Pioneros Hotel",
           "categoria": "3*",
           "noches": 3,
-          "web": "",
+          "web": "https://www.huinid.com/es/bariloche/pioneros_hotel/",
           "habitacion": "Habitación estándar",
-          "regimen": ""
+          "regimen": "",
+          "id": "huinid-pioneros-hotel-bariloche",
+          "mapa": "Huinid Pioneros Hotel, Bariloche",
+          "destacados": [
+            {
+              "texto": "Hotel en el bosque, con vista al lago, sobre Av. de los Pioneros",
+              "fuente": "https://www.huinid.com/es/bariloche/pioneros_hotel/"
+            },
+            {
+              "texto": "Piscina climatizada cubierta y gimnasio",
+              "fuente": "https://www.huinid.com/es/bariloche/pioneros_hotel/"
+            },
+            {
+              "texto": "Habitaciones con vista al bosque o al lago, para 2 a 4 personas",
+              "fuente": "https://www.huinid.com/es/bariloche/pioneros_hotel/"
+            },
+            {
+              "texto": "Desayuno buffet",
+              "fuente": "https://www.huinid.com/es/bariloche/pioneros_hotel/"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Puerto Varas",
           "nombre": "Hotel Cabaña del Lago",
           "categoria": "4*",
           "noches": 2,
-          "web": "",
+          "web": "https://hotelcabanadellago.cl/",
           "habitacion": "Habitación estándar",
-          "regimen": ""
+          "regimen": "",
+          "id": "hotel-cabana-del-lago-puerto-varas",
+          "mapa": "Hotel Cabaña del Lago, Puerto Varas",
+          "destacados": [
+            {
+              "texto": "A orillas del lago Llanquihue, con habitaciones con vista al lago",
+              "fuente": "https://hotelcabanadellago.cl/"
+            },
+            {
+              "texto": "Piscina climatizada, piscina para chicos y tinajas calientes",
+              "fuente": "https://hotelcabanadellago.cl/piscina/"
+            },
+            {
+              "texto": "Spa con masajes de relajación, piedras calientes y reflexología",
+              "fuente": "https://hotelcabanadellago.cl/bienestar/"
+            },
+            {
+              "texto": "Cocina típica del sur de Chile con productos locales",
+              "fuente": "https://hotelcabanadellago.cl/"
+            }
+          ],
+          "foto_credito": ""
         }
       ],
       "itinerario": [],
@@ -137,9 +179,26 @@
           "nombre": "Hotel Raíces Aconcagua",
           "categoria": "4*",
           "noches": 3,
-          "web": "",
+          "web": "https://www.raicesaconcagua.com/",
           "habitacion": "Habitación estándar",
-          "regimen": ""
+          "regimen": "",
+          "id": "hotel-raices-aconcagua-mendoza",
+          "mapa": "Hotel Raíces Aconcagua, Mendoza",
+          "destacados": [
+            {
+              "texto": "En pleno centro de Mendoza, sobre calle San Lorenzo",
+              "fuente": "https://www.raicesaconcagua.com/"
+            },
+            {
+              "texto": "Habitaciones y suites amplias, con piscina en el hotel",
+              "fuente": "https://www.raicesaconcagua.com/habitaciones"
+            },
+            {
+              "texto": "Gimnasio con máquinas de cardio y musculación",
+              "fuente": "https://www.raicesaconcagua.com/gimnasio"
+            }
+          ],
+          "foto_credito": ""
         }
       ],
       "itinerario": [],
@@ -200,7 +259,28 @@
           "noches": 3,
           "regimen": "",
           "habitacion": "Habitación estándar",
-          "web": ""
+          "web": "https://www.hoteltolosa.com.ar/",
+          "id": "hotel-tolosa-puerto-madryn",
+          "mapa": "Hotel Tolosa, Puerto Madryn",
+          "destacados": [
+            {
+              "texto": "En el centro comercial de la ciudad, a 250 metros de la playa",
+              "fuente": "https://www.hoteltolosa.com.ar/ubicacion.html"
+            },
+            {
+              "texto": "Desayuno buffet con panificados propios y opciones sin gluten",
+              "fuente": "https://www.hoteltolosa.com.ar/restaurante.html"
+            },
+            {
+              "texto": "Restaurante y snack bar con platos aptos para celíacos",
+              "fuente": "https://www.hoteltolosa.com.ar/restaurante.html"
+            },
+            {
+              "texto": "Bicicletas de paseo sin cargo y wifi gratis",
+              "fuente": "https://www.hoteltolosa.com.ar/servicios.html"
+            }
+          ],
+          "foto_credito": ""
         }
       ],
       "itinerario": [],
@@ -1010,7 +1090,24 @@
           "noches": 4,
           "regimen": "Desayuno",
           "habitacion": "Standard",
-          "web": ""
+          "web": "https://www.ergifepalacehotel.com/",
+          "id": "ergife-palace-hotel-roma",
+          "mapa": "Ergife Palace Hotel, Roma",
+          "destacados": [
+            {
+              "texto": "Piscina exterior con hidromasaje y cascada, con bar al borde",
+              "fuente": "https://www.ergifepalacehotel.com/"
+            },
+            {
+              "texto": "Gimnasio, restaurante, bar y cafetería dentro del hotel",
+              "fuente": "https://www.ergifepalacehotel.com/it/hotel-con-sala-fitness-roma"
+            },
+            {
+              "texto": "Al Vaticano se llega en colectivo y subte hasta Ottaviano",
+              "fuente": "https://www.ergifepalacehotel.com/it/hotel-a-roma-vicino-vaticano"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Bari",
@@ -1019,7 +1116,11 @@
           "noches": 1,
           "regimen": "Desayuno",
           "habitacion": "Standard",
-          "web": ""
+          "web": "",
+          "id": "parco-dei-principi-hotel-congress-spa-bari",
+          "mapa": "Parco dei Principi Hotel Congress & Spa, Bari",
+          "destacados": [],
+          "foto_credito": ""
         },
         {
           "ciudad": "Salerno",
@@ -1028,7 +1129,28 @@
           "noches": 1,
           "regimen": "Desayuno",
           "habitacion": "Standard",
-          "web": ""
+          "web": "https://www.grandhotelsalerno.com/",
+          "id": "grand-hotel-salerno-salerno",
+          "mapa": "Grand Hotel Salerno, Salerno",
+          "destacados": [
+            {
+              "texto": "Sobre la costanera de Salerno, frente al golfo",
+              "fuente": "https://www.grandhotelsalerno.com/"
+            },
+            {
+              "texto": "A 450 m de la estación de tren y 500 m del puerto deportivo",
+              "fuente": "https://www.grandhotelsalerno.com/"
+            },
+            {
+              "texto": "Restaurante de cocina mediterránea con platos para intolerancias y alergias",
+              "fuente": "https://www.grandhotelsalerno.com/ristorante/"
+            },
+            {
+              "texto": "Punto de partida para la Costa Amalfitana, el Cilento y Capri",
+              "fuente": "https://www.grandhotelsalerno.com/"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Taormina",
@@ -1037,7 +1159,24 @@
           "noches": 2,
           "regimen": "Desayuno",
           "habitacion": "Standard",
-          "web": ""
+          "web": "https://www.excelsiorpalacetaormina.it/",
+          "id": "excelsior-palace-hotel-taormina-taormina",
+          "mapa": "Excelsior Palace Hotel, Taormina",
+          "destacados": [
+            {
+              "texto": "Hotel histórico de 1904, a pasos de Porta Catania y del centro",
+              "fuente": "https://www.excelsiorpalacetaormina.it/location/"
+            },
+            {
+              "texto": "Vistas a Taormina, el mar y el Etna desde un promontorio",
+              "fuente": "https://www.excelsiorpalacetaormina.it/location/"
+            },
+            {
+              "texto": "Pileta panorámica dentro de un parque mediterráneo",
+              "fuente": "https://www.excelsiorpalacetaormina.it/services/"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Palermo",
@@ -1046,7 +1185,11 @@
           "noches": 1,
           "regimen": "Desayuno",
           "habitacion": "Standard",
-          "web": ""
+          "web": "",
+          "id": "san-paolo-palace-palermo",
+          "mapa": "San Paolo Palace Hotel, Palermo",
+          "destacados": [],
+          "foto_credito": ""
         }
       ],
       "itinerario": [
@@ -1225,7 +1368,28 @@
           "noches": 10,
           "regimen": "All Inclusive",
           "habitacion": "Habitación estándar",
-          "web": ""
+          "web": "https://www.hmhotels.com/whalabavaro/",
+          "id": "whala-bavaro-punta-cana",
+          "mapa": "whala!bávaro, Punta Cana",
+          "destacados": [
+            {
+              "texto": "A metros de Playa Bávaro, en la zona de El Cortecito",
+              "fuente": "https://www.hmhotels.com/whalabavaro/"
+            },
+            {
+              "texto": "Tres piscinas con terrazas, reposeras y sombrillas",
+              "fuente": "https://www.hmhotels.com/whalabavaro/"
+            },
+            {
+              "texto": "Programa de juegos y talleres para chicos",
+              "fuente": "https://www.hmhotels.com/whalabavaro/"
+            },
+            {
+              "texto": "Bar de playa con bebidas incluidas en el Todo Incluido",
+              "fuente": "https://www.hmhotels.com/whalabavaro/"
+            }
+          ],
+          "foto_credito": ""
         }
       ],
       "itinerario": [],
@@ -1308,7 +1472,28 @@
           "noches": 5,
           "regimen": "All Inclusive",
           "habitacion": "Habitación estándar",
-          "web": ""
+          "web": "https://www.bluebayhotels.com/es/hoteles/mexico/riviera-maya/playa-del-carmen/bluebay-grand-esmeralda/",
+          "id": "bluebay-grand-esmeralda-riviera-maya",
+          "mapa": "BlueBay Grand Esmeralda, Playa del Carmen",
+          "destacados": [
+            {
+              "texto": "Resort todo incluido con playa, entre selva y manglares",
+              "fuente": "https://www.bluebayhotels.com/es/hoteles/mexico/riviera-maya/playa-del-carmen/bluebay-grand-esmeralda/"
+            },
+            {
+              "texto": "Tres piscinas exteriores con sectores para chicos y solárium",
+              "fuente": "https://www.bluebayhotels.com/es/hoteles/mexico/riviera-maya/playa-del-carmen/bluebay-grand-esmeralda/"
+            },
+            {
+              "texto": "Spa de 2.500 m² y gimnasio",
+              "fuente": "https://www.bluebayhotels.com/es/hoteles/mexico/riviera-maya/playa-del-carmen/bluebay-grand-esmeralda/"
+            },
+            {
+              "texto": "Seis restaurantes, miniclub y animación para toda la familia",
+              "fuente": "https://www.bluebayhotels.com/es/hoteles/mexico/riviera-maya/playa-del-carmen/bluebay-grand-esmeralda/"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Costa Mujeres",
@@ -1317,7 +1502,28 @@
           "noches": 5,
           "regimen": "All Inclusive",
           "habitacion": "Habitación estándar",
-          "web": ""
+          "web": "https://www.cataloniahotels.com/es/hotel/catalonia-grand-costa-mujeres",
+          "id": "catalonia-grand-costa-mujeres-all-suites-spa-costa-mujeres",
+          "mapa": "Catalonia Grand Costa Mujeres All Suites & Spa, Costa Mujeres",
+          "destacados": [
+            {
+              "texto": "Todo incluido frente al mar, con habitaciones tipo suite",
+              "fuente": "https://www.cataloniahotels.com/es/hotel/catalonia-grand-costa-mujeres"
+            },
+            {
+              "texto": "Dos piscinas grandes con barra acuática y una infantil",
+              "fuente": "https://www.cataloniahotels.com/es/hotel/catalonia-grand-costa-mujeres"
+            },
+            {
+              "texto": "Spa con circuito de aguas, sauna y piscina climatizada",
+              "fuente": "https://www.cataloniahotels.com/es/hotel/catalonia-grand-costa-mujeres"
+            },
+            {
+              "texto": "Club para chicos, club para adolescentes y restaurantes de varias cocinas",
+              "fuente": "https://www.cataloniahotels.com/es/hotel/catalonia-grand-costa-mujeres"
+            }
+          ],
+          "foto_credito": ""
         }
       ],
       "itinerario": [],
@@ -1403,7 +1609,24 @@
           "noches": 6,
           "regimen": "All Inclusive",
           "habitacion": "Habitación estándar",
-          "web": ""
+          "web": "https://www.hmhotels.com/hm-alma-de-bayahibe/",
+          "id": "hm-alma-de-bayahibe-adults-only-bayahibe",
+          "mapa": "HM Alma de Bayahíbe, Bayahíbe",
+          "destacados": [
+            {
+              "texto": "Hotel solo para adultos frente al mar Caribe",
+              "fuente": "https://www.hmhotels.com/hm-alma-de-bayahibe/"
+            },
+            {
+              "texto": "Cinco piscinas exteriores con reposeras y sombrillas",
+              "fuente": "https://www.hmhotels.com/hm-alma-de-bayahibe/"
+            },
+            {
+              "texto": "Cuatro restaurantes de cocina nacional e internacional",
+              "fuente": "https://www.hmhotels.com/hm-alma-de-bayahibe/"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Punta Cana",
@@ -1412,7 +1635,28 @@
           "noches": 4,
           "regimen": "All Inclusive",
           "habitacion": "Habitación estándar",
-          "web": ""
+          "web": "https://www.hmhotels.com/whalabavaro/",
+          "id": "whala-bavaro-punta-cana",
+          "mapa": "whala!bávaro, Punta Cana",
+          "destacados": [
+            {
+              "texto": "A metros de Playa Bávaro, en la zona de El Cortecito",
+              "fuente": "https://www.hmhotels.com/whalabavaro/"
+            },
+            {
+              "texto": "Tres piscinas con terrazas, reposeras y sombrillas",
+              "fuente": "https://www.hmhotels.com/whalabavaro/"
+            },
+            {
+              "texto": "Programa de juegos y talleres para chicos",
+              "fuente": "https://www.hmhotels.com/whalabavaro/"
+            },
+            {
+              "texto": "Bar de playa con bebidas incluidas en el Todo Incluido",
+              "fuente": "https://www.hmhotels.com/whalabavaro/"
+            }
+          ],
+          "foto_credito": ""
         }
       ],
       "itinerario": [],
@@ -1493,7 +1737,28 @@
           "noches": 10,
           "regimen": "All Inclusive",
           "habitacion": "Habitación estándar",
-          "web": ""
+          "web": "https://www.riu.com/es/hotel/mexico/cancun/hotel-riu-caribe/",
+          "id": "hotel-riu-caribe-cancun",
+          "mapa": "Hotel Riu Caribe, Cancún",
+          "destacados": [
+            {
+              "texto": "Sobre la playa, en la Zona Hotelera de Cancún",
+              "fuente": "https://www.riu.com/es/hotel/mexico/cancun/hotel-riu-caribe/"
+            },
+            {
+              "texto": "Todo Incluido 24 horas con seis restaurantes",
+              "fuente": "https://www.riu.com/es/hotel/mexico/cancun/hotel-riu-caribe/"
+            },
+            {
+              "texto": "Cinco piscinas, una infantil y otra con bar acuático",
+              "fuente": "https://www.riu.com/es/hotel/mexico/cancun/hotel-riu-caribe/"
+            },
+            {
+              "texto": "Club infantil, spa y gimnasio",
+              "fuente": "https://www.riu.com/es/hotel/mexico/cancun/hotel-riu-caribe/"
+            }
+          ],
+          "foto_credito": ""
         }
       ],
       "itinerario": [],
@@ -1759,9 +2024,30 @@
           "nombre": "Pan Pacific",
           "categoria": "",
           "noches": null,
-          "web": "",
+          "web": "https://www.panpacific.com/en/hotels-and-resorts/pp-hanoi.html",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "pan-pacific-hanoi-hanoi",
+          "mapa": "Pan Pacific Hanoi, Hanoi",
+          "destacados": [
+            {
+              "texto": "Frente a los lagos del Oeste y Truc Bach, cerca del Barrio Antiguo",
+              "fuente": "https://www.panpacific.com/en/hotels-and-resorts/pp-hanoi.html"
+            },
+            {
+              "texto": "Piscina con techo retráctil, utilizable todo el año",
+              "fuente": "https://www.panpacific.com/en/hotels-and-resorts/pp-hanoi.html"
+            },
+            {
+              "texto": "Spa, sauna, jacuzzi y gimnasio abierto las 24 horas",
+              "fuente": "https://www.panpacific.com/en/hotels-and-resorts/pp-hanoi.html"
+            },
+            {
+              "texto": "Restaurante cantonés, buffet de mariscos y bar en la terraza",
+              "fuente": "https://www.panpacific.com/en/hotels-and-resorts/pp-hanoi.html"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Halong",
@@ -1770,25 +2056,67 @@
           "noches": null,
           "web": "",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "ambassador-cruise-halong",
+          "destacados": [],
+          "mapa": "",
+          "foto_credito": ""
         },
         {
           "ciudad": "Hoi An",
           "nombre": "Royal Hoi An",
           "categoria": "",
           "noches": null,
-          "web": "",
+          "web": "https://hotelroyalhoian.vn/",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "hotel-royal-hoi-an-hoi-an",
+          "mapa": "Hotel Royal Hoi An, Hoi An",
+          "destacados": [
+            {
+              "texto": "A orillas del río Hoai, con vistas a la Ciudad Antigua",
+              "fuente": "https://hotelroyalhoian.vn/"
+            },
+            {
+              "texto": "Bar en la terraza con tapas y cócteles",
+              "fuente": "https://hotelroyalhoian.vn/"
+            },
+            {
+              "texto": "Restaurante japonés y otro de cocina vietnamita e internacional",
+              "fuente": "https://hotelroyalhoian.vn/"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Ho Chi Minh",
           "nombre": "Caravelle Saigon",
           "categoria": "",
           "noches": null,
-          "web": "",
+          "web": "https://www.caravellehotel.com/",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "caravelle-saigon-ho-chi-minh",
+          "mapa": "Caravelle Saigon, Ho Chi Minh",
+          "destacados": [
+            {
+              "texto": "En la plaza Lam Son, a pasos de la Ópera de Saigón",
+              "fuente": "https://www.caravellehotel.com/"
+            },
+            {
+              "texto": "Cerca de la calle Dong Khoi y del mercado Ben Thanh",
+              "fuente": "https://www.caravellehotel.com/"
+            },
+            {
+              "texto": "Piscina, gimnasio y spa propio",
+              "fuente": "https://www.caravellehotel.com/"
+            },
+            {
+              "texto": "Bar en la terraza",
+              "fuente": "https://www.caravellehotel.com/"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Siem Reap",
@@ -1797,16 +2125,41 @@
           "noches": null,
           "web": "",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "shoka-angkor-siem-reap",
+          "destacados": [],
+          "mapa": "",
+          "foto_credito": ""
         },
         {
           "ciudad": "Bangkok",
           "nombre": "Montien Surawong",
           "categoria": "",
           "noches": null,
-          "web": "",
+          "web": "https://www.montienbangkok.com/",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "montien-hotel-surawong-bangkok-bangkok",
+          "mapa": "Montien Hotel Surawong Bangkok, Bangkok",
+          "destacados": [
+            {
+              "texto": "Sobre Surawong Road, en la zona de Silom",
+              "fuente": "https://www.montienbangkok.com/"
+            },
+            {
+              "texto": "A distancia a pie del tren elevado y del subte",
+              "fuente": "https://www.montienbangkok.com/"
+            },
+            {
+              "texto": "Restaurante de cocina tailandesa y china",
+              "fuente": "https://montienbangkok.com/en/dining.html"
+            },
+            {
+              "texto": "Bistró de estilo francés que de noche funciona como bar de vinos",
+              "fuente": "https://montienbangkok.com/en/dining.html"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Chiang Rai",
@@ -1815,7 +2168,11 @@
           "noches": null,
           "web": "",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "le-meridien-chiang-rai-resort-thailand-chiang-rai",
+          "mapa": "Le Méridien Chiang Rai Resort, Chiang Rai",
+          "destacados": [],
+          "foto_credito": ""
         },
         {
           "ciudad": "Chiang Mai",
@@ -1824,25 +2181,84 @@
           "noches": null,
           "web": "",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "intercontinental-chiang-mai-the-mae-ping-chiang-mai",
+          "mapa": "InterContinental Chiang Mai The Mae Ping, Chiang Mai",
+          "destacados": [
+            {
+              "texto": "Al borde de la Ciudad Antigua, cerca de una de sus puertas",
+              "fuente": "https://chiangmai.intercontinental.com/"
+            },
+            {
+              "texto": "Spa de inspiración local y gimnasio 24 horas",
+              "fuente": "https://chiangmai.intercontinental.com/"
+            },
+            {
+              "texto": "Cocina del norte tailandés, restaurante chino y bar en la azotea",
+              "fuente": "https://chiangmai.intercontinental.com/"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Krabi",
           "nombre": "Sofitel Phokeethra",
           "categoria": "",
           "noches": null,
-          "web": "",
+          "web": "https://sofitel.accor.com/en/hotels/6184.html",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "sofitel-krabi-phokeethra-golf-spa-resort-krabi",
+          "mapa": "Sofitel Krabi Phokeethra Golf & Spa Resort, Krabi",
+          "destacados": [
+            {
+              "texto": "Frente a la playa de Klong Muang",
+              "fuente": "https://sofitel.accor.com/en/hotels/6184.html"
+            },
+            {
+              "texto": "Piscina de forma libre de 7.000 m²",
+              "fuente": "https://sofitel.accor.com/en/hotels/6184.html"
+            },
+            {
+              "texto": "Kids club con espacios de juego",
+              "fuente": "https://sofitel.accor.com/en/hotels/6184.html"
+            },
+            {
+              "texto": "Spa y restaurantes de cocina italiana, tailandesa e india",
+              "fuente": "https://sofitel.accor.com/en/hotels/6184.html"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Phuket",
           "nombre": "SAii Laguna (late check-out)",
           "categoria": "",
           "noches": null,
-          "web": "",
+          "web": "https://www.saiihotels.com/laguna-phuket",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "saii-laguna-phuket-phuket",
+          "mapa": "SAii Laguna Phuket, Phuket",
+          "destacados": [
+            {
+              "texto": "Entre una laguna y la playa de Bang Tao, con acceso directo",
+              "fuente": "https://www.saiihotels.com/laguna-phuket"
+            },
+            {
+              "texto": "Kids club y piscinas con cabañas",
+              "fuente": "https://www.saiihotels.com/laguna-phuket"
+            },
+            {
+              "texto": "Spa propio",
+              "fuente": "https://www.saiihotels.com/laguna-phuket"
+            },
+            {
+              "texto": "Habitaciones con vista a la laguna o al mar",
+              "fuente": "https://www.saiihotels.com/laguna-phuket"
+            }
+          ],
+          "foto_credito": ""
         }
       ],
       "itinerario": [
@@ -1982,7 +2398,28 @@
           "noches": 4,
           "regimen": "Desayuno",
           "habitacion": "Standard",
-          "web": ""
+          "web": "https://all.accor.com/hotel/B696/index.en.shtml",
+          "id": "mercure-ambassador-seoul-hongdae-seul",
+          "mapa": "Mercure Ambassador Seoul Hongdae, Seúl",
+          "destacados": [
+            {
+              "texto": "A unos 100 metros de la estación Hongik University",
+              "fuente": "https://all.accor.com/hotel/B696/index.en.shtml"
+            },
+            {
+              "texto": "Cerca del mercado de Hongdae y de zonas de compras",
+              "fuente": "https://all.accor.com/hotel/B696/index.en.shtml"
+            },
+            {
+              "texto": "Tren a los aeropuertos de Incheon y Gimpo a cinco minutos a pie",
+              "fuente": "https://all.accor.com/hotel/B696/index.en.shtml"
+            },
+            {
+              "texto": "Restaurante y bar propios, y gimnasio",
+              "fuente": "https://all.accor.com/hotel/B696/index.en.shtml"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Jeonju",
@@ -1991,7 +2428,24 @@
           "noches": 1,
           "regimen": "Desayuno",
           "habitacion": "Standard",
-          "web": ""
+          "web": "https://www.bestwestern.com/en_US/book/hotel-details.99531.html",
+          "id": "best-western-plus-jeonju-hotel-jeonju",
+          "mapa": "Best Western Plus Jeonju Hotel, Jeonju",
+          "destacados": [
+            {
+              "texto": "En el centro de Jeonju, cerca de la aldea Hanok",
+              "fuente": "https://www.bestwestern.com/en_US/book/hotel-details.99531.html"
+            },
+            {
+              "texto": "Restaurante dentro del hotel",
+              "fuente": "https://www.bestwestern.com/en_US/book/hotel-details.99531.html"
+            },
+            {
+              "texto": "Gimnasio y wifi sin cargo",
+              "fuente": "https://www.bestwestern.com/en_US/book/hotel-details.99531.html"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Busan",
@@ -2000,7 +2454,24 @@
           "noches": 1,
           "regimen": "Desayuno",
           "habitacion": "Standard",
-          "web": ""
+          "web": "https://www.wyndhamhotels.com/en-uk/ramada/busan-south-korea/ramada-encore-busan-station/overview",
+          "id": "ramada-encore-by-wyndham-busan-station-busan",
+          "mapa": "Ramada Encore by Wyndham Busan Station, Busan",
+          "destacados": [
+            {
+              "texto": "Al lado de la estación de Busan, en el centro de la ciudad",
+              "fuente": "https://www.wyndhamhotels.com/en-uk/ramada/busan-south-korea/ramada-encore-busan-station/overview"
+            },
+            {
+              "texto": "A pocos minutos de las zonas comerciales de Nampo-dong y Seomyeon",
+              "fuente": "https://www.wyndhamhotels.com/en-uk/ramada/busan-south-korea/ramada-encore-busan-station/overview"
+            },
+            {
+              "texto": "Restaurante con desayuno buffet y gimnasio",
+              "fuente": "https://www.wyndhamhotels.com/en-uk/ramada/busan-south-korea/ramada-encore-busan-station/overview"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Hiroshima",
@@ -2009,7 +2480,28 @@
           "noches": 1,
           "regimen": "Desayuno",
           "habitacion": "Standard",
-          "web": ""
+          "web": "https://www.hilton.com/en/hotels/hijshhi-hilton-hiroshima/",
+          "id": "hilton-hiroshima-hiroshima",
+          "mapa": "Hilton Hiroshima, Hiroshima",
+          "destacados": [
+            {
+              "texto": "En el centro de Hiroshima, cerca de la Cúpula de la Bomba Atómica",
+              "fuente": "https://hiroshima.hiltonjapan.co.jp/"
+            },
+            {
+              "texto": "A unos 10 minutos en taxi de la estación de Hiroshima",
+              "fuente": "https://hiroshima.hiltonjapan.co.jp/access"
+            },
+            {
+              "texto": "Pileta cubierta de 20 metros, gimnasio las 24 horas y spa",
+              "fuente": "https://hiroshima.hiltonjapan.co.jp/facilities"
+            },
+            {
+              "texto": "Restaurante internacional y otro de cocina japonesa",
+              "fuente": "https://hiroshima.hiltonjapan.co.jp/"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Matsuyama",
@@ -2018,7 +2510,11 @@
           "noches": 1,
           "regimen": "Desayuno",
           "habitacion": "Standard",
-          "web": ""
+          "web": "",
+          "id": "ana-crowne-plaza-matsuyama-matsuyama",
+          "mapa": "ANA Crowne Plaza Matsuyama, Matsuyama",
+          "destacados": [],
+          "foto_credito": ""
         },
         {
           "ciudad": "Kobe",
@@ -2027,7 +2523,24 @@
           "noches": 1,
           "regimen": "Desayuno",
           "habitacion": "Standard",
-          "web": ""
+          "web": "https://en.kobe-orientalhotel.co.jp/",
+          "id": "kobe-meriken-park-oriental-hotel-kobe",
+          "mapa": "Kobe Meriken Park Oriental Hotel, Kobe",
+          "destacados": [
+            {
+              "texto": "En la punta del muelle central del puerto de Kobe, rodeado de mar",
+              "fuente": "https://en.kobe-orientalhotel.co.jp/"
+            },
+            {
+              "texto": "Todas las habitaciones tienen balcón privado",
+              "fuente": "https://en.kobe-orientalhotel.co.jp/"
+            },
+            {
+              "texto": "Parrilla, cocina china, bar y café con vista dentro del hotel",
+              "fuente": "https://en.kobe-orientalhotel.co.jp/about/"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Monte Koya",
@@ -2036,7 +2549,28 @@
           "noches": 1,
           "regimen": "Desayuno",
           "habitacion": "Standard",
-          "web": ""
+          "web": "",
+          "id": "hojo-in-alojamiento-en-templo-monte-koya",
+          "mapa": "Hojo-in, Koyasan",
+          "destacados": [
+            {
+              "texto": "Templo en el centro de Koyasan, cerca de la pagoda Konpon Daito",
+              "fuente": "http://www.hojo-in.com/"
+            },
+            {
+              "texto": "Habitaciones con tatami",
+              "fuente": "http://www.hojo-in.com/syukubou/index.html"
+            },
+            {
+              "texto": "Cocina vegetariana budista servida en la habitación",
+              "fuente": "http://www.hojo-in.com/syukubou/index.html"
+            },
+            {
+              "texto": "Baño comunitario grande",
+              "fuente": "http://www.hojo-in.com/bath/index.html"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Kioto",
@@ -2045,7 +2579,24 @@
           "noches": 1,
           "regimen": "Desayuno",
           "habitacion": "Standard",
-          "web": ""
+          "web": "https://en.miyakohotels.ne.jp/kyoto-hachijo/",
+          "id": "miyako-hotel-kyoto-hachijo-kioto",
+          "mapa": "Miyako Hotel Kyoto Hachijo, Kioto",
+          "destacados": [
+            {
+              "texto": "A unos dos minutos a pie de la estación de Kioto",
+              "fuente": "https://en.miyakohotels.ne.jp/kyoto-hachijo/"
+            },
+            {
+              "texto": "Cerca también del subte de Kioto",
+              "fuente": "https://en.miyakohotels.ne.jp/kyoto-hachijo/"
+            },
+            {
+              "texto": "Varios restaurantes: buffet, cocina china y cocina japonesa",
+              "fuente": "https://en.miyakohotels.ne.jp/kyoto-hachijo/"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Tokio",
@@ -2054,7 +2605,28 @@
           "noches": 4,
           "regimen": "Desayuno",
           "habitacion": "Standard",
-          "web": ""
+          "web": "https://www.princehotels.com/shinagawa/",
+          "id": "shinagawa-prince-hotel-tokio",
+          "mapa": "Shinagawa Prince Hotel, Tokio",
+          "destacados": [
+            {
+              "texto": "A unos dos minutos a pie de la estación Shinagawa",
+              "fuente": "https://www.princehotels.com/shinagawa/"
+            },
+            {
+              "texto": "Acuario, cine, bowling y pileta dentro del complejo",
+              "fuente": "https://www.princehotels.com/shinagawa/"
+            },
+            {
+              "texto": "Habitaciones altas con vista a la ciudad",
+              "fuente": "https://www.princehotels.com/shinagawa/"
+            },
+            {
+              "texto": "Restaurante y bar a unos 130 metros de altura",
+              "fuente": "https://www.princehotels.com/shinagawa/"
+            }
+          ],
+          "foto_credito": ""
         }
       ],
       "itinerario": [
@@ -2281,9 +2853,30 @@
           "nombre": "Sofitel Cairo Downtown",
           "categoria": "4*",
           "noches": 5,
-          "web": "",
+          "web": "https://sofitel.accor.com/en/hotels/C3J2.html",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "sofitel-cairo-downtown-nile-el-cairo",
+          "mapa": "Sofitel Cairo Downtown Nile, El Cairo",
+          "destacados": [
+            {
+              "texto": "Sobre la costanera del Nilo, con balcón y vista al río en todas las habitaciones",
+              "fuente": "https://sofitel.accor.com/en/hotels/C3J2.html"
+            },
+            {
+              "texto": "Piscina exterior con bar, spa con saunas y gimnasio",
+              "fuente": "https://sofitel.accor.com/en/hotels/C3J2.html"
+            },
+            {
+              "texto": "Restaurantes de cocina mediterránea, italiana, japonesa y egipcio-libanesa",
+              "fuente": "https://sofitel.accor.com/en/hotels/C3J2.html"
+            },
+            {
+              "texto": "Pirámides de Giza a unos 30 minutos en taxi",
+              "fuente": "https://sofitel.accor.com/en/hotels/C3J2.html"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Crucero Nilo",
@@ -2292,7 +2885,11 @@
           "noches": 4,
           "web": "",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "blue-shadow-opera-crucero-nilo",
+          "destacados": [],
+          "mapa": "",
+          "foto_credito": ""
         },
         {
           "ciudad": "Amman",
@@ -2301,34 +2898,89 @@
           "noches": 1,
           "web": "",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "the-boulevard-arjaan-by-rotana-amman",
+          "destacados": [],
+          "mapa": "",
+          "foto_credito": ""
         },
         {
           "ciudad": "Petra",
           "nombre": "Mövenpick Resort Petra",
           "categoria": "4*",
           "noches": 2,
-          "web": "",
+          "web": "https://movenpick.accor.com/en/middle-east/jordan/petra/resort-petra.html",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "movenpick-resort-petra-petra",
+          "mapa": "Mövenpick Resort Petra, Wadi Musa",
+          "destacados": [
+            {
+              "texto": "Ubicado justo en la entrada al sitio arqueológico de Petra",
+              "fuente": "https://movenpick.accor.com/en/middle-east/jordan/petra/resort-petra.html"
+            },
+            {
+              "texto": "Piscina exterior, gimnasio y spa",
+              "fuente": "https://movenpick.accor.com/en/middle-east/jordan/petra/resort-petra.html"
+            },
+            {
+              "texto": "Varios restaurantes y bares dentro del hotel",
+              "fuente": "https://movenpick.accor.com/en/middle-east/jordan/petra/resort-petra.html"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Wadi Rum",
           "nombre": "Mazayen Luxury Camp – Martian Tents",
           "categoria": "",
           "noches": 1,
-          "web": "",
+          "web": "https://mazayenrumcamp.com/",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "mazayen-luxury-rum-camp-wadi-rum",
+          "mapa": "Mazayen Rum Camp, Wadi Rum",
+          "destacados": [
+            {
+              "texto": "Campamento en el desierto de Wadi Rum, cerca de la antigua aldea de Rum",
+              "fuente": "https://mazayenrumcamp.com/"
+            },
+            {
+              "texto": "Carpas tipo domo con panel transparente para mirar las estrellas",
+              "fuente": "https://mazayenrumcamp.com/rooms.html"
+            },
+            {
+              "texto": "Rodeado de formaciones de arenisca, con vistas a las montañas",
+              "fuente": "https://mazayenrumcamp.com/"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Mar Muerto",
           "nombre": "Holiday Inn Dead Sea",
           "categoria": "4*",
           "noches": 2,
-          "web": "",
+          "web": "https://www.ihg.com/holidayinnresorts/hotels/us/en/dead-sea/ddljo/hoteldetail",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "holiday-inn-resort-dead-sea-mar-muerto",
+          "mapa": "Holiday Inn Resort Dead Sea, Jordania",
+          "destacados": [
+            {
+              "texto": "Resort con playa propia sobre la costa del Mar Muerto",
+              "fuente": "https://www.ihg.com/holidayinnresorts/hotels/us/en/dead-sea/ddljo/hoteldetail"
+            },
+            {
+              "texto": "Varias piscinas, incluida una infinita y otra para chicos",
+              "fuente": "https://www.ihg.com/holidayinnresorts/hotels/us/en/dead-sea/ddljo/hoteldetail"
+            },
+            {
+              "texto": "Tres restaurantes, spa y gimnasio",
+              "fuente": "https://www.ihg.com/holidayinnresorts/hotels/us/en/dead-sea/ddljo/hoteldetail"
+            }
+          ],
+          "foto_credito": ""
         }
       ],
       "itinerario": [
@@ -2462,9 +3114,30 @@
           "nombre": "Permont D'Oreale",
           "categoria": "5*",
           "noches": 1,
-          "web": "",
+          "web": "https://emperorspalace.com/peermont-doreale-grande/",
           "regimen": "Desayuno",
-          "habitacion": "Habitación estándar"
+          "habitacion": "Habitación estándar",
+          "id": "peermont-d-oreale-grande-at-emperors-palace-johannesburgo",
+          "mapa": "Peermont D'oreale Grande, Emperors Palace, Kempton Park",
+          "destacados": [
+            {
+              "texto": "Dentro del complejo Emperors Palace, en Kempton Park",
+              "fuente": "https://emperorspalace.com/peermont-doreale-grande/"
+            },
+            {
+              "texto": "A 5 minutos del aeropuerto OR Tambo, con shuttle de cortesía a pedido",
+              "fuente": "https://emperorspalace.com/peermont-doreale-grande/"
+            },
+            {
+              "texto": "Pileta exterior con terraza y acceso directo al spa",
+              "fuente": "https://emperorspalace.com/peermont-doreale-grande/"
+            },
+            {
+              "texto": "Casino y restaurantes en el mismo complejo",
+              "fuente": "https://emperorspalace.com/peermont-doreale-grande/"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Área Kruger",
@@ -2473,16 +3146,41 @@
           "noches": 2,
           "web": "",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "tintswalo-private-reserve-area-kruger",
+          "destacados": [],
+          "mapa": "",
+          "foto_credito": ""
         },
         {
           "ciudad": "Mauritius",
           "nombre": "Hilton Mauritius Resort & Spa",
           "categoria": "4*",
           "noches": 4,
-          "web": "",
+          "web": "https://www.hilton.com/en/hotels/mruhihi-hilton-mauritius-resort-and-spa/",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "hilton-mauritius-resort-spa-mauritius",
+          "mapa": "Hilton Mauritius Resort & Spa, Flic en Flac",
+          "destacados": [
+            {
+              "texto": "Frente a la playa en la costa oeste de Mauricio, con acceso directo",
+              "fuente": "https://www.hilton.com/en/hotels/mruhihi-hilton-mauritius-resort-and-spa/"
+            },
+            {
+              "texto": "Habitaciones con vista al jardín y la piscina, o a la playa",
+              "fuente": "https://www.hilton.com/en/hotels/mruhihi-hilton-mauritius-resort-and-spa/"
+            },
+            {
+              "texto": "Spa con sauna, baño de vapor e hidroterapia, y gimnasio",
+              "fuente": "https://www.hilton.com/en/hotels/mruhihi-hilton-mauritius-resort-and-spa/"
+            },
+            {
+              "texto": "Snorkel y remo en la laguna, y piscina apta para chicos",
+              "fuente": "https://www.hilton.com/en/hotels/mruhihi-hilton-mauritius-resort-and-spa/"
+            }
+          ],
+          "foto_credito": ""
         },
         {
           "ciudad": "Ciudad del Cabo",
@@ -2491,7 +3189,11 @@
           "noches": 4,
           "web": "",
           "regimen": "Desayuno",
-          "habitacion": "Habitación estándar"
+          "habitacion": "Habitación estándar",
+          "id": "southern-sun-waterfront-park-inn-foreshore-ciudad-del-cabo",
+          "destacados": [],
+          "mapa": "",
+          "foto_credito": ""
         }
       ],
       "itinerario": [
@@ -2625,7 +3327,11 @@
           "noches": 10,
           "web": "",
           "regimen": "Pensión completa",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "walt-disney-world-resort-all-star-pop-century-orlando",
+          "destacados": [],
+          "mapa": "",
+          "foto_credito": ""
         },
         {
           "ciudad": "Miami",
@@ -2634,7 +3340,11 @@
           "noches": 1,
           "regimen": "Pensión completa con bebidas incluidas",
           "habitacion": "",
-          "web": ""
+          "web": "",
+          "id": "riu-florida-beach-holiday-inn-miami-beach-resort-spa-o-simil",
+          "destacados": [],
+          "mapa": "",
+          "foto_credito": ""
         }
       ],
       "itinerario": [],
@@ -2721,7 +3431,11 @@
           "noches": null,
           "web": "",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "royal-national-o-similar-londres",
+          "destacados": [],
+          "mapa": "",
+          "foto_credito": ""
         },
         {
           "ciudad": "París",
@@ -2730,7 +3444,11 @@
           "noches": null,
           "web": "",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "campanile-val-de-france-dream-castle-paris",
+          "destacados": [],
+          "mapa": "",
+          "foto_credito": ""
         },
         {
           "ciudad": "Port Aventura",
@@ -2739,7 +3457,11 @@
           "noches": null,
           "web": "",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "hotel-caribe-gold-river-el-paso-port-aventura",
+          "destacados": [],
+          "mapa": "",
+          "foto_credito": ""
         },
         {
           "ciudad": "Madrid",
@@ -2748,7 +3470,11 @@
           "noches": null,
           "web": "",
           "regimen": "",
-          "habitacion": ""
+          "habitacion": "",
+          "id": "ayre-colon-palladium-sterling-gran-via-madrid",
+          "destacados": [],
+          "mapa": "",
+          "foto_credito": ""
         }
       ],
       "itinerario": [],

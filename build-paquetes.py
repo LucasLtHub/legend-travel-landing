@@ -534,7 +534,14 @@ def render_region_block(carpeta, items, hoy):
 BASES = {"single": "Base single", "doble": "Base doble", "triple": "Base triple",
          "cuadruple": "Base cu&aacute;druple"}
 BASES_ORDEN = ["single", "doble", "triple", "cuadruple"]
-HOTEL_CAMPOS = ["ciudad", "nombre", "categoria", "noches", "regimen", "habitacion", "web"]
+HOTEL_CAMPOS = ["id", "ciudad", "nombre", "categoria", "noches", "regimen", "habitacion", "web",
+                "mapa", "destacados", "foto_credito"]
+# Ficha de hotel: "id" nombra la foto (assets/img/hoteles/<id>.jpg|webp|png), que se muestra solo si el
+# archivo existe Y hay "foto_credito". "mapa" es el texto de busqueda en Google Maps (nombre + ciudad).
+# "destacados" es una lista de {"texto", "fuente"}: se publica el texto; la fuente es interna.
+HOTEL_FOTOS = ROOT / "assets" / "img" / "hoteles"
+IC_EXT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg>'
+IC_PIN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>' 
 VUELO_CAMPOS = ["aerolinea", "ruta", "clase", "fecha", "horario", "numero", "equipaje"]
 CRUCERO_CAMPOS = [("naviera", "Naviera"), ("barco", "Barco"), ("cabina", "Tipo de cabina"),
                   ("bebidas", "Bebidas"), ("propinas", "Propinas"), ("wifi", "Wi-Fi"),
@@ -573,6 +580,66 @@ def render_hotel(h):
         out += (' &middot; <a href="{}" target="_blank" rel="noopener noreferrer" '
                 'style="color:var(--red);font-weight:600">Web oficial</a>').format(e(_v(h, "web")))
     return out
+
+
+def foto_hotel(h):
+    """Ruta de la foto del hotel si el archivo existe y tiene credito; si no, ''."""
+    hid = _v(h, "id")
+    if not hid or not _v(h, "foto_credito"):
+        return ""
+    for ext in ("jpg", "jpeg", "webp", "png"):
+        if (HOTEL_FOTOS / "{}.{}".format(hid, ext)).exists():
+            return "assets/img/hoteles/{}.{}".format(hid, ext)
+    return ""
+
+
+def render_hotel_ficha(h):
+    """Ficha de un hotel: nombre, estrellas, noches, regimen, destacados y botones.
+    Cada parte se muestra solo si el dato esta cargado; sin foto, la ficha queda igual de prolija."""
+    nombre = _v(h, "nombre")
+    cat = _v(h, "categoria")
+    m = re.match(r'^(\d)\s*\*\s*(.*)$', cat)
+    estrellas = ""
+    if m:
+        estrellas = ('<span class="hcard-st" aria-label="{n} estrellas">{st}{sup}</span>'
+                     .format(n=m.group(1), st="&#9733;" * int(m.group(1)),
+                             sup=" " + e(m.group(2)) if m.group(2) else ""))
+    elif cat:
+        estrellas = '<span class="hcard-st">{}</span>'.format(e(cat))
+    arriba = [e(_v(h, "ciudad"))] if _v(h, "ciudad") else []
+    if _v(h, "noches"):
+        n = int(_v(h, "noches"))
+        arriba.append("{} {}".format(n, "noche" if n == 1 else "noches"))
+    abajo = [e(_v(h, k)) for k in ("regimen", "habitacion") if _v(h, k)]
+    dest = [d.get("texto") if isinstance(d, dict) else d for d in (h.get("destacados") or [])]
+    dest = [str(x).strip() for x in dest if x and str(x).strip()]
+    botones = []
+    if es_url(_v(h, "web")):
+        botones.append('<a class="hcard-btn" href="{}" target="_blank" rel="noopener noreferrer">Ver el hotel{}</a>'
+                       .format(e(_v(h, "web")), IC_EXT))
+    if _v(h, "mapa"):
+        botones.append('<a class="hcard-lnk" href="https://www.google.com/maps/search/?api=1&amp;query={}" '
+                       'target="_blank" rel="noopener noreferrer">{}Ver en el mapa</a>'
+                       .format(urllib.parse.quote(_v(h, "mapa"), safe=''), IC_PIN))
+    foto = foto_hotel(h)
+    L = ['      <article class="hcard{}">'.format(" con-foto" if foto else "")]
+    if foto:
+        L.append('        <figure class="hcard-foto"><img src="/{}" alt="{}" loading="lazy" decoding="async">'
+                 '<figcaption>Foto: {}</figcaption></figure>'.format(e(foto), e(nombre), e(_v(h, "foto_credito"))))
+    L.append('        <div class="hcard-body">')
+    if arriba:
+        L.append('          <p class="hcard-k">{}</p>'.format(" &middot; ".join(arriba)))
+    L.append('          <h3 class="hcard-t">{}{}</h3>'.format(e(nombre), " " + estrellas if estrellas else ""))
+    if abajo:
+        L.append('          <p class="hcard-m">{}</p>'.format(" &middot; ".join(abajo)))
+    if dest:
+        L.append('          <ul class="hcard-d">' + "".join(
+            '<li>{}<span>{}</span></li>'.format(IC_CHECK, e(x)) for x in dest) + '</ul>')
+    if botones:
+        L.append('          <div class="hcard-a">' + "".join(botones) + '</div>')
+    L.append('        </div>')
+    L.append('      </article>')
+    return "\n".join(L)
 
 
 def render_vuelo(v):
@@ -684,11 +751,14 @@ def render_detalle(p, vig, plantilla, todos=()):
 
     # --- hoteles (opcional). P2: nombre, categoria, noches y web oficial ---
     hot = lista(p, "hoteles")
+    if hot and all(isinstance(x, dict) for x in hot):
+        cuerpo_hot = '    <div class="hcards">\n' + "\n".join(render_hotel_ficha(x) for x in hot) + '\n    </div>'
+    else:   # formato viejo (texto): lista simple
+        cuerpo_hot = ('    <ul class="dlist si">\n' + "\n".join(
+            '      <li>{}<span>{}</span></li>'.format(IC_HOTEL, render_hotel(x)) for x in hot) + '\n    </ul>')
     hoteles_html = _sec(
         "Hoteles <em>previstos</em>",
-        '    <ul class="dlist si">\n' + "\n".join(
-            '      <li>{}<span>{}</span></li>'.format(IC_HOTEL, render_hotel(x)) for x in hot)
-        + '\n    </ul>',
+        cuerpo_hot,
         '\n    <p class="dnota">Hoteles previstos o similares, sujetos a disponibilidad '
         'al momento de la reserva.</p>') if hot else ""
 
@@ -937,6 +1007,10 @@ def validar_detalle(p):
             if not isinstance(x, dict) or set(x) - set(claves):
                 err.append('{}: campos no reconocidos {}'.format(
                     campo, sorted(set(x) - set(claves)) if isinstance(x, dict) else x))
+            elif campo == "hoteles" and _v(x, "id") and not re.match(r'^[a-z0-9-]+$', _v(x, "id")):
+                err.append('hoteles: el id "{}" tiene que ser slug (a-z 0-9 -): nombra la foto'.format(_v(x, "id")))
+            elif campo == "hoteles" and not isinstance(x.get("destacados", []), list):
+                err.append('hoteles: "destacados" de {} tiene que ser una lista'.format(_v(x, "nombre")))
             elif campo == "hoteles" and _v(x, "noches") and not _v(x, "noches").isdigit():
                 err.append('hoteles: noches "{}" tiene que ser un numero'.format(_v(x, "noches")))
             elif _v(x, "web") and not es_url(_v(x, "web")):
@@ -1015,6 +1089,10 @@ def cargar(hoy):
             avisos.append("{}: sigue marcado [EJEMPLO] — no publicar asi".format(ident))
         if p["region"] not in REGIONES:
             avisos.append('{}: region "{}" no esta en el mapa de REGIONES'.format(ident, p["region"]))
+        for h in lista(p, "hoteles"):   # foto de hotel sin credito: no se muestra y se avisa
+            if isinstance(h, dict) and _v(h, "id") and not _v(h, "foto_credito") and any(
+                    (HOTEL_FOTOS / "{}.{}".format(_v(h, "id"), x)).exists() for x in ("jpg", "jpeg", "webp", "png")):
+                avisos.append('{}: la foto del hotel "{}" no se muestra porque falta "foto_credito"'.format(ident, _v(h, "nombre")))
 
         publicados.append((p, vig))
 

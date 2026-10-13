@@ -53,6 +53,7 @@ Hay lugar para 12 hoteles por paquete: hotel1, hotel2, y así hasta hotel12. Cad
 | hotel1_regimen | Régimen de comidas en ese hotel | All Inclusive |
 | hotel1_habitacion | Tipo de habitación | Habitación estándar |
 | hotel1_web | Página oficial del hotel, completa | https://www.hotel.com |
+| hotel1_foto_credito | De quién es la foto del hotel o quién la cedió. Sin este dato la foto no se muestra. Ver `docs/fotos-hoteles.md` | HM Hotels |
 
 - Cargá los hoteles en el orden del viaje.
 - Si un hotel tiene datos, tiene que tener nombre.
