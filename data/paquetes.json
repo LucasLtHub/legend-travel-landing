@@ -257,7 +257,7 @@
         {
           "ciudad": "Puerto Madryn",
           "nombre": "Hotel Tolosa",
-          "categoria": "3*",
+          "categoria": "4*",
           "noches": 3,
           "regimen": "",
           "habitacion": "Habitación estándar",
@@ -816,55 +816,68 @@
       "itinerario": [
         {
           "dia": "Día 1",
-          "titulo": "Buenos Aires ✈ Madrid"
+          "titulo": "Buenos Aires ✈ Madrid",
+          "texto": "Salida en vuelo con destino a Europa. Noche a bordo."
         },
         {
           "dia": "Día 2",
-          "titulo": "Madrid ✈ Copenhague"
+          "titulo": "Madrid ✈ Copenhague",
+          "texto": "Llegada a Copenhague, traslado al hotel y reunión informativa con el guía."
         },
         {
           "dia": "Día 3",
-          "titulo": "Copenhague"
+          "titulo": "Copenhague",
+          "texto": "Desayuno y visita panorámica: Plaza del Ayuntamiento, Palacio de Christiansborg, Fuente de Gefion, puerto Nyhavn y La Sirenita. Tarde libre. Opcional: Castillo de Frederiksborg."
         },
         {
           "dia": "Día 4",
-          "titulo": "Copenhague — Crucero DFDS"
+          "titulo": "Copenhague – crucero DFDS",
+          "texto": "Desayuno y tiempo libre. Traslado al puerto y embarque en el crucero DFDS hacia Oslo. Cena buffet a bordo y noche en camarote exterior."
         },
         {
           "dia": "Día 5",
-          "titulo": "Oslo"
+          "titulo": "Oslo",
+          "texto": "Desayuno a bordo y llegada. Visita panorámica: Ayuntamiento, castillo Akershus, Palacio Real, Parlamento y parque Vigeland. Tarde libre en Aker Brygge."
         },
         {
           "dia": "Día 6",
-          "titulo": "Oslo ✈ Tromsø"
+          "titulo": "Oslo ✈ Tromsø",
+          "texto": "Desayuno y vuelo hacia Tromsø. Llegada al hotel."
         },
         {
           "dia": "Día 7",
-          "titulo": "Tromsø & Auroras Boreales"
+          "titulo": "Tromsø y auroras boreales",
+          "texto": "Desayuno. Visita de la ciudad con entrada a la Catedral Ártica y ascenso en el teleférico Fjellheisen al monte Floya. Por la noche, experiencia sami en un campamento tradicional con cena y posibilidad de ver auroras boreales."
         },
         {
           "dia": "Día 8",
-          "titulo": "Tromsø — Experiencia Sami"
+          "titulo": "Tromsø – experiencia sami",
+          "texto": "Desayuno. Excursión con paseo en trineo tirado por renos, actividades culturales sami y almuerzo caliente. Regreso al hotel."
         },
         {
           "dia": "Día 9",
-          "titulo": "Tromsø ✈ Oslo"
+          "titulo": "Tromsø ✈ Oslo",
+          "texto": "Desayuno y vuelo de regreso a Oslo."
         },
         {
           "dia": "Día 10",
-          "titulo": "Oslo → Estocolmo (tren)"
+          "titulo": "Oslo – Estocolmo",
+          "texto": "Desayuno, traslado a la estación y tren rápido hacia Estocolmo."
         },
         {
           "dia": "Día 11",
-          "titulo": "Estocolmo"
+          "titulo": "Estocolmo",
+          "texto": "Desayuno y visita panorámica: Gamla Stan, Palacio Real, Museo Nobel y miradores de Södermalm."
         },
         {
           "dia": "Día 12",
-          "titulo": "Estocolmo ✈ Madrid"
+          "titulo": "Estocolmo ✈ Madrid",
+          "texto": "Desayuno y traslado al aeropuerto. Vuelo de regreso vía Madrid. Noche a bordo."
         },
         {
           "dia": "Día 13",
-          "titulo": "Buenos Aires"
+          "titulo": "Buenos Aires",
+          "texto": "Llegada a Argentina."
         }
       ],
       "tarifas": [],
@@ -1202,75 +1215,83 @@
       "itinerario": [
         {
           "dia": "Día 1",
-          "titulo": "Buenos Aires — vuelo a Roma vía Madrid"
+          "titulo": "Buenos Aires ✈ Madrid",
+          "texto": "Salida en vuelo con destino a Roma, vía Madrid. Noche a bordo."
         },
         {
           "dia": "Día 2",
-          "titulo": "Roma",
-          "texto": "Llegada, traslado y tiempo libre."
+          "titulo": "Madrid ✈ Roma",
+          "texto": "Llegada a Roma, traslado al hotel y tiempo libre. Por la tarde, información para el inicio del circuito en la recepción del hotel."
         },
         {
           "dia": "Día 3",
           "titulo": "Roma",
-          "texto": "Panorámica de 3 horas: Roma Imperial, Coliseo (exterior), Foros, Vaticano. Traslado al Trastévere."
+          "texto": "Desayuno. Visita panorámica de tres horas, en autobús y a pie, por la Roma Imperial: Arco de Constantino, exterior del Coliseo y Foros Imperiales, con final en la Ciudad del Vaticano. Opcional: Museos Vaticanos y Capilla Sixtina. Al final del día, traslado al barrio del Trastévere."
         },
         {
           "dia": "Día 4",
-          "titulo": "Roma – Abadía S. Giovanni in Venere – Térmoli – Bari"
+          "titulo": "Roma – Abadía de San Giovanni in Venere – Térmoli – Bari",
+          "texto": "Desayuno. Viaje hacia el mar Adriático atravesando los Apeninos, con parada en la Abadía de San Giovanni in Venere (entrada incluida), del siglo XI. Parada en Térmoli y llegada a Bari."
         },
         {
           "dia": "Día 5",
-          "titulo": "Bari – Bríndisi – Lecce – Gallipoli",
-          "texto": "La Florencia del sur y la ciudad griega del Jónico."
+          "titulo": "Bari – Bríndisi – Lecce – Gallipoli – Bríndisi",
+          "texto": "Desayuno. Seguimos la costa hasta Bríndisi, con su gran puerto amurallado, la columna romana y el barrio viejo. Continuación a Lecce y Gallipoli, con regreso a Bríndisi."
         },
         {
           "dia": "Día 6",
-          "titulo": "Alberobello – Matera – Nápoles",
-          "texto": "Trulli y Sassi, dos Patrimonios de la Humanidad. Almuerzo incluido."
+          "titulo": "Bríndisi – Alberobello – Matera – Nápoles",
+          "texto": "Desayuno. Alberobello, famoso por los trulli, sus casas cónicas de piedra declaradas Patrimonio de la Humanidad, y Matera. Llegada a Nápoles."
         },
         {
           "dia": "Día 7",
           "titulo": "Nápoles – Capri – Sorrento – Salerno",
-          "texto": "Ferry a Capri y tarde en Sorrento."
+          "texto": "Desayuno. Ferry desde el puerto de Nápoles a la isla de Capri, con tiempo para subir en funicular a Capri capital y disfrutar de las vistas. Por la tarde, embarque hacia Sorrento y continuación a Salerno."
         },
         {
           "dia": "Día 8",
-          "titulo": "Salerno – Paola – Messina – Taormina",
-          "texto": "Cruce a Sicilia. Cena incluida."
+          "titulo": "Salerno – Paola – Mesina – Taormina",
+          "texto": "Desayuno. Viaje hacia el sur atravesando el Parque Nacional de Cilento. En Paola, a orillas del Tirreno, visita al santuario de San Francisco de Paola y tiempo libre para almorzar. Cruce a Sicilia por Mesina y llegada a Taormina."
         },
         {
           "dia": "Día 9",
           "titulo": "Taormina",
-          "texto": "Al pie del Etna. Cena incluida."
+          "texto": "Desayuno. Al pie del Etna, tiempo para pasear por el casco antiguo de Taormina y su teatro griego."
         },
         {
           "dia": "Día 10",
-          "titulo": "Catania – Siracusa – Agrigento",
-          "texto": "Barroco UNESCO, Ortigia y Valle de los Templos. Cena incluida."
+          "titulo": "Taormina – Catania – Siracusa – Agrigento",
+          "texto": "Desayuno. Catania, con su centro barroco Patrimonio de la Humanidad y su mercado de pescado; Siracusa, antigua ciudad de la Magna Grecia junto al mar Jónico, también Patrimonio de la Humanidad. Continuación a Agrigento."
         },
         {
           "dia": "Día 11",
-          "titulo": "Valle de los Templos – Marsala – Erice – Palermo",
-          "texto": "Con guía local. Cena incluida."
+          "titulo": "Agrigento – Marsala – Erice – Palermo",
+          "texto": "Desayuno. Con guía local, visita al Valle de los Templos (entrada incluida). Continuación a Marsala, famosa por su vino, y Erice. Llegada a Palermo."
         },
         {
           "dia": "Día 12",
-          "titulo": "Palermo – Monreale – ferry nocturno",
-          "texto": "Catedrales y mosaicos. Noche a bordo."
+          "titulo": "Palermo – Monreale – ferry Palermo–Nápoles",
+          "texto": "Desayuno. Visita de Palermo y traslado a Monreale, con su catedral árabe-normanda (entrada incluida), Patrimonio de la Humanidad por sus mosaicos dorados. Embarque en el ferry nocturno a Nápoles."
         },
         {
           "dia": "Día 13",
-          "titulo": "Pompeya – Nápoles – Roma",
-          "texto": "Entrada y guía local en Pompeya."
+          "titulo": "Nápoles – Pompeya – Roma",
+          "texto": "Llegada a Nápoles a primera hora (desayuno no incluido) y continuación a Pompeya: visita con guía local a la ciudad romana sepultada por el Vesubio (entrada incluida). Llegada a Roma."
         },
         {
           "dia": "Día 14",
           "titulo": "Roma",
-          "texto": "Día libre."
+          "texto": "Desayuno. Día libre para recorrer la ciudad a tu ritmo."
         },
         {
-          "dia": "Días 15-16",
-          "titulo": "Roma – Madrid – Buenos Aires"
+          "dia": "Día 15",
+          "titulo": "Roma ✈ Madrid",
+          "texto": "Desayuno. Día libre hasta el traslado al aeropuerto para el vuelo de regreso a Buenos Aires, vía Madrid. Noche a bordo."
+        },
+        {
+          "dia": "Día 16",
+          "titulo": "Buenos Aires",
+          "texto": "Llegada a Buenos Aires. Fin de los servicios."
         }
       ],
       "tarifas": [],
@@ -1372,7 +1393,7 @@
         {
           "ciudad": "Punta Cana",
           "nombre": "WHALA! BAVARO",
-          "categoria": "5*",
+          "categoria": "4*",
           "noches": 10,
           "regimen": "All Inclusive",
           "habitacion": "Habitación estándar",
@@ -1477,7 +1498,7 @@
         {
           "ciudad": "Riviera Maya",
           "nombre": "BlueBay Grand Esmeralda",
-          "categoria": "5*",
+          "categoria": "4*",
           "noches": 5,
           "regimen": "All Inclusive",
           "habitacion": "Habitación estándar",
@@ -1645,7 +1666,7 @@
         {
           "ciudad": "Punta Cana",
           "nombre": "WHALA! BAVARO",
-          "categoria": "5*",
+          "categoria": "4*",
           "noches": 4,
           "regimen": "All Inclusive",
           "habitacion": "Habitación estándar",
@@ -2286,40 +2307,49 @@
       ],
       "itinerario": [
         {
-          "dia": "Días 1-2",
-          "titulo": "Buenos Aires – Guarulhos – Hanoi"
+          "dia": "Días 1 y 2",
+          "titulo": "Buenos Aires – Guarulhos – Hanoi",
+          "texto": "Salida desde Buenos Aires con conexión en Guarulhos y vuelo a Hanoi."
         },
         {
-          "dia": "Días 3-4",
-          "titulo": "Hanoi"
+          "dia": "Días 3 y 4",
+          "titulo": "Hanoi",
+          "texto": "Mausoleo de Ho Chi Minh, Templo de la Literatura, Pagoda del Pilar Único, lago Hoan Kiem y Barrio Antiguo. Visita al pueblo de Quang Phu Cau, famoso por su incienso."
         },
         {
-          "dia": "Días 5-6",
-          "titulo": "Bahía de Halong – Hoi An"
+          "dia": "Días 5 y 6",
+          "titulo": "Bahía de Halong – Hoi An",
+          "texto": "Navegación en un junco tradicional por la Bahía de Halong, Patrimonio de la Humanidad. Vuelo a Danang y traslado a Hoi An."
         },
         {
-          "dia": "Días 7-10",
-          "titulo": "Hoi An – Ho Chi Minh"
+          "dia": "Días 7 al 10",
+          "titulo": "Hoi An – Ho Chi Minh",
+          "texto": "Hoi An: Puente Japonés y mercado tradicional. Vuelo a Ho Chi Minh: túneles de Cu Chi, Delta del Mekong y city tour por los edificios históricos y coloniales."
         },
         {
-          "dia": "Días 11-13",
-          "titulo": "Siem Reap (Angkor)"
+          "dia": "Días 11 al 13",
+          "titulo": "Siem Reap",
+          "texto": "Templos de Angkor: Angkor Thom, Bayon, Ta Prohm, Angkor Wat, Banteay Srei, Banteay Samre y el complejo de Roulos. Atardecer sobre Angkor."
         },
         {
-          "dia": "Días 14-16",
-          "titulo": "Bangkok"
+          "dia": "Días 14 al 16",
+          "titulo": "Bangkok",
+          "texto": "Buda de Oro, Buda Reclinado, Gran Palacio y Templo del Buda Esmeralda. Mercado sobre las vías del tren de Mae Klong y mercado flotante Damnoen Saduak."
         },
         {
-          "dia": "Días 17-20",
-          "titulo": "Chiang Rai – Chiang Mai"
+          "dia": "Días 17 al 20",
+          "titulo": "Chiang Rai – Chiang Mai",
+          "texto": "Triángulo de Oro y Museo del Opio. Templo Azul y Templo Blanco. En Chiang Mai, santuario de elefantes, templos budistas y Festival Yee Peng, con el lanzamiento de linternas."
         },
         {
-          "dia": "Días 21-23",
-          "titulo": "Krabi – Phuket"
+          "dia": "Días 21 al 23",
+          "titulo": "Krabi – Phuket",
+          "texto": "Playas de Krabi y excursión en lancha rápida por las islas Daeng, Paradise y Koh Hong, con snorkel. Traslado terrestre a Phuket."
         },
         {
-          "dia": "Días 24-26",
-          "titulo": "Phuket – Buenos Aires"
+          "dia": "Días 24 al 26",
+          "titulo": "Phuket – Buenos Aires",
+          "texto": "Excursión de día completo a las islas Phi Phi, Monkey Beach, Bamboo Island y Pileh Lagoon. Traslado al aeropuerto y regreso vía Estambul. Llegada a Buenos Aires."
         }
       ],
       "tarifas": [],
@@ -2655,62 +2685,64 @@
       ],
       "itinerario": [
         {
-          "dia": "Días 1-2",
-          "titulo": "Buenos Aires – Addis Abeba – Seúl"
+          "dia": "Días 1 y 2",
+          "titulo": "Buenos Aires – Addis Abeba – Seúl",
+          "texto": "Salida con conexión en Addis Abeba rumbo a Corea del Sur. Noche a bordo."
         },
         {
-          "dia": "Días 3-5",
+          "dia": "Días 3 al 5",
           "titulo": "Seúl",
-          "texto": "DMZ de Cheorwon, Palacio Changdeokgung, Bukchon Hanok Village, Gangnam, Lotte World Tower, Myeongdong."
+          "texto": "Llegada y descanso. Zona Desmilitarizada (DMZ) de Cheorwon, con el Segundo Túnel, el Observatorio de la Paz y la estación de Woljeong-ri. Palacio Changdeokgung, Bukchon Hanok Village, Gangnam, Lotte World Tower y Myeongdong."
         },
         {
           "dia": "Día 6",
           "titulo": "Seúl – Suwon – Jeonju",
-          "texto": "Cambio de guardia en Gyeongbokgung, Fortaleza Hwaseong y Hanok Village de Jeonju."
+          "texto": "Palacio Gyeongbokgung, con el cambio de guardia si las condiciones lo permiten. En Suwon, Fortaleza Hwaseong y Palacio Hwaseong Haenggung. Continuación a Jeonju y paseo por su Hanok Village."
         },
         {
           "dia": "Día 7",
           "titulo": "Jeonju – Damyang – Haeinsa – Busan",
-          "texto": "Experiencia Gochujang, Bosque de Bambú y templo Haeinsa (UNESCO)."
+          "texto": "Experiencia gastronómica en la aldea de Sunchang preparando la salsa gochujang. Bosque de Bambú de Juknokwon y Museo del Bambú, en Damyang. Templo Haeinsa, Patrimonio de la Humanidad. Llegada a Busan."
         },
         {
           "dia": "Día 8",
-          "titulo": "Busan – Fukuoka",
-          "texto": "Templo Haedong Yonggungsa frente al mar y vuelo a Japón."
+          "titulo": "Busan ✈ Fukuoka",
+          "texto": "Templo Haedong Yonggungsa, frente al mar, Memorial de las Naciones Unidas y mercado de pescado del puerto. Vuelo a Fukuoka."
         },
         {
           "dia": "Día 9",
-          "titulo": "Iwakuni – Miyajima – Hiroshima",
-          "texto": "Puente Kintai-Kyo, torii flotante de Itsukushima y Memorial de la Paz."
+          "titulo": "Fukuoka – Iwakuni – Miyajima – Hiroshima",
+          "texto": "Puente Kintai-kyo, en Iwakuni. Ferry a la isla de Miyajima y Santuario de Itsukushima, con su torii flotante. En Hiroshima, Parque Memorial de la Paz, Cúpula de la Bomba Atómica y museo."
         },
         {
           "dia": "Día 10",
           "titulo": "Hiroshima – Matsuyama",
-          "texto": "Ferry a Shikoku, castillo y baños termales Dogo Onsen."
+          "texto": "Ferry a la isla de Shikoku. Funicular al castillo de Matsuyama, templo Ishiteji y baños termales Dogo Onsen."
         },
         {
           "dia": "Día 11",
-          "titulo": "Kotohira – Takamatsu – Naruto – Kobe",
-          "texto": "Jardines Ritsurin y remolinos de Naruto."
+          "titulo": "Matsuyama – Kotohira – Takamatsu – Naruto – Kobe",
+          "texto": "Santuario sintoísta de Kotohira y jardines Ritsurin. Puente de Naruto, con vista a los remolinos. Continuación a Kobe."
         },
         {
           "dia": "Día 12",
-          "titulo": "Kobe – Monte Koya",
-          "texto": "Noche en monasterio budista: meditación zen y cena vegetariana tradicional."
+          "titulo": "Kobe – Osaka – Monte Koya",
+          "texto": "Museo Memorial del Terremoto de Kobe. Monte Koya: mausoleo de Okunoin y templo Kongobuji. Noche en un monasterio budista."
         },
         {
           "dia": "Día 13",
           "titulo": "Monte Koya – Kioto",
-          "texto": "Fushimi Inari, Palacio Imperial, Pabellón Dorado y Gion."
+          "texto": "Santuario Fushimi Inari, Palacio Imperial, Pabellón Dorado (Kinkaku-ji) y barrio de Gion."
         },
         {
-          "dia": "Días 14-17",
+          "dia": "Días 14 al 17",
           "titulo": "Tokio",
-          "texto": "Tren bala. Panorámica completa + 2 días libres."
+          "texto": "Tren bala a Tokio. Visita panorámica: templo Zojoji, cruce de Shibuya, Santuario Meiji, Palacio Imperial, Akihabara, Tokyo Skytree, templo Sensoji y calle Nakamise."
         },
         {
-          "dia": "Días 18-19",
-          "titulo": "Tokio – Addis Abeba – Buenos Aires"
+          "dia": "Días 18 y 19",
+          "titulo": "Tokio – Addis Abeba – Buenos Aires",
+          "texto": "Tiempo libre hasta el traslado al aeropuerto. Vuelo de regreso vía Addis Abeba. Llegada a Buenos Aires."
         }
       ],
       "tarifas": [],
@@ -3010,53 +3042,79 @@
       ],
       "itinerario": [
         {
-          "dia": "Días 1-2",
-          "titulo": "Buenos Aires – Addis Abeba – El Cairo"
+          "dia": "Días 1 y 2",
+          "titulo": "Buenos Aires – Addis Abeba – El Cairo",
+          "texto": "Salida desde Buenos Aires con Ethiopian Airlines y conexión en Addis Abeba hacia El Cairo."
         },
         {
-          "dia": "Días 3-5",
+          "dia": "Día 3",
           "titulo": "El Cairo",
-          "texto": "Pirámides y tesoros del Antiguo Egipto."
+          "texto": "Llegada y tiempo para descansar. Por la tarde, Ciudadela de Saladino, Mezquita de Mohamed Alí y el bazar Khan El Khalili."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "El Cairo",
+          "texto": "Desayuno. Pirámides de Giza (Keops, Kefrén y Micerinos), la Esfinge y el Templo del Valle. Por la tarde, Gran Museo Egipcio (GEM)."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "El Cairo",
+          "texto": "Desayuno. Día libre. Opcional: excursión a Alejandría."
         },
         {
           "dia": "Día 6",
-          "titulo": "El Cairo – Luxor",
-          "texto": "Inicio del crucero por el Nilo."
+          "titulo": "El Cairo ✈ Luxor",
+          "texto": "Desayuno y vuelo a Luxor. Templos de Karnak y Luxor. Embarque en el crucero por el Nilo y almuerzo a bordo."
         },
         {
-          "dia": "Días 7-9",
-          "titulo": "Luxor – Edfu – Kom Ombo – Aswan",
-          "texto": "Navegación con pensión completa."
+          "dia": "Día 7",
+          "titulo": "Luxor – Edfu",
+          "texto": "Desayuno. Margen occidental del Nilo: Valle de los Reyes, Templo de Hatshepsut y Colosos de Memnón. Navegación hacia Edfu por las esclusas de Esna."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Edfu – Kom Ombo – Aswan",
+          "texto": "Desayuno. En calesa hasta el Templo de Horus, en Edfu. Navegación a Kom Ombo para visitar el templo de Sobek y Haroeris y el nilómetro. Continuación a Aswan."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Aswan",
+          "texto": "De madrugada, opcional a Abu Simbel. Gran Represa de Aswan, Obelisco Inconcluso y paseo en feluca por el Nilo, con vistas a la Isla Elefantina y al Mausoleo del Aga Khan."
         },
         {
           "dia": "Día 10",
-          "titulo": "Aswan – El Cairo"
+          "titulo": "Aswan ✈ El Cairo",
+          "texto": "Desayuno, desembarque y vuelo a El Cairo. Resto del día libre."
         },
         {
           "dia": "Día 11",
-          "titulo": "El Cairo – Amman"
+          "titulo": "El Cairo ✈ Amman",
+          "texto": "Desayuno y vuelo a Amman. Resto del día libre. Cena."
         },
         {
           "dia": "Día 12",
-          "titulo": "Amman – Madaba – Monte Nebo – Shobak – Petra"
+          "titulo": "Amman – Madaba – Monte Nebo – Shobak – Pequeña Petra – Petra",
+          "texto": "Desayuno. Madaba y sus mosaicos bizantinos, Monte Nebo, castillo cruzado de Shobak y Pequeña Petra. Llegada a Petra."
         },
         {
           "dia": "Día 13",
           "titulo": "Petra",
-          "texto": "Día completo en la ciudad rosada."
+          "texto": "Desayuno. Día completo en Petra: el desfiladero del Siq, el Tesoro, la Calle de las Fachadas y el Monasterio El Deir. Por la noche, Petra by Night."
         },
         {
           "dia": "Día 14",
           "titulo": "Petra – Wadi Rum",
-          "texto": "Noche en campamento de lujo (Martian Tents)."
+          "texto": "Desayuno. Desierto de Wadi Rum: recorrido en vehículos 4x4 entre dunas y montañas de roca rojiza."
         },
         {
           "dia": "Día 15",
-          "titulo": "Wadi Rum – Mar Muerto"
+          "titulo": "Wadi Rum – Mar Muerto",
+          "texto": "Desayuno. Traslado al Mar Muerto, el punto más bajo de la Tierra. Resto del día libre para flotar en sus aguas. Cena."
         },
         {
-          "dia": "Días 16-17",
-          "titulo": "Mar Muerto – Amman – Buenos Aires"
+          "dia": "Días 16 y 17",
+          "titulo": "Mar Muerto – Amman – Buenos Aires",
+          "texto": "Desayuno y tiempo libre hasta el traslado nocturno al aeropuerto de Amman. Vuelo de regreso vía Addis Abeba. Llegada a Buenos Aires."
         }
       ],
       "tarifas": [],
@@ -3225,53 +3283,68 @@
       "itinerario": [
         {
           "dia": "Día 1",
-          "titulo": "Buenos Aires – San Pablo – Johannesburgo"
+          "titulo": "Buenos Aires – San Pablo – Johannesburgo",
+          "texto": "Salida desde Aeroparque a San Pablo y conexión con South African Airways a Johannesburgo. Noche a bordo."
         },
         {
           "dia": "Día 2",
-          "titulo": "Johannesburgo – Mpumalanga – Reserva privada Kruger",
-          "texto": "Llegada al lodge. Cena."
+          "titulo": "Johannesburgo – Mpumalanga – reserva privada (área Kruger)",
+          "texto": "Llegada, recepción y traslado hacia el área del Parque Kruger por los paisajes de Mpumalanga. Llegada al lodge por la tarde. Cena."
         },
         {
           "dia": "Día 3",
-          "titulo": "Reserva privada — safaris",
-          "texto": "Safari fotográfico 4x4 al amanecer y al atardecer. Pensión en el lodge."
+          "titulo": "Reserva privada – safaris",
+          "texto": "Safari fotográfico en 4x4 abierto al amanecer. Desayuno y tiempo libre en el lodge. Almuerzo. Segundo safari por la tarde. Cena y noche en la reserva."
         },
         {
           "dia": "Día 4",
-          "titulo": "Último safari – Johannesburgo"
+          "titulo": "Área Kruger – Johannesburgo",
+          "texto": "Último safari al amanecer y desayuno en el lodge. Regreso a Johannesburgo, con parada para almorzar (almuerzo no incluido). Llegada al hotel por la noche."
         },
         {
           "dia": "Día 5",
-          "titulo": "Johannesburgo – Mauritius"
+          "titulo": "Johannesburgo ✈ Mauritius",
+          "texto": "Desayuno y vuelo a Mauritius. Llegada y traslado al hotel."
         },
         {
-          "dia": "Días 6-8",
+          "dia": "Día 6",
           "titulo": "Mauritius",
-          "texto": "Días libres de playa con media pensión."
+          "texto": "Desayuno. Día libre para disfrutar de las playas. Media pensión."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Mauritius",
+          "texto": "Desayuno. Día libre para disfrutar del hotel y de la isla. Media pensión."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Mauritius",
+          "texto": "Desayuno. Día libre para descansar o hacer actividades opcionales. Media pensión."
         },
         {
           "dia": "Día 9",
-          "titulo": "Mauritius – Ciudad del Cabo"
+          "titulo": "Mauritius ✈ Ciudad del Cabo",
+          "texto": "Vuelo a Ciudad del Cabo, vía Johannesburgo. Llegada y traslado al hotel."
         },
         {
           "dia": "Día 10",
-          "titulo": "Península del Cabo",
-          "texto": "Cabo de Buena Esperanza, Isla de las Focas y pingüinos. Almuerzo incluido."
+          "titulo": "Ciudad del Cabo – Península del Cabo",
+          "texto": "Desayuno. Excursión de día completo: Cabo de Buena Esperanza, Isla de las Focas y una colonia de pingüinos. Almuerzo en restaurante local (sin bebidas)."
         },
         {
           "dia": "Día 11",
-          "titulo": "City tour + Table Mountain + viñedos",
-          "texto": "Bo-Kaap, teleférico (sujeto a clima), Stellenbosch/Franschhoek con degustación."
+          "titulo": "Ciudad del Cabo – city tour y viñedos",
+          "texto": "Desayuno. Panorámica: Bo-Kaap, centro histórico, Company's Garden y Waterfront. Ascenso en teleférico a Table Mountain (sujeto al clima). Región de los viñedos, Stellenbosch y/o Franschhoek, con visita a una bodega y degustación."
         },
         {
           "dia": "Día 12",
           "titulo": "Ciudad del Cabo",
-          "texto": "Día libre."
+          "texto": "Desayuno. Día libre."
         },
         {
           "dia": "Día 13",
-          "titulo": "Ciudad del Cabo – San Pablo – Buenos Aires"
+          "titulo": "Ciudad del Cabo – San Pablo – Buenos Aires",
+          "texto": "Desayuno y traslado al aeropuerto. Vuelo a San Pablo con conexión a Buenos Aires. Fin del viaje."
         }
       ],
       "tarifas": [],

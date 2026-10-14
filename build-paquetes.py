@@ -676,21 +676,25 @@ def _sec(titulo, cuerpo, extra=""):
 
 def render_relacionados(p, todos):
     """
-    C2: hasta MAX_RELACIONADOS salidas para seguir mirando. Primero las de la
-    misma region; si no alcanzan, se completa con otras. Nunca la actual.
+    P3: hasta MAX_RELACIONADOS salidas de la MISMA región que el paquete abierto,
+    nunca la actual. Si no hay otras de esa región, no se muestran cards: queda
+    un link al listado completo.
     """
-    otros = [(q, v) for q, v in todos if q["id"] != p["id"]]
-    if not otros:
-        return ""
-    misma = [x for x in otros if x[0]["region"] == p["region"]]
-    resto = [x for x in otros if x[0]["region"] != p["region"]]
-    elegidos = (misma + resto)[:MAX_RELACIONADOS]
-
-    if len(misma) >= 1:
-        sub = "Otras salidas {}".format(REGIONES_FRASE.get(p["region"], ""))
-    else:
-        sub = "Otras salidas"
     NL = chr(10)
+    elegidos = [(q, v) for q, v in todos if q["id"] != p["id"] and q["region"] == p["region"]][:MAX_RELACIONADOS]
+    sub = "Otras salidas {}".format(REGIONES_FRASE.get(p["region"], "")).strip()
+    if not elegidos:
+        return NL.join([
+            '',
+            '<section class="dsec px">',
+            '  <div class="dwrap rv">',
+            '    <h2 class="dh2">{} <em>que te pueden interesar</em></h2>'.format(e(sub)),
+            '    <p class="dnota">Por ahora no hay otras salidas {} publicadas. '
+            '<a href="paquetes/" style="color:var(--red);font-weight:600">Ver todos los paquetes</a></p>'.format(
+                e(REGIONES_FRASE.get(p["region"], ""))).replace("salidas  publicadas", "salidas publicadas"),
+            '  </div>',
+            '</section>',
+        ])
     return NL.join([
         '',
         '<section class="dsec px">',
@@ -817,7 +821,7 @@ def render_detalle(p, vig, plantilla, todos=()):
         extra = '\n    <p class="dnota">{}</p>'.format(e(nota)) if nota else ""
         extra += ('\n    <p class="dnota">Precios por persona, sujetos a disponibilidad '
                   'y a confirmaci&oacute;n al momento de la reserva.</p>')
-        tarifas_html = _sec("Precios <em>por base</em>" if precios else "Tarifas",
+        tarifas_html = _sec("Precios <em>por persona</em>" if precios else "Tarifas",
                             '    <dl class="dtar{}">\n'.format(" dtar-base" if precios else "")
                             + "\n".join(filas) + '\n    </dl>', extra)
 
@@ -1188,6 +1192,62 @@ def _paginas_publicadas():
         if f.exists():
             paginas.append((d + "/", f))
     return paginas
+
+
+DOCS_VUELOS = ROOT / "docs" / "vuelos-faltantes.md"
+
+
+def generar_vuelos_faltantes(publicados, hoy):
+    """
+    P5: docs/vuelos-faltantes.md (no se publica). Un bloque por paquete activo
+    al que le falte algún dato de vuelos (aerolínea, ida, vuelta o equipaje),
+    listo para pegar en WhatsApp y que el operador lo complete. Lo que ya está
+    cargado va precargado; lo que falta queda en blanco. Los cruceros con
+    embarque en Buenos Aires no llevan vuelos y no entran.
+    """
+    NL = chr(10)
+
+    def tramo(v):
+        return " · ".join(x for x in (_v(v, "fecha"), _v(v, "horario"), _v(v, "numero")) if x)
+
+    bloques, completos = [], []
+    for p, vig in publicados:
+        if p.get("region") == "cruceros":
+            continue
+        vue = [v for v in lista(p, "vuelos") if isinstance(v, dict)]
+        con_datos = [v for v in vue if tramo(v)]
+        campos = [
+            ("Aerolínea", ", ".join(sorted({_v(v, "aerolinea") for v in vue if _v(v, "aerolinea")}))),
+            ("Vuelo de ida (fecha, horario, número)", tramo(con_datos[0]) if con_datos else ""),
+            ("Vuelo de vuelta (fecha, horario, número)", tramo(con_datos[1]) if len(con_datos) > 1 else ""),
+            ("Equipaje incluido (valija en bodega / carry on / solo mochila)",
+             ", ".join(sorted({_v(v, "equipaje") for v in vue if _v(v, "equipaje")}))),
+        ]
+        if all(val for _, val in campos):
+            completos.append(txt(p, "titulo"))
+            continue
+        contexto = [("{} {}".format(_v(v, "aerolinea"), _v(v, "ruta"))).strip() for v in vue if _v(v, "ruta")]
+        bloques.append(NL.join(
+            ["### {}".format(txt(p, "titulo")), ""]
+            + (["Cargado hoy: " + " / ".join(contexto), ""] if contexto else [])
+            + ["```", "*{} — salida {}*".format(txt(p, "titulo"), salida_corta(p["salida"]))]
+            + ["{}: {}".format(k, val).rstrip() for k, val in campos]
+            + ["```", ""]))
+    t = NL.join([
+        "# Vuelos faltantes por paquete",
+        "",
+        "Generado el {} por build-paquetes.py desde data/paquetes.json (se rehace en cada build; no editar a mano).".format(hoy.isoformat()),
+        "Copiar el bloque de cada paquete y pegarlo en WhatsApp para que el operador lo complete.",
+        "Después, cargar la respuesta en `vuelos` del paquete (aerolinea, fecha, horario, numero, equipaje) y correr el build.",
+        "Los cruceros con embarque en Buenos Aires no llevan vuelos y no figuran.",
+        "",
+    ] + bloques + (["Con los vuelos completos: " + "; ".join(completos), ""] if completos else [])) + NL
+    DOCS_VUELOS.parent.mkdir(exist_ok=True)
+    if not DOCS_VUELOS.exists() or DOCS_VUELOS.read_text(encoding="utf-8") != t:
+        DOCS_VUELOS.write_text(t, encoding="utf-8")
+        print("OK  docs/vuelos-faltantes.md ({} paquetes con datos de vuelo por completar)".format(len(bloques)))
+    else:
+        print("=   docs/vuelos-faltantes.md sin cambios")
 
 
 def generar_llms_full(publicados, hoy):
@@ -1713,6 +1773,7 @@ def main():
     # ---------- 4. llms.txt (GEO) ----------
     actualizar_llms(publicados, hoy)
     generar_llms_full(publicados, hoy)
+    generar_vuelos_faltantes(publicados, hoy)
 
     # ---------- 5. resenas de Google en la home ----------
     actualizar_resenas()
