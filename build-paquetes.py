@@ -1202,12 +1202,68 @@ RS_CSS = """<style>
 .rsG-card p{margin:0;font-size:15.5px;line-height:1.6;color:var(--ink-2)}
 .rsG-more{margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px}
 </style>"""
+# Carrusel de la home: mismo carril con scroll-snap que .bento (Destinos) en mobile,
+# flechas desde 1024 px, teclado (←/→, Inicio/Fin) y sin autoplay.
+RS_CAR_CSS = """<style>
+#pasajeros .kicker{font-size:12px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--red);margin-bottom:16px}
+#pasajeros .kicker::before{content:'// '}
+.rsC-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
+.rsC-nav{display:none;gap:10px;flex:none}
+.rsC-btn{width:52px;height:52px;border-radius:50%;border:0;background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line);display:grid;place-items:center;cursor:pointer;transition:background .4s var(--ease),color .3s,box-shadow .3s,opacity .3s}
+.rsC-btn svg{width:18px;height:18px}
+.rsC-btn:hover:not([aria-disabled="true"]){background:var(--red);color:#fff;box-shadow:none}
+.rsC-btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.rsC-btn[aria-disabled="true"]{opacity:.35;cursor:default}
+.rsC-track{display:flex;align-items:stretch;gap:14px;margin:42px calc(-1*var(--gutter)) -34px;padding:6px var(--gutter) 34px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--gutter);scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.rsC-track::-webkit-scrollbar{display:none}
+.rsC-track:focus-visible{outline:2px solid var(--gold);outline-offset:-2px;border-radius:var(--r-lg)}
+.rsC-slide{flex:0 0 86%;scroll-snap-align:start}
+.rsC-bar{position:relative;height:2px;margin-top:30px;border-radius:2px;background:var(--line);overflow:hidden}
+.rsC-bar i{position:absolute;left:0;top:0;bottom:0;width:33%;border-radius:2px;background:var(--red)}
+@media(min-width:720px){.rsC-track{gap:18px}.rsC-slide{flex-basis:calc((100% - 18px)/2)}}
+@media(min-width:1024px){.rsC-nav{display:flex}.rsC-track{margin-left:-2px;margin-right:-2px;padding-left:2px;padding-right:2px;scroll-padding-inline:2px}}
+@media(min-width:1100px){.rsC-track{gap:22px}.rsC-slide{flex-basis:calc((100% - 44px)/3)}}
+</style>"""
+RS_CAR_JS = """<script>
+(function(){
+  var tr=document.getElementById('rsC-track');if(!tr)return;
+  var prev=document.querySelector('.rsC-btn[data-dir="-1"]'),next=document.querySelector('.rsC-btn[data-dir="1"]');
+  var bar=document.querySelector('.rsC-bar i'),slides=tr.querySelectorAll('.rsC-slide');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function paso(){var g=parseFloat(getComputedStyle(tr).columnGap)||0;return slides.length?slides[0].getBoundingClientRect().width+g:tr.clientWidth}
+  function ir(x){tr.scrollTo({left:x,behavior:reduce?'auto':'smooth'})}
+  function mover(dir){ir(tr.scrollLeft+dir*paso())}
+  function estado(){
+    var max=tr.scrollWidth-tr.clientWidth;
+    prev.setAttribute('aria-disabled',tr.scrollLeft<=2?'true':'false');
+    next.setAttribute('aria-disabled',tr.scrollLeft>=max-2?'true':'false');
+    var r=max>0?tr.clientWidth/tr.scrollWidth:1;   /* barra de avance: ancho = parte visible, posición = scroll */
+    bar.style.width=(r*100)+'%';
+    bar.style.transform='translateX('+(max>0?tr.scrollLeft/max*(1-r)/r*100:0)+'%)';
+  }
+  prev.addEventListener('click',function(){mover(-1)});
+  next.addEventListener('click',function(){mover(1)});
+  tr.addEventListener('keydown',function(e){
+    var k=e.key;
+    if(k==='ArrowRight'||k==='ArrowLeft'){e.preventDefault();mover(k==='ArrowRight'?1:-1)}
+    else if(k==='Home'||k==='End'){e.preventDefault();ir(k==='Home'?0:tr.scrollWidth)}
+  });
+  tr.addEventListener('scroll',estado,{passive:true});
+  window.addEventListener('resize',estado);
+  estado();
+})();
+</script>"""
+RS_FLECHA_IZQ = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" '
+                 'stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>')
+RS_FLECHA_DER = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" '
+                 'stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>')
 
 
 def actualizar_resenas():
     """
     Reescribe "Nuestros pasajeros" con las reseñas de data/resenas-google.json:
-    en index.html las primeras "en_home" (entre RS_START y RS_END) y en quienes-somos/index.html todas.
+    en index.html todas, en un carrusel (entre RS_START y RS_END: lo visible coincide con el schema),
+    y en quienes-somos/index.html todas, en grilla.
     El schema va siempre en UNA sola entidad TravelAgency por página (entre RSS_START y RSS_END), con
     aggregateRating ("calificacion") y review (todas): separarlos dispara "Varias reseñas sin el objeto
     aggregateRating" en Search Console. Para sumar una reseña alcanza con editar el JSON
@@ -1219,10 +1275,6 @@ def actualizar_resenas():
     data = json.loads(RES_JSON.read_text(encoding="utf-8"))
     rs = [r for r in data.get("resenas", []) if str(r.get("nombre", "")).strip() and str(r.get("texto", "")).strip()]
     url = str(data.get("url_google") or "").strip()
-    try:
-        en_home = max(1, int(data.get("en_home") or 3))
-    except (TypeError, ValueError):
-        en_home = 3
     FLECHA = ('<span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" '
               'stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>')
     GEN = "<!-- Generado por build-paquetes.py desde data/resenas-google.json. NO editar a mano: se pisa. -->"
@@ -1234,16 +1286,21 @@ def actualizar_resenas():
     def estrellas(r):
         return max(1, min(5, int(r.get("estrellas", 5) or 5)))
 
-    def cards(lista):
+    def cards(lista, carrusel=False):
         out = []
         for i, r in enumerate(lista):
             n = estrellas(r)
+            # en el carrusel las tarjetas no llevan .rv: las que arrancan fuera de pantalla
+            # (a la derecha) nunca dispararían el IntersectionObserver y quedarían invisibles
+            abre = ('<article class="rsG-card rsC-slide" role="group" aria-roledescription="reseña" '
+                    'aria-label="{} de {}">'.format(i + 1, len(lista)) if carrusel
+                    else '<article class="rsG-card rv" style="--d:{}ms">'.format(min(i, 8) * 70))
             out.append(
-                '      <article class="rsG-card rv" style="--d:{d}ms">\n'
+                '      ' + abre + '\n'
                 '        <div class="rsG-top"><span class="rsG-av" aria-hidden="true">{ini}</span>'
                 '<div><b>{nombre}</b><span class="rsG-stars" role="img" aria-label="{n} de 5 estrellas">{stars}</span></div></div>\n'
                 '        <p>{texto}</p>\n'
-                '      </article>'.format(d=min(i, 8) * 70, ini=e(iniciales(r["nombre"])), nombre=e(r["nombre"]),
+                '      </article>'.format(ini=e(iniciales(r["nombre"])), nombre=e(r["nombre"]),
                                           n=n, stars=RS_STAR * n, texto=e(r["texto"])))
         return "\n".join(out)
 
@@ -1282,37 +1339,41 @@ def actualizar_resenas():
     google = ('<a class="{cls}" href="{u}" target="_blank" rel="noopener noreferrer">'
               'Ver todas las rese&ntilde;as en Google {fl}</a>')
 
-    # ---------- home: solo las primeras; el resto se lee en /quienes-somos/ ----------
+    # ---------- home: todas, en carrusel (lo visible = el schema) ----------
     home = ROOT / "index.html"
     t = home.read_text(encoding="utf-8")
     original = t
     if RS_START not in t or RS_END not in t or RSS_START not in t or RSS_END not in t:
         print("\n!  index.html no tiene los marcadores RESENAS — salteado")
         return
-    primeras = rs[:en_home]
-    acciones = ['<a class="btn" data-magnet href="quienes-somos/#pasajeros">Ver m&aacute;s rese&ntilde;as {}</a>'.format(FLECHA)]
-    if url:
-        acciones.append(google.format(cls="tlink", u=e(url), fl='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
-                        'stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>'))
+    mas = ('\n    <div class="rsG-more rv">' + google.format(cls="btn", u=e(url), fl=FLECHA) + '</div>') if url else ""
     bloque = "\n".join([
         RS_START, GEN,
         '<section class="sec rsG" id="pasajeros">',
         RS_CSS,
+        RS_CAR_CSS,
         '  <div class="wrap">',
-        '    <div class="rv"><p class="kicker">Nuestros pasajeros</p><h2 class="h2">Lo que dicen <em>quienes ya viajaron.</em></h2></div>',
-        '    <div class="rsG-grid">',
-        cards(primeras),
+        '    <div class="rsC-head rv">',
+        '      <div><p class="kicker">Nuestros pasajeros</p><h2 class="h2">Lo que dicen <em>quienes ya viajaron.</em></h2></div>',
+        '      <div class="rsC-nav">'
+        '<button type="button" class="rsC-btn" data-dir="-1" aria-controls="rsC-track" aria-label="Reseña anterior">' + RS_FLECHA_IZQ + '</button>'
+        '<button type="button" class="rsC-btn" data-dir="1" aria-controls="rsC-track" aria-label="Reseña siguiente">' + RS_FLECHA_DER + '</button></div>',
         '    </div>',
-        '    <div class="rsG-more rv">' + "".join(acciones) + '</div>',
+        '    <div class="rsC-track" id="rsC-track" tabindex="0" role="region" aria-roledescription="carrusel" '
+        'aria-label="Reseñas de pasajeros">',
+        cards(rs, carrusel=True),
+        '    </div>',
+        '    <div class="rsC-bar" aria-hidden="true"><i></i></div>' + mas,
         '  </div>',
         '</section>',
+        RS_CAR_JS,
         RS_END,
     ])
     t = reemplazar_bloque(t, RS_START, RS_END, bloque)
     t = fusionar_schema(t, "index.html", DOMINIO + "/#agencia")
     if t != original:
         home.write_text(t, encoding="utf-8")
-        print("OK  index.html: 'Nuestros pasajeros' con {} de {} resenas (schema: las {})".format(len(primeras), len(rs), len(rs)))
+        print("OK  index.html: 'Nuestros pasajeros' en carrusel con las {} resenas".format(len(rs)))
     else:
         print("=   index.html: resenas sin cambios")
 
