@@ -1122,6 +1122,167 @@ def cargar(hoy):
 # ============================================================
 # D — GEO: llms.txt con la oferta viva
 # ============================================================
+LLMS_FULL = ROOT / "llms-full.txt"
+
+
+def _texto_plano(frag):
+    """Líneas de texto de un fragmento de HTML, sin scripts, estilos ni etiquetas."""
+    s = re.sub(r"<(script|style|svg|nav)\b.*?</\1>", "", frag, flags=re.S)
+    s = re.sub(r'<a\b[^>]*class="[^"]*\b(btn|tlink)\b[^"]*"[^>]*>.*?</a>', "", s, flags=re.S)   # botones/CTA
+    s = re.sub(r"<br\s*/?>", "\n", s)
+    s = re.sub(r"</?(h[1-6]|p|li|div|section|article|figcaption|dt|dd)\b[^>]*>", "\n", s)
+    s = re.sub(r'<span\b[^>]*class="[^"]*\bchip\b[^"]*"[^>]*>', "\n", s)   # cada chip, una línea
+    s = html.unescape(re.sub(r"<[^>]+>", " ", s))   # inline (span, b, em, a…): un espacio, no se pegan palabras
+    s = re.sub(r"[ \t\xa0]+", " ", s)
+    s = re.sub(r" ([.,;:!?])", r"\1", s)
+    return [l.strip() for l in s.split("\n") if l.strip()]
+
+
+def _seccion(texto_html, id_):
+    m = re.search(r'<section\b[^>]*\bid="' + re.escape(id_) + r'".*?</section>', texto_html, flags=re.S)
+    return m.group(0) if m else ""
+
+
+def _faqs_de(texto_html):
+    """Preguntas y respuestas de una página: del FAQPage (JSON-LD) si lo declara;
+    si no, de los desplegables .faq de la sección de preguntas."""
+    out = []
+    for b in re.findall(r'<script type="application/ld\+json">(.*?)</script>', texto_html, flags=re.S):
+        try:
+            d = json.loads(b)
+        except ValueError:
+            continue
+        nodos = (d.get("@graph") or [d]) if isinstance(d, dict) else d
+        for n in nodos:
+            if isinstance(n, dict) and n.get("@type") == "FAQPage":
+                for q in n.get("mainEntity") or []:
+                    a = (q.get("acceptedAnswer") or {}).get("text", "")
+                    if q.get("name") and a:
+                        out.append((q["name"].strip(), " ".join(_texto_plano(a))))
+    if out:
+        return out
+    for m in re.finditer(r'<div class="faq(?: [^"]*)?">\s*<button[^>]*>(.*?)<span class="pm".*?<div class="ans">(.*?)</div>\s*</div>',
+                         texto_html, flags=re.S):
+        q, a = _texto_plano(m.group(1)), _texto_plano(m.group(2))
+        if q and a:
+            out.append((" ".join(q), " ".join(a)))
+    return out
+
+
+def _paginas_publicadas():
+    """Las páginas que build-tanda.py publica (misma configuración: servicios completos +
+    madres), para que llms-full.txt describa solo lo que está online."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("build_tanda", ROOT / "build-tanda.py")
+    bt = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(bt)
+    paginas = [("", ROOT / "index.html")]
+    for d in bt.FULL_DIRS:
+        if d in bt.SITEMAP_EXCLUIR:
+            continue
+        for f in sorted((ROOT / d).rglob("index.html")):
+            if f.stat().st_size and f.parent.name != "data":
+                paginas.append((f.parent.relative_to(ROOT).as_posix() + "/", f))
+    for d in bt.MADRE_DIRS:
+        f = ROOT / d / "index.html"
+        if f.exists():
+            paginas.append((d + "/", f))
+    return paginas
+
+
+def generar_llms_full(publicados, hoy):
+    """
+    Escribe llms-full.txt completo a partir de los MISMOS datos que llms.txt:
+    la parte fija de llms.txt (agencia, destinos, servicios, guías, contacto),
+    historia/valores/local de /quienes-somos/, medios de pago de la home, el
+    detalle de cada paquete activo (data/paquetes.json) y las FAQ de cada página
+    publicada. Se regenera entero en cada build: nunca se edita a mano.
+    """
+    NL = chr(10)
+    base = LLMS.read_text(encoding="utf-8") if LLMS.exists() else "# Legend Travel" + NL
+    fijo = re.sub(re.escape(LLMS_START) + r".*?" + re.escape(LLMS_END) + r"\s*", "", base, flags=re.S)
+    fijo = re.sub(r"\nVersión completa \([^\n]*llms-full\.txt\n", "\n", fijo)   # el link a este mismo archivo no va acá
+    fijo = fijo.replace("# Legend Travel", "# Legend Travel — versión completa (llms-full.txt)", 1).rstrip()
+    L = [fijo, "",
+         "Generado el {} por build-paquetes.py. Resumen corto: {}/llms.txt".format(hoy.isoformat(), DOMINIO), ""]
+
+    qs = ROOT / "quienes-somos" / "index.html"
+    qs_html = qs.read_text(encoding="utf-8") if qs.exists() else ""
+    for id_, titulo in (("historia", "Historia"), ("valores", "Valores"), ("local", "Dónde estamos")):
+        lineas = _texto_plano(_seccion(qs_html, id_))
+        if lineas:
+            L += ["## " + titulo] + ["- " + l for l in lineas[1:] if l not in ("Ver en Google Maps",)] + [""]
+    home_html = (ROOT / "index.html").read_text(encoding="utf-8")
+    pago = _texto_plano(_seccion(home_html, "financiacion"))
+    if pago:
+        L += ["## Medios de pago"] + ["- " + l for l in pago[1:]] + [""]
+
+    L += ["## Paquetes y salidas vigentes (detalle)",
+          "Precios por persona, sujetos a confirmación al reservar. Solo salidas vigentes al {}.".format(fmt_fecha_ar(hoy)), ""]
+    for p, vig in publicados:
+        pd = p.get("precio_desde") or {}
+        mon = pd.get("moneda", "")
+        precios = {str(x.get("base", "")).lower(): x.get("valor") for x in (p.get("precios") or []) if isinstance(x, dict)}
+        doble = precios.get("doble", pd.get("valor"))
+        L.append("### " + txt(p, "titulo"))
+        L.append("- URL: {}/paquetes/{}".format(DOMINIO, p["id"]))
+        if lista(p, "destinos"):
+            L.append("- Destinos: " + ", ".join(lista(p, "destinos")))
+        L.append("- Salida: {}{}".format(p.get("salida", ""), " · {} noches".format(p["noches"]) if p.get("noches") else "")
+                 + (" · Régimen: " + txt(p, "regimen") if txt(p, "regimen") else ""))
+        L.append("- Precio por persona en base doble: {} {}{}".format(mon, fmt_precio(doble),
+                 " ({})".format(pd["nota"]) if pd.get("nota") else ""))
+        for base_, val in precios.items():
+            if base_ != "doble" and val:
+                L.append("- Precio por persona en base {}: {} {}".format(base_, mon, fmt_precio(val)))
+        if txt(p, "nota_impuestos"):
+            L.append("- Impuestos: " + txt(p, "nota_impuestos"))
+        if lista(p, "incluye"):
+            L.append("- Incluye: " + "; ".join(lista(p, "incluye")))
+        if lista(p, "no_incluye"):
+            L.append("- No incluye: " + "; ".join(lista(p, "no_incluye")))
+        for h in p.get("hoteles") or []:
+            if not isinstance(h, dict) or not _v(h, "nombre"):
+                continue
+            datos = [x for x in (_v(h, "ciudad"), _v(h, "categoria"),
+                                 "{} noches".format(h["noches"]) if h.get("noches") else "",
+                                 _v(h, "regimen"), _v(h, "habitacion")) if x]
+            dest = [_v(x, "texto") if isinstance(x, dict) else str(x) for x in (h.get("destacados") or [])]
+            L.append("- Hotel: {}{}{}".format(_v(h, "nombre"), " (" + ", ".join(datos) + ")" if datos else "",
+                                               " — " + "; ".join(d for d in dest if d) if dest else ""))
+        if txt(p, "resumen"):
+            L.append("- Resumen: " + txt(p, "resumen"))
+        L.append("- Vigente hasta: " + fmt_fecha_ar(vig))
+        L.append("")
+    if not publicados:
+        L += ["En este momento no hay salidas publicadas. Consultar por WhatsApp.", ""]
+    L.append("Listado completo: {}/paquetes".format(DOMINIO))
+    L.append("")
+
+    L += ["## Preguntas frecuentes por página", ""]
+    n_faq = 0
+    for ruta, f in _paginas_publicadas():
+        texto = f.read_text(encoding="utf-8")
+        faqs = _faqs_de(texto)
+        if not faqs:
+            continue
+        m = re.search(r"<title>(.*?)</title>", texto, flags=re.S)
+        titulo = html.unescape(re.sub(r"\s+", " ", m.group(1))).strip() if m else ruta or "Inicio"
+        L.append("### {} — {}/{}".format(titulo, DOMINIO, ruta))
+        for q, a in faqs:
+            L.append("- P: {}".format(q))
+            L.append("  R: {}".format(a))
+            n_faq += 1
+        L.append("")
+
+    nuevo = NL.join(L).rstrip() + NL
+    if not LLMS_FULL.exists() or LLMS_FULL.read_text(encoding="utf-8") != nuevo:
+        LLMS_FULL.write_text(nuevo, encoding="utf-8")
+        print("OK  llms-full.txt generado ({} paquetes, {} preguntas)".format(len(publicados), n_faq))
+    else:
+        print("=   llms-full.txt sin cambios")
+
+
 def actualizar_llms(publicados, hoy):
     """
     Reescribe SOLO el bloque entre marcadores de llms.txt con las salidas
@@ -1168,6 +1329,10 @@ def actualizar_llms(publicados, hoy):
         t = t.replace("## Contacto", bloque + NL + NL + "## Contacto", 1)
     else:
         t = t.rstrip() + NL + NL + bloque + NL
+
+    # Link a la versión completa (llms-full.txt), una sola vez, antes de "## Destinos".
+    if "llms-full.txt" not in t and "## Destinos" in t:
+        t = t.replace("## Destinos", "Versión completa (historia, medios de pago, detalle de cada paquete con hoteles y las FAQ de cada página): {}/llms-full.txt".format(DOMINIO) + NL + NL + "## Destinos", 1)
 
     # Correccion de una linea que describia el buscador de GEA, ya dado de baja.
     viejo = "- Buscador de paquetes con precios en tiempo real"
@@ -1547,6 +1712,7 @@ def main():
 
     # ---------- 4. llms.txt (GEO) ----------
     actualizar_llms(publicados, hoy)
+    generar_llms_full(publicados, hoy)
 
     # ---------- 5. resenas de Google en la home ----------
     actualizar_resenas()

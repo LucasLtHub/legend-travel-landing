@@ -33,6 +33,7 @@ ROOT_FILES = [
     "index.html",
     "robots.txt",
     "llms.txt",
+    "llms-full.txt",   # lo genera build-paquetes.py (detalle completo para buscadores con IA)
     "og-image.jpg",
     "404.html",
     ".htaccess",
