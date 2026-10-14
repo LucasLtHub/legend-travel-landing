@@ -69,10 +69,16 @@ FULL_DIRS = [
     "viajes-corporativos",
     "contacto",     # formulario de consulta (index.html + enviar.php + data/ protegida)
     "sorteo",       # campaña temporal (landing + sorteo-submit.php + data/ protegida); noindex, fuera del sitemap
+    "newsletter",   # solo suscribir.php (el banner vive en assets/newsletter.js); sin página, fuera del sitemap
 ]
 
-# Servicios que NO van al sitemap (páginas temporales con noindex)
-SITEMAP_EXCLUIR = ["sorteo"]
+# Servicios que NO van al sitemap (páginas temporales con noindex, o carpetas sin página)
+SITEMAP_EXCLUIR = ["sorteo", "newsletter"]
+
+# Lo que NUNCA se copia a la tanda aunque esté dentro de un servicio:
+# la configuración local de Doppler (tiene la API key; en producción va FUERA de
+# public_html, cargada a mano), su modelo y los datos de pruebas locales.
+NO_PUBLICAR = {"newsletter": {"newsletter-config.php", "newsletter-config.example.php", "data"}}
 
 # Las 12 madres: se copia SOLO index.html + logo-wordmark.png si existe.
 # Las subcarpetas (hijas/nietas) NO se copian.
@@ -478,7 +484,9 @@ def main():
             warnings.append(f"Servicio: '{d}/' no encontrado")
             print(f"   ⚠  {d}/ — NO ENCONTRADO")
             continue
-        shutil.copytree(src_dir, dest_dir, copy_function=copyfn)
+        excluir = NO_PUBLICAR.get(d, set())
+        shutil.copytree(src_dir, dest_dir, copy_function=copyfn,
+                        ignore=lambda carpeta, nombres: [x for x in nombres if Path(carpeta) == src_dir and x in excluir])
         n = sum(1 for f in dest_dir.rglob('*') if f.is_file())
         for f in dest_dir.rglob('*'):
             if f.is_file():
@@ -644,6 +652,15 @@ def main():
         print("    - Datos personales: el PHP guarda el CSV FUERA de public_html (../sorteo-data/) si el hosting lo permite;")
         print("      si no, en sorteo/data/ (protegida con .htaccess 'Deny from all'). Verificar tras subir que")
         print("      https://www.legendtravel.com.ar/sorteo/data/sorteo-rio-participantes.csv da 403.")
+    if "newsletter" in FULL_DIRS:
+        print("\n  Newsletter (Doppler, lista 29309044 'Suscriptores Web'):")
+        print("    - Se publica newsletter/suscribir.php; el banner se apaga con NEWSLETTER_ACTIVO=false en assets/newsletter.js")
+        print("      y no se muestra antes del 28/10/2026 00:00 (Argentina). Para verlo antes: ?newsletter=preview")
+        print("    - newsletter-config.php (cuenta + API key) NO viaja en la tanda: va cargado a mano FUERA de public_html,")
+        print("      al lado de sorteo-data/. Sin ese archivo los emails quedan en ../newsletter-data/pendientes.csv + aviso por mail.")
+        if (DEST / "newsletter" / "newsletter-config.php").exists():
+            print("    ⚠  newsletter/newsletter-config.php QUEDÓ en la tanda: NO subir así")
+            return 1
 
     print()
     return 1 if warnings else 0

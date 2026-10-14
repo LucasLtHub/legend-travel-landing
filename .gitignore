@@ -19,3 +19,8 @@ data/respaldos/
 
 # capturas de la auditoría (revisión local, pesadas)
 tools/capturas-ronda2/
+
+# newsletter: la API key de Doppler y los datos de prueba NUNCA van al repo
+newsletter/newsletter-config.php
+newsletter/data/
+newsletter-config.php
