@@ -122,7 +122,7 @@ ORDEN_REGIONES = ["caribe", "cruceros", "europa", "argentina", "asia", "africa",
 
 MAX_REGION_CARDS = 3      # en la madre, hasta 3 salidas; el resto en /paquetes/
 MAX_RELACIONADOS = 3      # al pie del detalle
-ORG_ID = DOMINIO + "/#organization"   # la TravelAgency que ya declara el sitio
+ORG_ID = DOMINIO + "/#organization"   # el ÚNICO @id de la agencia en todo el sitio (declaración y referencias)
 LLMS = ROOT / "llms.txt"
 LLMS_START = "<!-- PAQUETES:START -->"
 LLMS_END = "<!-- PAQUETES:END -->"
@@ -1370,7 +1370,7 @@ def actualizar_resenas():
         RS_END,
     ])
     t = reemplazar_bloque(t, RS_START, RS_END, bloque)
-    t = fusionar_schema(t, "index.html", DOMINIO + "/#agencia")
+    t = fusionar_schema(t, "index.html", ORG_ID)
     if t != original:
         home.write_text(t, encoding="utf-8")
         print("OK  index.html: 'Nuestros pasajeros' en carrusel con las {} resenas".format(len(rs)))
@@ -1381,7 +1381,7 @@ def actualizar_resenas():
     sb = ROOT / "schema-block.html"
     if sb.exists():
         t = sb.read_text(encoding="utf-8")
-        nuevo = fusionar_schema(t, "schema-block.html", DOMINIO + "/#agencia")
+        nuevo = fusionar_schema(t, "schema-block.html", ORG_ID)
         if nuevo != t:
             sb.write_text(nuevo, encoding="utf-8")
             print("OK  schema-block.html: TravelAgency con aggregateRating + {} review".format(len(rs)))
