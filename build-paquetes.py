@@ -1207,8 +1207,10 @@ RS_CSS = """<style>
 def actualizar_resenas():
     """
     Reescribe "Nuestros pasajeros" con las reseñas de data/resenas-google.json:
-    en index.html las primeras "en_home" (entre RS_START y RS_END, y su schema
-    Review entre RSS_START y RSS_END) y en quienes-somos/index.html todas. Para sumar una reseña alcanza con editar el JSON
+    en index.html las primeras "en_home" (entre RS_START y RS_END) y en quienes-somos/index.html todas.
+    El schema va siempre en UNA sola entidad TravelAgency por página (entre RSS_START y RSS_END), con
+    aggregateRating ("calificacion") y review (todas): separarlos dispara "Varias reseñas sin el objeto
+    aggregateRating" en Search Console. Para sumar una reseña alcanza con editar el JSON
     y volver a correr este script: no se toca HTML a mano.
     """
     if not RES_JSON.exists():
@@ -1245,15 +1247,37 @@ def actualizar_resenas():
                                           n=n, stars=RS_STAR * n, texto=e(r["texto"])))
         return "\n".join(out)
 
-    def schema(lista, org_id):
-        return "\n".join(['<script type="application/ld+json">', json.dumps({
-            "@context": "https://schema.org", "@type": "TravelAgency", "@id": org_id,
-            "review": [{
-                "@type": "Review",
-                "reviewRating": {"@type": "Rating", "ratingValue": str(estrellas(r)), "bestRating": "5"},
-                "author": {"@type": "Person", "name": r["nombre"]},
-                "reviewBody": r["texto"],
-            } for r in lista]}, ensure_ascii=False, indent=2), '</script>'])
+    cal = data.get("calificacion") or {}
+    if not str(cal.get("valor") or "").strip() or not str(cal.get("total") or "").strip():
+        # review sin aggregateRating en la misma entidad = error en Search Console
+        raise SystemExit("ERROR data/resenas-google.json: falta 'calificacion' (valor y total de Google)")
+    rating = {"@type": "AggregateRating", "ratingValue": str(cal["valor"]).replace(",", "."),
+              "reviewCount": str(cal["total"]), "bestRating": "5"}
+
+    def fusionar_schema(texto, archivo, org_id):
+        """
+        Una sola entidad TravelAgency por página: busca, entre RSS_START y RSS_END,
+        el nodo TravelAgency con @id org_id (suelto o dentro de @graph) y le pisa
+        aggregateRating + review. El resto de sus campos queda como está.
+        """
+        m = re.search(re.escape(RSS_START) + r".*?<script type=\"application/ld\+json\">\n(.*?)\n</script>.*?"
+                      + re.escape(RSS_END), texto, flags=re.S)
+        if not m:
+            raise SystemExit("ERROR {}: no tiene los marcadores RESENAS-SCHEMA con el JSON-LD de la agencia".format(archivo))
+        ld = json.loads(m.group(1))
+        nodos = [n for n in (ld.get("@graph") or [ld])
+                 if n.get("@type") == "TravelAgency" and n.get("@id") == org_id]
+        if len(nodos) != 1:
+            raise SystemExit("ERROR {}: no encuentro un único TravelAgency {} entre los marcadores".format(archivo, org_id))
+        nodos[0]["aggregateRating"] = rating
+        nodos[0]["review"] = [{
+            "@type": "Review",
+            "reviewRating": {"@type": "Rating", "ratingValue": str(estrellas(r)), "bestRating": "5"},
+            "author": {"@type": "Person", "name": r["nombre"]},
+            "reviewBody": r["texto"],
+        } for r in rs]
+        nuevo = json.dumps(ld, ensure_ascii=False, indent=2)
+        return texto[:m.start(1)] + nuevo + texto[m.end(1):]
 
     google = ('<a class="{cls}" href="{u}" target="_blank" rel="noopener noreferrer">'
               'Ver todas las rese&ntilde;as en Google {fl}</a>')
@@ -1285,12 +1309,23 @@ def actualizar_resenas():
         RS_END,
     ])
     t = reemplazar_bloque(t, RS_START, RS_END, bloque)
-    t = reemplazar_bloque(t, RSS_START, RSS_END, "\n".join([RSS_START, GEN, schema(primeras, DOMINIO + "/#agencia"), RSS_END]))
+    t = fusionar_schema(t, "index.html", DOMINIO + "/#agencia")
     if t != original:
         home.write_text(t, encoding="utf-8")
-        print("OK  index.html: 'Nuestros pasajeros' con {} de {} resenas".format(len(primeras), len(rs)))
+        print("OK  index.html: 'Nuestros pasajeros' con {} de {} resenas (schema: las {})".format(len(primeras), len(rs), len(rs)))
     else:
         print("=   index.html: resenas sin cambios")
+
+    # ---------- schema-block.html: el snippet de referencia, mismo bloque que la home ----------
+    sb = ROOT / "schema-block.html"
+    if sb.exists():
+        t = sb.read_text(encoding="utf-8")
+        nuevo = fusionar_schema(t, "schema-block.html", DOMINIO + "/#agencia")
+        if nuevo != t:
+            sb.write_text(nuevo, encoding="utf-8")
+            print("OK  schema-block.html: TravelAgency con aggregateRating + {} review".format(len(rs)))
+        else:
+            print("=   schema-block.html sin cambios")
 
     # ---------- /quienes-somos/: todas las reseñas ----------
     qs = ROOT / "quienes-somos" / "index.html"
@@ -1313,10 +1348,10 @@ def actualizar_resenas():
         '    </div>' + link,
         '  </div>',
         '</section>',
-        schema(rs, ORG_ID),
         RS_END,
     ])
     t = reemplazar_bloque(t, RS_START, RS_END, bloque)
+    t = fusionar_schema(t, "quienes-somos/index.html", ORG_ID)
     if t != original:
         qs.write_text(t, encoding="utf-8")
         print("OK  quienes-somos/index.html: las {} resenas".format(len(rs)))

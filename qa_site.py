@@ -179,6 +179,7 @@ def check_file(abspath, root):
         add(WARN, rel, "Sin JSON-LD (schema). Falta TravelAgency/LocalBusiness para GEO.")
     else:
         tipos = []
+        nodos = []
         for s in ld:
             try:
                 data = json.loads(s.string or "{}")
@@ -187,8 +188,21 @@ def check_file(abspath, root):
                     t = b.get("@type")
                     if t:
                         tipos.append(t if isinstance(t, str) else ",".join(t))
+                    nodos.extend(b.get("@graph") or [b])
             except Exception:
                 add(WARN, rel, "JSON-LD presente pero no parsea (revisá la sintaxis).")
+        # Search Console: "Varias reseñas sin el objeto aggregateRating" — las review
+        # tienen que colgar de la misma entidad que el aggregateRating, y una sola.
+        agencias = [n for n in nodos if isinstance(n, dict) and n.get("@type") == "TravelAgency"]
+        if len(agencias) > 1:
+            add(ERROR, rel, f"{len(agencias)} entidades TravelAgency en la página (tiene que haber una sola).")
+        for n in nodos:
+            if not isinstance(n, dict):
+                continue
+            if n.get("@type") == "Review":
+                add(ERROR, rel, "Review suelto en el JSON-LD (tiene que ir dentro de la entidad con aggregateRating).")
+            elif n.get("review") and not n.get("aggregateRating"):
+                add(ERROR, rel, f"{n.get('@type')} con review pero sin aggregateRating en la misma entidad.")
 
     # 13) referencias hardcodeadas a localhost / dominio equivocado
     if re.search(r"https?://localhost|127\.0\.0\.1|192\.168\.", raw):
