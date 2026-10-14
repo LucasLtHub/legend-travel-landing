@@ -37,7 +37,7 @@ Versión completa (historia, medios de pago, detalle de cada paquete con hoteles
 ## Salidas y paquetes actuales
 Generado el 2026-10-14 desde data/paquetes.json. Solo salidas vigentes:
 lo inactivo o vencido se retira de esta lista automáticamente.
-Precios por persona en base doble, sujetos a confirmación al reservar.
+Precios por persona en base doble. Sujeto a disponibilidad al momento de la reserva.
 
 - Vietnam, Camboya & Tailandia — desde USD 14.330 — Salida: 7 de noviembre 2026 — https://www.legendtravel.com.ar/paquetes/vietnam-camboya-tailandia
 - Sudáfrica & Mauritius — desde USD 10.360 — Salida: 16 de noviembre 2026 — https://www.legendtravel.com.ar/paquetes/sudafrica-mauritius

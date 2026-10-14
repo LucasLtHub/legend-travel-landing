@@ -122,6 +122,8 @@ ORDEN_REGIONES = ["caribe", "cruceros", "europa", "argentina", "asia", "africa",
 
 MAX_REGION_CARDS = 3      # en la madre, hasta 3 salidas; el resto en /paquetes/
 MAX_RELACIONADOS = 3      # al pie del detalle
+# Leyenda fija de precio (pedido de Silvia): va junto a TODO precio "Desde", en cards, detalle y llms.
+LEYENDA_PRECIO = "Sujeto a disponibilidad al momento de la reserva."
 ORG_ID = DOMINIO + "/#organization"   # el ÚNICO @id de la agencia en todo el sitio (declaración y referencias)
 LLMS = ROOT / "llms.txt"
 LLMS_START = "<!-- PAQUETES:START -->"
@@ -384,6 +386,7 @@ def render_card(p, vig_date):
           </ul>{mas}
           <div class="pk-foot">
             <div class="pk-price"><span class="lbl">Desde</span><span class="cur">{moneda}</span><span class="amt">{precio}</span></div>{pnota}
+            <p class="pk-sujeto">{leyenda}</p>
             <div class="pk-acts">
               <a class="pk-cta" href="{wa}" target="_blank" rel="noopener noreferrer">{ic_wa}Consultar</a>
               <span class="pk-ver">Ver detalle{ic_fl}</span>
@@ -396,7 +399,7 @@ def render_card(p, vig_date):
         kicker=kicker, titulo=e(p["titulo"]), resumen=e(txt(p, "resumen")),
         metas="\n".join(metas), incluye=inc_html, mas=mas,
         moneda=e(pd.get("moneda", "")), precio=fmt_precio(pd.get("valor")),
-        pnota=pnota_html, wa=e(wa_link(p["titulo"])), ic_wa=IC_WA, ic_fl=IC_FLECHA,
+        pnota=pnota_html, leyenda=LEYENDA_PRECIO, wa=e(wa_link(p["titulo"])), ic_wa=IC_WA, ic_fl=IC_FLECHA,
         ic_reloj=IC_RELOJ, vigencia=fmt_fecha_ar(vig_date),
     )
 
@@ -477,7 +480,9 @@ def render_card_compacta(p, vig):
         <span class="t">{titulo}</span>
         <span class="s">{salida} &middot; {noches}</span>
         <span class="p"><b><small>Desde</small> {moneda} {precio}</b><span>Ver detalle &rarr;</span></span>
+        <span class="sujeto">{leyenda}</span>
       </a>'''.format(
+        leyenda=LEYENDA_PRECIO,
         id=e(p["id"]), ic=IC_BRUJULA,
         dest=e(dests[0] if dests else REGIONES.get(p["region"], p["region"])),
         titulo=e(p["titulo"]), salida=e(salida_corta(p["salida"])),
@@ -810,17 +815,19 @@ def render_detalle(p, vig, plantilla, todos=()):
             etq = "Cabina {} &middot; {}".format(e(str(x["cabina"]).lower()), etq.lower())
         # se resalta la fila del precio destacado (base doble, la cabina mas economica)
         on = ' class="on"' if x["base"] == "doble" and x["valor"] == pd.get("valor") else ""
-        filas.append('      <div{}><dt>{}</dt><dd>{} {}</dd></div>'.format(on, etq, mon, fmt_precio(x["valor"])))
+        filas.append('      <div{}><dt>{}</dt><dd>Desde {} {}</dd></div>'.format(on, etq, mon, fmt_precio(x["valor"])))
     for t in lista(p, "tarifas"):
         if isinstance(t, dict):
+            precio_t = str(t.get("precio") or "").strip()
+            if re.match(r"^(USD|ARS|EUR)\s", precio_t):   # toda cifra de paquete va con "Desde"
+                precio_t = "Desde " + precio_t
             filas.append('      <div><dt>{}</dt><dd>{}</dd></div>'.format(
-                e(str(t.get("etiqueta") or "")), e(str(t.get("precio") or ""))))
+                e(str(t.get("etiqueta") or "")), e(precio_t)))
     tarifas_html = ""
     if filas:
         nota = txt(p, "nota_impuestos")
         extra = '\n    <p class="dnota">{}</p>'.format(e(nota)) if nota else ""
-        extra += ('\n    <p class="dnota">Precios por persona, sujetos a disponibilidad '
-                  'y a confirmaci&oacute;n al momento de la reserva.</p>')
+        extra += '\n    <p class="dnota">Precios por persona. {}</p>'.format(LEYENDA_PRECIO)
         tarifas_html = _sec("Precios <em>por persona</em>" if precios else "Tarifas",
                             '    <dl class="dtar{}">\n'.format(" dtar-base" if precios else "")
                             + "\n".join(filas) + '\n    </dl>', extra)
@@ -955,7 +962,8 @@ def render_detalle(p, vig, plantilla, todos=()):
         "{{HERO_LINEA}}": hero_linea,
         "{{MONEDA}}": e(pd.get("moneda", "")),
         "{{PRECIO}}": fmt_precio(pd.get("valor")),
-        "{{PRECIO_NOTA}}": '<span class="nota">{}</span>'.format(e(pnota)) if pnota else "",
+        "{{PRECIO_NOTA}}": ('<span class="nota">{}</span>'.format(e(pnota)) if pnota else "")
+                          + '<span class="sujeto">{}</span>'.format(LEYENDA_PRECIO),
         "{{NFACTS}}": str(len(facts)),
         "{{DATOS}}": datos,
         "{{RESUMEN}}": e(resumen),
@@ -1278,7 +1286,7 @@ def generar_llms_full(publicados, hoy):
         L += ["## Medios de pago"] + ["- " + l for l in pago[1:]] + [""]
 
     L += ["## Paquetes y salidas vigentes (detalle)",
-          "Precios por persona, sujetos a confirmación al reservar. Solo salidas vigentes al {}.".format(fmt_fecha_ar(hoy)), ""]
+          "Precios por persona. " + LEYENDA_PRECIO + " Solo salidas vigentes al {}.".format(fmt_fecha_ar(hoy)), ""]
     for p, vig in publicados:
         pd = p.get("precio_desde") or {}
         mon = pd.get("moneda", "")
@@ -1290,11 +1298,11 @@ def generar_llms_full(publicados, hoy):
             L.append("- Destinos: " + ", ".join(lista(p, "destinos")))
         L.append("- Salida: {}{}".format(p.get("salida", ""), " · {} noches".format(p["noches"]) if p.get("noches") else "")
                  + (" · Régimen: " + txt(p, "regimen") if txt(p, "regimen") else ""))
-        L.append("- Precio por persona en base doble: {} {}{}".format(mon, fmt_precio(doble),
+        L.append("- Precio: desde {} {} por persona en base doble{}".format(mon, fmt_precio(doble),
                  " ({})".format(pd["nota"]) if pd.get("nota") else ""))
         for base_, val in precios.items():
             if base_ != "doble" and val:
-                L.append("- Precio por persona en base {}: {} {}".format(base_, mon, fmt_precio(val)))
+                L.append("- Precio: desde {} {} por persona en base {}".format(mon, fmt_precio(val), base_))
         if txt(p, "nota_impuestos"):
             L.append("- Impuestos: " + txt(p, "nota_impuestos"))
         if lista(p, "incluye"):
@@ -1370,7 +1378,7 @@ def actualizar_llms(publicados, hoy):
         "## Salidas y paquetes actuales",
         "Generado el {} desde data/paquetes.json. Solo salidas vigentes:".format(hoy.isoformat()),
         "lo inactivo o vencido se retira de esta lista automáticamente.",
-        "Precios por persona en base doble, sujetos a confirmación al reservar.",
+        "Precios por persona en base doble. " + LEYENDA_PRECIO,
         "",
     ] + filas + [
         "",
