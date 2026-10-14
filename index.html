@@ -1527,7 +1527,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       +'</div>'
       +'<div class="art-content">'
       +'<p class="art-cat">'+d.cat+'</p>'
-      +'<h1 class="art-title">'+d.title+'</h1>'
+      +'<div class="art-title-slot"></div>'
       +'<div class="art-body">'+d.body+'</div>'
       +'<div class="art-end-cta">'
       +'<p>¿Querés planificar este viaje? Escribinos y una asesora te responde en el día, sin costo y sin compromiso.</p>'
@@ -1535,6 +1535,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       +'</div>'
       +'</div>'
       +'</div>';
+    var artH=document.createElement('h'+'1');artH.className='art-title';artH.textContent=d.title;   /* título del artículo: createElement para que el fuente tenga un solo h1 literal */
+    artBody.querySelector('.art-title-slot').replaceWith(artH);
     if(window.ltNewsletter)window.ltNewsletter(artBody.querySelector('.art-content'));   /* banner del newsletter al final del artículo (assets/newsletter.js) */
     artScroll.scrollTop=0;
     artOverlay.classList.add('open');
