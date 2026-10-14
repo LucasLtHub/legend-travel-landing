@@ -5,7 +5,7 @@
       "destacado": true,
       "motivo_inactivo": "",
       "regimen": "",
-      "nota_impuestos": "Tarifa no incluye 2,9% de gasto administrativo. Si se abona en pesos se aplica el tipo de cambio del día de pago y la percepción RG 4815.",
+      "nota_impuestos": "Tarifa no incluye 2,9% de gasto administrativo.",
       "condiciones": [
         "Tarifas sujetas a modificación y disponibilidad al momento de la reserva.",
         "Los hoteles y/o servicios previstos podrán ser reemplazados por otros de similar categoría."
@@ -53,7 +53,7 @@
       "destacado": false,
       "motivo_inactivo": "",
       "regimen": "",
-      "nota_impuestos": "Tarifa no incluye 2,9% de gasto administrativo. Si se abona en pesos se aplica el tipo de cambio del día de pago y la percepción RG 4815.",
+      "nota_impuestos": "Tarifa no incluye 2,9% de gasto administrativo.",
       "condiciones": [
         "Tarifas sujetas a modificación y disponibilidad al momento de la reserva.",
         "Los hoteles y/o servicios previstos podrán ser reemplazados por otros de similar categoría."
@@ -168,7 +168,7 @@
       "destacado": false,
       "motivo_inactivo": "",
       "regimen": "",
-      "nota_impuestos": "Tarifa no incluye 2,9% de gasto administrativo. Si se abona en pesos se aplica el tipo de cambio del día de pago y la percepción RG 4815.",
+      "nota_impuestos": "Tarifa no incluye 2,9% de gasto administrativo.",
       "condiciones": [
         "Tarifas sujetas a modificación y disponibilidad al momento de la reserva.",
         "Los hoteles y/o servicios previstos podrán ser reemplazados por otros de similar categoría."
@@ -247,7 +247,7 @@
       "destacado": false,
       "motivo_inactivo": "",
       "regimen": "",
-      "nota_impuestos": "Tarifa no incluye 2,9% de gasto administrativo. Si se abona en pesos se aplica el tipo de cambio del día de pago y la percepción RG 4815.",
+      "nota_impuestos": "Tarifa no incluye 2,9% de gasto administrativo.",
       "condiciones": [
         "Tarifas sujetas a modificación y disponibilidad al momento de la reserva.",
         "Los hoteles y/o servicios previstos podrán ser reemplazados por otros de similar categoría."

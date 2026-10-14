@@ -22,7 +22,7 @@
 - Viajes a medida (especialidad)
 - Viajes corporativos: viajes de negocios, eventos y congresos, y viajes de incentivo (https://www.legendtravel.com.ar/viajes-corporativos)
 - Salidas y paquetes con precio y fecha publicados en /paquetes
-- Formas de pago: La mayoría de los viajes internacionales se pueden reservar con una seña y abonar el saldo hasta un mes antes de la salida. Viajes internacionales: transferencia bancaria en dólares; efectivo en dólares billete; pesos en efectivo o transferencia, al tipo de cambio del día (consultar percepciones según la normativa vigente); en cruceros, el saldo se abona hasta 2 meses antes del embarque. Viajes nacionales: transferencia o efectivo en pesos; tarjeta de crédito (consultar promociones vigentes y cuotas sin interés); dólares billete o transferencia, al tipo de cambio del día; la asesora explica las condiciones de pago al momento de reservar.
+- Formas de pago. Viajes internacionales: efectivo en dólares billete (consultar percepciones) o transferencia en dólares. Viajes nacionales: efectivo en pesos, transferencia en pesos o tarjeta de crédito (consultar cuotas sin interés vigentes). Nuestros viajes internacionales, por lo general, se pueden reservar con una seña y abonar el saldo restante hasta un mes antes de la salida. Tu asesora te va a dar más información sobre las posibilidades de pago al momento de la reserva.
 - Acompañamiento antes, durante y después del viaje
 
 ## Guías y artículos
@@ -93,14 +93,16 @@ Generado el 2026-10-14 por build-paquetes.py. Resumen corto: https://www.legendt
 
 ## Medios de pago
 - Internacionales
-- Transferencia bancaria en dólares, efectivo en dólares billete o pesos en efectivo o transferencia, al tipo de cambio del día. Consultanos por las percepciones según la normativa vigente.
+- Efectivo en dólares billete (consultar percepciones).
+- Transferencia en dólares.
 - Nacionales
-- Transferencia o efectivo en pesos, tarjeta de crédito, o dólares billete o transferencia al tipo de cambio del día. Consultanos por las promociones vigentes y las cuotas sin interés. Tu asesora te explica las condiciones de pago al momento de reservar.
-- 1 mes Viajes internacionales. La mayoría se pueden reservar con una seña y abonar el saldo hasta un mes antes de la salida.
-- 2 meses Cruceros. El saldo se abona hasta 2 meses antes del embarque.
-- Transferencia bancaria en dólares
+- Efectivo en pesos.
+- Transferencia en pesos.
+- Tarjeta de crédito (consultar cuotas sin interés vigentes).
+- 1 mes Viajes internacionales. Nuestros viajes internacionales, por lo general, se pueden reservar con una seña y abonar el saldo restante hasta un mes antes de la salida. Tu asesora te va a dar más información sobre las posibilidades de pago al momento de la reserva.
 - Efectivo en dólares billete
-- Pesos al tipo de cambio del día
+- Transferencia en dólares
+- Efectivo o transferencia en pesos (nacionales)
 - Tarjeta de crédito (nacionales)
 
 ## Paquetes y salidas vigentes (detalle)
@@ -241,7 +243,7 @@ Precios por persona, sujetos a confirmación al reservar. Solo salidas vigentes 
 - Destinos: Bariloche, Puerto Varas (Chile)
 - Salida: Salidas del 16/09 al 30/12/2026 · 5 noches
 - Precio por persona en base doble: ARS 1.322.790 (por persona en base doble)
-- Impuestos: Tarifa no incluye 2,9% de gasto administrativo. Si se abona en pesos se aplica el tipo de cambio del día de pago y la percepción RG 4815.
+- Impuestos: Tarifa no incluye 2,9% de gasto administrativo.
 - Incluye: Pasajes aéreos desde Buenos Aires; Traslados de llegada y salida; 3 noches en Huinid Pioneros Hotel (Bariloche); 2 noches en Hotel Cabaña del Lago (Puerto Varas); Travesía Cruce Andino; Asistencia médica
 - Hotel: Huinid Pioneros Hotel (Bariloche, 3*, 3 noches, Habitación estándar) — Hotel en el bosque, con vista al lago, sobre Av. de los Pioneros; Piscina climatizada cubierta y gimnasio; Habitaciones con vista al bosque o al lago, para 2 a 4 personas; Desayuno buffet
 - Hotel: Hotel Cabaña del Lago (Puerto Varas, 4*, 2 noches, Habitación estándar) — A orillas del lago Llanquihue, con habitaciones con vista al lago; Piscina climatizada, piscina para chicos y tinajas calientes; Spa con masajes de relajación, piedras calientes y reflexología; Cocina típica del sur de Chile con productos locales
@@ -253,7 +255,7 @@ Precios por persona, sujetos a confirmación al reservar. Solo salidas vigentes 
 - Destinos: Mendoza
 - Salida: Salidas los lunes, del 16/09 al 28/12/2026 · 3 noches
 - Precio por persona en base doble: ARS 642.990 (por persona en base doble)
-- Impuestos: Tarifa no incluye 2,9% de gasto administrativo. Si se abona en pesos se aplica el tipo de cambio del día de pago y la percepción RG 4815.
+- Impuestos: Tarifa no incluye 2,9% de gasto administrativo.
 - Incluye: Pasajes aéreos desde Buenos Aires; Traslados de llegada y salida; 3 noches en Hotel Raíces Aconcagua; Excursión Camino del Vino - El Sol; Asistencia médica
 - Hotel: Hotel Raíces Aconcagua (Mendoza, 4*, 3 noches, Habitación estándar) — En pleno centro de Mendoza, sobre calle San Lorenzo; Habitaciones y suites amplias, con piscina en el hotel; Gimnasio con máquinas de cardio y musculación
 - Resumen: Viñedos, bodegas y sabores únicos. Escapada con salidas todos los lunes para combinar montaña, gastronomía y la región vitivinícola más reconocida de Sudamérica.
@@ -264,7 +266,7 @@ Precios por persona, sujetos a confirmación al reservar. Solo salidas vigentes 
 - Destinos: Puerto Madryn, Puerto Pirámides
 - Salida: Salidas del 16/09 al 31/12/2026 · 3 noches
 - Precio por persona en base doble: ARS 1.198.657 (por persona en base doble)
-- Impuestos: Tarifa no incluye 2,9% de gasto administrativo. Si se abona en pesos se aplica el tipo de cambio del día de pago y la percepción RG 4815.
+- Impuestos: Tarifa no incluye 2,9% de gasto administrativo.
 - Incluye: Pasajes aéreos desde Buenos Aires; Traslados de llegada y salida; 3 noches de alojamiento con desayuno; Excursión Puerto Pirámides con embarcación para avistaje de ballenas; Asistencia médica
 - Hotel: Hotel Tolosa (Puerto Madryn, 4*, 3 noches, Habitación estándar) — En el centro comercial de la ciudad, a 250 metros de la playa; Desayuno buffet con panificados propios y opciones sin gluten; Restaurante y snack bar con platos aptos para celíacos; Bicicletas de paseo sin cargo y wifi gratis
 - Resumen: Avistaje embarcado de ballenas, la experiencia nocturna bajo la luna llena en El Doradillo y la fauna patagónica en uno de los destinos naturales más increíbles del país.
@@ -353,7 +355,7 @@ Listado completo: https://www.legendtravel.com.ar/paquetes
 - P: ¿Hace cuánto existe la agencia?
   R: Desde 1991. Somos una empresa familiar con más de 35 años de trayectoria, legajo 7553 habilitado por el Ministerio de Turismo de la Nación y miembros del Grupo GEA.
 - P: ¿Puedo pagar mi viaje en cuotas?
-  R: Depende del viaje. En los nacionales podés pagar con tarjeta de crédito: consultanos por las promociones vigentes y las cuotas sin interés. Los internacionales se pagan con transferencia bancaria en dólares, efectivo en dólares billete o pesos en efectivo o transferencia, al tipo de cambio del día.
+  R: Depende del viaje. Los nacionales se pagan en efectivo en pesos, transferencia en pesos o tarjeta de crédito (consultar cuotas sin interés vigentes). Los internacionales se pagan en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares.
 - P: ¿Hacen viajes a medida?
   R: Es nuestra especialidad. Nos contás la idea —destino, fechas, presupuesto, estilo— y diseñamos el itinerario completo: aéreos, hoteles, traslados, excursiones y asistencia.
 - P: ¿Cómo consulto por WhatsApp?
@@ -365,27 +367,25 @@ Listado completo: https://www.legendtravel.com.ar/paquetes
 - P: ¿Legend está registrada como agencia de viajes?
   R: Sí. Legend Travel está registrada ante el Ministerio de Turismo y Deportes de la Nación como agencia de viajes habilitada. Trabajamos con proveedores internacionales y pertenecemos a las principales redes de turismo del mercado local. Podés solicitarnos la documentación de registro ante cualquier consulta o duda.
 - P: ¿Cómo se paga el viaje?
-  R: Depende del viaje. Los internacionales se pagan con transferencia bancaria en dólares, efectivo en dólares billete o pesos en efectivo o transferencia, al tipo de cambio del día (consultanos por las percepciones según la normativa vigente). La mayoría de los viajes internacionales se pueden reservar con una seña y abonar el saldo hasta un mes antes de la salida. Los nacionales, con transferencia o efectivo en pesos, tarjeta de crédito (consultanos por las promociones vigentes y las cuotas sin interés) o dólares billete o transferencia, al tipo de cambio del día. Tu asesora te explica las condiciones de pago al momento de reservar.
+  R: Depende del viaje. Los internacionales se pagan en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Nuestros viajes internacionales, por lo general, se pueden reservar con una seña y abonar el saldo restante hasta un mes antes de la salida. Tu asesora te va a dar más información sobre las posibilidades de pago al momento de la reserva. Los nacionales, en efectivo en pesos, transferencia en pesos o tarjeta de crédito (consultar cuotas sin interés vigentes).
 - P: ¿Qué pasa si tengo un problema durante el viaje?
   R: Tenés soporte de nuestro equipo durante todo el viaje. Nuestro WhatsApp de emergencias está disponible las 24 horas para resolver situaciones urgentes: vuelos cancelados, problemas de alojamiento, documentación, cambios de itinerario. No cerramos cuando vos estás viajando. Esa tranquilidad es parte de lo que incluye trabajar con nosotros.
 
 ### Formas de pago y reserva | Legend Travel — https://www.legendtravel.com.ar/financiacion/
 - P: ¿Cómo se paga un viaje internacional?
-  R: Con transferencia bancaria en dólares, efectivo en dólares billete o pesos en efectivo o transferencia, al tipo de cambio del día (consultanos por las percepciones según la normativa vigente).
+  R: Efectivo en dólares billete (consultar percepciones) o transferencia en dólares.
 - P: ¿Puedo pagar un viaje internacional con tarjeta de crédito?
-  R: La tarjeta de crédito es uno de los medios de pago de los viajes nacionales. Los internacionales se pagan con transferencia bancaria en dólares, efectivo en dólares billete o pesos en efectivo o transferencia, al tipo de cambio del día.
+  R: La tarjeta de crédito es uno de los medios de pago de los viajes nacionales. Los internacionales se pagan en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares.
 - P: ¿Cómo se paga un viaje por Argentina?
-  R: Con transferencia o efectivo en pesos, tarjeta de crédito (consultanos por las promociones vigentes y las cuotas sin interés) o dólares billete o transferencia, al tipo de cambio del día.
+  R: Efectivo en pesos, transferencia en pesos o tarjeta de crédito (consultar cuotas sin interés vigentes).
 - P: ¿Cómo funciona la reserva con seña?
-  R: La mayoría de los viajes internacionales se pueden reservar con una seña y abonar el saldo hasta un mes antes de la salida.
-- P: ¿Y en el caso de los cruceros?
-  R: En los cruceros, el saldo se abona hasta 2 meses antes del embarque.
+  R: Nuestros viajes internacionales, por lo general, se pueden reservar con una seña y abonar el saldo restante hasta un mes antes de la salida. Tu asesora te va a dar más información sobre las posibilidades de pago al momento de la reserva.
 - P: ¿Cómo se reserva un viaje nacional?
-  R: Tu asesora te explica las condiciones de pago al momento de reservar.
+  R: Igual que los internacionales: con tu asesora confirmás los servicios, abonás la seña y ella te informa la fecha de vencimiento del saldo.
 
 ### Lunas de miel a medida desde Argentina | Legend Travel — https://www.legendtravel.com.ar/lunas-de-miel/
 - P: ¿Con cuánta anticipación conviene reservar la luna de miel?
-  R: Lo ideal es reservar con 6 a 12 meses de anticipación para tener mejores precios en vuelos, disponibilidad en los hoteles deseados. La mayoría de los viajes internacionales se pueden reservar con una seña y abonar el saldo hasta un mes antes de la salida.
+  R: Lo ideal es reservar con 6 a 12 meses de anticipación para tener mejores precios en vuelos, disponibilidad en los hoteles deseados. Nuestros viajes internacionales, por lo general, se pueden reservar con una seña y abonar el saldo restante hasta un mes antes de la salida. Tu asesora te va a dar más información sobre las posibilidades de pago al momento de la reserva.
 - P: ¿Cuáles son los destinos más elegidos para luna de miel desde Argentina?
   R: Los más pedidos son Maldivas y Caribe para playa y relax; Seychelles y Polinesia Francesa para exclusividad; Europa (París, Santorini, Italia) para cultura y romanticismo. También son populares las combinaciones como Maldivas + Dubai.
 - P: ¿Cuánto cuesta una luna de miel con Legend?
@@ -395,7 +395,7 @@ Listado completo: https://www.legendtravel.com.ar/paquetes
 - P: ¿Hacen detalles especiales o sorpresas en el hotel?
   R: Sí. Coordinamos con el hotel decoración de bienvenida, flores, champagne y cualquier detalle especial. También coordinamos cenas románticas, picnics u otras sorpresas personalizadas según lo que quieran.
 - P: ¿Tienen planes de pago o financiación?
-  R: Los viajes internacionales se pagan con transferencia bancaria en dólares, efectivo en dólares billete o pesos en efectivo o transferencia, al tipo de cambio del día (consultanos por las percepciones según la normativa vigente). La mayoría de los viajes internacionales se pueden reservar con una seña y abonar el saldo hasta un mes antes de la salida.
+  R: Los viajes internacionales se pagan en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Nuestros viajes internacionales, por lo general, se pueden reservar con una seña y abonar el saldo restante hasta un mes antes de la salida. Tu asesora te va a dar más información sobre las posibilidades de pago al momento de la reserva.
 
 ### Disney en Europa para Quinceañeras | Legend Travel — https://www.legendtravel.com.ar/quinceaneras/disney-europa/
 - P: ¿Cuántos países conviene combinar en un mismo viaje a Europa?
@@ -409,9 +409,9 @@ Listado completo: https://www.legendtravel.com.ar/paquetes
 - P: ¿Los precios incluyen impuestos?
   R: Los precios que ves son «desde», por persona en base doble. La tarifa final — con impuestos, tasas y percepciones vigentes — te la confirmamos en la consulta, siempre antes de que reserves. Los impuestos sobre viajes al exterior cambian según la normativa vigente, por eso no los fijamos en cada paquete: preferimos darte el número real del día en que reservás.
 - P: ¿Cómo se paga un paquete?
-  R: Depende del paquete. Los internacionales se pagan con transferencia bancaria en dólares, efectivo en dólares billete o pesos en efectivo o transferencia, al tipo de cambio del día (consultanos por las percepciones según la normativa vigente). La mayoría de los viajes internacionales se pueden reservar con una seña y abonar el saldo hasta un mes antes de la salida. En los cruceros, el saldo se abona hasta 2 meses antes del embarque. Los nacionales se pagan con transferencia o efectivo en pesos, tarjeta de crédito (consultanos por las promociones vigentes y las cuotas sin interés) o dólares billete o transferencia, al tipo de cambio del día. Tu asesora te explica las condiciones de pago al momento de reservar. Podés ver el detalle en medios de pago.
+  R: Depende del paquete. Los internacionales se pagan en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Nuestros viajes internacionales, por lo general, se pueden reservar con una seña y abonar el saldo restante hasta un mes antes de la salida. Tu asesora te va a dar más información sobre las posibilidades de pago al momento de la reserva. Los nacionales, en efectivo en pesos, transferencia en pesos o tarjeta de crédito (consultar cuotas sin interés vigentes). Podés ver el detalle en medios de pago.
 - P: ¿Qué pasa si la tarifa cambia antes de que reserve?
-  R: Hasta que reservás, la tarifa puede variar. Tu asesora te explica las condiciones de pago al momento de reservar.
+  R: Hasta que reservás, la tarifa puede variar.
 - P: ¿Puedo cambiar la fecha o el destino después de reservar?
   R: Depende de las condiciones de cada paquete: algunos permiten cambios con un cargo, otros no lo permiten una vez emitido. Te informamos las condiciones exactas por escrito y antes de que reserves.
 - P: ¿Qué incluye exactamente cada paquete?
