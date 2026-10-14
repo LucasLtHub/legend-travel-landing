@@ -56,6 +56,8 @@ EXTERNAL_PREFIXES = ("http://", "https://", "mailto:", "tel:", "javascript:",
                      "whatsapp:", "data:", "sms:")
 # Carpetas que no son sitio (entornos de Python, dependencias, git): no se auditan
 EXCLUIR_DIRS = {".venv", "venv", "node_modules", ".git", "__pycache__"}
+# Dónde se escriben qa-report.md / .json: junto al script, nunca en la carpeta auditada
+REPORTES_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools", "qa-reportes")
 
 # ─────────────────────────────────────────────────────────────────────
 
@@ -316,14 +318,20 @@ def main():
         for rel, msg in by_sev[sev]:
             lines.append(f"- **{rel}** — {msg}")
         lines.append("")
-    with open(os.path.join(root, "qa-report.md"), "w", encoding="utf-8") as f:
+    # Los reportes van SIEMPRE fuera de la carpeta auditada (que puede ser la que
+    # se sube al hosting): tools/qa-reportes/ junto a este script.
+    os.makedirs(REPORTES_DIR, exist_ok=True)
+    md_path = os.path.join(REPORTES_DIR, "qa-report.md")
+    json_path = os.path.join(REPORTES_DIR, "qa-report.json")
+    lines.insert(1, f"Carpeta auditada: `{root}`\n")
+    with open(md_path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
-    with open(os.path.join(root, "qa-report.json"), "w", encoding="utf-8") as f:
+    with open(json_path, "w", encoding="utf-8") as f:
         json.dump([{"sev": s, "file": r, "msg": m} for s, r, m in issues],
                   f, ensure_ascii=False, indent=2)
 
-    print(f"Reportes escritos: qa-report.md  /  qa-report.json")
+    print(f"Reportes escritos: {md_path}  /  {json_path}")
 
     if n_err > 0 or (strict and n_warn > 0):
         sys.exit(1)

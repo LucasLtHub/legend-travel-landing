@@ -24,3 +24,8 @@ tools/capturas-ronda2/
 newsletter/newsletter-config.php
 newsletter/data/
 newsletter-config.php
+
+# reportes del QA (los escribe qa_site.py fuera de la carpeta auditada; se regeneran en cada corrida)
+tools/qa-reportes/
+qa-report.md
+qa-report.json
