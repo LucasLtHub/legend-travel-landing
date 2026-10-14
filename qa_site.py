@@ -30,7 +30,7 @@ import re
 import sys
 import json
 from collections import defaultdict
-from urllib.parse import urlparse, unquote
+from urllib.parse import urlparse, unquote, urljoin
 
 try:
     from bs4 import BeautifulSoup
@@ -54,6 +54,8 @@ DESC_MIN, DESC_MAX = 70, 160
 # Prefijos de href que NO son links internos a archivos (se ignoran en chequeo de roto)
 EXTERNAL_PREFIXES = ("http://", "https://", "mailto:", "tel:", "javascript:",
                      "whatsapp:", "data:", "sms:")
+# Carpetas que no son sitio (entornos de Python, dependencias, git): no se auditan
+EXCLUIR_DIRS = {".venv", "venv", "node_modules", ".git", "__pycache__"}
 
 # ─────────────────────────────────────────────────────────────────────
 
@@ -79,6 +81,43 @@ def is_whatsapp(href):
 def looks_like_destino(rel):
     low = rel.lower()
     return any(h in low for h in DESTINO_HINTS)
+
+
+# Las páginas fijan la base por JavaScript antes de cargar nada:
+#   document.write('<base href="'+(p.indexOf(r)===0?r:'/')+'">')
+# r es la subcarpeta de GitHub Pages; en el dominio queda la otra rama ('/').
+BASE_JS = re.compile(r"""document\.write\(\s*['"]<base href="['"]\s*\+\s*\(.*?\?\s*r\s*:\s*['"]([^'"]*)['"]\s*\)""")
+ORIGEN = "https://qa.local"   # origen ficticio: solo importa la ruta
+
+
+def base_de_pagina(soup, rel):
+    """URL contra la que el navegador resuelve los href relativos de esta página."""
+    url_pagina = urljoin(ORIGEN + "/", rel.replace(os.sep, "/"))
+    base = soup.find("base", href=True)
+    if base:
+        return urljoin(url_pagina, base["href"].strip())
+    for s in soup.find_all("script"):
+        m = BASE_JS.search(s.string or "")
+        if m:
+            return urljoin(url_pagina, m.group(1))
+    return url_pagina
+
+
+_anclas = {}
+
+
+def anclas_de(path):
+    """Fragmentos válidos de una página: sus id y los filtros que lee de location.hash
+    (chips de /paquetes/ con data-r="caribe" → paquetes/#caribe)."""
+    path = os.path.normpath(path)
+    if path not in _anclas:
+        try:
+            with open(path, encoding="utf-8", errors="replace") as f:
+                t = f.read()
+        except OSError:
+            t = ""
+        _anclas[path] = set(re.findall(r'\bid="([^"]+)"', t)) | set(re.findall(r'\bdata-r="([^"]+)"', t))
+    return _anclas[path]
 
 
 def check_file(abspath, root):
@@ -143,35 +182,33 @@ def check_file(abspath, root):
         muestra = ", ".join(sin_alt[:4]) + (" …" if len(sin_alt) > 4 else "")
         add(WARN, rel, f"{len(sin_alt)} imagen(es) sin alt: {muestra}")
 
-    # 10) anchors root-relative /#  → tu bug de navbar conocido
-    # 11) links internos rotos
-    base_dir = os.path.dirname(abspath)
+    # 10) y 11) links internos y anchors — resueltos como el navegador: URL de la
+    #     página, después la <base> (estática o la que fija el script) y recién ahí
+    #     el href. Con <base href="/">, "#x" y "/#x" van al mismo lugar: la home.
+    base_url = base_de_pagina(soup, rel)
     for a in soup.find_all("a", href=True):
         href = a["href"].strip()
-        if not href or href.startswith("#"):
+        if not href or href == "#" or is_external(href) or is_whatsapp(href):
             continue
-        if href.startswith("/#"):
-            add(ERROR, rel, f"Anchor root-relative '{href}' → redirige al home. "
-                            f"Usá '{href[1:]}' (sin la barra inicial).")
-            continue
-        if is_external(href) or is_whatsapp(href):
-            continue
-        # link interno a un archivo: resolver y verificar que exista
         parsed = urlparse(href)
-        path = unquote(parsed.path)
-        if not path:
-            continue
-        if path.startswith("/"):
-            target = os.path.join(root, path.lstrip("/"))
+        if href.startswith("#") and parsed.fragment in anclas_de(abspath):
+            continue   # el destino está en la misma página: el script hace scroll sin navegar
+        if parsed.path.startswith("/"):
             add(INFO, rel, f"Link root-relative '{href}' (funciona en el dominio, "
                            f"rompe en file:// y al mover de carpeta).")
-        else:
-            target = os.path.normpath(os.path.join(base_dir, path))
-        # si apunta a carpeta, probar index.html
+        resuelto = urlparse(urljoin(base_url, href))
+        destino = unquote(resuelto.path)
+        target = os.path.normpath(os.path.join(root, destino.lstrip("/")))
+        # si apunta a carpeta, probar index.html (como Apache con DirectoryIndex)
         if os.path.isdir(target):
             target = os.path.join(target, "index.html")
-        if path.endswith((".html", ".htm", "/")) and not os.path.exists(target):
-            add(ERROR, rel, f"Link interno roto: '{href}' → no existe el archivo.")
+        sin_extension = "." not in os.path.basename(destino.rstrip("/"))
+        if not os.path.exists(target):
+            if destino.endswith((".html", ".htm", "/")) or sin_extension:
+                add(ERROR, rel, f"Link interno roto: '{href}' → {destino} no existe.")
+            continue
+        if resuelto.fragment and target.endswith((".html", ".htm")) and resuelto.fragment not in anclas_de(target):
+            add(ERROR, rel, f"Anchor roto: '{href}' → {destino}#{resuelto.fragment} no existe en esa página.")
 
     # 12) JSON-LD / schema
     ld = soup.find_all("script", attrs={"type": "application/ld+json"})
@@ -231,12 +268,14 @@ def main():
     root = os.path.abspath(args[0]) if args else os.getcwd()
 
     html_files = []
-    for dirpath, _, filenames in os.walk(root):
-        if any(x in dirpath for x in ("node_modules", ".git")):
-            continue
+    for dirpath, dirnames, filenames in os.walk(root):
+        dirnames[:] = [d for d in dirnames if d not in EXCLUIR_DIRS]   # no se baja a esas carpetas
         for fn in filenames:
-            if fn.lower().endswith((".html", ".htm")):
-                html_files.append(os.path.join(dirpath, fn))
+            fp = os.path.join(dirpath, fn)
+            # los index.html vacíos de las carpetas data/ protegidas no son páginas:
+            # existen solo para que el servidor no liste la carpeta
+            if fn.lower().endswith((".html", ".htm")) and os.path.getsize(fp) > 0:
+                html_files.append(fp)
 
     if not html_files:
         print(f"No encontré .html en {root}")
