@@ -253,6 +253,16 @@ def lista(p, campo):
     return [x for x in v if str(x).strip()] if isinstance(v, list) else []
 
 
+def alt_imagen(p):
+    """alt de la foto del paquete (card y hero del detalle): "imagen_alt" del JSON,
+    descriptivo y concreto. Si falta, "Foto de <primer destino>" para que nunca quede vacío."""
+    propio = str(p.get("imagen_alt") or "").strip()
+    if propio:
+        return propio
+    dests = lista(p, "destinos")
+    return "Foto de {}".format(dests[0] if dests else txt(p, "titulo"))
+
+
 def txt(p, campo):
     return str(p.get(campo) or "").strip()
 
@@ -382,7 +392,7 @@ def render_card(p, vig_date):
         </div>
       </article>'''.format(
         region=e(p["region"]), id=e(p["id"]), imagen=e(p["imagen"]),
-        alt=e(dests[0] if dests else p["titulo"]), badge=badge,
+        alt=e(alt_imagen(p)), badge=badge,
         kicker=kicker, titulo=e(p["titulo"]), resumen=e(txt(p, "resumen")),
         metas="\n".join(metas), incluye=inc_html, mas=mas,
         moneda=e(pd.get("moneda", "")), precio=fmt_precio(pd.get("valor")),
@@ -933,7 +943,7 @@ def render_detalle(p, vig, plantilla, todos=()):
         "{{URGENCIA}}": urgencia,
         "{{RELACIONADOS}}": relacionados,
         "{{DESC}}": e(desc),
-        "{{ALT}}": e(dests[0] if dests else titulo_txt),
+        "{{ALT}}": e(alt_imagen(p)),
         "{{KICKER}}": e(REGIONES.get(p["region"], p["region"])),
         "{{CANONICAL}}": e(canonical),
         "{{OGIMAGE}}": e(ogimg),

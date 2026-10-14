@@ -150,6 +150,7 @@
         "Asistencia médica"
       ],
       "imagen": "assets/img/pexels/14866540-1600.jpg",
+      "imagen_alt": "Lago con un volcán nevado al fondo entre la vegetación, en el cruce andino entre Bariloche y Puerto Varas",
       "precios": [
         {
           "base": "doble",
@@ -228,6 +229,7 @@
         "Asistencia médica"
       ],
       "imagen": "assets/img/pexels/19046646-1600.jpg",
+      "imagen_alt": "Hileras de viñedos con la cordillera de los Andes de fondo, Mendoza, Argentina",
       "precios": [
         {
           "base": "doble",
@@ -311,6 +313,7 @@
         "Asistencia médica"
       ],
       "imagen": "assets/img/pexels/14019374-1600.jpg",
+      "imagen_alt": "Dos ballenas francas australes vistas desde arriba en aguas claras, Puerto Madryn, Argentina",
       "precios": [
         {
           "base": "doble",
@@ -430,6 +433,7 @@
         "Gastos administrativos"
       ],
       "imagen": "assets/img/pexels/2868242-1800.jpg",
+      "imagen_alt": "Vista aérea de la costa de Río de Janeiro, Brasil",
       "precios": [
         {
           "base": "doble",
@@ -558,6 +562,7 @@
         "Gastos administrativos"
       ],
       "imagen": "assets/img/pexels/1001682-1800.jpg",
+      "imagen_alt": "Mar abierto bajo un cielo despejado, visto desde un crucero",
       "precios": [
         {
           "base": "doble",
@@ -685,6 +690,7 @@
         "Gastos administrativos"
       ],
       "imagen": "assets/img/pexels/18149722-1800.jpg",
+      "imagen_alt": "Vista aérea de una playa con barcos anclados en aguas turquesa",
       "precios": [
         {
           "base": "doble",
@@ -898,6 +904,7 @@
         "Asistencia Universal Assistance (hasta 70 años) con seguro de cancelación"
       ],
       "imagen": "assets/img/pexels/20743085-1600.jpg",
+      "imagen_alt": "Aurora boreal verde sobre un fiordo nevado en Noruega",
       "precios": [
         {
           "base": "doble",
@@ -1309,6 +1316,7 @@
         "Acompañante de Organización Piamonte desde Buenos Aires (mín. 20 pax)"
       ],
       "imagen": "assets/img/pexels/2064827-1600.jpg",
+      "imagen_alt": "Coliseo de Roma bajo un cielo con nubes, Italia",
       "precios": [
         {
           "base": "doble",
@@ -1418,6 +1426,7 @@
         "Universal Assistance Master Plus (hasta 70 años)"
       ],
       "imagen": "assets/img/pexels/2646066-1600.jpg",
+      "imagen_alt": "Playa de arena blanca con palmeras y banderas en Punta Cana, República Dominicana",
       "precios": [
         {
           "base": "triple",
@@ -1555,6 +1564,7 @@
         "Universal Assistance (hasta 70 años)"
       ],
       "imagen": "assets/img/pexels/16116483-1600.jpg",
+      "imagen_alt": "Vista aérea de la playa de Costa Mujeres, Cancún, México",
       "precios": [
         {
           "base": "triple",
@@ -1691,6 +1701,7 @@
         "Universal Assistance Master Plus (hasta 70 años)"
       ],
       "imagen": "assets/img/pexels/10816914-1600.jpg",
+      "imagen_alt": "Lancha en la orilla de una playa de arena blanca en Bayahíbe, República Dominicana",
       "precios": [
         {
           "base": "doble",
@@ -1798,6 +1809,7 @@
         "Universal Assistance Master Plus (hasta 70 años)"
       ],
       "imagen": "assets/img/pexels/18118993-1600.jpg",
+      "imagen_alt": "Playa de arena blanca con palmeras en Cancún, México",
       "precios": [
         {
           "base": "triple",
@@ -2354,6 +2366,7 @@
         "Habitación a compartir garantizada para pasajeras que viajen solas"
       ],
       "imagen": "assets/img/pexels/18008781-1600.jpg",
+      "imagen_alt": "Calle arbolada con motos en Hanoi, Vietnam",
       "precios": [
         {
           "base": "doble",
@@ -2746,6 +2759,7 @@
         "Universal Assistance con seguro de cancelación (hasta 70 años)"
       ],
       "imagen": "assets/img/pexels/15121561-1600.jpg",
+      "imagen_alt": "Puerta Namdaemun iluminada de noche, Seúl, Corea del Sur",
       "precios": [
         {
           "base": "doble",
@@ -3083,6 +3097,7 @@
         "Tour leader desde Argentina (mín. 10 pax)"
       ],
       "imagen": "assets/img/pexels/1631665-1600.jpg",
+      "imagen_alt": "Fachada del Tesoro de Petra con carruajes, Jordania",
       "precios": [
         {
           "base": "doble",
@@ -3296,6 +3311,7 @@
         "Tour leader desde Argentina"
       ],
       "imagen": "assets/img/pexels/3889918-1600.jpg",
+      "imagen_alt": "Jirafas y cebras en la sabana del Parque Kruger, Sudáfrica",
       "precios": [
         {
           "base": "doble",
@@ -3407,6 +3423,7 @@
         "Seguimiento diario online con fotos y videos"
       ],
       "imagen": "assets/img/pexels/12422683-1600.jpg",
+      "imagen_alt": "Castillo de Cenicienta visto entre los visitantes de Magic Kingdom, Orlando",
       "vuelos": [
         {
           "aerolinea": "",
@@ -3529,6 +3546,7 @@
         "Coordinadores exclusivos permanentes + equipo de gerentes y guías locales"
       ],
       "imagen": "assets/img/pexels/1461974-1600.jpg",
+      "imagen_alt": "Torre Eiffel vista desde abajo con cielo nublado, París, Francia",
       "vuelos": [
         {
           "aerolinea": "",
