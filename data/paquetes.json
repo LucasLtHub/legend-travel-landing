@@ -6589,6 +6589,2812 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
       }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "No incluye percepción RG 5463 (30%) si se abona en pesos: aprox. USD 720 sobre terrestre y USD 367 sobre aéreo.",
+      "condiciones": [
+        "Precio válido comprando antes del 15 de enero de 2027 (venta anticipada).",
+        "Para ingresar al Reino Unido se requiere la autorización electrónica ETA (aprox. GBP 20), trámite online por cuenta del pasajero.",
+        "Seña USD 2.300 por persona para reservar."
+      ],
+      "no_incluye": [
+        "Comidas y bebidas no indicadas",
+        "Tasas hoteleras y de ciudad, se pagan en destino",
+        "Propinas y gastos personales",
+        "Excursiones opcionales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Madrid",
+          "nombre": "Chamartín The One",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Burdeos",
+          "nombre": "Mercure Bordeaux Le Lac",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "París",
+          "nombre": "Ibis Paris 17 Clichy-Batignolles",
+          "categoria": "3*",
+          "noches": 4,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Londres",
+          "nombre": "Ibis London Earls Court",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Brujas",
+          "nombre": "Velotel Brugge",
+          "categoria": "",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Ámsterdam",
+          "nombre": "Park Plaza Amsterdam Airport",
+          "categoria": "",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Madrid",
+          "texto": "Salida en el vuelo IB 106 de las 17:50. Noche a bordo."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Madrid",
+          "texto": "Llegada a las 10:45, traslado al hotel y resto del día libre."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Madrid – Toledo – Madrid",
+          "texto": "Visita panorámica de Madrid y excursión a Toledo, ciudad de las tres culturas."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Madrid – San Sebastián – Burdeos",
+          "texto": "Salida hacia el norte con parada en San Sebastián y llegada a Burdeos."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Burdeos – Chambord – París",
+          "texto": "Valle del Loira con parada en el castillo de Chambord. Llegada a París."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "París",
+          "texto": "Visita panorámica de la ciudad y tarde libre."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "París",
+          "texto": "Día libre; traslado a Versalles incluido (entrada no incluida)."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "París",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "París – Canterbury – Londres",
+          "texto": "Cruce del Canal de la Mancha, parada en Canterbury y llegada a Londres."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Londres",
+          "texto": "Visita panorámica de Londres y tarde libre."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Londres",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Londres – Brujas",
+          "texto": "Regreso al continente y llegada a Brujas, con recorrido de su centro medieval."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Brujas – Gante – Middelburg – Rotterdam – Ámsterdam",
+          "texto": "Paradas en Gante, Middelburg y Rotterdam antes de llegar a Ámsterdam."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Ámsterdam",
+          "texto": "Visita de la ciudad y tarde libre."
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "Ámsterdam – Kinderdijk – Bruselas – París",
+          "texto": "Molinos de Kinderdijk, parada en Bruselas y llegada a París."
+        },
+        {
+          "dia": "Día 16",
+          "titulo": "París – Blois – Tours – Burdeos",
+          "texto": "Regreso por el Loira con paradas en Blois y Tours. Noche en Burdeos."
+        },
+        {
+          "dia": "Día 17",
+          "titulo": "Burdeos – San Sebastián – Madrid",
+          "texto": "Parada en San Sebastián y llegada a Madrid."
+        },
+        {
+          "dia": "Día 18",
+          "titulo": "Madrid ✈ Buenos Aires",
+          "texto": "Traslado al aeropuerto para el vuelo IB 107 de las 12:15. Llegada a Ezeiza a las 19:55."
+        }
+      ],
+      "tarifas": [],
+      "id": "madrid-norte-europeo",
+      "titulo": "Madrid y Norte Europeo — 23 de abril 2027",
+      "region": "europa",
+      "destinos": [
+        "Madrid",
+        "Burdeos",
+        "París",
+        "Londres",
+        "Brujas",
+        "Ámsterdam"
+      ],
+      "resumen": "De Madrid a Londres por Burdeos y París, con el cruce del Canal, tres noches en Londres, Brujas, Gante y los canales de Ámsterdam. Un gran recorrido por el norte de Europa en autocar y con guía.",
+      "precio_desde": {
+        "valor": 5024,
+        "moneda": "USD",
+        "nota": "por persona en base doble — tarifa + impuestos aéreos + IVA y gastos"
+      },
+      "salida": "23 de abril 2027",
+      "vigencia": "2027-01-15",
+      "noches": 16,
+      "operador": "Julia Tours",
+      "operador_sigla": "JT",
+      "ref": "JT-2187",
+      "incluye": [
+        "Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica",
+        "1 valija de hasta 23 kg por persona en todo el recorrido",
+        "16 noches de alojamiento con desayuno en hoteles previstos o similares",
+        "Circuito en autocar con guía acompañante de habla hispana",
+        "Visitas panorámicas y entradas según itinerario",
+        "Traslados de llegada y salida",
+        "Asistencia al viajero Universal Assistance Excellence (hasta USD 150.000)"
+      ],
+      "imagen": "assets/img/pexels/17080606-1200.jpg",
+      "imagen_alt": "Canal de Ámsterdam con casas antiguas y una iglesia al fondo",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 5024
+        },
+        {
+          "base": "triple",
+          "valor": 4946
+        },
+        {
+          "base": "single",
+          "valor": 6892
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Buenos Aires (EZE) – Madrid",
+          "clase": "Económica",
+          "fecha": "23/04/2027",
+          "horario": "17:50 – 10:45 (+1)",
+          "numero": "IB 106",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        },
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Madrid – Buenos Aires (EZE)",
+          "clase": "Económica",
+          "fecha": "10/05/2027",
+          "horario": "12:15 – 19:55",
+          "numero": "IB 107",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.juliatours.com.ar/micrositio.php?id=2187",
+        "fecha": "2026-10-15",
+        "desglose": "Tarifa USD 4.160 + impuestos aéreos USD 584 + IVA y gastos USD 280 = USD 5.024. Triple USD 4.946. Single USD 6.892. Seña USD 2.300."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "No incluye percepción RG 5463 (30%) si se abona en pesos: aprox. USD 686 sobre terrestre y USD 365 sobre aéreo.",
+      "condiciones": [
+        "Precio válido comprando antes del 15 de enero de 2027 (venta anticipada).",
+        "Seña USD 2.200 por persona para reservar."
+      ],
+      "no_incluye": [
+        "Comidas y bebidas no indicadas",
+        "Tasas hoteleras y de ciudad, se pagan en destino",
+        "Propinas y gastos personales",
+        "Excursiones opcionales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Madrid",
+          "nombre": "Praga",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Barcelona",
+          "nombre": "AC Som",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Niza",
+          "nombre": "Park Inn Nice",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Venecia (Mestre)",
+          "nombre": "Lugano Torretta",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Florencia",
+          "nombre": "Nilhotel",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Roma",
+          "nombre": "Grand Hotel Fleming",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Turín",
+          "nombre": "Novotel Corso Giulio Cesare",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "París",
+          "nombre": "Novotel Paris Est Bagnolet",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Burdeos",
+          "nombre": "Mercure Bordeaux Centre Meriadeck",
+          "categoria": "3*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Madrid",
+          "texto": "Salida en el vuelo IB 106 de las 17:50. Noche a bordo."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Madrid",
+          "texto": "Llegada, traslado al hotel y resto del día libre."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Madrid – Toledo – Madrid",
+          "texto": "Visita panorámica de Madrid y excursión a Toledo."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Madrid – Zaragoza – Barcelona",
+          "texto": "Parada en Zaragoza, con la basílica del Pilar, y llegada a Barcelona con visita panorámica."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Barcelona – Costa Azul",
+          "texto": "Viaje por la costa mediterránea hasta la Costa Azul."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "Costa Azul – Mónaco – Venecia",
+          "texto": "Parada en el principado de Mónaco y llegada a Venecia."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Venecia – Florencia",
+          "texto": "Paseo en barco a la plaza de San Marcos y continuación a Florencia."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Florencia – Roma",
+          "texto": "Visita de Florencia y llegada a Roma."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Roma",
+          "texto": "Visita panorámica de la Roma imperial y paseo por el Trastévere."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Roma",
+          "texto": "Día libre; opcional a Nápoles y Capri."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Roma – Pisa – Turín",
+          "texto": "Parada en Pisa con la Torre Inclinada y llegada a Turín."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Turín – Ginebra – París",
+          "texto": "Cruce de los Alpes, parada en Ginebra y llegada a París."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "París",
+          "texto": "Visita panorámica, traslado a Versalles (entrada no incluida) y Montmartre."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "París",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "París – Blois – Tours – Burdeos",
+          "texto": "Castillos del Loira por fuera, parada en Tours y noche en Burdeos."
+        },
+        {
+          "dia": "Día 16",
+          "titulo": "Burdeos – San Sebastián – Madrid",
+          "texto": "Parada en San Sebastián y llegada a Madrid."
+        },
+        {
+          "dia": "Día 17",
+          "titulo": "Madrid",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 18",
+          "titulo": "Madrid ✈ Buenos Aires",
+          "texto": "Traslado al aeropuerto para el vuelo IB 105 de las 08:45. Llegada a Ezeiza a las 16:25."
+        }
+      ],
+      "tarifas": [],
+      "id": "paseando-por-europa",
+      "titulo": "Paseando por Europa — 21 de mayo 2027",
+      "region": "europa",
+      "destinos": [
+        "Madrid",
+        "Barcelona",
+        "Costa Azul",
+        "Venecia",
+        "Florencia",
+        "Roma",
+        "París"
+      ],
+      "resumen": "El circuito clásico completo: Madrid y Toledo, Barcelona, la Costa Azul y Mónaco, Venecia, Florencia, tres noches en Roma, Turín, Ginebra y tres en París, con regreso por Burdeos y San Sebastián.",
+      "precio_desde": {
+        "valor": 4858,
+        "moneda": "USD",
+        "nota": "por persona en base doble — tarifa + impuestos aéreos + IVA y gastos"
+      },
+      "salida": "21 de mayo 2027",
+      "vigencia": "2027-01-15",
+      "noches": 16,
+      "operador": "Julia Tours",
+      "operador_sigla": "JT",
+      "ref": "JT-2143",
+      "incluye": [
+        "Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica",
+        "1 valija de hasta 23 kg por persona en todo el recorrido",
+        "16 noches de alojamiento con desayuno en hoteles previstos o similares",
+        "Circuito en autocar con guía acompañante de habla hispana",
+        "Visitas panorámicas y entradas según itinerario",
+        "Traslados de llegada y salida",
+        "Asistencia al viajero Universal Assistance Excellence (hasta USD 150.000)"
+      ],
+      "imagen": "assets/img/pexels/733830-1200.jpg",
+      "imagen_alt": "Canal de Venecia con góndolas y fachadas antiguas",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 4858
+        },
+        {
+          "base": "triple",
+          "valor": 4782
+        },
+        {
+          "base": "single",
+          "valor": 6445
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Buenos Aires (EZE) – Madrid",
+          "clase": "Económica",
+          "fecha": "21/05/2027",
+          "horario": "17:50 – 10:45 (+1)",
+          "numero": "IB 106",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        },
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Madrid – Buenos Aires (EZE)",
+          "clase": "Económica",
+          "fecha": "07/06/2027",
+          "horario": "08:45 – 16:25",
+          "numero": "IB 105",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.juliatours.tur.ar/micrositio.php?id=2143",
+        "fecha": "2026-10-15",
+        "desglose": "Tarifa USD 4.006 + impuestos aéreos USD 583 + IVA y gastos USD 269 = USD 4.858. Triple USD 4.782. Single USD 6.445. Seña USD 2.200."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "No incluye percepción RG 5463 (30%) si se abona en pesos: aprox. USD 644 sobre terrestre y USD 357 sobre aéreo.",
+      "condiciones": [
+        "Precio válido comprando antes del 15 de enero de 2027 (venta anticipada)."
+      ],
+      "no_incluye": [
+        "Comidas y bebidas no indicadas",
+        "Tasas hoteleras y de ciudad, se pagan en destino",
+        "Propinas y gastos personales",
+        "Excursiones opcionales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Madrid",
+          "nombre": "Chamartín The One / Praga",
+          "categoria": "4*",
+          "noches": 5,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Burdeos",
+          "nombre": "Mercure Bordeaux Le Lac",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "París",
+          "nombre": "Ibis Paris 17 Clichy-Batignolles",
+          "categoria": "3*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Aosta",
+          "nombre": "Express by Holiday Inn Aosta",
+          "categoria": "3*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Venecia (Mestre)",
+          "nombre": "Albatros",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Roma",
+          "nombre": "Novotel Roma Est",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Florencia",
+          "nombre": "Nilhotel",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Niza",
+          "nombre": "B&B Nice Aéroport Arenas",
+          "categoria": "3*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Barcelona",
+          "nombre": "Front Air Congress",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Madrid",
+          "texto": "Salida en el vuelo IB 106 de las 17:50. Noche a bordo."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Madrid",
+          "texto": "Llegada a las 10:55, traslado al hotel y día libre."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Madrid",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Madrid – San Sebastián – Burdeos",
+          "texto": "Salida hacia el norte, parada en San Sebastián y noche en Burdeos."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Burdeos – Blois – París",
+          "texto": "Valle del Loira con parada en Blois y llegada a París."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "París",
+          "texto": "Visita panorámica, traslado a Versalles (entrada no incluida) y Montmartre."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "París",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "París – Ginebra – Aosta",
+          "texto": "Cruce de Francia hasta Ginebra y noche en Aosta, en los Alpes italianos."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Aosta – Venecia",
+          "texto": "Llegada a Venecia y paseo en barco a la plaza de San Marcos."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Venecia – Rávena – Asís – Roma",
+          "texto": "Mosaicos de Rávena, parada en Asís y llegada a Roma."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Roma",
+          "texto": "Visita panorámica de la Roma imperial y paseo por el Trastévere."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Roma",
+          "texto": "Día libre; opcional a Nápoles y Capri."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Roma – Florencia",
+          "texto": "Llegada a Florencia y recorrido por su centro histórico."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Florencia – Pisa – Sestri Levante – Montecarlo – Costa Azul",
+          "texto": "Torre de Pisa, costa de Liguria y Montecarlo. Noche en la Costa Azul."
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "Costa Azul – Arlés – Barcelona",
+          "texto": "Parada en Arlés, la Provenza romana, y llegada a Barcelona con visita panorámica."
+        },
+        {
+          "dia": "Día 16",
+          "titulo": "Barcelona – Madrid",
+          "texto": "Regreso a Madrid."
+        },
+        {
+          "dia": "Días 17 y 18",
+          "titulo": "Madrid",
+          "texto": "Días libres."
+        },
+        {
+          "dia": "Día 19",
+          "titulo": "Madrid ✈ Buenos Aires",
+          "texto": "Traslado al aeropuerto para el vuelo IB 107 de las 12:15. Llegada a Ezeiza a las 19:55."
+        }
+      ],
+      "tarifas": [],
+      "id": "descubriendo-europa",
+      "titulo": "Descubriendo Europa — 2 de mayo 2027",
+      "region": "europa",
+      "destinos": [
+        "Madrid",
+        "París",
+        "Venecia",
+        "Roma",
+        "Florencia",
+        "Costa Azul",
+        "Barcelona"
+      ],
+      "resumen": "Madrid, dos días en París, Ginebra y los Alpes, Venecia, Rávena y Asís camino a Roma, Florencia, Pisa, Montecarlo y Barcelona. Diecisiete noches para ver Europa de punta a punta.",
+      "precio_desde": {
+        "valor": 4554,
+        "moneda": "USD",
+        "nota": "por persona en base doble — tarifa + impuestos aéreos + IVA y gastos"
+      },
+      "salida": "2 de mayo 2027",
+      "vigencia": "2027-01-15",
+      "noches": 17,
+      "operador": "Julia Tours",
+      "operador_sigla": "JT",
+      "ref": "JT-2149",
+      "incluye": [
+        "Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica",
+        "1 valija de hasta 23 kg por persona en todo el recorrido",
+        "17 noches de alojamiento con desayuno en hoteles previstos o similares",
+        "Circuito en autocar con guía acompañante de habla hispana",
+        "Visitas panorámicas y entradas según itinerario",
+        "Traslados de llegada y salida",
+        "Asistencia al viajero Universal Assistance Excellence (hasta USD 150.000)"
+      ],
+      "imagen": "assets/img/pexels/2064827-1200.jpg",
+      "imagen_alt": "El Coliseo romano al atardecer",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 4554
+        },
+        {
+          "base": "triple",
+          "valor": 4484
+        },
+        {
+          "base": "single",
+          "valor": 6077
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Buenos Aires (EZE) – Madrid",
+          "clase": "Económica",
+          "fecha": "02/05/2027",
+          "horario": "17:50 – 10:55 (+1)",
+          "numero": "IB 106",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        },
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Madrid – Buenos Aires (EZE)",
+          "clase": "Económica",
+          "fecha": "20/05/2027",
+          "horario": "12:15 – 19:55",
+          "numero": "IB 107",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.juliatours.com.ar/micrositio.php?id=2149",
+        "fecha": "2026-10-15",
+        "desglose": "Tarifa USD 3.722 + impuestos aéreos USD 581 + IVA y gastos USD 251 = USD 4.554. Triple USD 4.484. Single USD 6.077."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "No incluye percepción RG 5463 (30%) si se abona en pesos: aprox. USD 661 sobre terrestre y USD 358 sobre aéreo.",
+      "condiciones": [
+        "Precio válido comprando antes del 15 de enero de 2027 (venta anticipada).",
+        "Los argentinos no necesitan visa para ingresar a Marruecos.",
+        "Seña USD 2.300 por persona para reservar."
+      ],
+      "no_incluye": [
+        "Comidas y bebidas no indicadas",
+        "Tasas hoteleras y de ciudad, se pagan en destino",
+        "Propinas y gastos personales",
+        "Excursiones opcionales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Madrid",
+          "nombre": "Praga",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Granada",
+          "nombre": "Saray",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Rabat",
+          "nombre": "Rabat",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Media pensión",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Marrakech",
+          "nombre": "Riad Mogador Menara",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Media pensión",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Boumalne Dades",
+          "nombre": "Xaluca Boulmane Dades",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Media pensión",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Erfoud",
+          "nombre": "Xaluca Erfoud",
+          "categoria": "3*",
+          "noches": 1,
+          "regimen": "Media pensión",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Fez",
+          "nombre": "Zalagh Parc Palace",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Media pensión",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Tánger",
+          "nombre": "Cesar",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Media pensión",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Sevilla",
+          "nombre": "Alcora",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Lisboa",
+          "nombre": "VIP Executive Entrecampos",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Madrid",
+          "texto": "Salida en el vuelo IB 106 de las 17:50. Noche a bordo."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Madrid",
+          "texto": "Llegada, traslado al hotel y día libre."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Madrid – Toledo – Granada",
+          "texto": "Visita de Toledo y continuación a Granada."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Granada – Tánger – Assilah – Rabat",
+          "texto": "Alhambra y Generalife (entrada incluida, sujeta a disponibilidad). Cruce del Estrecho y llegada a Rabat."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Rabat – Casablanca – Marrakech",
+          "texto": "Visita de Rabat, parada en Casablanca y llegada a Marrakech."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "Marrakech",
+          "texto": "Visita de la ciudad: jardines Menara, tumbas saadíes, Koutoubia y plaza Jemaa el-Fna."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Marrakech – Ait Ben Haddou – Boumalne Dades",
+          "texto": "Cruce del Alto Atlas, kasbah de Ait Ben Haddou y valle del Dades."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Boumalne Dades – Todra – Erfoud",
+          "texto": "Gargantas del Todra y llegada a Erfoud, a las puertas del desierto."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Erfoud – Midelt – Azrou – Fez",
+          "texto": "Atlas Medio con paradas en Midelt y Azrou. Llegada a Fez."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Fez – Tánger",
+          "texto": "Visita de la medina de Fez y continuación a Tánger."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Tánger – Sevilla",
+          "texto": "Cruce del Estrecho y llegada a Sevilla."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Sevilla",
+          "texto": "Visita panorámica y paseo en barco por el Guadalquivir."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Sevilla – Mérida – Évora – Lisboa",
+          "texto": "Ruinas romanas de Mérida, parada en Évora y llegada a Lisboa."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Lisboa",
+          "texto": "Visita de la ciudad: Belém, los Jerónimos y el barrio de Alfama."
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "Lisboa – Estremoz – Cáceres – Madrid",
+          "texto": "Regreso a Madrid con paradas en Estremoz y Cáceres."
+        },
+        {
+          "dia": "Día 16",
+          "titulo": "Madrid",
+          "texto": "Visita panorámica y tarde libre."
+        },
+        {
+          "dia": "Día 17",
+          "titulo": "Madrid",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 18",
+          "titulo": "Madrid ✈ Buenos Aires",
+          "texto": "Traslado al aeropuerto para el vuelo IB 107 de las 12:15. Llegada a Ezeiza a las 19:55."
+        }
+      ],
+      "tarifas": [],
+      "id": "andalucia-marruecos-portugal",
+      "titulo": "Andalucía, Marruecos y Portugal — 16 de abril 2027",
+      "region": "europa",
+      "destinos": [
+        "Madrid",
+        "Granada",
+        "Marrakech",
+        "Fez",
+        "Sevilla",
+        "Lisboa"
+      ],
+      "resumen": "Toledo y la Alhambra, el cruce a Marruecos por Tánger, Marrakech, las kasbahs y el desierto hasta Fez, Sevilla con paseo en barco y Lisboa. Once comidas incluidas.",
+      "precio_desde": {
+        "valor": 4710,
+        "moneda": "USD",
+        "nota": "por persona en base doble — tarifa + impuestos aéreos + IVA y gastos"
+      },
+      "salida": "16 de abril 2027",
+      "vigencia": "2027-01-15",
+      "noches": 16,
+      "operador": "Julia Tours",
+      "operador_sigla": "JT",
+      "ref": "JT-2160",
+      "incluye": [
+        "Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica",
+        "1 valija de hasta 23 kg por persona en todo el recorrido",
+        "16 noches de alojamiento con desayuno en hoteles previstos o similares",
+        "Circuito en autocar con guía acompañante de habla hispana",
+        "Visitas panorámicas y entradas según itinerario",
+        "Traslados de llegada y salida",
+        "Asistencia al viajero Universal Assistance Excellence (hasta USD 150.000)",
+        "11 comidas según itinerario",
+        "Entrada a la Alhambra y Generalife (sujeta a disponibilidad)"
+      ],
+      "imagen": "assets/img/pexels/6621125-1200.jpg",
+      "imagen_alt": "Calle del zoco en la medina de Marrakech, Marruecos",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 4710
+        },
+        {
+          "base": "triple",
+          "valor": 4636
+        },
+        {
+          "base": "single",
+          "valor": 6067
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Buenos Aires (EZE) – Madrid",
+          "clase": "Económica",
+          "fecha": "16/04/2027",
+          "horario": "17:50 – 10:45 (+1)",
+          "numero": "IB 106",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        },
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Madrid – Buenos Aires (EZE)",
+          "clase": "Económica",
+          "fecha": "03/05/2027",
+          "horario": "12:15 – 19:55",
+          "numero": "IB 107",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.juliatours.com.ar/micrositio.php?id=2160",
+        "fecha": "2026-10-15",
+        "desglose": "Tarifa USD 3.867 + impuestos aéreos USD 582 + IVA y gastos USD 261 = USD 4.710. Triple USD 4.636. Single USD 6.067. Seña USD 2.300."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "No incluye percepción RG 5463 (30%) si se abona en pesos: aprox. USD 658 sobre terrestre y USD 364 sobre aéreo.",
+      "condiciones": [
+        "Precio válido comprando antes del 15 de enero de 2027 (venta anticipada).",
+        "Seña USD 2.250 por persona para reservar."
+      ],
+      "no_incluye": [
+        "Comidas y bebidas no indicadas",
+        "Tasas hoteleras y de ciudad, se pagan en destino",
+        "Propinas y gastos personales",
+        "Excursiones opcionales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Madrid",
+          "nombre": "Praga",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Granada",
+          "nombre": "Macia Condor",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Sevilla",
+          "nombre": "Silken Al-Andalus",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Lisboa",
+          "nombre": "VIP Executive Arts",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Oporto",
+          "nombre": "AC Hotel Porto",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Santiago de Compostela",
+          "nombre": "Oca Puerta del Camino",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Oviedo",
+          "nombre": "AC Hotel Oviedo Forum",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Santander",
+          "nombre": "Gran Hotel Victoria",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Zaragoza",
+          "nombre": "Exe Boston",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Barcelona",
+          "nombre": "Catalonia Park Putxet",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Valencia",
+          "nombre": "DWO Valencia",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Madrid",
+          "texto": "Salida en el vuelo IB 106 de las 17:50. Noche a bordo."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Madrid",
+          "texto": "Llegada, traslado al hotel y día libre."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Madrid – Toledo – Granada",
+          "texto": "Visita de Toledo y continuación a Granada."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Granada – Nerja – Málaga – Ronda – Sevilla",
+          "texto": "Costa del Sol, Ronda y su Tajo, y llegada a Sevilla."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Sevilla",
+          "texto": "Visita panorámica y tarde libre."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "Sevilla – Mérida – Évora – Lisboa",
+          "texto": "Mérida romana, Évora y llegada a Lisboa."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Lisboa",
+          "texto": "Visita de la ciudad y tarde libre."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Lisboa – Fátima – Oporto",
+          "texto": "Parada en el santuario de Fátima y llegada a Oporto."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Oporto – Bom Jesus – Cambados – Santiago de Compostela",
+          "texto": "Santuario de Bom Jesus, Rías Baixas y llegada a Santiago."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Santiago – Lugo – O Cebreiro – León – Oviedo",
+          "texto": "Muralla de Lugo, O Cebreiro y León. Noche en Oviedo."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Oviedo – Covadonga – Santillana del Mar – Santander",
+          "texto": "Santuario de Covadonga y Santillana del Mar."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Santander – Bilbao – La Rioja – Zaragoza",
+          "texto": "Bilbao, viñedos de La Rioja y llegada a Zaragoza."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Zaragoza – Poblet – Barcelona",
+          "texto": "Monasterio de Poblet y llegada a Barcelona."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Barcelona",
+          "texto": "Visita panorámica y tarde libre."
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "Barcelona – Peñíscola – Valencia",
+          "texto": "Castillo de Peñíscola y llegada a Valencia."
+        },
+        {
+          "dia": "Día 16",
+          "titulo": "Valencia – Madrid",
+          "texto": "Regreso a Madrid y visita panorámica."
+        },
+        {
+          "dia": "Día 17",
+          "titulo": "Madrid",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 18",
+          "titulo": "Madrid ✈ Buenos Aires",
+          "texto": "Traslado al aeropuerto para el vuelo IB 105 de las 08:45. Llegada a Ezeiza a las 16:25."
+        }
+      ],
+      "tarifas": [],
+      "id": "peninsula-iberica-madrid",
+      "titulo": "Península Ibérica con Madrid — 7 de mayo 2027",
+      "region": "europa",
+      "destinos": [
+        "Madrid",
+        "Granada",
+        "Sevilla",
+        "Lisboa",
+        "Oporto",
+        "Santiago",
+        "Santander",
+        "Barcelona",
+        "Valencia"
+      ],
+      "resumen": "La vuelta completa a España y Portugal: Andalucía, Lisboa y Oporto, Santiago de Compostela, la cornisa cantábrica, Bilbao, Zaragoza, Barcelona y Valencia. Dieciséis noches con tres comidas.",
+      "precio_desde": {
+        "valor": 4723,
+        "moneda": "USD",
+        "nota": "por persona en base doble — tarifa + impuestos aéreos + IVA y gastos"
+      },
+      "salida": "7 de mayo 2027",
+      "vigencia": "2027-01-15",
+      "noches": 16,
+      "operador": "Julia Tours",
+      "operador_sigla": "JT",
+      "ref": "JT-2181",
+      "incluye": [
+        "Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica",
+        "1 valija de hasta 23 kg por persona en todo el recorrido",
+        "16 noches de alojamiento con desayuno en hoteles previstos o similares",
+        "Circuito en autocar con guía acompañante de habla hispana",
+        "Visitas panorámicas y entradas según itinerario",
+        "Traslados de llegada y salida",
+        "Asistencia al viajero Universal Assistance Excellence (hasta USD 150.000)",
+        "3 comidas según itinerario"
+      ],
+      "imagen": "assets/img/pexels/12200742-1200.jpg",
+      "imagen_alt": "Plaza de España de Sevilla con su torre y puente de azulejos",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 4723
+        },
+        {
+          "base": "triple",
+          "valor": 4651
+        },
+        {
+          "base": "single",
+          "valor": 6195
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Buenos Aires (EZE) – Madrid",
+          "clase": "Económica",
+          "fecha": "07/05/2027",
+          "horario": "17:50 – 10:45 (+1)",
+          "numero": "IB 106",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        },
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Madrid – Buenos Aires (EZE)",
+          "clase": "Económica",
+          "fecha": "24/05/2027",
+          "horario": "08:45 – 16:25",
+          "numero": "IB 105",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.juliatours.com.ar/micrositio.php?id=2181",
+        "fecha": "2026-10-15",
+        "desglose": "Tarifa USD 3.880 + impuestos aéreos USD 583 + IVA y gastos USD 260 = USD 4.723. Triple USD 4.651. Single USD 6.195. Seña USD 2.250."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "No incluye percepción RG 5463 (30%) si se abona en pesos: aprox. USD 701 sobre terrestre y USD 353 sobre aéreo.",
+      "condiciones": [
+        "Precio válido comprando antes del 15 de enero de 2027 (venta anticipada).",
+        "Seña USD 2.200 por persona para reservar."
+      ],
+      "no_incluye": [
+        "Comidas y bebidas no indicadas",
+        "Tasas hoteleras y de ciudad, se pagan en destino",
+        "Propinas y gastos personales",
+        "Excursiones opcionales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Madrid",
+          "nombre": "Praga",
+          "categoria": "4*",
+          "noches": 4,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Granada",
+          "nombre": "Saray",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Sevilla",
+          "nombre": "Alcora",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Lisboa",
+          "nombre": "VIP Executive Entrecampos",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Oporto",
+          "nombre": "AC Hotel Porto",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Santiago de Compostela",
+          "nombre": "Oca Puerta del Camino",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Oviedo",
+          "nombre": "AC Hotel Oviedo Forum",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Santander",
+          "nombre": "Santemar",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "San Sebastián",
+          "nombre": "Mercure Monte Igueldo",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Burdeos",
+          "nombre": "Mercure Bordeaux Centre Meriadeck",
+          "categoria": "3*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Lourdes",
+          "nombre": "Alba",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Madrid",
+          "texto": "Salida en el vuelo IB 106 de las 17:50. Noche a bordo."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Madrid",
+          "texto": "Llegada, traslado al hotel y día libre."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Madrid",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Madrid",
+          "texto": "Visita panorámica y tarde libre."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Madrid – Toledo – Granada",
+          "texto": "Visita de Toledo y continuación a Granada."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "Granada – Nerja – Málaga – Ronda – Sevilla",
+          "texto": "Costa del Sol, Ronda y llegada a Sevilla."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Sevilla",
+          "texto": "Visita panorámica y tarde libre."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Sevilla – Mérida – Évora – Lisboa",
+          "texto": "Mérida, Évora y llegada a Lisboa."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Lisboa",
+          "texto": "Visita de la ciudad y tarde libre."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Lisboa – Fátima – Oporto",
+          "texto": "Santuario de Fátima y llegada a Oporto."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Oporto – Bom Jesus – Cambados – Santiago",
+          "texto": "Bom Jesus, Rías Baixas y llegada a Santiago de Compostela."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Santiago – Lugo – León – Oviedo",
+          "texto": "Lugo y León camino a Oviedo."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Oviedo – Covadonga – Santillana – Santander",
+          "texto": "Covadonga y Santillana del Mar. Noche en Santander."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Santander – Bilbao – Guernica – San Sebastián",
+          "texto": "Bilbao, Guernica y llegada a San Sebastián con pintxos."
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "San Sebastián – Hondarribia – Burdeos",
+          "texto": "Parada en Hondarribia y llegada a Burdeos."
+        },
+        {
+          "dia": "Día 16",
+          "titulo": "Burdeos – Lourdes",
+          "texto": "Llegada a Lourdes y visita del santuario."
+        },
+        {
+          "dia": "Día 17",
+          "titulo": "Lourdes – Sallent de Gállego – Zaragoza – Madrid",
+          "texto": "Cruce de los Pirineos, Zaragoza y regreso a Madrid."
+        },
+        {
+          "dia": "Día 18",
+          "titulo": "Madrid",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 19",
+          "titulo": "Madrid ✈ Buenos Aires",
+          "texto": "Traslado al aeropuerto para el vuelo IB 107 de las 12:15. Llegada a Ezeiza a las 19:55."
+        }
+      ],
+      "tarifas": [],
+      "id": "andalucia-portugal-pais-vasco-lourdes",
+      "titulo": "Andalucía, Portugal, País Vasco y Lourdes — 6 de junio 2027",
+      "region": "europa",
+      "destinos": [
+        "Madrid",
+        "Granada",
+        "Sevilla",
+        "Lisboa",
+        "Oporto",
+        "Santiago",
+        "San Sebastián",
+        "Lourdes"
+      ],
+      "resumen": "Andalucía y Portugal, el Camino por Santiago y la cornisa cantábrica, pintxos en San Sebastián, Burdeos y el santuario de Lourdes, con cuatro días en Madrid para empezar.",
+      "precio_desde": {
+        "valor": 4885,
+        "moneda": "USD",
+        "nota": "por persona en base doble — tarifa + impuestos aéreos + IVA y gastos"
+      },
+      "salida": "6 de junio 2027",
+      "vigencia": "2027-01-15",
+      "noches": 17,
+      "operador": "Julia Tours",
+      "operador_sigla": "JT",
+      "ref": "JT-2205",
+      "incluye": [
+        "Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica",
+        "1 valija de hasta 23 kg por persona en todo el recorrido",
+        "17 noches de alojamiento con desayuno en hoteles previstos o similares",
+        "Circuito en autocar con guía acompañante de habla hispana",
+        "Visitas panorámicas y entradas según itinerario",
+        "Traslados de llegada y salida",
+        "Asistencia al viajero Universal Assistance Excellence (hasta USD 150.000)",
+        "4 comidas y una degustación de pintxos según itinerario"
+      ],
+      "imagen": "assets/img/pexels/28174485-1200.jpg",
+      "imagen_alt": "Puente sobre el río Tajo al atardecer en Lisboa, Portugal",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 4885
+        },
+        {
+          "base": "triple",
+          "valor": 4807
+        },
+        {
+          "base": "single",
+          "valor": 6489
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Buenos Aires (EZE) – Madrid",
+          "clase": "Económica",
+          "fecha": "06/06/2027",
+          "horario": "17:50 – 10:45 (+1)",
+          "numero": "IB 106",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        },
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Madrid – Buenos Aires (EZE)",
+          "clase": "Económica",
+          "fecha": "24/06/2027",
+          "horario": "12:15 – 19:55",
+          "numero": "IB 107",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.juliatours.com.ar/micrositio.php?id=2205",
+        "fecha": "2026-10-15",
+        "desglose": "Tarifa USD 4.031 + impuestos aéreos USD 581 + IVA y gastos USD 273 = USD 4.885. Triple USD 4.807. Single USD 6.489. Seña USD 2.200."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "No incluye percepción RG 5463 (30%) si se abona en pesos: aprox. USD 872 sobre terrestre y USD 314 sobre aéreo.",
+      "condiciones": [
+        "Precio válido comprando antes del 15 de enero de 2027 (venta anticipada).",
+        "Seña USD 2.300 por persona para reservar."
+      ],
+      "no_incluye": [
+        "Comidas y bebidas no indicadas",
+        "Tasas hoteleras y de ciudad, se pagan en destino",
+        "Propinas y gastos personales",
+        "Excursiones opcionales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Madrid",
+          "nombre": "Gran Versalles",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Burdeos",
+          "nombre": "Ibis Styles Bordeaux Centre Meriadeck",
+          "categoria": "3*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "París",
+          "nombre": "Mercure Paris Porte de Versailles Expo",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Frankfurt",
+          "nombre": "Leonardo Royal Frankfurt (Offenbach)",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Innsbruck",
+          "nombre": "Alphotel",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Media pensión",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Venecia (Mestre)",
+          "nombre": "Belstay Venezia",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Florencia",
+          "nombre": "B&B Hotel Firenze Novoli",
+          "categoria": "3* Sup",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Roma",
+          "nombre": "Ergife Palace",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Niza",
+          "nombre": "Sheraton Nice Airport",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Barcelona",
+          "nombre": "Barcelona 505",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Madrid",
+          "texto": "Salida en el vuelo IB 106 de las 17:50. Noche a bordo."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Madrid",
+          "texto": "Llegada, traslado al hotel y día libre."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Madrid",
+          "texto": "Visita panorámica y tarde libre."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Madrid – Burgos – Burdeos",
+          "texto": "Parada en Burgos y su catedral. Noche en Burdeos."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Burdeos – Valle del Loira – París",
+          "texto": "Castillos del Loira y llegada a París."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "París",
+          "texto": "Visita panorámica y tarde libre."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "París",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "París – Boppard – Frankfurt",
+          "texto": "Crucero por el Rhin desde Boppard y llegada a Frankfurt."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Frankfurt – Rothenburg – Füssen – Innsbruck",
+          "texto": "Ruta Romántica con Rothenburg y Füssen. Cena en Innsbruck."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Innsbruck – Padua – Venecia",
+          "texto": "Parada en Padua y llegada a Venecia."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Venecia – Pisa – Florencia",
+          "texto": "Paseo en barco a San Marcos, parada en Pisa y llegada a Florencia."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Florencia – Roma",
+          "texto": "Visita de Florencia y continuación a Roma."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Roma",
+          "texto": "Visita panorámica de la Roma imperial."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Roma – Costa Azul",
+          "texto": "Viaje por la costa hasta la Costa Azul."
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "Costa Azul – Barcelona",
+          "texto": "Llegada a Barcelona y visita panorámica."
+        },
+        {
+          "dia": "Día 16",
+          "titulo": "Barcelona",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 17",
+          "titulo": "Barcelona – Zaragoza – Madrid",
+          "texto": "Parada en Zaragoza y regreso a Madrid."
+        },
+        {
+          "dia": "Día 18",
+          "titulo": "Madrid",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 19",
+          "titulo": "Madrid ✈ Buenos Aires",
+          "texto": "Traslado al aeropuerto para el vuelo IB 105 de las 08:45. Llegada a Ezeiza a las 16:25."
+        }
+      ],
+      "tarifas": [],
+      "id": "europa-esencial",
+      "titulo": "Europa Esencial — 9 de mayo 2027",
+      "region": "europa",
+      "destinos": [
+        "Madrid",
+        "París",
+        "Frankfurt",
+        "Innsbruck",
+        "Venecia",
+        "Florencia",
+        "Roma",
+        "Costa Azul",
+        "Barcelona"
+      ],
+      "resumen": "Madrid, Burdeos, París, un crucero por el Rhin hasta Frankfurt, la Ruta Romántica alemana e Innsbruck, Venecia, Florencia, Roma, la Costa Azul y Barcelona. Una vuelta a Europa en diecisiete noches.",
+      "precio_desde": {
+        "valor": 5679,
+        "moneda": "USD",
+        "nota": "por persona en base doble — tarifa + impuestos aéreos + IVA y gastos"
+      },
+      "salida": "9 de mayo 2027",
+      "vigencia": "2027-01-15",
+      "noches": 17,
+      "operador": "Julia Tours",
+      "operador_sigla": "JT",
+      "ref": "JT-2156",
+      "incluye": [
+        "Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica",
+        "1 valija de hasta 23 kg por persona en todo el recorrido",
+        "17 noches de alojamiento con desayuno en hoteles previstos o similares",
+        "Circuito en autocar con guía acompañante de habla hispana",
+        "Visitas panorámicas y entradas según itinerario",
+        "Traslados de llegada y salida",
+        "Asistencia al viajero Universal Assistance Excellence (hasta USD 150.000)",
+        "1 cena en Innsbruck",
+        "Crucero por el Rhin"
+      ],
+      "imagen": "assets/img/pexels/20659013-1200.jpg",
+      "imagen_alt": "Pueblo de montaña con casas de piedra frente a los Alpes",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 5679
+        },
+        {
+          "base": "triple",
+          "valor": 5607
+        },
+        {
+          "base": "single",
+          "valor": 7520
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Buenos Aires (EZE) – Madrid",
+          "clase": "Económica",
+          "fecha": "09/05/2027",
+          "horario": "17:50 – 10:45 (+1)",
+          "numero": "IB 106",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        },
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Madrid – Buenos Aires (EZE)",
+          "clase": "Económica",
+          "fecha": "27/05/2027",
+          "horario": "08:45 – 16:25",
+          "numero": "IB 105",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.juliatours.com.ar/micrositio.php?id=2156",
+        "fecha": "2026-10-15",
+        "desglose": "Tarifa USD 4.772 + impuestos aéreos USD 581 + IVA y gastos USD 326 = USD 5.679. Triple USD 5.607. Single USD 7.520. Seña USD 2.300."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "No incluye percepción RG 5463 (30%) si se abona en pesos: aprox. USD 620 sobre terrestre y USD 359 sobre aéreo.",
+      "condiciones": [
+        "Programa en hoteles de categoría turista, varios en las afueras de las ciudades.",
+        "Las tasas hoteleras obligatorias (USD 94 + USD 2 de gastos) se abonan al reservar y están sumadas al precio publicado.",
+        "Precio válido hasta la fecha de salida.",
+        "Seña USD 2.100 por persona para reservar.",
+        "Bases triple y single: consultar."
+      ],
+      "no_incluye": [
+        "Comidas y bebidas no indicadas",
+        "Tasas hoteleras y de ciudad, se pagan en destino",
+        "Propinas y gastos personales",
+        "Excursiones opcionales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Madrid",
+          "nombre": "Hampton by Hilton Alcobendas",
+          "categoria": "3*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Burdeos",
+          "nombre": "B&B Hotel Bordeaux Bègles",
+          "categoria": "3*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "París",
+          "nombre": "Ibis Styles Paris Orly",
+          "categoria": "3*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Mulhouse",
+          "nombre": "Brit Hotel Mulhouse Centre",
+          "categoria": "3*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Innsbruck",
+          "nombre": "Alphotel",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Venecia (Noventa di Piave)",
+          "nombre": "Base Hotel",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Florencia (Sesto Fiorentino)",
+          "nombre": "The Gate",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Roma",
+          "nombre": "Black Hotel",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Costa Azul",
+          "nombre": "Ibis Sophia Antipolis",
+          "categoria": "3*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Barcelona",
+          "nombre": "Frontair Congress",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Madrid",
+          "texto": "Salida en el vuelo IB 106 de las 17:50. Noche a bordo."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Madrid",
+          "texto": "Llegada, traslado al hotel y día libre."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Madrid",
+          "texto": "Visita panorámica y tarde libre."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Madrid – San Sebastián – Burdeos",
+          "texto": "Parada en San Sebastián y noche en Burdeos."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Burdeos – Valle del Loira – Blois – París",
+          "texto": "Castillos del Loira, parada en Blois y llegada a París."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "París",
+          "texto": "Visita panorámica y tarde libre."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "París",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "París – Mulhouse",
+          "texto": "Viaje a Alsacia. Noche en Mulhouse."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Mulhouse – Zúrich – Innsbruck",
+          "texto": "Parada en Zúrich y llegada a Innsbruck."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Innsbruck – Verona – Venecia",
+          "texto": "Parada en Verona y llegada a Venecia."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Venecia – Florencia",
+          "texto": "Paseo en barco a San Marcos y continuación a Florencia."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Florencia – Asís – Roma",
+          "texto": "Visita de Florencia, parada en Asís y llegada a Roma."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Roma",
+          "texto": "Visita panorámica de la Roma imperial."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Roma",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "Roma – Pisa – Costa Azul",
+          "texto": "Torre de Pisa y llegada a la Costa Azul."
+        },
+        {
+          "dia": "Día 16",
+          "titulo": "Costa Azul – Barcelona",
+          "texto": "Llegada a Barcelona y visita panorámica."
+        },
+        {
+          "dia": "Día 17",
+          "titulo": "Barcelona – Zaragoza – Madrid",
+          "texto": "Parada en Zaragoza y regreso a Madrid."
+        },
+        {
+          "dia": "Día 18",
+          "titulo": "Madrid ✈ Buenos Aires",
+          "texto": "Traslado al aeropuerto para el vuelo IB 107 de las 12:15. Llegada a Ezeiza a las 19:55."
+        }
+      ],
+      "tarifas": [],
+      "id": "magicamente-europa",
+      "titulo": "Mágicamente Europa — 9 de abril 2027",
+      "region": "europa",
+      "destinos": [
+        "Madrid",
+        "París",
+        "Innsbruck",
+        "Venecia",
+        "Florencia",
+        "Roma",
+        "Costa Azul",
+        "Barcelona"
+      ],
+      "resumen": "El gran circuito europeo en versión económica, con hoteles de categoría turista: Madrid, Burdeos, París, Alsacia, Zúrich e Innsbruck, Venecia, Florencia, Roma, la Costa Azul y Barcelona.",
+      "precio_desde": {
+        "valor": 4622,
+        "moneda": "USD",
+        "nota": "por persona en base doble — tarifa + impuestos + IVA/gastos + tasas hoteleras"
+      },
+      "salida": "9 de abril 2027",
+      "vigencia": "2027-04-09",
+      "noches": 16,
+      "operador": "Julia Tours",
+      "operador_sigla": "JT",
+      "ref": "JT-2193",
+      "incluye": [
+        "Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica",
+        "1 valija de hasta 23 kg por persona en todo el recorrido",
+        "16 noches de alojamiento con desayuno en hoteles previstos o similares",
+        "Circuito en autocar con guía acompañante de habla hispana",
+        "Visitas panorámicas y entradas según itinerario",
+        "Traslados de llegada y salida",
+        "Asistencia al viajero Universal Assistance Excellence (hasta USD 150.000)"
+      ],
+      "imagen": "assets/img/pexels/532826-1200.jpg",
+      "imagen_alt": "La Torre Eiffel vista desde los jardines del Trocadero, París",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 4622
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Buenos Aires (EZE) – Madrid",
+          "clase": "Económica",
+          "fecha": "09/04/2027",
+          "horario": "17:50 – 10:45 (+1)",
+          "numero": "IB 106",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        },
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Madrid – Buenos Aires (EZE)",
+          "clase": "Económica",
+          "fecha": "26/04/2027",
+          "horario": "12:15 – 19:55",
+          "numero": "IB 107",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.juliatours.com.ar/micrositio.php?id=2193",
+        "fecha": "2026-10-15",
+        "desglose": "Tarifa USD 3.696 + impuestos aéreos USD 582 + IVA y gastos USD 248 = USD 4.526, más tasas hoteleras obligatorias USD 94 + USD 2 de gastos (se pagan al reservar) = USD 4.622. Triple y single: consultar. Seña USD 2.100."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "No incluye percepción RG 5463 (30%) si se abona en pesos: aprox. USD 766 sobre terrestre y USD 353 sobre aéreo.",
+      "condiciones": [
+        "Precio válido hasta la fecha de salida.",
+        "Seña USD 2.200 por persona para reservar."
+      ],
+      "no_incluye": [
+        "Comidas y bebidas no indicadas",
+        "Tasas hoteleras y de ciudad, se pagan en destino",
+        "Propinas y gastos personales",
+        "Excursiones opcionales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Madrid",
+          "nombre": "Chamartín The One",
+          "categoria": "4*",
+          "noches": 5,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Burdeos",
+          "nombre": "Ibis Styles Bordeaux Gare Saint-Jean",
+          "categoria": "3*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "París",
+          "nombre": "Mercure Paris La Défense",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Zúrich",
+          "nombre": "Dorint Airport Zurich",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Venecia (Mestre)",
+          "nombre": "LH Hotel Sirio",
+          "categoria": "3*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Florencia (Prato)",
+          "nombre": "Hotel Miró",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Roma",
+          "nombre": "Cristoforo Colombo",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Cannes",
+          "nombre": "Staybridge Suites Cannes",
+          "categoria": "",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Barcelona",
+          "nombre": "Catalonia Barcelona Plaza",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Madrid",
+          "texto": "Salida en el vuelo IB 106 de las 17:50. Noche a bordo."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Madrid",
+          "texto": "Llegada, traslado al hotel y día libre."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Madrid",
+          "texto": "Visita panorámica y tarde libre."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Madrid – Burgos – Burdeos",
+          "texto": "Parada en Burgos y noche en Burdeos."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Burdeos – Blois – París",
+          "texto": "Valle del Loira con parada en Blois y llegada a París."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "París",
+          "texto": "Visita panorámica y tarde libre."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "París",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "París – Zúrich",
+          "texto": "Viaje a Suiza y llegada a Zúrich."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Zúrich – Milán – Véneto",
+          "texto": "Parada en Milán, con el Duomo, y noche en el Véneto."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Venecia – Florencia",
+          "texto": "Paseo en barco a San Marcos y continuación a Florencia."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Florencia – Roma",
+          "texto": "Visita de Florencia y llegada a Roma."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Roma",
+          "texto": "Visita panorámica de la Roma imperial."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Roma",
+          "texto": "Día libre."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Roma – Pisa – Costa Azul",
+          "texto": "Torre de Pisa y llegada a la Costa Azul."
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "Costa Azul – Barcelona",
+          "texto": "Llegada a Barcelona y visita panorámica."
+        },
+        {
+          "dia": "Día 16",
+          "titulo": "Barcelona – Zaragoza – Madrid",
+          "texto": "Parada en Zaragoza y regreso a Madrid."
+        },
+        {
+          "dia": "Días 17 y 18",
+          "titulo": "Madrid",
+          "texto": "Días libres."
+        },
+        {
+          "dia": "Día 19",
+          "titulo": "Madrid ✈ Buenos Aires",
+          "texto": "Traslado al aeropuerto para el vuelo IB 107 de las 12:15. Llegada a Ezeiza a las 19:55."
+        }
+      ],
+      "tarifas": [],
+      "id": "espana-francia-suiza-italia",
+      "titulo": "España, Francia, Suiza e Italia — 4 de abril 2027",
+      "region": "europa",
+      "destinos": [
+        "Madrid",
+        "Burdeos",
+        "París",
+        "Zúrich",
+        "Venecia",
+        "Florencia",
+        "Roma",
+        "Costa Azul",
+        "Barcelona"
+      ],
+      "resumen": "Madrid y Burgos, Burdeos, dos días en París, Zúrich, Milán y el Véneto, Venecia, Florencia, dos noches en Roma, la Costa Azul y Barcelona, con tres días en Madrid para cerrar.",
+      "precio_desde": {
+        "valor": 5187,
+        "moneda": "USD",
+        "nota": "por persona en base doble — tarifa + impuestos aéreos + IVA y gastos"
+      },
+      "salida": "4 de abril 2027",
+      "vigencia": "2027-04-04",
+      "noches": 17,
+      "operador": "Julia Tours",
+      "operador_sigla": "JT",
+      "ref": "JT-2253",
+      "incluye": [
+        "Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica",
+        "1 valija de hasta 23 kg por persona en todo el recorrido",
+        "17 noches de alojamiento con desayuno en hoteles previstos o similares",
+        "Circuito en autocar con guía acompañante de habla hispana",
+        "Visitas panorámicas y entradas según itinerario",
+        "Traslados de llegada y salida",
+        "Asistencia al viajero Universal Assistance Excellence (hasta USD 150.000)"
+      ],
+      "imagen": "assets/img/pexels/14897462-1200.jpg",
+      "imagen_alt": "Edificios históricos de la Gran Vía de Madrid, España",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 5187
+        },
+        {
+          "base": "triple",
+          "valor": 5052
+        },
+        {
+          "base": "single",
+          "valor": 6619
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Buenos Aires (EZE) – Madrid",
+          "clase": "Económica",
+          "fecha": "04/04/2027",
+          "horario": "17:50 – 10:45 (+1)",
+          "numero": "IB 106",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        },
+        {
+          "aerolinea": "Iberia",
+          "ruta": "Madrid – Buenos Aires (EZE)",
+          "clase": "Económica",
+          "fecha": "22/04/2027",
+          "horario": "12:15 – 19:55",
+          "numero": "IB 107",
+          "equipaje": "1 valija de hasta 23 kg por persona en todo el recorrido"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.juliatours.com.ar/micrositio.php?id=2253",
+        "fecha": "2026-10-15",
+        "desglose": "Tarifa USD 4.313 + impuestos aéreos USD 581 + IVA y gastos USD 293 = USD 5.187. Triple USD 5.052. Single USD 6.619. Seña USD 2.200."
+      }
     }
   ]
 }
