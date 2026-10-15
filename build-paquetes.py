@@ -1492,6 +1492,18 @@ RS_CAR_CSS = """<style>
 @media(min-width:720px){.rsC-track{gap:18px}.rsC-slide{flex-basis:calc((100% - 18px)/2)}}
 @media(min-width:1024px){.rsC-nav{display:flex}.rsC-track{margin-left:-2px;margin-right:-2px;padding-left:2px;padding-right:2px;scroll-padding-inline:2px}}
 @media(min-width:1100px){.rsC-track{gap:22px}.rsC-slide{flex-basis:calc((100% - 44px)/3)}}
+/* Escritorio (>=1280): la seccion entra completa en una pantalla (zoom 100%) */
+@media(min-width:1280px) and (min-height:560px){
+  #pasajeros{--pt:clamp(12px,2.6vh,44px);--pb:clamp(16px,3.4vh,56px);min-height:100vh;min-height:100svh;padding:calc(var(--nav-h) + var(--pt)) 0 var(--pb);display:flex;align-items:center}
+  #pasajeros>.wrap{width:100%}
+  #pasajeros .kicker{margin-bottom:clamp(8px,1.8vh,16px)}
+  #pasajeros .h2{font-size:clamp(34px,min(5vw,8.5vh),72px)}
+  #pasajeros .rsC-track{margin-top:clamp(14px,3.2vh,42px)}
+  #pasajeros .rsG-card{padding:clamp(18px,2.6vh,30px) clamp(20px,2.2vw,30px);gap:clamp(10px,1.6vh,16px)}
+  #pasajeros .rsG-card p{font-size:clamp(13.5px,1.8vh,15.5px);line-height:1.5;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:9;overflow:hidden}
+  #pasajeros .rsC-bar{margin-top:clamp(14px,2.6vh,30px)}
+  #pasajeros .rsG-more{margin-top:clamp(14px,3vh,40px)}
+}
 </style>"""
 RS_CAR_JS = """<script>
 (function(){

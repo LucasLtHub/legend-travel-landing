@@ -21,9 +21,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<script>document.write('<link rel="stylesheet" href="assets/design.css?v=7">')</script>
-<noscript><link rel="stylesheet" href="/assets/design.css?v=7"></noscript>
+<script>document.write('<link rel="stylesheet" href="assets/design.css?v=8">')</script>
+<noscript><link rel="stylesheet" href="/assets/design.css?v=8"></noscript>
 <style>
+/* Escritorio (>=1280): cada apartado entra completo en una pantalla (zoom 100%) */
+@media(min-width:1280px) and (min-height:560px){
+  #por-que,#destinos{min-height:100vh;min-height:100svh;padding:calc(var(--nav-h) + clamp(14px,3vh,44px)) 0 clamp(18px,4vh,56px);display:flex;align-items:center}
+  #por-que>.mx,#destinos>.mx{width:100%}
+  #por-que .h2,#destinos .h2{font-size:clamp(32px,min(4.4vw,7vh),64px)}
+  #por-que>.mx>.rv{margin-bottom:clamp(20px,4vh,56px)!important}
+  #por-que .benefits-grid{grid-template-columns:repeat(4,1fr)}
+  #por-que .benefit-card{padding-top:clamp(14px,2.4vh,28px)}
+  #destinos>.mx>.rv{margin-bottom:clamp(16px,3vh,40px)!important}
+  #destinos .dest-tags{margin-top:clamp(14px,2.4vh,28px)}
+}
+
 .hero-media .scene{background-image:url('assets/img/pexels/4858577-1800.jpg');background-position:center 30%}
 </style>
 <script>document.write('<link rel="preload" as="image" href="assets/img/pexels/4858577-1800.jpg" fetchpriority="high">')</script>
@@ -195,12 +207,14 @@
   <div class="mx">
     <div class="rv">
       <p class="kicker light">Medios de pago</p>
-      <h2 class="h2">Pag&#225; como <em>m&#225;s te convenga.</em></h2>
-      <div class="fin-mp" style="display:grid;gap:22px 40px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));max-width:720px;margin:28px auto 0;text-align:left">
-        <div><b style="display:block;margin-bottom:8px">Viajes internacionales</b><ul style="margin:0;padding-left:1.1em;line-height:1.6"><li>Efectivo en dólares billete (consultar percepciones).</li><li>Transferencia en dólares.</li></ul></div>
-        <div><b style="display:block;margin-bottom:8px">Viajes nacionales</b><ul style="margin:0;padding-left:1.1em;line-height:1.6"><li>Efectivo en pesos.</li><li>Transferencia en pesos.</li><li>Tarjeta de crédito (consultar cuotas sin interés vigentes).</li></ul></div>
+      <h2 class="h2">Pagá como <em>más te convenga.</em></h2>
+      <dl class="fiP">
+        <div class="fiP-row"><dt>Internacionales</dt><dd>Efectivo en dólares billete (consultar percepciones).<br>Transferencia en dólares.</dd></div>
+        <div class="fiP-row"><dt>Nacionales</dt><dd>Efectivo en pesos.<br>Transferencia en pesos.<br>Tarjeta de crédito (consultar cuotas sin interés vigentes).</dd></div>
+      </dl>
+      <div class="fiR">
+        <div class="fiR-it"><b>1 mes</b><span><strong>Viajes internacionales.</strong> Nuestros viajes internacionales, por lo general, se pueden reservar con una seña y abonar el saldo restante hasta un mes antes de la salida. Tu asesora te va a dar más información sobre las posibilidades de pago al momento de la reserva.</span></div>
       </div>
-      <p class="lead" style="margin-top:24px">Nuestros viajes internacionales, por lo general, se pueden reservar con una seña y abonar el saldo restante hasta un mes antes de la salida. Tu asesora te va a dar más información sobre las posibilidades de pago al momento de la reserva.</p>
     </div>
     <a class="btn-white rv" href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20quiero%20armar%20un%20viaje%20a%20medida" target="_blank" rel="noopener noreferrer">Consultar mi viaje a medida<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left:8px"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
   </div>
