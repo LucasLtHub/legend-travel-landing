@@ -88,6 +88,11 @@ Hay lugar para 4 vuelos: vuelo1, vuelo2, vuelo3 y vuelo4. Cada uno tiene:
 
 "Sí" se muestra en la web como "Incluido", y "No" como "No incluido".
 
+### Sigla del operador
+Columna `operador_sigla`: dos letras (KM = King Midas, JT = Julia Tours, CC = Cuarto Continente, PI = Piamonte).
+Es lo único del operador que se ve en la web: sale chiquita debajo del precio, sin nombre ni link.
+Las columnas `operador` y `ref` siguen siendo internas.
+
 ### Foto de portada
 
 En **foto_portada** va la foto grande de arriba de la página del paquete. Puede ser:
