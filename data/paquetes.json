@@ -9395,6 +9395,1012 @@
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 4.313 + impuestos aéreos USD 581 + IVA y gastos USD 293 = USD 5.187. Triple USD 5.052. Single USD 6.619. Seña USD 2.200."
       }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
+      "condiciones": [
+        "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
+        "Precio válido hasta la fecha de salida.",
+        "No incluye traslados ni excursiones; se cotizan aparte."
+      ],
+      "no_incluye": [
+        "Comidas no indicadas",
+        "Excursiones no indicadas",
+        "Gastos personales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Mendoza",
+          "nombre": "Hotel Cordón del Plata",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "Standard",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "escapada-mendoza",
+      "titulo": "Escapada a Mendoza — 27 de octubre 2026",
+      "region": "argentina",
+      "destinos": [
+        "Mendoza"
+      ],
+      "resumen": "Tres noches en Mendoza con vuelos directos de Aerolíneas Argentinas y hotel con desayuno en pleno centro. Viñedos, montaña y buena mesa, sin complicaciones.",
+      "precio_desde": {
+        "valor": 567676,
+        "moneda": "ARS",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "27 de octubre 2026",
+      "vigencia": "2026-10-27",
+      "noches": 3,
+      "operador": "Cuarto Continente",
+      "operador_sigla": "CC",
+      "ref": "CC-22256231",
+      "incluye": [
+        "Aéreos Buenos Aires / Mendoza / Buenos Aires con Aerolíneas Argentinas, tarifa Flex",
+        "1 valija en bodega (1 PC) + equipaje de mano",
+        "3 noches en Hotel Cordón del Plata con desayuno",
+        "Asistencia al viajero nacional (cobertura ARS 2.000.000)"
+      ],
+      "imagen": "assets/img/pexels/19046646-1200.jpg",
+      "imagen_alt": "Viñedos de Mendoza con la cordillera de los Andes al fondo",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 567676
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Buenos Aires (AEP) – Mendoza",
+          "clase": "Económica (FLEX)",
+          "fecha": "27/10/2026",
+          "horario": "07:40 – 09:40",
+          "numero": "AR 1402",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        },
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Mendoza – Buenos Aires (AEP)",
+          "clase": "Económica (FLEX)",
+          "fecha": "30/10/2026",
+          "horario": "07:30 – 09:10",
+          "numero": "AR 1401",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://cuartocontinente.com/es/idea/22256231/escapada-a-mendoza?country=AR",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
+      "condiciones": [
+        "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
+        "Precio válido hasta la fecha de salida.",
+        "No incluye traslados ni excursiones; se cotizan aparte."
+      ],
+      "no_incluye": [
+        "Comidas no indicadas",
+        "Excursiones no indicadas",
+        "Gastos personales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Ushuaia",
+          "nombre": "Del Bosque Apart & Hotel",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "ushuaia",
+      "titulo": "Ushuaia — 16 de noviembre 2026",
+      "region": "argentina",
+      "destinos": [
+        "Ushuaia"
+      ],
+      "resumen": "Tres noches en el fin del mundo con vuelos directos y apart hotel con desayuno. Canal Beagle, Parque Nacional Tierra del Fuego y la primavera austral.",
+      "precio_desde": {
+        "valor": 949630,
+        "moneda": "ARS",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "16 de noviembre 2026",
+      "vigencia": "2026-11-16",
+      "noches": 3,
+      "operador": "Cuarto Continente",
+      "operador_sigla": "CC",
+      "ref": "CC-22203065",
+      "incluye": [
+        "Aéreos Buenos Aires / Ushuaia / Buenos Aires con Aerolíneas Argentinas, tarifa Flex",
+        "1 valija en bodega (1 PC) + equipaje de mano",
+        "3 noches en Del Bosque Apart & Hotel con desayuno",
+        "Asistencia al viajero nacional (cobertura ARS 2.000.000)"
+      ],
+      "imagen": "assets/img/pexels/31305759-1200.jpg",
+      "imagen_alt": "Ushuaia de noche frente al canal Beagle",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 949630
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Buenos Aires (AEP) – Ushuaia",
+          "clase": "Económica (FLEX)",
+          "fecha": "16/11/2026",
+          "horario": "05:50 – 09:30",
+          "numero": "AR 1886",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        },
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Ushuaia – Buenos Aires (AEP)",
+          "clase": "Económica (FLEX)",
+          "fecha": "19/11/2026",
+          "horario": "08:20 – 11:50",
+          "numero": "AR 1871",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://cuartocontinente.com/es/idea/22203065/ushuaia?country=AR",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
+      "condiciones": [
+        "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
+        "Precio válido hasta la fecha de salida.",
+        "No incluye traslados ni excursiones; se cotizan aparte."
+      ],
+      "no_incluye": [
+        "Comidas no indicadas",
+        "Excursiones no indicadas",
+        "Gastos personales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Bariloche",
+          "nombre": "Hotel Nevada",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "bariloche-lo-tiene-todo",
+      "titulo": "Bariloche lo tiene todo — 27 de octubre 2026",
+      "region": "argentina",
+      "destinos": [
+        "Bariloche"
+      ],
+      "resumen": "Tres noches en Bariloche con vuelos directos y hotel con desayuno. Lagos, bosques, chocolate y el Circuito Chico a un paso.",
+      "precio_desde": {
+        "valor": 651624,
+        "moneda": "ARS",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "27 de octubre 2026",
+      "vigencia": "2026-10-27",
+      "noches": 3,
+      "operador": "Cuarto Continente",
+      "operador_sigla": "CC",
+      "ref": "CC-40420928",
+      "incluye": [
+        "Aéreos Buenos Aires / Bariloche / Buenos Aires con Aerolíneas Argentinas, tarifa Flex",
+        "1 valija en bodega (1 PC) + equipaje de mano",
+        "3 noches en Hotel Nevada con desayuno",
+        "Asistencia al viajero nacional (cobertura ARS 2.000.000)"
+      ],
+      "imagen": "assets/img/pexels/14866540-1600.jpg",
+      "imagen_alt": "Lago y montañas en la Patagonia argentina",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 651624
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Buenos Aires (AEP) – Bariloche",
+          "clase": "Económica (FLEX)",
+          "fecha": "27/10/2026",
+          "horario": "04:35 – 07:00",
+          "numero": "AR 1680",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        },
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Bariloche – Buenos Aires (AEP)",
+          "clase": "Económica (FLEX)",
+          "fecha": "30/10/2026",
+          "horario": "11:55 – 14:00",
+          "numero": "AR 1681",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://cuartocontinente.com/es/idea/40420928/bariloche-lo-tiene-todo?country=AR",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
+      "condiciones": [
+        "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
+        "Precio válido hasta la fecha de salida.",
+        "Circuito regular con salidas los lunes."
+      ],
+      "no_incluye": [
+        "Comidas no indicadas",
+        "Excursiones no indicadas",
+        "Gastos personales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "San Miguel de Tucumán",
+          "nombre": "Hotel Francia",
+          "categoria": "",
+          "noches": 1,
+          "regimen": "Desayuno continental",
+          "habitacion": "Master",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Cafayate",
+          "nombre": "Hotel Asturias",
+          "categoria": "",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Salta",
+          "nombre": "Altos de Balcarce",
+          "categoria": "",
+          "noches": 4,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Tucumán",
+          "texto": "Vuelo AR 1468 de las 04:55. Llegada y traslado al hotel. Inicio del circuito."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Tucumán – Cafayate",
+          "texto": "Viaje por los Valles Calchaquíes hasta Cafayate."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Cafayate – Salta",
+          "texto": "Continuación a Salta por la Quebrada de las Conchas."
+        },
+        {
+          "dia": "Días 4 a 6",
+          "titulo": "Salta y excursiones",
+          "texto": "Excursiones del circuito desde Salta."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Salta ✈ Buenos Aires",
+          "texto": "Traslado al aeropuerto para el vuelo AR 1489 de las 08:05."
+        }
+      ],
+      "tarifas": [],
+      "id": "vuelta-norte-argentino",
+      "titulo": "Vuelta al norte argentino — 16 de noviembre 2026",
+      "region": "argentina",
+      "destinos": [
+        "Tucumán",
+        "Cafayate",
+        "Salta"
+      ],
+      "resumen": "Un circuito de seis noches que entra por Tucumán y sale por Salta: los Valles Calchaquíes, Cafayate y sus bodegas, y cuatro noches en Salta para la Quebrada de Humahuaca y Cachi. Con traslados y excursiones.",
+      "precio_desde": {
+        "valor": 1280826,
+        "moneda": "ARS",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "16 de noviembre 2026",
+      "vigencia": "2026-11-16",
+      "noches": 6,
+      "operador": "Cuarto Continente",
+      "operador_sigla": "CC",
+      "ref": "CC-24058473",
+      "incluye": [
+        "Aéreo Buenos Aires / Tucumán y Salta / Buenos Aires con Aerolíneas Argentinas, tarifa Flex",
+        "1 valija en bodega (1 PC) + equipaje de mano",
+        "1 noche en Tucumán, 1 en Cafayate y 4 en Salta con desayuno",
+        "Circuito Vuelta al norte: traslados de llegada y salida y excursiones (salidas regulares los lunes)",
+        "Asistencia al viajero nacional (cobertura ARS 2.000.000)"
+      ],
+      "imagen": "assets/img/pexels/13467821-1200.jpg",
+      "imagen_alt": "Cerros de colores en la Quebrada de las Conchas, Salta",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 1280826
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Buenos Aires (AEP) – Tucumán",
+          "clase": "Económica (FLEX)",
+          "fecha": "16/11/2026",
+          "horario": "04:55 – 06:55",
+          "numero": "AR 1468",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        },
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Salta – Buenos Aires (AEP)",
+          "clase": "Económica (FLEX)",
+          "fecha": "22/11/2026",
+          "horario": "08:05 – 10:10",
+          "numero": "AR 1489",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://cuartocontinente.com/es/idea/24058473/vuelta-al-norte-argentino?country=AR",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
+      "condiciones": [
+        "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
+        "Precio válido hasta la fecha de salida.",
+        "No incluye traslados ni excursiones; se cotizan aparte."
+      ],
+      "no_incluye": [
+        "Comidas no indicadas",
+        "Excursiones no indicadas",
+        "Gastos personales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Ushuaia",
+          "nombre": "Hotel Rosa de los Vientos",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "El Calafate",
+          "nombre": "Kapenke Hotel",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "ushuaia-el-calafate",
+      "titulo": "Ushuaia & El Calafate — 24 de noviembre 2026",
+      "region": "argentina",
+      "destinos": [
+        "Ushuaia",
+        "El Calafate"
+      ],
+      "resumen": "Tres noches en Ushuaia y tres en El Calafate, con los vuelos de Aerolíneas Argentinas entre ambas ciudades. Canal Beagle y glaciar Perito Moreno en un solo viaje.",
+      "precio_desde": {
+        "valor": 1342389,
+        "moneda": "ARS",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "24 de noviembre 2026",
+      "vigencia": "2026-11-24",
+      "noches": 6,
+      "operador": "Cuarto Continente",
+      "operador_sigla": "CC",
+      "ref": "CC-22204583",
+      "incluye": [
+        "Aéreos Buenos Aires / Ushuaia / El Calafate / Buenos Aires con Aerolíneas Argentinas, tarifa Flex",
+        "1 valija en bodega (1 PC) + equipaje de mano",
+        "3 noches en Ushuaia y 3 en El Calafate con desayuno",
+        "Asistencia al viajero nacional (cobertura ARS 2.000.000)"
+      ],
+      "imagen": "assets/img/pexels/4042403-1200.jpg",
+      "imagen_alt": "Frente del glaciar Perito Moreno, El Calafate",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 1342389
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Buenos Aires (AEP) – Ushuaia",
+          "clase": "Económica (FLEX)",
+          "fecha": "24/11/2026",
+          "horario": "05:05 – 08:45",
+          "numero": "AR 1876",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        },
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Ushuaia – El Calafate",
+          "clase": "Económica (FLEX)",
+          "fecha": "27/11/2026",
+          "horario": "09:20 – 10:40",
+          "numero": "AR 1895",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        },
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "El Calafate – Buenos Aires (AEP)",
+          "clase": "Económica (FLEX)",
+          "fecha": "30/11/2026",
+          "horario": "18:40 – 21:40",
+          "numero": "AR 1899",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://cuartocontinente.com/es/idea/22204583/ushuaia-el-calafate?country=AR",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
+      "condiciones": [
+        "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
+        "Precio válido hasta la fecha de salida.",
+        "No incluye traslados ni excursiones; se cotizan aparte."
+      ],
+      "no_incluye": [
+        "Comidas no indicadas",
+        "Excursiones no indicadas",
+        "Gastos personales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Puerto Madryn",
+          "nombre": "Parry Hotel",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "puerto-madryn-escapada",
+      "titulo": "Puerto Madryn — 23 de noviembre 2026",
+      "region": "argentina",
+      "destinos": [
+        "Puerto Madryn"
+      ],
+      "resumen": "Tres noches en Puerto Madryn con vuelos directos y hotel con desayuno. Noviembre es temporada de ballenas en Península Valdés.",
+      "precio_desde": {
+        "valor": 676299,
+        "moneda": "ARS",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "23 de noviembre 2026",
+      "vigencia": "2026-11-23",
+      "noches": 3,
+      "operador": "Cuarto Continente",
+      "operador_sigla": "CC",
+      "ref": "CC-37028317",
+      "incluye": [
+        "Aéreos Buenos Aires / Puerto Madryn / Buenos Aires con Aerolíneas Argentinas, tarifa Flex",
+        "1 valija en bodega (1 PC) + equipaje de mano",
+        "3 noches en Parry Hotel con desayuno",
+        "Asistencia al viajero nacional (cobertura ARS 2.000.000)"
+      ],
+      "imagen": "assets/img/pexels/14019374-1600.jpg",
+      "imagen_alt": "Ballena franca austral saliendo del agua en Península Valdés",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 676299
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Buenos Aires (AEP) – Puerto Madryn",
+          "clase": "Económica (FLEX)",
+          "fecha": "23/11/2026",
+          "horario": "16:00 – 18:05",
+          "numero": "AR 1812",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        },
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Puerto Madryn – Buenos Aires (AEP)",
+          "clase": "Económica (FLEX)",
+          "fecha": "26/11/2026",
+          "horario": "19:05 – 20:55",
+          "numero": "AR 1813",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://cuartocontinente.com/es/idea/37028317/puerto-madryn?country=AR",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Media pensión",
+      "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
+      "condiciones": [
+        "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
+        "Precio válido hasta la fecha de salida.",
+        "La tarifa aérea Base no incluye valija en bodega.",
+        "El precio publicado por el operador corresponde a 2 adultos y 2 niños; consultar valor en base doble."
+      ],
+      "no_incluye": [
+        "Comidas no indicadas",
+        "Excursiones no indicadas",
+        "Gastos personales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Colonia Carlos Pellegrini",
+          "nombre": "Posada Ypa Sapukai",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Media pensión",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "esteros-del-ibera",
+      "titulo": "Esteros del Iberá — 23 de noviembre 2026",
+      "region": "argentina",
+      "destinos": [
+        "Posadas",
+        "Esteros del Iberá"
+      ],
+      "resumen": "Tres noches en una posada de Carlos Pellegrini con media pensión y traslado privado desde Posadas. Yacarés, carpinchos y más de 300 especies de aves en uno de los humedales más grandes del mundo.",
+      "precio_desde": {
+        "valor": 1323740,
+        "moneda": "ARS",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "23 de noviembre 2026",
+      "vigencia": "2026-11-23",
+      "noches": 3,
+      "operador": "Cuarto Continente",
+      "operador_sigla": "CC",
+      "ref": "CC-64460563",
+      "incluye": [
+        "Aéreos Buenos Aires / Posadas / Buenos Aires con Aerolíneas Argentinas, tarifa Base",
+        "Equipaje: 1 bolso de mano (sin valija en bodega)",
+        "Traslado privado Posadas – Colonia Carlos Pellegrini – Posadas",
+        "3 noches en Posada Ypa Sapukai con media pensión",
+        "Asistencia al viajero nacional (cobertura ARS 2.000.000)"
+      ],
+      "imagen": "assets/img/pexels/28939015-1200.jpg",
+      "imagen_alt": "Muelle y bote sobre la laguna de los Esteros del Iberá al atardecer",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 1323740
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Buenos Aires (AEP) – Posadas",
+          "clase": "Económica (Base)",
+          "fecha": "23/11/2026",
+          "horario": "13:50 – 15:30",
+          "numero": "AR 1764",
+          "equipaje": "1 bolso de mano"
+        },
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Posadas – Buenos Aires (AEP)",
+          "clase": "Económica (Base)",
+          "fecha": "26/11/2026",
+          "horario": "21:45 – 23:25",
+          "numero": "AR 1769",
+          "equipaje": "1 bolso de mano"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://cuartocontinente.com/es/idea/64460563/esteros-del-ibera?country=AR",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos y 2 niños (incluye impuestos). La ficha no publica valor en base doble: se carga el publicado y se marca para revisión."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
+      "condiciones": [
+        "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
+        "Precio válido hasta la fecha de salida.",
+        "Salidas diarias; la fecha y el precio de ejemplo corresponden al 17 de noviembre de 2026. El precio publicado por el operador corresponde a 1 adulto; consultar valor en base doble."
+      ],
+      "no_incluye": [
+        "Comidas no indicadas",
+        "Excursiones no indicadas",
+        "Gastos personales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "San Juan",
+          "nombre": "America Apart Hotel",
+          "categoria": "",
+          "noches": 2,
+          "regimen": "Desayuno buffet",
+          "habitacion": "Standard",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Valle Fértil",
+          "nombre": "Hostería Valle Fértil",
+          "categoria": "",
+          "noches": 1,
+          "regimen": "Media pensión",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ San Juan",
+          "texto": "Vuelo AR 1444 de las 07:45. Traslado al hotel e inicio del circuito."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "San Juan – Valle Fértil",
+          "texto": "Viaje a Valle Fértil. Noche en la hostería con media pensión."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Ischigualasto (Valle de la Luna) – San Juan",
+          "texto": "Excursión al Parque Provincial Ischigualasto y regreso a San Juan."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "San Juan ✈ Buenos Aires",
+          "texto": "Traslado al aeropuerto para el vuelo AR 1445 de las 10:30."
+        }
+      ],
+      "tarifas": [],
+      "id": "valle-de-la-luna",
+      "titulo": "Valle de la Luna con noche en Valle Fértil — Salidas diarias",
+      "region": "argentina",
+      "destinos": [
+        "San Juan",
+        "Valle Fértil",
+        "Ischigualasto"
+      ],
+      "resumen": "Circuito de tres noches con salidas diarias: una noche en San Juan, una en Valle Fértil con media pensión para entrar temprano a Ischigualasto, y regreso. Traslados y excursiones incluidos.",
+      "precio_desde": {
+        "valor": 1395002,
+        "moneda": "ARS",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "Salidas diarias (ejemplo: 17 de noviembre 2026)",
+      "vigencia": "2026-12-31",
+      "noches": 3,
+      "operador": "Cuarto Continente",
+      "operador_sigla": "CC",
+      "ref": "CC-15448792",
+      "incluye": [
+        "Aéreos Buenos Aires / San Juan / Buenos Aires con Aerolíneas Argentinas, tarifa Flex",
+        "1 valija en bodega (1 PC) + equipaje de mano",
+        "2 noches en San Juan con desayuno y 1 en Valle Fértil con media pensión",
+        "Circuito Valle de la Luna: traslados de llegada y salida y excursiones",
+        "Asistencia al viajero nacional (cobertura ARS 2.000.000)"
+      ],
+      "imagen": "assets/img/pexels/31725158-1200.jpg",
+      "imagen_alt": "Formaciones rocosas del Valle de la Luna, Ischigualasto, San Juan",
+      "precios": [
+        {
+          "base": "single",
+          "valor": 1395002
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Buenos Aires (AEP) – San Juan",
+          "clase": "Económica (FLEX)",
+          "fecha": "17/11/2026",
+          "horario": "07:45 – 09:45",
+          "numero": "AR 1444",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        },
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "San Juan – Buenos Aires (AEP)",
+          "clase": "Económica (FLEX)",
+          "fecha": "20/11/2026",
+          "horario": "10:30 – 12:10",
+          "numero": "AR 1445",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://cuartocontinente.com/es/idea/15448792/valle-de-la-luna-con-noche-en-valle-fertil?country=AR",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona publicado por el operador para 1 adulto (incluye impuestos), fecha de ejemplo 17–20 nov 2026. Salidas diarias: la ficha no da fecha límite, se carga vigencia 31/12/2026 para revisión."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
+      "condiciones": [
+        "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
+        "Precio válido hasta la fecha de salida.",
+        "El precio publicado por el operador corresponde a 1 adulto; consultar valor en base doble.",
+        "No incluye traslados aeropuerto – hotel ni Salta – Purmamarca; se cotizan aparte."
+      ],
+      "no_incluye": [
+        "Comidas no indicadas",
+        "Excursiones no indicadas",
+        "Gastos personales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Salta",
+          "nombre": "Roomie Salta by DOT",
+          "categoria": "",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Purmamarca",
+          "nombre": "El Refugio de Coquena",
+          "categoria": "",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Salta",
+          "nombre": "Hotel del Tren",
+          "categoria": "",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Salta",
+          "texto": "Vuelo AR 1498 de las 14:40. Llegada y alojamiento en Salta."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Salta",
+          "texto": "Día libre en Salta."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Salta – Purmamarca",
+          "texto": "Traslado a Purmamarca. Alojamiento."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Quebrada de Humahuaca y Salinas Grandes",
+          "texto": "Excursión de día completo por la Quebrada de Humahuaca y las Salinas Grandes."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Purmamarca – Salta",
+          "texto": "Regreso a Salta. Última noche."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "Salta ✈ Buenos Aires",
+          "texto": "Traslado al aeropuerto para el vuelo AR 1489 de las 07:55."
+        }
+      ],
+      "tarifas": [],
+      "id": "salta-purmamarca",
+      "titulo": "Salta & Purmamarca — 12 de abril 2027",
+      "region": "argentina",
+      "destinos": [
+        "Salta",
+        "Purmamarca"
+      ],
+      "resumen": "Cinco noches entre Salta y Purmamarca: dos en la ciudad, dos al pie del Cerro de los Siete Colores y una última en Salta, con la excursión a la Quebrada de Humahuaca y las Salinas Grandes.",
+      "precio_desde": {
+        "valor": 1362212,
+        "moneda": "ARS",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "12 de abril 2027",
+      "vigencia": "2027-04-12",
+      "noches": 5,
+      "operador": "Cuarto Continente",
+      "operador_sigla": "CC",
+      "ref": "CC-25105671",
+      "incluye": [
+        "Aéreos Buenos Aires / Salta / Buenos Aires con Aerolíneas Argentinas, tarifa Flex",
+        "1 valija en bodega (1 PC) + equipaje de mano",
+        "2 noches en Salta, 2 en Purmamarca y 1 en Salta con desayuno",
+        "Excursión Quebrada de Humahuaca y Salinas Grandes",
+        "Asistencia al viajero nacional (cobertura ARS 2.000.000)"
+      ],
+      "imagen": "assets/img/pexels/6097178-1200.jpg",
+      "imagen_alt": "Salinas Grandes bajo el cielo de la puna, Jujuy",
+      "precios": [
+        {
+          "base": "single",
+          "valor": 1362212
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Buenos Aires (AEP) – Salta",
+          "clase": "Económica (FLEX)",
+          "fecha": "12/04/2027",
+          "horario": "14:40 – 16:55",
+          "numero": "AR 1498",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        },
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Salta – Buenos Aires (AEP)",
+          "clase": "Económica (FLEX)",
+          "fecha": "17/04/2027",
+          "horario": "07:55 – 10:00",
+          "numero": "AR 1489",
+          "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://cuartocontinente.com/es/idea/25105671/salta-purmamarca-ida-y-vuelta-desde-salta?country=AR",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona publicado por el operador para 1 adulto (incluye impuestos); no publica base doble."
+      }
     }
   ]
 }
