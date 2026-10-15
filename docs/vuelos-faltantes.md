@@ -257,3 +257,5 @@ Vuelo de vuelta (fecha, horario, número):
 Equipaje incluido (valija en bodega / carry on / solo mochila):
 ```
 
+Con los vuelos completos: Miches — 4 de enero 2027; Aruba — 9 de enero 2027; Punta Cana — 13 de enero 2027; Riviera Maya — 18 de enero 2027; Costa Mujeres — 18 de enero 2027; Riviera Maya & Cancún — 25 de enero 2027; Miami & Bayahíbe — 14 de febrero 2027
+

@@ -1322,6 +1322,7 @@
       "vigencia": "2027-03-09",
       "noches": 14,
       "operador": "Organización Piamonte",
+      "operador_sigla": "PI",
       "ref": "PXX548-676",
       "incluye": [
         "Aéreo económica Bs As/Roma/Bs As con Iberia (vía Madrid)",
@@ -5810,6 +5811,783 @@
         "url": "https://www.kingmidas.com.ar/itinerario/1146/Malasia,-Singapur-&-Bali",
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 7.820 + impuestos USD 1.615 (DNT, IVA, gastos y propinas) = USD 9.435. Single: 7.820 + 2.480 + 1.615 = 11.915."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Todo Incluido",
+      "nota_impuestos": "No incluye percepción RG 5463 (30% sobre servicios terrestres) ni RS 3819 (5%) si se abona en pesos.",
+      "condiciones": [],
+      "no_incluye": [
+        "Propinas",
+        "Gastos personales",
+        "Servicios no especificados"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Playa del Carmen",
+          "nombre": "Iberostar Waves Paraíso Beach",
+          "categoria": "",
+          "noches": 8,
+          "regimen": "Todo Incluido",
+          "habitacion": "Premium Tropical View",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Cancún",
+          "nombre": "Iberostar Selection Cancún",
+          "categoria": "",
+          "noches": 2,
+          "regimen": "Todo Incluido",
+          "habitacion": "Premium Ocean View",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "riviera-maya-cancun-ene-2027",
+      "titulo": "Riviera Maya & Cancún — 25 de enero 2027",
+      "region": "caribe",
+      "destinos": [
+        "Riviera Maya",
+        "Cancún"
+      ],
+      "resumen": "Diez noches all inclusive repartidas entre Playa del Carmen y la zona hotelera de Cancún, en dos resorts Iberostar frente al mar. Cupo confirmado.",
+      "precio_desde": {
+        "valor": 3159,
+        "moneda": "USD",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "25 de enero 2027",
+      "vigencia": "2027-01-25",
+      "noches": 10,
+      "operador": "Piamonte Operador",
+      "operador_sigla": "PI",
+      "ref": "PI-63139480",
+      "incluye": [
+        "Aéreos Buenos Aires / Cancún / Buenos Aires con LATAM, clase económica",
+        "Traslados de llegada, interhotel y salida",
+        "8 noches en Riviera Maya con Todo Incluido",
+        "2 noches en Cancún con Todo Incluido",
+        "Asistencia al viajero Internacional Plus (hasta USD 100.000) con seguro de cancelación, hasta 70 años"
+      ],
+      "imagen": "assets/img/pexels/29901886-1200.jpg",
+      "imagen_alt": "Playa de arena blanca con palmeras en la Riviera Maya, México",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 3159
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Buenos Aires – Cancún (1 escala)",
+          "clase": "",
+          "fecha": "25/01/2027",
+          "horario": "07:20 – 17:40",
+          "numero": "",
+          "equipaje": "1 artículo personal (10 kg) + 1 carry on (10 kg) + 1 valija en bodega de 23 kg"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Cancún – Buenos Aires (1 escala)",
+          "clase": "",
+          "fecha": "04/02/2027",
+          "horario": "15:25 – 06:05 (+1)",
+          "numero": "",
+          "equipaje": "1 artículo personal (10 kg) + 1 carry on (10 kg) + 1 valija en bodega de 23 kg"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://piamonte.com/es/idea/63139480/riviera-maya-cancun-25-01-verano-2027",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Todo Incluido",
+      "nota_impuestos": "No incluye percepción RG 5463 (30% sobre servicios terrestres) ni RS 3819 (5%) si se abona en pesos. RG 5617 (30% aéreo): USD 236,10 + USD 5,14 de gastos.",
+      "condiciones": [
+        "Formulario digital de ingreso a República Dominicana (e-Ticket) obligatorio: se solicita en el check-in."
+      ],
+      "no_incluye": [
+        "Propinas",
+        "Gastos personales",
+        "Servicios no especificados"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Miches",
+          "nombre": "Viva Miches by Wyndham, A Trademark Resort",
+          "categoria": "",
+          "noches": 12,
+          "regimen": "Todo Incluido",
+          "habitacion": "Superior Room",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "miches-ene-2027",
+      "titulo": "Miches — 4 de enero 2027",
+      "region": "caribe",
+      "destinos": [
+        "Miches"
+      ],
+      "resumen": "Doce noches todo incluido en Miches, la costa noreste de República Dominicana que recién se abre al turismo: playas largas, pocas construcciones y un resort recomendado por el operador.",
+      "precio_desde": {
+        "valor": 3744,
+        "moneda": "USD",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "4 de enero 2027",
+      "vigencia": "2027-01-04",
+      "noches": 12,
+      "operador": "Piamonte Operador",
+      "operador_sigla": "PI",
+      "ref": "PI-65533521",
+      "incluye": [
+        "Aéreos Buenos Aires / Punta Cana / Buenos Aires con LATAM, clase económica",
+        "Traslados privados de llegada y salida",
+        "12 noches con Todo Incluido",
+        "Asistencia al viajero Internacional Plus (hasta USD 100.000) con seguro de cancelación, hasta 70 años"
+      ],
+      "imagen": "assets/img/pexels/10490906-1200.jpg",
+      "imagen_alt": "Playa caribeña de arena blanca con palmeras y mar turquesa",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 3744
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Buenos Aires – Punta Cana (1 escala)",
+          "clase": "",
+          "fecha": "04/01/2027",
+          "horario": "07:45 – 17:35",
+          "numero": "",
+          "equipaje": "1 artículo personal (10 kg) + 1 carry on (10 kg) + 1 valija en bodega de 23 kg"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Punta Cana – Buenos Aires (1 escala)",
+          "clase": "",
+          "fecha": "16/01/2027",
+          "horario": "19:35 – 07:40 (+1)",
+          "numero": "",
+          "equipaje": "1 artículo personal (10 kg) + 1 carry on (10 kg) + 1 valija en bodega de 23 kg"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://piamonte.com/es/idea/65533521/miches-04-01-verano-2027",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Según hotel",
+      "nota_impuestos": "No incluye percepción RG 5463 (30% sobre servicios terrestres) ni RS 3819 (5%) si se abona en pesos. RG 5617 (30% aéreo): USD 277,20 + USD 6,04 de gastos. No incluye facility fees.",
+      "condiciones": [
+        "Formulario digital de ingreso a República Dominicana (e-Ticket) obligatorio: se solicita en el check-in.",
+        "Con pasaporte argentino se necesita visa para ingresar a Estados Unidos; el trámite es personal de cada pasajero."
+      ],
+      "no_incluye": [
+        "Propinas",
+        "Gastos personales",
+        "Servicios no especificados"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Miami Beach",
+          "nombre": "Chesterfield Hotel & Suites",
+          "categoria": "",
+          "noches": 5,
+          "regimen": "Solo habitación",
+          "habitacion": "Standard Queen Room",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Bayahíbe",
+          "nombre": "Catalonia Bayahibe",
+          "categoria": "",
+          "noches": 5,
+          "regimen": "Todo Incluido",
+          "habitacion": "Comfort",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "miami-bayahibe-feb-2027",
+      "titulo": "Miami & Bayahíbe — 14 de febrero 2027",
+      "region": "caribe",
+      "destinos": [
+        "Miami",
+        "Bayahíbe"
+      ],
+      "resumen": "Cinco noches en Miami Beach para compras y ciudad, y cinco noches todo incluido en Bayahíbe, con vuelos directos LATAM y traslados privados en cada ciudad.",
+      "precio_desde": {
+        "valor": 3485,
+        "moneda": "USD",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "14 de febrero 2027",
+      "vigencia": "2027-02-14",
+      "noches": 10,
+      "operador": "Piamonte Operador",
+      "operador_sigla": "PI",
+      "ref": "PI-66158100",
+      "incluye": [
+        "Aéreos Buenos Aires / Miami / Buenos Aires con LATAM, clase económica",
+        "Vuelo Miami / Punta Cana",
+        "Traslados privados de llegada y salida en cada ciudad",
+        "5 noches en Miami Beach, solo habitación",
+        "5 noches en Bayahíbe con Todo Incluido",
+        "Asistencia al viajero Internacional Plus (hasta USD 100.000) con seguro de cancelación, hasta 70 años"
+      ],
+      "imagen": "assets/img/pexels/9293251-1200.jpg",
+      "imagen_alt": "Playa y edificios de Miami Beach, Estados Unidos",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 3485
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Buenos Aires – Miami (directo)",
+          "clase": "",
+          "fecha": "14/02/2027",
+          "horario": "13:10 – 19:45",
+          "numero": "LA 542",
+          "equipaje": "1 artículo personal (10 kg) + 1 carry on (10 kg) + 1 valija en bodega de 23 kg"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Miami – Punta Cana (directo)",
+          "clase": "",
+          "fecha": "19/02/2027",
+          "horario": "09:00 – 12:25",
+          "numero": "LA 591",
+          "equipaje": "1 artículo personal (10 kg) + 1 carry on (10 kg) + 1 valija en bodega de 23 kg"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Punta Cana – Buenos Aires (1 escala)",
+          "clase": "",
+          "fecha": "24/02/2027",
+          "horario": "18:40 – 06:05 (+1)",
+          "numero": "",
+          "equipaje": "1 artículo personal (10 kg) + 1 carry on (10 kg) + 1 valija en bodega de 23 kg"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://piamonte.com/es/idea/66158100/miami-bayahibe-14-02",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Todo Incluido en hotel; pensión completa a bordo",
+      "nota_impuestos": "No incluye percepción RG 5463 (30% sobre servicios terrestres) ni RS 3819 (5%) si corresponde. Aéreo y crucero se emiten únicamente en dólares.",
+      "condiciones": [
+        "Formulario digital de ingreso a República Dominicana (e-Ticket) obligatorio: se solicita en el check-in.",
+        "Tasa de salida del puerto de La Romana (USD 30) y tarjeta de turista (USD 10) por persona, se abonan en migraciones.",
+        "El viaje debe estar saldado 60 días antes de la salida."
+      ],
+      "no_incluye": [
+        "Propinas",
+        "Gastos personales",
+        "Servicios no especificados"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Punta Cana (Uvero Alto)",
+          "nombre": "Ocean El Faro",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Todo Incluido",
+          "habitacion": "Jr. Suite",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "caribe-con-crucero-ene-2027",
+      "titulo": "Caribe con crucero Costa Fascinosa — 7 de enero 2027",
+      "region": "cruceros",
+      "destinos": [
+        "Punta Cana",
+        "La Romana",
+        "Isla Catalina",
+        "Samaná",
+        "Gran Turca",
+        "Amber Cove",
+        "Cabo Rojo"
+      ],
+      "resumen": "Tres noches all inclusive en Punta Cana y siete noches a bordo del Costa Fascinosa por el Caribe: La Romana, Isla Catalina, Samaná, Gran Turca, Amber Cove y Cabo Rojo, en cabina externa y con paquete de bebidas incluido.",
+      "precio_desde": {
+        "valor": 3293,
+        "moneda": "USD",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "7 de enero 2027",
+      "vigencia": "2027-01-07",
+      "noches": 10,
+      "operador": "Piamonte Operador",
+      "operador_sigla": "PI",
+      "ref": "PI-51938153",
+      "incluye": [
+        "Aéreos Buenos Aires / Punta Cana / Buenos Aires con Arajet, vuelos directos",
+        "Traslados aeropuerto – hotel – puerto – aeropuerto",
+        "3 noches pre-crucero con Todo Incluido en Punta Cana",
+        "Crucero Costa Fascinosa de 7 noches en cabina externa",
+        "Paquete de bebidas My Drinks durante el crucero",
+        "Propinas del crucero",
+        "Asistencia al viajero Internacional Plus (hasta USD 100.000) con seguro de cancelación, hasta 70 años"
+      ],
+      "imagen": "assets/img/pexels/37880222-1200.jpg",
+      "imagen_alt": "Crucero navegando en mar abierto",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 3293,
+          "cabina": "Externa"
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Arajet",
+          "ruta": "Buenos Aires – Punta Cana (directo)",
+          "clase": "",
+          "fecha": "07/01/2027",
+          "horario": "11:00 – 17:55",
+          "numero": "DM 6265",
+          "equipaje": "1 artículo personal (6 kg) + 1 valija en bodega de 23 kg + selección de asiento"
+        },
+        {
+          "aerolinea": "Arajet",
+          "ruta": "Punta Cana – Buenos Aires (directo)",
+          "clase": "",
+          "fecha": "17/01/2027",
+          "horario": "20:02 – 05:00 (+1)",
+          "numero": "DM 6268",
+          "equipaje": "1 artículo personal (6 kg) + 1 valija en bodega de 23 kg + selección de asiento"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://piamonte.com/es/idea/51938153/caribe-con-crucero-07-01-cabina-externa",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
+      },
+      "crucero": {
+        "naviera": "Costa Cruceros",
+        "barco": "Costa Fascinosa",
+        "cabina": "Externa",
+        "bebidas": "Paquete My Drinks incluido",
+        "propinas": "Sí",
+        "wifi": "",
+        "asistencia": "Internacional Plus 100K",
+        "web": ""
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Solo habitación",
+      "nota_impuestos": "No incluye percepción RG 5463 (30% sobre servicios terrestres) ni RS 3819 (5%) si se abona en pesos. RG 5617 (30% aéreo): USD 182,40 + USD 3,97 de gastos. No incluye facility fees.",
+      "condiciones": [
+        "Hotel solo para adultos."
+      ],
+      "no_incluye": [
+        "Propinas",
+        "Gastos personales",
+        "Servicios no especificados"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Palm Beach",
+          "nombre": "TRYP by Wyndham Aruba Adults Only",
+          "categoria": "",
+          "noches": 8,
+          "regimen": "Solo habitación",
+          "habitacion": "Habitación Premium",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "aruba-ene-2027",
+      "titulo": "Aruba — 9 de enero 2027",
+      "region": "caribe",
+      "destinos": [
+        "Aruba"
+      ],
+      "resumen": "Ocho noches en Palm Beach, en un hotel boutique solo para adultos. Aruba está fuera de la zona de huracanes: sol casi todo el año y playas tranquilas de arena blanca.",
+      "precio_desde": {
+        "valor": 3134,
+        "moneda": "USD",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "9 de enero 2027",
+      "vigencia": "2027-01-09",
+      "noches": 8,
+      "operador": "Piamonte Operador",
+      "operador_sigla": "PI",
+      "ref": "PI-52302197",
+      "incluye": [
+        "Aéreos Buenos Aires / Aruba / Buenos Aires con LATAM",
+        "Traslados compartidos de llegada y salida",
+        "8 noches en Palm Beach, solo habitación",
+        "Asistencia al viajero Internacional Plus (hasta USD 100.000) con seguro de cancelación, hasta 70 años"
+      ],
+      "imagen": "assets/img/pexels/4710783-1800.jpg",
+      "imagen_alt": "Vista aérea de una playa de arena blanca y mar turquesa en Aruba",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 3134
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Buenos Aires – Aruba (1 escala)",
+          "clase": "",
+          "fecha": "09/01/2027",
+          "horario": "08:40 – 18:00",
+          "numero": "",
+          "equipaje": "1 artículo personal (10 kg) + 1 carry on (10 kg) + 1 valija en bodega de 23 kg"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Aruba – Buenos Aires (1 escala)",
+          "clase": "",
+          "fecha": "17/01/2027",
+          "horario": "19:10 – 06:20 (+1)",
+          "numero": "",
+          "equipaje": "1 artículo personal (10 kg) + 1 carry on (10 kg) + 1 valija en bodega de 23 kg"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://piamonte.com/es/idea/52302197/aruba-09-01-verano-2027",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Todo Incluido",
+      "nota_impuestos": "No incluye percepción RG 5463 (30% sobre servicios terrestres) ni RS 3819 (5%) si se abona en pesos. RG 5617 (30% aéreo): USD 261 + USD 5,68 de gastos.",
+      "condiciones": [
+        "Formulario digital de ingreso a República Dominicana (e-Ticket) obligatorio: se solicita en el check-in."
+      ],
+      "no_incluye": [
+        "Propinas",
+        "Gastos personales",
+        "Servicios no especificados"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Punta Cana (Bávaro)",
+          "nombre": "Occidental Caribe",
+          "categoria": "",
+          "noches": 10,
+          "regimen": "Todo Incluido",
+          "habitacion": "Standard Double Room",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "punta-cana-ene-2027",
+      "titulo": "Punta Cana — 13 de enero 2027",
+      "region": "caribe",
+      "destinos": [
+        "Punta Cana"
+      ],
+      "resumen": "Diez noches todo incluido en Playa Arena Gorda, en Bávaro, con vuelos LATAM y traslados. El clásico del Caribe para enero, con cupo confirmado.",
+      "precio_desde": {
+        "valor": 2988,
+        "moneda": "USD",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "13 de enero 2027",
+      "vigencia": "2027-01-13",
+      "noches": 10,
+      "operador": "Piamonte Operador",
+      "operador_sigla": "PI",
+      "ref": "PI-52975881",
+      "incluye": [
+        "Aéreos Buenos Aires / Punta Cana / Buenos Aires con LATAM, clase económica",
+        "Traslados compartidos de llegada y salida",
+        "10 noches con Todo Incluido",
+        "Asistencia al viajero Internacional Plus (hasta USD 100.000) con seguro de cancelación, hasta 70 años"
+      ],
+      "imagen": "assets/img/pexels/30447886-1200.jpg",
+      "imagen_alt": "Playa de arena blanca con palmeras y mar turquesa en el Caribe",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 2988
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Buenos Aires – Punta Cana (1 escala)",
+          "clase": "",
+          "fecha": "13/01/2027",
+          "horario": "07:45 – 18:30",
+          "numero": "",
+          "equipaje": "1 artículo personal (10 kg) + 1 carry on (10 kg) + 1 valija en bodega de 23 kg"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Punta Cana – Buenos Aires (1 escala)",
+          "clase": "",
+          "fecha": "23/01/2027",
+          "horario": "19:35 – 07:40 (+1)",
+          "numero": "",
+          "equipaje": "1 artículo personal (10 kg) + 1 carry on (10 kg) + 1 valija en bodega de 23 kg"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://piamonte.com/es/idea/52975881/punta-cana-13-01-verano-2027",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Todo Incluido",
+      "nota_impuestos": "No incluye percepción RG 5463 (30% sobre servicios terrestres) ni RS 3819 (5%) si se abona en pesos. RG 5617 (30% aéreo): USD 200,10 + USD 4,36 de gastos.",
+      "condiciones": [],
+      "no_incluye": [
+        "Propinas",
+        "Gastos personales",
+        "Servicios no especificados"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Puerto Aventuras",
+          "nombre": "Catalonia Riviera Maya Resort and Spa",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Todo Incluido",
+          "habitacion": "Premium",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "riviera-maya-ene-2027",
+      "titulo": "Riviera Maya — 18 de enero 2027",
+      "region": "caribe",
+      "destinos": [
+        "Riviera Maya"
+      ],
+      "resumen": "Siete noches todo incluido en Puerto Aventuras, entre Playa del Carmen y Tulum, con vuelos Arajet y traslados. Para ir y volver con el día aprovechado.",
+      "precio_desde": {
+        "valor": 2396,
+        "moneda": "USD",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "18 de enero 2027",
+      "vigencia": "2027-01-18",
+      "noches": 7,
+      "operador": "Piamonte Operador",
+      "operador_sigla": "PI",
+      "ref": "PI-54740316",
+      "incluye": [
+        "Aéreos Buenos Aires / Cancún / Buenos Aires con Arajet, clase económica",
+        "Traslados compartidos de llegada y salida",
+        "7 noches con Todo Incluido",
+        "Asistencia al viajero Internacional Plus (hasta USD 100.000) con seguro de cancelación, hasta 70 años"
+      ],
+      "imagen": "assets/img/pexels/11944898-1200.jpg",
+      "imagen_alt": "Playa de arena blanca y mar turquesa en la Riviera Maya, México",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 2396
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Arajet",
+          "ruta": "Buenos Aires – Cancún (1 escala)",
+          "clase": "",
+          "fecha": "18/01/2027",
+          "horario": "06:00 – 16:55",
+          "numero": "",
+          "equipaje": "1 artículo personal + 1 valija en bodega de 23 kg (no incluye carry on)"
+        },
+        {
+          "aerolinea": "Arajet",
+          "ruta": "Cancún – Buenos Aires (1 escala)",
+          "clase": "",
+          "fecha": "25/01/2027",
+          "horario": "17:36 – 07:40 (+1)",
+          "numero": "",
+          "equipaje": "1 artículo personal + 1 valija en bodega de 23 kg (no incluye carry on)"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://piamonte.com/es/idea/54740316/riviera-maya-18-01-verano-2027",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Todo Incluido",
+      "nota_impuestos": "No incluye percepción RG 5463 (30% sobre servicios terrestres) ni RS 3819 (5%) si se abona en pesos. RG 5617 (30% aéreo): USD 200,10 + USD 4,36 de gastos.",
+      "condiciones": [],
+      "no_incluye": [
+        "Propinas",
+        "Gastos personales",
+        "Servicios no especificados"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Costa Mujeres",
+          "nombre": "Riu Dunamar",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Todo Incluido",
+          "habitacion": "Habitación doble",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "costa-mujeres-ene-2027",
+      "titulo": "Costa Mujeres — 18 de enero 2027",
+      "region": "caribe",
+      "destinos": [
+        "Costa Mujeres"
+      ],
+      "resumen": "Siete noches todo incluido en el Riu Dunamar, en Playa Mujeres, al norte de Cancún: aguas calmas, playa amplia y uno de los hoteles recomendados por el operador.",
+      "precio_desde": {
+        "valor": 2586,
+        "moneda": "USD",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "18 de enero 2027",
+      "vigencia": "2027-01-18",
+      "noches": 7,
+      "operador": "Piamonte Operador",
+      "operador_sigla": "PI",
+      "ref": "PI-55903469",
+      "incluye": [
+        "Aéreos Buenos Aires / Cancún / Buenos Aires con Arajet, clase económica",
+        "Traslados compartidos de llegada y salida",
+        "7 noches con Todo Incluido",
+        "Asistencia al viajero Internacional Plus (hasta USD 100.000) con seguro de cancelación, hasta 70 años"
+      ],
+      "imagen": "assets/img/pexels/9149277-1200.jpg",
+      "imagen_alt": "Playa de aguas turquesa en Isla Mujeres, frente a Costa Mujeres, México",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 2586
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Arajet",
+          "ruta": "Buenos Aires – Cancún (1 escala)",
+          "clase": "",
+          "fecha": "18/01/2027",
+          "horario": "06:00 – 16:55",
+          "numero": "",
+          "equipaje": "1 artículo personal + 1 valija en bodega de 23 kg (no incluye carry on)"
+        },
+        {
+          "aerolinea": "Arajet",
+          "ruta": "Cancún – Buenos Aires (1 escala)",
+          "clase": "",
+          "fecha": "25/01/2027",
+          "horario": "17:36 – 07:40 (+1)",
+          "numero": "",
+          "equipaje": "1 artículo personal + 1 valija en bodega de 23 kg (no incluye carry on)"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://piamonte.com/es/idea/55903469/costa-mujeres-18-01-verano-2027",
+        "fecha": "2026-10-15",
+        "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
       }
     }
   ]
