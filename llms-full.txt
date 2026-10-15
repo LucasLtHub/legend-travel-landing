@@ -647,10 +647,10 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - URL: https://www.legendtravel.com.ar/paquetes/magicamente-europa
 - Destinos: Madrid, París, Innsbruck, Venecia, Florencia, Roma, Costa Azul, Barcelona
 - Salida: 9 de abril 2027 · 16 noches · Régimen: Desayuno
-- Precio: desde USD 4.526 por persona en base doble (por persona en base doble — tarifa + impuestos aéreos + IVA y gastos)
+- Precio: desde USD 4.622 por persona en base doble (por persona en base doble — tarifa + impuestos + IVA/gastos + tasas hoteleras obligatorias)
 - Impuestos: No incluye percepción RG 5463 (30%) si se abona en pesos: aprox. USD 620 sobre terrestre y USD 359 sobre aéreo.
 - Incluye: Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica; 1 valija de hasta 23 kg por persona en todo el recorrido; 16 noches de alojamiento con desayuno en hoteles previstos o similares; Circuito en autocar con guía acompañante de habla hispana; Visitas panorámicas y entradas según itinerario; Traslados de llegada y salida; Asistencia al viajero Universal Assistance Excellence (hasta USD 150.000)
-- No incluye: Tasas hoteleras obligatorias (USD 94 + USD 2 de gastos), se abonan al reservar; Comidas y bebidas no indicadas; Propinas y gastos personales; Excursiones opcionales
+- No incluye: Comidas y bebidas no indicadas; Propinas y gastos personales; Excursiones opcionales
 - Hotel: Hampton by Hilton Alcobendas (Madrid, 3*, 3 noches, Desayuno)
 - Hotel: B&B Hotel Bordeaux Bègles (Burdeos, 3*, 1 noches, Desayuno)
 - Hotel: Ibis Styles Paris Orly (París, 3*, 2 noches, Desayuno)
@@ -867,7 +867,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - No incluye: Comidas no indicadas; Excursiones no indicadas; Gastos personales
 - Hotel: Hotel Cordón del Plata (Mendoza, 3 noches, Desayuno, Standard)
 - Resumen: Tres noches en Mendoza con vuelos directos de Aerolíneas Argentinas y hotel con desayuno en pleno centro. Viñedos, montaña y buena mesa, sin complicaciones.
-- Vigente hasta: 31/07/2027
+- Vigente hasta: 14/11/2026
 
 ### Ushuaia
 - URL: https://www.legendtravel.com.ar/paquetes/ushuaia
@@ -879,7 +879,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - No incluye: Comidas no indicadas; Excursiones no indicadas; Gastos personales
 - Hotel: Del Bosque Apart & Hotel (Ushuaia, 3 noches, Desayuno)
 - Resumen: Tres noches en el fin del mundo con vuelos directos y apart hotel con desayuno. Canal Beagle, Parque Nacional Tierra del Fuego y la primavera austral.
-- Vigente hasta: 31/07/2027
+- Vigente hasta: 14/11/2026
 
 ### Bariloche lo tiene todo
 - URL: https://www.legendtravel.com.ar/paquetes/bariloche-lo-tiene-todo
@@ -891,7 +891,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - No incluye: Comidas no indicadas; Excursiones no indicadas; Gastos personales
 - Hotel: Hotel Nevada (Bariloche, 3 noches, Desayuno)
 - Resumen: Tres noches en Bariloche con vuelos directos y hotel con desayuno. Lagos, bosques, chocolate y el Circuito Chico a un paso.
-- Vigente hasta: 31/07/2027
+- Vigente hasta: 14/11/2026
 
 ### Vuelta al norte argentino
 - URL: https://www.legendtravel.com.ar/paquetes/vuelta-norte-argentino
@@ -905,7 +905,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Hotel: Hotel Asturias (Cafayate, 1 noches, Desayuno)
 - Hotel: Altos de Balcarce (Salta, 4 noches, Desayuno)
 - Resumen: Un circuito de seis noches que entra por Tucumán y sale por Salta: los Valles Calchaquíes, Cafayate y sus bodegas, y cuatro noches en Salta para la Quebrada de Humahuaca y Cachi. Con traslados y excursiones.
-- Vigente hasta: 31/07/2027
+- Vigente hasta: 14/11/2026
 
 ### Ushuaia & El Calafate
 - URL: https://www.legendtravel.com.ar/paquetes/ushuaia-el-calafate
@@ -918,7 +918,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Hotel: Hotel Rosa de los Vientos (Ushuaia, 3 noches, Desayuno)
 - Hotel: Kapenke Hotel (El Calafate, 3 noches, Desayuno)
 - Resumen: Tres noches en Ushuaia y tres en El Calafate, con los vuelos de Aerolíneas Argentinas entre ambas ciudades. Canal Beagle y glaciar Perito Moreno en un solo viaje.
-- Vigente hasta: 31/07/2027
+- Vigente hasta: 14/11/2026
 
 ### Puerto Madryn
 - URL: https://www.legendtravel.com.ar/paquetes/puerto-madryn-escapada
@@ -930,7 +930,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - No incluye: Comidas no indicadas; Excursiones no indicadas; Gastos personales
 - Hotel: Parry Hotel (Puerto Madryn, 3 noches, Desayuno)
 - Resumen: Tres noches en Puerto Madryn con vuelos directos y hotel con desayuno. De junio a diciembre es temporada de ballenas en Península Valdés.
-- Vigente hasta: 31/07/2027
+- Vigente hasta: 14/11/2026
 
 ### Valle de la Luna con noche en Valle Fértil
 - URL: https://www.legendtravel.com.ar/paquetes/valle-de-la-luna
@@ -943,7 +943,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Hotel: America Apart Hotel (San Juan, 2 noches, Desayuno buffet, Standard)
 - Hotel: Hostería Valle Fértil (Valle Fértil, 1 noches, Media pensión)
 - Resumen: Circuito de tres noches con salidas diarias: una noche en San Juan, una en Valle Fértil con media pensión para entrar temprano a Ischigualasto, y regreso. Traslados y excursiones incluidos.
-- Vigente hasta: 31/07/2027
+- Vigente hasta: 14/11/2026
 
 ### Salta & Purmamarca
 - URL: https://www.legendtravel.com.ar/paquetes/salta-purmamarca
@@ -957,7 +957,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Hotel: El Refugio de Coquena (Purmamarca, 2 noches, Desayuno)
 - Hotel: Hotel del Tren (Salta, 1 noches, Desayuno)
 - Resumen: Cinco noches entre Salta y Purmamarca: dos en la ciudad, dos al pie del Cerro de los Siete Colores y una última en Salta, con la excursión a la Quebrada de Humahuaca y las Salinas Grandes.
-- Vigente hasta: 31/07/2027
+- Vigente hasta: 14/11/2026
 
 ### Disney Europa Premium — Viaje de Quinceañeras
 - URL: https://www.legendtravel.com.ar/paquetes/disney-europa-premium-xv

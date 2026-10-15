@@ -3154,7 +3154,10 @@
         "url": "https://www.kingmidas.com.ar/itinerario/1117/Egipto-&-Jordania%C2%A0",
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 6.580 + impuestos USD 1.840 (DNT, IVA, gastos, visa de Egipto y propinas) = USD 8.420 (sin cambios). Single: 6.580 + 2.650 + 1.840 = 11.070."
-      }
+      },
+      "regiones_extra": [
+        "medio-oriente"
+      ]
     },
     {
       "activo": true,
@@ -8785,13 +8788,12 @@
       "nota_impuestos": "No incluye percepción RG 5463 (30%) si se abona en pesos: aprox. USD 620 sobre terrestre y USD 359 sobre aéreo.",
       "condiciones": [
         "Programa en hoteles de categoría turista, varios en las afueras de las ciudades.",
-        "Tasas hoteleras obligatorias (USD 94 + USD 2 de gastos) no incluidas: se abonan al reservar.",
+        "Las tasas hoteleras obligatorias (USD 94 + USD 2 de gastos) se abonan al reservar y están incluidas en el precio publicado.",
         "Precio válido hasta la fecha de salida.",
         "Seña USD 2.100 por persona para reservar.",
         "Bases triple y single: consultar."
       ],
       "no_incluye": [
-        "Tasas hoteleras obligatorias (USD 94 + USD 2 de gastos), se abonan al reservar",
         "Comidas y bebidas no indicadas",
         "Propinas y gastos personales",
         "Excursiones opcionales"
@@ -9036,9 +9038,9 @@
       ],
       "resumen": "El gran circuito europeo en versión económica, con hoteles de categoría turista: Madrid, Burdeos, París, Alsacia, Zúrich e Innsbruck, Venecia, Florencia, Roma, la Costa Azul y Barcelona.",
       "precio_desde": {
-        "valor": 4526,
+        "valor": 4622,
         "moneda": "USD",
-        "nota": "por persona en base doble — tarifa + impuestos aéreos + IVA y gastos"
+        "nota": "por persona en base doble — tarifa + impuestos + IVA/gastos + tasas hoteleras obligatorias"
       },
       "salida": "9 de abril 2027",
       "vigencia": "2027-04-09",
@@ -9060,7 +9062,7 @@
       "precios": [
         {
           "base": "doble",
-          "valor": 4526
+          "valor": 4622
         }
       ],
       "vuelos": [
@@ -9087,7 +9089,7 @@
       "fuente_detalle": {
         "url": "https://www.juliatours.com.ar/micrositio.php?id=2193",
         "fecha": "2026-10-15",
-        "desglose": "Tarifa USD 3.696 + impuestos aéreos USD 582 + IVA y gastos USD 248 = USD 4.526 (como publica la ficha). Tasas hoteleras obligatorias USD 94 + USD 2 de gastos aparte, se pagan al reservar. Triple y single: consultar. Seña USD 2.100."
+        "desglose": "Tarifa USD 3.696 + impuestos aéreos USD 582 + IVA y gastos USD 248 + tasas hoteleras obligatorias USD 94 + gastos USD 2 = USD 4.622 (la ficha publica 4.526 y las tasas aparte; por regla, todo cargo obligatorio que se paga al reservar va dentro del Desde). Triple y single: consultar. Seña USD 2.100."
       }
     },
     {
@@ -9443,7 +9445,7 @@
         "nota": "por persona en base doble — precio estimado, se cotiza al consultar"
       },
       "salida": "Fecha a elección, hasta julio 2027",
-      "vigencia": "2027-07-31",
+      "vigencia": "2026-11-14",
       "noches": 3,
       "operador": "Cuarto Continente",
       "operador_sigla": "CC",
@@ -9486,7 +9488,7 @@
       "fuente_detalle": {
         "url": "https://cuartocontinente.com/es/idea/22256231/escapada-a-mendoza?country=AR",
         "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario)."
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
       }
     },
     {
@@ -9536,7 +9538,7 @@
         "nota": "por persona en base doble — precio estimado, se cotiza al consultar"
       },
       "salida": "Fecha a elección, hasta julio 2027",
-      "vigencia": "2027-07-31",
+      "vigencia": "2026-11-14",
       "noches": 3,
       "operador": "Cuarto Continente",
       "operador_sigla": "CC",
@@ -9579,7 +9581,7 @@
       "fuente_detalle": {
         "url": "https://cuartocontinente.com/es/idea/22203065/ushuaia?country=AR",
         "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario)."
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
       }
     },
     {
@@ -9629,7 +9631,7 @@
         "nota": "por persona en base doble — precio estimado, se cotiza al consultar"
       },
       "salida": "Fecha a elección, hasta julio 2027",
-      "vigencia": "2027-07-31",
+      "vigencia": "2026-11-14",
       "noches": 3,
       "operador": "Cuarto Continente",
       "operador_sigla": "CC",
@@ -9672,7 +9674,7 @@
       "fuente_detalle": {
         "url": "https://cuartocontinente.com/es/idea/40420928/bariloche-lo-tiene-todo?country=AR",
         "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario)."
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
       }
     },
     {
@@ -9776,7 +9778,7 @@
         "nota": "por persona en base doble — precio estimado, se cotiza al consultar"
       },
       "salida": "Fecha a elección, hasta julio 2027",
-      "vigencia": "2027-07-31",
+      "vigencia": "2026-11-14",
       "noches": 6,
       "operador": "Cuarto Continente",
       "operador_sigla": "CC",
@@ -9820,7 +9822,7 @@
       "fuente_detalle": {
         "url": "https://cuartocontinente.com/es/idea/24058473/vuelta-al-norte-argentino?country=AR",
         "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario)."
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
       }
     },
     {
@@ -9884,7 +9886,7 @@
         "nota": "por persona en base doble — precio estimado, se cotiza al consultar"
       },
       "salida": "Fecha a elección, hasta julio 2027",
-      "vigencia": "2027-07-31",
+      "vigencia": "2026-11-14",
       "noches": 6,
       "operador": "Cuarto Continente",
       "operador_sigla": "CC",
@@ -9936,7 +9938,7 @@
       "fuente_detalle": {
         "url": "https://cuartocontinente.com/es/idea/22204583/ushuaia-el-calafate?country=AR",
         "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario)."
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
       }
     },
     {
@@ -9986,7 +9988,7 @@
         "nota": "por persona en base doble — precio estimado, se cotiza al consultar"
       },
       "salida": "Fecha a elección, hasta julio 2027",
-      "vigencia": "2027-07-31",
+      "vigencia": "2026-11-14",
       "noches": 3,
       "operador": "Cuarto Continente",
       "operador_sigla": "CC",
@@ -10029,7 +10031,7 @@
       "fuente_detalle": {
         "url": "https://cuartocontinente.com/es/idea/37028317/puerto-madryn?country=AR",
         "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario)."
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
       }
     },
     {
@@ -10115,7 +10117,7 @@
         "nota": "por persona en base single — precio estimado, se cotiza al consultar"
       },
       "salida": "Fecha a elección, hasta julio 2027",
-      "vigencia": "2027-07-31",
+      "vigencia": "2026-11-14",
       "noches": 3,
       "operador": "Cuarto Continente",
       "operador_sigla": "CC",
@@ -10159,7 +10161,7 @@
       "fuente_detalle": {
         "url": "https://cuartocontinente.com/es/idea/15448792/valle-de-la-luna-con-noche-en-valle-fertil?country=AR",
         "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador para 1 adulto (incluye impuestos), fecha de ejemplo 17–20 nov 2026. Salidas diarias: la ficha no da fecha límite, se carga vigencia 31/12/2026 para revisión. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario)."
+        "desglose": "Precio total por persona publicado por el operador para 1 adulto (incluye impuestos), fecha de ejemplo 17–20 nov 2026. Salidas diarias: la ficha no da fecha límite, se carga vigencia 31/12/2026 para revisión. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
       }
     },
     {
@@ -10268,7 +10270,7 @@
         "nota": "por persona en base single — precio estimado, se cotiza al consultar"
       },
       "salida": "Fecha a elección, hasta julio 2027",
-      "vigencia": "2027-07-31",
+      "vigencia": "2026-11-14",
       "noches": 5,
       "operador": "Cuarto Continente",
       "operador_sigla": "CC",
@@ -10312,7 +10314,7 @@
       "fuente_detalle": {
         "url": "https://cuartocontinente.com/es/idea/25105671/salta-purmamarca-ida-y-vuelta-desde-salta?country=AR",
         "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador para 1 adulto (incluye impuestos); no publica base doble. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario)."
+        "desglose": "Precio total por persona publicado por el operador para 1 adulto (incluye impuestos); no publica base doble. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
       }
     },
     {

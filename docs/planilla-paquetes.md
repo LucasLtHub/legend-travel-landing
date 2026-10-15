@@ -88,6 +88,9 @@ Hay lugar para 4 vuelos: vuelo1, vuelo2, vuelo3 y vuelo4. Cada uno tiene:
 
 "Sí" se muestra en la web como "Incluido", y "No" como "No incluido".
 
+### Regiones secundarias
+Columna `regiones_extra` (opcional, separadas por coma): regiones donde el paquete también tiene que aparecer en la madre y en los relacionados, además de la suya. Ejemplo: Egipto & Jordania es de África y lleva `medio-oriente`. La región principal no cambia (URL, etiqueta y chips siguen igual).
+
 ### Sigla del operador
 Columna `operador_sigla`: dos letras (KM = King Midas, JT = Julia Tours, CC = Cuarto Continente, PI = Piamonte).
 Sirve para la planilla de revisión y para saber de dónde salió cada paquete.

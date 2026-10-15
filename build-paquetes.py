@@ -65,6 +65,8 @@ OBLIGATORIOS = ["id", "titulo", "region", "destinos", "resumen",
 #   nota_impuestos, motivo_inactivo, operador, operador_sigla, ref, destacado,
 #   precios, vuelos, crucero, foto_portada (P1/P2, ver docs/planilla-paquetes.md)
 #   fuente_detalle (interno: de donde salio el detalle; no se publica)
+#   regiones_extra: lista de regiones secundarias SOLO para listados (madres y relacionados);
+#   la region principal sigue mandando en URL, kicker, schema y chips.
 
 REGIONES = {
     "caribe": "Caribe", "brasil": "Brasil", "europa": "Europa", "usa": "EE. UU.",
@@ -507,11 +509,15 @@ def render_region_block(carpeta, items, hoy):
     """
     muestra = items[:MAX_REGION_CARDS]
     regs = {p["region"] for p, _ in items}
-    if len(regs) == 1:
-        r = list(regs)[0]
+    # La region de la madre manda en el titulo (medio-oriente/ dice "Medio Oriente" aunque
+    # el paquete sea de africa via regiones_extra). El ancla #region solo sirve si todos
+    # los paquetes tienen esa region principal (el filtro de /paquetes/ es por principal).
+    r_madre = next((reg for reg, c in REGION_MADRE.items() if c == carpeta and reg in REGIONES_TITULO), None)
+    r = r_madre or (list(regs)[0] if len(regs) == 1 else None)
+    if r:
         frase = REGIONES_FRASE.get(r, "a " + REGIONES.get(r, r))
         titulo = REGIONES_TITULO.get(r) or "Salidas {frase} <em>con fecha confirmada</em>.".format(frase=e(frase))
-        ancla = "paquetes/#{}".format(e(r))
+        ancla = "paquetes/#{}".format(e(r)) if regs == {r} else "paquetes/"
     else:
         titulo = "Pr&oacute;ximas <em>salidas</em>."
         ancla = "paquetes/"
@@ -680,6 +686,16 @@ def _sec(titulo, cuerpo, extra=""):
 </section>'''.format(t=titulo, c=cuerpo, x=extra)
 
 
+def regiones_de(p):
+    """Region principal + regiones secundarias (regiones_extra) para listados: madres y relacionados.
+    La principal manda en URL, kicker, schema y chips; las extra solo suman el paquete a otras madres."""
+    regs = [p["region"]]
+    for r in lista(p, "regiones_extra"):
+        if isinstance(r, str) and r in REGIONES and r not in regs:
+            regs.append(r)
+    return regs
+
+
 def render_relacionados(p, todos):
     """
     P3: hasta MAX_RELACIONADOS salidas de la MISMA región que el paquete abierto,
@@ -687,7 +703,8 @@ def render_relacionados(p, todos):
     un link al listado completo.
     """
     NL = chr(10)
-    elegidos = [(q, v) for q, v in todos if q["id"] != p["id"] and q["region"] == p["region"]][:MAX_RELACIONADOS]
+    mias = set(regiones_de(p))
+    elegidos = [(q, v) for q, v in todos if q["id"] != p["id"] and mias & set(regiones_de(q))][:MAX_RELACIONADOS]
     sub = "Otras salidas {}".format(REGIONES_FRASE.get(p["region"], "")).strip()
     if not elegidos:
         return NL.join([
@@ -1112,6 +1129,9 @@ def cargar(hoy):
             avisos.append("{}: sigue marcado [EJEMPLO] — no publicar asi".format(ident))
         if p["region"] not in REGIONES:
             avisos.append('{}: region "{}" no esta en el mapa de REGIONES'.format(ident, p["region"]))
+        for r in lista(p, "regiones_extra"):
+            if not isinstance(r, str) or r not in REGIONES:
+                avisos.append('{}: regiones_extra "{}" no esta en el mapa de REGIONES (se ignora)'.format(ident, r))
         for h in lista(p, "hoteles"):   # foto de hotel sin credito: no se muestra y se avisa
             if isinstance(h, dict) and _v(h, "id") and not _v(h, "foto_credito") and any(
                     (HOTEL_FOTOS / "{}.{}".format(_v(h, "id"), x)).exists() for x in ("jpg", "jpeg", "webp", "png")):
@@ -1744,11 +1764,13 @@ def main():
 
     # ---------- 3. modulo "Salidas destacadas" en las madres ----------
     # Se agrupa por CARPETA, no por region: disney/ recibe las de quinceaneras.
+    # Un paquete con regiones_extra entra tambien en esas madres (ej. Egipto & Jordania en africa/ y medio-oriente/).
     por_carpeta = {}
     for p, v in publicados:
-        carpeta = REGION_MADRE.get(p["region"])
-        if carpeta:
-            por_carpeta.setdefault(carpeta, []).append((p, v))
+        for r in regiones_de(p):
+            carpeta = REGION_MADRE.get(r)
+            if carpeta and all(x["id"] != p["id"] for x, _ in por_carpeta.get(carpeta, [])):
+                por_carpeta.setdefault(carpeta, []).append((p, v))
 
     candidatas = sorted(set(list(REGION_MADRE.values()) + list(por_carpeta.keys())))
 
