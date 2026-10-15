@@ -24,8 +24,8 @@ Reglas que no se negocian:
 - Los paquetes viven como DATOS. El HTML se genera. Nunca editar a mano.
 - activo:false O vigencia pasada  →  ni card, ni detalle, ni sitemap.
 - Si un campo no esta en el JSON, el modulo no se dibuja. No se inventa nada.
-- ref y operador son INTERNOS: no salen nunca al HTML. Solo operador_sigla (KM, JT, CC, PI)
-  se muestra chiquita en el detalle, sin nombre ni link del operador.
+- ref, operador y operador_sigla son INTERNOS: no salen nunca al HTML (ni cards, ni detalle,
+  ni schema, ni llms). El operador nunca se muestra al cliente.
 
 Uso: python build-paquetes.py
 """
@@ -965,9 +965,6 @@ def render_detalle(p, vig, plantilla, todos=()):
         "{{PRECIO}}": fmt_precio(pd.get("valor")),
         "{{PRECIO_NOTA}}": ('<span class="nota">{}</span>'.format(e(pnota)) if pnota else "")
                           + '<span class="sujeto">{}</span>'.format(LEYENDA_PRECIO),
-        # sigla del operador (KM, JT, CC, PI): chiquita, sin nombre ni link
-        "{{SIGLA}}": ('<span class="sigla">{}</span>'.format(e(txt(p, "operador_sigla").upper()))
-                      if txt(p, "operador_sigla") else ""),
         "{{NFACTS}}": str(len(facts)),
         "{{DATOS}}": datos,
         "{{RESUMEN}}": e(resumen),
@@ -1302,10 +1299,13 @@ def generar_llms_full(publicados, hoy):
             L.append("- Destinos: " + ", ".join(lista(p, "destinos")))
         L.append("- Salida: {}{}".format(p.get("salida", ""), " · {} noches".format(p["noches"]) if p.get("noches") else "")
                  + (" · Régimen: " + txt(p, "regimen") if txt(p, "regimen") else ""))
-        L.append("- Precio: desde {} {} por persona en base doble{}".format(mon, fmt_precio(doble),
+        base_ppal = "doble" if ("doble" in precios or not precios) else next(iter(precios))
+        if base_ppal != "doble":
+            doble = precios[base_ppal]
+        L.append("- Precio: desde {} {} por persona en base {}{}".format(mon, fmt_precio(doble), base_ppal,
                  " ({})".format(pd["nota"]) if pd.get("nota") else ""))
         for base_, val in precios.items():
-            if base_ != "doble" and val:
+            if base_ != base_ppal and val:
                 L.append("- Precio: desde {} {} por persona en base {}".format(mon, fmt_precio(val), base_))
         if txt(p, "nota_impuestos"):
             L.append("- Impuestos: " + txt(p, "nota_impuestos"))
@@ -1372,8 +1372,10 @@ def actualizar_llms(publicados, hoy):
     filas = []
     for p, vig in publicados:
         pd = p["precio_desde"]
-        filas.append("- {titulo} — desde {mon} {val} — Salida: {sal} — {url}".format(
-            titulo=txt(p, "titulo"), mon=pd.get("moneda", ""),
+        bases = [x["base"] for x in lista(p, "precios") if isinstance(x, dict)]
+        base_txt = "" if ("doble" in bases or not bases) else " (base {})".format(bases[0])
+        filas.append("- {titulo} — desde {mon} {val}{base} — Salida: {sal} — {url}".format(
+            titulo=txt(p, "titulo"), mon=pd.get("moneda", ""), base=base_txt,
             val=fmt_precio(pd.get("valor")), sal=salida_corta(p["salida"]),
             url="{}/paquetes/{}".format(DOMINIO, p["id"])))
 
@@ -1382,7 +1384,7 @@ def actualizar_llms(publicados, hoy):
         "## Salidas y paquetes actuales",
         "Generado el {} desde data/paquetes.json. Solo salidas vigentes:".format(hoy.isoformat()),
         "lo inactivo o vencido se retira de esta lista automáticamente.",
-        "Precios por persona en base doble. " + LEYENDA_PRECIO,
+        "Precios por persona en base doble, salvo que el paquete indique otra base. " + LEYENDA_PRECIO,
         "",
     ] + filas + [
         "",

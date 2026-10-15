@@ -1335,7 +1335,7 @@
         "5 almuerzos o cenas",
         "Bus con guía de habla hispana",
         "Universal Assistance con seguro de cancelación (hasta 70 años)",
-        "Acompañante de Organización Piamonte desde Buenos Aires (mín. 20 pax)"
+        "Acompañante desde Buenos Aires (mín. 20 pax)"
       ],
       "imagen": "assets/img/pexels/2064827-1600.jpg",
       "imagen_alt": "Coliseo de Roma bajo un cielo con nubes, Italia",
@@ -7419,8 +7419,8 @@
         "Traslados de llegada y salida",
         "Asistencia al viajero Universal Assistance Excellence (hasta USD 150.000)"
       ],
-      "imagen": "assets/img/pexels/2064827-1200.jpg",
-      "imagen_alt": "El Coliseo romano al atardecer",
+      "imagen": "assets/img/pexels/19976960-1200.jpg",
+      "imagen_alt": "Techos de Florencia vistos desde lo alto, Italia",
       "precios": [
         {
           "base": "doble",
@@ -9453,8 +9453,8 @@
         "3 noches en Hotel Cordón del Plata con desayuno",
         "Asistencia al viajero nacional (cobertura ARS 2.000.000)"
       ],
-      "imagen": "assets/img/pexels/19046646-1200.jpg",
-      "imagen_alt": "Viñedos de Mendoza con la cordillera de los Andes al fondo",
+      "imagen": "assets/img/pexels/31025244-1200.jpg",
+      "imagen_alt": "Viñedos verdes al pie de la cordillera de los Andes, Mendoza",
       "precios": [
         {
           "base": "doble",
@@ -9637,8 +9637,8 @@
         "3 noches en Hotel Nevada con desayuno",
         "Asistencia al viajero nacional (cobertura ARS 2.000.000)"
       ],
-      "imagen": "assets/img/pexels/14866540-1600.jpg",
-      "imagen_alt": "Lago y montañas en la Patagonia argentina",
+      "imagen": "assets/img/pexels/17676585-1200.jpg",
+      "imagen_alt": "Lago Nahuel Huapi con sus islas y montañas, Bariloche",
       "precios": [
         {
           "base": "doble",
@@ -9991,8 +9991,8 @@
         "3 noches en Parry Hotel con desayuno",
         "Asistencia al viajero nacional (cobertura ARS 2.000.000)"
       ],
-      "imagen": "assets/img/pexels/14019374-1600.jpg",
-      "imagen_alt": "Ballena franca austral saliendo del agua en Península Valdés",
+      "imagen": "assets/img/pexels/14019459-1200.jpg",
+      "imagen_alt": "Ballena franca austral con su cría vista desde el aire, Península Valdés",
       "precios": [
         {
           "base": "doble",
@@ -10027,9 +10027,9 @@
       }
     },
     {
-      "activo": true,
+      "activo": false,
       "destacado": false,
-      "motivo_inactivo": "",
+      "motivo_inactivo": "Falta precio por persona en base doble: el operador publica solo el valor para 2 adultos y 2 niños.",
       "regimen": "Media pensión",
       "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
       "condiciones": [
@@ -10130,7 +10130,7 @@
       "condiciones": [
         "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
         "Precio válido hasta la fecha de salida.",
-        "Salidas diarias; la fecha y el precio de ejemplo corresponden al 17 de noviembre de 2026. El precio publicado por el operador corresponde a 1 adulto; consultar valor en base doble."
+        "Salidas diarias; la fecha y el precio de ejemplo corresponden al 17 de noviembre de 2026. Precio por persona en base single; consultar valor en base doble."
       ],
       "no_incluye": [
         "Comidas no indicadas",
@@ -10200,7 +10200,7 @@
       "precio_desde": {
         "valor": 1395002,
         "moneda": "ARS",
-        "nota": "por persona en base doble — total con impuestos"
+        "nota": "por persona en base single — total con impuestos"
       },
       "salida": "Salidas diarias (ejemplo: 17 de noviembre 2026)",
       "vigencia": "2026-12-31",
@@ -10259,7 +10259,7 @@
       "condiciones": [
         "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
         "Precio válido hasta la fecha de salida.",
-        "El precio publicado por el operador corresponde a 1 adulto; consultar valor en base doble.",
+        "Precio por persona en base single; consultar valor en base doble.",
         "No incluye traslados aeropuerto – hotel ni Salta – Purmamarca; se cotizan aparte."
       ],
       "no_incluye": [
@@ -10352,7 +10352,7 @@
       "precio_desde": {
         "valor": 1362212,
         "moneda": "ARS",
-        "nota": "por persona en base doble — total con impuestos"
+        "nota": "por persona en base single — total con impuestos"
       },
       "salida": "12 de abril 2027",
       "vigencia": "2027-04-12",

@@ -37,7 +37,7 @@ Versión completa (historia, medios de pago, detalle de cada paquete con hoteles
 ## Salidas y paquetes actuales
 Generado el 2026-10-15 desde data/paquetes.json. Solo salidas vigentes:
 lo inactivo o vencido se retira de esta lista automáticamente.
-Precios por persona en base doble. Sujeto a disponibilidad al momento de la reserva.
+Precios por persona en base doble, salvo que el paquete indique otra base. Sujeto a disponibilidad al momento de la reserva.
 
 - Año Nuevo a bordo del Costa Serena — desde USD 2.158 — Salida: 27 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/anio-nuevo-costa-serena
 - Auroras Boreales — Salida grupal — desde USD 7.878 — Salida: 24 de enero 2027 — https://www.legendtravel.com.ar/paquetes/auroras-boreales-grupal
@@ -55,9 +55,8 @@ Precios por persona en base doble. Sujeto a disponibilidad al momento de la rese
 - Bariloche lo tiene todo — 27 de octubre 2026 — desde ARS 651.624 — Salida: 27 de octubre 2026 — https://www.legendtravel.com.ar/paquetes/bariloche-lo-tiene-todo
 - Ushuaia — 16 de noviembre 2026 — desde ARS 949.630 — Salida: 16 de noviembre 2026 — https://www.legendtravel.com.ar/paquetes/ushuaia
 - Vuelta al norte argentino — 16 de noviembre 2026 — desde ARS 1.280.826 — Salida: 16 de noviembre 2026 — https://www.legendtravel.com.ar/paquetes/vuelta-norte-argentino
-- Valle de la Luna con noche en Valle Fértil — Salidas diarias — desde ARS 1.395.002 — Salida: Salidas diarias — https://www.legendtravel.com.ar/paquetes/valle-de-la-luna
+- Valle de la Luna con noche en Valle Fértil — Salidas diarias — desde ARS 1.395.002 (base single) — Salida: Salidas diarias — https://www.legendtravel.com.ar/paquetes/valle-de-la-luna
 - Puerto Madryn — 23 de noviembre 2026 — desde ARS 676.299 — Salida: 23 de noviembre 2026 — https://www.legendtravel.com.ar/paquetes/puerto-madryn-escapada
-- Esteros del Iberá — 23 de noviembre 2026 — desde ARS 1.323.740 — Salida: 23 de noviembre 2026 — https://www.legendtravel.com.ar/paquetes/esteros-del-ibera
 - Ushuaia & El Calafate — 24 de noviembre 2026 — desde ARS 1.342.389 — Salida: 24 de noviembre 2026 — https://www.legendtravel.com.ar/paquetes/ushuaia-el-calafate
 - Navidad a bordo del Costa Diadema — desde USD 1.334 — Salida: 23 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/navidad-costa-diadema
 - Recibí el 2027 en Altamar — Costa Diadema — desde USD 1.536 — Salida: 30 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/2027-altamar-costa-diadema
@@ -79,7 +78,7 @@ Precios por persona en base doble. Sujeto a disponibilidad al momento de la rese
 - España, Francia, Suiza e Italia — 4 de abril 2027 — desde USD 5.187 — Salida: 4 de abril 2027 — https://www.legendtravel.com.ar/paquetes/espana-francia-suiza-italia
 - China & Tíbet — Salida grupal — desde USD 10.220 — Salida: 6 de abril 2027 — https://www.legendtravel.com.ar/paquetes/china-tibet
 - Mágicamente Europa — 9 de abril 2027 — desde USD 4.622 — Salida: 9 de abril 2027 — https://www.legendtravel.com.ar/paquetes/magicamente-europa
-- Salta & Purmamarca — 12 de abril 2027 — desde ARS 1.362.212 — Salida: 12 de abril 2027 — https://www.legendtravel.com.ar/paquetes/salta-purmamarca
+- Salta & Purmamarca — 12 de abril 2027 — desde ARS 1.362.212 (base single) — Salida: 12 de abril 2027 — https://www.legendtravel.com.ar/paquetes/salta-purmamarca
 - Andalucía, Marruecos y Portugal — 16 de abril 2027 — desde USD 4.710 — Salida: 16 de abril 2027 — https://www.legendtravel.com.ar/paquetes/andalucia-marruecos-portugal
 - Madrid y Norte Europeo — 23 de abril 2027 — desde USD 5.024 — Salida: 23 de abril 2027 — https://www.legendtravel.com.ar/paquetes/madrid-norte-europeo
 - Descubriendo Europa — 2 de mayo 2027 — desde USD 4.554 — Salida: 2 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/descubriendo-europa

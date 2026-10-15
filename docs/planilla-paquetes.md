@@ -90,8 +90,8 @@ Hay lugar para 4 vuelos: vuelo1, vuelo2, vuelo3 y vuelo4. Cada uno tiene:
 
 ### Sigla del operador
 Columna `operador_sigla`: dos letras (KM = King Midas, JT = Julia Tours, CC = Cuarto Continente, PI = Piamonte).
-Es lo único del operador que se ve en la web: sale chiquita debajo del precio, sin nombre ni link.
-Las columnas `operador` y `ref` siguen siendo internas.
+Sirve para la planilla de revisión y para saber de dónde salió cada paquete.
+Es interna, como `operador` y `ref`: el operador nunca se muestra al cliente (ni en la página, ni en las cards, ni en el schema, ni en llms).
 
 ### Foto de portada
 

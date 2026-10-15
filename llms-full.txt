@@ -205,7 +205,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Precio: desde USD 5.428 por persona en base doble (por persona en base doble — IVA y gastos administrativos incluidos)
 - Precio: desde USD 6.547 por persona en base single
 - Impuestos: No incluye percepción RG 5463 (30% sobre servicios terrestres) si se abona en pesos, ni RS 3819 (5%) de corresponder.
-- Incluye: Aéreo económica Bs As/Roma/Bs As con Iberia (vía Madrid); Traslados de llegada y salida; 13 noches de hotel con desayuno buffet + 1 noche en ferry (camarote doble con baño); Tour: Roma (4N), Bari, Lecce, Gallipoli, Alberobello, Matera, Nápoles, Capri, Sorrento, Salerno, Taormina (2N), Catania, Siracusa, Agrigento, Marsala, Erice, Palermo, Pompeya; Panorámicas en Agrigento, Palermo y Pompeya; Entradas: Abadía S. Giovanni in Venere, Valle de los Templos, catedrales de Palermo y Monreale, Pompeya; Ferries: Nápoles/Capri/Sorrento, San Giovanni/Messina, Palermo/Nápoles (nocturno); 5 almuerzos o cenas; Bus con guía de habla hispana; Universal Assistance con seguro de cancelación (hasta 70 años); Acompañante de Organización Piamonte desde Buenos Aires (mín. 20 pax)
+- Incluye: Aéreo económica Bs As/Roma/Bs As con Iberia (vía Madrid); Traslados de llegada y salida; 13 noches de hotel con desayuno buffet + 1 noche en ferry (camarote doble con baño); Tour: Roma (4N), Bari, Lecce, Gallipoli, Alberobello, Matera, Nápoles, Capri, Sorrento, Salerno, Taormina (2N), Catania, Siracusa, Agrigento, Marsala, Erice, Palermo, Pompeya; Panorámicas en Agrigento, Palermo y Pompeya; Entradas: Abadía S. Giovanni in Venere, Valle de los Templos, catedrales de Palermo y Monreale, Pompeya; Ferries: Nápoles/Capri/Sorrento, San Giovanni/Messina, Palermo/Nápoles (nocturno); 5 almuerzos o cenas; Bus con guía de habla hispana; Universal Assistance con seguro de cancelación (hasta 70 años); Acompañante desde Buenos Aires (mín. 20 pax)
 - No incluye: Cualquier servicio no especificado como incluido
 - Hotel: Ergife Palace Hotel (Roma, 4*, 4 noches, Desayuno, Standard) — Piscina exterior con hidromasaje y cascada, con bar al borde; Gimnasio, restaurante, bar y cafetería dentro del hotel; Al Vaticano se llega en colectivo y subte hasta Ottaviano
 - Hotel: Parco dei Principi Hotel Congress & Spa (Bari, 4*, 1 noches, Desayuno, Standard)
@@ -332,8 +332,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - URL: https://www.legendtravel.com.ar/paquetes/valle-de-la-luna
 - Destinos: San Juan, Valle Fértil, Ischigualasto
 - Salida: Salidas diarias (ejemplo: 17 de noviembre 2026) · 3 noches · Régimen: Desayuno
-- Precio: desde ARS 1.395.002 por persona en base doble (por persona en base doble — total con impuestos)
-- Precio: desde ARS 1.395.002 por persona en base single
+- Precio: desde ARS 1.395.002 por persona en base single (por persona en base single — total con impuestos)
 - Impuestos: Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.
 - Incluye: Aéreos Buenos Aires / San Juan / Buenos Aires con Aerolíneas Argentinas, tarifa Flex; 1 valija en bodega (1 PC) + equipaje de mano; 2 noches en San Juan con desayuno y 1 en Valle Fértil con media pensión; Circuito Valle de la Luna: traslados de llegada y salida y excursiones; Asistencia al viajero nacional (cobertura ARS 2.000.000)
 - No incluye: Comidas no indicadas; Excursiones no indicadas; Gastos personales
@@ -352,18 +351,6 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - No incluye: Comidas no indicadas; Excursiones no indicadas; Gastos personales
 - Hotel: Parry Hotel (Puerto Madryn, 3 noches, Desayuno)
 - Resumen: Tres noches en Puerto Madryn con vuelos directos y hotel con desayuno. Noviembre es temporada de ballenas en Península Valdés.
-- Vigente hasta: 23/11/2026
-
-### Esteros del Iberá — 23 de noviembre 2026
-- URL: https://www.legendtravel.com.ar/paquetes/esteros-del-ibera
-- Destinos: Posadas, Esteros del Iberá
-- Salida: 23 de noviembre 2026 · 3 noches · Régimen: Media pensión
-- Precio: desde ARS 1.323.740 por persona en base doble (por persona en base doble — total con impuestos)
-- Impuestos: Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.
-- Incluye: Aéreos Buenos Aires / Posadas / Buenos Aires con Aerolíneas Argentinas, tarifa Base; Equipaje: 1 bolso de mano (sin valija en bodega); Traslado privado Posadas – Colonia Carlos Pellegrini – Posadas; 3 noches en Posada Ypa Sapukai con media pensión; Asistencia al viajero nacional (cobertura ARS 2.000.000)
-- No incluye: Comidas no indicadas; Excursiones no indicadas; Gastos personales
-- Hotel: Posada Ypa Sapukai (Colonia Carlos Pellegrini, 3 noches, Media pensión)
-- Resumen: Tres noches en una posada de Carlos Pellegrini con media pensión y traslado privado desde Posadas. Yacarés, carpinchos y más de 300 especies de aves en uno de los humedales más grandes del mundo.
 - Vigente hasta: 23/11/2026
 
 ### Ushuaia & El Calafate — 24 de noviembre 2026
@@ -685,8 +672,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - URL: https://www.legendtravel.com.ar/paquetes/salta-purmamarca
 - Destinos: Salta, Purmamarca
 - Salida: 12 de abril 2027 · 5 noches · Régimen: Desayuno
-- Precio: desde ARS 1.362.212 por persona en base doble (por persona en base doble — total con impuestos)
-- Precio: desde ARS 1.362.212 por persona en base single
+- Precio: desde ARS 1.362.212 por persona en base single (por persona en base single — total con impuestos)
 - Impuestos: Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.
 - Incluye: Aéreos Buenos Aires / Salta / Buenos Aires con Aerolíneas Argentinas, tarifa Flex; 1 valija en bodega (1 PC) + equipaje de mano; 2 noches en Salta, 2 en Purmamarca y 1 en Salta con desayuno; Excursión Quebrada de Humahuaca y Salinas Grandes; Asistencia al viajero nacional (cobertura ARS 2.000.000)
 - No incluye: Comidas no indicadas; Excursiones no indicadas; Gastos personales
