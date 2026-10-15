@@ -19,19 +19,6 @@ Información verificada en octubre de 2026.
 - [Key differences ETIAS and the EES (EU, Travel to Europe)](https://travel-europe.europa.eu/etias/about-etias/news-corner/Key-differences-ETIAS-and-EES)
 - [ETIAS timeline explained (EU, Travel to Europe)](https://travel-europe.europa.eu/etias/about-etias/news-corner/etias-timeline-explained)
 
-## Escalas en Lima: la tasa para pasajeros en conexión
-
-Información verificada en octubre de 2026.
-
-- [Ositrán aprueba la Tarifa Unificada de Uso del Aeropuerto (TUUA) de transferencia en el Aeropuerto Internacional Jorge Chávez (gob.pe, Ositrán)](https://www.gob.pe/institucion/ositran/noticias/1295753-ositran-aprueba-la-tarifa-unificada-de-uso-del-aeropuerto-tuua-de-transferencia-en-el-aeropuerto-internacional-jorge-chavez)
-- [Resolución de Consejo Directivo N.° 0005-2026-CD-OSITRAN (Ositrán)](https://www.ositran.gob.pe/anterior/wp-content/uploads/2026/02/resolucion-005-2026-cd-ositran.pdf)
-- [Pasajeros de vuelos nacionales no pagarán TUUA de transferencia en el Aeropuerto Internacional Jorge Chávez (gob.pe, MTC)](https://www.gob.pe/institucion/mtc/noticias/1305780-pasajeros-de-vuelos-nacionales-no-pagaran-tuua-de-transferencia-en-el-aeropuerto-internacional-jorge-chavez)
-- [MTC supervisó los primeros vuelos en el inicio de operaciones del nuevo aeropuerto Jorge Chávez (gob.pe, MTC)](https://www.gob.pe/institucion/mtc/noticias/1179300-mtc-superviso-los-primeros-vuelos-en-el-inicio-de-operaciones-del-nuevo-aeropuerto-jorge-chavez)
-- [Airport Fees (Lima Airport Partners)](https://www.lima-airport.com/en/cms/pasajeros/tarifa-aeroportuaria)
-- [Frequently Asked Questions - TUUA Section (Lima Airport Partners)](https://www.lima-airport.com/en/cms/pasajeros/preguntas-frecuentes-tuua)
-- [Press release: Implementation of Airport Fee for International Connecting Passengers at Lima (Lima Airport Partners)](https://www.lima-airport.com/en/comunicados/noticias/332)
-- [Portal de Pago TUUA (Lima Airport Partners)](https://pagotuua.lima-airport.com/)
-
 ## Sargazo en el Caribe: qué es y cómo elegir bien la fecha y el destino
 
 Información verificada en octubre de 2026.
@@ -50,7 +37,3 @@ Información verificada en octubre de 2026.
 ## Europa: ¿viaje a medida o circuito con guía?
 
 Información actualizada en octubre de 2026. Artículo de criterio propio de la agencia (pros y contras de cada forma de viajar); sin fuentes externas.
-
-## Qué llevar en la valija para tu primer viaje a Europa
-
-Información actualizada en octubre de 2026. Guía general de equipaje; sin fuentes externas. Las normas de líquidos en equipaje de mano (envases de hasta 100 ml) y los tipos de enchufe (C/F en Europa continental, G en Reino Unido e Irlanda) son las habituales; chequear con la aerolínea y el destino antes de viajar.
