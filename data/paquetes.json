@@ -2052,381 +2052,322 @@
       "activo": true,
       "destacado": true,
       "motivo_inactivo": "",
-      "regimen": "",
-      "nota_impuestos": "",
-      "condiciones": [],
+      "regimen": "Desayuno (9 almuerzos y 3 cenas incluidos)",
+      "nota_impuestos": "No incluye la percepción del 30% (RG 5463) si se abona en pesos.",
+      "condiciones": [
+        "Salida grupal con tour leader desde Argentina, garantizado con un mínimo de 10 pasajeros.",
+        "Tarifa válida con un mínimo de 10 pasajeros viajando juntos; si no se alcanza, el operador puede ajustar itinerario o tarifa.",
+        "Es obligatorio el certificado internacional de vacuna contra la fiebre amarilla para este recorrido.",
+        "Las visas de Vietnam y Camboya no están incluidas."
+      ],
       "no_incluye": [
-        "Visa electrónica de Vietnam",
-        "Visa electrónica de Camboya",
-        "Bebidas",
-        "Entradas no detalladas",
-        "Servicios no especificados"
+        "Visa de Vietnam (trámite online, aprox. USD 25/30 por persona)",
+        "Visa de Camboya on arrival (aprox. USD 25/30)",
+        "Comidas y bebidas no especificadas",
+        "Gastos extras o personales"
       ],
       "hoteles": [
         {
           "ciudad": "Hanoi",
-          "nombre": "Pan Pacific",
-          "categoria": "",
-          "noches": null,
-          "web": "https://www.panpacific.com/en/hotels-and-resorts/pp-hanoi.html",
-          "regimen": "",
+          "nombre": "Grand Mercure",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
           "habitacion": "",
-          "id": "pan-pacific-hanoi-hanoi",
-          "mapa": "Pan Pacific Hanoi, Hanoi",
-          "destacados": [
-            {
-              "texto": "Frente a los lagos del Oeste y Truc Bach, cerca del Barrio Antiguo",
-              "fuente": "https://www.panpacific.com/en/hotels-and-resorts/pp-hanoi.html"
-            },
-            {
-              "texto": "Piscina con techo retráctil, utilizable todo el año",
-              "fuente": "https://www.panpacific.com/en/hotels-and-resorts/pp-hanoi.html"
-            },
-            {
-              "texto": "Spa, sauna, jacuzzi y gimnasio abierto las 24 horas",
-              "fuente": "https://www.panpacific.com/en/hotels-and-resorts/pp-hanoi.html"
-            },
-            {
-              "texto": "Restaurante cantonés, buffet de mariscos y bar en la terraza",
-              "fuente": "https://www.panpacific.com/en/hotels-and-resorts/pp-hanoi.html"
-            }
-          ],
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
           "foto_credito": ""
         },
         {
-          "ciudad": "Halong",
-          "nombre": "Ambassador Cruise",
-          "categoria": "",
-          "noches": null,
-          "web": "",
-          "regimen": "",
+          "ciudad": "Bahía de Lan Ha",
+          "nombre": "Indochine Premium Ha Long (crucero)",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Pensión completa",
           "habitacion": "",
-          "id": "ambassador-cruise-halong",
-          "destacados": [],
+          "web": "",
+          "id": "",
           "mapa": "",
+          "destacados": [],
           "foto_credito": ""
         },
         {
           "ciudad": "Hoi An",
           "nombre": "Royal Hoi An",
-          "categoria": "",
-          "noches": null,
-          "web": "https://hotelroyalhoian.vn/",
-          "regimen": "",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
           "habitacion": "",
-          "id": "hotel-royal-hoi-an-hoi-an",
-          "mapa": "Hotel Royal Hoi An, Hoi An",
-          "destacados": [
-            {
-              "texto": "A orillas del río Hoai, con vistas a la Ciudad Antigua",
-              "fuente": "https://hotelroyalhoian.vn/"
-            },
-            {
-              "texto": "Bar en la terraza con tapas y cócteles",
-              "fuente": "https://hotelroyalhoian.vn/"
-            },
-            {
-              "texto": "Restaurante japonés y otro de cocina vietnamita e internacional",
-              "fuente": "https://hotelroyalhoian.vn/"
-            }
-          ],
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Hue",
+          "nombre": "Indochine Palace Hotel",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
           "foto_credito": ""
         },
         {
           "ciudad": "Ho Chi Minh",
-          "nombre": "Caravelle Saigon",
-          "categoria": "",
-          "noches": null,
-          "web": "https://www.caravellehotel.com/",
-          "regimen": "",
+          "nombre": "Caravelle",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
           "habitacion": "",
-          "id": "caravelle-saigon-ho-chi-minh",
-          "mapa": "Caravelle Saigon, Ho Chi Minh",
-          "destacados": [
-            {
-              "texto": "En la plaza Lam Son, a pasos de la Ópera de Saigón",
-              "fuente": "https://www.caravellehotel.com/"
-            },
-            {
-              "texto": "Cerca de la calle Dong Khoi y del mercado Ben Thanh",
-              "fuente": "https://www.caravellehotel.com/"
-            },
-            {
-              "texto": "Piscina, gimnasio y spa propio",
-              "fuente": "https://www.caravellehotel.com/"
-            },
-            {
-              "texto": "Bar en la terraza",
-              "fuente": "https://www.caravellehotel.com/"
-            }
-          ],
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
           "foto_credito": ""
         },
         {
           "ciudad": "Siem Reap",
-          "nombre": "Shoka Angkor",
-          "categoria": "",
-          "noches": null,
-          "web": "",
-          "regimen": "",
+          "nombre": "Sokha Angkor Resort",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
           "habitacion": "",
-          "id": "shoka-angkor-siem-reap",
-          "destacados": [],
+          "web": "",
+          "id": "",
           "mapa": "",
+          "destacados": [],
           "foto_credito": ""
         },
         {
           "ciudad": "Bangkok",
-          "nombre": "Montien Surawong",
-          "categoria": "",
-          "noches": null,
-          "web": "https://www.montienbangkok.com/",
-          "regimen": "",
+          "nombre": "Montien Hotel Surawong",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
           "habitacion": "",
-          "id": "montien-hotel-surawong-bangkok-bangkok",
-          "mapa": "Montien Hotel Surawong Bangkok, Bangkok",
-          "destacados": [
-            {
-              "texto": "Sobre Surawong Road, en la zona de Silom",
-              "fuente": "https://www.montienbangkok.com/"
-            },
-            {
-              "texto": "A distancia a pie del tren elevado y del subte",
-              "fuente": "https://www.montienbangkok.com/"
-            },
-            {
-              "texto": "Restaurante de cocina tailandesa y china",
-              "fuente": "https://montienbangkok.com/en/dining.html"
-            },
-            {
-              "texto": "Bistró de estilo francés que de noche funciona como bar de vinos",
-              "fuente": "https://montienbangkok.com/en/dining.html"
-            }
-          ],
-          "foto_credito": ""
-        },
-        {
-          "ciudad": "Chiang Rai",
-          "nombre": "Le Méridien",
-          "categoria": "",
-          "noches": null,
           "web": "",
-          "regimen": "",
-          "habitacion": "",
-          "id": "le-meridien-chiang-rai-resort-thailand-chiang-rai",
-          "mapa": "Le Méridien Chiang Rai Resort, Chiang Rai",
+          "id": "",
+          "mapa": "",
           "destacados": [],
           "foto_credito": ""
         },
         {
-          "ciudad": "Chiang Mai",
-          "nombre": "InterContinental The Mae Ping",
-          "categoria": "",
-          "noches": null,
-          "web": "",
-          "regimen": "",
-          "habitacion": "",
-          "id": "intercontinental-chiang-mai-the-mae-ping-chiang-mai",
-          "mapa": "InterContinental Chiang Mai The Mae Ping, Chiang Mai",
-          "destacados": [
-            {
-              "texto": "Al borde de la Ciudad Antigua, cerca de una de sus puertas",
-              "fuente": "https://chiangmai.intercontinental.com/"
-            },
-            {
-              "texto": "Spa de inspiración local y gimnasio 24 horas",
-              "fuente": "https://chiangmai.intercontinental.com/"
-            },
-            {
-              "texto": "Cocina del norte tailandés, restaurante chino y bar en la azotea",
-              "fuente": "https://chiangmai.intercontinental.com/"
-            }
-          ],
-          "foto_credito": ""
-        },
-        {
-          "ciudad": "Krabi",
-          "nombre": "Sofitel Phokeethra",
-          "categoria": "",
-          "noches": null,
-          "web": "https://sofitel.accor.com/en/hotels/6184.html",
-          "regimen": "",
-          "habitacion": "",
-          "id": "sofitel-krabi-phokeethra-golf-spa-resort-krabi",
-          "mapa": "Sofitel Krabi Phokeethra Golf & Spa Resort, Krabi",
-          "destacados": [
-            {
-              "texto": "Frente a la playa de Klong Muang",
-              "fuente": "https://sofitel.accor.com/en/hotels/6184.html"
-            },
-            {
-              "texto": "Piscina de forma libre de 7.000 m²",
-              "fuente": "https://sofitel.accor.com/en/hotels/6184.html"
-            },
-            {
-              "texto": "Kids club con espacios de juego",
-              "fuente": "https://sofitel.accor.com/en/hotels/6184.html"
-            },
-            {
-              "texto": "Spa y restaurantes de cocina italiana, tailandesa e india",
-              "fuente": "https://sofitel.accor.com/en/hotels/6184.html"
-            }
-          ],
-          "foto_credito": ""
-        },
-        {
           "ciudad": "Phuket",
-          "nombre": "SAii Laguna (late check-out)",
-          "categoria": "",
-          "noches": null,
-          "web": "https://www.saiihotels.com/laguna-phuket",
-          "regimen": "",
+          "nombre": "Pullman Phuket Panwa Beach",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
           "habitacion": "",
-          "id": "saii-laguna-phuket-phuket",
-          "mapa": "SAii Laguna Phuket, Phuket",
-          "destacados": [
-            {
-              "texto": "Entre una laguna y la playa de Bang Tao, con acceso directo",
-              "fuente": "https://www.saiihotels.com/laguna-phuket"
-            },
-            {
-              "texto": "Kids club y piscinas con cabañas",
-              "fuente": "https://www.saiihotels.com/laguna-phuket"
-            },
-            {
-              "texto": "Spa propio",
-              "fuente": "https://www.saiihotels.com/laguna-phuket"
-            },
-            {
-              "texto": "Habitaciones con vista a la laguna o al mar",
-              "fuente": "https://www.saiihotels.com/laguna-phuket"
-            }
-          ],
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
           "foto_credito": ""
         }
       ],
       "itinerario": [
         {
-          "dia": "Días 1 y 2",
-          "titulo": "Buenos Aires – Guarulhos – Hanoi",
-          "texto": "Salida desde Buenos Aires con conexión en Guarulhos y vuelo a Hanoi."
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Hanoi",
+          "texto": "Salida desde Ezeiza en el vuelo TK 016 de las 23:55, vía Estambul. Noche a bordo."
         },
         {
-          "dia": "Días 3 y 4",
+          "dia": "Día 2",
+          "titulo": "Estambul",
+          "texto": "Llegada a las 22:35 y conexión con el vuelo a Hanoi."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Estambul ✈ Hanoi",
+          "texto": "Vuelo TK 164 de las 02:25. Llegada a las 15:25, traslado y cena en restaurante local."
+        },
+        {
+          "dia": "Día 4",
           "titulo": "Hanoi",
-          "texto": "Mausoleo de Ho Chi Minh, Templo de la Literatura, Pagoda del Pilar Único, lago Hoan Kiem y Barrio Antiguo. Visita al pueblo de Quang Phu Cau, famoso por su incienso."
+          "texto": "Desayuno. Complejo de Ho Chi Minh, Templo de la Literatura y Pagoda del Pilar Único. Almuerzo."
         },
         {
-          "dia": "Días 5 y 6",
-          "titulo": "Bahía de Halong – Hoi An",
-          "texto": "Navegación en un junco tradicional por la Bahía de Halong, Patrimonio de la Humanidad. Vuelo a Danang y traslado a Hoi An."
+          "dia": "Día 5",
+          "titulo": "Hanoi – Bahía de Lan Ha",
+          "texto": "Desayuno y salida a la bahía de Lan Ha para embarcar en el crucero entre formaciones de piedra caliza."
         },
         {
-          "dia": "Días 7 al 10",
-          "titulo": "Hoi An – Ho Chi Minh",
-          "texto": "Hoi An: Puente Japonés y mercado tradicional. Vuelo a Ho Chi Minh: túneles de Cu Chi, Delta del Mekong y city tour por los edificios históricos y coloniales."
+          "dia": "Día 6",
+          "titulo": "Lan Ha – Hanoi ✈ Danang – Hoi An",
+          "texto": "Brunch a bordo, visita de las cuevas y desembarco. Vuelo a Danang y traslado a Hoi An."
         },
         {
-          "dia": "Días 11 al 13",
+          "dia": "Día 7",
+          "titulo": "Hoi An",
+          "texto": "Desayuno. Recorrido por la ciudad antigua, Patrimonio de la Humanidad."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Hoi An – Hue",
+          "texto": "Desayuno. Paso de Hai Van hasta Hue, almuerzo local y visita de la antigua capital imperial."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Hue ✈ Ho Chi Minh",
+          "texto": "Paseo en barco por el río Perfume, Pagoda de Thien Mu y tumba imperial. Vuelo a Ho Chi Minh."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Ho Chi Minh – Cu Chi",
+          "texto": "Desayuno. Túneles de Cu Chi y visitas de la ciudad."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Ho Chi Minh ✈ Siem Reap",
+          "texto": "Desayuno y vuelo a Siem Reap, Camboya. Visita de Angkor Wat."
+        },
+        {
+          "dia": "Día 12",
           "titulo": "Siem Reap",
-          "texto": "Templos de Angkor: Angkor Thom, Bayon, Ta Prohm, Angkor Wat, Banteay Srei, Banteay Samre y el complejo de Roulos. Atardecer sobre Angkor."
+          "texto": "Desayuno. Angkor Thom, templo Bayon y demás templos del complejo."
         },
         {
-          "dia": "Días 14 al 16",
+          "dia": "Día 13",
+          "titulo": "Siem Reap ✈ Bangkok",
+          "texto": "Desayuno y vuelo a Bangkok. Resto del día libre."
+        },
+        {
+          "dia": "Día 14",
           "titulo": "Bangkok",
-          "texto": "Buda de Oro, Buda Reclinado, Gran Palacio y Templo del Buda Esmeralda. Mercado sobre las vías del tren de Mae Klong y mercado flotante Damnoen Saduak."
+          "texto": "Desayuno. Gran Palacio con el Buda de Esmeralda y templos budistas de la ciudad."
         },
         {
-          "dia": "Días 17 al 20",
-          "titulo": "Chiang Rai – Chiang Mai",
-          "texto": "Triángulo de Oro y Museo del Opio. Templo Azul y Templo Blanco. En Chiang Mai, santuario de elefantes, templos budistas y Festival Yee Peng, con el lanzamiento de linternas."
+          "dia": "Día 15",
+          "titulo": "Bangkok",
+          "texto": "Desayuno. Día libre; sugerimos el mercado flotante."
         },
         {
-          "dia": "Días 21 al 23",
-          "titulo": "Krabi – Phuket",
-          "texto": "Playas de Krabi y excursión en lancha rápida por las islas Daeng, Paradise y Koh Hong, con snorkel. Traslado terrestre a Phuket."
+          "dia": "Día 16",
+          "titulo": "Bangkok ✈ Phuket",
+          "texto": "Desayuno y vuelo a Phuket. Resto del día libre."
         },
         {
-          "dia": "Días 24 al 26",
-          "titulo": "Phuket – Buenos Aires",
-          "texto": "Excursión de día completo a las islas Phi Phi, Monkey Beach, Bamboo Island y Pileh Lagoon. Traslado al aeropuerto y regreso vía Estambul. Llegada a Buenos Aires."
+          "dia": "Día 17",
+          "titulo": "Phuket",
+          "texto": "Desayuno. Excursión de día completo a las islas Phi Phi y Maya Bay."
+        },
+        {
+          "dia": "Día 18",
+          "titulo": "Phuket",
+          "texto": "Desayuno. Día libre."
+        },
+        {
+          "dia": "Día 19",
+          "titulo": "Phuket ✈ Estambul",
+          "texto": "Día libre con late check-out. Vuelo TK 173 de las 22:25, vía Estambul."
+        },
+        {
+          "dia": "Día 20",
+          "titulo": "Estambul ✈ Buenos Aires",
+          "texto": "Conexión con el vuelo TK 015 de las 10:00. Llegada a Ezeiza a las 22:25."
         }
       ],
       "tarifas": [],
       "id": "vietnam-camboya-tailandia",
-      "titulo": "Vietnam, Camboya & Tailandia",
+      "titulo": "Vietnam, Camboya & Tailandia 2027 — Salida grupal",
       "region": "asia",
       "destinos": [
         "Hanoi",
-        "Bahía de Halong",
+        "Bahía de Lan Ha",
         "Hoi An",
+        "Hue",
         "Ho Chi Minh",
         "Siem Reap",
         "Bangkok",
-        "Chiang Rai",
-        "Chiang Mai",
-        "Krabi",
         "Phuket"
       ],
-      "resumen": "El gran viaje del Sudeste Asiático acompañado desde Argentina: la bahía de Halong, los templos de Angkor, el Triángulo de Oro y las playas de Tailandia, con 35 comidas incluidas.",
+      "resumen": "Hanoi y una noche de crucero por la bahía de Lan Ha, Hoi An y la Hue imperial, los túneles de Cu Chi, los templos de Angkor, el Gran Palacio de Bangkok y tres noches de playa en Phuket.",
       "precio_desde": {
-        "valor": 14330,
+        "valor": 9740,
         "moneda": "USD",
         "nota": "por persona en base doble — total con impuestos"
       },
-      "salida": "7 de noviembre 2026",
-      "vigencia": "2026-11-07",
-      "noches": 22,
-      "operador": "",
-      "ref": "PXX576-720",
+      "salida": "7 de marzo 2027",
+      "vigencia": "2027-03-07",
+      "noches": 16,
+      "operador": "King Midas",
+      "operador_sigla": "KM",
+      "ref": "KM-1115",
       "incluye": [
-        "Aéreo Buenos Aires–Guarulhos con LATAM y Guarulhos–Hanoi / Phuket–Buenos Aires con Turkish (vía Estambul)",
-        "Acompañamiento desde Argentina durante todo el recorrido",
+        "Aéreos Buenos Aires / Hanoi // Phuket / Buenos Aires con Turkish Airlines",
+        "Vuelos domésticos Hanoi / Danang, Hue / Ho Chi Minh y Bangkok / Phuket",
+        "Aéreos Ho Chi Minh / Siem Reap / Bangkok",
+        "2 noches en Hanoi, 1 en crucero por la bahía de Lan Ha (pensión completa), 2 en Hoi An, 1 en Hue, 2 en Ho Chi Minh, 2 en Siem Reap, 3 en Bangkok y 3 en Phuket (late check-out)",
+        "9 almuerzos y 3 cenas según itinerario",
+        "Visitas, excursiones y entradas según itinerario",
         "Todos los traslados",
-        "22 noches con desayuno",
-        "Late check-out en Phuket",
-        "35 comidas según itinerario",
-        "Vuelos internos",
-        "Transporte exclusivo para el grupo",
-        "Guía acompañante de habla hispana",
-        "Todas las excursiones del itinerario",
-        "Asistencia Premium (hasta 85 años)",
-        "Propinas, impuestos y tasas",
-        "Noche previa en hotel de Buenos Aires con traslado",
-        "Habitación a compartir garantizada para pasajeras que viajen solas"
+        "Guía de habla hispana",
+        "Reunión informativa previa",
+        "Universal Assistance Maximum de cortesía (hasta USD 300.000)",
+        "Tour leader desde Argentina (mín. 10 pax)"
       ],
       "imagen": "assets/img/pexels/18008781-1600.jpg",
       "imagen_alt": "Calle arbolada con motos en Hanoi, Vietnam",
       "precios": [
         {
           "base": "doble",
-          "valor": 14330
+          "valor": 9740
+        },
+        {
+          "base": "single",
+          "valor": 12020
         }
       ],
       "vuelos": [
         {
-          "aerolinea": "LATAM",
-          "ruta": "Buenos Aires–Guarulhos",
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Buenos Aires (EZE) – Estambul",
           "clase": "",
-          "fecha": "",
-          "horario": "",
-          "numero": "",
+          "fecha": "07/03/2027",
+          "horario": "23:55 – 22:35 (+1)",
+          "numero": "TK 016",
           "equipaje": ""
         },
         {
           "aerolinea": "Turkish Airlines",
-          "ruta": "Guarulhos–Hanoi / Phuket–Buenos Aires (vía Estambul)",
+          "ruta": "Estambul – Hanoi",
           "clase": "",
-          "fecha": "",
-          "horario": "",
-          "numero": "",
+          "fecha": "09/03/2027",
+          "horario": "02:25 – 15:25",
+          "numero": "TK 164",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Phuket – Estambul",
+          "clase": "",
+          "fecha": "25/03/2027",
+          "horario": "22:25 – 05:30 (+1)",
+          "numero": "TK 173",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Estambul – Buenos Aires (EZE)",
+          "clase": "",
+          "fecha": "26/03/2027",
+          "horario": "10:00 – 22:25",
+          "numero": "TK 015",
           "equipaje": ""
         }
       ],
       "foto_portada": "",
       "fuente_detalle": {
-        "url": "https://www.legendtravel.com.ar/paquetes?id=576&salidaId=720&adultsQty=2",
-        "fecha": "2026-10-13"
+        "url": "https://www.kingmidas.com.ar/itinerario/1115/Vietnam,-Camboya-&-Tailandia-2027",
+        "fecha": "2026-10-15",
+        "desglose": "Base doble USD 7.950 + impuestos USD 1.790 (IVA, gastos, DNT, tasas y propinas) = USD 9.740. Single: 7.950 + 2.280 + 1.790 = 12.020. Reemplaza la versión de noviembre 2026 (26 días, USD 14.330)."
       }
     },
     {
@@ -2897,8 +2838,10 @@
       "destacado": true,
       "motivo_inactivo": "",
       "regimen": "",
-      "nota_impuestos": "",
-      "condiciones": [],
+      "nota_impuestos": "No incluye la percepción del 30% (RG 5463) si se abona en pesos.",
+      "condiciones": [
+        "Es obligatorio el certificado internacional de vacuna contra la fiebre amarilla para ingresar a Egipto (no se acepta exención)."
+      ],
       "no_incluye": [
         "Bebidas durante el crucero",
         "Comidas y bebidas no especificadas",
@@ -3140,8 +3083,9 @@
       "salida": "17 de marzo 2027",
       "vigencia": "2027-03-17",
       "noches": 15,
-      "operador": "",
-      "ref": "PXX699-930",
+      "operador": "King Midas",
+      "operador_sigla": "KM",
+      "ref": "KM-1117",
       "incluye": [
         "Aéreos desde Buenos Aires con Ethiopian Airlines",
         "Vuelos internos en Egipto y aéreo El Cairo–Amman",
@@ -3160,23 +3104,55 @@
         {
           "base": "doble",
           "valor": 8420
+        },
+        {
+          "base": "single",
+          "valor": 11070
         }
       ],
       "vuelos": [
         {
           "aerolinea": "Ethiopian Airlines",
-          "ruta": "Desde Buenos Aires",
+          "ruta": "Buenos Aires (EZE) – Addis Abeba",
           "clase": "",
-          "fecha": "",
-          "horario": "",
-          "numero": "",
+          "fecha": "17/03/2027",
+          "horario": "21:30 – 19:30 (+1)",
+          "numero": "ET 507",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Ethiopian Airlines",
+          "ruta": "Addis Abeba – El Cairo",
+          "clase": "",
+          "fecha": "18/03/2027",
+          "horario": "22:05 – 01:05 (+1)",
+          "numero": "ET 452",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Ethiopian Airlines",
+          "ruta": "Amman – Addis Abeba",
+          "clase": "",
+          "fecha": "02/04/2027",
+          "horario": "03:25 – 06:55",
+          "numero": "ET 429",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Ethiopian Airlines",
+          "ruta": "Addis Abeba – Buenos Aires (EZE)",
+          "clase": "",
+          "fecha": "02/04/2027",
+          "horario": "09:50 – 20:25",
+          "numero": "ET 506",
           "equipaje": ""
         }
       ],
       "foto_portada": "",
       "fuente_detalle": {
-        "url": "https://www.legendtravel.com.ar/paquetes?id=699&salidaId=930&adultsQty=2",
-        "fecha": "2026-10-13"
+        "url": "https://www.kingmidas.com.ar/itinerario/1117/Egipto-&-Jordania%C2%A0",
+        "fecha": "2026-10-15",
+        "desglose": "Base doble USD 6.580 + impuestos USD 1.840 (DNT, IVA, gastos, visa de Egipto y propinas) = USD 8.420 (sin cambios). Single: 6.580 + 2.650 + 1.840 = 11.070."
       }
     },
     {
@@ -3184,7 +3160,7 @@
       "destacado": true,
       "motivo_inactivo": "",
       "regimen": "",
-      "nota_impuestos": "",
+      "nota_impuestos": "No incluye la percepción del 30% (RG 5463) si se abona en pesos.",
       "condiciones": [
         "El itinerario puede sufrir modificaciones en el orden de los servicios, manteniéndose el contenido del programa."
       ],
@@ -3195,45 +3171,28 @@
       "hoteles": [
         {
           "ciudad": "Johannesburgo",
-          "nombre": "Permont D'Oreale",
-          "categoria": "5*",
+          "nombre": "Silverbirch Hotel",
+          "categoria": "4*",
           "noches": 1,
-          "web": "https://emperorspalace.com/peermont-doreale-grande/",
           "regimen": "Desayuno",
-          "habitacion": "Habitación estándar",
-          "id": "peermont-d-oreale-grande-at-emperors-palace-johannesburgo",
-          "mapa": "Peermont D'oreale Grande, Emperors Palace, Kempton Park",
-          "destacados": [
-            {
-              "texto": "Dentro del complejo Emperors Palace, en Kempton Park",
-              "fuente": "https://emperorspalace.com/peermont-doreale-grande/"
-            },
-            {
-              "texto": "A 5 minutos del aeropuerto OR Tambo, con shuttle de cortesía a pedido",
-              "fuente": "https://emperorspalace.com/peermont-doreale-grande/"
-            },
-            {
-              "texto": "Pileta exterior con terraza y acceso directo al spa",
-              "fuente": "https://emperorspalace.com/peermont-doreale-grande/"
-            },
-            {
-              "texto": "Casino y restaurantes en el mismo complejo",
-              "fuente": "https://emperorspalace.com/peermont-doreale-grande/"
-            }
-          ],
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
           "foto_credito": ""
         },
         {
           "ciudad": "Área Kruger",
-          "nombre": "Tintswalo Private Reserve",
-          "categoria": "5*",
+          "nombre": "Moditlo / Shidlulli, reserva privada Karongwe",
+          "categoria": "",
           "noches": 2,
-          "web": "",
-          "regimen": "",
+          "regimen": "Pensión completa",
           "habitacion": "",
-          "id": "tintswalo-private-reserve-area-kruger",
-          "destacados": [],
+          "web": "",
+          "id": "",
           "mapa": "",
+          "destacados": [],
           "foto_credito": ""
         },
         {
@@ -3241,42 +3200,25 @@
           "nombre": "Hilton Mauritius Resort & Spa",
           "categoria": "4*",
           "noches": 4,
-          "web": "https://www.hilton.com/en/hotels/mruhihi-hilton-mauritius-resort-and-spa/",
-          "regimen": "",
+          "regimen": "Media pensión",
           "habitacion": "",
-          "id": "hilton-mauritius-resort-spa-mauritius",
-          "mapa": "Hilton Mauritius Resort & Spa, Flic en Flac",
-          "destacados": [
-            {
-              "texto": "Frente a la playa en la costa oeste de Mauricio, con acceso directo",
-              "fuente": "https://www.hilton.com/en/hotels/mruhihi-hilton-mauritius-resort-and-spa/"
-            },
-            {
-              "texto": "Habitaciones con vista al jardín y la piscina, o a la playa",
-              "fuente": "https://www.hilton.com/en/hotels/mruhihi-hilton-mauritius-resort-and-spa/"
-            },
-            {
-              "texto": "Spa con sauna, baño de vapor e hidroterapia, y gimnasio",
-              "fuente": "https://www.hilton.com/en/hotels/mruhihi-hilton-mauritius-resort-and-spa/"
-            },
-            {
-              "texto": "Snorkel y remo en la laguna, y piscina apta para chicos",
-              "fuente": "https://www.hilton.com/en/hotels/mruhihi-hilton-mauritius-resort-and-spa/"
-            }
-          ],
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
           "foto_credito": ""
         },
         {
           "ciudad": "Ciudad del Cabo",
-          "nombre": "Southern Sun Waterfront / Park Inn Foreshore",
+          "nombre": "Southern Sun Waterfront",
           "categoria": "4*",
           "noches": 4,
-          "web": "",
           "regimen": "Desayuno",
-          "habitacion": "Habitación estándar",
-          "id": "southern-sun-waterfront-park-inn-foreshore-ciudad-del-cabo",
-          "destacados": [],
+          "habitacion": "",
+          "web": "",
+          "id": "",
           "mapa": "",
+          "destacados": [],
           "foto_credito": ""
         }
       ],
@@ -3359,15 +3301,16 @@
       ],
       "resumen": "Safari en reserva privada del área Kruger con lodge 5*, playas paradisíacas de Mauritius y Ciudad del Cabo con Table Mountain y viñedos. África premium.",
       "precio_desde": {
-        "valor": 10360,
+        "valor": 9820,
         "moneda": "USD",
         "nota": "por persona en base doble — total con impuestos"
       },
-      "salida": "16 de noviembre 2026 — South African Airways vía San Pablo",
-      "vigencia": "2026-11-16",
+      "salida": "8 de febrero 2027 — South African Airways vía San Pablo",
+      "vigencia": "2027-02-08",
       "noches": 11,
-      "operador": "",
-      "ref": "PXX648-839",
+      "operador": "King Midas",
+      "operador_sigla": "KM",
+      "ref": "KM-1147",
       "incluye": [
         "Aéreos desde Buenos Aires vía San Pablo con South African Airways",
         "1 noche en Johannesburgo con desayuno",
@@ -3388,24 +3331,74 @@
       "precios": [
         {
           "base": "doble",
-          "valor": 10360
+          "valor": 9820
+        },
+        {
+          "base": "single",
+          "valor": 12700
         }
       ],
       "vuelos": [
         {
-          "aerolinea": "South African Airways",
-          "ruta": "Desde Buenos Aires, vía San Pablo",
+          "aerolinea": "Gol",
+          "ruta": "Buenos Aires (AEP) – San Pablo (GRU)",
           "clase": "",
           "fecha": "",
           "horario": "",
-          "numero": "",
+          "numero": "G3 7681",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "South African Airways",
+          "ruta": "San Pablo – Johannesburgo",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "SA 223",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "South African Airways",
+          "ruta": "Johannesburgo – Mauritius",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "SA 190",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "South African Airways",
+          "ruta": "Mauritius – Ciudad del Cabo",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "SA 195",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "South African Airways",
+          "ruta": "Ciudad del Cabo – San Pablo",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "SA 226",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Gol",
+          "ruta": "San Pablo – Buenos Aires (AEP)",
+          "clase": "",
+          "fecha": "",
+          "horario": "",
+          "numero": "G3 7648",
           "equipaje": ""
         }
       ],
       "foto_portada": "",
       "fuente_detalle": {
-        "url": "https://www.legendtravel.com.ar/paquetes?id=648&salidaId=839&adultsQty=2",
-        "fecha": "2026-10-13"
+        "url": "https://www.kingmidas.com.ar/itinerario/1147/Sudafrica%C2%A0&-Mauritius",
+        "fecha": "2026-10-15",
+        "desglose": "Base doble USD 7.950 + impuestos USD 1.870 (DNT, IVA, gastos y propinas) = USD 9.820. Single: 7.950 + 2.880 + 1.870 = 12.700. Los vuelos de la ficha figuran con fechas de noviembre (16NOV–28NOV): se cargan solo aerolínea, ruta y número."
       }
     },
     {
@@ -3635,6 +3628,2188 @@
       "fuente_detalle": {
         "url": "https://www.legendtravel.com.ar/consulta/1782/disney-europa-premium",
         "fecha": "2026-10-13"
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno (All Inclusive en Maldivas)",
+      "nota_impuestos": "No incluye la percepción del 30% (RG 5463) si se abona en pesos.",
+      "condiciones": [
+        "Salida grupal con tour leader desde Argentina, garantizado con un mínimo de 10 pasajeros.",
+        "Tarifa válida con un mínimo de 10 pasajeros viajando juntos; si no se alcanza, el operador puede ajustar itinerario o tarifa.",
+        "Es obligatorio el certificado internacional de vacuna contra la fiebre amarilla para ingresar a India (no se acepta exención).",
+        "La visa de India se tramita online con anticipación y no está incluida.",
+        "La tarifa en base triple es la misma que en base doble."
+      ],
+      "no_incluye": [
+        "Visa de India (trámite online, con anticipación)",
+        "Comidas y bebidas no especificadas",
+        "Gastos extras o personales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Delhi",
+          "nombre": "The Lalit Hotel",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Mandawa",
+          "nombre": "Vivaana Museum",
+          "categoria": "",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Jaipur",
+          "nombre": "Hilton",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Ranthambore",
+          "nombre": "Kipling Lodge",
+          "categoria": "",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Agra",
+          "nombre": "Grand Mercure",
+          "categoria": "",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Delhi",
+          "nombre": "The Pride Aerocity",
+          "categoria": "",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Maldivas",
+          "nombre": "Centara Ras Fushi",
+          "categoria": "",
+          "noches": 4,
+          "regimen": "All Inclusive",
+          "habitacion": "Lagoon View Beach Villa",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Estambul",
+          "texto": "Salida desde Ezeiza en el vuelo TK 016 de las 23:55. Noche a bordo."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Estambul",
+          "texto": "Llegada a las 22:35, traslado y noche en Estambul (alojamiento provisto por la aerolínea)."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Estambul ✈ Delhi",
+          "texto": "Desayuno y día libre hasta el traslado al aeropuerto para el vuelo TK 716 de las 20:50 a Delhi."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Delhi",
+          "texto": "Llegada a las 05:20 con early check-in. Mañana libre. Por la tarde, visitas de Nueva Delhi, con el templo Akshardham."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Delhi",
+          "texto": "Desayuno. Viejo Delhi: paseo en rickshaw por el mercado de Chandni Chowk y visita de la mezquita Jama Masjid."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "Delhi – Mandawa",
+          "texto": "Desayuno y viaje por carretera a Mandawa, con almuerzo en ruta. Por la tarde, visita guiada de sus havelis."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Mandawa – Jaipur",
+          "texto": "Desayuno. En ruta, Sanganer, famosa por sus textiles y cerámica azul, y el templo de Galtaji."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Jaipur",
+          "texto": "Desayuno. Parada fotográfica en el Hawa Mahal y ascenso en jeep al Fuerte de Amber."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Jaipur",
+          "texto": "Recorrido del casco antiguo en tuk tuk eléctrico, desayuno y experiencia de cine de Bollywood en el Raj Mandir."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Jaipur – Ranthambore",
+          "texto": "Desayuno y viaje a Ranthambore, antiguo coto de caza de los maharajás. Almuerzo y safari por la tarde."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Ranthambore",
+          "texto": "Desayuno. Safari matutino y vespertino en jeep compartido en busca del tigre de Bengala."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Ranthambore – Agra",
+          "texto": "Safari al amanecer, desayuno y salida por carretera a Agra, con visita de Fatehpur Sikri en el camino."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Agra",
+          "texto": "Visita del Taj Mahal al amanecer. Regreso al hotel para el desayuno y continuación de las visitas."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Agra – Delhi",
+          "texto": "Desayuno y viaje por carretera a Delhi. Llegada y alojamiento."
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "Delhi ✈ Maldivas",
+          "texto": "Desayuno, traslado al aeropuerto y vuelo a Maldivas. Llegada y traslado al hotel."
+        },
+        {
+          "dia": "Días 16 a 18",
+          "titulo": "Maldivas",
+          "texto": "Días libres para disfrutar de la playa, con All Inclusive."
+        },
+        {
+          "dia": "Día 19",
+          "titulo": "Maldivas ✈ Estambul",
+          "texto": "Desayuno y check-out. Traslado a Malé para el vuelo TK 735 de las 21:55."
+        },
+        {
+          "dia": "Día 20",
+          "titulo": "Estambul ✈ Buenos Aires",
+          "texto": "Conexión con el vuelo TK 015 de las 10:00. Llegada a Ezeiza a las 22:25."
+        }
+      ],
+      "tarifas": [],
+      "id": "india-maldivas",
+      "titulo": "India & Maldivas — Salida grupal",
+      "region": "asia",
+      "destinos": [
+        "Delhi",
+        "Mandawa",
+        "Jaipur",
+        "Ranthambore",
+        "Agra",
+        "Maldivas"
+      ],
+      "resumen": "Taj Mahal al amanecer, safari de tigres en Ranthambore, los palacios de Jaipur y, para cerrar, cuatro noches all inclusive en Maldivas. Lo mejor de dos mundos en un solo viaje.",
+      "precio_desde": {
+        "valor": 9440,
+        "moneda": "USD",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "20 de enero 2027",
+      "vigencia": "2027-01-20",
+      "noches": 17,
+      "operador": "King Midas",
+      "operador_sigla": "KM",
+      "ref": "KM-1145",
+      "incluye": [
+        "Aéreos Buenos Aires / Delhi // Maldivas / Buenos Aires con Turkish Airlines",
+        "Vuelo Delhi / Maldivas",
+        "3 noches en Delhi, 1 en Mandawa, 3 en Jaipur, 2 en Ranthambore, 2 en Agra y 1 en Delhi, con desayuno",
+        "4 noches en Maldivas con All Inclusive",
+        "Visitas, excursiones y entradas según itinerario, con guías locales de habla hispana",
+        "Comidas según itinerario",
+        "Todos los traslados",
+        "Reunión informativa previa",
+        "Universal Assistance Maximum de cortesía (hasta USD 300.000)",
+        "Tour leader desde Argentina (mín. 10 pax)"
+      ],
+      "imagen": "assets/img/pexels/18894126-1200.jpg",
+      "imagen_alt": "Taj Mahal reflejado en el estanque de sus jardines, Agra, India",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 9440
+        },
+        {
+          "base": "triple",
+          "valor": 9440
+        },
+        {
+          "base": "single",
+          "valor": 12390
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Buenos Aires (EZE) – Estambul",
+          "clase": "",
+          "fecha": "20/01/2027",
+          "horario": "23:55 – 22:35 (+1)",
+          "numero": "TK 016",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Estambul – Delhi",
+          "clase": "",
+          "fecha": "22/01/2027",
+          "horario": "20:50 – 05:20 (+1)",
+          "numero": "TK 716",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Malé – Estambul",
+          "clase": "",
+          "fecha": "07/02/2027",
+          "horario": "21:55 – 04:40 (+1)",
+          "numero": "TK 735",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Estambul – Buenos Aires (EZE)",
+          "clase": "",
+          "fecha": "08/02/2027",
+          "horario": "10:00 – 22:25",
+          "numero": "TK 015",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.kingmidas.com.ar/itinerario/1145/India-&-Maldivas%C2%A0",
+        "fecha": "2026-10-15",
+        "desglose": "Base doble USD 7.750 + impuestos USD 1.690 (DNT, IVA, gastos y propinas) = USD 9.440. Single: 7.750 + 2.950 + 1.690 = 12.390. Triple igual a doble según ficha."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Pensión completa en safaris; All Inclusive en Zanzíbar",
+      "nota_impuestos": "No incluye la percepción del 30% (RG 5463) si se abona en pesos.",
+      "condiciones": [
+        "Salida grupal con tour leader desde Argentina, garantizado con un mínimo de 10 pasajeros.",
+        "Tarifa válida con un mínimo de 10 pasajeros viajando juntos; si no se alcanza, el operador puede ajustar itinerario o tarifa.",
+        "Es obligatorio el certificado internacional de vacuna contra la fiebre amarilla para Kenia y Tanzania. El tratamiento antimalárico es recomendado, no obligatorio.",
+        "En los vuelos internos de Kenia y Tanzania solo se permite por persona una valija blanda o bolso de hasta 15 kg."
+      ],
+      "no_incluye": [
+        "Visa de Tanzania, trámite on arrival (USD 50 por persona)",
+        "Cobertura médica obligatoria de Tanzania (USD 44)",
+        "Impuesto de infraestructura de Zanzíbar (USD 1,50 por persona y noche, se paga en el hotel)",
+        "Bebidas en las comidas, salvo en Zanzíbar",
+        "Comidas no especificadas"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Nairobi",
+          "nombre": "Sarova Stanley Hotel",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Lago Nakuru",
+          "nombre": "Sarova Lion Hill Game Lodge",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Pensión completa",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Masai Mara",
+          "nombre": "Mara Simba Lodge",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Pensión completa",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Serengueti",
+          "nombre": "Mbalageti Tented Lodge",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Pensión completa",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Karatu (Ngorongoro)",
+          "nombre": "Bougainvillea Safari Lodge",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Pensión completa",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Lago Manyara",
+          "nombre": "Lake Manyara Serena Lodge",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Pensión completa",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Zanzíbar",
+          "nombre": "Riu Jambo Zanzibar",
+          "categoria": "4*",
+          "noches": 4,
+          "regimen": "All Inclusive",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Nairobi",
+          "texto": "Salida desde Ezeiza en el vuelo ET 507 de las 21:30, vía Addis Abeba."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Addis Abeba ✈ Nairobi",
+          "texto": "Llegada a Etiopía a las 19:30 y conexión con el vuelo ET 308 de las 23:35 a Nairobi."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Nairobi",
+          "texto": "Llegada a la 01:40. Desayuno. Visita del Giraffe Centre y cena en el restaurante Carnivore."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Nairobi – Lago Nakuru",
+          "texto": "Salida al Parque Nacional del Lago Nakuru. Almuerzo en el lodge y safari por la tarde."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Lago Nakuru – Masai Mara",
+          "texto": "Salida a la Reserva Nacional de Masai Mara. Almuerzo, safari por la tarde, cena y alojamiento."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "Masai Mara",
+          "texto": "Safari al amanecer, desayuno en el lodge y nuevo safari por la tarde."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Masai Mara – Serengueti",
+          "texto": "Cruce fronterizo por Isebania hacia Tanzania y llegada al Parque Nacional Serengueti."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Serengueti",
+          "texto": "Safari de día completo por el Serengueti con almuerzo tipo box."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Serengueti – Karatu (Ngorongoro)",
+          "texto": "Safari por la mañana y traslado por carretera a Karatu. Cena en el lodge."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Área de Conservación de Ngorongoro",
+          "texto": "Safari de día completo con descenso al cráter de Ngorongoro, con almuerzo picnic."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Karatu – Lago Manyara",
+          "texto": "Salida hacia el Lago Manyara. Almuerzo, tarde libre, cena y alojamiento."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Lago Manyara – Arusha ✈ Zanzíbar",
+          "texto": "Traslado a Arusha, almuerzo y vuelo a Zanzíbar. Llegada y traslado al hotel."
+        },
+        {
+          "dia": "Días 13 a 15",
+          "titulo": "Zanzíbar",
+          "texto": "Días libres de playa con All Inclusive en el hotel."
+        },
+        {
+          "dia": "Día 16",
+          "titulo": "Zanzíbar ✈ Addis Abeba",
+          "texto": "Desayuno y check-out. Vuelo ET 812 de las 19:10 a Etiopía. Noche en hotel cercano al aeropuerto."
+        },
+        {
+          "dia": "Día 17",
+          "titulo": "Addis Abeba ✈ Buenos Aires",
+          "texto": "Conexión con el vuelo ET 506 de las 09:50. Llegada a Ezeiza a las 19:55."
+        }
+      ],
+      "tarifas": [],
+      "id": "kenia-tanzania",
+      "titulo": "Kenia & Tanzania — Safari grupal con Zanzíbar",
+      "region": "africa",
+      "destinos": [
+        "Nairobi",
+        "Lago Nakuru",
+        "Masai Mara",
+        "Serengueti",
+        "Ngorongoro",
+        "Lago Manyara",
+        "Zanzíbar"
+      ],
+      "resumen": "Los grandes parques de África en un solo viaje: Masai Mara, Serengueti y el cráter de Ngorongoro en safaris 4x4, y cuatro noches all inclusive en las playas de Zanzíbar para cerrar.",
+      "precio_desde": {
+        "valor": 11900,
+        "moneda": "USD",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "22 de febrero 2027",
+      "vigencia": "2027-02-22",
+      "noches": 15,
+      "operador": "King Midas",
+      "operador_sigla": "KM",
+      "ref": "KM-4",
+      "incluye": [
+        "Aéreos con Ethiopian Airlines: Buenos Aires / Nairobi // Zanzíbar / Addis Abeba / Buenos Aires",
+        "Vuelo doméstico Arusha / Zanzíbar",
+        "2 noches en Nairobi con desayuno",
+        "1 noche en Lago Nakuru, 2 en Masai Mara, 2 en Serengueti, 2 en Karatu (Ngorongoro) y 1 en Lago Manyara, con pensión completa",
+        "4 noches en Zanzíbar con All Inclusive",
+        "1 noche en Addis Abeba por conexión (provista por Ethiopian)",
+        "Cena en el restaurante Carnivore de Nairobi",
+        "Entradas a todos los parques y áreas de conservación",
+        "Todos los safaris en vehículo 4x4",
+        "Traslados y visitas con guía de habla hispana",
+        "Visa de Kenia (trámite online, costo incluido)",
+        "Seguro de ingreso a Zanzíbar (trámite online previo)",
+        "Reunión informativa previa",
+        "Universal Assistance Maximum de cortesía (hasta USD 300.000)",
+        "Tour leader desde Argentina (mín. 10 pax)"
+      ],
+      "imagen": "assets/img/pexels/33498304-1200.jpg",
+      "imagen_alt": "Leones en la sabana africana durante un safari",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 11900
+        },
+        {
+          "base": "single",
+          "valor": 13750
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Ethiopian Airlines",
+          "ruta": "Buenos Aires (EZE) – Addis Abeba",
+          "clase": "",
+          "fecha": "22/02/2027",
+          "horario": "21:30 – 19:30 (+1)",
+          "numero": "ET 507",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Ethiopian Airlines",
+          "ruta": "Addis Abeba – Nairobi",
+          "clase": "",
+          "fecha": "23/02/2027",
+          "horario": "23:35 – 01:40 (+1)",
+          "numero": "ET 308",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Ethiopian Airlines",
+          "ruta": "Zanzíbar – Addis Abeba",
+          "clase": "",
+          "fecha": "09/03/2027",
+          "horario": "19:10 – 21:45",
+          "numero": "ET 812",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Ethiopian Airlines",
+          "ruta": "Addis Abeba – Buenos Aires (EZE)",
+          "clase": "",
+          "fecha": "10/03/2027",
+          "horario": "09:50 – 19:55",
+          "numero": "ET 506",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.kingmidas.com.ar/itinerario/4/Kenia-&Tanzania",
+        "fecha": "2026-10-15",
+        "desglose": "Base doble USD 9.980 + impuestos USD 1.920 (visa de Kenia, DNT, IVA, gastos y propinas) = USD 11.900. Single: 9.980 + 1.850 + 1.920 = 13.750."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "No incluye la percepción del 30% (RG 5463) si se abona en pesos.",
+      "condiciones": [
+        "Salida grupal con tour leader desde Argentina, garantizado con un mínimo de 10 pasajeros.",
+        "Tarifa válida con un mínimo de 10 pasajeros viajando juntos; si no se alcanza, el operador puede ajustar itinerario o tarifa.",
+        "Es obligatorio el certificado internacional de vacuna contra la fiebre amarilla para ingresar a India (no se acepta exención).",
+        "La visa de India se tramita online por cuenta del pasajero y no está incluida."
+      ],
+      "no_incluye": [
+        "Visa de India (trámite online por cuenta del pasajero)",
+        "Comidas y bebidas no especificadas",
+        "Gastos extras o personales"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Delhi",
+          "nombre": "The Lalit Hotel",
+          "categoria": "5*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Agra",
+          "nombre": "Grand Mercure",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Chomu",
+          "nombre": "Chomu Palace",
+          "categoria": "",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Jaipur",
+          "nombre": "Radisson City Center",
+          "categoria": "4* Sup",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Pushkar",
+          "nombre": "Dera Masuda",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Jodhpur",
+          "nombre": "Welcome by ITC",
+          "categoria": "5*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Udaipur",
+          "nombre": "The Lalit",
+          "categoria": "5*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Aurangabad",
+          "nombre": "Rama International",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Mumbai",
+          "nombre": "ITC Grand Central",
+          "categoria": "4* Sup",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Delhi",
+          "texto": "Salida desde Ezeiza en el vuelo ET 507 de las 21:30, vía Addis Abeba."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Addis Abeba ✈ Delhi",
+          "texto": "Conexión con el vuelo ET 686 de las 23:10 hacia Delhi."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Delhi",
+          "texto": "Llegada a las 08:05, traslado al hotel y mañana libre. Por la tarde, Nueva Delhi y el minarete de Qutab."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Delhi",
+          "texto": "Desayuno. Vieja Delhi en ciclorickshaw por el mercado Chandni Chowk y la Mezquita del Viernes."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Delhi",
+          "texto": "Desayuno. Templo de Akshardham y continuación de las visitas de la ciudad."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "Delhi – Agra",
+          "texto": "Desayuno y traslado por carretera a Agra. Por la tarde, el Fuerte de Agra."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Agra",
+          "texto": "Desayuno. Mausoleo de Itimad-Ud-Daulah, el pequeño Taj, y por la tarde el Taj Mahal."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Agra – Fatehpur Sikri – Chomu",
+          "texto": "Desayuno. Visita de Fatehpur Sikri, la ciudad abandonada, y llegada a Chomu."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Chomu (Fiesta Holi) – Jaipur",
+          "texto": "Desayuno y celebración del Holi, la fiesta de los colores. Continuación a Jaipur."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Jaipur",
+          "texto": "Desayuno. Fuerte de Amber con ascenso en 4x4 y visitas de la ciudad rosa."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Jaipur – Pushkar",
+          "texto": "Desayuno y traslado a Pushkar. Por la tarde, paseo por su lago sagrado y templos."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Pushkar – Jodhpur",
+          "texto": "Caminata al templo Savitri al amanecer, desayuno y salida por carretera a Jodhpur."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Jodhpur",
+          "texto": "Desayuno. Fuerte Mehrangarh y recorrido por la ciudad azul."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Jodhpur – Ranakpur – Udaipur",
+          "texto": "Desayuno. En ruta, los templos jainistas de Ranakpur. Llegada a Udaipur."
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "Udaipur",
+          "texto": "Desayuno. Visita guiada del Palacio de la Ciudad y recorrido por la ciudad de los lagos."
+        },
+        {
+          "dia": "Día 16",
+          "titulo": "Udaipur ✈ Aurangabad",
+          "texto": "Desayuno y vuelo a Aurangabad, vía Delhi. Llegada y traslado al hotel."
+        },
+        {
+          "dia": "Día 17",
+          "titulo": "Aurangabad",
+          "texto": "Desayuno. Excursión de día completo a las cuevas de Ajanta, Patrimonio de la Humanidad."
+        },
+        {
+          "dia": "Día 18",
+          "titulo": "Aurangabad ✈ Mumbai",
+          "texto": "Desayuno. Cuevas de Ellora y vuelo a Mumbai."
+        },
+        {
+          "dia": "Día 19",
+          "titulo": "Mumbai",
+          "texto": "Desayuno. Salida en barco a las cuevas de Elephanta y visitas de la ciudad."
+        },
+        {
+          "dia": "Día 20",
+          "titulo": "Mumbai ✈ Buenos Aires",
+          "texto": "Traslado al aeropuerto para el vuelo ET 611 de las 04:05 y conexión en Addis Abeba con el ET 506. Llegada a Ezeiza a las 19:55."
+        }
+      ],
+      "tarifas": [],
+      "id": "holi-india-2027",
+      "titulo": "Fiesta Holi — India 2027, salida grupal",
+      "region": "asia",
+      "destinos": [
+        "Delhi",
+        "Agra",
+        "Chomu",
+        "Jaipur",
+        "Pushkar",
+        "Jodhpur",
+        "Udaipur",
+        "Aurangabad",
+        "Mumbai"
+      ],
+      "resumen": "Vivir el Holi, la fiesta de los colores, en un palacio de Rajastán. Delhi, el Taj Mahal, Jaipur, la ciudad azul de Jodhpur, los lagos de Udaipur, las cuevas de Ajanta y Ellora y Mumbai.",
+      "precio_desde": {
+        "valor": 7890,
+        "moneda": "USD",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "14 de marzo 2027",
+      "vigencia": "2027-03-14",
+      "noches": 17,
+      "operador": "King Midas",
+      "operador_sigla": "KM",
+      "ref": "KM-1116",
+      "incluye": [
+        "Aéreos Buenos Aires / Delhi // Mumbai / Buenos Aires con Ethiopian Airlines",
+        "Early check-in en Delhi",
+        "3 noches en Delhi, 2 en Agra, 1 en Chomu, 2 en Jaipur, 1 en Pushkar, 2 en Jodhpur, 2 en Udaipur, 2 en Aurangabad y 2 en Mumbai, con desayuno",
+        "Vuelos domésticos según itinerario",
+        "Traslados, visitas, excursiones y entradas según itinerario",
+        "Guías locales de habla hispana",
+        "Reunión informativa previa",
+        "Universal Assistance Maximum de cortesía (hasta USD 300.000)",
+        "Tour leader desde Argentina (mín. 10 pax)"
+      ],
+      "imagen": "assets/img/pexels/34185066-1200.jpg",
+      "imagen_alt": "Celebración del Holi con polvos de colores en India",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 7890
+        },
+        {
+          "base": "single",
+          "valor": 9740
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Ethiopian Airlines",
+          "ruta": "Buenos Aires (EZE) – Addis Abeba",
+          "clase": "",
+          "fecha": "14/03/2027",
+          "horario": "21:30 – 19:30 (+1)",
+          "numero": "ET 507",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Ethiopian Airlines",
+          "ruta": "Addis Abeba – Delhi",
+          "clase": "",
+          "fecha": "15/03/2027",
+          "horario": "23:10 – 08:05 (+1)",
+          "numero": "ET 686",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Ethiopian Airlines",
+          "ruta": "Mumbai – Addis Abeba",
+          "clase": "",
+          "fecha": "02/04/2027",
+          "horario": "04:05 – 07:00",
+          "numero": "ET 611",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Ethiopian Airlines",
+          "ruta": "Addis Abeba – Buenos Aires (EZE)",
+          "clase": "",
+          "fecha": "02/04/2027",
+          "horario": "09:50 – 20:25",
+          "numero": "ET 506",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.kingmidas.com.ar/itinerario/1116/Fiesta-%22Holi%22---India-2027",
+        "fecha": "2026-10-15",
+        "desglose": "Base doble USD 6.350 + impuestos USD 1.540 (DNT, IVA, gastos y propinas) = USD 7.890. Single: 6.350 + 1.850 + 1.540 = 9.740."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "No incluye la percepción del 30% (RG 5463) si se abona en pesos.",
+      "condiciones": [
+        "Salida grupal con tour leader desde Argentina, garantizado con un mínimo de 10 pasajeros.",
+        "Tarifa válida con un mínimo de 10 pasajeros viajando juntos; si no se alcanza, el operador puede ajustar itinerario o tarifa.",
+        "Para la visita a la DMZ es obligatorio llevar el pasaporte físico.",
+        "En los tramos Kioto–Kanazawa–Tokio una valija por persona viaja aparte por camión: llevar mochila con lo necesario para dos noches."
+      ],
+      "no_incluye": [
+        "Comidas y bebidas no especificadas",
+        "Cualquier otro servicio no especificado como incluido"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Seúl",
+          "nombre": "Nine Tree Parnas Myeongdong II",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Gyeongju",
+          "nombre": "Gyeongju Kolon Hotel",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Busan",
+          "nombre": "Asti Hotel",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Osaka",
+          "nombre": "Centara Grand Hotel Osaka",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Kioto",
+          "nombre": "Kyoto Tokyu Hotel",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Kanazawa",
+          "nombre": "ANA Crowne Plaza",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Takayama",
+          "nombre": "Takayama Green Hotel",
+          "categoria": "",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "Habitación estilo japonés",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Yugawara",
+          "nombre": "Sansuirou",
+          "categoria": "",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "Habitación estilo japonés u occidental",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Tokio",
+          "nombre": "Hotel New Otani",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Seúl",
+          "texto": "Salida desde Ezeiza en el vuelo TK 016 de las 23:55, vía Estambul."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Estambul",
+          "texto": "Llegada a las 22:35 y conexión con el vuelo siguiente."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Estambul ✈ Seúl",
+          "texto": "Vuelo TK 090 de las 02:15. Llegada a Incheon a las 18:20 y traslado al hotel."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Seúl",
+          "texto": "Desayuno. Día completo: plaza Gwanghwamun, Palacio Gyeongbokgung y los barrios tradicionales."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Seúl",
+          "texto": "Desayuno. Zona desmilitarizada (DMZ): puente de la Libertad y tercer túnel de infiltración. Pasaporte físico obligatorio."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "Seúl – Gyeongju",
+          "texto": "Desayuno y traslado a Gyeongju, antigua capital del reino de Silla: palacio Donggung y estanque Wolji."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Gyeongju",
+          "texto": "Desayuno. Grutas de Seogguram y templos budistas de la dinastía Silla."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Gyeongju – Busan",
+          "texto": "Desayuno. Templo Haedong Yonggungsa, frente al mar, y llegada a Busan por la plaza BIFF."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Busan",
+          "texto": "Desayuno. Aldea cultural de Gamcheon y principales atractivos de la ciudad."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Busan ✈ Osaka",
+          "texto": "Desayuno y vuelo a Osaka. Llegada a Kansai y traslado al hotel."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Osaka",
+          "texto": "Desayuno. Día completo en Osaka: Dotonbori y el Castillo de Osaka (panorámico)."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Osaka – Nara – Kioto",
+          "texto": "Desayuno. Templo Todai-ji y Parque de Nara, almuerzo y llegada a Kioto con el santuario Fushimi Inari."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Kioto",
+          "texto": "Desayuno. Pabellón Dorado (Kinkaku-ji), templo Tenryu-ji, almuerzo y bosque de bambú de Arashiyama."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Kioto – Hiroshima – Miyajima – Kioto",
+          "texto": "Tren bala a Hiroshima: Parque Memorial de la Paz y Cúpula de la bomba atómica. Isla de Miyajima."
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "Kioto – Kanazawa",
+          "texto": "Tren express a Kanazawa y visita de jornada completa con guía de habla hispana."
+        },
+        {
+          "dia": "Día 16",
+          "titulo": "Kanazawa – Shirakawago – Takayama",
+          "texto": "Casas Gassho-zukuri de Shirakawago y barrio histórico de Takayama. Noche en ryokan."
+        },
+        {
+          "dia": "Día 17",
+          "titulo": "Takayama – Tsumago – Yugawara",
+          "texto": "Visita de Tsumago y llegada a Yugawara."
+        },
+        {
+          "dia": "Día 18",
+          "titulo": "Yugawara – Hakone – Tokio",
+          "texto": "Museo al aire libre de Hakone y Monte Komagatake en teleférico. Llegada a Tokio."
+        },
+        {
+          "dia": "Día 19",
+          "titulo": "Tokio",
+          "texto": "Desayuno. Palacio Imperial, templo Senso-ji y calle Nakamise, almuerzo y la vanguardia de la ciudad."
+        },
+        {
+          "dia": "Día 20",
+          "titulo": "Tokio",
+          "texto": "Desayuno. Día libre."
+        },
+        {
+          "dia": "Día 21",
+          "titulo": "Tokio ✈ Estambul",
+          "texto": "Mañana libre, late check-out y traslado a Haneda para el vuelo TK 199 de las 22:05."
+        },
+        {
+          "dia": "Día 22",
+          "titulo": "Estambul ✈ Buenos Aires",
+          "texto": "Conexión con el vuelo TK 015 de las 10:00. Llegada a Ezeiza a las 22:25."
+        }
+      ],
+      "tarifas": [],
+      "id": "corea-japon-cherry-blossom",
+      "titulo": "Corea & Japón — Cherry Blossom, salida grupal",
+      "region": "asia",
+      "destinos": [
+        "Seúl",
+        "Gyeongju",
+        "Busan",
+        "Osaka",
+        "Kioto",
+        "Kanazawa",
+        "Takayama",
+        "Yugawara",
+        "Tokio"
+      ],
+      "resumen": "Corea y Japón en plena floración de los cerezos: Seúl y la DMZ, Gyeongju, Busan, Osaka, Kioto, Hiroshima y Miyajima en tren bala, los Alpes japoneses con noche en ryokan, Hakone y Tokio.",
+      "precio_desde": {
+        "valor": 14810,
+        "moneda": "USD",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "17 de marzo 2027",
+      "vigencia": "2027-03-17",
+      "noches": 18,
+      "operador": "King Midas",
+      "operador_sigla": "KM",
+      "ref": "KM-1090",
+      "incluye": [
+        "Aéreos Buenos Aires / Seúl // Tokio / Buenos Aires con Turkish Airlines",
+        "Vuelo Busan / Osaka",
+        "3 noches en Seúl, 2 en Gyeongju, 2 en Busan, 2 en Osaka, 3 en Kioto, 1 en Kanazawa, 1 en Takayama, 1 en Yugawara y 3 en Tokio, con desayuno (late check-out en Tokio)",
+        "Excursiones y visitas según itinerario",
+        "10 almuerzos y 2 cenas según itinerario",
+        "Todos los traslados",
+        "Billetes de tren en clase turista (incluye tren bala)",
+        "Guías de habla hispana",
+        "Reunión informativa previa",
+        "Universal Assistance Maximum de cortesía (hasta USD 300.000)",
+        "Tour leader desde Argentina (mín. 10 pax)"
+      ],
+      "imagen": "assets/img/pexels/31658696-1200.jpg",
+      "imagen_alt": "Cerezos en flor junto a un templo en Japón",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 14810
+        },
+        {
+          "base": "single",
+          "valor": 18980
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Buenos Aires (EZE) – Estambul",
+          "clase": "",
+          "fecha": "17/03/2027",
+          "horario": "23:55 – 22:35 (+1)",
+          "numero": "TK 016",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Estambul – Seúl (Incheon)",
+          "clase": "",
+          "fecha": "19/03/2027",
+          "horario": "02:15 – 18:20",
+          "numero": "TK 090",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Tokio (Haneda) – Estambul",
+          "clase": "",
+          "fecha": "06/04/2027",
+          "horario": "21:45 – 05:05 (+1)",
+          "numero": "TK 199",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Estambul – Buenos Aires (EZE)",
+          "clase": "",
+          "fecha": "07/04/2027",
+          "horario": "10:35 – 22:25",
+          "numero": "TK 015",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.kingmidas.com.ar/itinerario/1090/Corea-&-Jap%C3%B3n---%22Cherry-Blossom%22",
+        "fecha": "2026-10-15",
+        "desglose": "Base doble USD 12.880 + impuestos USD 1.930 (DNT, IVA, gastos y propinas) = USD 14.810. Single: 12.880 + 4.170 + 1.930 = 18.980."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "No incluye la percepción del 30% (RG 5463) si se abona en pesos.",
+      "condiciones": [
+        "Salida grupal con tour leader desde Argentina, garantizado con un mínimo de 10 pasajeros.",
+        "Tarifa válida con un mínimo de 10 pasajeros viajando juntos; si no se alcanza, el operador puede ajustar itinerario o tarifa.",
+        "La visita al centro de pandas puede tener restricciones de acceso según el clima y la afluencia de visitantes."
+      ],
+      "no_incluye": [
+        "Comidas y bebidas no especificadas",
+        "Cualquier otro servicio no especificado como incluido"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Beijing",
+          "nombre": "Kerry Hotel Beijing",
+          "categoria": "5*",
+          "noches": 4,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Xi'an",
+          "nombre": "Hilton Xian High-tech Zone",
+          "categoria": "5*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Lhasa",
+          "nombre": "The St. Regis Lhasa Resort",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Chengdu",
+          "nombre": "Four Points by Sheraton Chengdu Chunxi Road",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Zhangjiajie",
+          "nombre": "Pullman Zhangjiajie",
+          "categoria": "5*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Furong",
+          "nombre": "Annai Xizhou Ji Hotel",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Fenghuang",
+          "nombre": "Wyndham Grand & Hotspring Fenghuang",
+          "categoria": "4*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Shanghái",
+          "nombre": "Hengshan Garden Hotel",
+          "categoria": "5*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Beijing",
+          "texto": "Salida desde Ezeiza en el vuelo TK 016 de las 23:55, vía Estambul."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Estambul",
+          "texto": "Llegada a las 22:45 y conexión con el vuelo a Beijing pasada la medianoche."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Estambul ✈ Beijing",
+          "texto": "Vuelo TK 088 de la 01:40. Llegada a Beijing a las 15:35 y traslado al hotel."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Beijing",
+          "texto": "Desayuno. Ciudad Prohibida, plaza de Tian'anmen y Palacio de Verano."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Beijing",
+          "texto": "Desayuno. Excursión a la Gran Muralla, almuerzo y regreso con parada fotográfica."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "Beijing",
+          "texto": "Desayuno. Día libre; opcional en rickshaw por los hutong y el Mercado de la Seda."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Beijing ✈ Xi'an",
+          "texto": "Desayuno. Templo del Cielo, almuerzo y vuelo a Xi'an."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Xi'an",
+          "texto": "Desayuno. Museo de los Guerreros y Corceles de Terracota."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Xi'an ✈ Lhasa",
+          "texto": "Desayuno y vuelo a Lhasa, capital del Tíbet. Tarde de descanso para aclimatarse."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Lhasa",
+          "texto": "Desayuno. Monasterio Sera, almuerzo y monasterio Jokhang."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Lhasa",
+          "texto": "Desayuno. Palacio Potala y palacio Norbulingka."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Lhasa ✈ Chengdu",
+          "texto": "Desayuno y vuelo a Chengdu. Llegada y traslado al hotel."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Chengdu",
+          "texto": "Desayuno. Centro de Crianza del Oso Panda, almuerzo y recorrido por la ciudad."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Chengdu ✈ Zhangjiajie",
+          "texto": "Desayuno y vuelo a Zhangjiajie, geoparque mundial de la UNESCO."
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "Zhangjiajie",
+          "texto": "Desayuno. Día completo en el Parque Nacional: elevador Bailong y reserva Yuanjiajie."
+        },
+        {
+          "dia": "Día 16",
+          "titulo": "Zhangjiajie – Furong",
+          "texto": "Montaña Tianmen con teleférico, almuerzo y traslado al pueblo de Furong, con visita nocturna."
+        },
+        {
+          "dia": "Día 17",
+          "titulo": "Furong – Fenghuang",
+          "texto": "Visita de Furong, almuerzo y traslado al pueblo de Fenghuang."
+        },
+        {
+          "dia": "Día 18",
+          "titulo": "Fenghuang",
+          "texto": "Desayuno. Día libre."
+        },
+        {
+          "dia": "Día 19",
+          "titulo": "Fenghuang – Shanghái",
+          "texto": "Tren de alta velocidad a Shanghái."
+        },
+        {
+          "dia": "Día 20",
+          "titulo": "Shanghái",
+          "texto": "Desayuno. Jardín Yuyuan, Templo del Buda de Jade y el Bund."
+        },
+        {
+          "dia": "Día 21",
+          "titulo": "Shanghái",
+          "texto": "Desayuno. Día libre; sugerimos Pudong y sus torres."
+        },
+        {
+          "dia": "Día 22",
+          "titulo": "Shanghái ✈ Estambul",
+          "texto": "Día libre hasta el traslado al aeropuerto para el vuelo TK 027 de las 22:25."
+        },
+        {
+          "dia": "Día 23",
+          "titulo": "Estambul ✈ Buenos Aires",
+          "texto": "Conexión con el vuelo TK 015 de las 10:35. Llegada a Ezeiza a las 22:25."
+        }
+      ],
+      "tarifas": [],
+      "id": "china-tibet",
+      "titulo": "China & Tíbet — Salida grupal",
+      "region": "asia",
+      "destinos": [
+        "Beijing",
+        "Xi'an",
+        "Lhasa",
+        "Chengdu",
+        "Zhangjiajie",
+        "Furong",
+        "Fenghuang",
+        "Shanghái"
+      ],
+      "resumen": "La Gran Muralla y la Ciudad Prohibida, los Guerreros de Terracota, el Palacio Potala en el techo del mundo, los pandas de Chengdu, las montañas de Zhangjiajie y el skyline de Shanghái.",
+      "precio_desde": {
+        "valor": 10220,
+        "moneda": "USD",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "6 de abril 2027",
+      "vigencia": "2027-04-06",
+      "noches": 19,
+      "operador": "King Midas",
+      "operador_sigla": "KM",
+      "ref": "KM-2",
+      "incluye": [
+        "Aéreos Buenos Aires / Beijing // Shanghái / Buenos Aires con Turkish Airlines",
+        "4 noches en Beijing, 2 en Xi'an, 3 en Lhasa, 2 en Chengdu, 2 en Zhangjiajie, 1 en Furong, 2 en Fenghuang y 3 en Shanghái, con desayuno (late check-out en Shanghái)",
+        "Vuelos internos Beijing / Xi'an / Lhasa / Chengdu / Zhangjiajie",
+        "Tren de alta velocidad Fenghuang – Shanghái (segunda clase)",
+        "Cena banquete de pato laqueado en Beijing y 1 cena en Shanghái",
+        "9 almuerzos según itinerario",
+        "Traslados y visitas con guía de habla hispana",
+        "Autorización de ingreso al Tíbet",
+        "Visa de China (incluida en los impuestos)",
+        "Reunión informativa previa",
+        "Universal Assistance Maximum de cortesía (hasta USD 300.000)",
+        "Tour leader desde Argentina (mín. 10 pax)"
+      ],
+      "imagen": "assets/img/pexels/165169-1200.jpg",
+      "imagen_alt": "Palacio Potala iluminado de noche, Lhasa, Tíbet",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 10220
+        },
+        {
+          "base": "single",
+          "valor": 12140
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Buenos Aires (EZE) – Estambul",
+          "clase": "",
+          "fecha": "06/04/2027",
+          "horario": "23:55 – 22:45 (+1)",
+          "numero": "TK 016",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Estambul – Beijing",
+          "clase": "",
+          "fecha": "08/04/2027",
+          "horario": "01:40 – 15:35",
+          "numero": "TK 088",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Shanghái – Estambul",
+          "clase": "",
+          "fecha": "27/04/2027",
+          "horario": "22:25 – 05:25 (+1)",
+          "numero": "TK 027",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Estambul – Buenos Aires (EZE)",
+          "clase": "",
+          "fecha": "28/04/2027",
+          "horario": "10:35 – 22:25",
+          "numero": "TK 015",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.kingmidas.com.ar/itinerario/2/China&-T%C3%ADbet",
+        "fecha": "2026-10-15",
+        "desglose": "Base doble USD 8.350 + impuestos USD 1.870 (DNT, IVA, visa de China, gastos y propinas) = USD 10.220. Single: 8.350 + 1.920 + 1.870 = 12.140."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "No incluye la percepción del 30% (RG 5463) si se abona en pesos.",
+      "condiciones": [
+        "Salida grupal con tour leader desde Argentina, garantizado con un mínimo de 10 pasajeros.",
+        "Tarifa válida con un mínimo de 10 pasajeros viajando juntos; si no se alcanza, el operador puede ajustar itinerario o tarifa."
+      ],
+      "no_incluye": [
+        "Comidas y bebidas no especificadas",
+        "Cualquier otro servicio no especificado como incluido"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Hong Kong",
+          "nombre": "Royal Garden Hotel",
+          "categoria": "4* Sup",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Beijing",
+          "nombre": "Kerry Hotel",
+          "categoria": "5*",
+          "noches": 4,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Xi'an",
+          "nombre": "Hilton Xian High-tech Zone",
+          "categoria": "5*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Chongqing",
+          "nombre": "JW Marriott",
+          "categoria": "5*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Guilin",
+          "nombre": "Waterfall Lijiang Hotel",
+          "categoria": "5*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Hangzhou",
+          "nombre": "Grand Metropark",
+          "categoria": "5*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Shanghái",
+          "nombre": "Renaissance Shanghai Zhongshan Park",
+          "categoria": "5*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Hong Kong",
+          "texto": "Salida desde Ezeiza en el vuelo TK 016 de las 23:55, vía Estambul."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Estambul",
+          "texto": "Llegada a las 22:55 y conexión con el vuelo a Hong Kong pasada la medianoche."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Estambul ✈ Hong Kong",
+          "texto": "Vuelo TK 070 de la 01:35. Llegada a las 17:20 y traslado al hotel."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Hong Kong",
+          "texto": "Desayuno. City tour de medio día: Pico Victoria, la bahía y el puerto de pescadores. Tarde libre."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Hong Kong ✈ Beijing",
+          "texto": "Desayuno y vuelo a Beijing. Llegada y traslado al hotel."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "Beijing",
+          "texto": "Desayuno. Plaza de Tian'anmen, Ciudad Prohibida, almuerzo y Palacio de Verano."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Beijing",
+          "texto": "Desayuno. Gran Muralla, almuerzo y Camino Sagrado de las Tumbas Ming."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Beijing",
+          "texto": "Desayuno. Día libre; opcional en rickshaw por los hutong y el Mercado de la Seda."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Beijing ✈ Xi'an",
+          "texto": "Desayuno. Templo del Cielo, almuerzo y vuelo a Xi'an."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Xi'an",
+          "texto": "Desayuno. Muralla de la ciudad, clase de caligrafía en una casa tradicional, almuerzo y Guerreros de Terracota."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Xi'an – Chongqing",
+          "texto": "Desayuno y tren a Chongqing. Llegada y alojamiento."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Chongqing",
+          "texto": "Desayuno. Día completo: Hongyadong, distrito de Jiefangbei y la estación Liziba."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Chongqing",
+          "texto": "Desayuno. Día libre."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Chongqing – Guilin",
+          "texto": "Desayuno y tren a Guilin. Almuerzo y gruta de la Flauta de Caña."
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "Guilin",
+          "texto": "Desayuno. Navegación por el río Li entre picos de piedra caliza, con almuerzo tipo box."
+        },
+        {
+          "dia": "Día 16",
+          "titulo": "Guilin ✈ Hangzhou",
+          "texto": "Desayuno y vuelo a Hangzhou. Resto del día libre."
+        },
+        {
+          "dia": "Día 17",
+          "titulo": "Hangzhou – Shanghái",
+          "texto": "Desayuno. Lago Oeste, almuerzo, Pagoda de la Armonía y Templo del Alma Escondida. Tren a Shanghái."
+        },
+        {
+          "dia": "Día 18",
+          "titulo": "Shanghái",
+          "texto": "Desayuno. Templo del Buda de Jade, Jardín Yuyuan, casco antiguo y el Bund. Por la noche, espectáculo de acrobacia."
+        },
+        {
+          "dia": "Día 19",
+          "titulo": "Shanghái",
+          "texto": "Desayuno. Día libre; sugerimos Pudong y sus torres."
+        },
+        {
+          "dia": "Día 20",
+          "titulo": "Shanghái ✈ Estambul",
+          "texto": "Día libre con late check-out y traslado para el vuelo TK 027 de las 22:25."
+        },
+        {
+          "dia": "Día 21",
+          "titulo": "Estambul ✈ Buenos Aires",
+          "texto": "Conexión con el vuelo TK 015 de las 10:35. Llegada a Ezeiza a las 22:25."
+        }
+      ],
+      "tarifas": [],
+      "id": "hong-kong-china-2027",
+      "titulo": "Hong Kong & China 2027 — Salida grupal",
+      "region": "asia",
+      "destinos": [
+        "Hong Kong",
+        "Beijing",
+        "Xi'an",
+        "Chongqing",
+        "Guilin",
+        "Hangzhou",
+        "Shanghái"
+      ],
+      "resumen": "Del skyline de Hong Kong a la Gran Muralla, los Guerreros de Terracota, la megaciudad de Chongqing, el río Li en Guilin, el Lago Oeste de Hangzhou y Shanghái. China clásica y moderna.",
+      "precio_desde": {
+        "valor": 8230,
+        "moneda": "USD",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "10 de mayo 2027",
+      "vigencia": "2027-05-10",
+      "noches": 17,
+      "operador": "King Midas",
+      "operador_sigla": "KM",
+      "ref": "KM-1126",
+      "incluye": [
+        "Aéreos Buenos Aires / Hong Kong // Shanghái / Buenos Aires con Turkish Airlines",
+        "2 noches en Hong Kong, 4 en Beijing, 2 en Xi'an, 3 en Chongqing, 2 en Guilin, 1 en Hangzhou y 3 en Shanghái, con desayuno (late check-out en Shanghái)",
+        "Vuelo Hong Kong / Beijing y vuelos domésticos Beijing / Xi'an y Guilin / Hangzhou",
+        "Trenes Xi'an / Chongqing / Guilin y Hangzhou / Shanghái",
+        "9 almuerzos en China según itinerario",
+        "Cena banquete de pato laqueado de Pekín",
+        "Espectáculo de acrobacia",
+        "Traslados y visitas con guía de habla hispana",
+        "Reunión informativa previa",
+        "Universal Assistance Maximum de cortesía (hasta USD 300.000)",
+        "Tour leader desde Argentina (mín. 10 pax)"
+      ],
+      "imagen": "assets/img/pexels/31713313-1200.jpg",
+      "imagen_alt": "Skyline de Hong Kong sobre la bahía Victoria de noche",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 8230
+        },
+        {
+          "base": "single",
+          "valor": 9980
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Buenos Aires (EZE) – Estambul",
+          "clase": "",
+          "fecha": "10/05/2027",
+          "horario": "23:55 – 22:45 (+1)",
+          "numero": "TK 016",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Estambul – Hong Kong",
+          "clase": "",
+          "fecha": "12/05/2027",
+          "horario": "01:35 – 17:20",
+          "numero": "TK 070",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Shanghái – Estambul",
+          "clase": "",
+          "fecha": "29/05/2027",
+          "horario": "22:25 – 05:25 (+1)",
+          "numero": "TK 027",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Estambul – Buenos Aires (EZE)",
+          "clase": "",
+          "fecha": "30/05/2027",
+          "horario": "10:35 – 22:25",
+          "numero": "TK 015",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.kingmidas.com.ar/itinerario/1126/Hong-Kong-&-China-2027",
+        "fecha": "2026-10-15",
+        "desglose": "Base doble USD 6.680 + impuestos USD 1.550 (DNT, IVA, gastos y propinas) = USD 8.230. Single: 6.680 + 1.750 + 1.550 = 9.980."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "No incluye la percepción del 30% (RG 5463) si se abona en pesos.",
+      "condiciones": [
+        "Salida grupal con tour leader desde Argentina, garantizado con un mínimo de 10 pasajeros.",
+        "Tarifa válida con un mínimo de 10 pasajeros viajando juntos; si no se alcanza, el operador puede ajustar itinerario o tarifa.",
+        "Es obligatorio el certificado internacional de vacuna contra la fiebre amarilla (no se acepta exención).",
+        "La visa de Indonesia se tramita online y no está incluida."
+      ],
+      "no_incluye": [
+        "Visa de Indonesia (trámite online, USD 35/40 por persona)",
+        "Impuesto hotelero de Malasia (aprox. USD 3 por habitación y noche)",
+        "Tasa turística de Bali (aprox. USD 10)",
+        "Comidas y bebidas no especificadas"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Kuala Lumpur",
+          "nombre": "Capri by Fraser Bukit Bintang",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Malaca",
+          "nombre": "Swiss Garden Melaka",
+          "categoria": "4*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Singapur",
+          "nombre": "The Grand Copthorne Waterfront",
+          "categoria": "4*",
+          "noches": 4,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Ubud",
+          "nombre": "Plataran Ubud",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Nusa Dua",
+          "nombre": "Merusaka Nusa Dua",
+          "categoria": "4*",
+          "noches": 5,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires ✈ Kuala Lumpur",
+          "texto": "Salida desde Ezeiza en el vuelo TK 016 de las 23:55. Noche a bordo."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "Estambul",
+          "texto": "Llegada a las 22:45 y conexión con el vuelo a Kuala Lumpur de madrugada."
+        },
+        {
+          "dia": "Día 3",
+          "titulo": "Estambul ✈ Kuala Lumpur",
+          "texto": "Vuelo TK 060 de la 01:40. Llegada a las 17:15 y traslado al hotel."
+        },
+        {
+          "dia": "Día 4",
+          "titulo": "Kuala Lumpur",
+          "texto": "Desayuno. Palacio del Rey, Museo Nacional, plaza de la Independencia y edificio Sultán Abdul Samad."
+        },
+        {
+          "dia": "Día 5",
+          "titulo": "Kuala Lumpur",
+          "texto": "Desayuno. Día libre."
+        },
+        {
+          "dia": "Día 6",
+          "titulo": "Kuala Lumpur – Malaca",
+          "texto": "Desayuno y viaje a Malaca, cuna de Malasia. Almuerzo, iglesia de San Pedro, Porta de Santiago y cena."
+        },
+        {
+          "dia": "Día 7",
+          "titulo": "Malaca – Singapur",
+          "texto": "Desayuno y cruce de la frontera por Johor Bahru. Llegada a Singapur."
+        },
+        {
+          "dia": "Día 8",
+          "titulo": "Singapur",
+          "texto": "Desayuno. Distrito cívico y colonial: antiguo Parlamento, Teatro Victoria y Ayuntamiento."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Singapur",
+          "texto": "Mañana libre. Por la tarde, Jardines de la Bahía y la Cúpula de las Flores."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Singapur",
+          "texto": "Desayuno. Día libre."
+        },
+        {
+          "dia": "Día 11",
+          "titulo": "Singapur ✈ Denpasar – Ubud",
+          "texto": "Desayuno y vuelo a Bali. Traslado al hotel en Ubud."
+        },
+        {
+          "dia": "Día 12",
+          "titulo": "Ubud",
+          "texto": "Desayuno. Danza Barong y Keris, terrazas de arroz de Tegalalang y Kintamani."
+        },
+        {
+          "dia": "Día 13",
+          "titulo": "Ubud",
+          "texto": "Desayuno. Día libre."
+        },
+        {
+          "dia": "Día 14",
+          "titulo": "Ubud – Nusa Dua",
+          "texto": "Desayuno. Templo de Batukaru por caminos secundarios y llegada a Nusa Dua."
+        },
+        {
+          "dia": "Día 15",
+          "titulo": "Nusa Dua",
+          "texto": "Mañana libre. Por la tarde, templo de Mengwi (Taman Ayun) y atardecer en Tanah Lot."
+        },
+        {
+          "dia": "Día 16",
+          "titulo": "Nusa Dua – Uluwatu – Jimbaran",
+          "texto": "Mañana libre. Templo de Uluwatu sobre el acantilado y cena en Jimbaran."
+        },
+        {
+          "dia": "Días 17 y 18",
+          "titulo": "Nusa Dua",
+          "texto": "Días libres de playa."
+        },
+        {
+          "dia": "Día 19",
+          "titulo": "Nusa Dua ✈ Estambul",
+          "texto": "Mañana libre y traslado al aeropuerto de Denpasar para el vuelo TK 067 de las 20:45."
+        },
+        {
+          "dia": "Día 20",
+          "titulo": "Estambul ✈ Buenos Aires",
+          "texto": "Conexión con el vuelo TK 015 de las 10:35. Llegada a Ezeiza a las 22:25."
+        }
+      ],
+      "tarifas": [],
+      "id": "malasia-singapur-bali",
+      "titulo": "Malasia, Singapur & Bali — Salida grupal",
+      "region": "asia",
+      "destinos": [
+        "Kuala Lumpur",
+        "Malaca",
+        "Singapur",
+        "Ubud",
+        "Nusa Dua"
+      ],
+      "resumen": "Las Torres Petronas y la histórica Malaca, los Jardines de la Bahía de Singapur y una semana larga en Bali: terrazas de arroz en Ubud, templos sobre el mar y playa en Nusa Dua.",
+      "precio_desde": {
+        "valor": 9435,
+        "moneda": "USD",
+        "nota": "por persona en base doble — total con impuestos"
+      },
+      "salida": "24 de mayo 2027",
+      "vigencia": "2027-05-24",
+      "noches": 16,
+      "operador": "King Midas",
+      "operador_sigla": "KM",
+      "ref": "KM-1146",
+      "incluye": [
+        "Aéreos Buenos Aires / Kuala Lumpur // Denpasar / Buenos Aires con Turkish Airlines",
+        "Vuelo Singapur / Denpasar",
+        "3 noches en Kuala Lumpur, 1 en Malaca, 4 en Singapur, 3 en Ubud y 5 en Nusa Dua, con desayuno",
+        "Visitas y excursiones con guía de habla hispana",
+        "5 almuerzos y 2 cenas según itinerario",
+        "Todos los traslados",
+        "Reunión informativa previa",
+        "Universal Assistance Maximum de cortesía (hasta USD 300.000)",
+        "Tour leader desde Argentina (mín. 10 pax)"
+      ],
+      "imagen": "assets/img/pexels/36733227-1200.jpg",
+      "imagen_alt": "Torres Petronas iluminadas de noche, Kuala Lumpur, Malasia",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 9435
+        },
+        {
+          "base": "single",
+          "valor": 11915
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Buenos Aires (EZE) – Estambul",
+          "clase": "",
+          "fecha": "24/05/2027",
+          "horario": "23:55 – 22:45 (+1)",
+          "numero": "TK 016",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Estambul – Kuala Lumpur",
+          "clase": "",
+          "fecha": "26/05/2027",
+          "horario": "01:40 – 17:15",
+          "numero": "TK 060",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Denpasar – Estambul",
+          "clase": "",
+          "fecha": "11/06/2027",
+          "horario": "20:45 – 04:45 (+1)",
+          "numero": "TK 067",
+          "equipaje": ""
+        },
+        {
+          "aerolinea": "Turkish Airlines",
+          "ruta": "Estambul – Buenos Aires (EZE)",
+          "clase": "",
+          "fecha": "12/06/2027",
+          "horario": "10:35 – 22:25",
+          "numero": "TK 015",
+          "equipaje": ""
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.kingmidas.com.ar/itinerario/1146/Malasia,-Singapur-&-Bali",
+        "fecha": "2026-10-15",
+        "desglose": "Base doble USD 7.820 + impuestos USD 1.615 (DNT, IVA, gastos y propinas) = USD 9.435. Single: 7.820 + 2.480 + 1.615 = 11.915."
       }
     }
   ]

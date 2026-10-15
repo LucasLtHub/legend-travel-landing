@@ -5,30 +5,6 @@ Copiar el bloque de cada paquete y pegarlo en WhatsApp para que el operador lo c
 Después, cargar la respuesta en `vuelos` del paquete (aerolinea, fecha, horario, numero, equipaje) y correr el build.
 Los cruceros con embarque en Buenos Aires no llevan vuelos y no figuran.
 
-### Vietnam, Camboya & Tailandia
-
-Cargado hoy: LATAM Buenos Aires–Guarulhos / Turkish Airlines Guarulhos–Hanoi / Phuket–Buenos Aires (vía Estambul)
-
-```
-*Vietnam, Camboya & Tailandia — salida 7 de noviembre 2026*
-Aerolínea: LATAM, Turkish Airlines
-Vuelo de ida (fecha, horario, número):
-Vuelo de vuelta (fecha, horario, número):
-Equipaje incluido (valija en bodega / carry on / solo mochila):
-```
-
-### Sudáfrica & Mauritius
-
-Cargado hoy: South African Airways Desde Buenos Aires, vía San Pablo
-
-```
-*Sudáfrica & Mauritius — salida 16 de noviembre 2026*
-Aerolínea: South African Airways
-Vuelo de ida (fecha, horario, número):
-Vuelo de vuelta (fecha, horario, número):
-Equipaje incluido (valija en bodega / carry on / solo mochila):
-```
-
 ### Auroras Boreales — Salida grupal
 
 Cargado hoy: Iberia Buenos Aires/Copenhague – Estocolmo/Buenos Aires (vía Madrid) / Vuelo interno Oslo–Tromsø–Oslo
@@ -38,6 +14,18 @@ Cargado hoy: Iberia Buenos Aires/Copenhague – Estocolmo/Buenos Aires (vía Mad
 Aerolínea: Iberia
 Vuelo de ida (fecha, horario, número):
 Vuelo de vuelta (fecha, horario, número):
+Equipaje incluido (valija en bodega / carry on / solo mochila):
+```
+
+### Sudáfrica & Mauritius
+
+Cargado hoy: Gol Buenos Aires (AEP) – San Pablo (GRU) / South African Airways San Pablo – Johannesburgo / South African Airways Johannesburgo – Mauritius / South African Airways Mauritius – Ciudad del Cabo / South African Airways Ciudad del Cabo – San Pablo / Gol San Pablo – Buenos Aires (AEP)
+
+```
+*Sudáfrica & Mauritius — salida 8 de febrero 2027*
+Aerolínea: Gol, South African Airways
+Vuelo de ida (fecha, horario, número): G3 7681
+Vuelo de vuelta (fecha, horario, número): SA 223
 Equipaje incluido (valija en bodega / carry on / solo mochila):
 ```
 
@@ -63,6 +51,18 @@ Vuelo de vuelta (fecha, horario, número): 22/03/2027 – 24/03/2027 · 20:30 �
 Equipaje incluido (valija en bodega / carry on / solo mochila):
 ```
 
+### Vietnam, Camboya & Tailandia 2027 — Salida grupal
+
+Cargado hoy: Turkish Airlines Buenos Aires (EZE) – Estambul / Turkish Airlines Estambul – Hanoi / Turkish Airlines Phuket – Estambul / Turkish Airlines Estambul – Buenos Aires (EZE)
+
+```
+*Vietnam, Camboya & Tailandia 2027 — Salida grupal — salida 7 de marzo 2027*
+Aerolínea: Turkish Airlines
+Vuelo de ida (fecha, horario, número): 07/03/2027 · 23:55 – 22:35 (+1) · TK 016
+Vuelo de vuelta (fecha, horario, número): 09/03/2027 · 02:25 – 15:25 · TK 164
+Equipaje incluido (valija en bodega / carry on / solo mochila):
+```
+
 ### Sur de Italia y Sicilia con Puglia — Salida grupal acompañada
 
 Cargado hoy: Iberia Buenos Aires – Roma (1 escala) / Iberia Roma – Buenos Aires (1 escala)
@@ -77,13 +77,13 @@ Equipaje incluido (valija en bodega / carry on / solo mochila):
 
 ### Egipto & Jordania
 
-Cargado hoy: Ethiopian Airlines Desde Buenos Aires
+Cargado hoy: Ethiopian Airlines Buenos Aires (EZE) – Addis Abeba / Ethiopian Airlines Addis Abeba – El Cairo / Ethiopian Airlines Amman – Addis Abeba / Ethiopian Airlines Addis Abeba – Buenos Aires (EZE)
 
 ```
 *Egipto & Jordania — salida 17 de marzo 2027*
 Aerolínea: Ethiopian Airlines
-Vuelo de ida (fecha, horario, número):
-Vuelo de vuelta (fecha, horario, número):
+Vuelo de ida (fecha, horario, número): 17/03/2027 · 21:30 – 19:30 (+1) · ET 507
+Vuelo de vuelta (fecha, horario, número): 18/03/2027 · 22:05 – 01:05 (+1) · ET 452
 Equipaje incluido (valija en bodega / carry on / solo mochila):
 ```
 
@@ -151,6 +151,18 @@ Vuelo de vuelta (fecha, horario, número):
 Equipaje incluido (valija en bodega / carry on / solo mochila):
 ```
 
+### India & Maldivas — Salida grupal
+
+Cargado hoy: Turkish Airlines Buenos Aires (EZE) – Estambul / Turkish Airlines Estambul – Delhi / Turkish Airlines Malé – Estambul / Turkish Airlines Estambul – Buenos Aires (EZE)
+
+```
+*India & Maldivas — Salida grupal — salida 20 de enero 2027*
+Aerolínea: Turkish Airlines
+Vuelo de ida (fecha, horario, número): 20/01/2027 · 23:55 – 22:35 (+1) · TK 016
+Vuelo de vuelta (fecha, horario, número): 22/01/2027 · 20:50 – 05:20 (+1) · TK 716
+Equipaje incluido (valija en bodega / carry on / solo mochila):
+```
+
 ### Cancún All Inclusive
 
 ```
@@ -158,6 +170,78 @@ Equipaje incluido (valija en bodega / carry on / solo mochila):
 Aerolínea: LATAM
 Vuelo de ida (fecha, horario, número):
 Vuelo de vuelta (fecha, horario, número):
+Equipaje incluido (valija en bodega / carry on / solo mochila):
+```
+
+### Kenia & Tanzania — Safari grupal con Zanzíbar
+
+Cargado hoy: Ethiopian Airlines Buenos Aires (EZE) – Addis Abeba / Ethiopian Airlines Addis Abeba – Nairobi / Ethiopian Airlines Zanzíbar – Addis Abeba / Ethiopian Airlines Addis Abeba – Buenos Aires (EZE)
+
+```
+*Kenia & Tanzania — Safari grupal con Zanzíbar — salida 22 de febrero 2027*
+Aerolínea: Ethiopian Airlines
+Vuelo de ida (fecha, horario, número): 22/02/2027 · 21:30 – 19:30 (+1) · ET 507
+Vuelo de vuelta (fecha, horario, número): 23/02/2027 · 23:35 – 01:40 (+1) · ET 308
+Equipaje incluido (valija en bodega / carry on / solo mochila):
+```
+
+### Fiesta Holi — India 2027, salida grupal
+
+Cargado hoy: Ethiopian Airlines Buenos Aires (EZE) – Addis Abeba / Ethiopian Airlines Addis Abeba – Delhi / Ethiopian Airlines Mumbai – Addis Abeba / Ethiopian Airlines Addis Abeba – Buenos Aires (EZE)
+
+```
+*Fiesta Holi — India 2027, salida grupal — salida 14 de marzo 2027*
+Aerolínea: Ethiopian Airlines
+Vuelo de ida (fecha, horario, número): 14/03/2027 · 21:30 – 19:30 (+1) · ET 507
+Vuelo de vuelta (fecha, horario, número): 15/03/2027 · 23:10 – 08:05 (+1) · ET 686
+Equipaje incluido (valija en bodega / carry on / solo mochila):
+```
+
+### Corea & Japón — Cherry Blossom, salida grupal
+
+Cargado hoy: Turkish Airlines Buenos Aires (EZE) – Estambul / Turkish Airlines Estambul – Seúl (Incheon) / Turkish Airlines Tokio (Haneda) – Estambul / Turkish Airlines Estambul – Buenos Aires (EZE)
+
+```
+*Corea & Japón — Cherry Blossom, salida grupal — salida 17 de marzo 2027*
+Aerolínea: Turkish Airlines
+Vuelo de ida (fecha, horario, número): 17/03/2027 · 23:55 – 22:35 (+1) · TK 016
+Vuelo de vuelta (fecha, horario, número): 19/03/2027 · 02:15 – 18:20 · TK 090
+Equipaje incluido (valija en bodega / carry on / solo mochila):
+```
+
+### China & Tíbet — Salida grupal
+
+Cargado hoy: Turkish Airlines Buenos Aires (EZE) – Estambul / Turkish Airlines Estambul – Beijing / Turkish Airlines Shanghái – Estambul / Turkish Airlines Estambul – Buenos Aires (EZE)
+
+```
+*China & Tíbet — Salida grupal — salida 6 de abril 2027*
+Aerolínea: Turkish Airlines
+Vuelo de ida (fecha, horario, número): 06/04/2027 · 23:55 – 22:45 (+1) · TK 016
+Vuelo de vuelta (fecha, horario, número): 08/04/2027 · 01:40 – 15:35 · TK 088
+Equipaje incluido (valija en bodega / carry on / solo mochila):
+```
+
+### Hong Kong & China 2027 — Salida grupal
+
+Cargado hoy: Turkish Airlines Buenos Aires (EZE) – Estambul / Turkish Airlines Estambul – Hong Kong / Turkish Airlines Shanghái – Estambul / Turkish Airlines Estambul – Buenos Aires (EZE)
+
+```
+*Hong Kong & China 2027 — Salida grupal — salida 10 de mayo 2027*
+Aerolínea: Turkish Airlines
+Vuelo de ida (fecha, horario, número): 10/05/2027 · 23:55 – 22:45 (+1) · TK 016
+Vuelo de vuelta (fecha, horario, número): 12/05/2027 · 01:35 – 17:20 · TK 070
+Equipaje incluido (valija en bodega / carry on / solo mochila):
+```
+
+### Malasia, Singapur & Bali — Salida grupal
+
+Cargado hoy: Turkish Airlines Buenos Aires (EZE) – Estambul / Turkish Airlines Estambul – Kuala Lumpur / Turkish Airlines Denpasar – Estambul / Turkish Airlines Estambul – Buenos Aires (EZE)
+
+```
+*Malasia, Singapur & Bali — Salida grupal — salida 24 de mayo 2027*
+Aerolínea: Turkish Airlines
+Vuelo de ida (fecha, horario, número): 24/05/2027 · 23:55 – 22:45 (+1) · TK 016
+Vuelo de vuelta (fecha, horario, número): 26/05/2027 · 01:40 – 17:15 · TK 060
 Equipaje incluido (valija en bodega / carry on / solo mochila):
 ```
 

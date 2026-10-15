@@ -39,12 +39,12 @@ Generado el 2026-10-15 desde data/paquetes.json. Solo salidas vigentes:
 lo inactivo o vencido se retira de esta lista automáticamente.
 Precios por persona en base doble. Sujeto a disponibilidad al momento de la reserva.
 
-- Vietnam, Camboya & Tailandia — desde USD 14.330 — Salida: 7 de noviembre 2026 — https://www.legendtravel.com.ar/paquetes/vietnam-camboya-tailandia
-- Sudáfrica & Mauritius — desde USD 10.360 — Salida: 16 de noviembre 2026 — https://www.legendtravel.com.ar/paquetes/sudafrica-mauritius
 - Año Nuevo a bordo del Costa Serena — desde USD 2.158 — Salida: 27 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/anio-nuevo-costa-serena
 - Auroras Boreales — Salida grupal — desde USD 7.878 — Salida: 24 de enero 2027 — https://www.legendtravel.com.ar/paquetes/auroras-boreales-grupal
+- Sudáfrica & Mauritius — desde USD 9.820 — Salida: 8 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/sudafrica-mauritius
 - Punta Cana All Inclusive — desde USD 2.490 — Salida: 15 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/punta-cana-all-inclusive
 - Tesoros de Corea y Japón — Salida grupal acompañada — desde USD 8.070 — Salida: 5 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/tesoros-corea-japon
+- Vietnam, Camboya & Tailandia 2027 — Salida grupal — desde USD 9.740 — Salida: 7 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/vietnam-camboya-tailandia
 - Sur de Italia y Sicilia con Puglia — Salida grupal acompañada — desde USD 5.428 — Salida: 9 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/sur-italia-sicilia-puglia
 - Egipto & Jordania — desde USD 8.420 — Salida: 17 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/egipto-jordania
 - Enjoy Disney USA — Viaje de Quinceañeras — desde USD 6.860 — Salida: Salidas 2027 y 2028: enero-febrero, junio-julio y diciembre — https://www.legendtravel.com.ar/paquetes/enjoy-disney-usa-xv
@@ -55,7 +55,14 @@ Precios por persona en base doble. Sujeto a disponibilidad al momento de la rese
 - Recibí el 2027 en Altamar — Costa Diadema — desde USD 1.536 — Salida: 30 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/2027-altamar-costa-diadema
 - Punta Cana & Bayahíbe All Inclusive — desde USD 2.400 — Salida: 2 de enero 2027 — https://www.legendtravel.com.ar/paquetes/punta-cana-bayahibe
 - Riviera Maya All Inclusive — Costa Mujeres + Riviera Maya — desde USD 3.310 — Salida: 4 de enero 2027 — https://www.legendtravel.com.ar/paquetes/riviera-maya-costa-mujeres
+- India & Maldivas — Salida grupal — desde USD 9.440 — Salida: 20 de enero 2027 — https://www.legendtravel.com.ar/paquetes/india-maldivas
 - Cancún All Inclusive — desde USD 3.840 — Salida: 8 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/cancun-all-inclusive
+- Kenia & Tanzania — Safari grupal con Zanzíbar — desde USD 11.900 — Salida: 22 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/kenia-tanzania
+- Fiesta Holi — India 2027, salida grupal — desde USD 7.890 — Salida: 14 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/holi-india-2027
+- Corea & Japón — Cherry Blossom, salida grupal — desde USD 14.810 — Salida: 17 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/corea-japon-cherry-blossom
+- China & Tíbet — Salida grupal — desde USD 10.220 — Salida: 6 de abril 2027 — https://www.legendtravel.com.ar/paquetes/china-tibet
+- Hong Kong & China 2027 — Salida grupal — desde USD 8.230 — Salida: 10 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/hong-kong-china-2027
+- Malasia, Singapur & Bali — Salida grupal — desde USD 9.435 — Salida: 24 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/malasia-singapur-bali
 - Disney Europa Premium — Viaje de Quinceañeras — desde USD 7.464 — Salida: Septiembre 2027 — https://www.legendtravel.com.ar/paquetes/disney-europa-premium-xv
 
 Listado completo: https://www.legendtravel.com.ar/paquetes

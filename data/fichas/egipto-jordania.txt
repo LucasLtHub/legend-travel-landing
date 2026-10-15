@@ -1,135 +1,294 @@
-Fuente: https://www.legendtravel.com.ar/paquetes?id=699&salidaId=930&adultsQty=2
-Copiado el: 2026-10-13
+Fuente: https://www.kingmidas.com.ar/itinerario/1117/Egipto-&-Jordania%C2%A0
+Copiado el: 2026-10-15
 Paquete en data/paquetes.json: egipto-jordania
 
-promociones@legendtravel.com.ar
+Egipto & Jordania 
 
-TELÉFONO 114717-0344
+EL CAIRO
 
-Egipto & Jordania
-‹
-›
+LUXOR
 
-Un viaje que combina los grandes tesoros del Antiguo Egipto con los paisajes y ciudades históricas de Jordania. Descubrí las Pirámides de Giza, navegá por el río Nilo, recorré los templos más emblemáticos de la civilización egipcia y finalizá el viaje explorando Petra, el desierto de Wadi Rum y las aguas del Mar Muerto.
+CRUCERO NILO
 
-Detalle del paquete
-Nro. Ref.: PKM699-930
-⧉
-DESTINOS
+ASWAN
+
 AMMAN
-· JORDANIA
+
 PETRA
-· JORDANIA
-CAIRO
-· EGIPTO
-DESDE
-BUENOS AIRES
-SALIDA
-17/03/2027
-NOCHES
-15
-SERVICIOS
-Vuelos
-Traslados
-Asistencia
-Alojamiento
-Precio
-Precio total por persona
-USD 8.420
-Precio del producto
-USD 6.580
-Impuestos y tasas
-USD 1.840
-Nota
-PARA TARIFAS EXPRESADAS EN USD. EN CASO DE ABONAR EN PESOS (ARS) SE APLICARÁ EL TIPO DE CAMBIO CORRESPONDIENTE AL DÍA DE PAGO, Y SE ADICIONARÁ LA PERCEPCIÓN CORRESPONDIENTE (RG 4815).
-Tarifas
-	SALIDAS DISPONIBLES	BASE TARIFARIA	IMPUESTOS Y TASAS	PRECIO TOTAL
-	17/03/2027	Double	USD 1.840	USD 8.420
-Itinerario
-›
-Incluye
-›
-No incluye
-›
-Observaciones
-›
-Comunicate con nosotros
-Enviar un correo
-Contactar por WhatsApp
 
---- Itinerario ---
-1
-Días 1 y 2 | Buenos Aires – Addis Abeba – El Cairo
-Salida desde Buenos Aires con Ethiopian Airlines, realizando conexión en Addis Abeba antes de continuar el viaje hacia El Cairo.
-1
-Día 3 | El Cairo
-Llegada a la capital egipcia y tiempo para descansar. Por la tarde comenzaremos a descubrir la ciudad visitando la Ciudadela de Saladino y la imponente Mezquita de Mohamed Alí, dos de los principales símbolos del Cairo islámico. Luego recorreremos el tradicional bazar Khan El Khalili, uno de los mercados más famosos de Oriente Medio, donde también conoceremos una tienda de papiros y esencias.
-2
-Día 4 | El Cairo
-Desayuno. Dedicaremos el día a conocer las maravillas del Antiguo Egipto con la visita a las Pirámides de Giza: Keops, Kefrén y Micerinos, además de la enigmática Esfinge y el Templo del Valle. Por la tarde visitaremos el Gran Museo Egipcio (GEM), el museo arqueológico más grande del mundo, donde se exhiben los tesoros de Tutankamón y una de las colecciones más importantes de la civilización egipcia.
-3
-Día 5 | El Cairo
-Desayuno. Día libre para seguir recorriendo la ciudad o realizar una excursión opcional a Alejandría, la histórica ciudad fundada por Alejandro Magno, reconocida por su legado cultural, su antigua biblioteca y su privilegiada ubicación sobre el mar Mediterráneo.
-4
-Día 6 | El Cairo – Luxor
-Desayuno y vuelo hacia Luxor para comenzar la experiencia de navegación por el Nilo. Visitaremos los impresionantes templos de Karnak y Luxor, dos de los complejos religiosos más importantes del Antiguo Egipto, unidos antiguamente por la célebre Avenida de las Esfinges. Embarque en el crucero, almuerzo y tiempo para disfrutar de sus instalaciones.
-5
-Día 7 | Luxor – Edfu
-Desayuno. Por la mañana conoceremos la margen occidental del Nilo, donde visitaremos el Valle de los Reyes, el Templo de la reina Hatshepsut y los imponentes Colosos de Memnón. Luego continuaremos la navegación hacia Edfu atravesando las esclusas de Esna mientras disfrutamos del paisaje del río.
-6
-Día 8 | Edfu – Kom Ombo – Aswan
-Desayuno. En Edfu nos trasladaremos en calesa hasta el magnífico Templo de Horus, considerado el templo mejor conservado de Egipto. Más tarde navegaremos hasta Kom Ombo para visitar el singular templo dedicado a Sobek y Haroeris, además del histórico nilómetro utilizado para medir el nivel de las aguas del Nilo. Continuación hacia Aswan.
-7
-Día 9 | Aswan
-Durante la madrugada habrá posibilidad de realizar la excursión opcional a Abu Simbel. Más tarde conoceremos la Gran Represa de Aswan y el Obelisco Inconcluso. Por la tarde disfrutaremos de un tradicional paseo en feluca por el Nilo, desde donde obtendremos vistas de la Isla Elefantina y del Mausoleo del Aga Khan. También habrá posibilidad de realizar una excursión opcional al poblado nubio.
-8
-Día 10 | Aswan – El Cairo
-Desayuno. Desembarque y vuelo hacia El Cairo. Resto del día libre para seguir disfrutando de la ciudad o realizar actividades personales.
-9
-Día 11 | El Cairo – Amman
-Desayuno. Vuelo hacia Amman, capital de Jordania. Llegada y resto del día libre para comenzar a descubrir esta moderna ciudad que combina historia y tradición. Cena.
-10
-Día 12 | Amman – Madaba – Monte Nebo – Shobak – Pequeña Petra – Petra
-Desayuno. Comenzaremos el recorrido visitando Madaba, famosa por sus antiguos mosaicos bizantinos, y el Monte Nebo, desde donde Moisés contempló la Tierra Prometida. Continuaremos hacia el castillo cruzado de Shobak y luego conoceremos la Pequeña Petra, un fascinante conjunto arqueológico excavado en la roca. Llegada a Petra y cena.
-11
-Día 13 | Petra
-Desayuno. Día completo para descubrir Petra, una de las Siete Maravillas del Mundo Moderno. Recorreremos el estrecho desfiladero del Siq hasta llegar al emblemático Tesoro, continuando por la Calle de las Fachadas y el imponente Monasterio El Deir. Al caer la noche disfrutaremos del inolvidable espectáculo Petra by Night, donde el camino iluminado por cientos de velas y la música tradicional crean una experiencia única.
-12
-Día 14 | Petra – Wadi Rum
-Desayuno. Salida hacia el espectacular desierto de Wadi Rum, conocido como el "Valle de la Luna" o "Marte en la Tierra". Realizaremos un recorrido en vehículos 4x4 para descubrir sus paisajes de dunas, montañas de roca rojiza y escenarios naturales que han servido de locación para numerosas películas.
-13
-Día 15 | Wadi Rum – Mar Muerto
-Desayuno. Continuación hacia el Mar Muerto, el punto más bajo de la Tierra. Resto del día libre para relajarse y disfrutar de la experiencia única de flotar en sus aguas ricas en minerales. Cena.
-14
-Días 16 y 17 | Mar Muerto – Amman – Buenos Aires
-Desayuno y tiempo libre para seguir disfrutando del Mar Muerto hasta el traslado nocturno al aeropuerto de Amman para emprender el vuelo de regreso vía Addis Abeba hacia Buenos Aires, donde finaliza este inolvidable recorrido por Egipto y Jordania.
+WADI RUM
 
---- Incluye ---
-Pasajes aéreos desde Buenos Aires con Ethiopian Airlines.
-Vuelos internos en Egipto y aéreo El Cairo – Amman.
-5 noches de alojamiento en El Cairo con desayuno.
-4 noches de crucero por el Nilo con pensión completa.
-1 noche en Amman con media pensión.
-2 noches en Petra con media pensión.
-1 noche en Wadi Rum con media pensión.
-2 noches en el Mar Muerto con media pensión.
-Traslados, visitas y excursiones según programa.
-Guías de habla hispana.
-Seguro de asistencia médica Universal Assistance "Maximum", con cobertura de hasta USD 300.000.
-Reunión informativa previa al viaje.
-Tour leader acompañante desde Argentina, con un mínimo de 10 pasajeros.
+MAR MUERTO
 
---- No incluye ---
-Bebidas durante el crucero.
-Comidas y bebidas no especificadas.
-Gastos personales.
-Servicios no mencionados como incluidos.
+Grupales
+Próxima salida - 17 de Marzo 2027 / 17 días
+El programa incluye
 
---- Observaciones ---
-Hoteles previstos o similares
-El Cairo: Sofitel Cairo Downtown (4 estrellas)
-Crucero por el Nilo: Blue Shadow / Opera  (4 estrellas)
-Amman: The Boulevard Arjaan by Rotana  (4 estrellas)
-Petra: Mövenpick Resort Petra  (4 estrellas)
-Wadi Rum: Mazayen Luxury Camp – Martian Tents.
-Mar Muerto: Holiday Inn Dead Sea (4 estrellas)
+- Aéreos internacionales: Buenos Aires / El Cairo // Amman / Buenos Aires, con Ethiopian.           
+
+- Vuelos domésticos El Cairo / Luxor // Aswan / El Cairo.
+
+- Pasaje aéreo El Cairo / Amman.
+
+- 05 noches de alojamiento en El Cairo, con desayuno.
+
+- 04 noches de alojamiento en Crucero por el Nilo, con régimen pensión completa.
+
+- 01 noche de alojamiento en Amman, con régimen media pensión.
+
+- 02 noches de alojamiento en Petra, con régimen media pensión.
+
+- 01 noches de alojamiento en Wadi Rum, con régimen media pensión.
+
+- 02 noches de alojamiento en Mar Muerto, con régimen media pensión.
+
+- Visita a las Pirámides de Giza, según itinerario.
+
+- Visita guiada por Museo Egipcio, según itinerario.
+
+- Visita de la Mezquita de Alabastro y el Bazar Khan El-Khalili.
+
+- Visita a los Templos mencionados durante el Crucero por el Nilo.
+
+- Visita a Madaba, Nebo, Shobak en Jordania, según itinerario.
+
+- Entrada al espectáculo Petra By Night, según itinerario.
+
+- Visita a Petra día completo, según itinerario.
+
+- Tour en vehículo 4x4 en Wadi Rum, según itinerario.
+
+- Todos los traslados, según itinerario.
+
+- Guías de habla hispana.
+
+- Seguro de asistencia médica de cortesía: Universal Assistance "Maximum" (hasta u$s 300.000)**
+
+- Reunion informativa previa al viaje.
+
+- Tour leader acompañante desde Argentina con mínimo 10 pasajeros.
+
+El programa no incluye
+
+- Bebidas en el Crucero.
+
+- Comidas y bebidas que no estén especificadas.
+
+- Gastos extras o personales.
+
+- Cualquier otro servicio que no se especifique como incluido.
+
+Hoteles
+
+Hoteles del tour:
+
+EL CAIRO: Hotel Sofitel Cairo Downtown 4*sup
+
+CRUCERO POR EL NILO: Crucero Blue Shadow / Opera 4*.
+
+AMMAN: The Boulevard Arjan by Rotana 4*
+
+PETRA: Movenpick Resort Petra 4*
+
+WADI RUM: Mazayen Luxury Camp – “Martian tents”
+
+MAR MUERTO: Holiday Inn Hotel –Dead Sea 4*
+
+*Hoteles previstos o similares.
+ 
+
+ 
+
+ 
+
+Notas & Condiciones
+
+NOTAS IMPORTANTES & CONDICIONES DE RESERVA
+
+ 
+
+* La tarifa en base TRIPLE ES LA MISMA QUE EN DOBLE tanto en el tour grupal como en las extensiones sugeridas o a medida. Las habitaciones triples consisten en todos los destinos en una habitación de tamaño doble ó twin + una cama adicional roll-away (tipo catre), en consecuencia, la comodidad de las habitaciones “triples” son más reducidas. No es recomendable que la tercera persona en la habitación triple sea un adulto. En el caso de 3 adultos, recomendamos el alojamiento en una habitación doble/twin + una habitación single.
+
+ 
+
+* Garantizamos Tour Leader desde Argentina con un mínimo de 10 pasajeros viajando en los vuelos del bloqueo aéreo original previsto para el grupo.  
+
+ 
+
+* Tarifa válida con un mínimo de 10 pasajeros viajando juntos.  En caso de no alcanzar el número indicado:
+
+- King Midas se reserva el derecho de realizar variaciones en el itinerario y/o tarifa dependiendo el número final de pasajeros que decidan viajar.
+
+- King Midas informará el estado del grupo entre 30 y 20 días antes de la fecha de inicio del tour, teniendo el pasajero la posibilidad de optar por otro itinerario o cancelar sin ningún tipo de penalidad, reintegrándose la totalidad abonada hasta ese entonces. No ha lugar para otro tipo de resarcimiento.
+
+  
+
+* Los tickets aéreos de cupo grupal se emitirán según lo establecido con cada aerolínea entre 45 y 30 días antes de la fecha de inicio del tour. King Midas tendrá la potestad de realizar dicha emisión dentro de este plazo si ya cuenta con una seña del pasajero. En caso de completar el grupo antes de los 45 días previos a la fecha de salida, King Midas se reserva el derecho de adelantar la emisión de los tickets aéreos (no sin antes informar a las agencias minoristas). La emisión de los tickets aéreos conlleva gastos de cancelación.
+
+  
+
+* Los asientos de cupo serán asignados luego de la emisión de los tickets aéreos, solo si la compañía lo permite. Se ha de respetar la preferencia en caso que haya sido requerido. De existir alguna modificación al momento del check-in, será únicamente responsabilidad de la aerolínea. El tour leader o representante de King Midas en Ezeiza hará lo que esté a su alcance para intentar solucionar el imprevisto, pudiendo o no tener una respuesta positiva.
+
+ 
+
+* Pasajeros mayores a 70 años (inclusive) deberán presentar certificado médico al momento de realizar la reserva que indique aptitud física para realizar el viaje. Sin excepción.
+
+ 
+
+* Los pasajeros inscriptos en la modalidad DOBLE A COMPARTIR GARANTIZADA, serán notificados de los datos de su compañera/o de habitación entre 20 y 10 días antes del inicio del tour. En caso que King Midas no logre conseguir un/a compañero/a llegada la fecha del viaje, el pasajero se alojará en habitación SINGLE sin abonar el suplemento correspondiente. Válido para grupos con un mínimo de 10 pasajeros.
+
+ 
+
+* Es responsabilidad del pasajero contar con la documentación necesaria y requerida tanto en Argentina como en los países de destino, llámese visas y/o permisos correspondientes y/o pasaporte en regla; como así también es responsabilidad de la agencia de viajes detallar e informar los requerimientos y restricciones de cada país al respecto. King Midas se compromete a facilitar la información y requisitos obligatorios para cada destino, y en el caso de ser necesario, ser el intermediario para la gestoría de las visas.
+
+Tarifas, Impuestos & Vuelos
+
+SALIDA 17 MARZO
+
+PRECIO BASE DBL: u$s 6.580 .-
+
+SUPLEMENTO SINGLE: u$s 2.650.-
+
+IMPUESTOS: u$s 1.840 APROX
+
+(Incluyen DNT, IVA, Gtos, Visa Egipto y Propinas).
+
+Suplemento asistencia médica PARA MAYORES DE 69 AÑOS = u$s 85-.
+
+Suplemento asistencia médica PARA MAYORES DE 85 AÑOS = u$s 170-.**
+
+ 
+
+**Para los pasajeros mayores a 85 años, la cobertura máxima es el producto “Excellence” hasta USD 150.000
+
+ 
+
+GARANTIZAMOS HABITACIÓN DOBLE A COMPARTIR
+
+(Para MUJER Y HOMBRE – Reserva hasta 60 días antes de la salida)
+
+ 
+
+ 
+
+Aviso importante: Los importes detallados no incluyen la percepción del 30% según la RG 5463. Les recordamos que los pagos efectuados en dólares estadounidenses, ya sea mediante transferencia o depósito bancario, no están sujetos a dicho recargo. En caso de realizar el pago en pesos argentinos, deberá aplicarse la percepción correspondiente.
+
+ 
+
+ 
+
+VUELOS INTERNACIONALES PREVISTOS
+
+17 MARZO
+
+1 ET 507  17MAR  EZEADD    2130  1930+1                                   
+
+2 ET 452  18MAR  ADDCAI    2205  0105+1                                 
+
+3 ET 429  02APR   AMMADD 0325  0655                                           
+
+4 ET 506  02APR   ADDEZE     0950  2025 
+
+ 
+
+La compañía aérea se reserva el derecho de cambiar de horarios, fechas y vuelos sin previo aviso.
+
+Precio u$s
+
+Base DBL
+
++ IMP
+
+6580
+
+Suplemento
+
+Single u$s
+
++ IMP
+
+2650
+
+Descargar itinerario PDF
+Descargar itinerario word
+
+abrir todoscerrar todos
+
+Día 01.  BUENOS AIRES – EL CAIRO
+
+Salida desde el aeropuerto de Ezeiza en el vuelo de Ethiopian Airlines ET 507 de las 21.30hs., con destino a El Cairo, vía Addis Abeba.
+
+Día 02.  ADDIS ABEBA – EL CAIRO
+
+Arribo a Addis Abeba a las 19.30hs. Y conexión con el vuelo a Cairo de las 22.05hs.
+
+Día 03.  EL CAIRO
+
+Arribo a las 01.05hs, recepción y traslado al hotel. Alojamiento incluido del dia 02 al dia 03. Mañana libre. Por la tarde, visita a los monumentos no faraónicos más conocido de la capital egipcia: la Ciudadela de Saladino y mezquita de Muhammed Alí. Seguido por un recorrido por el Khan El-Khalili, histórico mercado árabe. Visitaremos una tienda de papiros y esencias. Regreso al hotel. Alojamiento.
+
+Día 04.  EL CAIRO
+
+Desayuno. Por la mañana visitaremos las Pirámides de Giza: Keops, Kefren y Micerinos, junto con hermosas vistas del desierto. También podremos apreciar la enigmática y gigantesca Esfinge y el Templo del Valle. A la tarde iremos a conocer el nuevo Museo Egipcio “GEM”, el museo más grande del mundo dedicado a una civilización donde podremos apreciar maravillosos e innumerables tesoros, entre ellos la Máscara de Tutankamón y su colección completa. Regreso al hotel. Alojamiento.
+
+Día 05.  EL CAIRO
+
+Desayuno. Día libre para disfrutar de la ciudad. Recomendamos realizar visita opcional de día completo a Alejandría, fundada por Alejandro Magno en el año 332 a.C., fue el principal centro cultural del mundo antiguo y tiene una de las historias más completas de Egipto. Históricamente, la ciudad fue conocida por su faro y su biblioteca en la que desde el siglo III A.C se guardaron casi 1.000.000 de documentos que desaparecieron con su incendio.  Alojamiento.
+
+ 
+
+Día 06.  EL CAIRO – LUXOR (CRUCERO NILO)
+
+Desayuno y traslado al aeropuerto para embarcarnos en un vuelo con destino a Luxor. Arribo, recepción. Comienzo de las visitas a los fastuosos Templos de Karnak y Luxor. El templo de Karnak es el más grande del mundo dedicado al dios Amon-Ra, allí se puede ver la enterada a la avenida de los carneros, luego se pasa por el primer pilón del Faraón Nekhtanepo, para continuar hacia el patio del Templo hasta la Sala Columnata, que contiene 134 columnas que datan de la época de Ramsés Segundo. El Templo de Luxor estaba unido al de Karnak mediante una avenida flanqueada por esfinges. Traslado al crucero para realizar el check-in y almorzar a bordo. Tiempo libre para disfrutar del crucero. Cena y alojamiento.
+
+Día 07.  CRUCERO NILO
+
+Desayuno. Temprano por la mañana visitaremos el Valle de los Reyes: que encierra las tumbas de muchos faraones como Ramses II y Tutankamón; también veremos el Templo de la Reina Hatcheopsut y los Colosos de Memnon, todo sobre la margen Occidental del Río Nilo. Al finalizar la visita regresaremos al barco. El almuerzo se servirá mientras se navega rumbo a Edfu, pasando por las esclusas de Esna. Cena y noche a bordo.
+
+Día 08.  CRUCERO NILO
+
+Desayuno. Arribo a Edfu. Nos dirigiremos en calesa (carros tirados a caballo) hasta el Templo de Horus: conocido por ser el Templo mejor conservado del país y el segundo más grande. Regreso al barco y almuerzo, mientras se continúa navegando hacia Kom Ombo, donde visitaremos el Templo dedicado a Sobek (dios con cabeza de cocodrilo) y Haeoeris (dios con cabeza de halcón), allí también podremos ver el “nilómetro”, utilizado por los antiguos egipcios para medir el nivel de las aguas del río. Embarque y continuación a Aswan. Cena y noche a bordo.
+
+Día 09.  CRUCERO NILO
+
+Por la madrugada podrán realizar una excursión opcional a los majestuosos templos de Abu Simbel, por tierra. Al regreso, visitaremos en camino la Represa de Aswan, monumental obra de ingeniería construida para controlar las inundaciones del Nilo, y las canteras de granito rojo para ver el Obelisco Inconcluso. Almuerzo a bordo. Por la tarde realizaremos un paseo en Feluca (típica embarcación utilizada desde hace cientos de años). Durante la navegación obtendremos una vista panorámica de la Isla Elefantina y el Mausoleo de Khan. Pueden optar por realizar un tour opcional al Poblado de Nubio. Regreso al barco, cena y noche a bordo.  
+
+Día 10.  ASWAN – EL CAIRO
+
+Desayuno. Check out del crucero y traslado al aeropuerto para tomar el vuelo a El Cairo. Arribo y traslado al hotel. Resto del dia libre. Alojamiento.
+
+Día 11.  EL CAIRO – AMMAN
+
+Desayuno. A la hora indicada traslado al aeropuerto para tomar un vuelo con destino a Amman, Jordania. Llegada, recepción y traslado al hotel. Cena y alojamiento.
+
+Día 12.  AMMAN – MADABA – NEBO – SHOBAK – PEQUEÑA PETRA – PETRA
+
+Desayuno. Por la mañana visitaremos en Madaba la Iglesia Ortodoxa de San Jorge, donde se encuentra el primer “Mapa-Mosaico” de Palestina del Siglo VI. A continuación partiremos hacia el Monte Nebo para admirar la vista panorámica del Valle del Jordán y del Mar Muerto. Este lugar es importante porque fue el último sitio visitado por Moisés y desde donde vislumbró la tierra prometida.  Luego continuaremos hacia el castillo de Shobak: último reminiscencia que queda de las Cruzadas, construido en el año 1115 por el rey Balduino, fue utilizado como defensa en el camino entre Damasco y Egipto. Visitaremos lo que se conoce como “pequeña” Petra, un angosto desfiladero con arquitectura típica nabatea.  Al finalizar nuestro recorrido partiremos rumbo a Petra. Llegada y traslado al hotel. Cena y alojamiento.         
+
+Día 13.  PETRA
+
+Desayuno. Comenzaremos el día recorriendo Petra. Visitaremos la Tumba de los Obeliscos y el Siq: cañón de 1Km. de longitud. En su punto final se encuentra “El Tesoro”, una tumba colosal decorada con columnas y esculturas de gran refinamiento y belleza incomparable. De allí seguiremos hacia la calle de las fachadas para terminar en el imponente Monasterio “El Deir”. Regreso al hotel. Por la tarde, nos dispondremos a disfrutar de Petra by Night: una caminata en silencio que nos conducirá hasta "El Tesoro", la fachada principal de Petra. Toda el sendero estará iluminada por cientos de velas, al llegar nos sentaremos en alfombras, beberemos un vasito con té caliente y escucharemos la narración de la historia de Petra y de sus antepasados, acompañada por música tradicional. El eco producido por el rebote de los sonidos contra las montañas hará de este, un momento inigualable. Cena y alojamiento.      
+
+Día 14.  PETRA – WADI RUM
+
+Desayuno. Partiremos hacia el desierto de Wadi Rum, también conocido como “Marte en la Tierra”. En el corazón de este majestuoso desierto se encuentra un campamento que ofrece una combinación entre lo moderno, el confort y una novedosa experiencia en el desierto gracias a sus domos “The Martian”. Este tipo de alojamiento es un nuevo concepto en la región y parte de su encanto reside en la posibilidad de contemplar la magnificencia de las estrellas desde tu confortable cama. Alojamiento.
+
+Día 15.  WADI RUM – MAR MUERTO
+
+Desayuno. Saldremos hacia el Mar Muerto. Llegada y día libre para disfrutar de este lugar único en el mundo. Cena y alojamiento.
+
+Día 16.  MAR MUERTO
+
+Desayuno. Día libre hasta la hora del traslado al aeropuerto por la noche.
+
+Día 17.  AMMAN – ADDIS ABEBA – BUENOS AIRES
+
+Embarque en el vuelo ET 429 de las 03.25hs. con destino a Addis Abeba y conexión con el vuelo ET 506 de las 09.50hs. rumbo a Buenos Aires. Arribo a Ezeiza a las 20.25hs. Fin de nuestros servicios.             
+
+Este itinerario puede sufrir modificaciones en cuanto al orden de los servicios, no así en su contenido.
+
+ 
+
+**IMPORTANTE: Para visitar Egipto es requisito obligatorio certificado internacional  de la vacuna contra la fiebre amarilla. NO se acepta la exención. 
+
+       
+Términos y condiciones - Copyright © King Midas Tour Operator

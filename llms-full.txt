@@ -110,40 +110,6 @@ Generado el 2026-10-15 por build-paquetes.py. Resumen corto: https://www.legendt
 ## Paquetes y salidas vigentes (detalle)
 Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo salidas vigentes al 15/10/2026.
 
-### Vietnam, Camboya & Tailandia
-- URL: https://www.legendtravel.com.ar/paquetes/vietnam-camboya-tailandia
-- Destinos: Hanoi, Bahía de Halong, Hoi An, Ho Chi Minh, Siem Reap, Bangkok, Chiang Rai, Chiang Mai, Krabi, Phuket
-- Salida: 7 de noviembre 2026 · 22 noches
-- Precio: desde USD 14.330 por persona en base doble (por persona en base doble — total con impuestos)
-- Incluye: Aéreo Buenos Aires–Guarulhos con LATAM y Guarulhos–Hanoi / Phuket–Buenos Aires con Turkish (vía Estambul); Acompañamiento desde Argentina durante todo el recorrido; Todos los traslados; 22 noches con desayuno; Late check-out en Phuket; 35 comidas según itinerario; Vuelos internos; Transporte exclusivo para el grupo; Guía acompañante de habla hispana; Todas las excursiones del itinerario; Asistencia Premium (hasta 85 años); Propinas, impuestos y tasas; Noche previa en hotel de Buenos Aires con traslado; Habitación a compartir garantizada para pasajeras que viajen solas
-- No incluye: Visa electrónica de Vietnam; Visa electrónica de Camboya; Bebidas; Entradas no detalladas; Servicios no especificados
-- Hotel: Pan Pacific (Hanoi) — Frente a los lagos del Oeste y Truc Bach, cerca del Barrio Antiguo; Piscina con techo retráctil, utilizable todo el año; Spa, sauna, jacuzzi y gimnasio abierto las 24 horas; Restaurante cantonés, buffet de mariscos y bar en la terraza
-- Hotel: Ambassador Cruise (Halong)
-- Hotel: Royal Hoi An (Hoi An) — A orillas del río Hoai, con vistas a la Ciudad Antigua; Bar en la terraza con tapas y cócteles; Restaurante japonés y otro de cocina vietnamita e internacional
-- Hotel: Caravelle Saigon (Ho Chi Minh) — En la plaza Lam Son, a pasos de la Ópera de Saigón; Cerca de la calle Dong Khoi y del mercado Ben Thanh; Piscina, gimnasio y spa propio; Bar en la terraza
-- Hotel: Shoka Angkor (Siem Reap)
-- Hotel: Montien Surawong (Bangkok) — Sobre Surawong Road, en la zona de Silom; A distancia a pie del tren elevado y del subte; Restaurante de cocina tailandesa y china; Bistró de estilo francés que de noche funciona como bar de vinos
-- Hotel: Le Méridien (Chiang Rai)
-- Hotel: InterContinental The Mae Ping (Chiang Mai) — Al borde de la Ciudad Antigua, cerca de una de sus puertas; Spa de inspiración local y gimnasio 24 horas; Cocina del norte tailandés, restaurante chino y bar en la azotea
-- Hotel: Sofitel Phokeethra (Krabi) — Frente a la playa de Klong Muang; Piscina de forma libre de 7.000 m²; Kids club con espacios de juego; Spa y restaurantes de cocina italiana, tailandesa e india
-- Hotel: SAii Laguna (late check-out) (Phuket) — Entre una laguna y la playa de Bang Tao, con acceso directo; Kids club y piscinas con cabañas; Spa propio; Habitaciones con vista a la laguna o al mar
-- Resumen: El gran viaje del Sudeste Asiático acompañado desde Argentina: la bahía de Halong, los templos de Angkor, el Triángulo de Oro y las playas de Tailandia, con 35 comidas incluidas.
-- Vigente hasta: 07/11/2026
-
-### Sudáfrica & Mauritius
-- URL: https://www.legendtravel.com.ar/paquetes/sudafrica-mauritius
-- Destinos: Johannesburgo, Parque Kruger, Mauritius, Ciudad del Cabo
-- Salida: 16 de noviembre 2026 — South African Airways vía San Pablo · 11 noches
-- Precio: desde USD 10.360 por persona en base doble (por persona en base doble — total con impuestos)
-- Incluye: Aéreos desde Buenos Aires vía San Pablo con South African Airways; 1 noche en Johannesburgo con desayuno; 2 noches en reserva privada área Kruger con media pensión; 4 noches en Mauritius con media pensión; 4 noches en Ciudad del Cabo con desayuno; 2 almuerzos según itinerario; Safaris en vehículo 4x4 con guía de habla hispana; Excursión Península del Cabo (Cabo de Buena Esperanza, focas y pingüinos); City tour + Table Mountain + viñedos con degustación; Traslados, visitas y excursiones según programa; Universal Assistance Excellence de cortesía (hasta USD 150.000); Reunión informativa previa; Tour leader desde Argentina
-- No incluye: Comidas y bebidas no especificadas; Gastos personales
-- Hotel: Permont D'Oreale (Johannesburgo, 5*, 1 noches, Desayuno, Habitación estándar) — Dentro del complejo Emperors Palace, en Kempton Park; A 5 minutos del aeropuerto OR Tambo, con shuttle de cortesía a pedido; Pileta exterior con terraza y acceso directo al spa; Casino y restaurantes en el mismo complejo
-- Hotel: Tintswalo Private Reserve (Área Kruger, 5*, 2 noches)
-- Hotel: Hilton Mauritius Resort & Spa (Mauritius, 4*, 4 noches) — Frente a la playa en la costa oeste de Mauricio, con acceso directo; Habitaciones con vista al jardín y la piscina, o a la playa; Spa con sauna, baño de vapor e hidroterapia, y gimnasio; Snorkel y remo en la laguna, y piscina apta para chicos
-- Hotel: Southern Sun Waterfront / Park Inn Foreshore (Ciudad del Cabo, 4*, 4 noches, Desayuno, Habitación estándar)
-- Resumen: Safari en reserva privada del área Kruger con lodge 5*, playas paradisíacas de Mauritius y Ciudad del Cabo con Table Mountain y viñedos. África premium.
-- Vigente hasta: 16/11/2026
-
 ### Año Nuevo a bordo del Costa Serena
 - URL: https://www.legendtravel.com.ar/paquetes/anio-nuevo-costa-serena
 - Destinos: Montevideo, Camboriú, Ilha Grande (Abraão), Río de Janeiro, Ilhabela
@@ -162,6 +128,22 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Incluye: Aéreos Buenos Aires/Copenhague – Estocolmo/Buenos Aires con Iberia (vía Madrid); Traslados en todas las ciudades; 9 noches en hoteles 4* superior con desayuno buffet; 1 noche en crucero DFDS (camarote exterior) con cena buffet; Guía de habla hispana; Visitas panorámicas en Copenhague, Oslo, Tromsø y Estocolmo; Vuelo interno Oslo–Tromsø–Oslo; Tren rápido Oslo–Estocolmo 2ª clase; Parque Vigeland; Teleférico Fjellheisen; Trineo tirado por renos; Experiencia Sami con cena alrededor del fuego; Asistencia Universal Assistance (hasta 70 años) con seguro de cancelación
 - Resumen: Posibilidad real de ver auroras boreales: capitales nórdicas, crucero escandinavo, tren panorámico, trineo de renos y experiencia Sami alrededor del fuego.
 - Vigente hasta: 24/01/2027
+
+### Sudáfrica & Mauritius
+- URL: https://www.legendtravel.com.ar/paquetes/sudafrica-mauritius
+- Destinos: Johannesburgo, Parque Kruger, Mauritius, Ciudad del Cabo
+- Salida: 8 de febrero 2027 — South African Airways vía San Pablo · 11 noches
+- Precio: desde USD 9.820 por persona en base doble (por persona en base doble — total con impuestos)
+- Precio: desde USD 12.700 por persona en base single
+- Impuestos: No incluye la percepción del 30% (RG 5463) si se abona en pesos.
+- Incluye: Aéreos desde Buenos Aires vía San Pablo con South African Airways; 1 noche en Johannesburgo con desayuno; 2 noches en reserva privada área Kruger con media pensión; 4 noches en Mauritius con media pensión; 4 noches en Ciudad del Cabo con desayuno; 2 almuerzos según itinerario; Safaris en vehículo 4x4 con guía de habla hispana; Excursión Península del Cabo (Cabo de Buena Esperanza, focas y pingüinos); City tour + Table Mountain + viñedos con degustación; Traslados, visitas y excursiones según programa; Universal Assistance Excellence de cortesía (hasta USD 150.000); Reunión informativa previa; Tour leader desde Argentina
+- No incluye: Comidas y bebidas no especificadas; Gastos personales
+- Hotel: Silverbirch Hotel (Johannesburgo, 4*, 1 noches, Desayuno)
+- Hotel: Moditlo / Shidlulli, reserva privada Karongwe (Área Kruger, 2 noches, Pensión completa)
+- Hotel: Hilton Mauritius Resort & Spa (Mauritius, 4*, 4 noches, Media pensión)
+- Hotel: Southern Sun Waterfront (Ciudad del Cabo, 4*, 4 noches, Desayuno)
+- Resumen: Safari en reserva privada del área Kruger con lodge 5*, playas paradisíacas de Mauritius y Ciudad del Cabo con Table Mountain y viñedos. África premium.
+- Vigente hasta: 08/02/2027
 
 ### Punta Cana All Inclusive
 - URL: https://www.legendtravel.com.ar/paquetes/punta-cana-all-inclusive
@@ -196,6 +178,26 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Resumen: Dos culturas fascinantes en un solo viaje: la DMZ coreana, templos patrimonio, la noche en un monasterio budista del Monte Koya, tren bala y Tokio.
 - Vigente hasta: 05/03/2027
 
+### Vietnam, Camboya & Tailandia 2027 — Salida grupal
+- URL: https://www.legendtravel.com.ar/paquetes/vietnam-camboya-tailandia
+- Destinos: Hanoi, Bahía de Lan Ha, Hoi An, Hue, Ho Chi Minh, Siem Reap, Bangkok, Phuket
+- Salida: 7 de marzo 2027 · 16 noches · Régimen: Desayuno (9 almuerzos y 3 cenas incluidos)
+- Precio: desde USD 9.740 por persona en base doble (por persona en base doble — total con impuestos)
+- Precio: desde USD 12.020 por persona en base single
+- Impuestos: No incluye la percepción del 30% (RG 5463) si se abona en pesos.
+- Incluye: Aéreos Buenos Aires / Hanoi // Phuket / Buenos Aires con Turkish Airlines; Vuelos domésticos Hanoi / Danang, Hue / Ho Chi Minh y Bangkok / Phuket; Aéreos Ho Chi Minh / Siem Reap / Bangkok; 2 noches en Hanoi, 1 en crucero por la bahía de Lan Ha (pensión completa), 2 en Hoi An, 1 en Hue, 2 en Ho Chi Minh, 2 en Siem Reap, 3 en Bangkok y 3 en Phuket (late check-out); 9 almuerzos y 3 cenas según itinerario; Visitas, excursiones y entradas según itinerario; Todos los traslados; Guía de habla hispana; Reunión informativa previa; Universal Assistance Maximum de cortesía (hasta USD 300.000); Tour leader desde Argentina (mín. 10 pax)
+- No incluye: Visa de Vietnam (trámite online, aprox. USD 25/30 por persona); Visa de Camboya on arrival (aprox. USD 25/30); Comidas y bebidas no especificadas; Gastos extras o personales
+- Hotel: Grand Mercure (Hanoi, 4*, 2 noches, Desayuno)
+- Hotel: Indochine Premium Ha Long (crucero) (Bahía de Lan Ha, 4*, 1 noches, Pensión completa)
+- Hotel: Royal Hoi An (Hoi An, 4*, 2 noches, Desayuno)
+- Hotel: Indochine Palace Hotel (Hue, 4*, 1 noches, Desayuno)
+- Hotel: Caravelle (Ho Chi Minh, 4*, 2 noches, Desayuno)
+- Hotel: Sokha Angkor Resort (Siem Reap, 4*, 2 noches, Desayuno)
+- Hotel: Montien Hotel Surawong (Bangkok, 4*, 3 noches, Desayuno)
+- Hotel: Pullman Phuket Panwa Beach (Phuket, 4*, 3 noches, Desayuno)
+- Resumen: Hanoi y una noche de crucero por la bahía de Lan Ha, Hoi An y la Hue imperial, los túneles de Cu Chi, los templos de Angkor, el Gran Palacio de Bangkok y tres noches de playa en Phuket.
+- Vigente hasta: 07/03/2027
+
 ### Sur de Italia y Sicilia con Puglia — Salida grupal acompañada
 - URL: https://www.legendtravel.com.ar/paquetes/sur-italia-sicilia-puglia
 - Destinos: Roma, Bari, Lecce, Alberobello, Matera, Nápoles, Capri, Taormina, Siracusa, Agrigento, Palermo, Pompeya
@@ -218,6 +220,8 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Destinos: El Cairo, Luxor, Edfu, Aswan, Amman, Petra, Wadi Rum, Mar Muerto
 - Salida: 17 de marzo 2027 · 15 noches
 - Precio: desde USD 8.420 por persona en base doble (por persona en base doble — total con impuestos)
+- Precio: desde USD 11.070 por persona en base single
+- Impuestos: No incluye la percepción del 30% (RG 5463) si se abona en pesos.
 - Incluye: Aéreos desde Buenos Aires con Ethiopian Airlines; Vuelos internos en Egipto y aéreo El Cairo–Amman; 5 noches en El Cairo con desayuno; 4 noches de crucero por el Nilo con pensión completa; 1 noche en Amman + 2 en Petra + 1 en Wadi Rum + 2 en Mar Muerto con media pensión; Traslados, visitas y excursiones según programa; Guías de habla hispana; Universal Assistance Maximum hasta USD 300.000; Reunión informativa previa; Tour leader desde Argentina (mín. 10 pax)
 - No incluye: Bebidas durante el crucero; Comidas y bebidas no especificadas; Gastos personales
 - Hotel: Sofitel Cairo Downtown (El Cairo, 4*, 5 noches) — Sobre la costanera del Nilo, con balcón y vista al río en todas las habitaciones; Piscina exterior con bar, spa con saunas y gimnasio; Restaurantes de cocina mediterránea, italiana, japonesa y egipcio-libanesa; Pirámides de Giza a unos 30 minutos en taxi
@@ -321,6 +325,26 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Resumen: Dos de los destinos más exclusivos del Caribe mexicano en un solo viaje: 5 noches en Costa Mujeres y 5 en Riviera Maya, todo all inclusive.
 - Vigente hasta: 04/01/2027
 
+### India & Maldivas — Salida grupal
+- URL: https://www.legendtravel.com.ar/paquetes/india-maldivas
+- Destinos: Delhi, Mandawa, Jaipur, Ranthambore, Agra, Maldivas
+- Salida: 20 de enero 2027 · 17 noches · Régimen: Desayuno (All Inclusive en Maldivas)
+- Precio: desde USD 9.440 por persona en base doble (por persona en base doble — total con impuestos)
+- Precio: desde USD 9.440 por persona en base triple
+- Precio: desde USD 12.390 por persona en base single
+- Impuestos: No incluye la percepción del 30% (RG 5463) si se abona en pesos.
+- Incluye: Aéreos Buenos Aires / Delhi // Maldivas / Buenos Aires con Turkish Airlines; Vuelo Delhi / Maldivas; 3 noches en Delhi, 1 en Mandawa, 3 en Jaipur, 2 en Ranthambore, 2 en Agra y 1 en Delhi, con desayuno; 4 noches en Maldivas con All Inclusive; Visitas, excursiones y entradas según itinerario, con guías locales de habla hispana; Comidas según itinerario; Todos los traslados; Reunión informativa previa; Universal Assistance Maximum de cortesía (hasta USD 300.000); Tour leader desde Argentina (mín. 10 pax)
+- No incluye: Visa de India (trámite online, con anticipación); Comidas y bebidas no especificadas; Gastos extras o personales
+- Hotel: The Lalit Hotel (Delhi, 3 noches, Desayuno)
+- Hotel: Vivaana Museum (Mandawa, 1 noches, Desayuno)
+- Hotel: Hilton (Jaipur, 3 noches, Desayuno)
+- Hotel: Kipling Lodge (Ranthambore, 2 noches, Desayuno)
+- Hotel: Grand Mercure (Agra, 2 noches, Desayuno)
+- Hotel: The Pride Aerocity (Delhi, 1 noches, Desayuno)
+- Hotel: Centara Ras Fushi (Maldivas, 4 noches, All Inclusive, Lagoon View Beach Villa)
+- Resumen: Taj Mahal al amanecer, safari de tigres en Ranthambore, los palacios de Jaipur y, para cerrar, cuatro noches all inclusive en Maldivas. Lo mejor de dos mundos en un solo viaje.
+- Vigente hasta: 20/01/2027
+
 ### Cancún All Inclusive
 - URL: https://www.legendtravel.com.ar/paquetes/cancun-all-inclusive
 - Destinos: Cancún
@@ -333,6 +357,123 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Hotel: Hotel Riu Caribe (Cancún, 5*, 10 noches, All Inclusive, Habitación estándar) — Sobre la playa, en la Zona Hotelera de Cancún; Todo Incluido 24 horas con seis restaurantes; Cinco piscinas, una infantil y otra con bar acuático; Club infantil, spa y gimnasio
 - Resumen: 10 noches en Cancún con sistema all inclusive: playas turquesa, gastronomía y descanso sin preocupaciones.
 - Vigente hasta: 08/02/2027
+
+### Kenia & Tanzania — Safari grupal con Zanzíbar
+- URL: https://www.legendtravel.com.ar/paquetes/kenia-tanzania
+- Destinos: Nairobi, Lago Nakuru, Masai Mara, Serengueti, Ngorongoro, Lago Manyara, Zanzíbar
+- Salida: 22 de febrero 2027 · 15 noches · Régimen: Pensión completa en safaris; All Inclusive en Zanzíbar
+- Precio: desde USD 11.900 por persona en base doble (por persona en base doble — total con impuestos)
+- Precio: desde USD 13.750 por persona en base single
+- Impuestos: No incluye la percepción del 30% (RG 5463) si se abona en pesos.
+- Incluye: Aéreos con Ethiopian Airlines: Buenos Aires / Nairobi // Zanzíbar / Addis Abeba / Buenos Aires; Vuelo doméstico Arusha / Zanzíbar; 2 noches en Nairobi con desayuno; 1 noche en Lago Nakuru, 2 en Masai Mara, 2 en Serengueti, 2 en Karatu (Ngorongoro) y 1 en Lago Manyara, con pensión completa; 4 noches en Zanzíbar con All Inclusive; 1 noche en Addis Abeba por conexión (provista por Ethiopian); Cena en el restaurante Carnivore de Nairobi; Entradas a todos los parques y áreas de conservación; Todos los safaris en vehículo 4x4; Traslados y visitas con guía de habla hispana; Visa de Kenia (trámite online, costo incluido); Seguro de ingreso a Zanzíbar (trámite online previo); Reunión informativa previa; Universal Assistance Maximum de cortesía (hasta USD 300.000); Tour leader desde Argentina (mín. 10 pax)
+- No incluye: Visa de Tanzania, trámite on arrival (USD 50 por persona); Cobertura médica obligatoria de Tanzania (USD 44); Impuesto de infraestructura de Zanzíbar (USD 1,50 por persona y noche, se paga en el hotel); Bebidas en las comidas, salvo en Zanzíbar; Comidas no especificadas
+- Hotel: Sarova Stanley Hotel (Nairobi, 4*, 2 noches, Desayuno)
+- Hotel: Sarova Lion Hill Game Lodge (Lago Nakuru, 4*, 1 noches, Pensión completa)
+- Hotel: Mara Simba Lodge (Masai Mara, 4*, 2 noches, Pensión completa)
+- Hotel: Mbalageti Tented Lodge (Serengueti, 4*, 2 noches, Pensión completa)
+- Hotel: Bougainvillea Safari Lodge (Karatu (Ngorongoro), 4*, 2 noches, Pensión completa)
+- Hotel: Lake Manyara Serena Lodge (Lago Manyara, 4*, 1 noches, Pensión completa)
+- Hotel: Riu Jambo Zanzibar (Zanzíbar, 4*, 4 noches, All Inclusive)
+- Resumen: Los grandes parques de África en un solo viaje: Masai Mara, Serengueti y el cráter de Ngorongoro en safaris 4x4, y cuatro noches all inclusive en las playas de Zanzíbar para cerrar.
+- Vigente hasta: 22/02/2027
+
+### Fiesta Holi — India 2027, salida grupal
+- URL: https://www.legendtravel.com.ar/paquetes/holi-india-2027
+- Destinos: Delhi, Agra, Chomu, Jaipur, Pushkar, Jodhpur, Udaipur, Aurangabad, Mumbai
+- Salida: 14 de marzo 2027 · 17 noches · Régimen: Desayuno
+- Precio: desde USD 7.890 por persona en base doble (por persona en base doble — total con impuestos)
+- Precio: desde USD 9.740 por persona en base single
+- Impuestos: No incluye la percepción del 30% (RG 5463) si se abona en pesos.
+- Incluye: Aéreos Buenos Aires / Delhi // Mumbai / Buenos Aires con Ethiopian Airlines; Early check-in en Delhi; 3 noches en Delhi, 2 en Agra, 1 en Chomu, 2 en Jaipur, 1 en Pushkar, 2 en Jodhpur, 2 en Udaipur, 2 en Aurangabad y 2 en Mumbai, con desayuno; Vuelos domésticos según itinerario; Traslados, visitas, excursiones y entradas según itinerario; Guías locales de habla hispana; Reunión informativa previa; Universal Assistance Maximum de cortesía (hasta USD 300.000); Tour leader desde Argentina (mín. 10 pax)
+- No incluye: Visa de India (trámite online por cuenta del pasajero); Comidas y bebidas no especificadas; Gastos extras o personales
+- Hotel: The Lalit Hotel (Delhi, 5*, 3 noches, Desayuno)
+- Hotel: Grand Mercure (Agra, 4*, 2 noches, Desayuno)
+- Hotel: Chomu Palace (Chomu, 1 noches, Desayuno)
+- Hotel: Radisson City Center (Jaipur, 4* Sup, 2 noches, Desayuno)
+- Hotel: Dera Masuda (Pushkar, 4*, 1 noches, Desayuno)
+- Hotel: Welcome by ITC (Jodhpur, 5*, 2 noches, Desayuno)
+- Hotel: The Lalit (Udaipur, 5*, 2 noches, Desayuno)
+- Hotel: Rama International (Aurangabad, 4*, 2 noches, Desayuno)
+- Hotel: ITC Grand Central (Mumbai, 4* Sup, 2 noches, Desayuno)
+- Resumen: Vivir el Holi, la fiesta de los colores, en un palacio de Rajastán. Delhi, el Taj Mahal, Jaipur, la ciudad azul de Jodhpur, los lagos de Udaipur, las cuevas de Ajanta y Ellora y Mumbai.
+- Vigente hasta: 14/03/2027
+
+### Corea & Japón — Cherry Blossom, salida grupal
+- URL: https://www.legendtravel.com.ar/paquetes/corea-japon-cherry-blossom
+- Destinos: Seúl, Gyeongju, Busan, Osaka, Kioto, Kanazawa, Takayama, Yugawara, Tokio
+- Salida: 17 de marzo 2027 · 18 noches · Régimen: Desayuno
+- Precio: desde USD 14.810 por persona en base doble (por persona en base doble — total con impuestos)
+- Precio: desde USD 18.980 por persona en base single
+- Impuestos: No incluye la percepción del 30% (RG 5463) si se abona en pesos.
+- Incluye: Aéreos Buenos Aires / Seúl // Tokio / Buenos Aires con Turkish Airlines; Vuelo Busan / Osaka; 3 noches en Seúl, 2 en Gyeongju, 2 en Busan, 2 en Osaka, 3 en Kioto, 1 en Kanazawa, 1 en Takayama, 1 en Yugawara y 3 en Tokio, con desayuno (late check-out en Tokio); Excursiones y visitas según itinerario; 10 almuerzos y 2 cenas según itinerario; Todos los traslados; Billetes de tren en clase turista (incluye tren bala); Guías de habla hispana; Reunión informativa previa; Universal Assistance Maximum de cortesía (hasta USD 300.000); Tour leader desde Argentina (mín. 10 pax)
+- No incluye: Comidas y bebidas no especificadas; Cualquier otro servicio no especificado como incluido
+- Hotel: Nine Tree Parnas Myeongdong II (Seúl, 4*, 3 noches, Desayuno)
+- Hotel: Gyeongju Kolon Hotel (Gyeongju, 4*, 2 noches, Desayuno)
+- Hotel: Asti Hotel (Busan, 4*, 2 noches, Desayuno)
+- Hotel: Centara Grand Hotel Osaka (Osaka, 4*, 2 noches, Desayuno)
+- Hotel: Kyoto Tokyu Hotel (Kioto, 4*, 3 noches, Desayuno)
+- Hotel: ANA Crowne Plaza (Kanazawa, 4*, 1 noches, Desayuno)
+- Hotel: Takayama Green Hotel (Takayama, 1 noches, Desayuno, Habitación estilo japonés)
+- Hotel: Sansuirou (Yugawara, 1 noches, Desayuno, Habitación estilo japonés u occidental)
+- Hotel: Hotel New Otani (Tokio, 4*, 3 noches, Desayuno)
+- Resumen: Corea y Japón en plena floración de los cerezos: Seúl y la DMZ, Gyeongju, Busan, Osaka, Kioto, Hiroshima y Miyajima en tren bala, los Alpes japoneses con noche en ryokan, Hakone y Tokio.
+- Vigente hasta: 17/03/2027
+
+### China & Tíbet — Salida grupal
+- URL: https://www.legendtravel.com.ar/paquetes/china-tibet
+- Destinos: Beijing, Xi'an, Lhasa, Chengdu, Zhangjiajie, Furong, Fenghuang, Shanghái
+- Salida: 6 de abril 2027 · 19 noches · Régimen: Desayuno
+- Precio: desde USD 10.220 por persona en base doble (por persona en base doble — total con impuestos)
+- Precio: desde USD 12.140 por persona en base single
+- Impuestos: No incluye la percepción del 30% (RG 5463) si se abona en pesos.
+- Incluye: Aéreos Buenos Aires / Beijing // Shanghái / Buenos Aires con Turkish Airlines; 4 noches en Beijing, 2 en Xi'an, 3 en Lhasa, 2 en Chengdu, 2 en Zhangjiajie, 1 en Furong, 2 en Fenghuang y 3 en Shanghái, con desayuno (late check-out en Shanghái); Vuelos internos Beijing / Xi'an / Lhasa / Chengdu / Zhangjiajie; Tren de alta velocidad Fenghuang – Shanghái (segunda clase); Cena banquete de pato laqueado en Beijing y 1 cena en Shanghái; 9 almuerzos según itinerario; Traslados y visitas con guía de habla hispana; Autorización de ingreso al Tíbet; Visa de China (incluida en los impuestos); Reunión informativa previa; Universal Assistance Maximum de cortesía (hasta USD 300.000); Tour leader desde Argentina (mín. 10 pax)
+- No incluye: Comidas y bebidas no especificadas; Cualquier otro servicio no especificado como incluido
+- Hotel: Kerry Hotel Beijing (Beijing, 5*, 4 noches, Desayuno)
+- Hotel: Hilton Xian High-tech Zone (Xi'an, 5*, 2 noches, Desayuno)
+- Hotel: The St. Regis Lhasa Resort (Lhasa, 4*, 3 noches, Desayuno)
+- Hotel: Four Points by Sheraton Chengdu Chunxi Road (Chengdu, 4*, 2 noches, Desayuno)
+- Hotel: Pullman Zhangjiajie (Zhangjiajie, 5*, 2 noches, Desayuno)
+- Hotel: Annai Xizhou Ji Hotel (Furong, 4*, 1 noches, Desayuno)
+- Hotel: Wyndham Grand & Hotspring Fenghuang (Fenghuang, 4*, 2 noches, Desayuno)
+- Hotel: Hengshan Garden Hotel (Shanghái, 5*, 3 noches, Desayuno)
+- Resumen: La Gran Muralla y la Ciudad Prohibida, los Guerreros de Terracota, el Palacio Potala en el techo del mundo, los pandas de Chengdu, las montañas de Zhangjiajie y el skyline de Shanghái.
+- Vigente hasta: 06/04/2027
+
+### Hong Kong & China 2027 — Salida grupal
+- URL: https://www.legendtravel.com.ar/paquetes/hong-kong-china-2027
+- Destinos: Hong Kong, Beijing, Xi'an, Chongqing, Guilin, Hangzhou, Shanghái
+- Salida: 10 de mayo 2027 · 17 noches · Régimen: Desayuno
+- Precio: desde USD 8.230 por persona en base doble (por persona en base doble — total con impuestos)
+- Precio: desde USD 9.980 por persona en base single
+- Impuestos: No incluye la percepción del 30% (RG 5463) si se abona en pesos.
+- Incluye: Aéreos Buenos Aires / Hong Kong // Shanghái / Buenos Aires con Turkish Airlines; 2 noches en Hong Kong, 4 en Beijing, 2 en Xi'an, 3 en Chongqing, 2 en Guilin, 1 en Hangzhou y 3 en Shanghái, con desayuno (late check-out en Shanghái); Vuelo Hong Kong / Beijing y vuelos domésticos Beijing / Xi'an y Guilin / Hangzhou; Trenes Xi'an / Chongqing / Guilin y Hangzhou / Shanghái; 9 almuerzos en China según itinerario; Cena banquete de pato laqueado de Pekín; Espectáculo de acrobacia; Traslados y visitas con guía de habla hispana; Reunión informativa previa; Universal Assistance Maximum de cortesía (hasta USD 300.000); Tour leader desde Argentina (mín. 10 pax)
+- No incluye: Comidas y bebidas no especificadas; Cualquier otro servicio no especificado como incluido
+- Hotel: Royal Garden Hotel (Hong Kong, 4* Sup, 2 noches, Desayuno)
+- Hotel: Kerry Hotel (Beijing, 5*, 4 noches, Desayuno)
+- Hotel: Hilton Xian High-tech Zone (Xi'an, 5*, 2 noches, Desayuno)
+- Hotel: JW Marriott (Chongqing, 5*, 3 noches, Desayuno)
+- Hotel: Waterfall Lijiang Hotel (Guilin, 5*, 2 noches, Desayuno)
+- Hotel: Grand Metropark (Hangzhou, 5*, 1 noches, Desayuno)
+- Hotel: Renaissance Shanghai Zhongshan Park (Shanghái, 5*, 3 noches, Desayuno)
+- Resumen: Del skyline de Hong Kong a la Gran Muralla, los Guerreros de Terracota, la megaciudad de Chongqing, el río Li en Guilin, el Lago Oeste de Hangzhou y Shanghái. China clásica y moderna.
+- Vigente hasta: 10/05/2027
+
+### Malasia, Singapur & Bali — Salida grupal
+- URL: https://www.legendtravel.com.ar/paquetes/malasia-singapur-bali
+- Destinos: Kuala Lumpur, Malaca, Singapur, Ubud, Nusa Dua
+- Salida: 24 de mayo 2027 · 16 noches · Régimen: Desayuno
+- Precio: desde USD 9.435 por persona en base doble (por persona en base doble — total con impuestos)
+- Precio: desde USD 11.915 por persona en base single
+- Impuestos: No incluye la percepción del 30% (RG 5463) si se abona en pesos.
+- Incluye: Aéreos Buenos Aires / Kuala Lumpur // Denpasar / Buenos Aires con Turkish Airlines; Vuelo Singapur / Denpasar; 3 noches en Kuala Lumpur, 1 en Malaca, 4 en Singapur, 3 en Ubud y 5 en Nusa Dua, con desayuno; Visitas y excursiones con guía de habla hispana; 5 almuerzos y 2 cenas según itinerario; Todos los traslados; Reunión informativa previa; Universal Assistance Maximum de cortesía (hasta USD 300.000); Tour leader desde Argentina (mín. 10 pax)
+- No incluye: Visa de Indonesia (trámite online, USD 35/40 por persona); Impuesto hotelero de Malasia (aprox. USD 3 por habitación y noche); Tasa turística de Bali (aprox. USD 10); Comidas y bebidas no especificadas
+- Hotel: Capri by Fraser Bukit Bintang (Kuala Lumpur, 4*, 3 noches, Desayuno)
+- Hotel: Swiss Garden Melaka (Malaca, 4*, 1 noches, Desayuno)
+- Hotel: The Grand Copthorne Waterfront (Singapur, 4*, 4 noches, Desayuno)
+- Hotel: Plataran Ubud (Ubud, 4*, 3 noches, Desayuno)
+- Hotel: Merusaka Nusa Dua (Nusa Dua, 4*, 5 noches, Desayuno)
+- Resumen: Las Torres Petronas y la histórica Malaca, los Jardines de la Bahía de Singapur y una semana larga en Bali: terrazas de arroz en Ubud, templos sobre el mar y playa en Nusa Dua.
+- Vigente hasta: 24/05/2027
 
 ### Disney Europa Premium — Viaje de Quinceañeras
 - URL: https://www.legendtravel.com.ar/paquetes/disney-europa-premium-xv

@@ -1,212 +1,252 @@
-Fuente: https://www.legendtravel.com.ar/paquetes?id=648&salidaId=839&adultsQty=2
-Copiado el: 2026-10-13
+Fuente: https://www.kingmidas.com.ar/itinerario/1147/Sudafrica%C2%A0&-Mauritius
+Copiado el: 2026-10-15
 Paquete en data/paquetes.json: sudafrica-mauritius
 
-promociones@legendtravel.com.ar
+Sudafrica 
+& Mauritius
 
-TELÉFONO 114717-0344
-
-Sudáfrica & Mauritius
-‹
-›
-Itinerario
-Día 1 | Buenos Aires – San Pablo – Johannesburgo
-
-Salida desde Aeroparque hacia San Pablo. A la llegada, conexión con el vuelo de South African Airways con destino a Johannesburgo. Noche a bordo.
-
-
-
-
-Día 2 | Johannesburgo – Mpumalanga – Reserva Privada, Área Kruger
-
-Llegada al aeropuerto de Johannesburgo, recepción y traslado para comenzar el recorrido hacia el área del Parque Nacional Kruger. Durante el trayecto se podrá disfrutar de los paisajes de la región de Mpumalanga.
-
-Llegada al lodge por la tarde. Tiempo para instalarse y disfrutar del entorno. Cena.
-
-
-
-
-Día 3 | Reserva Privada, Área Kruger
-
-Comenzaremos el día temprano con un té o café antes de salir en vehículo abierto 4x4 para realizar un safari fotográfico por la reserva, buscando descubrir la fauna y los paisajes de esta increíble región.
-
-Regreso al lodge para desayunar y disfrutar de tiempo libre para descansar y aprovechar las instalaciones. Almuerzo en el lodge.
-
-Por la tarde, salida nuevamente en vehículo 4x4 para realizar un segundo safari fotográfico. Regreso al alojamiento, cena y noche en la reserva.
-
-
-
-
-Día 4 | Reserva Área Parque Kruger – Johannesburgo
-
-Salida temprano para disfrutar de un último safari fotográfico en vehículo abierto 4x4. Regreso al lodge para desayunar y, posteriormente, emprender el camino hacia Johannesburgo.
-
-Durante el recorrido se realizará una parada para almorzar en un restaurante local, almuerzo no incluido. Continuación hacia Johannesburgo y llegada al hotel por la noche.
-
-
-
-
-Día 5 | Johannesburgo – Mauritius
-
-Desayuno y traslado al Aeropuerto Internacional O. R. Tambo para tomar el vuelo con destino a Mauritius.
-
-Llegada y traslado al hotel. Tiempo para instalarse y comenzar a disfrutar de este destino paradisíaco.
-
-
-
-
-Día 6 | Mauritius
-
-Desayuno. Día libre para disfrutar de las playas de Mauritius, relajarse y aprovechar el entorno natural de la isla.
-
-Alojamiento con régimen de media pensión.
-
-
-
-
-Día 7 | Mauritius
-
-Desayuno. Día libre para disfrutar de las instalaciones del hotel y continuar explorando este destino de playas paradisíacas.
-
-Alojamiento con media pensión.
-
-
-
-
-Día 8 | Mauritius
-
-Desayuno. Día libre para descansar, disfrutar de la playa o realizar actividades opcionales.
-
-Alojamiento con media pensión.
-
-
-
-
-Día 9 | Mauritius – Johannesburgo – Ciudad del Cabo
-
-Traslado al aeropuerto para tomar el vuelo hacia Ciudad del Cabo, vía Johannesburgo.
-
-Llegada, recepción y traslado al hotel.
-
-
-
-
-Día 10 | Ciudad del Cabo – Excursión a la Península
-
-Desayuno. Excursión de día completo por la Península del Cabo. El recorrido nos llevará hasta el icónico Cabo de Buena Esperanza, con paradas para conocer la Isla de las Focas y una colonia de pingüinos.
-
-Durante la excursión se disfrutará de un almuerzo en un restaurante local, sin bebidas incluidas. Regreso al hotel por la tarde y alojamiento.
-
-
-
-
-Día 11 | Ciudad del Cabo – City Tour y Región de los Viñedos
-
-Desayuno. Recorrido panorámico por Ciudad del Cabo para conocer algunos de sus principales atractivos, como el colorido barrio de Bo-Kaap, el centro histórico, Company’s Garden y el área del Waterfront.
-
-Luego, ascenso en teleférico a la famosa Table Mountain, desde donde se podrán disfrutar espectaculares vistas panorámicas de la ciudad, el océano y la Península del Cabo. El ascenso está sujeto a las condiciones climáticas.
-
-A continuación, salida hacia la región de los viñedos del Cabo, recorriendo reconocidas zonas vitivinícolas como Stellenbosch y/o Franschhoek. Visita a una bodega local con degustación de vinos sudafricanos.
-
-Regreso al hotel.
-
-
-
-
-Día 12 | Ciudad del Cabo
-
-Desayuno. Día libre para disfrutar de Ciudad del Cabo a tu propio ritmo, recorrer sus calles, conocer sus atractivos o simplemente descansar.
-
-
-
-
-Día 13 | Ciudad del Cabo – San Pablo – Buenos Aires
-
-Desayuno. Por la mañana, traslado al aeropuerto de Ciudad del Cabo para tomar el vuelo con destino a San Pablo y realizar la conexión hacia Buenos Aires.
-
-Llegada a Buenos Aires y fin del viaje.
-
-
-
-
-Importante: El itinerario puede sufrir modificaciones en el orden de los servicios, manteniéndose el contenido del programa.
-
-Ver más
-Detalle del paquete
-Nro. Ref.: PKM648-839
-⧉
-DESTINOS
 JOHANNESBURGO
-· SUDAFRICA
+
+RESERVA PRIVADA KRUGER
+
+MAURITIUS
+
 CIUDAD DEL CABO
-· SUDAFRICA
-DESDE
-BUENOS AIRES
-SALIDA
-16/11/2026
-NOCHES
-11
-SERVICIOS
-Vuelos
-Desayuno
-Asistencia
-Alojamiento
-Precio
-Precio total por persona
-USD 10.360
-Precio del producto
-USD 8.470
-Impuestos y tasas
-USD 1.890
-Nota
-PARA TARIFAS EXPRESADAS EN USD. EN CASO DE ABONAR EN PESOS (ARS) SE APLICARÁ EL TIPO DE CAMBIO CORRESPONDIENTE AL DÍA DE PAGO, Y SE ADICIONARÁ LA PERCEPCIÓN CORRESPONDIENTE (RG 4815).
-Tarifas
-	SALIDAS DISPONIBLES	BASE TARIFARIA	IMPUESTOS Y TASAS	PRECIO TOTAL
-	16/11/2026	Double	USD 1.890	USD 10.360
-Incluye
-›
-No incluye
-›
-Observaciones
-›
+
+ 
+
+Grupales
+Próxima salida - 08 Febrero 2027 / 13 días
+El programa incluye
+
+- Aéreos San Pablo / Johannesburgo / Mauritius / Ciudad del Cabo / San Pablo con South African Airways
+
+- Aéreos Bs. Aires / San Pablo / Bs. Aires.
+
+-01 noche de alojamiento en Johannesburgo, con desayuno.
+
+-02 noches de alojamiento en reserva privada en el área Parque Kruger, con pension completa.
+
+-04 noches de alojamiento en Mauritius, con media pensión.
+
+-04 noches de alojamiento en Ciudad del Cabo, con desayuno.
+
+-Safari en vehículo 4x4 con guía de habla hispana. El guía y el tour leader se irán turnando entre los distintos vehículos en caso de haber más de 10 personas.
+
+-Comidas: 2 almuerzos, según itinerario.
+
+-Visitas y excursiones, según itinerario.
+
+-Todos los traslados, según itinerario.
+
+-Guías de habla hispana.
+
+-Seguro de asistencia médica de cortesía: Universal Assistance "Maximum" (hasta u$s 300.000)*
+
+-Reunión informativa previa al viaje.
+
+-Tour leader acompañante desde Argentina con mínimo 10 pasajeros.
+
+El programa no incluye
+
+-Comidas y bebidas que no estén especificadas.
+
+-Gastos extras o personales.
+
+-Cualquier otro servicio que no se especifique como incluido.
+
 Hoteles
-›
-Comunicate con nosotros
-Enviar un correo
-Contactar por WhatsApp
 
---- Incluye ---
-Pasajes aéreos desde Buenos Aires, vía San Pablo, con South African Airways.
-1 noche de alojamiento en Johannesburgo con desayuno.
-2 noches en reserva privada en el área del Parque Kruger con media pensión.
-4 noches en Mauritius con media pensión.
-4 noches en Ciudad del Cabo con desayuno.
-2 almuerzos según itinerario.
-Traslados, visitas y excursiones según programa.
-Guías de habla hispana.
-Safari en vehículo 4x4 con guía de habla hispana.
-Seguro de asistencia médica de cortesía Universal Assistance "Excellence", con cobertura de hasta USD 150.000.
-Reunión informativa previa al viaje.
-Tour leader acompañante desde Argentina.
+JOHANNESBURGO: Silverbirch hotel 4*
 
---- No incluye ---
-Comidas y bebidas no especificadas.
-Gastos extras o personales.
-Cualquier otro servicio que no esté expresamente indicado como incluido.
+AREA KRUGER: Moditlo // Shidlulli - private reserve Karongwe
 
---- Observaciones ---
-Hoteles previstos o similares
-Johannesburgo: Permont D´Oreale 5*
-Área Kruger: Tintswalo Private Reserve 5*
-Mauritius: Hilton Mauritius Resort & Spa 4*
-Ciudad del Cabo: Cabo Southern Sun Waterfront / Park Inn Foreshore 4*
+MAURITIUS: Hilton Mauritius Resort & Spa 4*
 
---- Hoteles ---
-Permont D´Oreal — JOHANNESBURGO, SUDAFRICA
-5 ★
-Descripción
-Habitación estándar · Desayuno · 1 noche
-Cabo Southern Sun Waterfron — CIUDAD DEL CABO, SUDAFRICA
-4 ★
-Descripción
-Habitación estándar · Desayuno · 4 noche
+CIUDAD DEL CABO: Cabo Southern Sun Waterfront 4*  
+
+*Hoteles previstos o similares.
+
+Notas & Condiciones
+
+* La tarifa en base TRIPLE ES LA MISMA QUE EN DOBLE tanto en el tour grupal como en las extensiones sugeridas o a medida.
+
+Las habitaciones triples consisten en todos los destinos en una habitación de tamaño doble ó twin + una cama adicional roll-away (tipo catre), en consecuencia, la comodidad de las habitaciones “triples” son más reducidas.
+
+No es recomendable que la tercera persona en la habitación triple sea un adulto. En el caso de 3 adultos, recomendamos el alojamiento en una habitación doble/twin + una habitación single.
+
+ 
+
+* Garantizamos Tour Leader desde Argentina con un mínimo de 10 pasajeros viajando en los vuelos del bloqueo aéreo original previsto para el grupo.  
+
+ 
+
+* Tarifa válida con un mínimo de 10 pasajeros viajando juntos.  En caso de no alcanzar el número indicado:
+
+- King Midas se reserva el derecho de realizar variaciones en el itinerario y/o tarifa dependiendo el número final de pasajeros que decidan viajar.
+
+- King Midas informará el estado del grupo entre 30 y 20 días antes de la fecha de inicio del tour, teniendo el pasajero la posibilidad de optar por otro itinerario o cancelar sin ningún tipo de penalidad, reintegrándose la totalidad abonada hasta ese entonces. No ha lugar para otro tipo de resarcimiento.
+
+  
+
+* Los tickets aéreos de cupo grupal se emitirán según lo establecido con cada aerolínea entre 45 y 30 días antes de la fecha de inicio del tour.
+
+King Midas tendrá la potestad de realizar dicha emisión dentro de este plazo si ya cuenta con una seña del pasajero.
+
+En caso de completar el grupo antes de los 45 días previos a la fecha de salida, King Midas se reserva el derecho de adelantar la emisión de los tickets aéreos (no sin antes informar a las agencias minoristas).
+
+La emisión de los tickets aéreos conlleva gastos de cancelación.
+
+  
+
+* Los asientos de cupo serán asignados luego de la emisión de los tickets aéreos, solo si la compañía lo permite. Se ha de respetar la preferencia en caso que haya sido requerido. De existir alguna modificación al momento del check-in, será únicamente responsabilidad de la aerolínea. El tour leader o representante de King Midas en Ezeiza hará lo que esté a su alcance para intentar solucionar el imprevisto, pudiendo o no tener una respuesta positiva.
+
+ 
+
+* Pasajeros mayores a 70 años (inclusive) deberán presentar certificado médico al momento de realizar la reserva que indique aptitud física para realizar el viaje. Sin excepción.
+
+ 
+
+* Los pasajeros inscriptos en la modalidad DOBLE A COMPARTIR GARANTIZADA, serán notificados de los datos de su compañera/o de habitación entre 20 y 10 días antes del inicio del tour. En caso que King Midas no logre conseguir un/a compañero/a llegada la fecha del viaje, el pasajero se alojará en habitación SINGLE sin abonar el suplemento correspondiente.
+
+Válido para grupos con un mínimo de 10 pasajeros.
+
+* Es responsabilidad del pasajero contar con la documentación necesaria y requerida tanto en Argentina como en los países de destino, llámese visas y/o permisos correspondientes y/o pasaporte en regla; como así también es responsabilidad de la agencia de viajes detallar e informar los requerimientos y restricciones de cada país al respecto.
+
+King Midas se compromete a facilitar la información y requisitos obligatorios para cada destino, y en el caso de ser necesario, ser el intermediario para la gestoría de las visas.
+
+Tarifas, Impuestos & Vuelos
+
+PRECIO POR PERSONA BASE DBL: u$s 7950.-
+
+SUPLEMENTO SGL: u$s 2880.-
+
+IMPUESTOS: u$s 1870 aprox
+
+(Incluyen DNT, IVA, Gtos, y Propinas)
+
+ 
+
+Suplemento asistencia médica PARA MAYORES DE 69 AÑOS = u$s 105-.
+
+Suplemento asistencia médica PARA MAYORES DE 85 AÑOS = u$s 210-.**
+
+ 
+
+*Para los pasajeros mayores a 85 años, la cobertura máxima es el producto “Excellence” hasta USD 150.000
+
+ 
+
+GARANTIZAMOS HABITACIÓN DOBLE A COMPARTIR
+
+(Para MUJER Y HOMBRE – Reserva hasta 60 días antes de la salida)
+
+ 
+
+Aviso importante: Los importes detallados no incluyen la percepción del 30% según la RG 5463. Les recordamos que los pagos efectuados en dólares estadounidenses, ya sea mediante transferencia o depósito bancario, no están sujetos a dicho recargo. En caso de realizar el pago en pesos argentinos, deberá aplicarse la percepción correspondiente.
+
+ 
+
+ 
+
+VUELOS INTERNACIONALES
+
+ 
+
+1  G3 7681  16NOV   AEPGRU   1150 1450   
+
+2  SA 223     16NOV   GRUJNB   1745 0745+1     
+
+3  SA 190     20NOV   JNBMRU  0945 1545     
+
+4  SA 195     24NOV   MRUCPT  1715 2135     
+
+5  SA 226     28NOV   CPTGRU   1240 1635     
+
+6  G3 7648   28NOV   GRUAEP  2250 0200+1     
+
+ 
+
+La compañía aérea se reserva el derecho de cambiar de horarios, fechas y vuelos sin previo aviso.
+
+Precio u$s
+
+Base DBL
+
++ IMP
+
+7950
+
+Suplemento
+
+Single u$s
+
++ IMP
+
+2880
+
+Descargar itinerario PDF
+Descargar itinerario word
+
+abrir todoscerrar todos
+
+Día 01.  BUENOS AIRES
+
+Salida desde Aeroparque hacia San Pablo para tomar el vuelo LA 8033 de las 12.40 hs, para conectar con el vuelo SA 233 de South African Airways a las 17.45 hs con destino a Johannesburgo. 
+
+Día 02.  JOHANNESBURGO – MPUMALANGA – RESERVA PRIVADA (AREA KRUGER)
+
+Arribo al aeropuerto de Johannesburgo, recepción y traslado en inglés para reunirse con el bus e iniciar la ruta en dirección al Parque Nacional Kruger. Llegada por la tarde al lodge. Cena en el Lodge y alojamiento.
+
+Día 03.  RESERVA PRIVADA ÁREA KRUGER
+
+A primera hora por la mañana después de tomar un té o café salida en vehículo abierto 4x4 para realizar un safari fotográfico en la reserva. Regreso al lodge para tomar el desayuno. Tiempo para disfrutar de las instalaciones de su alojamiento. Almuerzo en el lodge. Tiempo libre hasta la hora de la salida del safari de la tarde. Por la tarde después de tomar un té o café salida en vehículo abierto 4x4 para realizar un safari fotográfico. Regreso al lodge. Cena y alojamiento.
+
+Día 04.  RESERVA ÁREA PARQUE KRUGER – JOHANNESBURGO
+
+A primera hora por la mañana después de tomar un té o café salida en vehículo abierto 4x4 para realizar un safari fotográfico en la reserva. Regreso al lodge para tomar el desayuno. Después del desayuno, salida hacia Johannesburgo. Parada para almorzar en un restaurante local (no incluido) y continuar con el traslado a Johannesburgo. Arribo al hotel de noche. Alojamiento.
+
+Día 05.  JOHANNESBURGO– MAURITIUS
+
+Desayuno. Traslado al Aeropuerto Internacional O. R. Tambo de Johannesburgo – ORTIA para su vuelo hacia Mauritius. Arribo y traslado al hotel. Alojamiento.
+
+Día 06.  MAURITIUS
+
+Desayuno. Dia libre para disfrutar de la playa. Alojamiento con media pensión. 
+
+Día 07.  MAURITIUS
+
+Desayuno. Dia libre para disfrutar de las instalaciones del hotel. Alojamiento con media pensión. 
+
+Día 08.  MAURITIUS
+
+Desayuno. Dia libre para disfrutar de las instalaciones del hotel, de la playa o para realizar actividades opcionales. Alojamiento con media pensión. 
+
+Día 09.  MAURITIUS – JOHANNESBURGO – CIUDAD DEL CABO
+
+Traslado para tomar el vuelo con destino a Ciudad del Cabo, via Johannesburgo. Llegada, recepción y traslado al hotel. Alojamiento
+
+Día 10.  CIUDAD DEL CABO
+
+Desayuno. Hoy realizaremos una excursión de día completo de la Península. Te llevaremos hasta el icónico Cabo de Buena Esperanza, haciendo paradas en la fascinante Isla de las Focas y en una encantadora colonia de pingüinos. Disfrutaremos de un delicioso almuerzo en un restaurante local antes de regresar al hotel por la tarde. Alojamiento.
+
+Nota: Incluye las entradas y el almuerzo SIN bebidas
+
+Día 11.  CIUDAD DEL CABO
+
+Desayuno. Salida para realizar un recorrido panorámico por Ciudad del Cabo, considerada una de las ciudades más bellas del mundo. Durante el city tour visitaremos los principales atractivos de la ciudad, incluyendo el barrio de Bo-Kaap con sus coloridas casas, el centro histórico, Company’s Garden y el área del Waterfront. Posteriormente, ascenso en teleférico a la famosa Table Mountain (ticket incluido), desde donde obtendremos espectaculares vistas panorámicas de la ciudad, el océano y la Península del Cabo (ascenso sujeto a condiciones climáticas).
+
+A continuación, iremos hacia la región de los viñedos del Cabo, recorriendo reconocidas áreas vitivinícolas como Stellenbosch y/o Franschhoek. Visita a una bodega local con degustación de vinos sudafricanos. Regreso al hotel. Alojamiento.
+
+Día 12.  CIUDAD DEL CABO
+
+Desayuno. Día libre. Alojamiento.
+
+Día 13.  CIUDAD DEL CABO – SAN PABLO – BUENOS AIRES
+
+Desayuno. Por la mañana traslado al aeropuerto de Ciudad del Cabo para tomar el vuelo SA 226 a las 12.40 hs de salida hacia San Pablo y conectaremos con el vuelo hacia Buenos Aires. Arribo a las 21.30 hs. Fin de nuestros servicios.
+
+Este itinerario puede sufrir modificaciones en cuanto al orden de los servicios, no así en su contenido.
+
+       
+Términos y condiciones - Copyright © King Midas Tour Operator
