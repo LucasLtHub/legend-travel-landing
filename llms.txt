@@ -51,13 +51,6 @@ Precios por persona en base doble, salvo que el paquete indique otra base. Sujet
 - Cruce Andino: Bariloche & Puerto Varas — desde ARS 1.322.790 — Salida: Salidas del 16/09 al 30/12/2026 — https://www.legendtravel.com.ar/paquetes/cruce-andino-bariloche-puerto-varas
 - Mendoza: Experiencia entre Viñedos — desde ARS 642.990 — Salida: Salidas los lunes, del 16/09 al 28/12/2026 — https://www.legendtravel.com.ar/paquetes/mendoza-vinedos
 - Puerto Madryn: Puerto Pirámides con Avistaje de Ballenas — desde ARS 1.198.657 — Salida: Salidas del 16/09 al 31/12/2026 — https://www.legendtravel.com.ar/paquetes/puerto-madryn-ballenas
-- Escapada a Mendoza — 27 de octubre 2026 — desde ARS 567.676 — Salida: 27 de octubre 2026 — https://www.legendtravel.com.ar/paquetes/escapada-mendoza
-- Bariloche lo tiene todo — 27 de octubre 2026 — desde ARS 651.624 — Salida: 27 de octubre 2026 — https://www.legendtravel.com.ar/paquetes/bariloche-lo-tiene-todo
-- Ushuaia — 16 de noviembre 2026 — desde ARS 949.630 — Salida: 16 de noviembre 2026 — https://www.legendtravel.com.ar/paquetes/ushuaia
-- Vuelta al norte argentino — 16 de noviembre 2026 — desde ARS 1.280.826 — Salida: 16 de noviembre 2026 — https://www.legendtravel.com.ar/paquetes/vuelta-norte-argentino
-- Valle de la Luna con noche en Valle Fértil — Salidas diarias — desde ARS 1.395.002 (base single) — Salida: Salidas diarias — https://www.legendtravel.com.ar/paquetes/valle-de-la-luna
-- Puerto Madryn — 23 de noviembre 2026 — desde ARS 676.299 — Salida: 23 de noviembre 2026 — https://www.legendtravel.com.ar/paquetes/puerto-madryn-escapada
-- Ushuaia & El Calafate — 24 de noviembre 2026 — desde ARS 1.342.389 — Salida: 24 de noviembre 2026 — https://www.legendtravel.com.ar/paquetes/ushuaia-el-calafate
 - Navidad a bordo del Costa Diadema — desde USD 1.334 — Salida: 23 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/navidad-costa-diadema
 - Recibí el 2027 en Altamar — Costa Diadema — desde USD 1.536 — Salida: 30 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/2027-altamar-costa-diadema
 - Punta Cana & Bayahíbe All Inclusive — desde USD 2.400 — Salida: 2 de enero 2027 — https://www.legendtravel.com.ar/paquetes/punta-cana-bayahibe
@@ -84,8 +77,7 @@ Precios por persona en base doble, salvo que el paquete indique otra base. Sujet
 - Corea & Japón — Cherry Blossom, salida grupal — desde USD 14.810 — Salida: 17 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/corea-japon-cherry-blossom
 - España, Francia, Suiza e Italia — 4 de abril 2027 — desde USD 5.187 — Salida: 4 de abril 2027 — https://www.legendtravel.com.ar/paquetes/espana-francia-suiza-italia
 - China & Tíbet — Salida grupal — desde USD 10.220 — Salida: 6 de abril 2027 — https://www.legendtravel.com.ar/paquetes/china-tibet
-- Mágicamente Europa — 9 de abril 2027 — desde USD 4.622 — Salida: 9 de abril 2027 — https://www.legendtravel.com.ar/paquetes/magicamente-europa
-- Salta & Purmamarca — 12 de abril 2027 — desde ARS 1.362.212 (base single) — Salida: 12 de abril 2027 — https://www.legendtravel.com.ar/paquetes/salta-purmamarca
+- Mágicamente Europa — 9 de abril 2027 — desde USD 4.526 — Salida: 9 de abril 2027 — https://www.legendtravel.com.ar/paquetes/magicamente-europa
 - Andalucía, Marruecos y Portugal — 16 de abril 2027 — desde USD 4.710 — Salida: 16 de abril 2027 — https://www.legendtravel.com.ar/paquetes/andalucia-marruecos-portugal
 - Madrid y Norte Europeo — 23 de abril 2027 — desde USD 5.024 — Salida: 23 de abril 2027 — https://www.legendtravel.com.ar/paquetes/madrid-norte-europeo
 - Descubriendo Europa — 2 de mayo 2027 — desde USD 4.554 — Salida: 2 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/descubriendo-europa
@@ -95,6 +87,14 @@ Precios por persona en base doble, salvo que el paquete indique otra base. Sujet
 - Paseando por Europa — 21 de mayo 2027 — desde USD 4.858 — Salida: 21 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/paseando-por-europa
 - Malasia, Singapur & Bali — Salida grupal — desde USD 9.435 — Salida: 24 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/malasia-singapur-bali
 - Andalucía, Portugal, País Vasco y Lourdes — 6 de junio 2027 — desde USD 4.885 — Salida: 6 de junio 2027 — https://www.legendtravel.com.ar/paquetes/andalucia-portugal-pais-vasco-lourdes
+- Escapada a Mendoza — desde ARS 567.676 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/escapada-mendoza
+- Ushuaia — desde ARS 949.630 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/ushuaia
+- Bariloche lo tiene todo — desde ARS 651.624 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/bariloche-lo-tiene-todo
+- Vuelta al norte argentino — desde ARS 1.280.826 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/vuelta-norte-argentino
+- Ushuaia & El Calafate — desde ARS 1.342.389 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/ushuaia-el-calafate
+- Puerto Madryn — desde ARS 676.299 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/puerto-madryn-escapada
+- Valle de la Luna con noche en Valle Fértil — desde ARS 1.395.002 (base single) — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/valle-de-la-luna
+- Salta & Purmamarca — desde ARS 1.362.212 (base single) — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/salta-purmamarca
 - Disney Europa Premium — Viaje de Quinceañeras — desde USD 7.464 — Salida: Septiembre 2027 — https://www.legendtravel.com.ar/paquetes/disney-europa-premium-xv
 
 Listado completo: https://www.legendtravel.com.ar/paquetes

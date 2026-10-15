@@ -3399,7 +3399,7 @@
       "fuente_detalle": {
         "url": "https://www.kingmidas.com.ar/itinerario/1147/Sudafrica%C2%A0&-Mauritius",
         "fecha": "2026-10-15",
-        "desglose": "Base doble USD 7.950 + impuestos USD 1.870 (DNT, IVA, gastos y propinas) = USD 9.820. Single: 7.950 + 2.880 + 1.870 = 12.700. Los vuelos de la ficha figuran con fechas de noviembre (16NOV–28NOV): se cargan solo aerolínea, ruta y número."
+        "desglose": "Base doble USD 7.950 + impuestos USD 1.870 (DNT, IVA, gastos y propinas) = USD 9.820. Single: 7.950 + 2.880 + 1.870 = 12.700. Los vuelos de la ficha figuran con fechas de noviembre (16NOV–28NOV): se cargan solo aerolínea, ruta y número. Decisión del usuario (15/10/2026): se publica la salida del 8 de febrero 2027."
       }
     },
     {
@@ -8785,14 +8785,14 @@
       "nota_impuestos": "No incluye percepción RG 5463 (30%) si se abona en pesos: aprox. USD 620 sobre terrestre y USD 359 sobre aéreo.",
       "condiciones": [
         "Programa en hoteles de categoría turista, varios en las afueras de las ciudades.",
-        "Las tasas hoteleras obligatorias (USD 94 + USD 2 de gastos) se abonan al reservar y están sumadas al precio publicado.",
+        "Tasas hoteleras obligatorias (USD 94 + USD 2 de gastos) no incluidas: se abonan al reservar.",
         "Precio válido hasta la fecha de salida.",
         "Seña USD 2.100 por persona para reservar.",
         "Bases triple y single: consultar."
       ],
       "no_incluye": [
+        "Tasas hoteleras obligatorias (USD 94 + USD 2 de gastos), se abonan al reservar",
         "Comidas y bebidas no indicadas",
-        "Tasas hoteleras y de ciudad, se pagan en destino",
         "Propinas y gastos personales",
         "Excursiones opcionales"
       ],
@@ -9036,9 +9036,9 @@
       ],
       "resumen": "El gran circuito europeo en versión económica, con hoteles de categoría turista: Madrid, Burdeos, París, Alsacia, Zúrich e Innsbruck, Venecia, Florencia, Roma, la Costa Azul y Barcelona.",
       "precio_desde": {
-        "valor": 4622,
+        "valor": 4526,
         "moneda": "USD",
-        "nota": "por persona en base doble — tarifa + impuestos + IVA/gastos + tasas hoteleras"
+        "nota": "por persona en base doble — tarifa + impuestos aéreos + IVA y gastos"
       },
       "salida": "9 de abril 2027",
       "vigencia": "2027-04-09",
@@ -9060,7 +9060,7 @@
       "precios": [
         {
           "base": "doble",
-          "valor": 4622
+          "valor": 4526
         }
       ],
       "vuelos": [
@@ -9087,7 +9087,7 @@
       "fuente_detalle": {
         "url": "https://www.juliatours.com.ar/micrositio.php?id=2193",
         "fecha": "2026-10-15",
-        "desglose": "Tarifa USD 3.696 + impuestos aéreos USD 582 + IVA y gastos USD 248 = USD 4.526, más tasas hoteleras obligatorias USD 94 + USD 2 de gastos (se pagan al reservar) = USD 4.622. Triple y single: consultar. Seña USD 2.100."
+        "desglose": "Tarifa USD 3.696 + impuestos aéreos USD 582 + IVA y gastos USD 248 = USD 4.526 (como publica la ficha). Tasas hoteleras obligatorias USD 94 + USD 2 de gastos aparte, se pagan al reservar. Triple y single: consultar. Seña USD 2.100."
       }
     },
     {
@@ -9404,7 +9404,8 @@
       "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
       "condiciones": [
         "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
-        "Precio válido hasta la fecha de salida.",
+        "Precio estimado de referencia por persona: se cotiza al consultar para la fecha elegida. Se puede viajar desde hoy hasta julio de 2027.",
+        "Vuelos, horarios y hoteles de referencia; se confirman al cotizar la fecha elegida.",
         "No incluye traslados ni excursiones; se cotizan aparte."
       ],
       "no_incluye": [
@@ -9430,7 +9431,7 @@
       "itinerario": [],
       "tarifas": [],
       "id": "escapada-mendoza",
-      "titulo": "Escapada a Mendoza — 27 de octubre 2026",
+      "titulo": "Escapada a Mendoza",
       "region": "argentina",
       "destinos": [
         "Mendoza"
@@ -9439,10 +9440,10 @@
       "precio_desde": {
         "valor": 567676,
         "moneda": "ARS",
-        "nota": "por persona en base doble — total con impuestos"
+        "nota": "por persona en base doble — precio estimado, se cotiza al consultar"
       },
-      "salida": "27 de octubre 2026",
-      "vigencia": "2026-10-27",
+      "salida": "Fecha a elección, hasta julio 2027",
+      "vigencia": "2027-07-31",
       "noches": 3,
       "operador": "Cuarto Continente",
       "operador_sigla": "CC",
@@ -9466,7 +9467,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "Buenos Aires (AEP) – Mendoza",
           "clase": "Económica (FLEX)",
-          "fecha": "27/10/2026",
+          "fecha": "",
           "horario": "07:40 – 09:40",
           "numero": "AR 1402",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -9475,7 +9476,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "Mendoza – Buenos Aires (AEP)",
           "clase": "Económica (FLEX)",
-          "fecha": "30/10/2026",
+          "fecha": "",
           "horario": "07:30 – 09:10",
           "numero": "AR 1401",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -9485,7 +9486,7 @@
       "fuente_detalle": {
         "url": "https://cuartocontinente.com/es/idea/22256231/escapada-a-mendoza?country=AR",
         "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes."
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario)."
       }
     },
     {
@@ -9496,7 +9497,8 @@
       "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
       "condiciones": [
         "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
-        "Precio válido hasta la fecha de salida.",
+        "Precio estimado de referencia por persona: se cotiza al consultar para la fecha elegida. Se puede viajar desde hoy hasta julio de 2027.",
+        "Vuelos, horarios y hoteles de referencia; se confirman al cotizar la fecha elegida.",
         "No incluye traslados ni excursiones; se cotizan aparte."
       ],
       "no_incluye": [
@@ -9522,7 +9524,7 @@
       "itinerario": [],
       "tarifas": [],
       "id": "ushuaia",
-      "titulo": "Ushuaia — 16 de noviembre 2026",
+      "titulo": "Ushuaia",
       "region": "argentina",
       "destinos": [
         "Ushuaia"
@@ -9531,10 +9533,10 @@
       "precio_desde": {
         "valor": 949630,
         "moneda": "ARS",
-        "nota": "por persona en base doble — total con impuestos"
+        "nota": "por persona en base doble — precio estimado, se cotiza al consultar"
       },
-      "salida": "16 de noviembre 2026",
-      "vigencia": "2026-11-16",
+      "salida": "Fecha a elección, hasta julio 2027",
+      "vigencia": "2027-07-31",
       "noches": 3,
       "operador": "Cuarto Continente",
       "operador_sigla": "CC",
@@ -9558,7 +9560,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "Buenos Aires (AEP) – Ushuaia",
           "clase": "Económica (FLEX)",
-          "fecha": "16/11/2026",
+          "fecha": "",
           "horario": "05:50 – 09:30",
           "numero": "AR 1886",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -9567,7 +9569,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "Ushuaia – Buenos Aires (AEP)",
           "clase": "Económica (FLEX)",
-          "fecha": "19/11/2026",
+          "fecha": "",
           "horario": "08:20 – 11:50",
           "numero": "AR 1871",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -9577,7 +9579,7 @@
       "fuente_detalle": {
         "url": "https://cuartocontinente.com/es/idea/22203065/ushuaia?country=AR",
         "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes."
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario)."
       }
     },
     {
@@ -9588,7 +9590,8 @@
       "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
       "condiciones": [
         "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
-        "Precio válido hasta la fecha de salida.",
+        "Precio estimado de referencia por persona: se cotiza al consultar para la fecha elegida. Se puede viajar desde hoy hasta julio de 2027.",
+        "Vuelos, horarios y hoteles de referencia; se confirman al cotizar la fecha elegida.",
         "No incluye traslados ni excursiones; se cotizan aparte."
       ],
       "no_incluye": [
@@ -9614,7 +9617,7 @@
       "itinerario": [],
       "tarifas": [],
       "id": "bariloche-lo-tiene-todo",
-      "titulo": "Bariloche lo tiene todo — 27 de octubre 2026",
+      "titulo": "Bariloche lo tiene todo",
       "region": "argentina",
       "destinos": [
         "Bariloche"
@@ -9623,10 +9626,10 @@
       "precio_desde": {
         "valor": 651624,
         "moneda": "ARS",
-        "nota": "por persona en base doble — total con impuestos"
+        "nota": "por persona en base doble — precio estimado, se cotiza al consultar"
       },
-      "salida": "27 de octubre 2026",
-      "vigencia": "2026-10-27",
+      "salida": "Fecha a elección, hasta julio 2027",
+      "vigencia": "2027-07-31",
       "noches": 3,
       "operador": "Cuarto Continente",
       "operador_sigla": "CC",
@@ -9650,7 +9653,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "Buenos Aires (AEP) – Bariloche",
           "clase": "Económica (FLEX)",
-          "fecha": "27/10/2026",
+          "fecha": "",
           "horario": "04:35 – 07:00",
           "numero": "AR 1680",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -9659,7 +9662,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "Bariloche – Buenos Aires (AEP)",
           "clase": "Económica (FLEX)",
-          "fecha": "30/10/2026",
+          "fecha": "",
           "horario": "11:55 – 14:00",
           "numero": "AR 1681",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -9669,7 +9672,7 @@
       "fuente_detalle": {
         "url": "https://cuartocontinente.com/es/idea/40420928/bariloche-lo-tiene-todo?country=AR",
         "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes."
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario)."
       }
     },
     {
@@ -9680,7 +9683,8 @@
       "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
       "condiciones": [
         "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
-        "Precio válido hasta la fecha de salida.",
+        "Precio estimado de referencia por persona: se cotiza al consultar para la fecha elegida. Se puede viajar desde hoy hasta julio de 2027.",
+        "Vuelos, horarios y hoteles de referencia; se confirman al cotizar la fecha elegida.",
         "Circuito regular con salidas los lunes."
       ],
       "no_incluye": [
@@ -9758,7 +9762,7 @@
       ],
       "tarifas": [],
       "id": "vuelta-norte-argentino",
-      "titulo": "Vuelta al norte argentino — 16 de noviembre 2026",
+      "titulo": "Vuelta al norte argentino",
       "region": "argentina",
       "destinos": [
         "Tucumán",
@@ -9769,10 +9773,10 @@
       "precio_desde": {
         "valor": 1280826,
         "moneda": "ARS",
-        "nota": "por persona en base doble — total con impuestos"
+        "nota": "por persona en base doble — precio estimado, se cotiza al consultar"
       },
-      "salida": "16 de noviembre 2026",
-      "vigencia": "2026-11-16",
+      "salida": "Fecha a elección, hasta julio 2027",
+      "vigencia": "2027-07-31",
       "noches": 6,
       "operador": "Cuarto Continente",
       "operador_sigla": "CC",
@@ -9797,7 +9801,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "Buenos Aires (AEP) – Tucumán",
           "clase": "Económica (FLEX)",
-          "fecha": "16/11/2026",
+          "fecha": "",
           "horario": "04:55 – 06:55",
           "numero": "AR 1468",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -9806,7 +9810,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "Salta – Buenos Aires (AEP)",
           "clase": "Económica (FLEX)",
-          "fecha": "22/11/2026",
+          "fecha": "",
           "horario": "08:05 – 10:10",
           "numero": "AR 1489",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -9816,7 +9820,7 @@
       "fuente_detalle": {
         "url": "https://cuartocontinente.com/es/idea/24058473/vuelta-al-norte-argentino?country=AR",
         "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes."
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario)."
       }
     },
     {
@@ -9827,7 +9831,8 @@
       "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
       "condiciones": [
         "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
-        "Precio válido hasta la fecha de salida.",
+        "Precio estimado de referencia por persona: se cotiza al consultar para la fecha elegida. Se puede viajar desde hoy hasta julio de 2027.",
+        "Vuelos, horarios y hoteles de referencia; se confirman al cotizar la fecha elegida.",
         "No incluye traslados ni excursiones; se cotizan aparte."
       ],
       "no_incluye": [
@@ -9866,7 +9871,7 @@
       "itinerario": [],
       "tarifas": [],
       "id": "ushuaia-el-calafate",
-      "titulo": "Ushuaia & El Calafate — 24 de noviembre 2026",
+      "titulo": "Ushuaia & El Calafate",
       "region": "argentina",
       "destinos": [
         "Ushuaia",
@@ -9876,10 +9881,10 @@
       "precio_desde": {
         "valor": 1342389,
         "moneda": "ARS",
-        "nota": "por persona en base doble — total con impuestos"
+        "nota": "por persona en base doble — precio estimado, se cotiza al consultar"
       },
-      "salida": "24 de noviembre 2026",
-      "vigencia": "2026-11-24",
+      "salida": "Fecha a elección, hasta julio 2027",
+      "vigencia": "2027-07-31",
       "noches": 6,
       "operador": "Cuarto Continente",
       "operador_sigla": "CC",
@@ -9903,7 +9908,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "Buenos Aires (AEP) – Ushuaia",
           "clase": "Económica (FLEX)",
-          "fecha": "24/11/2026",
+          "fecha": "",
           "horario": "05:05 – 08:45",
           "numero": "AR 1876",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -9912,7 +9917,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "Ushuaia – El Calafate",
           "clase": "Económica (FLEX)",
-          "fecha": "27/11/2026",
+          "fecha": "",
           "horario": "09:20 – 10:40",
           "numero": "AR 1895",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -9921,7 +9926,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "El Calafate – Buenos Aires (AEP)",
           "clase": "Económica (FLEX)",
-          "fecha": "30/11/2026",
+          "fecha": "",
           "horario": "18:40 – 21:40",
           "numero": "AR 1899",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -9931,7 +9936,7 @@
       "fuente_detalle": {
         "url": "https://cuartocontinente.com/es/idea/22204583/ushuaia-el-calafate?country=AR",
         "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes."
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario)."
       }
     },
     {
@@ -9942,7 +9947,8 @@
       "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
       "condiciones": [
         "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
-        "Precio válido hasta la fecha de salida.",
+        "Precio estimado de referencia por persona: se cotiza al consultar para la fecha elegida. Se puede viajar desde hoy hasta julio de 2027.",
+        "Vuelos, horarios y hoteles de referencia; se confirman al cotizar la fecha elegida.",
         "No incluye traslados ni excursiones; se cotizan aparte."
       ],
       "no_incluye": [
@@ -9968,19 +9974,19 @@
       "itinerario": [],
       "tarifas": [],
       "id": "puerto-madryn-escapada",
-      "titulo": "Puerto Madryn — 23 de noviembre 2026",
+      "titulo": "Puerto Madryn",
       "region": "argentina",
       "destinos": [
         "Puerto Madryn"
       ],
-      "resumen": "Tres noches en Puerto Madryn con vuelos directos y hotel con desayuno. Noviembre es temporada de ballenas en Península Valdés.",
+      "resumen": "Tres noches en Puerto Madryn con vuelos directos y hotel con desayuno. De junio a diciembre es temporada de ballenas en Península Valdés.",
       "precio_desde": {
         "valor": 676299,
         "moneda": "ARS",
-        "nota": "por persona en base doble — total con impuestos"
+        "nota": "por persona en base doble — precio estimado, se cotiza al consultar"
       },
-      "salida": "23 de noviembre 2026",
-      "vigencia": "2026-11-23",
+      "salida": "Fecha a elección, hasta julio 2027",
+      "vigencia": "2027-07-31",
       "noches": 3,
       "operador": "Cuarto Continente",
       "operador_sigla": "CC",
@@ -10004,7 +10010,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "Buenos Aires (AEP) – Puerto Madryn",
           "clase": "Económica (FLEX)",
-          "fecha": "23/11/2026",
+          "fecha": "",
           "horario": "16:00 – 18:05",
           "numero": "AR 1812",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -10013,7 +10019,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "Puerto Madryn – Buenos Aires (AEP)",
           "clase": "Económica (FLEX)",
-          "fecha": "26/11/2026",
+          "fecha": "",
           "horario": "19:05 – 20:55",
           "numero": "AR 1813",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -10023,102 +10029,7 @@
       "fuente_detalle": {
         "url": "https://cuartocontinente.com/es/idea/37028317/puerto-madryn?country=AR",
         "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes."
-      }
-    },
-    {
-      "activo": false,
-      "destacado": false,
-      "motivo_inactivo": "Falta precio por persona en base doble: el operador publica solo el valor para 2 adultos y 2 niños.",
-      "regimen": "Media pensión",
-      "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
-      "condiciones": [
-        "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
-        "Precio válido hasta la fecha de salida.",
-        "La tarifa aérea Base no incluye valija en bodega.",
-        "El precio publicado por el operador corresponde a 2 adultos y 2 niños; consultar valor en base doble."
-      ],
-      "no_incluye": [
-        "Comidas no indicadas",
-        "Excursiones no indicadas",
-        "Gastos personales"
-      ],
-      "hoteles": [
-        {
-          "ciudad": "Colonia Carlos Pellegrini",
-          "nombre": "Posada Ypa Sapukai",
-          "categoria": "",
-          "noches": 3,
-          "regimen": "Media pensión",
-          "habitacion": "",
-          "web": "",
-          "id": "",
-          "mapa": "",
-          "destacados": [],
-          "foto_credito": ""
-        }
-      ],
-      "itinerario": [],
-      "tarifas": [],
-      "id": "esteros-del-ibera",
-      "titulo": "Esteros del Iberá — 23 de noviembre 2026",
-      "region": "argentina",
-      "destinos": [
-        "Posadas",
-        "Esteros del Iberá"
-      ],
-      "resumen": "Tres noches en una posada de Carlos Pellegrini con media pensión y traslado privado desde Posadas. Yacarés, carpinchos y más de 300 especies de aves en uno de los humedales más grandes del mundo.",
-      "precio_desde": {
-        "valor": 1323740,
-        "moneda": "ARS",
-        "nota": "por persona en base doble — total con impuestos"
-      },
-      "salida": "23 de noviembre 2026",
-      "vigencia": "2026-11-23",
-      "noches": 3,
-      "operador": "Cuarto Continente",
-      "operador_sigla": "CC",
-      "ref": "CC-64460563",
-      "incluye": [
-        "Aéreos Buenos Aires / Posadas / Buenos Aires con Aerolíneas Argentinas, tarifa Base",
-        "Equipaje: 1 bolso de mano (sin valija en bodega)",
-        "Traslado privado Posadas – Colonia Carlos Pellegrini – Posadas",
-        "3 noches en Posada Ypa Sapukai con media pensión",
-        "Asistencia al viajero nacional (cobertura ARS 2.000.000)"
-      ],
-      "imagen": "assets/img/pexels/28939015-1200.jpg",
-      "imagen_alt": "Muelle y bote sobre la laguna de los Esteros del Iberá al atardecer",
-      "precios": [
-        {
-          "base": "doble",
-          "valor": 1323740
-        }
-      ],
-      "vuelos": [
-        {
-          "aerolinea": "Aerolíneas Argentinas",
-          "ruta": "Buenos Aires (AEP) – Posadas",
-          "clase": "Económica (Base)",
-          "fecha": "23/11/2026",
-          "horario": "13:50 – 15:30",
-          "numero": "AR 1764",
-          "equipaje": "1 bolso de mano"
-        },
-        {
-          "aerolinea": "Aerolíneas Argentinas",
-          "ruta": "Posadas – Buenos Aires (AEP)",
-          "clase": "Económica (Base)",
-          "fecha": "26/11/2026",
-          "horario": "21:45 – 23:25",
-          "numero": "AR 1769",
-          "equipaje": "1 bolso de mano"
-        }
-      ],
-      "foto_portada": "",
-      "fuente_detalle": {
-        "url": "https://cuartocontinente.com/es/idea/64460563/esteros-del-ibera?country=AR",
-        "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos y 2 niños (incluye impuestos). La ficha no publica valor en base doble: se carga el publicado y se marca para revisión."
+        "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario)."
       }
     },
     {
@@ -10129,8 +10040,9 @@
       "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
       "condiciones": [
         "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
-        "Precio válido hasta la fecha de salida.",
-        "Salidas diarias; la fecha y el precio de ejemplo corresponden al 17 de noviembre de 2026. Precio por persona en base single; consultar valor en base doble."
+        "Precio estimado de referencia por persona: se cotiza al consultar para la fecha elegida. Se puede viajar desde hoy hasta julio de 2027.",
+        "Vuelos, horarios y hoteles de referencia; se confirman al cotizar la fecha elegida.",
+        "Precio por persona en base single; consultar valor en base doble."
       ],
       "no_incluye": [
         "Comidas no indicadas",
@@ -10189,7 +10101,7 @@
       ],
       "tarifas": [],
       "id": "valle-de-la-luna",
-      "titulo": "Valle de la Luna con noche en Valle Fértil — Salidas diarias",
+      "titulo": "Valle de la Luna con noche en Valle Fértil",
       "region": "argentina",
       "destinos": [
         "San Juan",
@@ -10200,10 +10112,10 @@
       "precio_desde": {
         "valor": 1395002,
         "moneda": "ARS",
-        "nota": "por persona en base single — total con impuestos"
+        "nota": "por persona en base single — precio estimado, se cotiza al consultar"
       },
-      "salida": "Salidas diarias (ejemplo: 17 de noviembre 2026)",
-      "vigencia": "2026-12-31",
+      "salida": "Fecha a elección, hasta julio 2027",
+      "vigencia": "2027-07-31",
       "noches": 3,
       "operador": "Cuarto Continente",
       "operador_sigla": "CC",
@@ -10228,7 +10140,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "Buenos Aires (AEP) – San Juan",
           "clase": "Económica (FLEX)",
-          "fecha": "17/11/2026",
+          "fecha": "",
           "horario": "07:45 – 09:45",
           "numero": "AR 1444",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -10237,7 +10149,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "San Juan – Buenos Aires (AEP)",
           "clase": "Económica (FLEX)",
-          "fecha": "20/11/2026",
+          "fecha": "",
           "horario": "10:30 – 12:10",
           "numero": "AR 1445",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -10247,7 +10159,7 @@
       "fuente_detalle": {
         "url": "https://cuartocontinente.com/es/idea/15448792/valle-de-la-luna-con-noche-en-valle-fertil?country=AR",
         "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador para 1 adulto (incluye impuestos), fecha de ejemplo 17–20 nov 2026. Salidas diarias: la ficha no da fecha límite, se carga vigencia 31/12/2026 para revisión."
+        "desglose": "Precio total por persona publicado por el operador para 1 adulto (incluye impuestos), fecha de ejemplo 17–20 nov 2026. Salidas diarias: la ficha no da fecha límite, se carga vigencia 31/12/2026 para revisión. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario)."
       }
     },
     {
@@ -10258,7 +10170,8 @@
       "nota_impuestos": "Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión.",
       "condiciones": [
         "Vuelos de Aerolíneas Argentinas: la selección anticipada de asiento tiene cargo; es gratuita al habilitarse el web check-in.",
-        "Precio válido hasta la fecha de salida.",
+        "Precio estimado de referencia por persona: se cotiza al consultar para la fecha elegida. Se puede viajar desde hoy hasta julio de 2027.",
+        "Vuelos, horarios y hoteles de referencia; se confirman al cotizar la fecha elegida.",
         "Precio por persona en base single; consultar valor en base doble.",
         "No incluye traslados aeropuerto – hotel ni Salta – Purmamarca; se cotizan aparte."
       ],
@@ -10342,7 +10255,7 @@
       ],
       "tarifas": [],
       "id": "salta-purmamarca",
-      "titulo": "Salta & Purmamarca — 12 de abril 2027",
+      "titulo": "Salta & Purmamarca",
       "region": "argentina",
       "destinos": [
         "Salta",
@@ -10352,10 +10265,10 @@
       "precio_desde": {
         "valor": 1362212,
         "moneda": "ARS",
-        "nota": "por persona en base single — total con impuestos"
+        "nota": "por persona en base single — precio estimado, se cotiza al consultar"
       },
-      "salida": "12 de abril 2027",
-      "vigencia": "2027-04-12",
+      "salida": "Fecha a elección, hasta julio 2027",
+      "vigencia": "2027-07-31",
       "noches": 5,
       "operador": "Cuarto Continente",
       "operador_sigla": "CC",
@@ -10380,7 +10293,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "Buenos Aires (AEP) – Salta",
           "clase": "Económica (FLEX)",
-          "fecha": "12/04/2027",
+          "fecha": "",
           "horario": "14:40 – 16:55",
           "numero": "AR 1498",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -10389,7 +10302,7 @@
           "aerolinea": "Aerolíneas Argentinas",
           "ruta": "Salta – Buenos Aires (AEP)",
           "clase": "Económica (FLEX)",
-          "fecha": "17/04/2027",
+          "fecha": "",
           "horario": "07:55 – 10:00",
           "numero": "AR 1489",
           "equipaje": "1 valija en bodega (1 PC) + equipaje de mano"
@@ -10399,7 +10312,7 @@
       "fuente_detalle": {
         "url": "https://cuartocontinente.com/es/idea/25105671/salta-purmamarca-ida-y-vuelta-desde-salta?country=AR",
         "fecha": "2026-10-15",
-        "desglose": "Precio total por persona publicado por el operador para 1 adulto (incluye impuestos); no publica base doble."
+        "desglose": "Precio total por persona publicado por el operador para 1 adulto (incluye impuestos); no publica base doble. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario)."
       }
     },
     {
