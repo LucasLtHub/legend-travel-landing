@@ -541,12 +541,22 @@ def main():
         print("   (ninguno: todos los links internos resuelven)")
 
     # 5. Generar sitemap
+    # Regla fija: una página con <meta name="robots" content="noindex…"> NUNCA
+    # entra al sitemap (hoy: legales y sorteo). Se mira lo que quedó copiado.
+    def tiene_noindex(ruta):
+        f = DEST / ruta.strip("/") / "index.html" if ruta != "/" else DEST / "index.html"
+        try:
+            head = f.read_text(encoding="utf-8", errors="replace")[:6000]
+        except OSError:
+            return False
+        return re.search(r'<meta\s+name="robots"\s+content="[^"]*noindex', head, re.I) is not None
+
     today = datetime.date.today().isoformat()
-    sitemap_paths = ["/"]
+    candidatas = ["/"]
     for d in FULL_DIRS:
         if d in SITEMAP_EXCLUIR:
             continue
-        sitemap_paths.append(f"/{d}/")
+        candidatas.append(f"/{d}/")
         # Subpaginas generadas dentro de un servicio (hoy: paquetes/<id>/,
         # una por paquete activo). Se leen de lo que quedo COPIADO en la
         # tanda, asi lo inactivo o vencido nunca entra al sitemap.
@@ -554,9 +564,13 @@ def main():
             if sub.name == "data":   # carpeta de datos protegida (index.html vacio), nunca al sitemap
                 continue
             if sub.is_dir() and (sub / "index.html").exists():
-                sitemap_paths.append(f"/{d}/{sub.name}/")
+                candidatas.append(f"/{d}/{sub.name}/")
     for d in MADRE_DIRS:
-        sitemap_paths.append(f"/{d}/")
+        candidatas.append(f"/{d}/")
+    sin_indexar = [p for p in candidatas if tiene_noindex(p)]
+    sitemap_paths = [p for p in candidatas if p not in sin_indexar]
+    if sin_indexar:
+        print(f"\n→  Fuera del sitemap por noindex: {', '.join(sin_indexar)}")
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']

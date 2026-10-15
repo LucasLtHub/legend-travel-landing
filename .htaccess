@@ -1,1 +1,7 @@
+# Redirección 301: todo http y legendtravel.com.ar (sin www) → https://www.legendtravel.com.ar, conservando ruta y parámetros
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^ https://www.legendtravel.com.ar%{REQUEST_URI} [L,R=301]
+
 ErrorDocument 404 /404.html
