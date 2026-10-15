@@ -24,7 +24,8 @@ Reglas que no se negocian:
 - Los paquetes viven como DATOS. El HTML se genera. Nunca editar a mano.
 - activo:false O vigencia pasada  →  ni card, ni detalle, ni sitemap.
 - Si un campo no esta en el JSON, el modulo no se dibuja. No se inventa nada.
-- ref y operador son INTERNOS: no salen nunca al HTML.
+- ref y operador son INTERNOS: no salen nunca al HTML. Solo operador_sigla (KM, JT, CC, PI)
+  se muestra chiquita en el detalle, sin nombre ni link del operador.
 
 Uso: python build-paquetes.py
 """
@@ -61,7 +62,7 @@ OBLIGATORIOS = ["id", "titulo", "region", "destinos", "resumen",
                 "precio_desde", "salida", "vigencia", "noches", "incluye", "imagen"]
 # Todo lo demas es opcional y su modulo se omite si viene vacio:
 #   regimen, tarifas, itinerario, hoteles, no_incluye, condiciones,
-#   nota_impuestos, motivo_inactivo, operador, ref, destacado,
+#   nota_impuestos, motivo_inactivo, operador, operador_sigla, ref, destacado,
 #   precios, vuelos, crucero, foto_portada (P1/P2, ver docs/planilla-paquetes.md)
 #   fuente_detalle (interno: de donde salio el detalle; no se publica)
 
@@ -964,6 +965,9 @@ def render_detalle(p, vig, plantilla, todos=()):
         "{{PRECIO}}": fmt_precio(pd.get("valor")),
         "{{PRECIO_NOTA}}": ('<span class="nota">{}</span>'.format(e(pnota)) if pnota else "")
                           + '<span class="sujeto">{}</span>'.format(LEYENDA_PRECIO),
+        # sigla del operador (KM, JT, CC, PI): chiquita, sin nombre ni link
+        "{{SIGLA}}": ('<span class="sigla">{}</span>'.format(e(txt(p, "operador_sigla").upper()))
+                      if txt(p, "operador_sigla") else ""),
         "{{NFACTS}}": str(len(facts)),
         "{{DATOS}}": datos,
         "{{RESUMEN}}": e(resumen),

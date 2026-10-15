@@ -41,7 +41,7 @@
 - Instagram: https://www.instagram.com/legendtraveloficial
 - Web: https://www.legendtravel.com.ar
 
-Generado el 2026-10-14 por build-paquetes.py. Resumen corto: https://www.legendtravel.com.ar/llms.txt
+Generado el 2026-10-15 por build-paquetes.py. Resumen corto: https://www.legendtravel.com.ar/llms.txt
 
 ## Historia
 - Una familia que lleva
@@ -108,7 +108,7 @@ Generado el 2026-10-14 por build-paquetes.py. Resumen corto: https://www.legendt
 - Tarjeta de crédito (nacionales)
 
 ## Paquetes y salidas vigentes (detalle)
-Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo salidas vigentes al 14/10/2026.
+Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo salidas vigentes al 15/10/2026.
 
 ### Vietnam, Camboya & Tailandia
 - URL: https://www.legendtravel.com.ar/paquetes/vietnam-camboya-tailandia
