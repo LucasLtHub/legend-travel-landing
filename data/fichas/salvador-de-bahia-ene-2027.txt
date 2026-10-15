@@ -1,0 +1,15 @@
+Fuente: https://allseasons.tourvector.com/espanol/paquete2/217217/Salvador-con-GOL/193685985/
+Copiado el: 2026-10-15 (datos copiados y verificados a mano de la web pública del operador)
+Paquete en data/paquetes.json: salvador-de-bahia-ene-2027
+
+Salvador de Bahía — AS-217217
+Salida 09/01/2027 (el operador indica salidas de enero a marzo 2027: "Otras salidas: consultar"). Vila Galé Salvador 5*, frente a la playa de Ondina, con desayuno + late check out. GOL G3 7213 AEP 09/01 22:15 → Salvador (SSA) 10/01 02:40; GOL G3 7212 SSA 17/01 03:10 → AEP 08:00. Desde USD 1.356 (total 2 adultos USD 2.712).
+
+DATOS COMUNES (All Seasons):
+- Aéreo con cupo confirmado, 1 valija de 23 kg en bodega.
+- Traslados aeropuerto/hotel/aeropuerto en servicio regular (salvo Río: privado).
+- 7 noches en habitación estándar con el régimen indicado.
+- Asistencia al viajero Universal Assistance Value (tope USD 80.000), hasta 70 años.
+- Precio publicado por el operador como "precio final por persona", base doble, en USD.
+- Nota de pago: "El aéreo se abona en dólares. Pagos en efectivo o depósito pueden tener una percepción del 5% (RG 3819)."
+- Vigencia (tarifa válida hasta) = la fecha de salida cotizada. Otras fechas listadas: "Otras salidas: consultar".

@@ -10401,6 +10401,666 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador para 1 adulto (incluye impuestos); no publica base doble."
       }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "El aéreo se abona en dólares. Pagos en efectivo o depósito pueden tener una percepción del 5% (RG 3819).",
+      "condiciones": [
+        "Aéreo con cupo confirmado.",
+        "Precio válido para la salida del 10 de enero 2027. Otras salidas (17/01/2027): consultar.",
+        "Asistencia al viajero válida hasta 70 años.",
+        "La posada está a 500 m de la playa de Mucugê y a 200 m del centro."
+      ],
+      "no_incluye": [
+        "Comidas no indicadas",
+        "Excursiones",
+        "Gastos personales y propinas"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Arraial d'Ajuda",
+          "nombre": "Pousada Coqueiros",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Estándar",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "arraial-d-ajuda",
+      "titulo": "Arraial d'Ajuda — 10 de enero 2027",
+      "region": "brasil",
+      "destinos": [
+        "Arraial d'Ajuda",
+        "Porto Seguro"
+      ],
+      "resumen": "Una semana en el pueblo más lindo del sur de Bahía: calles de colores, la playa de Mucugê a 500 metros de la posada y Trancoso a un paso. Vuelo directo de GOL a Porto Seguro.",
+      "precio_desde": {
+        "valor": 1739,
+        "moneda": "USD",
+        "nota": "por persona en base doble — precio final con impuestos"
+      },
+      "salida": "10 de enero 2027",
+      "vigencia": "2027-01-10",
+      "noches": 7,
+      "operador": "All Seasons",
+      "operador_sigla": "AS",
+      "ref": "AS-322357",
+      "incluye": [
+        "Aéreo ida y vuelta con cupo confirmado",
+        "1 valija de 23 kg en bodega",
+        "Traslados aeropuerto – posada – aeropuerto en servicio regular",
+        "7 noches en habitación estándar con desayuno",
+        "Asistencia al viajero Universal Assistance Value (tope USD 80.000), hasta 70 años"
+      ],
+      "imagen": "assets/img/pexels/36768233-1200.jpg",
+      "imagen_alt": "Playa con cocoteros y acantilado verde en el sur de Bahía, Brasil",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 1739
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "GOL",
+          "ruta": "Buenos Aires (EZE) – Porto Seguro (BPS)",
+          "clase": "",
+          "fecha": "10/01/2027",
+          "horario": "01:10 – 05:00",
+          "numero": "G3 7493",
+          "equipaje": "1 valija de 23 kg en bodega"
+        },
+        {
+          "aerolinea": "GOL",
+          "ruta": "Porto Seguro (BPS) – Buenos Aires (EZE)",
+          "clase": "",
+          "fecha": "16/01/2027",
+          "horario": "23:00 – 03:10 (+1)",
+          "numero": "G3 7492",
+          "equipaje": "1 valija de 23 kg en bodega"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://allseasons.tourvector.com/espanol/paquete2/322357/Arraial-DAjuda-con-GOL/194999179/",
+        "fecha": "2026-10-15",
+        "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.739 (total 2 adultos USD 3.478). La ficha no desglosa componentes. Otras salidas listadas sin precio: 17/01/2027."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "El aéreo se abona en dólares. Pagos en efectivo o depósito pueden tener una percepción del 5% (RG 3819).",
+      "condiciones": [
+        "Aéreo con cupo confirmado.",
+        "Precio válido para la salida indicada; otras salidas: consultar.",
+        "Asistencia al viajero válida hasta 70 años.",
+        "La posada tiene vista a Praia dos Ossos y queda cerca de la Rua das Pedras."
+      ],
+      "no_incluye": [
+        "Comidas no indicadas",
+        "Excursiones",
+        "Gastos personales y propinas"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Búzios",
+          "nombre": "Lestada Pousada",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Estándar",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "buzios-ene-2027",
+      "titulo": "Búzios — 9 de enero 2027",
+      "region": "brasil",
+      "destinos": [
+        "Búzios"
+      ],
+      "resumen": "Siete noches en una posada con vista a Praia dos Ossos y a pasos de la Rua das Pedras. Búzios tiene más de veinte playas: una por día no alcanza. Vuelo directo a Río y traslado hasta la península incluido.",
+      "precio_desde": {
+        "valor": 1500,
+        "moneda": "USD",
+        "nota": "por persona en base doble — precio final con impuestos"
+      },
+      "salida": "9 de enero 2027",
+      "vigencia": "2027-01-09",
+      "noches": 7,
+      "operador": "All Seasons",
+      "operador_sigla": "AS",
+      "ref": "AS-561135",
+      "incluye": [
+        "Aéreo ida y vuelta con cupo confirmado",
+        "1 valija de 23 kg en bodega",
+        "Traslados aeropuerto de Río – Búzios – aeropuerto en servicio regular",
+        "7 noches en habitación estándar con desayuno",
+        "Asistencia al viajero Universal Assistance Value (tope USD 80.000), hasta 70 años"
+      ],
+      "imagen": "assets/img/pexels/12039523-1200.jpg",
+      "imagen_alt": "Vista aérea de la bahía de Búzios con barcos y playas, Brasil",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 1500
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "JetSMART",
+          "ruta": "Buenos Aires (EZE) – Río de Janeiro",
+          "clase": "",
+          "fecha": "09/01/2027",
+          "horario": "12:54 – 15:50",
+          "numero": "JA 3816",
+          "equipaje": "1 valija de 23 kg en bodega"
+        },
+        {
+          "aerolinea": "JetSMART",
+          "ruta": "Río de Janeiro – Buenos Aires (EZE)",
+          "clase": "",
+          "fecha": "16/01/2027",
+          "horario": "13:50 – 17:14",
+          "numero": "JA 3817",
+          "equipaje": "1 valija de 23 kg en bodega"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://allseasons.tourvector.com/espanol/paquete2/561135/Descubri-Buzios-con-JetSMART/194626755/",
+        "fecha": "2026-10-15",
+        "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.500 (total 2 adultos USD 3.000). La ficha no desglosa componentes."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "El aéreo se abona en dólares. Pagos en efectivo o depósito pueden tener una percepción del 5% (RG 3819).",
+      "condiciones": [
+        "Aéreo con cupo confirmado.",
+        "Precio válido para la salida indicada; otras salidas: consultar.",
+        "Asistencia al viajero válida hasta 70 años.",
+        "El hotel está a media cuadra de la playa de Copacabana."
+      ],
+      "no_incluye": [
+        "Comidas no indicadas",
+        "Excursiones",
+        "Gastos personales y propinas"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Río de Janeiro (Copacabana)",
+          "nombre": "Windsor Martinique",
+          "categoria": "3*",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Estándar",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "rio-de-janeiro-ene-2027",
+      "titulo": "Río de Janeiro — 9 de enero 2027",
+      "region": "brasil",
+      "destinos": [
+        "Río de Janeiro"
+      ],
+      "resumen": "Siete noches a media cuadra de Copacabana, con traslados privados. Pan de Azúcar, Corcovado, Ipanema y la noche de Lapa, en pleno verano carioca y con vuelo directo.",
+      "precio_desde": {
+        "valor": 1500,
+        "moneda": "USD",
+        "nota": "por persona en base doble — precio final con impuestos"
+      },
+      "salida": "9 de enero 2027",
+      "vigencia": "2027-01-09",
+      "noches": 7,
+      "operador": "All Seasons",
+      "operador_sigla": "AS",
+      "ref": "AS-561130",
+      "incluye": [
+        "Aéreo ida y vuelta con cupo confirmado",
+        "1 valija de 23 kg en bodega",
+        "Traslados privados aeropuerto – hotel – aeropuerto",
+        "7 noches en habitación estándar con desayuno",
+        "Asistencia al viajero Universal Assistance Value (tope USD 80.000), hasta 70 años"
+      ],
+      "imagen": "assets/img/pexels/5769598-1200.jpg",
+      "imagen_alt": "Cristo Redentor sobre el Corcovado, Río de Janeiro, Brasil",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 1500
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "JetSMART",
+          "ruta": "Buenos Aires (EZE) – Río de Janeiro",
+          "clase": "",
+          "fecha": "09/01/2027",
+          "horario": "12:54 – 15:50",
+          "numero": "JA 3816",
+          "equipaje": "1 valija de 23 kg en bodega"
+        },
+        {
+          "aerolinea": "JetSMART",
+          "ruta": "Río de Janeiro – Buenos Aires (EZE)",
+          "clase": "",
+          "fecha": "16/01/2027",
+          "horario": "13:50 – 17:14",
+          "numero": "JA 3817",
+          "equipaje": "1 valija de 23 kg en bodega"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://allseasons.tourvector.com/espanol/paquete2/561130/Disfruta-Rio-De-Janeiro-con-JetSMART/193847595/",
+        "fecha": "2026-10-15",
+        "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.500 (total 2 adultos USD 3.000). La ficha no desglosa componentes."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "El aéreo se abona en dólares. Pagos en efectivo o depósito pueden tener una percepción del 5% (RG 3819).",
+      "condiciones": [
+        "Aéreo con cupo confirmado.",
+        "Precio válido para la salida del 26 de enero 2027. Otras salidas (12/01/2027 y 19/01/2027): consultar.",
+        "Asistencia al viajero válida hasta 70 años.",
+        "Hotel frente al mar."
+      ],
+      "no_incluye": [
+        "Comidas no indicadas",
+        "Excursiones",
+        "Gastos personales y propinas"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Maceió",
+          "nombre": "Ritz Suites Grand Hotel Boutique",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Estándar",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "maceio-ene-2027",
+      "titulo": "Maceió — 26 de enero 2027",
+      "region": "brasil",
+      "destinos": [
+        "Maceió"
+      ],
+      "resumen": "Siete noches frente al mar en la capital de Alagoas, con las piscinas naturales de Pajuçara y las playas del litoral norte al alcance de un paseo. Vuelo directo de LATAM.",
+      "precio_desde": {
+        "valor": 1511,
+        "moneda": "USD",
+        "nota": "por persona en base doble — precio final con impuestos"
+      },
+      "salida": "26 de enero 2027",
+      "vigencia": "2027-01-26",
+      "noches": 7,
+      "operador": "All Seasons",
+      "operador_sigla": "AS",
+      "ref": "AS-195199",
+      "incluye": [
+        "Aéreo ida y vuelta con cupo confirmado",
+        "1 valija de 23 kg en bodega",
+        "Traslados aeropuerto – hotel – aeropuerto en servicio regular",
+        "7 noches en habitación estándar con desayuno",
+        "Asistencia al viajero Universal Assistance Value (tope USD 80.000), hasta 70 años"
+      ],
+      "imagen": "assets/img/pexels/27688572-1200.jpg",
+      "imagen_alt": "Bancos de arena y aguas turquesa en el nordeste de Brasil",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 1511
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Buenos Aires (EZE) – Maceió (MCZ)",
+          "clase": "",
+          "fecha": "26/01/2027",
+          "horario": "02:15 – 07:15",
+          "numero": "LA 8163",
+          "equipaje": "1 valija de 23 kg en bodega"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Maceió (MCZ) – Buenos Aires (EZE)",
+          "clase": "",
+          "fecha": "02/02/2027",
+          "horario": "10:45 – 16:00",
+          "numero": "LA 8162",
+          "equipaje": "1 valija de 23 kg en bodega"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://allseasons.tourvector.com/espanol/paquete2/195199/Descubri-Maceio-con-LATAM/195126896/",
+        "fecha": "2026-10-15",
+        "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.511 (total 2 adultos USD 3.022). La ficha no desglosa componentes. Otras salidas listadas sin precio: 12/01/2027 y 19/01/2027."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "El aéreo se abona en dólares. Pagos en efectivo o depósito pueden tener una percepción del 5% (RG 3819).",
+      "condiciones": [
+        "Aéreo con cupo confirmado.",
+        "Precio válido para la salida del 9 de enero 2027. Otras salidas (enero a marzo 2027): consultar.",
+        "Asistencia al viajero válida hasta 70 años.",
+        "Incluye late check out.",
+        "El hotel está frente a la playa de Ondina."
+      ],
+      "no_incluye": [
+        "Comidas no indicadas",
+        "Excursiones",
+        "Gastos personales y propinas"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Salvador de Bahía (Ondina)",
+          "nombre": "Vila Galé Salvador",
+          "categoria": "5*",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Estándar",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "salvador-de-bahia-ene-2027",
+      "titulo": "Salvador de Bahía — 9 de enero 2027",
+      "region": "brasil",
+      "destinos": [
+        "Salvador de Bahía"
+      ],
+      "resumen": "Siete noches en un cinco estrellas frente a la playa de Ondina, con late check out. El Pelourinho, la Igreja do Bonfim, el acarajé y la música de la ciudad más afrobrasileña del país.",
+      "precio_desde": {
+        "valor": 1356,
+        "moneda": "USD",
+        "nota": "por persona en base doble — precio final con impuestos"
+      },
+      "salida": "9 de enero 2027",
+      "vigencia": "2027-01-09",
+      "noches": 7,
+      "operador": "All Seasons",
+      "operador_sigla": "AS",
+      "ref": "AS-217217",
+      "incluye": [
+        "Aéreo ida y vuelta con cupo confirmado",
+        "1 valija de 23 kg en bodega",
+        "Traslados aeropuerto – hotel – aeropuerto en servicio regular",
+        "7 noches en habitación estándar con desayuno",
+        "Asistencia al viajero Universal Assistance Value (tope USD 80.000), hasta 70 años"
+      ],
+      "imagen": "assets/img/pexels/30495351-1200.jpg",
+      "imagen_alt": "Iglesias y casas coloniales del Pelourinho, Salvador de Bahía, Brasil",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 1356
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "GOL",
+          "ruta": "Buenos Aires (AEP) – Salvador (SSA)",
+          "clase": "",
+          "fecha": "09/01/2027",
+          "horario": "22:15 – 02:40 (+1)",
+          "numero": "G3 7213",
+          "equipaje": "1 valija de 23 kg en bodega"
+        },
+        {
+          "aerolinea": "GOL",
+          "ruta": "Salvador (SSA) – Buenos Aires (AEP)",
+          "clase": "",
+          "fecha": "17/01/2027",
+          "horario": "03:10 – 08:00",
+          "numero": "G3 7212",
+          "equipaje": "1 valija de 23 kg en bodega"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://allseasons.tourvector.com/espanol/paquete2/217217/Salvador-con-GOL/193685985/",
+        "fecha": "2026-10-15",
+        "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.356 (total 2 adultos USD 2.712). La ficha no desglosa componentes. Otras salidas listadas sin precio: enero a marzo 2027."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "El aéreo se abona en dólares. Pagos en efectivo o depósito pueden tener una percepción del 5% (RG 3819).",
+      "condiciones": [
+        "Aéreo con cupo confirmado.",
+        "Precio válido para la salida del 16 de enero 2027. Otras salidas (09/01/2027): consultar.",
+        "Asistencia al viajero válida hasta 70 años.",
+        "El hotel está a pasos de la playa de Ingleses."
+      ],
+      "no_incluye": [
+        "Comidas no indicadas",
+        "Excursiones",
+        "Gastos personales y propinas"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Florianópolis (Ingleses)",
+          "nombre": "Porto Sol Ingleses",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Estándar",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "florianopolis-ene-2027",
+      "titulo": "Florianópolis — 16 de enero 2027",
+      "region": "brasil",
+      "destinos": [
+        "Florianópolis"
+      ],
+      "resumen": "Siete noches a pasos de la playa de Ingleses, en el norte de la isla: mar tranquilo, arena blanca y la Lagoa da Conceição y Jurerê a pocos minutos. Vuelo directo de JetSMART.",
+      "precio_desde": {
+        "valor": 1480,
+        "moneda": "USD",
+        "nota": "por persona en base doble — precio final con impuestos"
+      },
+      "salida": "16 de enero 2027",
+      "vigencia": "2027-01-16",
+      "noches": 7,
+      "operador": "All Seasons",
+      "operador_sigla": "AS",
+      "ref": "AS-118771",
+      "incluye": [
+        "Aéreo ida y vuelta con cupo confirmado",
+        "1 valija de 23 kg en bodega",
+        "Traslados aeropuerto – hotel – aeropuerto en servicio regular",
+        "7 noches en habitación estándar con desayuno",
+        "Asistencia al viajero Universal Assistance Value (tope USD 80.000), hasta 70 años"
+      ],
+      "imagen": "assets/img/pexels/155313-1200.jpg",
+      "imagen_alt": "Playa de arena dorada y mar azul en la isla de Florianópolis, Brasil",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 1480
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "JetSMART",
+          "ruta": "Buenos Aires (EZE) – Florianópolis (FLN)",
+          "clase": "",
+          "fecha": "16/01/2027",
+          "horario": "12:15 – 14:15",
+          "numero": "JA 3824",
+          "equipaje": "1 valija de 23 kg en bodega"
+        },
+        {
+          "aerolinea": "JetSMART",
+          "ruta": "Florianópolis (FLN) – Buenos Aires (EZE)",
+          "clase": "",
+          "fecha": "23/01/2027",
+          "horario": "15:10 – 17:25",
+          "numero": "JA 3825",
+          "equipaje": "1 valija de 23 kg en bodega"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://allseasons.tourvector.com/espanol/paquete2/118771/Descubri-Florianopolis-con-JetSMART/194950084/",
+        "fecha": "2026-10-15",
+        "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.480 (total 2 adultos USD 2.960). La ficha no desglosa componentes. Otras salidas listadas sin precio: 09/01/2027."
+      }
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "All Inclusive",
+      "nota_impuestos": "El aéreo se abona en dólares. Pagos en efectivo o depósito pueden tener una percepción del 5% (RG 3819).",
+      "condiciones": [
+        "Aéreo con cupo confirmado.",
+        "Precio válido para la salida del 20 de febrero 2027. Otras salidas (enero a marzo 2027): consultar.",
+        "Asistencia al viajero válida hasta 70 años.",
+        "Incluye late check out."
+      ],
+      "no_incluye": [
+        "Comidas no indicadas",
+        "Excursiones",
+        "Gastos personales y propinas"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Praia do Forte",
+          "nombre": "Iberostar Waves Bahia",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "All Inclusive",
+          "habitacion": "Estándar",
+          "web": "",
+          "id": "",
+          "mapa": "",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [],
+      "id": "praia-do-forte-feb-2027",
+      "titulo": "Praia do Forte — 20 de febrero 2027",
+      "region": "brasil",
+      "destinos": [
+        "Praia do Forte"
+      ],
+      "resumen": "Siete noches all inclusive en Praia do Forte, a una hora de Salvador: cocoteros, piscinas naturales y el proyecto Tamar de tortugas marinas. Late check out y traslado desde Salvador incluidos.",
+      "precio_desde": {
+        "valor": 2537,
+        "moneda": "USD",
+        "nota": "por persona en base doble — precio final con impuestos"
+      },
+      "salida": "20 de febrero 2027",
+      "vigencia": "2027-02-20",
+      "noches": 7,
+      "operador": "All Seasons",
+      "operador_sigla": "AS",
+      "ref": "AS-162781",
+      "incluye": [
+        "Aéreo ida y vuelta con cupo confirmado",
+        "1 valija de 23 kg en bodega",
+        "Traslados aeropuerto de Salvador – Praia do Forte – aeropuerto en servicio regular",
+        "7 noches en habitación estándar con all inclusive",
+        "Asistencia al viajero Universal Assistance Value (tope USD 80.000), hasta 70 años"
+      ],
+      "imagen": "assets/img/pexels/9342687-1200.jpg",
+      "imagen_alt": "Playa con cocoteros en el litoral norte de Bahía, Brasil",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 2537
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "GOL",
+          "ruta": "Buenos Aires (AEP) – Salvador (SSA)",
+          "clase": "",
+          "fecha": "20/02/2027",
+          "horario": "22:00 – 02:10 (+1)",
+          "numero": "G3 7213",
+          "equipaje": "1 valija de 23 kg en bodega"
+        },
+        {
+          "aerolinea": "GOL",
+          "ruta": "Salvador (SSA) – Buenos Aires (AEP)",
+          "clase": "",
+          "fecha": "28/02/2027",
+          "horario": "03:10 – 08:00",
+          "numero": "G3 7212",
+          "equipaje": "1 valija de 23 kg en bodega"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "",
+        "fecha": "2026-10-15",
+        "desglose": "Precio final por persona en base doble publicado por el operador: USD 2.537 (total 2 adultos USD 5.074). La ficha no desglosa componentes. Otras salidas listadas sin precio: enero a marzo 2027."
+      }
     }
   ]
 }
