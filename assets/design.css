@@ -918,13 +918,14 @@ footer{background:var(--white);color:var(--ink);border-top:0;padding-top:72px;pa
 .fin p.lead{margin-top:28px;max-width:54ch;color:rgba(255,255,255,.72)}
 .fin .mx>a{justify-self:start;margin-top:32px}
 @media(max-width:640px){.fin .mx>a{max-width:100%;white-space:normal;text-align:left;line-height:1.25}}
-.chips{position:relative;display:grid;gap:clamp(6px,1vw,12px);align-content:end;margin:36px 0 0;aspect-ratio:1.586;max-width:520px;border-radius:clamp(18px,2.4vw,28px);padding:calc(clamp(22px,3vw,40px) + clamp(30px,3.3vw,42px) + 22px) clamp(22px,3vw,40px) clamp(22px,3vw,40px);background:linear-gradient(135deg,#5e1b1f 0%,#3a0f12 55%,#2b0a0c 100%);box-shadow:0 60px 90px -50px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.14);transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .9s var(--ease);will-change:transform;overflow:hidden;touch-action:pan-y}
-.chips::before{content:'';position:absolute;inset:-40%;background:radial-gradient(circle at var(--mx,30%) var(--my,20%),rgba(255,255,255,.16),rgba(255,255,255,0) 32%);pointer-events:none}
-.chips::after{content:'';position:absolute;top:clamp(22px,3vw,40px);left:clamp(22px,3vw,40px);width:clamp(40px,4.4vw,56px);height:clamp(30px,3.3vw,42px);border-radius:8px;background:linear-gradient(135deg,#f7cf7a,#c98a1c);box-shadow:inset 0 0 0 1px rgba(0,0,0,.25),inset 0 6px 0 -3px rgba(255,255,255,.35)}
-.chip{position:relative;z-index:1;display:flex;align-items:center;gap:14px;border:0;border-radius:0;padding:0;font-size:clamp(17px,1.9vw,26px);font-weight:500;letter-spacing:-.02em;line-height:1.15;text-transform:none;color:rgba(255,255,255,.42);transition:color .5s var(--ease),transform .7s var(--ease);cursor:default}
-.chip::before{content:'';width:10px;height:10px;border-radius:50%;flex:none;border:1.5px solid rgba(255,255,255,.35);transition:background .4s,border-color .4s,transform .6s var(--ease)}
-.chip.on{color:#fff;font-weight:700;transform:translateX(6px)}
-.chip.on::before{background:var(--gold);border-color:var(--gold);transform:scale(1.25);box-shadow:0 0 0 5px rgba(242,179,61,.22)}
+/* Tarjeta vieja del bloque .fin (hoy solo europa/del-este): acotada a .fin para no pisar la tarjeta .fiA-card de medios de pago */
+.fin .chips{position:relative;display:grid;gap:clamp(6px,1vw,12px);align-content:end;margin:36px 0 0;aspect-ratio:1.586;max-width:520px;border-radius:clamp(18px,2.4vw,28px);padding:calc(clamp(22px,3vw,40px) + clamp(30px,3.3vw,42px) + 22px) clamp(22px,3vw,40px) clamp(22px,3vw,40px);background:linear-gradient(135deg,#5e1b1f 0%,#3a0f12 55%,#2b0a0c 100%);box-shadow:0 60px 90px -50px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.14);transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .9s var(--ease);will-change:transform;overflow:hidden;touch-action:pan-y}
+.fin .chips::before{content:'';position:absolute;inset:-40%;background:radial-gradient(circle at var(--mx,30%) var(--my,20%),rgba(255,255,255,.16),rgba(255,255,255,0) 32%);pointer-events:none}
+.fin .chips::after{content:'';position:absolute;top:clamp(22px,3vw,40px);left:clamp(22px,3vw,40px);width:clamp(40px,4.4vw,56px);height:clamp(30px,3.3vw,42px);border-radius:8px;background:linear-gradient(135deg,#f7cf7a,#c98a1c);box-shadow:inset 0 0 0 1px rgba(0,0,0,.25),inset 0 6px 0 -3px rgba(255,255,255,.35)}
+.fin .chip{position:relative;z-index:1;display:flex;align-items:center;gap:14px;border:0;border-radius:0;padding:0;font-size:clamp(17px,1.9vw,26px);font-weight:500;letter-spacing:-.02em;line-height:1.15;text-transform:none;color:rgba(255,255,255,.42);transition:color .5s var(--ease),transform .7s var(--ease);cursor:default}
+.fin .chip::before{content:'';width:10px;height:10px;border-radius:50%;flex:none;border:1.5px solid rgba(255,255,255,.35);transition:background .4s,border-color .4s,transform .6s var(--ease)}
+.fin .chip.on{color:#fff;font-weight:700;transform:translateX(6px)}
+.fin .chip.on::before{background:var(--gold);border-color:var(--gold);transform:scale(1.25);box-shadow:0 0 0 5px rgba(242,179,61,.22)}
 @media(min-width:1024px){
   /* texto a la izquierda y la tarjeta flotando a la derecha, centrada en el alto del bloque */
   .fin .mx{min-height:440px;align-content:center}
@@ -932,8 +933,8 @@ footer{background:var(--white);color:var(--ink);border-top:0;padding-top:72px;pa
   .fin .mx>a{max-width:calc(50% - clamp(24px,3vw,55px))}
   .fin .mx>.rv>.chips{position:absolute;right:0;top:50%;width:calc(50% - clamp(24px,3vw,55px));max-width:none;margin:0;transform:translateY(-50%) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg))}
 }
-.chips.scrub{transition:none} /* P-MP: en pantallas táctiles la inclina el scroll, frame a frame */
-@media(prefers-reduced-motion:reduce){.chips{transform:none!important}.chip{color:#fff}.chip::before{background:var(--gold);border-color:var(--gold)}}
+.fin .chips.scrub{transition:none} /* P-MP: en pantallas táctiles la inclina el scroll, frame a frame */
+@media(prefers-reduced-motion:reduce){.fin .chips{transform:none!important}.fin .chip{color:#fff}.fin .chip::before{background:var(--gold);border-color:var(--gold)}}
 
 /* ---------- preguntas frecuentes: lista con desplegables sobre fondo borravino (FAQ de la home) ---------- */
 /* dos estructuras: servicios (.mx > título.rv + .faqwrap) y madres/hijas (.faqwrap > título.rv + .rv > .faq) */
