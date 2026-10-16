@@ -26,6 +26,8 @@ Reglas que no se negocian:
 - Si un campo no esta en el JSON, el modulo no se dibuja. No se inventa nada.
 - ref, operador y operador_sigla son INTERNOS: no salen nunca al HTML (ni cards, ni detalle,
   ni schema, ni llms). El operador nunca se muestra al cliente.
+- codigo_ref (KM-1145, JT-2187, GEA...) SI se muestra, solo en el detalle ("Cod. KM-1145" bajo el precio)
+  y como variable paquete_codigo del dataLayer; nunca en cards, madres, home ni en el texto de WhatsApp.
 
 Uso: python build-paquetes.py
 """
@@ -982,6 +984,10 @@ def render_detalle(p, vig, plantilla, todos=()):
         "{{PRECIO}}": fmt_precio(pd.get("valor")),
         "{{PRECIO_NOTA}}": ('<span class="nota">{}</span>'.format(e(pnota)) if pnota else "")
                           + '<span class="sujeto">{}</span>'.format(LEYENDA_PRECIO),
+        # codigo interno de referencia (KM-1145, GEA, ...): solo en el detalle, chiquito, nunca en cards ni en WhatsApp
+        "{{CODIGO}}": ('<span class="cod">C&oacute;d. {}</span>'.format(e(txt(p, "codigo_ref")))
+                       if txt(p, "codigo_ref") else ""),
+        "{{CODIGO_REF}}": e(txt(p, "codigo_ref")),
         "{{NFACTS}}": str(len(facts)),
         "{{DATOS}}": datos,
         "{{RESUMEN}}": e(resumen),

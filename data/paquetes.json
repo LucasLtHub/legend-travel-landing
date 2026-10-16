@@ -161,7 +161,8 @@
       "fuente_detalle": {
         "url": "https://www.legendtravel.com.ar/paquetes?id=489&salidaId=593&adultsQty=2",
         "fecha": "2026-10-13"
-      }
+      },
+      "codigo_ref": "GEA"
     },
     {
       "activo": true,
@@ -240,7 +241,8 @@
       "fuente_detalle": {
         "url": "https://www.legendtravel.com.ar/paquetes?id=493&salidaId=597&adultsQty=2",
         "fecha": "2026-10-13"
-      }
+      },
+      "codigo_ref": "GEA"
     },
     {
       "activo": true,
@@ -324,7 +326,8 @@
       "fuente_detalle": {
         "url": "https://www.legendtravel.com.ar/paquetes?id=480&salidaId=584&adultsQty=2",
         "fecha": "2026-10-13"
-      }
+      },
+      "codigo_ref": "GEA"
     },
     {
       "activo": true,
@@ -465,7 +468,8 @@
       "fuente_detalle": {
         "url": "https://www.legendtravel.com.ar/consulta/8337/ano-nuevo-a-bordo-de-costa-serena",
         "fecha": "2026-10-13"
-      }
+      },
+      "codigo_ref": "GEA"
     },
     {
       "activo": true,
@@ -594,7 +598,8 @@
       "fuente_detalle": {
         "url": "https://www.legendtravel.com.ar/consulta/8338/navidad-a-bordo-del-costa-diadema",
         "fecha": "2026-10-13"
-      }
+      },
+      "codigo_ref": "GEA"
     },
     {
       "activo": true,
@@ -722,7 +727,8 @@
       "fuente_detalle": {
         "url": "https://www.legendtravel.com.ar/consulta/8339/recibi-el-2027-en-altamar",
         "fecha": "2026-10-13"
-      }
+      },
+      "codigo_ref": "GEA"
     },
     {
       "activo": false,
@@ -948,7 +954,8 @@
       "fuente_detalle": {
         "url": "https://www.legendtravel.com.ar/paquetes?id=398&salidaId=476&adultsQty=2",
         "fecha": "2026-10-13"
-      }
+      },
+      "codigo_ref": "GEA"
     },
     {
       "activo": false,
@@ -1373,7 +1380,8 @@
       "fuente_detalle": {
         "url": "https://www.legendtravel.com.ar/paquetes?id=548&salidaId=676&adultsQty=2",
         "fecha": "2026-10-13"
-      }
+      },
+      "codigo_ref": "PI"
     },
     {
       "activo": true,
@@ -1478,7 +1486,8 @@
       "fuente_detalle": {
         "url": "https://www.legendtravel.com.ar/paquetes?id=560&salidaId=691&adultsQty=2",
         "fecha": "2026-10-13"
-      }
+      },
+      "codigo_ref": "GEA"
     },
     {
       "activo": true,
@@ -1616,7 +1625,8 @@
       "fuente_detalle": {
         "url": "https://www.legendtravel.com.ar/paquetes?id=557&salidaId=688&adultsQty=2",
         "fecha": "2026-10-13"
-      }
+      },
+      "codigo_ref": "GEA"
     },
     {
       "activo": true,
@@ -1756,7 +1766,8 @@
           "fuente": "https://www.hmhotels.com/hm-alma-de-bayahibe/",
           "fecha": "2026-10-13"
         }
-      ]
+      ],
+      "codigo_ref": "GEA"
     },
     {
       "activo": true,
@@ -1861,7 +1872,8 @@
       "fuente_detalle": {
         "url": "https://www.legendtravel.com.ar/paquetes?id=559&salidaId=690&adultsQty=2",
         "fecha": "2026-10-13"
-      }
+      },
+      "codigo_ref": "GEA"
     },
     {
       "activo": false,
@@ -2369,7 +2381,8 @@
         "url": "https://www.kingmidas.com.ar/itinerario/1115/Vietnam,-Camboya-&-Tailandia-2027",
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 7.950 + impuestos USD 1.790 (IVA, gastos, DNT, tasas y propinas) = USD 9.740. Single: 7.950 + 2.280 + 1.790 = 12.020. Reemplaza la versión de noviembre 2026 (26 días, USD 14.330)."
-      }
+      },
+      "codigo_ref": "KM-1115"
     },
     {
       "activo": true,
@@ -2764,7 +2777,8 @@
       "fuente_detalle": {
         "url": "https://www.legendtravel.com.ar/paquetes?id=372&salidaId=438&adultsQty=2",
         "fecha": "2026-10-13"
-      }
+      },
+      "codigo_ref": "GEA"
     },
     {
       "activo": false,
@@ -3157,7 +3171,8 @@
       },
       "regiones_extra": [
         "medio-oriente"
-      ]
+      ],
+      "codigo_ref": "KM-1117"
     },
     {
       "activo": true,
@@ -3403,7 +3418,8 @@
         "url": "https://www.kingmidas.com.ar/itinerario/1147/Sudafrica%C2%A0&-Mauritius",
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 7.950 + impuestos USD 1.870 (DNT, IVA, gastos y propinas) = USD 9.820. Single: 7.950 + 2.880 + 1.870 = 12.700. Los vuelos de la ficha figuran con fechas de noviembre (16NOV–28NOV): se cargan solo aerolínea, ruta y número. Decisión del usuario (15/10/2026): se publica la salida del 8 de febrero 2027."
-      }
+      },
+      "codigo_ref": "KM-1147"
     },
     {
       "activo": true,
@@ -3509,7 +3525,8 @@
       "fuente_detalle": {
         "url": "https://www.legendtravel.com.ar/consulta/1781/enjoy-disney-usa",
         "fecha": "2026-10-13"
-      }
+      },
+      "codigo_ref": "GEA"
     },
     {
       "activo": true,
@@ -3632,7 +3649,8 @@
       "fuente_detalle": {
         "url": "https://www.legendtravel.com.ar/consulta/1782/disney-europa-premium",
         "fecha": "2026-10-13"
-      }
+      },
+      "codigo_ref": "GEA"
     },
     {
       "activo": true,
@@ -3932,7 +3950,8 @@
         "url": "https://www.kingmidas.com.ar/itinerario/1145/India-&-Maldivas%C2%A0",
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 7.750 + impuestos USD 1.690 (DNT, IVA, gastos y propinas) = USD 9.440. Single: 7.750 + 2.950 + 1.690 = 12.390. Triple igual a doble según ficha."
-      }
+      },
+      "codigo_ref": "KM-1145"
     },
     {
       "activo": true,
@@ -4220,7 +4239,8 @@
         "url": "https://www.kingmidas.com.ar/itinerario/4/Kenia-&Tanzania",
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 9.980 + impuestos USD 1.920 (visa de Kenia, DNT, IVA, gastos y propinas) = USD 11.900. Single: 9.980 + 1.850 + 1.920 = 13.750."
-      }
+      },
+      "codigo_ref": "KM-4"
     },
     {
       "activo": true,
@@ -4553,7 +4573,8 @@
         "url": "https://www.kingmidas.com.ar/itinerario/1116/Fiesta-%22Holi%22---India-2027",
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 6.350 + impuestos USD 1.540 (DNT, IVA, gastos y propinas) = USD 7.890. Single: 6.350 + 1.850 + 1.540 = 9.740."
-      }
+      },
+      "codigo_ref": "KM-1116"
     },
     {
       "activo": true,
@@ -4897,7 +4918,8 @@
         "url": "https://www.kingmidas.com.ar/itinerario/1090/Corea-&-Jap%C3%B3n---%22Cherry-Blossom%22",
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 12.880 + impuestos USD 1.930 (DNT, IVA, gastos y propinas) = USD 14.810. Single: 12.880 + 4.170 + 1.930 = 18.980."
-      }
+      },
+      "codigo_ref": "KM-1090"
     },
     {
       "activo": true,
@@ -5232,7 +5254,8 @@
         "url": "https://www.kingmidas.com.ar/itinerario/2/China&-T%C3%ADbet",
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 8.350 + impuestos USD 1.870 (DNT, IVA, visa de China, gastos y propinas) = USD 10.220. Single: 8.350 + 1.920 + 1.870 = 12.140."
-      }
+      },
+      "codigo_ref": "KM-2"
     },
     {
       "activo": true,
@@ -5541,7 +5564,8 @@
         "url": "https://www.kingmidas.com.ar/itinerario/1126/Hong-Kong-&-China-2027",
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 6.680 + impuestos USD 1.550 (DNT, IVA, gastos y propinas) = USD 8.230. Single: 6.680 + 1.750 + 1.550 = 9.980."
-      }
+      },
+      "codigo_ref": "KM-1126"
     },
     {
       "activo": true,
@@ -5814,7 +5838,8 @@
         "url": "https://www.kingmidas.com.ar/itinerario/1146/Malasia,-Singapur-&-Bali",
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 7.820 + impuestos USD 1.615 (DNT, IVA, gastos y propinas) = USD 9.435. Single: 7.820 + 2.480 + 1.615 = 11.915."
-      }
+      },
+      "codigo_ref": "KM-1146"
     },
     {
       "activo": true,
@@ -5917,7 +5942,8 @@
         "url": "https://piamonte.com/es/idea/63139480/riviera-maya-cancun-25-01-verano-2027",
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
-      }
+      },
+      "codigo_ref": "PI-63139480"
     },
     {
       "activo": true,
@@ -6007,7 +6033,8 @@
         "url": "https://piamonte.com/es/idea/65533521/miches-04-01-verano-2027",
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
-      }
+      },
+      "codigo_ref": "PI-65533521"
     },
     {
       "activo": true,
@@ -6123,7 +6150,8 @@
         "url": "https://piamonte.com/es/idea/66158100/miami-bayahibe-14-02",
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
-      }
+      },
+      "codigo_ref": "PI-66158100"
     },
     {
       "activo": true,
@@ -6235,7 +6263,8 @@
         "wifi": "",
         "asistencia": "Internacional Plus 100K",
         "web": ""
-      }
+      },
+      "codigo_ref": "PI-51938153"
     },
     {
       "activo": true,
@@ -6325,7 +6354,8 @@
         "url": "https://piamonte.com/es/idea/52302197/aruba-09-01-verano-2027",
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
-      }
+      },
+      "codigo_ref": "PI-52302197"
     },
     {
       "activo": true,
@@ -6415,7 +6445,8 @@
         "url": "https://piamonte.com/es/idea/52975881/punta-cana-13-01-verano-2027",
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
-      }
+      },
+      "codigo_ref": "PI-52975881"
     },
     {
       "activo": true,
@@ -6503,7 +6534,8 @@
         "url": "https://piamonte.com/es/idea/54740316/riviera-maya-18-01-verano-2027",
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
-      }
+      },
+      "codigo_ref": "PI-54740316"
     },
     {
       "activo": true,
@@ -6591,7 +6623,8 @@
         "url": "https://piamonte.com/es/idea/55903469/costa-mujeres-18-01-verano-2027",
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
-      }
+      },
+      "codigo_ref": "PI-55903469"
     },
     {
       "activo": true,
@@ -6856,7 +6889,8 @@
         "url": "https://www.juliatours.com.ar/micrositio.php?id=2187",
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 4.160 + impuestos aéreos USD 584 + IVA y gastos USD 280 = USD 5.024. Triple USD 4.946. Single USD 6.892. Seña USD 2.300."
-      }
+      },
+      "codigo_ref": "JT-2187"
     },
     {
       "activo": true,
@@ -7160,7 +7194,8 @@
         "url": "https://www.juliatours.tur.ar/micrositio.php?id=2143",
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 4.006 + impuestos aéreos USD 583 + IVA y gastos USD 269 = USD 4.858. Triple USD 4.782. Single USD 6.445. Seña USD 2.200."
-      }
+      },
+      "codigo_ref": "JT-2143"
     },
     {
       "activo": true,
@@ -7463,7 +7498,8 @@
         "url": "https://www.juliatours.com.ar/micrositio.php?id=2149",
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 3.722 + impuestos aéreos USD 581 + IVA y gastos USD 251 = USD 4.554. Triple USD 4.484. Single USD 6.077."
-      }
+      },
+      "codigo_ref": "JT-2149"
     },
     {
       "activo": true,
@@ -7782,7 +7818,8 @@
         "url": "https://www.juliatours.com.ar/micrositio.php?id=2160",
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 3.867 + impuestos aéreos USD 582 + IVA y gastos USD 261 = USD 4.710. Triple USD 4.636. Single USD 6.067. Seña USD 2.300."
-      }
+      },
+      "codigo_ref": "JT-2160"
     },
     {
       "activo": true,
@@ -8115,7 +8152,8 @@
         "url": "https://www.juliatours.com.ar/micrositio.php?id=2181",
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 3.880 + impuestos aéreos USD 583 + IVA y gastos USD 260 = USD 4.723. Triple USD 4.651. Single USD 6.195. Seña USD 2.250."
-      }
+      },
+      "codigo_ref": "JT-2181"
     },
     {
       "activo": true,
@@ -8452,7 +8490,8 @@
         "url": "https://www.juliatours.com.ar/micrositio.php?id=2205",
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 4.031 + impuestos aéreos USD 581 + IVA y gastos USD 273 = USD 4.885. Triple USD 4.807. Single USD 6.489. Seña USD 2.200."
-      }
+      },
+      "codigo_ref": "JT-2205"
     },
     {
       "activo": true,
@@ -8778,7 +8817,8 @@
         "url": "https://www.juliatours.com.ar/micrositio.php?id=2156",
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 4.772 + impuestos aéreos USD 581 + IVA y gastos USD 326 = USD 5.679. Triple USD 5.607. Single USD 7.520. Seña USD 2.300."
-      }
+      },
+      "codigo_ref": "JT-2156"
     },
     {
       "activo": true,
@@ -9090,7 +9130,8 @@
         "url": "https://www.juliatours.com.ar/micrositio.php?id=2193",
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 3.696 + impuestos aéreos USD 582 + IVA y gastos USD 248 + tasas hoteleras obligatorias USD 94 + gastos USD 2 = USD 4.622 (la ficha publica 4.526 y las tasas aparte; por regla, todo cargo obligatorio que se paga al reservar va dentro del Desde). Triple y single: consultar. Seña USD 2.100."
-      }
+      },
+      "codigo_ref": "JT-2193"
     },
     {
       "activo": true,
@@ -9396,7 +9437,8 @@
         "url": "https://www.juliatours.com.ar/micrositio.php?id=2253",
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 4.313 + impuestos aéreos USD 581 + IVA y gastos USD 293 = USD 5.187. Triple USD 5.052. Single USD 6.619. Seña USD 2.200."
-      }
+      },
+      "codigo_ref": "JT-2253"
     },
     {
       "activo": true,
@@ -9489,7 +9531,8 @@
         "url": "https://cuartocontinente.com/es/idea/22256231/escapada-a-mendoza?country=AR",
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
-      }
+      },
+      "codigo_ref": "CC-22256231"
     },
     {
       "activo": true,
@@ -9582,7 +9625,8 @@
         "url": "https://cuartocontinente.com/es/idea/22203065/ushuaia?country=AR",
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
-      }
+      },
+      "codigo_ref": "CC-22203065"
     },
     {
       "activo": true,
@@ -9675,7 +9719,8 @@
         "url": "https://cuartocontinente.com/es/idea/40420928/bariloche-lo-tiene-todo?country=AR",
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
-      }
+      },
+      "codigo_ref": "CC-40420928"
     },
     {
       "activo": true,
@@ -9823,7 +9868,8 @@
         "url": "https://cuartocontinente.com/es/idea/24058473/vuelta-al-norte-argentino?country=AR",
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
-      }
+      },
+      "codigo_ref": "CC-24058473"
     },
     {
       "activo": true,
@@ -9939,7 +9985,8 @@
         "url": "https://cuartocontinente.com/es/idea/22204583/ushuaia-el-calafate?country=AR",
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
-      }
+      },
+      "codigo_ref": "CC-22204583"
     },
     {
       "activo": true,
@@ -10032,7 +10079,8 @@
         "url": "https://cuartocontinente.com/es/idea/37028317/puerto-madryn?country=AR",
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
-      }
+      },
+      "codigo_ref": "CC-37028317"
     },
     {
       "activo": true,
@@ -10162,7 +10210,8 @@
         "url": "https://cuartocontinente.com/es/idea/15448792/valle-de-la-luna-con-noche-en-valle-fertil?country=AR",
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador para 1 adulto (incluye impuestos), fecha de ejemplo 17–20 nov 2026. Salidas diarias: la ficha no da fecha límite, se carga vigencia 31/12/2026 para revisión. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
-      }
+      },
+      "codigo_ref": "CC-15448792"
     },
     {
       "activo": true,
@@ -10315,7 +10364,8 @@
         "url": "https://cuartocontinente.com/es/idea/25105671/salta-purmamarca-ida-y-vuelta-desde-salta?country=AR",
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador para 1 adulto (incluye impuestos); no publica base doble. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
-      }
+      },
+      "codigo_ref": "CC-25105671"
     },
     {
       "activo": true,
@@ -10410,7 +10460,8 @@
         "url": "https://allseasons.tourvector.com/espanol/paquete2/322357/Arraial-DAjuda-con-GOL/194999179/",
         "fecha": "2026-10-15",
         "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.739 (total 2 adultos USD 3.478). La ficha no desglosa componentes. Otras salidas listadas sin precio: 17/01/2027."
-      }
+      },
+      "codigo_ref": "AS-322357"
     },
     {
       "activo": true,
@@ -10504,7 +10555,8 @@
         "url": "https://allseasons.tourvector.com/espanol/paquete2/561135/Descubri-Buzios-con-JetSMART/194626755/",
         "fecha": "2026-10-15",
         "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.500 (total 2 adultos USD 3.000). La ficha no desglosa componentes."
-      }
+      },
+      "codigo_ref": "AS-561135"
     },
     {
       "activo": true,
@@ -10598,7 +10650,8 @@
         "url": "https://allseasons.tourvector.com/espanol/paquete2/561130/Disfruta-Rio-De-Janeiro-con-JetSMART/193847595/",
         "fecha": "2026-10-15",
         "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.500 (total 2 adultos USD 3.000). La ficha no desglosa componentes."
-      }
+      },
+      "codigo_ref": "AS-561130"
     },
     {
       "activo": true,
@@ -10692,7 +10745,8 @@
         "url": "https://allseasons.tourvector.com/espanol/paquete2/195199/Descubri-Maceio-con-LATAM/195126896/",
         "fecha": "2026-10-15",
         "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.511 (total 2 adultos USD 3.022). La ficha no desglosa componentes. Otras salidas listadas sin precio: 12/01/2027 y 19/01/2027."
-      }
+      },
+      "codigo_ref": "AS-195199"
     },
     {
       "activo": true,
@@ -10787,7 +10841,8 @@
         "url": "https://allseasons.tourvector.com/espanol/paquete2/217217/Salvador-con-GOL/193685985/",
         "fecha": "2026-10-15",
         "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.356 (total 2 adultos USD 2.712). La ficha no desglosa componentes. Otras salidas listadas sin precio: enero a marzo 2027."
-      }
+      },
+      "codigo_ref": "AS-217217"
     },
     {
       "activo": true,
@@ -10881,7 +10936,8 @@
         "url": "https://allseasons.tourvector.com/espanol/paquete2/118771/Descubri-Florianopolis-con-JetSMART/194950084/",
         "fecha": "2026-10-15",
         "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.480 (total 2 adultos USD 2.960). La ficha no desglosa componentes. Otras salidas listadas sin precio: 09/01/2027."
-      }
+      },
+      "codigo_ref": "AS-118771"
     },
     {
       "activo": true,
@@ -10975,7 +11031,8 @@
         "url": "",
         "fecha": "2026-10-15",
         "desglose": "Precio final por persona en base doble publicado por el operador: USD 2.537 (total 2 adultos USD 5.074). La ficha no desglosa componentes. Otras salidas listadas sin precio: enero a marzo 2027."
-      }
+      },
+      "codigo_ref": "AS-162781"
     }
   ]
 }

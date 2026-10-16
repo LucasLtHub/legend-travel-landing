@@ -91,6 +91,9 @@ Hay lugar para 4 vuelos: vuelo1, vuelo2, vuelo3 y vuelo4. Cada uno tiene:
 ### Regiones secundarias
 Columna `regiones_extra` (opcional, separadas por coma): regiones donde el paquete también tiene que aparecer en la madre y en los relacionados, además de la suya. Ejemplo: Egipto & Jordania es de África y lleva `medio-oriente`. La región principal no cambia (URL, etiqueta y chips siguen igual).
 
+### Código de referencia
+Columna `codigo_ref`: el código interno del paquete (KM-1145, JT-2187, CC-22256231, PI-63139480, AS-322357; GEA para los paquetes del portal anterior). Se muestra chiquito en la página de detalle como "Cód. …" para que las vendedoras identifiquen el paquete, y viaja como `paquete_codigo` en el dataLayer. Nunca va en cards, madres, home ni en el mensaje de WhatsApp. El nombre del operador sigue sin mostrarse.
+
 ### Sigla del operador
 Columna `operador_sigla`: dos letras (KM = King Midas, JT = Julia Tours, CC = Cuarto Continente, PI = Piamonte).
 Sirve para la planilla de revisión y para saber de dónde salió cada paquete.

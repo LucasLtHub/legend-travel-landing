@@ -33,7 +33,7 @@ Versión completa (historia, medios de pago, detalle de cada paquete con hoteles
 
 <!-- PAQUETES:START -->
 ## Salidas y paquetes actuales
-Generado el 2026-10-15 desde data/paquetes.json. Solo salidas vigentes:
+Generado el 2026-10-16 desde data/paquetes.json. Solo salidas vigentes:
 lo inactivo o vencido se retira de esta lista automáticamente.
 Precios por persona en base doble, salvo que el paquete indique otra base. Sujeto a disponibilidad al momento de la reserva.
 
