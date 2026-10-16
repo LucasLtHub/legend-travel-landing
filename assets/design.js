@@ -109,7 +109,8 @@
 
   /* medios de pago: la tarjeta se inclina hacia el mouse (al scrollear, en el celular)
      y los medios se encienden uno a uno mientras está a la vista */
-  d.querySelectorAll('.fin .chips').forEach(function (card) {
+  d.querySelectorAll('.fiA-card, .fin .chips').forEach(function (card) {
+    var scene = card.closest('.fiA-scene') || card;
     var chips = [].slice.call(card.querySelectorAll('.chip')), idx = -1, timer = null, raf = null, rx = 0, ry = 0, mx = 30, my = 20;
     if (!chips.length) return;
     function pick(i) { idx = i; chips.forEach(function (c, k) { c.classList.toggle('on', k === i); }); }
@@ -121,8 +122,8 @@
     card.addEventListener('pointerleave', start);
     function paint() { raf = null; card.style.setProperty('--rx', rx.toFixed(2) + 'deg'); card.style.setProperty('--ry', ry.toFixed(2) + 'deg'); card.style.setProperty('--mx', mx.toFixed(1) + '%'); card.style.setProperty('--my', my.toFixed(1) + '%'); }
     if (fine) {
-      card.addEventListener('pointermove', function (e) { var r = card.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height; ry = (x - .5) * 22; rx = -(y - .5) * 16; mx = x * 100; my = y * 100; if (!raf) raf = requestAnimationFrame(paint); });
-      card.addEventListener('pointerleave', function () { rx = 0; ry = 0; mx = 30; my = 20; if (!raf) raf = requestAnimationFrame(paint); });
+      scene.addEventListener('pointermove', function (e) { var r = card.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height; ry = (x - .5) * 22; rx = -(y - .5) * 16; mx = x * 100; my = y * 100; if (!raf) raf = requestAnimationFrame(paint); });
+      scene.addEventListener('pointerleave', function () { rx = 0; ry = 0; mx = 30; my = 20; if (!raf) raf = requestAnimationFrame(paint); });
     } else {
       /* P-MP: antes esto corría en cada frame de scroll de TODA la página (medía la tarjeta, reiniciaba la
          transición de .9s y repintaba el brillo), y la página se trababa al llegar a "Medios de pago".

@@ -917,16 +917,6 @@ footer{background:var(--white);color:var(--ink);border-top:0;padding-top:72px;pa
 .fin .kicker{color:var(--gold)}
 .fin p.lead{margin-top:28px;max-width:54ch;color:rgba(255,255,255,.72)}
 .fin .mx>a{justify-self:start;margin-top:32px}
-/* Bloque unico de medios de pago (mismo formato que la home): dos filas + "1 mes" */
-.fin .fiP{margin-top:clamp(22px,3.4vh,40px);max-width:620px;border-top:1px solid rgba(255,255,255,.16)}
-.fin .fiP-row{display:grid;gap:6px 28px;padding:clamp(12px,2vh,20px) 0;border-bottom:1px solid rgba(255,255,255,.16)}
-.fin .fiP-row dt{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);padding-top:4px}
-.fin .fiP-row dd{margin:0;font-size:clamp(15px,1.15vw,18px);line-height:1.5;color:#fff}
-@media(min-width:560px){.fin .fiP-row{grid-template-columns:150px 1fr}}
-.fin .fiR{margin-top:clamp(18px,2.8vh,28px);max-width:620px}
-.fin .fiR-it b{display:block;font-size:clamp(38px,3.6vw,56px);font-weight:300;letter-spacing:-.04em;line-height:1;color:var(--gold)}
-.fin .fiR-it span{display:block;margin-top:10px;font-size:15px;line-height:1.5;color:rgba(255,255,255,.72)}
-.fin .fiR-it span strong{color:#fff;font-weight:700}
 @media(max-width:640px){.fin .mx>a{max-width:100%;white-space:normal;text-align:left;line-height:1.25}}
 .chips{position:relative;display:grid;gap:clamp(6px,1vw,12px);align-content:end;margin:36px 0 0;aspect-ratio:1.586;max-width:520px;border-radius:clamp(18px,2.4vw,28px);padding:calc(clamp(22px,3vw,40px) + clamp(30px,3.3vw,42px) + 22px) clamp(22px,3vw,40px) clamp(22px,3vw,40px);background:linear-gradient(135deg,#5e1b1f 0%,#3a0f12 55%,#2b0a0c 100%);box-shadow:0 60px 90px -50px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.14);transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .9s var(--ease);will-change:transform;overflow:hidden;touch-action:pan-y}
 .chips::before{content:'';position:absolute;inset:-40%;background:radial-gradient(circle at var(--mx,30%) var(--my,20%),rgba(255,255,255,.16),rgba(255,255,255,0) 32%);pointer-events:none}
@@ -1119,3 +1109,63 @@ footer.px{background:var(--white);color:var(--ink);padding-top:72px;padding-bott
   .hero-media .scene{transform:none!important;animation:none!important}
   .thread{display:none!important}
 }
+
+/* ===== Medios de pago (bloque unico, mismo en la home y en todas las subpaginas) =====
+   Estructura: .sec.fi-dark.fiA > (.wrap|.mx) > .fiA-grid > [texto .fiP/.fiR/.fi-cta] + [.fiA-scene > .fiA-card > .chips] */
+/* medios de pago: el bloque único ordenado en dos filas (qué se acepta) y dos cifras (cómo se reserva) */
+.fiP{margin-top:clamp(28px,4vh,40px);max-width:560px;border-top:1px solid rgba(255,255,255,.16)}
+.fiP-row{display:grid;gap:6px 28px;padding:20px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+.fiP-row dt{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);padding-top:4px}
+.fiP-row dd{margin:0;font-size:clamp(16px,1.15vw,18px);line-height:1.5;color:#fff}
+.fiP-row dd small{display:block;margin-top:6px;font-size:14px;line-height:1.45;color:rgba(255,255,255,.6)}
+@media(min-width:560px){.fiP-row{grid-template-columns:150px 1fr}}
+.fiR{display:grid;gap:22px;margin-top:26px;max-width:560px}
+@media(min-width:560px){.fiR{grid-template-columns:1fr 1fr;gap:32px}}
+.fiR-it b{display:block;font-size:clamp(40px,3.6vw,56px);font-weight:300;letter-spacing:-.04em;line-height:1;color:var(--gold)}
+.fiR-it span{display:block;margin-top:10px;font-size:15px;line-height:1.5;color:rgba(255,255,255,.72)}
+.fiR-it span strong{color:#fff;font-weight:700}
+.fi-cta{display:flex;flex-direction:column;align-items:flex-start;gap:22px}
+.fi-cta .tlink{font-size:15px}
+.fi-dark{background:var(--bur);color:#fff}
+.fi-dark .h2{color:#fff}
+.fi-dark .lead{color:rgba(255,255,255,.72)}
+.fi-dark .tlink{color:#fff}
+.fi-dark .tlink:hover{color:var(--gold)}
+
+.fiA{overflow:hidden}
+.fiA-grid{display:grid;gap:48px}
+.fiA-scene{perspective:1400px;touch-action:pan-y}
+.fiA-card{position:relative;aspect-ratio:1.586;border-radius:clamp(18px,2.4vw,28px);padding:clamp(22px,3vw,40px);background:linear-gradient(135deg,#5e1b1f 0%,#3a0f12 55%,#2b0a0c 100%);box-shadow:0 60px 90px -50px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.14);transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .9s var(--ease);will-change:transform;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end}
+.fiA-card::before{content:'';position:absolute;inset:-40%;background:radial-gradient(circle at var(--mx,30%) var(--my,20%),rgba(255,255,255,.16),rgba(255,255,255,0) 32%);pointer-events:none;transition:opacity .6s}
+.fiA-card::after{content:'';position:absolute;top:clamp(22px,3vw,40px);left:clamp(22px,3vw,40px);width:clamp(40px,4.4vw,56px);height:clamp(30px,3.3vw,42px);border-radius:8px;background:linear-gradient(135deg,#f7cf7a,#c98a1c);box-shadow:inset 0 0 0 1px rgba(0,0,0,.25),inset 0 6px 0 -3px rgba(255,255,255,.35)}
+.fiA-card .chips{position:relative;z-index:1;display:grid;gap:clamp(6px,1vw,12px);margin:0}
+.fiA-card .chip{display:flex;align-items:center;gap:14px;font-size:clamp(20px,2.4vw,34px);font-weight:500;letter-spacing:-.02em;line-height:1.15;color:rgba(255,255,255,.42);transition:color .5s var(--ease),transform .7s var(--ease);cursor:default}
+.fiA-card .chip::before{content:'';width:10px;height:10px;border-radius:50%;flex:none;border:1.5px solid rgba(255,255,255,.35);transition:background .4s,border-color .4s,transform .6s var(--ease)}
+.fiA-card .chip.on{color:#fff;transform:translateX(6px)}
+.fiA-card .chip.on::before{background:var(--gold);border-color:var(--gold);transform:scale(1.25);box-shadow:0 0 0 5px rgba(242,179,61,.22)}
+.fiA-card .chip.on{font-weight:700}
+.fiA-card .chip.on i{font-style:normal}
+@media(min-width:1024px){
+  /* padding-top/bottom (no shorthand): en las subpaginas los laterales los pone .px, como en la home los pone .wrap */
+  .fiA{min-height:100vh;min-height:100svh;display:flex;align-items:center;padding-top:calc(var(--nav-h) + clamp(12px,2.6vh,44px));padding-bottom:clamp(16px,3.4vh,56px)}
+  .fiA>.wrap,.fiA>.mx{width:100%}
+  .fiA>.mx{max-width:calc(1360px - 2*var(--gutter))}
+  .fiA-grid{grid-template-columns:1fr 1fr;gap:clamp(48px,6vw,110px);align-items:center}
+  .fiA .h2{font-size:clamp(38px,min(4.8vw,9vh),78px)}
+  .fiA-scene{padding:24px 0}
+}
+/* Escritorio (>=1280) con poco alto: el bloque de pagos escala con la altura para entrar completo */
+@media(min-width:1280px) and (max-height:1000px){
+  .fiA .h2{font-size:clamp(34px,min(4.8vw,8vh),78px)}
+  .fiA .fiP{margin-top:clamp(16px,3vh,40px)}
+  .fiA .fiP-row{padding:clamp(10px,1.9vh,20px) 0}
+  .fiA .fiP-row dd{font-size:clamp(14px,2vh,18px);line-height:1.45}
+  .fiA .fiR{margin-top:clamp(14px,2.6vh,26px)}
+  .fiA .fiR-it b{font-size:clamp(32px,5.4vh,56px)}
+  .fiA .fiR-it span{margin-top:clamp(6px,1vh,10px);font-size:clamp(13px,1.8vh,15px)}
+  .fiA-card{padding:clamp(18px,min(3vw,4vh),40px)}
+  .fiA-card .chip{font-size:clamp(18px,min(2.4vw,3.6vh),34px)}
+  .fiA-card .chips{gap:clamp(4px,min(1vw,1.2vh),12px)}
+  .fiA-scene{padding:clamp(8px,1.6vh,24px) 0}
+}
+@media(prefers-reduced-motion:reduce){.fiA-card{transform:none!important}.fiA-card .chip{color:#fff}.fiA-card .chip::before{background:var(--gold);border-color:var(--gold)}}
