@@ -133,6 +133,7 @@ LEYENDA_PRECIO = "Sujeto a disponibilidad al momento de la reserva."
 # (se cotizan al consultar). En exoticos (Asia, Africa, Medio Oriente) y Europa NO: son fechas fijas.
 MAS_FECHAS_REGIONES = {"argentina", "brasil", "caribe"}
 MAS_FECHAS_TXT = "Tenemos muchas más fechas disponibles: consultanos por la que te convenga."
+MAS_FECHAS_CARD = "Más fechas disponibles: consultanos"   # version corta para las cards
 ORG_ID = DOMINIO + "/#organization"   # el ÚNICO @id de la agencia en todo el sitio (declaración y referencias)
 LLMS = ROOT / "llms.txt"
 LLMS_START = "<!-- PAQUETES:START -->"
@@ -367,6 +368,8 @@ def render_card(p, vig_date):
              '            <span>{}{}</span>'.format(IC_CAMA, e(noches_txt(p["noches"])))]
     if txt(p, "regimen"):
         metas.append('            <span>{}{}</span>'.format(IC_PLATO, e(txt(p, "regimen"))))
+    if p["region"] in MAS_FECHAS_REGIONES:
+        metas.append('            <span class="masf">{}</span>'.format(e(MAS_FECHAS_CARD)))
 
     inc = lista(p, "incluye")
     inc_html = "\n".join('          <li>{}{}</li>'.format(IC_CHECK, e(i))
@@ -487,11 +490,12 @@ def render_card_compacta(p, vig):
     return '''      <a class="pkc" href="paquetes/{id}/">
         <span class="k">{ic}{dest}</span>
         <span class="t">{titulo}</span>
-        <span class="s">{salida} &middot; {noches}</span>
+        <span class="s">{salida} &middot; {noches}</span>{masf}
         <span class="p"><b><small>Desde</small> {moneda} {precio}</b><span>Ver detalle &rarr;</span></span>
         <span class="sujeto">{leyenda}</span>
       </a>'''.format(
         leyenda=LEYENDA_PRECIO,
+        masf=(chr(10) + '        <span class="masf">{}</span>'.format(e(MAS_FECHAS_CARD)) if p["region"] in MAS_FECHAS_REGIONES else ""),
         id=e(p["id"]), ic=IC_BRUJULA,
         dest=e(dests[0] if dests else REGIONES.get(p["region"], p["region"])),
         titulo=e(p["titulo"]), salida=e(salida_corta(p["salida"])),
