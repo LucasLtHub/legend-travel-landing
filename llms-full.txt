@@ -39,7 +39,7 @@
 - Instagram: https://www.instagram.com/legendtraveloficial
 - Web: https://www.legendtravel.com.ar
 
-Generado el 2026-10-16 por build-paquetes.py. Resumen corto: https://www.legendtravel.com.ar/llms.txt
+Generado el 2026-10-19 por build-paquetes.py. Resumen corto: https://www.legendtravel.com.ar/llms.txt
 
 ## Historia
 - Una familia que lleva
@@ -106,7 +106,7 @@ Generado el 2026-10-16 por build-paquetes.py. Resumen corto: https://www.legendt
 - Tarjeta de crédito (nacionales)
 
 ## Paquetes y salidas vigentes (detalle)
-Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo salidas vigentes al 16/10/2026.
+Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo salidas vigentes al 19/10/2026.
 
 ### Año Nuevo a bordo del Costa Serena
 - URL: https://www.legendtravel.com.ar/paquetes/anio-nuevo-costa-serena
@@ -176,7 +176,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Resumen: Dos culturas fascinantes en un solo viaje: la DMZ coreana, templos patrimonio, la noche en un monasterio budista del Monte Koya, tren bala y Tokio.
 - Vigente hasta: 05/03/2027
 
-### Vietnam, Camboya & Tailandia 2027 — Salida grupal
+### Vietnam, Camboya y Tailandia — Salida grupal, 7 de marzo 2027
 - URL: https://www.legendtravel.com.ar/paquetes/vietnam-camboya-tailandia
 - Destinos: Hanoi, Bahía de Lan Ha, Hoi An, Hue, Ho Chi Minh, Siem Reap, Bangkok, Phuket
 - Salida: 7 de marzo 2027 · 16 noches · Régimen: Desayuno (9 almuerzos y 3 cenas incluidos)
@@ -371,7 +371,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Resumen: Siete noches en una posada con vista a Praia dos Ossos y a pasos de la Rua das Pedras. Búzios tiene más de veinte playas: una por día no alcanza. Vuelo directo a Río y traslado hasta la península incluido.
 - Vigente hasta: 09/01/2027
 
-### Río de Janeiro — 9 de enero 2027
+### Río de Janeiro: verano en Copacabana — 9 de enero 2027
 - URL: https://www.legendtravel.com.ar/paquetes/rio-de-janeiro-ene-2027
 - Destinos: Río de Janeiro
 - Salida: 9 de enero 2027 · 7 noches · Régimen: Desayuno
@@ -526,7 +526,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Resumen: Cinco noches en Miami Beach para compras y ciudad, y cinco noches todo incluido en Bayahíbe, con vuelos directos LATAM y traslados privados en cada ciudad.
 - Vigente hasta: 14/02/2027
 
-### Praia do Forte — 20 de febrero 2027
+### Praia do Forte, all inclusive en Bahía — 20 de febrero 2027
 - URL: https://www.legendtravel.com.ar/paquetes/praia-do-forte-feb-2027
 - Destinos: Praia do Forte
 - Salida: 20 de febrero 2027 · 7 noches · Régimen: All Inclusive
@@ -773,7 +773,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Resumen: Madrid, Burdeos, París, un crucero por el Rhin hasta Frankfurt, la Ruta Romántica alemana e Innsbruck, Venecia, Florencia, Roma, la Costa Azul y Barcelona. Una vuelta a Europa en diecisiete noches.
 - Vigente hasta: 15/01/2027
 
-### Hong Kong & China 2027 — Salida grupal
+### Hong Kong y la China milenaria — Salida grupal, 10 de mayo 2027
 - URL: https://www.legendtravel.com.ar/paquetes/hong-kong-china-2027
 - Destinos: Hong Kong, Beijing, Xi'an, Chongqing, Guilin, Hangzhou, Shanghái
 - Salida: 10 de mayo 2027 · 17 noches · Régimen: Desayuno
@@ -814,7 +814,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Resumen: El circuito clásico completo: Madrid y Toledo, Barcelona, la Costa Azul y Mónaco, Venecia, Florencia, tres noches en Roma, Turín, Ginebra y tres en París, con regreso por Burdeos y San Sebastián.
 - Vigente hasta: 15/01/2027
 
-### Malasia, Singapur & Bali — Salida grupal
+### Malasia, Singapur y Bali — Salida grupal, 24 de mayo 2027
 - URL: https://www.legendtravel.com.ar/paquetes/malasia-singapur-bali
 - Destinos: Kuala Lumpur, Malaca, Singapur, Ubud, Nusa Dua
 - Salida: 24 de mayo 2027 · 16 noches · Régimen: Desayuno
@@ -831,7 +831,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Resumen: Las Torres Petronas y la histórica Malaca, los Jardines de la Bahía de Singapur y una semana larga en Bali: terrazas de arroz en Ubud, templos sobre el mar y playa en Nusa Dua.
 - Vigente hasta: 24/05/2027
 
-### Andalucía, Portugal, País Vasco y Lourdes — 6 de junio 2027
+### Andalucía, Portugal y País Vasco, con Lourdes — 6 de junio 2027
 - URL: https://www.legendtravel.com.ar/paquetes/andalucia-portugal-pais-vasco-lourdes
 - Destinos: Madrid, Granada, Sevilla, Lisboa, Oporto, Santiago, San Sebastián, Lourdes
 - Salida: 6 de junio 2027 · 17 noches · Régimen: Desayuno

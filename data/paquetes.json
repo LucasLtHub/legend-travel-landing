@@ -2289,7 +2289,7 @@
       ],
       "tarifas": [],
       "id": "vietnam-camboya-tailandia",
-      "titulo": "Vietnam, Camboya & Tailandia 2027 — Salida grupal",
+      "titulo": "Vietnam, Camboya y Tailandia — Salida grupal, 7 de marzo 2027",
       "region": "asia",
       "destinos": [
         "Hanoi",
@@ -2326,8 +2326,8 @@
         "Universal Assistance Maximum de cortesía (hasta USD 300.000)",
         "Tour leader desde Argentina (mín. 10 pax)"
       ],
-      "imagen": "assets/img/pexels/18008781-1600.jpg",
-      "imagen_alt": "Calle arbolada con motos en Hanoi, Vietnam",
+      "imagen": "assets/img/pexels/13008674-1200.jpg",
+      "imagen_alt": "Islas de piedra caliza en la bahía de Ha Long, Vietnam",
       "precios": [
         {
           "base": "doble",
@@ -5473,7 +5473,7 @@
       ],
       "tarifas": [],
       "id": "hong-kong-china-2027",
-      "titulo": "Hong Kong & China 2027 — Salida grupal",
+      "titulo": "Hong Kong y la China milenaria — Salida grupal, 10 de mayo 2027",
       "region": "asia",
       "destinos": [
         "Hong Kong",
@@ -5509,8 +5509,8 @@
         "Universal Assistance Maximum de cortesía (hasta USD 300.000)",
         "Tour leader desde Argentina (mín. 10 pax)"
       ],
-      "imagen": "assets/img/pexels/31713313-1200.jpg",
-      "imagen_alt": "Skyline de Hong Kong sobre la bahía Victoria de noche",
+      "imagen": "assets/img/pexels/5208090-1200.jpg",
+      "imagen_alt": "Hong Kong de noche desde el Pico Victoria",
       "precios": [
         {
           "base": "doble",
@@ -5751,7 +5751,7 @@
       ],
       "tarifas": [],
       "id": "malasia-singapur-bali",
-      "titulo": "Malasia, Singapur & Bali — Salida grupal",
+      "titulo": "Malasia, Singapur y Bali — Salida grupal, 24 de mayo 2027",
       "region": "asia",
       "destinos": [
         "Kuala Lumpur",
@@ -5783,8 +5783,8 @@
         "Universal Assistance Maximum de cortesía (hasta USD 300.000)",
         "Tour leader desde Argentina (mín. 10 pax)"
       ],
-      "imagen": "assets/img/pexels/36733227-1200.jpg",
-      "imagen_alt": "Torres Petronas iluminadas de noche, Kuala Lumpur, Malasia",
+      "imagen": "assets/img/pexels/35428411-1200.jpg",
+      "imagen_alt": "Terrazas de arroz entre palmeras en Bali, Indonesia",
       "precios": [
         {
           "base": "doble",
@@ -8415,7 +8415,7 @@
       ],
       "tarifas": [],
       "id": "andalucia-portugal-pais-vasco-lourdes",
-      "titulo": "Andalucía, Portugal, País Vasco y Lourdes — 6 de junio 2027",
+      "titulo": "Andalucía, Portugal y País Vasco, con Lourdes — 6 de junio 2027",
       "region": "europa",
       "destinos": [
         "Madrid",
@@ -8449,8 +8449,8 @@
         "Asistencia al viajero Universal Assistance Excellence (hasta USD 150.000)",
         "4 comidas y una degustación de pintxos según itinerario"
       ],
-      "imagen": "assets/img/pexels/28174485-1200.jpg",
-      "imagen_alt": "Puente sobre el río Tajo al atardecer en Lisboa, Portugal",
+      "imagen": "assets/img/pexels/1675184-1200.jpg",
+      "imagen_alt": "Palacio del Partal y su estanque en la Alhambra, Granada",
       "precios": [
         {
           "base": "doble",
@@ -10593,7 +10593,7 @@
       "itinerario": [],
       "tarifas": [],
       "id": "rio-de-janeiro-ene-2027",
-      "titulo": "Río de Janeiro — 9 de enero 2027",
+      "titulo": "Río de Janeiro: verano en Copacabana — 9 de enero 2027",
       "region": "brasil",
       "destinos": [
         "Río de Janeiro"
@@ -10617,8 +10617,8 @@
         "7 noches en habitación estándar con desayuno",
         "Asistencia al viajero Universal Assistance Value (tope USD 80.000), hasta 70 años"
       ],
-      "imagen": "assets/img/pexels/5769598-1200.jpg",
-      "imagen_alt": "Cristo Redentor sobre el Corcovado, Río de Janeiro, Brasil",
+      "imagen": "assets/img/pexels/11047755-1200.jpg",
+      "imagen_alt": "Costa de Río de Janeiro con sus morros, Brasil",
       "precios": [
         {
           "base": "doble",
@@ -10974,7 +10974,7 @@
       "itinerario": [],
       "tarifas": [],
       "id": "praia-do-forte-feb-2027",
-      "titulo": "Praia do Forte — 20 de febrero 2027",
+      "titulo": "Praia do Forte, all inclusive en Bahía — 20 de febrero 2027",
       "region": "brasil",
       "destinos": [
         "Praia do Forte"
@@ -10998,8 +10998,8 @@
         "7 noches en habitación estándar con all inclusive",
         "Asistencia al viajero Universal Assistance Value (tope USD 80.000), hasta 70 años"
       ],
-      "imagen": "assets/img/pexels/9342687-1200.jpg",
-      "imagen_alt": "Playa con cocoteros en el litoral norte de Bahía, Brasil",
+      "imagen": "assets/img/pexels/28450036-1200.jpg",
+      "imagen_alt": "Playa de arena clara y aguas verdes desde el aire en Bahía, Brasil",
       "precios": [
         {
           "base": "doble",

@@ -1,6 +1,6 @@
 # Vuelos faltantes por paquete
 
-Generado el 2026-10-16 por build-paquetes.py desde data/paquetes.json (se rehace en cada build; no editar a mano).
+Generado el 2026-10-19 por build-paquetes.py desde data/paquetes.json (se rehace en cada build; no editar a mano).
 Copiar el bloque de cada paquete y pegarlo en WhatsApp para que el operador lo complete.
 Después, cargar la respuesta en `vuelos` del paquete (aerolinea, fecha, horario, numero, equipaje) y correr el build.
 Los cruceros con embarque en Buenos Aires no llevan vuelos y no figuran.
@@ -51,12 +51,12 @@ Vuelo de vuelta (fecha, horario, número): 22/03/2027 – 24/03/2027 · 20:30 �
 Equipaje incluido (valija en bodega / carry on / solo mochila):
 ```
 
-### Vietnam, Camboya & Tailandia 2027 — Salida grupal
+### Vietnam, Camboya y Tailandia — Salida grupal, 7 de marzo 2027
 
 Cargado hoy: Turkish Airlines Buenos Aires (EZE) – Estambul / Turkish Airlines Estambul – Hanoi / Turkish Airlines Phuket – Estambul / Turkish Airlines Estambul – Buenos Aires (EZE)
 
 ```
-*Vietnam, Camboya & Tailandia 2027 — Salida grupal — salida 7 de marzo 2027*
+*Vietnam, Camboya y Tailandia — Salida grupal, 7 de marzo 2027 — salida 7 de marzo 2027*
 Aerolínea: Turkish Airlines
 Vuelo de ida (fecha, horario, número): 07/03/2027 · 23:55 – 22:35 (+1) · TK 016
 Vuelo de vuelta (fecha, horario, número): 09/03/2027 · 02:25 – 15:25 · TK 164
@@ -221,24 +221,24 @@ Vuelo de vuelta (fecha, horario, número): 08/04/2027 · 01:40 – 15:35 · TK 0
 Equipaje incluido (valija en bodega / carry on / solo mochila):
 ```
 
-### Hong Kong & China 2027 — Salida grupal
+### Hong Kong y la China milenaria — Salida grupal, 10 de mayo 2027
 
 Cargado hoy: Turkish Airlines Buenos Aires (EZE) – Estambul / Turkish Airlines Estambul – Hong Kong / Turkish Airlines Shanghái – Estambul / Turkish Airlines Estambul – Buenos Aires (EZE)
 
 ```
-*Hong Kong & China 2027 — Salida grupal — salida 10 de mayo 2027*
+*Hong Kong y la China milenaria — Salida grupal, 10 de mayo 2027 — salida 10 de mayo 2027*
 Aerolínea: Turkish Airlines
 Vuelo de ida (fecha, horario, número): 10/05/2027 · 23:55 – 22:45 (+1) · TK 016
 Vuelo de vuelta (fecha, horario, número): 12/05/2027 · 01:35 – 17:20 · TK 070
 Equipaje incluido (valija en bodega / carry on / solo mochila):
 ```
 
-### Malasia, Singapur & Bali — Salida grupal
+### Malasia, Singapur y Bali — Salida grupal, 24 de mayo 2027
 
 Cargado hoy: Turkish Airlines Buenos Aires (EZE) – Estambul / Turkish Airlines Estambul – Kuala Lumpur / Turkish Airlines Denpasar – Estambul / Turkish Airlines Estambul – Buenos Aires (EZE)
 
 ```
-*Malasia, Singapur & Bali — Salida grupal — salida 24 de mayo 2027*
+*Malasia, Singapur y Bali — Salida grupal, 24 de mayo 2027 — salida 24 de mayo 2027*
 Aerolínea: Turkish Airlines
 Vuelo de ida (fecha, horario, número): 24/05/2027 · 23:55 – 22:45 (+1) · TK 016
 Vuelo de vuelta (fecha, horario, número): 26/05/2027 · 01:40 – 17:15 · TK 060
@@ -257,5 +257,5 @@ Vuelo de vuelta (fecha, horario, número):
 Equipaje incluido (valija en bodega / carry on / solo mochila):
 ```
 
-Con los vuelos completos: Miches — 4 de enero 2027; Aruba — 9 de enero 2027; Búzios — 9 de enero 2027; Río de Janeiro — 9 de enero 2027; Salvador de Bahía — 9 de enero 2027; Arraial d'Ajuda — 10 de enero 2027; Punta Cana — 13 de enero 2027; Florianópolis — 16 de enero 2027; Riviera Maya — 18 de enero 2027; Costa Mujeres — 18 de enero 2027; Riviera Maya & Cancún — 25 de enero 2027; Maceió — 26 de enero 2027; Miami & Bayahíbe — 14 de febrero 2027; Praia do Forte — 20 de febrero 2027; España, Francia, Suiza e Italia — 4 de abril 2027; Mágicamente Europa — 9 de abril 2027; Andalucía, Marruecos y Portugal — 16 de abril 2027; Madrid y Norte Europeo — 23 de abril 2027; Descubriendo Europa — 2 de mayo 2027; Península Ibérica con Madrid — 7 de mayo 2027; Europa Esencial — 9 de mayo 2027; Paseando por Europa — 21 de mayo 2027; Andalucía, Portugal, País Vasco y Lourdes — 6 de junio 2027; Escapada a Mendoza; Ushuaia; Bariloche lo tiene todo; Vuelta al norte argentino; Ushuaia & El Calafate; Puerto Madryn; Valle de la Luna con noche en Valle Fértil; Salta & Purmamarca
+Con los vuelos completos: Miches — 4 de enero 2027; Aruba — 9 de enero 2027; Búzios — 9 de enero 2027; Río de Janeiro: verano en Copacabana — 9 de enero 2027; Salvador de Bahía — 9 de enero 2027; Arraial d'Ajuda — 10 de enero 2027; Punta Cana — 13 de enero 2027; Florianópolis — 16 de enero 2027; Riviera Maya — 18 de enero 2027; Costa Mujeres — 18 de enero 2027; Riviera Maya & Cancún — 25 de enero 2027; Maceió — 26 de enero 2027; Miami & Bayahíbe — 14 de febrero 2027; Praia do Forte, all inclusive en Bahía — 20 de febrero 2027; España, Francia, Suiza e Italia — 4 de abril 2027; Mágicamente Europa — 9 de abril 2027; Andalucía, Marruecos y Portugal — 16 de abril 2027; Madrid y Norte Europeo — 23 de abril 2027; Descubriendo Europa — 2 de mayo 2027; Península Ibérica con Madrid — 7 de mayo 2027; Europa Esencial — 9 de mayo 2027; Paseando por Europa — 21 de mayo 2027; Andalucía, Portugal y País Vasco, con Lourdes — 6 de junio 2027; Escapada a Mendoza; Ushuaia; Bariloche lo tiene todo; Vuelta al norte argentino; Ushuaia & El Calafate; Puerto Madryn; Valle de la Luna con noche en Valle Fértil; Salta & Purmamarca
 
