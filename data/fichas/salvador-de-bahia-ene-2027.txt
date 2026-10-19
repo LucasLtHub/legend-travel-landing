@@ -3,7 +3,7 @@ Copiado el: 2026-10-15 (datos copiados y verificados a mano de la web pública d
 Paquete en data/paquetes.json: salvador-de-bahia-ene-2027
 
 Salvador de Bahía — AS-217217
-Salida 09/01/2027 (el operador indica salidas de enero a marzo 2027: "Otras salidas: consultar"). Vila Galé Salvador 5*, frente a la playa de Ondina, con desayuno + late check out. GOL G3 7213 AEP 09/01 22:15 → Salvador (SSA) 10/01 02:40; GOL G3 7212 SSA 17/01 03:10 → AEP 08:00. Desde USD 1.356 (total 2 adultos USD 2.712).
+Salida 09/01/2027 (el operador indica salidas de enero a marzo 2027: "Otras salidas: consultar"). Vila Galé Salvador 5*, frente a la playa de Ondina, con desayuno + late check out. GOL G3 7213 AEP 09/01 22:15 → Salvador (SSA) 10/01 02:40; GOL G3 7212 SSA 17/01 03:10 → AEP 08:00. Desde USD 1.356 (total 2 adultos USD 2.712). [Corrección 19/10/2026, enviada por el usuario: el precio correcto con Vila Galé Salvador es USD 1.455 (total 2 adultos USD 2.910).]
 
 DATOS COMUNES (All Seasons):
 - Aéreo con cupo confirmado, 1 valija de 23 kg en bodega.
