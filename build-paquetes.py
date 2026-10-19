@@ -129,6 +129,10 @@ MAX_REGION_CARDS = 3      # en la madre, hasta 3 salidas; el resto en /paquetes/
 MAX_RELACIONADOS = 3      # al pie del detalle
 # Leyenda fija de precio (pedido de Silvia): va junto a TODO precio "Desde", en cards, detalle y llms.
 LEYENDA_PRECIO = "Sujeto a disponibilidad al momento de la reserva."
+# Pedido de Silvia (19/10/2026): en Argentina, Brasil y Caribe hay muchas mas fechas que las publicadas
+# (se cotizan al consultar). En exoticos (Asia, Africa, Medio Oriente) y Europa NO: son fechas fijas.
+MAS_FECHAS_REGIONES = {"argentina", "brasil", "caribe"}
+MAS_FECHAS_TXT = "Tenemos muchas más fechas disponibles: consultanos por la que te convenga."
 ORG_ID = DOMINIO + "/#organization"   # el ÚNICO @id de la agencia en todo el sitio (declaración y referencias)
 LLMS = ROOT / "llms.txt"
 LLMS_START = "<!-- PAQUETES:START -->"
@@ -741,7 +745,10 @@ def render_detalle(p, vig, plantilla, todos=()):
     relacionados = render_relacionados(p, todos)
 
     # --- barra de datos rapidos (solo lo que existe) ---
-    facts = [("Salida", IC_CAL, e(p["salida"]), ""),
+    salida_v = e(p["salida"])
+    if p["region"] in MAS_FECHAS_REGIONES:
+        salida_v += '<span class="mas">{}</span>'.format(e(MAS_FECHAS_TXT))
+    facts = [("Salida", IC_CAL, salida_v, ""),
              ("Duraci&oacute;n", IC_CAMA, e(noches_txt(p["noches"])), "")]
     if txt(p, "regimen"):
         facts.append(("R&eacute;gimen", IC_PLATO, e(txt(p, "regimen")), ""))
@@ -1323,7 +1330,8 @@ def generar_llms_full(publicados, hoy):
         L.append("- URL: {}/paquetes/{}".format(DOMINIO, p["id"]))
         if lista(p, "destinos"):
             L.append("- Destinos: " + ", ".join(lista(p, "destinos")))
-        L.append("- Salida: {}{}".format(p.get("salida", ""), " · {} noches".format(p["noches"]) if p.get("noches") else "")
+        L.append("- Salida: {}{}{}".format(p.get("salida", ""), " · {} noches".format(p["noches"]) if p.get("noches") else "",
+                 " · Otras fechas: consultar (" + MAS_FECHAS_TXT.rstrip(".").lower() + ")" if p["region"] in MAS_FECHAS_REGIONES else "")
                  + (" · Régimen: " + txt(p, "regimen") if txt(p, "regimen") else ""))
         base_ppal = "doble" if ("doble" in precios or not precios) else next(iter(precios))
         if base_ppal != "doble":
