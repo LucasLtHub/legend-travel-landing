@@ -11115,7 +11115,7 @@
         "nota": "por persona en base doble · precio final"
       },
       "salida": "5 de diciembre 2026",
-      "vigencia": "2026-12-05",
+      "vigencia": "2026-11-19",
       "noches": 3,
       "operador": "Station Travel",
       "operador_sigla": "ST",
@@ -11163,6 +11163,874 @@
         "desglose": "Precios por persona en base doble publicados por el operador como finales, según hotel del selector: Hotel Nevada ARS 699.030 (Desde), Huinid Pioneros Aparts ARS 867.080, Hotel Cristal Bariloche ARS 895.315. La ficha no desglosa componentes ni informa categoría de los hoteles. Leído con Playwright sin enviar formularios."
       },
       "codigo_ref": "ST-F82F837EC63E"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "Precio final por persona en base doble publicado como tarifa final (sin cargos adicionales informados).",
+      "condiciones": [
+        "Aéreo con cupo confirmado.",
+        "Precio válido para la salida del 5 de diciembre 2026, con Hotel Carollo Gold. Las otras opciones de hotel tienen su precio en \"Precios por persona\".",
+        "Tarifas sujetas a modificación y disponibilidad sin previo aviso."
+      ],
+      "no_incluye": [],
+      "hoteles": [
+        {
+          "ciudad": "Mendoza",
+          "nombre": "Hotel Carollo Gold",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "Base doble",
+          "web": "",
+          "id": "",
+          "mapa": "Hotel Carollo Gold, Mendoza",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Mendoza",
+          "nombre": "Raíces Aconcagua",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "Base doble",
+          "web": "",
+          "id": "",
+          "mapa": "Raíces Aconcagua, Mendoza",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Mendoza",
+          "nombre": "Premium Tower Suites",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "Base doble",
+          "web": "",
+          "id": "",
+          "mapa": "Premium Tower Suites, Mendoza",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Mendoza",
+          "nombre": "Amerian Executive Mendoza",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "Base doble",
+          "web": "",
+          "id": "",
+          "mapa": "Amerian Executive Mendoza, Mendoza",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Hotel Carollo Gold · base doble",
+          "precio": "ARS 541.899"
+        },
+        {
+          "etiqueta": "Raíces Aconcagua · base doble",
+          "precio": "ARS 629.810"
+        },
+        {
+          "etiqueta": "Premium Tower Suites · base doble",
+          "precio": "ARS 759.025"
+        },
+        {
+          "etiqueta": "Amerian Executive Mendoza · base doble",
+          "precio": "ARS 841.315"
+        }
+      ],
+      "id": "mendoza-finde-largo-dic-2026",
+      "titulo": "Mendoza, fin de semana largo con cupo aéreo · 5 al 8 de diciembre 2026",
+      "region": "argentina",
+      "destinos": [
+        "Mendoza"
+      ],
+      "resumen": "Escapada de cuatro días a Mendoza en el feriado de diciembre: vuelo con cupo confirmado, tres noches con desayuno en el hotel que elijas entre cuatro opciones, traslados, City Tour y la excursión a bodegas y olivares con degustación.",
+      "precio_desde": {
+        "valor": 541899,
+        "moneda": "ARS",
+        "nota": "por persona en base doble · precio final"
+      },
+      "salida": "5 de diciembre 2026",
+      "vigencia": "2026-11-19",
+      "noches": 3,
+      "operador": "Station Travel",
+      "operador_sigla": "ST",
+      "ref": "ST-5DC17AAC3394",
+      "incluye": [
+        "Aéreo Buenos Aires – Mendoza – Buenos Aires con cupo confirmado",
+        "Equipaje de 10 kg",
+        "Traslados aeropuerto – hotel – aeropuerto",
+        "3 noches de alojamiento con desayuno",
+        "Excursión City Tour",
+        "Excursión Bodegas y Olivares",
+        "Asistencia médica Universal Assistance"
+      ],
+      "imagen": "assets/img/pexels/31025236-1200.jpg",
+      "imagen_alt": "Viñedos en Tunuyán, Mendoza, con la cordillera de los Andes nevada al fondo",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 541899
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "JetSMART",
+          "ruta": "Buenos Aires (AEP) – Mendoza (MDZ)",
+          "clase": "",
+          "fecha": "05/12/2026",
+          "horario": "14:00 – 15:55",
+          "numero": "JA 3626",
+          "equipaje": "10 kg"
+        },
+        {
+          "aerolinea": "JetSMART",
+          "ruta": "Mendoza (MDZ) – Buenos Aires (AEP)",
+          "clase": "",
+          "fecha": "08/12/2026",
+          "horario": "22:40 – 00:21 (+1)",
+          "numero": "JA 3075",
+          "equipaje": "10 kg"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://stationtravel.tur.ar/producto?id=5DC17AAC3394",
+        "fecha": "2026-10-20",
+        "desglose": "Precios por persona en base doble publicados por el operador como finales, según hotel del selector: Hotel Carollo Gold ARS 541.899 (Desde), Raíces Aconcagua ARS 629.810, Premium Tower Suites ARS 759.025, Amerian Executive Mendoza ARS 841.315. La ficha no desglosa componentes ni informa categoría de los hoteles. Leído con Playwright sin enviar formularios. Vigencia: 30 días desde la carga por ser nacional en ARS."
+      },
+      "codigo_ref": "ST-5DC17AAC3394"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "Precio final por persona en base doble publicado como tarifa final (sin cargos adicionales informados).",
+      "condiciones": [
+        "Aéreo con cupo confirmado.",
+        "Precio válido para la salida del 5 de diciembre 2026, con Hotel Marilian. Las otras opciones de hotel tienen su precio en \"Precios por persona\".",
+        "Tarifas sujetas a modificación y disponibilidad sin previo aviso."
+      ],
+      "no_incluye": [],
+      "hoteles": [
+        {
+          "ciudad": "Salta",
+          "nombre": "Hotel Marilian",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "Base doble",
+          "web": "",
+          "id": "",
+          "mapa": "Hotel Marilian, Salta",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Salta",
+          "nombre": "Hotel del Virrey",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "Base doble",
+          "web": "",
+          "id": "",
+          "mapa": "Hotel del Virrey, Salta",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Salta",
+          "nombre": "Casa Real",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "Base doble",
+          "web": "",
+          "id": "",
+          "mapa": "Casa Real, Salta",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Hotel Marilian · base doble",
+          "precio": "ARS 710.845"
+        },
+        {
+          "etiqueta": "Hotel del Virrey · base doble",
+          "precio": "ARS 839.560"
+        },
+        {
+          "etiqueta": "Casa Real · base doble",
+          "precio": "ARS 914.920"
+        }
+      ],
+      "id": "salta-finde-largo-dic-2026",
+      "titulo": "Salta, fin de semana largo con cupo aéreo · 5 al 8 de diciembre 2026",
+      "region": "argentina",
+      "destinos": [
+        "Salta"
+      ],
+      "resumen": "Cuatro días en Salta la Linda para el feriado de diciembre: vuelo con cupo confirmado, tres noches con desayuno en el hotel que elijas entre tres opciones, traslados y City Tour por el casco histórico colonial.",
+      "precio_desde": {
+        "valor": 710845,
+        "moneda": "ARS",
+        "nota": "por persona en base doble · precio final"
+      },
+      "salida": "5 de diciembre 2026",
+      "vigencia": "2026-11-19",
+      "noches": 3,
+      "operador": "Station Travel",
+      "operador_sigla": "ST",
+      "ref": "ST-9ABEECA36365",
+      "incluye": [
+        "Aéreo Buenos Aires – Salta – Buenos Aires con cupo confirmado",
+        "Equipaje de 8 kg",
+        "Traslados aeropuerto – hotel – aeropuerto",
+        "3 noches de alojamiento con desayuno",
+        "Excursión City Tour",
+        "Asistencia médica Universal Assistance"
+      ],
+      "imagen": "assets/img/pexels/21336116-1200.jpg",
+      "imagen_alt": "Ruta entre los cerros rojos de la Quebrada de las Conchas, Salta",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 710845
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Buenos Aires (AEP) – Salta (SLA)",
+          "clase": "",
+          "fecha": "05/12/2026",
+          "horario": "05:00 – 07:15",
+          "numero": "AR 1488",
+          "equipaje": "8 kg"
+        },
+        {
+          "aerolinea": "Aerolíneas Argentinas",
+          "ruta": "Salta (SLA) – Buenos Aires (AEP)",
+          "clase": "",
+          "fecha": "08/12/2026",
+          "horario": "21:20 – 23:25",
+          "numero": "AR 1501",
+          "equipaje": "8 kg"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://stationtravel.tur.ar/producto?id=9ABEECA36365",
+        "fecha": "2026-10-20",
+        "desglose": "Página identificada como 'Cupo Confirmado Salta | Finde XXL | Salida 05 de Diciembre'. Precios por persona en base doble publicados por el operador como finales, según hotel del selector: Hotel Marilian ARS 710.845 (Desde), Hotel del Virrey ARS 839.560, Casa Real ARS 914.920. La ficha no desglosa componentes ni informa categoría de los hoteles. Leído con Playwright sin enviar formularios. Vigencia: 30 días desde la carga por ser nacional en ARS."
+      },
+      "codigo_ref": "ST-9ABEECA36365"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "Precio total por persona: tarifa USD 2.430 más impuestos y gastos USD 710 (impuestos aéreos, IVA terrestre, gastos administrativos y de reserva). Tarifa de preventa 2027 válida hasta el 31 de octubre de 2026.",
+      "condiciones": [
+        "Salida grupal acompañada: coordinador garantizado con un mínimo de 15 pasajeros y asistencia en aeropuerto con un mínimo de 10.",
+        "Habitación doble a compartir garantizada (ver precio en \"Precios por persona\"). Triple sujeta a disponibilidad.",
+        "Incluye el vuelo ida y vuelta a Buenos Aires desde Bahía Blanca, Salta, Mendoza, Tucumán, Rosario, Córdoba o Neuquén, sujeto a disponibilidad y con cupos limitados.",
+        "Asistencia al viajero válida hasta 70 años; de 71 a 85 años suplemento USD 48 y desde 86 años USD 95, sin seguro de cancelación.",
+        "Las entradas a Machu Picchu se emiten con los datos completos de los pasajeros y quedan sujetas a disponibilidad hasta su emisión; no son reembolsables.",
+        "En el tren a Machu Picchu solo se permite equipaje de mano: un bolso o mochila de hasta 5 kg y 157 cm lineales.",
+        "Para viajar a Perú los argentinos no necesitan visa: alcanza con DNI, cédula del Mercosur o pasaporte."
+      ],
+      "no_incluye": [
+        "Gastos personales",
+        "Bebidas en las comidas incluidas",
+        "Propinas a maleteros, trasladistas, guías y mozos",
+        "Servicios no mencionados en \"El viaje incluye\""
+      ],
+      "hoteles": [
+        {
+          "ciudad": "Lima",
+          "nombre": "Libre Hotel BW Signature Collection",
+          "categoria": "3*",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "Libre Hotel BW Signature Collection, Lima",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Arequipa",
+          "nombre": "Hotel Crismar by Xima Hotels",
+          "categoria": "3*",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "Hotel Crismar by Xima Hotels, Arequipa",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Colca",
+          "nombre": "El Refugio Hotel",
+          "categoria": "",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "El Refugio Hotel, Colca",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Puno",
+          "nombre": "Lake Titicaca",
+          "categoria": "",
+          "noches": 2,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "Lake Titicaca, Puno",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Cusco",
+          "nombre": "Terra Andina Mansion Colonial",
+          "categoria": "4*",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "Terra Andina Mansion Colonial, Cusco",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Valle Sagrado",
+          "nombre": "Augustos Valle",
+          "categoria": "",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "Augustos Valle, Valle Sagrado",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1 · Vie 07/05",
+          "titulo": "Buenos Aires – Lima",
+          "texto": "Vuelo de LATAM a Lima y traslado al hotel. Por la tarde, recorrido por el centro histórico: convento de Santo Domingo, Plaza Mayor, Catedral y Museo Larco."
+        },
+        {
+          "dia": "Día 2 · Sáb 08/05",
+          "titulo": "Lima",
+          "texto": "Día libre para recorrer la ciudad o sumar una excursión opcional, como un tour gastronómico."
+        },
+        {
+          "dia": "Día 3 · Dom 09/05",
+          "titulo": "Lima – Arequipa",
+          "texto": "Vuelo a Arequipa. Visita de la Ciudad Blanca: mirador de Carmen Alto, barrio de Yanahuara, Monasterio de Santa Catalina y Plaza de Armas."
+        },
+        {
+          "dia": "Día 4 · Lun 10/05",
+          "titulo": "Arequipa – Colca",
+          "texto": "Viaje al valle del Colca pasando por la reserva de Pampa Cañahuas, con vicuñas en libertad. Almuerzo en el camino y tarde libre."
+        },
+        {
+          "dia": "Día 5 · Mar 11/05",
+          "titulo": "Colca – Puno",
+          "texto": "Mirador Cruz del Cóndor, pueblos de Maca y Yanque, almuerzo en restaurante local y salida hacia Puno."
+        },
+        {
+          "dia": "Día 6 · Mié 12/05",
+          "titulo": "Puno",
+          "texto": "Día completo en el lago Titicaca: islas flotantes de los Uros e isla Taquile, con almuerzo típico."
+        },
+        {
+          "dia": "Día 7 · Jue 13/05",
+          "titulo": "Puno – Cusco",
+          "texto": "Ruta en bus con paradas en el museo de Pucará, La Raya, el templo de Racchi y la capilla de Andahuaylillas."
+        },
+        {
+          "dia": "Día 8 · Vie 14/05",
+          "titulo": "Cusco",
+          "texto": "Sacsayhuamán, Qenqo, Puca Pucará y Tambomachay. Recorrido por la ciudad: mercado de San Pedro, Qorikancha, barrio de San Blas y Catedral."
+        },
+        {
+          "dia": "Día 9 · Sáb 15/05",
+          "titulo": "Cusco – Valle Sagrado",
+          "texto": "Chinchero y su centro textil, terrazas de Moray, almuerzo en la zona y complejo arqueológico de Ollantaytambo."
+        },
+        {
+          "dia": "Día 10 · Dom 16/05",
+          "titulo": "Valle Sagrado – Machu Picchu – Cusco",
+          "texto": "Tren a Aguas Calientes y visita guiada a Machu Picchu. Almuerzo en restaurante local y regreso en tren a Cusco."
+        },
+        {
+          "dia": "Día 11 · Lun 17/05",
+          "titulo": "Cusco – Lima – Buenos Aires",
+          "texto": "Traslado al aeropuerto y vuelos de regreso vía Lima. Llegada a Aeroparque por la tarde."
+        }
+      ],
+      "tarifas": [
+        {
+          "etiqueta": "Doble a compartir (garantizada)",
+          "precio": "USD 3.410"
+        }
+      ],
+      "id": "esencias-del-peru-may-2027",
+      "titulo": "Esencias del Perú, salida grupal acompañada · 7 de mayo 2027",
+      "region": "latinoamerica",
+      "destinos": [
+        "Lima",
+        "Arequipa",
+        "Colca",
+        "Puno",
+        "Cusco",
+        "Valle Sagrado",
+        "Machu Picchu"
+      ],
+      "resumen": "Once días por el Perú clásico en grupo acompañado: Lima colonial, Arequipa y el cañón del Colca, el lago Titicaca, Cusco, el Valle Sagrado y el tren a Machu Picchu. Diez noches con desayuno, seis almuerzos y visitas privadas con guía en español.",
+      "precio_desde": {
+        "valor": 3140,
+        "moneda": "USD",
+        "nota": "por persona en base doble · total con impuestos"
+      },
+      "salida": "7 de mayo 2027",
+      "vigencia": "2026-10-31",
+      "noches": 10,
+      "operador": "VieTur",
+      "operador_sigla": "VT",
+      "ref": "VT-11825",
+      "incluye": [
+        "Aéreo Buenos Aires – Lima – Arequipa / Cusco – Lima – Buenos Aires por LATAM, clase económica con equipaje incluido",
+        "10 noches de alojamiento con desayuno en hoteles de categoría turista superior",
+        "6 almuerzos (sin bebidas)",
+        "Traslados, visitas y excursiones en servicio privado con guías locales en español",
+        "Visita de Lima con Museo Larco y de Arequipa con el Monasterio de Santa Catalina",
+        "Cañón del Colca con el mirador Cruz del Cóndor",
+        "Islas de los Uros y Taquile en el lago Titicaca",
+        "Ruta en bus de Puno a Cusco con paradas",
+        "Cusco con Sacsayhuamán, Valle Sagrado con Chinchero, Moray y Ollantaytambo",
+        "Día completo en Machu Picchu en tren Expedition, con entrada y visita guiada",
+        "Asistencia al viajero Universal Assistance Value (tope USD 80.000), hasta 70 años",
+        "Coordinador acompañante, reunión informativa previa y obsequio de viaje"
+      ],
+      "imagen": "assets/img/pexels/16973651-1200.jpg",
+      "imagen_alt": "Ciudadela de Machu Picchu con el Huayna Picchu al fondo, Perú",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 3140
+        },
+        {
+          "base": "single",
+          "valor": 3675
+        },
+        {
+          "base": "triple",
+          "valor": 3100
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Buenos Aires (EZE) – Lima (LIM)",
+          "clase": "",
+          "fecha": "07/05/2027",
+          "horario": "07:20 – 10:10",
+          "numero": "LA 2976",
+          "equipaje": "Equipaje incluido"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Lima (LIM) – Arequipa (AQP)",
+          "clase": "",
+          "fecha": "09/05/2027",
+          "horario": "05:50 – 07:20",
+          "numero": "LA 2103",
+          "equipaje": "Equipaje incluido"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Cusco (CUZ) – Lima (LIM)",
+          "clase": "",
+          "fecha": "17/05/2027",
+          "horario": "08:40 – 10:15",
+          "numero": "LA 2293",
+          "equipaje": "Equipaje incluido"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Lima (LIM) – Buenos Aires (AEP)",
+          "clase": "",
+          "fecha": "17/05/2027",
+          "horario": "12:10 – 18:30",
+          "numero": "LA 2369",
+          "equipaje": "Equipaje incluido"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.vietur.com.ar/circuitos/1/11825?product_type=2&currency=USD",
+        "fecha": "2026-10-20",
+        "desglose": "Panel de la salida 07/05/2027, categoría Turista: doble USD 2.430 + 710 tax = 3.140; single 2.915 + 760 = 3.675; triple 2.400 + 700 = 3.100; doble a compartir 2.670 + 740 = 3.410. Según legales, los TAX incluyen impuestos aéreos DNT, IVA terrestre, gastos administrativos y de reserva. Pagos en pesos: percepción 30% RG 5463 aparte (aéreo USD 173; terrestre DBL USD 415 / SGL 524 / DBL a compartir 470 / TPL 409). La web es para agencias y no marca el precio como neto ni comisionable: confirmar que es precio de venta al público. Noches por ciudad deducidas del itinerario (Lima 2, Arequipa 1, Colca 1, Puno 2, Cusco 3, Valle Sagrado 1). Leído con Playwright sin login ni formularios."
+      },
+      "codigo_ref": "VT-11825"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "Precio total por persona: tarifa USD 985 más impuestos y gastos USD 110, con Pousada Vila do Sol. Las demás posadas tienen su precio total en \"Precios por persona\".",
+      "condiciones": [
+        "Aéreo confirmado con cupo; los tickets se emiten entre 60 y 30 días antes de la salida y no admiten devolución ni cambios.",
+        "Asistencia al viajero válida hasta 70 años; de 71 a 85 años suplemento USD 29 y desde 86 años USD 58, sin seguro de cancelación.",
+        "Varias posadas tienen tarifa no reembolsable (ver detalle en cada opción).",
+        "Cancelaciones: hasta 71 días antes, 35% del total; entre 70 y 46 días, 60%; dentro de los 45 días o no presentación, 100%.",
+        "Tarifas sujetas a modificación y disponibilidad al momento de la confirmación."
+      ],
+      "no_incluye": [],
+      "hoteles": [
+        {
+          "ciudad": "Búzios",
+          "nombre": "Pousada Vila do Sol",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Ocupación máxima 2 adultos + 1 menor · no reembolsable",
+          "web": "",
+          "id": "",
+          "mapa": "Pousada Vila do Sol, Búzios",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Búzios",
+          "nombre": "Pousada Vila Pitanga",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Ocupación máxima 2 adultos + 1 menor · no reembolsable",
+          "web": "",
+          "id": "",
+          "mapa": "Pousada Vila Pitanga, Búzios",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Búzios",
+          "nombre": "Gammel Dansk",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Ocupación máxima 2 adultos + 2 menores · no reembolsable",
+          "web": "",
+          "id": "",
+          "mapa": "Gammel Dansk, Búzios",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Búzios",
+          "nombre": "Villa Mercedes",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Ocupación máxima solo 2 adultos · no reembolsable",
+          "web": "",
+          "id": "",
+          "mapa": "Villa Mercedes, Búzios",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Búzios",
+          "nombre": "Pousada Villegaignon",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Ocupación máxima 2 adultos + 2 menores · no reembolsable",
+          "web": "",
+          "id": "",
+          "mapa": "Pousada Villegaignon, Búzios",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Búzios",
+          "nombre": "Barra da Lagoa Hotel",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Ocupación máxima 2 adultos + 2 menores · no reembolsable",
+          "web": "",
+          "id": "",
+          "mapa": "Barra da Lagoa Hotel, Búzios",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Búzios",
+          "nombre": "Pousada Lestada",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Ocupación máxima 2 adultos + 2 menores · no reembolsable",
+          "web": "",
+          "id": "",
+          "mapa": "Pousada Lestada, Búzios",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Búzios",
+          "nombre": "Pousada dos Tangarás",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Ocupación máxima 2 adultos + 2 menores",
+          "web": "",
+          "id": "",
+          "mapa": "Pousada dos Tangarás, Búzios",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Búzios",
+          "nombre": "Bucaneiro",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Ocupación máxima 2 adultos + 2 menores",
+          "web": "",
+          "id": "",
+          "mapa": "Bucaneiro, Búzios",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Búzios",
+          "nombre": "La Foret",
+          "categoria": "3*",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Ocupación máxima 2 adultos + 2 menores",
+          "web": "",
+          "id": "",
+          "mapa": "La Foret, Búzios",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Búzios",
+          "nombre": "Armação dos Búzios Pousada Design",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Ocupación máxima 2 adultos + 1 menor · no reembolsable",
+          "web": "",
+          "id": "",
+          "mapa": "Armação dos Búzios Pousada Design, Búzios",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Búzios",
+          "nombre": "Ilha Branca Inn",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Ocupación máxima 2 adultos + 2 menores · no reembolsable",
+          "web": "",
+          "id": "",
+          "mapa": "Ilha Branca Inn, Búzios",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Búzios",
+          "nombre": "Pousada La Chimere",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Ocupación máxima 2 adultos + 1 menor · no reembolsable",
+          "web": "",
+          "id": "",
+          "mapa": "Pousada La Chimere, Búzios",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Búzios",
+          "nombre": "La Boheme",
+          "categoria": "",
+          "noches": 7,
+          "regimen": "Desayuno",
+          "habitacion": "Ocupación máxima 2 adultos + 2 menores",
+          "web": "",
+          "id": "",
+          "mapa": "La Boheme, Búzios",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Pousada Vila do Sol · base doble",
+          "precio": "USD 1.095"
+        },
+        {
+          "etiqueta": "Pousada Vila Pitanga · base doble",
+          "precio": "USD 1.215"
+        },
+        {
+          "etiqueta": "Gammel Dansk · base doble",
+          "precio": "USD 1.220"
+        },
+        {
+          "etiqueta": "Villa Mercedes · base doble",
+          "precio": "USD 1.220"
+        },
+        {
+          "etiqueta": "Pousada Villegaignon · base doble",
+          "precio": "USD 1.285"
+        },
+        {
+          "etiqueta": "Barra da Lagoa Hotel · base doble",
+          "precio": "USD 1.285"
+        },
+        {
+          "etiqueta": "Pousada Lestada · base doble",
+          "precio": "USD 1.305"
+        },
+        {
+          "etiqueta": "Pousada dos Tangarás · base doble",
+          "precio": "USD 1.340"
+        },
+        {
+          "etiqueta": "Bucaneiro · base doble",
+          "precio": "USD 1.350"
+        },
+        {
+          "etiqueta": "La Foret · base doble",
+          "precio": "USD 1.405"
+        },
+        {
+          "etiqueta": "Armação dos Búzios Pousada Design · base doble",
+          "precio": "USD 1.455"
+        },
+        {
+          "etiqueta": "Ilha Branca Inn · base doble",
+          "precio": "USD 1.495"
+        },
+        {
+          "etiqueta": "Pousada La Chimere · base doble",
+          "precio": "USD 1.615"
+        },
+        {
+          "etiqueta": "La Boheme · base doble",
+          "precio": "USD 1.805"
+        }
+      ],
+      "id": "buzios-posadas-ene-2027",
+      "titulo": "Búzios, posada a elección · 11 de enero 2027",
+      "region": "brasil",
+      "destinos": [
+        "Búzios"
+      ],
+      "resumen": "Una semana en Búzios con vuelo directo a Río y traslados, eligiendo entre catorce posadas y hoteles con desayuno. Playas, calle das Pedras y paseos en barco a tu ritmo.",
+      "precio_desde": {
+        "valor": 1095,
+        "moneda": "USD",
+        "nota": "por persona en base doble · total con impuestos"
+      },
+      "salida": "11 de enero 2027",
+      "vigencia": "2027-01-11",
+      "noches": 7,
+      "operador": "VieTur",
+      "operador_sigla": "VT",
+      "ref": "VT-11817",
+      "incluye": [
+        "Aéreo Buenos Aires (EZE) – Río de Janeiro (GIG) – Buenos Aires por LATAM, clase económica",
+        "Bolso de mano y carry on de 12 kg",
+        "Traslados de llegada y salida",
+        "7 noches de alojamiento con desayuno en la posada elegida",
+        "Asistencia al viajero Universal Assistance con cancelación, hasta 70 años"
+      ],
+      "imagen": "assets/img/pexels/18988842-1200.jpg",
+      "imagen_alt": "Vista aérea de la playa de Ferradurinha con aguas turquesa, Búzios, Brasil",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 1095
+        },
+        {
+          "base": "single",
+          "valor": 1660
+        },
+        {
+          "base": "triple",
+          "valor": 1015
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Buenos Aires (EZE) – Río de Janeiro (GIG)",
+          "clase": "",
+          "fecha": "11/01/2027",
+          "horario": "15:10 – 18:10",
+          "numero": "LA 777",
+          "equipaje": "Bolso de mano + carry on 12 kg"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Río de Janeiro (GIG) – Buenos Aires (EZE)",
+          "clase": "",
+          "fecha": "18/01/2027",
+          "horario": "10:30 – 13:55",
+          "numero": "LA 776",
+          "equipaje": "Bolso de mano + carry on 12 kg"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.vietur.com.ar/circuitos/1/11817?product_type=8&currency=USD",
+        "fecha": "2026-10-20",
+        "desglose": "Panel de la salida 11/01/2027, precio por persona + USD 110 tax en todas las opciones. Base doble (tarifa / total): Pousada Vila do Sol 985 / 1095; Pousada Vila Pitanga 1105 / 1215; Gammel Dansk 1110 / 1220; Villa Mercedes 1110 / 1220; Pousada Villegaignon 1175 / 1285; Barra da Lagoa Hotel 1175 / 1285; Pousada Lestada 1195 / 1305; Pousada dos Tangarás 1230 / 1340; Bucaneiro 1240 / 1350; La Foret 1295 / 1405; Armação dos Búzios Pousada Design 1345 / 1455; Ilha Branca Inn 1385 / 1495; Pousada La Chimere 1505 / 1615; La Boheme 1695 / 1805. Single y triple de la posada Desde: 1.550 + 110 = 1.660 y 905 + 110 = 1.015. Los legales dicen que las tarifas no incluyen IVA ni gastos administrativos: se asume que el 'tax' de USD 110 los cubre; confirmar. Pagos en pesos: percepción 30% RG 5463 aparte (aéreo USD 85 y terrestre según posada). La web es para agencias y no marca el precio como neto ni comisionable: confirmar que es precio de venta al público. Existe buzios-ene-2027 (otro operador, 9/1/2027, USD 1.500): mismo destino y semana, distinto producto. Leído con Playwright sin login ni formularios."
+      },
+      "codigo_ref": "VT-11817"
     }
   ]
 }
