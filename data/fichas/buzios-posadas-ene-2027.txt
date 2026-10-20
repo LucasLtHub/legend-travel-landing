@@ -1,6 +1,6 @@
 Fuente: https://www.vietur.com.ar/circuitos/1/11817?product_type=8&currency=USD
 Copiado el: 2026-10-20
-Paquete en data/paquetes.json: buzios-vietur-ene-2027
+Paquete en data/paquetes.json: buzios-posadas-ene-2027
 Código: VT-11817
 Nota: página leída con Playwright sin login ni cookies; las secciones plegadas y el panel de cada salida (precios por base) se leyeron sin enviar formularios.
 
