@@ -11033,6 +11033,136 @@
         "desglose": "Precio final por persona en base doble publicado por el operador: USD 2.537 (total 2 adultos USD 5.074). La ficha no desglosa componentes. Otras salidas listadas sin precio: enero a marzo 2027."
       },
       "codigo_ref": "AS-162781"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Desayuno",
+      "nota_impuestos": "Precio final por persona en base doble publicado como tarifa final (sin cargos adicionales informados).",
+      "condiciones": [
+        "Aéreo con cupo confirmado.",
+        "Precio válido para la salida del 5 de diciembre 2026, con Hotel Nevada. Las otras opciones de hotel tienen su precio en \"Precios por persona\".",
+        "Tarifas sujetas a modificación y disponibilidad sin previo aviso."
+      ],
+      "no_incluye": [],
+      "hoteles": [
+        {
+          "ciudad": "Bariloche",
+          "nombre": "Hotel Nevada",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "Base doble",
+          "web": "",
+          "id": "",
+          "mapa": "Hotel Nevada, Bariloche",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Bariloche",
+          "nombre": "Huinid Pioneros Aparts",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "Base doble",
+          "web": "",
+          "id": "",
+          "mapa": "Huinid Pioneros Aparts, Bariloche",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Bariloche",
+          "nombre": "Hotel Cristal Bariloche",
+          "categoria": "",
+          "noches": 3,
+          "regimen": "Desayuno",
+          "habitacion": "Base doble",
+          "web": "",
+          "id": "",
+          "mapa": "Hotel Cristal Bariloche, Bariloche",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [],
+      "tarifas": [
+        {
+          "etiqueta": "Hotel Nevada · base doble",
+          "precio": "ARS 699.030"
+        },
+        {
+          "etiqueta": "Huinid Pioneros Aparts · base doble",
+          "precio": "ARS 867.080"
+        },
+        {
+          "etiqueta": "Hotel Cristal Bariloche · base doble",
+          "precio": "ARS 895.315"
+        }
+      ],
+      "id": "bariloche-finde-largo-dic-2026",
+      "titulo": "Bariloche, fin de semana largo · 5 al 8 de diciembre 2026",
+      "region": "argentina",
+      "destinos": [
+        "Bariloche"
+      ],
+      "resumen": "Cuatro días en Bariloche aprovechando el feriado de diciembre: vuelo directo con cupo confirmado, tres noches con desayuno a elección entre tres hoteles, traslados y la excursión al Circuito Chico con sus miradores sobre el Nahuel Huapi.",
+      "precio_desde": {
+        "valor": 699030,
+        "moneda": "ARS",
+        "nota": "por persona en base doble · precio final"
+      },
+      "salida": "5 de diciembre 2026",
+      "vigencia": "2026-12-05",
+      "noches": 3,
+      "operador": "Station Travel",
+      "operador_sigla": "ST",
+      "ref": "ST-F82F837EC63E",
+      "incluye": [
+        "Aéreo Buenos Aires – Bariloche – Buenos Aires con cupo confirmado",
+        "Equipaje de 10 kg",
+        "Traslados aeropuerto – hotel – aeropuerto",
+        "3 noches de alojamiento con desayuno",
+        "Excursión Circuito Chico",
+        "Asistencia médica Universal Assistance"
+      ],
+      "imagen": "assets/img/pexels/38227808-1200.jpg",
+      "imagen_alt": "Lago Nahuel Huapi con la ciudad de Bariloche y la cordillera de los Andes al fondo, entre pinos",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 699030
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "JetSMART",
+          "ruta": "Buenos Aires (EZE) – Bariloche (BRC)",
+          "clase": "",
+          "fecha": "05/12/2026",
+          "horario": "07:00 – 09:21",
+          "numero": "JA 3043",
+          "equipaje": "10 kg"
+        },
+        {
+          "aerolinea": "JetSMART",
+          "ruta": "Bariloche (BRC) – Buenos Aires (EZE)",
+          "clase": "",
+          "fecha": "08/12/2026",
+          "horario": "23:26 – 01:34 (+1)",
+          "numero": "JA 3052",
+          "equipaje": "10 kg"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://stationtravel.tur.ar/producto?id=F82F837EC63E",
+        "fecha": "2026-10-20",
+        "desglose": "Precios por persona en base doble publicados por el operador como finales, según hotel del selector: Hotel Nevada ARS 699.030 (Desde), Huinid Pioneros Aparts ARS 867.080, Hotel Cristal Bariloche ARS 895.315. La ficha no desglosa componentes ni informa categoría de los hoteles. Leído con Playwright sin enviar formularios."
+      },
+      "codigo_ref": "ST-F82F837EC63E"
     }
   ]
 }

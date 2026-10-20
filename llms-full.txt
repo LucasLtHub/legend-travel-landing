@@ -39,7 +39,7 @@
 - Instagram: https://www.instagram.com/legendtraveloficial
 - Web: https://www.legendtravel.com.ar
 
-Generado el 2026-10-19 por build-paquetes.py. Resumen corto: https://www.legendtravel.com.ar/llms.txt
+Generado el 2026-10-20 por build-paquetes.py. Resumen corto: https://www.legendtravel.com.ar/llms.txt
 
 ## Historia
 - Una familia que lleva
@@ -106,7 +106,7 @@ Generado el 2026-10-19 por build-paquetes.py. Resumen corto: https://www.legendt
 - Tarjeta de crédito (nacionales)
 
 ## Paquetes y salidas vigentes (detalle)
-Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo salidas vigentes al 19/10/2026.
+Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo salidas vigentes al 20/10/2026.
 
 ### Año Nuevo a bordo del Costa Serena
 - URL: https://www.legendtravel.com.ar/paquetes/anio-nuevo-costa-serena
@@ -275,6 +275,19 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Hotel: Hotel Tolosa (Puerto Madryn, 4*, 3 noches, Habitación estándar) — En el centro comercial de la ciudad, a 250 metros de la playa; Desayuno buffet con panificados propios y opciones sin gluten; Restaurante y snack bar con platos aptos para celíacos; Bicicletas de paseo sin cargo y wifi gratis
 - Resumen: Avistaje embarcado de ballenas, la experiencia nocturna bajo la luna llena en El Doradillo y la fauna patagónica en uno de los destinos naturales más increíbles del país.
 - Vigente hasta: 31/12/2026
+
+### Bariloche, fin de semana largo · 5 al 8 de diciembre 2026
+- URL: https://www.legendtravel.com.ar/paquetes/bariloche-finde-largo-dic-2026
+- Destinos: Bariloche
+- Salida: 5 de diciembre 2026 · 3 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
+- Precio: desde ARS 699.030 por persona en base doble (por persona en base doble · precio final)
+- Impuestos: Precio final por persona en base doble publicado como tarifa final (sin cargos adicionales informados).
+- Incluye: Aéreo Buenos Aires – Bariloche – Buenos Aires con cupo confirmado; Equipaje de 10 kg; Traslados aeropuerto – hotel – aeropuerto; 3 noches de alojamiento con desayuno; Excursión Circuito Chico; Asistencia médica Universal Assistance
+- Hotel: Hotel Nevada (Bariloche, 3 noches, Desayuno, Base doble)
+- Hotel: Huinid Pioneros Aparts (Bariloche, 3 noches, Desayuno, Base doble)
+- Hotel: Hotel Cristal Bariloche (Bariloche, 3 noches, Desayuno, Base doble)
+- Resumen: Cuatro días en Bariloche aprovechando el feriado de diciembre: vuelo directo con cupo confirmado, tres noches con desayuno a elección entre tres hoteles, traslados y la excursión al Circuito Chico con sus miradores sobre el Nahuel Huapi.
+- Vigente hasta: 05/12/2026
 
 ### Navidad a bordo del Costa Diadema
 - URL: https://www.legendtravel.com.ar/paquetes/navidad-costa-diadema

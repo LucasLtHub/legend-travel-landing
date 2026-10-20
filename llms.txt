@@ -33,7 +33,7 @@ Versión completa (historia, medios de pago, detalle de cada paquete con hoteles
 
 <!-- PAQUETES:START -->
 ## Salidas y paquetes actuales
-Generado el 2026-10-19 desde data/paquetes.json. Solo salidas vigentes:
+Generado el 2026-10-20 desde data/paquetes.json. Solo salidas vigentes:
 lo inactivo o vencido se retira de esta lista automáticamente.
 Precios por persona en base doble, salvo que el paquete indique otra base. Sujeto a disponibilidad al momento de la reserva.
 
@@ -49,6 +49,7 @@ Precios por persona en base doble, salvo que el paquete indique otra base. Sujet
 - Cruce Andino: Bariloche & Puerto Varas — desde ARS 1.322.790 — Salida: Salidas del 16/09 al 30/12/2026 — https://www.legendtravel.com.ar/paquetes/cruce-andino-bariloche-puerto-varas
 - Mendoza: Experiencia entre Viñedos — desde ARS 642.990 — Salida: Salidas los lunes, del 16/09 al 28/12/2026 — https://www.legendtravel.com.ar/paquetes/mendoza-vinedos
 - Puerto Madryn: Puerto Pirámides con Avistaje de Ballenas — desde ARS 1.198.657 — Salida: Salidas del 16/09 al 31/12/2026 — https://www.legendtravel.com.ar/paquetes/puerto-madryn-ballenas
+- Bariloche, fin de semana largo · 5 al 8 de diciembre 2026 — desde ARS 699.030 — Salida: 5 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/bariloche-finde-largo-dic-2026
 - Navidad a bordo del Costa Diadema — desde USD 1.334 — Salida: 23 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/navidad-costa-diadema
 - Recibí el 2027 en Altamar — Costa Diadema — desde USD 1.536 — Salida: 30 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/2027-altamar-costa-diadema
 - Punta Cana & Bayahíbe All Inclusive — desde USD 2.400 — Salida: 2 de enero 2027 — https://www.legendtravel.com.ar/paquetes/punta-cana-bayahibe
