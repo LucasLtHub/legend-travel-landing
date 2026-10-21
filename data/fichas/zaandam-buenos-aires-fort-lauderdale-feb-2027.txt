@@ -1,0 +1,19 @@
+Fuente: datos de capturas del buscador del operador (el sitio no se puede leer: bloqueado)
+Copiado el: 2026-10-21
+Paquete en data/paquetes.json: zaandam-buenos-aires-fort-lauderdale-feb-2027
+Código: DC-ZAA29
+Nota: datos de capturas del buscador del operador, transcriptos por el usuario en el pedido 'Paquetes nuevos, parte 8: cruceros'.
+
+Zaandam (Holland America Line) — Buenos Aires a Fort Lauderdale, 29 noches
+Salida: 13/02/2027 desde Buenos Aires. Llegada: Fort Lauderdale, Estados Unidos.
+Escalas: Santos, Ilhabela, Río de Janeiro, Salvador, Recife, Fortaleza, Belém, Isla del Diablo, Bridgetown, Castries, Basseterre, San Juan.
+Precios por pasajero, impuestos incluidos: interior USD 5.999, exterior USD 7.099, suite USD 12.899 (balcón no disponible). Desde USD 5.999 en cabina interior.
+
+En los tres (indicado por el usuario):
+- Incluye: crucero en la cabina elegida, pensión completa a bordo y tasas e impuestos portuarios.
+- No incluye: aéreo de regreso (crucero solo, de ida), cargos por servicio a bordo (propinas), excursiones en tierra, bebidas y gastos personales.
+- Pago: percepción del 30% RG 5463 si se abona en pesos.
+- Requisitos: Princess (termina en Reino Unido) → ETA del Reino Unido obligatoria. Zaandam (termina en Estados Unidos) → visa de Estados Unidos obligatoria para pasaporte argentino.
+- Itinerario: solo escalas en orden; sin días ni fechas por puerto.
+- Vigencia: 30 días desde la carga (tarifas de promoción sin fecha) → 2026-11-20.
+- Faltantes: confirmar propinas, confirmar precio de venta al público, itinerario día por día.

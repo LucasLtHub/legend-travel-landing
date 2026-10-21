@@ -39,7 +39,7 @@
 - Instagram: https://www.instagram.com/legendtraveloficial
 - Web: https://www.legendtravel.com.ar
 
-Generado el 2026-10-20 por build-paquetes.py. Resumen corto: https://www.legendtravel.com.ar/llms.txt
+Generado el 2026-10-21 por build-paquetes.py. Resumen corto: https://www.legendtravel.com.ar/llms.txt
 
 ## Historia
 - Una familia que lleva
@@ -106,7 +106,7 @@ Generado el 2026-10-20 por build-paquetes.py. Resumen corto: https://www.legendt
 - Tarjeta de crédito (nacionales)
 
 ## Paquetes y salidas vigentes (detalle)
-Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo salidas vigentes al 20/10/2026.
+Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo salidas vigentes al 21/10/2026.
 
 ### Año Nuevo a bordo del Costa Serena
 - URL: https://www.legendtravel.com.ar/paquetes/anio-nuevo-costa-serena
@@ -578,6 +578,39 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Hotel: Hotel Riu Caribe (Cancún, 5*, 10 noches, All Inclusive, Habitación estándar) — Sobre la playa, en la Zona Hotelera de Cancún; Todo Incluido 24 horas con seis restaurantes; Cinco piscinas, una infantil y otra con bar acuático; Club infantil, spa y gimnasio
 - Resumen: 10 noches en Cancún con sistema all inclusive: playas turquesa, gastronomía y descanso sin preocupaciones.
 - Vigente hasta: 08/02/2027
+
+### Majestic Princess: de Buenos Aires a Southampton · 9 de febrero 2027
+- URL: https://www.legendtravel.com.ar/paquetes/majestic-princess-buenos-aires-southampton-feb-2027
+- Destinos: Montevideo, Río de Janeiro, Las Palmas de Gran Canaria, Arrecife (Lanzarote), Santa Cruz de Tenerife, Casablanca, La Coruña
+- Salida: 9 de febrero 2027 — embarque en Buenos Aires · 22 noches · Régimen: Pensión completa a bordo
+- Precio: desde USD 3.197 por persona en base doble (por persona en base doble, cabina interior — impuestos incluidos)
+- Impuestos: Tarifas por pasajero con impuestos incluidos. Si se abona en pesos corresponde la percepción del 30% RG 5463.
+- Incluye: Crucero de 22 noches a bordo del Majestic Princess en la cabina elegida, en base doble; Pensión completa a bordo; Tasas e impuestos portuarios
+- No incluye: El aéreo de regreso no está incluido: el crucero es solo de ida, te lo cotizamos; Cargos por servicio a bordo (propinas); Excursiones en tierra; Bebidas; Gastos personales
+- Resumen: Cruzar el Atlántico a bordo del Majestic Princess: 22 noches desde Buenos Aires hasta Inglaterra con escalas en Montevideo, Río de Janeiro, las islas Canarias, Casablanca y La Coruña, con pensión completa a bordo. Es solo de ida: el aéreo de regreso te lo cotizamos.
+- Vigente hasta: 20/11/2026
+
+### Majestic Princess: Buenos Aires a Southampton con fiordos noruegos · 9 de febrero 2027
+- URL: https://www.legendtravel.com.ar/paquetes/majestic-princess-fiordos-noruegos-feb-2027
+- Destinos: Montevideo, Río de Janeiro, Las Palmas de Gran Canaria, Arrecife (Lanzarote), Santa Cruz de Tenerife, Casablanca, La Coruña, Alesund, Trondheim, Tromsø, Alta, Molde
+- Salida: 9 de febrero 2027 — embarque en Buenos Aires · 36 noches · Régimen: Pensión completa a bordo
+- Precio: desde USD 7.237 por persona en base doble (por persona en base doble, cabina interior — impuestos incluidos)
+- Impuestos: Tarifas por pasajero con impuestos incluidos. Si se abona en pesos corresponde la percepción del 30% RG 5463.
+- Incluye: Crucero de 36 noches a bordo del Majestic Princess en la cabina elegida, en base doble; Pensión completa a bordo; Tasas e impuestos portuarios
+- No incluye: El aéreo de regreso no está incluido: el crucero es solo de ida, te lo cotizamos; Cargos por servicio a bordo (propinas); Excursiones en tierra; Bebidas; Gastos personales
+- Resumen: 36 noches a bordo del Majestic Princess: la travesía transatlántica desde Buenos Aires con Río, Canarias y Casablanca, y después los fiordos noruegos hasta Tromsø y Alta, en busca de la aurora boreal, antes de desembarcar en Inglaterra. Es solo de ida: el aéreo de regreso te lo cotizamos.
+- Vigente hasta: 20/11/2026
+
+### Zaandam: de Buenos Aires a Fort Lauderdale · 13 de febrero 2027
+- URL: https://www.legendtravel.com.ar/paquetes/zaandam-buenos-aires-fort-lauderdale-feb-2027
+- Destinos: Santos, Ilhabela, Río de Janeiro, Salvador, Recife, Fortaleza, Belém, Isla del Diablo, Bridgetown, Castries, Basseterre, San Juan
+- Salida: 13 de febrero 2027 — embarque en Buenos Aires · 29 noches · Régimen: Pensión completa a bordo
+- Precio: desde USD 12.899 por persona en base doble (por persona en base doble, cabina interior — impuestos incluidos)
+- Impuestos: Tarifas por pasajero con impuestos incluidos. Si se abona en pesos corresponde la percepción del 30% RG 5463.
+- Incluye: Crucero de 29 noches a bordo del Zaandam en la cabina elegida, en base doble; Pensión completa a bordo; Tasas e impuestos portuarios
+- No incluye: El aéreo de regreso no está incluido: el crucero es solo de ida, te lo cotizamos; Cargos por servicio a bordo (propinas); Excursiones en tierra; Bebidas; Gastos personales
+- Resumen: 29 noches a bordo del Zaandam, de Holland America Line, recorriendo toda la costa de Brasil, la Isla del Diablo y las islas del Caribe hasta Florida, con pensión completa a bordo. Es solo de ida: el aéreo de regreso te lo cotizamos.
+- Vigente hasta: 20/11/2026
 
 ### Miami & Bayahíbe — 14 de febrero 2027
 - URL: https://www.legendtravel.com.ar/paquetes/miami-bayahibe-feb-2027

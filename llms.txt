@@ -33,7 +33,7 @@ Versión completa (historia, medios de pago, detalle de cada paquete con hoteles
 
 <!-- PAQUETES:START -->
 ## Salidas y paquetes actuales
-Generado el 2026-10-20 desde data/paquetes.json. Solo salidas vigentes:
+Generado el 2026-10-21 desde data/paquetes.json. Solo salidas vigentes:
 lo inactivo o vencido se retira de esta lista automáticamente.
 Precios por persona en base doble, salvo que el paquete indique otra base. Sujeto a disponibilidad al momento de la reserva.
 
@@ -72,6 +72,9 @@ Precios por persona en base doble, salvo que el paquete indique otra base. Sujet
 - Riviera Maya & Cancún — 25 de enero 2027 — desde USD 3.159 — Salida: 25 de enero 2027 — https://www.legendtravel.com.ar/paquetes/riviera-maya-cancun-ene-2027
 - Maceió — 26 de enero 2027 — desde USD 1.511 — Salida: 26 de enero 2027 — https://www.legendtravel.com.ar/paquetes/maceio-ene-2027
 - Cancún All Inclusive — desde USD 3.840 — Salida: 8 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/cancun-all-inclusive
+- Majestic Princess: de Buenos Aires a Southampton · 9 de febrero 2027 — desde USD 1.808 — Salida: 9 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/majestic-princess-buenos-aires-southampton-feb-2027
+- Majestic Princess: Buenos Aires a Southampton con fiordos noruegos · 9 de febrero 2027 — desde USD 4.531 — Salida: 9 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/majestic-princess-fiordos-noruegos-feb-2027
+- Zaandam: de Buenos Aires a Fort Lauderdale · 13 de febrero 2027 — desde USD 5.999 — Salida: 13 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/zaandam-buenos-aires-fort-lauderdale-feb-2027
 - Miami & Bayahíbe — 14 de febrero 2027 — desde USD 3.485 — Salida: 14 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/miami-bayahibe-feb-2027
 - Praia do Forte, all inclusive en Bahía — 20 de febrero 2027 — desde USD 2.537 — Salida: 20 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/praia-do-forte-feb-2027
 - Kenia & Tanzania — Safari grupal con Zanzíbar — desde USD 11.900 — Salida: 22 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/kenia-tanzania

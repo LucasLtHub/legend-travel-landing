@@ -12031,6 +12031,473 @@
         "desglose": "Panel de la salida 11/01/2027: precio por persona + USD 110 tax en todas las opciones. Los legales dicen que las tarifas no incluyen IVA, gastos administrativos ni gastos de reserva y no dan el monto: por decisión del usuario (20/10/2026) se suma 5% sobre tarifa + tax, redondeando hacia arriba al dólar, como estimado a confirmar por el equipo. Desde (Pousada Vila do Sol): tarifa 985 + tax 110 + 5% estimado de IVA y gastos, a confirmar por el equipo = USD 1.150 en base doble; single 1.550 + 110 + 5% = 1.743; triple 905 + 110 + 5% = 1.066. Base doble por posada (tarifa / total estimado): Pousada Vila do Sol 985 / 1150; Pousada Vila Pitanga 1105 / 1276; Gammel Dansk 1110 / 1281; Villa Mercedes 1110 / 1281; Pousada Villegaignon 1175 / 1350; Barra da Lagoa Hotel 1175 / 1350; Pousada Lestada 1195 / 1371; Pousada dos Tangarás 1230 / 1407; Bucaneiro 1240 / 1418; La Foret 1295 / 1476; Armação dos Búzios Pousada Design 1345 / 1528; Ilha Branca Inn 1385 / 1570; Pousada La Chimere 1505 / 1696; La Boheme 1695 / 1896. Pagos en pesos: percepción 30% RG 5463 aparte (aéreo USD 85 y terrestre según posada). La web es para agencias y no marca el precio como neto ni comisionable: confirmar que es precio de venta al público. Existe buzios-ene-2027 (otro operador, 9/1/2027, USD 1.500): mismo destino y semana, distinto producto. Leído con Playwright sin login ni formularios."
       },
       "codigo_ref": "VT-11817"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Pensión completa a bordo",
+      "nota_impuestos": "Tarifas por pasajero con impuestos incluidos. Si se abona en pesos corresponde la percepción del 30% RG 5463.",
+      "condiciones": [
+        "El crucero es solo de ida: el aéreo de regreso no está incluido, te lo cotizamos.",
+        "Tarifas de promoción por pasajero en base doble, sujetas a modificación y disponibilidad al momento de la reserva.",
+        "El itinerario y los horarios pueden cambiar por razones operativas o climáticas propias de la navegación.",
+        "Documentación: para desembarcar en el Reino Unido se necesita la ETA (autorización electrónica de viaje) del Reino Unido, obligatoria; el trámite es personal de cada pasajero.",
+        "Cabina exterior no disponible en esta promoción."
+      ],
+      "no_incluye": [
+        "El aéreo de regreso no está incluido: el crucero es solo de ida, te lo cotizamos",
+        "Cargos por servicio a bordo (propinas)",
+        "Excursiones en tierra",
+        "Bebidas",
+        "Gastos personales"
+      ],
+      "hoteles": [],
+      "itinerario": [
+        {
+          "dia": "Embarque",
+          "titulo": "Buenos Aires",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Montevideo",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Río de Janeiro",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Las Palmas de Gran Canaria",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Arrecife (Lanzarote)",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Santa Cruz de Tenerife",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Casablanca",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "La Coruña",
+          "texto": ""
+        },
+        {
+          "dia": "Desembarque",
+          "titulo": "Southampton, Inglaterra",
+          "texto": ""
+        }
+      ],
+      "tarifas": [],
+      "id": "majestic-princess-buenos-aires-southampton-feb-2027",
+      "titulo": "Majestic Princess: de Buenos Aires a Southampton · 9 de febrero 2027",
+      "region": "cruceros",
+      "destinos": [
+        "Montevideo",
+        "Río de Janeiro",
+        "Las Palmas de Gran Canaria",
+        "Arrecife (Lanzarote)",
+        "Santa Cruz de Tenerife",
+        "Casablanca",
+        "La Coruña"
+      ],
+      "resumen": "Cruzar el Atlántico a bordo del Majestic Princess: 22 noches desde Buenos Aires hasta Inglaterra con escalas en Montevideo, Río de Janeiro, las islas Canarias, Casablanca y La Coruña, con pensión completa a bordo. Es solo de ida: el aéreo de regreso te lo cotizamos.",
+      "precio_desde": {
+        "valor": 1808,
+        "moneda": "USD",
+        "nota": "por persona en base doble, cabina interior — impuestos incluidos"
+      },
+      "salida": "9 de febrero 2027 — embarque en Buenos Aires",
+      "vigencia": "2026-11-20",
+      "noches": 22,
+      "operador": "Discover Cruises",
+      "operador_sigla": "DC",
+      "ref": "DC-MAJ22",
+      "incluye": [
+        "Crucero de 22 noches a bordo del Majestic Princess en la cabina elegida, en base doble",
+        "Pensión completa a bordo",
+        "Tasas e impuestos portuarios"
+      ],
+      "imagen": "assets/img/pexels/5334261-1200.jpg",
+      "imagen_alt": "Cubierta de paseo de un crucero al atardecer, con el mar abierto de fondo",
+      "precios": [
+        {
+          "base": "doble",
+          "cabina": "Interior",
+          "valor": 1808
+        },
+        {
+          "base": "doble",
+          "cabina": "Balcón",
+          "valor": 2104
+        },
+        {
+          "base": "doble",
+          "cabina": "Suite",
+          "valor": 3197
+        }
+      ],
+      "vuelos": [],
+      "crucero": {
+        "naviera": "Princess Cruises",
+        "barco": "Majestic Princess",
+        "cabina": "Interior, balcón o suite",
+        "bebidas": "No incluidas",
+        "propinas": "No incluidas (cargos por servicio a bordo)",
+        "wifi": "",
+        "asistencia": "",
+        "web": "https://www.princess.com/"
+      },
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "",
+        "fecha": "2026-10-21",
+        "desglose": "Datos de capturas del buscador del operador transcriptos por el usuario el 21/10/2026 (el sitio del operador está bloqueado). Precios por pasajero con impuestos incluidos, cabina interior USD 1.808, balcón USD 2.104, suite USD 3.197 (exterior no disponible). Tarifas de promoción sin fecha: vigencia 30 días desde la carga. Faltantes: confirmar propinas, confirmar precio de venta al público, itinerario día por día. Termina en el Reino Unido: ETA obligatoria."
+      },
+      "codigo_ref": "DC-MAJ22"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Pensión completa a bordo",
+      "nota_impuestos": "Tarifas por pasajero con impuestos incluidos. Si se abona en pesos corresponde la percepción del 30% RG 5463.",
+      "condiciones": [
+        "El crucero es solo de ida: el aéreo de regreso no está incluido, te lo cotizamos.",
+        "Tarifas de promoción por pasajero en base doble, sujetas a modificación y disponibilidad al momento de la reserva.",
+        "El itinerario y los horarios pueden cambiar por razones operativas o climáticas propias de la navegación.",
+        "Documentación: para desembarcar en el Reino Unido se necesita la ETA (autorización electrónica de viaje) del Reino Unido, obligatoria; el trámite es personal de cada pasajero."
+      ],
+      "no_incluye": [
+        "El aéreo de regreso no está incluido: el crucero es solo de ida, te lo cotizamos",
+        "Cargos por servicio a bordo (propinas)",
+        "Excursiones en tierra",
+        "Bebidas",
+        "Gastos personales"
+      ],
+      "hoteles": [],
+      "itinerario": [
+        {
+          "dia": "Embarque",
+          "titulo": "Buenos Aires",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Montevideo",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Río de Janeiro",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Las Palmas de Gran Canaria",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Arrecife (Lanzarote)",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Santa Cruz de Tenerife",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Casablanca",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "La Coruña",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Alesund",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Trondheim",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Tromsø",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Alta",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Molde",
+          "texto": ""
+        },
+        {
+          "dia": "Desembarque",
+          "titulo": "Southampton, Inglaterra",
+          "texto": ""
+        }
+      ],
+      "tarifas": [],
+      "id": "majestic-princess-fiordos-noruegos-feb-2027",
+      "titulo": "Majestic Princess: Buenos Aires a Southampton con fiordos noruegos · 9 de febrero 2027",
+      "region": "cruceros",
+      "destinos": [
+        "Montevideo",
+        "Río de Janeiro",
+        "Las Palmas de Gran Canaria",
+        "Arrecife (Lanzarote)",
+        "Santa Cruz de Tenerife",
+        "Casablanca",
+        "La Coruña",
+        "Alesund",
+        "Trondheim",
+        "Tromsø",
+        "Alta",
+        "Molde"
+      ],
+      "resumen": "36 noches a bordo del Majestic Princess: la travesía transatlántica desde Buenos Aires con Río, Canarias y Casablanca, y después los fiordos noruegos hasta Tromsø y Alta, en busca de la aurora boreal, antes de desembarcar en Inglaterra. Es solo de ida: el aéreo de regreso te lo cotizamos.",
+      "precio_desde": {
+        "valor": 4531,
+        "moneda": "USD",
+        "nota": "por persona en base doble, cabina interior — impuestos incluidos"
+      },
+      "salida": "9 de febrero 2027 — embarque en Buenos Aires",
+      "vigencia": "2026-11-20",
+      "noches": 36,
+      "operador": "Discover Cruises",
+      "operador_sigla": "DC",
+      "ref": "DC-MAJ36",
+      "incluye": [
+        "Crucero de 36 noches a bordo del Majestic Princess en la cabina elegida, en base doble",
+        "Pensión completa a bordo",
+        "Tasas e impuestos portuarios"
+      ],
+      "imagen": "assets/img/pexels/34203329-1200.jpg",
+      "imagen_alt": "Crucero navegando entre las montañas de un fiordo noruego",
+      "precios": [
+        {
+          "base": "doble",
+          "cabina": "Interior",
+          "valor": 4531
+        },
+        {
+          "base": "doble",
+          "cabina": "Balcón",
+          "valor": 5107
+        },
+        {
+          "base": "doble",
+          "cabina": "Suite",
+          "valor": 7237
+        }
+      ],
+      "vuelos": [],
+      "crucero": {
+        "naviera": "Princess Cruises",
+        "barco": "Majestic Princess",
+        "cabina": "Interior, balcón o suite",
+        "bebidas": "No incluidas",
+        "propinas": "No incluidas (cargos por servicio a bordo)",
+        "wifi": "",
+        "asistencia": "",
+        "web": "https://www.princess.com/"
+      },
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "",
+        "fecha": "2026-10-21",
+        "desglose": "Datos de capturas del buscador del operador transcriptos por el usuario el 21/10/2026 (el sitio del operador está bloqueado). Precios por pasajero con impuestos incluidos, cabina interior USD 4.531, balcón USD 5.107, suite USD 7.237. Tarifas de promoción sin fecha: vigencia 30 días desde la carga. Faltantes: confirmar propinas, confirmar precio de venta al público, itinerario día por día. Termina en el Reino Unido: ETA obligatoria."
+      },
+      "codigo_ref": "DC-MAJ36"
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Pensión completa a bordo",
+      "nota_impuestos": "Tarifas por pasajero con impuestos incluidos. Si se abona en pesos corresponde la percepción del 30% RG 5463.",
+      "condiciones": [
+        "El crucero es solo de ida: el aéreo de regreso no está incluido, te lo cotizamos.",
+        "Tarifas de promoción por pasajero en base doble, sujetas a modificación y disponibilidad al momento de la reserva.",
+        "El itinerario y los horarios pueden cambiar por razones operativas o climáticas propias de la navegación.",
+        "Con pasaporte argentino se necesita visa para ingresar a Estados Unidos; el trámite es personal de cada pasajero.",
+        "Cabina con balcón no disponible en esta promoción."
+      ],
+      "no_incluye": [
+        "El aéreo de regreso no está incluido: el crucero es solo de ida, te lo cotizamos",
+        "Cargos por servicio a bordo (propinas)",
+        "Excursiones en tierra",
+        "Bebidas",
+        "Gastos personales"
+      ],
+      "hoteles": [],
+      "itinerario": [
+        {
+          "dia": "Embarque",
+          "titulo": "Buenos Aires",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Santos",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Ilhabela",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Río de Janeiro",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Salvador",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Recife",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Fortaleza",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Belém",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Isla del Diablo",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Bridgetown",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Castries",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "Basseterre",
+          "texto": ""
+        },
+        {
+          "dia": "Escala",
+          "titulo": "San Juan",
+          "texto": ""
+        },
+        {
+          "dia": "Desembarque",
+          "titulo": "Fort Lauderdale, Estados Unidos",
+          "texto": ""
+        }
+      ],
+      "tarifas": [],
+      "id": "zaandam-buenos-aires-fort-lauderdale-feb-2027",
+      "titulo": "Zaandam: de Buenos Aires a Fort Lauderdale · 13 de febrero 2027",
+      "region": "cruceros",
+      "destinos": [
+        "Santos",
+        "Ilhabela",
+        "Río de Janeiro",
+        "Salvador",
+        "Recife",
+        "Fortaleza",
+        "Belém",
+        "Isla del Diablo",
+        "Bridgetown",
+        "Castries",
+        "Basseterre",
+        "San Juan"
+      ],
+      "resumen": "29 noches a bordo del Zaandam, de Holland America Line, recorriendo toda la costa de Brasil, la Isla del Diablo y las islas del Caribe hasta Florida, con pensión completa a bordo. Es solo de ida: el aéreo de regreso te lo cotizamos.",
+      "precio_desde": {
+        "valor": 5999,
+        "moneda": "USD",
+        "nota": "por persona en base doble, cabina interior — impuestos incluidos"
+      },
+      "salida": "13 de febrero 2027 — embarque en Buenos Aires",
+      "vigencia": "2026-11-20",
+      "noches": 29,
+      "operador": "Discover Cruises",
+      "operador_sigla": "DC",
+      "ref": "DC-ZAA29",
+      "incluye": [
+        "Crucero de 29 noches a bordo del Zaandam en la cabina elegida, en base doble",
+        "Pensión completa a bordo",
+        "Tasas e impuestos portuarios"
+      ],
+      "imagen": "assets/img/pexels/38059196-1200.jpg",
+      "imagen_alt": "Crucero navegando de frente por el mar Caribe bajo un cielo azul",
+      "precios": [
+        {
+          "base": "doble",
+          "cabina": "Interior",
+          "valor": 5999
+        },
+        {
+          "base": "doble",
+          "cabina": "Exterior",
+          "valor": 7099
+        },
+        {
+          "base": "doble",
+          "cabina": "Suite",
+          "valor": 12899
+        }
+      ],
+      "vuelos": [],
+      "crucero": {
+        "naviera": "Holland America Line",
+        "barco": "Zaandam",
+        "cabina": "Interior, exterior o suite",
+        "bebidas": "No incluidas",
+        "propinas": "No incluidas (cargos por servicio a bordo)",
+        "wifi": "",
+        "asistencia": "",
+        "web": "https://www.hollandamerica.com/"
+      },
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "",
+        "fecha": "2026-10-21",
+        "desglose": "Datos de capturas del buscador del operador transcriptos por el usuario el 21/10/2026 (el sitio del operador está bloqueado). Precios por pasajero con impuestos incluidos, cabina interior USD 5.999, exterior USD 7.099, suite USD 12.899 (balcón no disponible). Tarifas de promoción sin fecha: vigencia 30 días desde la carga. Faltantes: confirmar propinas, confirmar precio de venta al público, itinerario día por día. Termina en Estados Unidos: visa obligatoria para pasaporte argentino."
+      },
+      "codigo_ref": "DC-ZAA29"
     }
   ]
 }
