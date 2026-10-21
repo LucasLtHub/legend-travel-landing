@@ -11707,9 +11707,9 @@
       "codigo_ref": "VT-11825"
     },
     {
-      "activo": true,
+      "activo": false,
       "destacado": false,
-      "motivo_inactivo": "",
+      "motivo_inactivo": "Falta confirmar si el total incluye IVA y gastos administrativos: los legales de la ficha dicen que la tarifa no los incluye y no aclaran qué cubre el tax de USD 110 (decisión del usuario, 20/10/2026).",
       "regimen": "Desayuno",
       "nota_impuestos": "Precio total por persona: tarifa USD 985 más impuestos y gastos USD 110, con Pousada Vila do Sol. Las demás posadas tienen su precio total en \"Precios por persona\".",
       "condiciones": [
@@ -12028,7 +12028,7 @@
       "fuente_detalle": {
         "url": "https://www.vietur.com.ar/circuitos/1/11817?product_type=8&currency=USD",
         "fecha": "2026-10-20",
-        "desglose": "Panel de la salida 11/01/2027, precio por persona + USD 110 tax en todas las opciones. Base doble (tarifa / total): Pousada Vila do Sol 985 / 1095; Pousada Vila Pitanga 1105 / 1215; Gammel Dansk 1110 / 1220; Villa Mercedes 1110 / 1220; Pousada Villegaignon 1175 / 1285; Barra da Lagoa Hotel 1175 / 1285; Pousada Lestada 1195 / 1305; Pousada dos Tangarás 1230 / 1340; Bucaneiro 1240 / 1350; La Foret 1295 / 1405; Armação dos Búzios Pousada Design 1345 / 1455; Ilha Branca Inn 1385 / 1495; Pousada La Chimere 1505 / 1615; La Boheme 1695 / 1805. Single y triple de la posada Desde: 1.550 + 110 = 1.660 y 905 + 110 = 1.015. Los legales dicen que las tarifas no incluyen IVA ni gastos administrativos: se asume que el 'tax' de USD 110 los cubre; confirmar. Pagos en pesos: percepción 30% RG 5463 aparte (aéreo USD 85 y terrestre según posada). La web es para agencias y no marca el precio como neto ni comisionable: confirmar que es precio de venta al público. Existe buzios-ene-2027 (otro operador, 9/1/2027, USD 1.500): mismo destino y semana, distinto producto. Leído con Playwright sin login ni formularios."
+        "desglose": "Panel de la salida 11/01/2027, precio por persona + USD 110 tax en todas las opciones. Base doble (tarifa / total): Pousada Vila do Sol 985 / 1095; Pousada Vila Pitanga 1105 / 1215; Gammel Dansk 1110 / 1220; Villa Mercedes 1110 / 1220; Pousada Villegaignon 1175 / 1285; Barra da Lagoa Hotel 1175 / 1285; Pousada Lestada 1195 / 1305; Pousada dos Tangarás 1230 / 1340; Bucaneiro 1240 / 1350; La Foret 1295 / 1405; Armação dos Búzios Pousada Design 1345 / 1455; Ilha Branca Inn 1385 / 1495; Pousada La Chimere 1505 / 1615; La Boheme 1695 / 1805. Single y triple de la posada Desde: 1.550 + 110 = 1.660 y 905 + 110 = 1.015. Los legales dicen que las tarifas no incluyen IVA, gastos administrativos ni gastos de reserva y no aclaran qué cubre el 'tax' de USD 110: NO confirmado que el total los incluya. Pagos en pesos: percepción 30% RG 5463 aparte (aéreo USD 85 y terrestre según posada). La web es para agencias y no marca el precio como neto ni comisionable: confirmar que es precio de venta al público. Existe buzios-ene-2027 (otro operador, 9/1/2027, USD 1.500): mismo destino y semana, distinto producto. Leído con Playwright sin login ni formularios."
       },
       "codigo_ref": "VT-11817"
     }
