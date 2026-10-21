@@ -11702,7 +11702,7 @@
       "fuente_detalle": {
         "url": "https://www.vietur.com.ar/circuitos/1/11825?product_type=2&currency=USD",
         "fecha": "2026-10-20",
-        "desglose": "Panel de la salida 07/05/2027, categoría Turista: doble USD 2.430 + 710 tax = 3.140; single 2.915 + 760 = 3.675; triple 2.400 + 700 = 3.100; doble a compartir 2.670 + 740 = 3.410. Según legales, los TAX incluyen impuestos aéreos DNT, IVA terrestre, gastos administrativos y de reserva. Pagos en pesos: percepción 30% RG 5463 aparte (aéreo USD 173; terrestre DBL USD 415 / SGL 524 / DBL a compartir 470 / TPL 409). La web es para agencias y no marca el precio como neto ni comisionable: confirmar que es precio de venta al público. Noches por ciudad deducidas del itinerario (Lima 2, Arequipa 1, Colca 1, Puno 2, Cusco 3, Valle Sagrado 1). Leído con Playwright sin login ni formularios."
+        "desglose": "Panel de la salida 07/05/2027, categoría Turista: doble USD 2.430 + 710 tax = 3.140; single 2.915 + 760 = 3.675; triple 2.400 + 700 = 3.100; doble a compartir 2.670 + 740 = 3.410. El Desde USD 3.140 es total: los legales de la ficha dicen textualmente \"Los TAX incluyen: impuestos aéreos DNT, IVA terrestre, gastos administrativos y de reserva\", por eso no se suma el 5% estimado (confirmado por el usuario el 20/10/2026). Pagos en pesos: percepción 30% RG 5463 aparte (aéreo USD 173; terrestre DBL USD 415 / SGL 524 / DBL a compartir 470 / TPL 409). La web es para agencias y no marca el precio como neto ni comisionable: confirmar que es precio de venta al público. Noches por ciudad deducidas del itinerario (Lima 2, Arequipa 1, Colca 1, Puno 2, Cusco 3, Valle Sagrado 1). Leído con Playwright sin login ni formularios."
       },
       "codigo_ref": "VT-11825"
     },
