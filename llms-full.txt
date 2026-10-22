@@ -20,7 +20,7 @@
 
 ## Servicios
 - Viajes a medida (especialidad)
-- Viajes corporativos: viajes de negocios, eventos y congresos, y viajes de incentivo (https://www.legendtravel.com.ar/viajes-corporativos)
+- Viajes corporativos: viajes de negocios, eventos y congresos, y viajes de incentivo (https://www.legendtravel.com.ar/viajes-corporativos/)
 - Salidas y paquetes con precio y fecha publicados en /paquetes
 - Formas de pago. Viajes internacionales: efectivo en dólares billete (consultar percepciones) o transferencia en dólares. Viajes nacionales: efectivo en pesos, transferencia en pesos o tarjeta de crédito (consultar cuotas sin interés vigentes). Nuestros viajes internacionales, por lo general, se pueden reservar con una seña y abonar el saldo restante hasta un mes antes de la salida. Tu asesora te va a dar más información sobre las posibilidades de pago al momento de la reserva.
 - Acompañamiento antes, durante y después del viaje
@@ -37,9 +37,9 @@
 - Email: promociones@legendtravel.com.ar
 - Horario: Lunes a sábados de 10 a 20 h
 - Instagram: https://www.instagram.com/legendtraveloficial
-- Web: https://www.legendtravel.com.ar
+- Web: https://www.legendtravel.com.ar/
 
-Generado el 2026-10-21 por build-paquetes.py. Resumen corto: https://www.legendtravel.com.ar/llms.txt
+Generado el 2026-10-22 por build-paquetes.py. Resumen corto: https://www.legendtravel.com.ar/llms.txt
 
 ## Historia
 - Una familia que lleva
@@ -106,10 +106,10 @@ Generado el 2026-10-21 por build-paquetes.py. Resumen corto: https://www.legendt
 - Tarjeta de crédito (nacionales)
 
 ## Paquetes y salidas vigentes (detalle)
-Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo salidas vigentes al 21/10/2026.
+Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo salidas vigentes al 22/10/2026.
 
 ### Año Nuevo a bordo del Costa Serena
-- URL: https://www.legendtravel.com.ar/paquetes/anio-nuevo-costa-serena
+- URL: https://www.legendtravel.com.ar/paquetes/anio-nuevo-costa-serena/
 - Destinos: Montevideo, Camboriú, Ilha Grande (Abraão), Río de Janeiro, Ilhabela
 - Salida: 27 de diciembre 2026 — embarque en Buenos Aires · 9 noches · Régimen: Pensión completa a bordo
 - Precio: desde USD 2.461 por persona en base doble (por persona en base doble, cabina interna — tarifa final)
@@ -119,7 +119,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 27/12/2026
 
 ### Auroras Boreales — Salida grupal
-- URL: https://www.legendtravel.com.ar/paquetes/auroras-boreales-grupal
+- URL: https://www.legendtravel.com.ar/paquetes/auroras-boreales-grupal/
 - Destinos: Copenhague, Oslo, Tromsø, Estocolmo
 - Salida: 24 de enero 2027 · 10 noches
 - Precio: desde USD 7.878 por persona en base doble (por persona en base doble)
@@ -128,7 +128,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 24/01/2027
 
 ### Sudáfrica & Mauritius
-- URL: https://www.legendtravel.com.ar/paquetes/sudafrica-mauritius
+- URL: https://www.legendtravel.com.ar/paquetes/sudafrica-mauritius/
 - Destinos: Johannesburgo, Parque Kruger, Mauritius, Ciudad del Cabo
 - Salida: 8 de febrero 2027 — South African Airways vía San Pablo · 11 noches
 - Precio: desde USD 9.820 por persona en base doble (por persona en base doble — total con impuestos)
@@ -144,7 +144,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 08/02/2027
 
 ### Punta Cana All Inclusive
-- URL: https://www.legendtravel.com.ar/paquetes/punta-cana-all-inclusive
+- URL: https://www.legendtravel.com.ar/paquetes/punta-cana-all-inclusive/
 - Destinos: Punta Cana
 - Salida: 15 de febrero 2027 · 10 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: All inclusive
 - Precio: desde USD 2.490 por persona en base doble (por persona en base doble — tarifa final)
@@ -157,7 +157,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 15/02/2027
 
 ### Tesoros de Corea y Japón — Salida grupal acompañada
-- URL: https://www.legendtravel.com.ar/paquetes/tesoros-corea-japon
+- URL: https://www.legendtravel.com.ar/paquetes/tesoros-corea-japon/
 - Destinos: Seúl, DMZ, Suwon, Jeonju, Busan, Fukuoka, Miyajima, Hiroshima, Matsuyama, Kobe, Monte Koya, Kioto, Tokio
 - Salida: 5 de marzo 2027 — Ethiopian ET507/672 ida, ET673/506 vuelta · 15 noches
 - Precio: desde USD 8.070 por persona en base doble (por persona en base doble — tarifa final con impuestos)
@@ -177,7 +177,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 05/03/2027
 
 ### Vietnam, Camboya y Tailandia — Salida grupal, 7 de marzo 2027
-- URL: https://www.legendtravel.com.ar/paquetes/vietnam-camboya-tailandia
+- URL: https://www.legendtravel.com.ar/paquetes/vietnam-camboya-tailandia/
 - Destinos: Hanoi, Bahía de Lan Ha, Hoi An, Hue, Ho Chi Minh, Siem Reap, Bangkok, Phuket
 - Salida: 7 de marzo 2027 · 16 noches · Régimen: Desayuno (9 almuerzos y 3 cenas incluidos)
 - Precio: desde USD 9.740 por persona en base doble (por persona en base doble — total con impuestos)
@@ -197,7 +197,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 07/03/2027
 
 ### Sur de Italia y Sicilia con Puglia — Salida grupal acompañada
-- URL: https://www.legendtravel.com.ar/paquetes/sur-italia-sicilia-puglia
+- URL: https://www.legendtravel.com.ar/paquetes/sur-italia-sicilia-puglia/
 - Destinos: Roma, Bari, Lecce, Alberobello, Matera, Nápoles, Capri, Taormina, Siracusa, Agrigento, Palermo, Pompeya
 - Salida: 9 de marzo 2027 — vuelos Iberia IB106/IB654 · 14 noches
 - Precio: desde USD 5.428 por persona en base doble (por persona en base doble — IVA y gastos administrativos incluidos)
@@ -214,7 +214,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 09/03/2027
 
 ### Egipto & Jordania
-- URL: https://www.legendtravel.com.ar/paquetes/egipto-jordania
+- URL: https://www.legendtravel.com.ar/paquetes/egipto-jordania/
 - Destinos: El Cairo, Luxor, Edfu, Aswan, Amman, Petra, Wadi Rum, Mar Muerto
 - Salida: 17 de marzo 2027 · 15 noches
 - Precio: desde USD 8.420 por persona en base doble (por persona en base doble — total con impuestos)
@@ -232,7 +232,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 17/03/2027
 
 ### Enjoy Disney USA — Viaje de Quinceañeras
-- URL: https://www.legendtravel.com.ar/paquetes/enjoy-disney-usa-xv
+- URL: https://www.legendtravel.com.ar/paquetes/enjoy-disney-usa-xv/
 - Destinos: Orlando, Walt Disney World, Universal, Miami
 - Salida: Salidas 2027 y 2028: enero-febrero, junio-julio y diciembre · desde Buenos Aires, Córdoba y Rosario · 11 noches · Régimen: Pensión completa
 - Precio: desde USD 6.860 por persona en base doble (por persona — total con impuestos, salidas 2027)
@@ -243,7 +243,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 01/12/2028
 
 ### Cruce Andino: Bariloche & Puerto Varas
-- URL: https://www.legendtravel.com.ar/paquetes/cruce-andino-bariloche-puerto-varas
+- URL: https://www.legendtravel.com.ar/paquetes/cruce-andino-bariloche-puerto-varas/
 - Destinos: Bariloche, Puerto Varas (Chile)
 - Salida: Salidas del 16/09 al 30/12/2026 · 5 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga)
 - Precio: desde ARS 1.322.790 por persona en base doble (por persona en base doble)
@@ -255,7 +255,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 30/12/2026
 
 ### Mendoza: Experiencia entre Viñedos
-- URL: https://www.legendtravel.com.ar/paquetes/mendoza-vinedos
+- URL: https://www.legendtravel.com.ar/paquetes/mendoza-vinedos/
 - Destinos: Mendoza
 - Salida: Salidas los lunes, del 16/09 al 28/12/2026 · 3 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga)
 - Precio: desde ARS 642.990 por persona en base doble (por persona en base doble)
@@ -266,7 +266,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 28/12/2026
 
 ### Puerto Madryn: Puerto Pirámides con Avistaje de Ballenas
-- URL: https://www.legendtravel.com.ar/paquetes/puerto-madryn-ballenas
+- URL: https://www.legendtravel.com.ar/paquetes/puerto-madryn-ballenas/
 - Destinos: Puerto Madryn, Puerto Pirámides
 - Salida: Salidas del 16/09 al 31/12/2026 · 3 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga)
 - Precio: desde ARS 1.198.657 por persona en base doble (por persona en base doble)
@@ -277,7 +277,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 31/12/2026
 
 ### Bariloche, fin de semana largo · 5 al 8 de diciembre 2026
-- URL: https://www.legendtravel.com.ar/paquetes/bariloche-finde-largo-dic-2026
+- URL: https://www.legendtravel.com.ar/paquetes/bariloche-finde-largo-dic-2026/
 - Destinos: Bariloche
 - Salida: 5 de diciembre 2026 · 3 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde ARS 699.030 por persona en base doble (por persona en base doble · precio final)
@@ -290,7 +290,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 19/11/2026
 
 ### Mendoza, fin de semana largo con cupo aéreo · 5 al 8 de diciembre 2026
-- URL: https://www.legendtravel.com.ar/paquetes/mendoza-finde-largo-dic-2026
+- URL: https://www.legendtravel.com.ar/paquetes/mendoza-finde-largo-dic-2026/
 - Destinos: Mendoza
 - Salida: 5 de diciembre 2026 · 3 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde ARS 541.899 por persona en base doble (por persona en base doble · precio final)
@@ -304,7 +304,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 19/11/2026
 
 ### Salta, fin de semana largo con cupo aéreo · 5 al 8 de diciembre 2026
-- URL: https://www.legendtravel.com.ar/paquetes/salta-finde-largo-dic-2026
+- URL: https://www.legendtravel.com.ar/paquetes/salta-finde-largo-dic-2026/
 - Destinos: Salta
 - Salida: 5 de diciembre 2026 · 3 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde ARS 710.845 por persona en base doble (por persona en base doble · precio final)
@@ -317,7 +317,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 19/11/2026
 
 ### Navidad a bordo del Costa Diadema
-- URL: https://www.legendtravel.com.ar/paquetes/navidad-costa-diadema
+- URL: https://www.legendtravel.com.ar/paquetes/navidad-costa-diadema/
 - Destinos: Montevideo, Itajaí, Santos
 - Salida: 23 de diciembre 2026 — embarque en Buenos Aires · 7 noches · Régimen: Pensión completa a bordo
 - Precio: desde USD 1.569 por persona en base doble (por persona en base doble, cabina interna — tarifa final)
@@ -327,7 +327,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 23/12/2026
 
 ### Recibí el 2027 en Altamar — Costa Diadema
-- URL: https://www.legendtravel.com.ar/paquetes/2027-altamar-costa-diadema
+- URL: https://www.legendtravel.com.ar/paquetes/2027-altamar-costa-diadema/
 - Destinos: Montevideo, Itajaí, Santos
 - Salida: 30 de diciembre 2026 — embarque en Buenos Aires · 7 noches · Régimen: Pensión completa a bordo
 - Precio: desde USD 1.773 por persona en base doble (por persona en base doble, cabina interna — tarifa final)
@@ -337,7 +337,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 30/12/2026
 
 ### Punta Cana & Bayahíbe All Inclusive
-- URL: https://www.legendtravel.com.ar/paquetes/punta-cana-bayahibe
+- URL: https://www.legendtravel.com.ar/paquetes/punta-cana-bayahibe/
 - Destinos: Bayahíbe, Punta Cana
 - Salida: 2 de enero 2027 · 10 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: All inclusive
 - Precio: desde USD 2.400 por persona en base doble (por persona en base doble — tarifa final)
@@ -350,7 +350,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 02/01/2027
 
 ### Riviera Maya All Inclusive — Costa Mujeres + Riviera Maya
-- URL: https://www.legendtravel.com.ar/paquetes/riviera-maya-costa-mujeres
+- URL: https://www.legendtravel.com.ar/paquetes/riviera-maya-costa-mujeres/
 - Destinos: Costa Mujeres, Riviera Maya, Cancún
 - Salida: 4 de enero 2027 · 10 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: All inclusive
 - Precio: desde USD 3.310 por persona en base doble (por persona en base doble — tarifa final)
@@ -364,7 +364,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 04/01/2027
 
 ### Miches — 4 de enero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/miches-ene-2027
+- URL: https://www.legendtravel.com.ar/paquetes/miches-ene-2027/
 - Destinos: Miches
 - Salida: 4 de enero 2027 · 12 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Todo Incluido
 - Precio: desde USD 3.744 por persona en base doble (por persona en base doble — total con impuestos)
@@ -376,7 +376,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 04/01/2027
 
 ### Caribe con crucero Costa Fascinosa — 7 de enero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/caribe-con-crucero-ene-2027
+- URL: https://www.legendtravel.com.ar/paquetes/caribe-con-crucero-ene-2027/
 - Destinos: Punta Cana, La Romana, Isla Catalina, Samaná, Gran Turca, Amber Cove, Cabo Rojo
 - Salida: 7 de enero 2027 · 10 noches · Régimen: Todo Incluido en hotel; pensión completa a bordo
 - Precio: desde USD 3.293 por persona en base doble (por persona en base doble — total con impuestos)
@@ -388,7 +388,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 07/01/2027
 
 ### Aruba — 9 de enero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/aruba-ene-2027
+- URL: https://www.legendtravel.com.ar/paquetes/aruba-ene-2027/
 - Destinos: Aruba
 - Salida: 9 de enero 2027 · 8 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Solo habitación
 - Precio: desde USD 3.134 por persona en base doble (por persona en base doble — total con impuestos)
@@ -400,7 +400,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 09/01/2027
 
 ### Búzios — 9 de enero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/buzios-ene-2027
+- URL: https://www.legendtravel.com.ar/paquetes/buzios-ene-2027/
 - Destinos: Búzios
 - Salida: 9 de enero 2027 · 7 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde USD 1.500 por persona en base doble (por persona en base doble — precio final con impuestos)
@@ -412,7 +412,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 09/01/2027
 
 ### Río de Janeiro: verano en Copacabana — 9 de enero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/rio-de-janeiro-ene-2027
+- URL: https://www.legendtravel.com.ar/paquetes/rio-de-janeiro-ene-2027/
 - Destinos: Río de Janeiro
 - Salida: 9 de enero 2027 · 7 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde USD 1.500 por persona en base doble (por persona en base doble — precio final con impuestos)
@@ -424,7 +424,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 09/01/2027
 
 ### Salvador de Bahía — 9 de enero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/salvador-de-bahia-ene-2027
+- URL: https://www.legendtravel.com.ar/paquetes/salvador-de-bahia-ene-2027/
 - Destinos: Salvador de Bahía
 - Salida: 9 de enero 2027 · 7 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde USD 1.455 por persona en base doble (por persona en base doble — precio final con impuestos)
@@ -436,7 +436,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 09/01/2027
 
 ### Arraial d'Ajuda — 10 de enero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/arraial-d-ajuda
+- URL: https://www.legendtravel.com.ar/paquetes/arraial-d-ajuda/
 - Destinos: Arraial d'Ajuda, Porto Seguro
 - Salida: 10 de enero 2027 · 7 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde USD 1.739 por persona en base doble (por persona en base doble — precio final con impuestos)
@@ -448,7 +448,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 10/01/2027
 
 ### Búzios, posada a elección · 11 de enero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/buzios-posadas-ene-2027
+- URL: https://www.legendtravel.com.ar/paquetes/buzios-posadas-ene-2027/
 - Destinos: Búzios
 - Salida: 11 de enero 2027 · 7 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde USD 1.150 por persona en base doble (por persona en base doble · total estimado con impuestos y gastos)
@@ -474,7 +474,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 11/01/2027
 
 ### Punta Cana — 13 de enero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/punta-cana-ene-2027
+- URL: https://www.legendtravel.com.ar/paquetes/punta-cana-ene-2027/
 - Destinos: Punta Cana
 - Salida: 13 de enero 2027 · 10 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Todo Incluido
 - Precio: desde USD 2.988 por persona en base doble (por persona en base doble — total con impuestos)
@@ -486,7 +486,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 13/01/2027
 
 ### Florianópolis — 16 de enero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/florianopolis-ene-2027
+- URL: https://www.legendtravel.com.ar/paquetes/florianopolis-ene-2027/
 - Destinos: Florianópolis
 - Salida: 16 de enero 2027 · 7 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde USD 1.480 por persona en base doble (por persona en base doble — precio final con impuestos)
@@ -498,7 +498,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 16/01/2027
 
 ### Riviera Maya — 18 de enero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/riviera-maya-ene-2027
+- URL: https://www.legendtravel.com.ar/paquetes/riviera-maya-ene-2027/
 - Destinos: Riviera Maya
 - Salida: 18 de enero 2027 · 7 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Todo Incluido
 - Precio: desde USD 2.396 por persona en base doble (por persona en base doble — total con impuestos)
@@ -510,7 +510,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 18/01/2027
 
 ### Costa Mujeres — 18 de enero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/costa-mujeres-ene-2027
+- URL: https://www.legendtravel.com.ar/paquetes/costa-mujeres-ene-2027/
 - Destinos: Costa Mujeres
 - Salida: 18 de enero 2027 · 7 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Todo Incluido
 - Precio: desde USD 2.586 por persona en base doble (por persona en base doble — total con impuestos)
@@ -522,7 +522,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 18/01/2027
 
 ### India & Maldivas — Salida grupal
-- URL: https://www.legendtravel.com.ar/paquetes/india-maldivas
+- URL: https://www.legendtravel.com.ar/paquetes/india-maldivas/
 - Destinos: Delhi, Mandawa, Jaipur, Ranthambore, Agra, Maldivas
 - Salida: 20 de enero 2027 · 17 noches · Régimen: Desayuno (All Inclusive en Maldivas)
 - Precio: desde USD 9.440 por persona en base doble (por persona en base doble — total con impuestos)
@@ -542,7 +542,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 20/01/2027
 
 ### Riviera Maya & Cancún — 25 de enero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/riviera-maya-cancun-ene-2027
+- URL: https://www.legendtravel.com.ar/paquetes/riviera-maya-cancun-ene-2027/
 - Destinos: Riviera Maya, Cancún
 - Salida: 25 de enero 2027 · 10 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Todo Incluido
 - Precio: desde USD 3.159 por persona en base doble (por persona en base doble — total con impuestos)
@@ -555,7 +555,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 25/01/2027
 
 ### Maceió — 26 de enero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/maceio-ene-2027
+- URL: https://www.legendtravel.com.ar/paquetes/maceio-ene-2027/
 - Destinos: Maceió
 - Salida: 26 de enero 2027 · 7 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde USD 1.511 por persona en base doble (por persona en base doble — precio final con impuestos)
@@ -567,7 +567,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 26/01/2027
 
 ### Cancún All Inclusive
-- URL: https://www.legendtravel.com.ar/paquetes/cancun-all-inclusive
+- URL: https://www.legendtravel.com.ar/paquetes/cancun-all-inclusive/
 - Destinos: Cancún
 - Salida: 8 de febrero 2027 · 10 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: All inclusive
 - Precio: desde USD 3.840 por persona en base doble (por persona en base doble — tarifa final)
@@ -580,7 +580,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 08/02/2027
 
 ### Majestic Princess: de Buenos Aires a Southampton · 9 de febrero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/majestic-princess-buenos-aires-southampton-feb-2027
+- URL: https://www.legendtravel.com.ar/paquetes/majestic-princess-buenos-aires-southampton-feb-2027/
 - Destinos: Montevideo, Río de Janeiro, Las Palmas de Gran Canaria, Arrecife (Lanzarote), Santa Cruz de Tenerife, Casablanca, La Coruña
 - Salida: 9 de febrero 2027 — embarque en Buenos Aires · 22 noches · Régimen: Pensión completa a bordo
 - Precio: desde USD 3.197 por persona en base doble (por persona en base doble, cabina interior — impuestos incluidos)
@@ -591,7 +591,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 20/11/2026
 
 ### Majestic Princess: Buenos Aires a Southampton con fiordos noruegos · 9 de febrero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/majestic-princess-fiordos-noruegos-feb-2027
+- URL: https://www.legendtravel.com.ar/paquetes/majestic-princess-fiordos-noruegos-feb-2027/
 - Destinos: Montevideo, Río de Janeiro, Las Palmas de Gran Canaria, Arrecife (Lanzarote), Santa Cruz de Tenerife, Casablanca, La Coruña, Alesund, Trondheim, Tromsø, Alta, Molde
 - Salida: 9 de febrero 2027 — embarque en Buenos Aires · 36 noches · Régimen: Pensión completa a bordo
 - Precio: desde USD 7.237 por persona en base doble (por persona en base doble, cabina interior — impuestos incluidos)
@@ -602,7 +602,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 20/11/2026
 
 ### Zaandam: de Buenos Aires a Fort Lauderdale · 13 de febrero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/zaandam-buenos-aires-fort-lauderdale-feb-2027
+- URL: https://www.legendtravel.com.ar/paquetes/zaandam-buenos-aires-fort-lauderdale-feb-2027/
 - Destinos: Santos, Ilhabela, Río de Janeiro, Salvador, Recife, Fortaleza, Belém, Isla del Diablo, Bridgetown, Castries, Basseterre, San Juan
 - Salida: 13 de febrero 2027 — embarque en Buenos Aires · 29 noches · Régimen: Pensión completa a bordo
 - Precio: desde USD 12.899 por persona en base doble (por persona en base doble, cabina interior — impuestos incluidos)
@@ -613,7 +613,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 20/11/2026
 
 ### Miami & Bayahíbe — 14 de febrero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/miami-bayahibe-feb-2027
+- URL: https://www.legendtravel.com.ar/paquetes/miami-bayahibe-feb-2027/
 - Destinos: Miami, Bayahíbe
 - Salida: 14 de febrero 2027 · 10 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Según hotel
 - Precio: desde USD 3.485 por persona en base doble (por persona en base doble — total con impuestos)
@@ -626,7 +626,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 14/02/2027
 
 ### Praia do Forte, all inclusive en Bahía — 20 de febrero 2027
-- URL: https://www.legendtravel.com.ar/paquetes/praia-do-forte-feb-2027
+- URL: https://www.legendtravel.com.ar/paquetes/praia-do-forte-feb-2027/
 - Destinos: Praia do Forte
 - Salida: 20 de febrero 2027 · 7 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: All Inclusive
 - Precio: desde USD 2.537 por persona en base doble (por persona en base doble — precio final con impuestos)
@@ -638,7 +638,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 20/02/2027
 
 ### Kenia & Tanzania — Safari grupal con Zanzíbar
-- URL: https://www.legendtravel.com.ar/paquetes/kenia-tanzania
+- URL: https://www.legendtravel.com.ar/paquetes/kenia-tanzania/
 - Destinos: Nairobi, Lago Nakuru, Masai Mara, Serengueti, Ngorongoro, Lago Manyara, Zanzíbar
 - Salida: 22 de febrero 2027 · 15 noches · Régimen: Pensión completa en safaris; All Inclusive en Zanzíbar
 - Precio: desde USD 11.900 por persona en base doble (por persona en base doble — total con impuestos)
@@ -657,7 +657,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 22/02/2027
 
 ### Fiesta Holi — India 2027, salida grupal
-- URL: https://www.legendtravel.com.ar/paquetes/holi-india-2027
+- URL: https://www.legendtravel.com.ar/paquetes/holi-india-2027/
 - Destinos: Delhi, Agra, Chomu, Jaipur, Pushkar, Jodhpur, Udaipur, Aurangabad, Mumbai
 - Salida: 14 de marzo 2027 · 17 noches · Régimen: Desayuno
 - Precio: desde USD 7.890 por persona en base doble (por persona en base doble — total con impuestos)
@@ -678,7 +678,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 14/03/2027
 
 ### Corea & Japón — Cherry Blossom, salida grupal
-- URL: https://www.legendtravel.com.ar/paquetes/corea-japon-cherry-blossom
+- URL: https://www.legendtravel.com.ar/paquetes/corea-japon-cherry-blossom/
 - Destinos: Seúl, Gyeongju, Busan, Osaka, Kioto, Kanazawa, Takayama, Yugawara, Tokio
 - Salida: 17 de marzo 2027 · 18 noches · Régimen: Desayuno
 - Precio: desde USD 14.810 por persona en base doble (por persona en base doble — total con impuestos)
@@ -699,7 +699,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 17/03/2027
 
 ### España, Francia, Suiza e Italia — 4 de abril 2027
-- URL: https://www.legendtravel.com.ar/paquetes/espana-francia-suiza-italia
+- URL: https://www.legendtravel.com.ar/paquetes/espana-francia-suiza-italia/
 - Destinos: Madrid, Burdeos, París, Zúrich, Venecia, Florencia, Roma, Costa Azul, Barcelona
 - Salida: 4 de abril 2027 · 17 noches · Régimen: Desayuno
 - Precio: desde USD 5.187 por persona en base doble (por persona en base doble — tarifa + impuestos aéreos + IVA y gastos)
@@ -721,7 +721,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 04/04/2027
 
 ### China & Tíbet — Salida grupal
-- URL: https://www.legendtravel.com.ar/paquetes/china-tibet
+- URL: https://www.legendtravel.com.ar/paquetes/china-tibet/
 - Destinos: Beijing, Xi'an, Lhasa, Chengdu, Zhangjiajie, Furong, Fenghuang, Shanghái
 - Salida: 6 de abril 2027 · 19 noches · Régimen: Desayuno
 - Precio: desde USD 10.220 por persona en base doble (por persona en base doble — total con impuestos)
@@ -741,7 +741,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 06/04/2027
 
 ### Mágicamente Europa — 9 de abril 2027
-- URL: https://www.legendtravel.com.ar/paquetes/magicamente-europa
+- URL: https://www.legendtravel.com.ar/paquetes/magicamente-europa/
 - Destinos: Madrid, París, Innsbruck, Venecia, Florencia, Roma, Costa Azul, Barcelona
 - Salida: 9 de abril 2027 · 16 noches · Régimen: Desayuno
 - Precio: desde USD 4.622 por persona en base doble (por persona en base doble — tarifa + impuestos + IVA/gastos + tasas hoteleras obligatorias)
@@ -762,7 +762,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 09/04/2027
 
 ### Andalucía, Marruecos y Portugal — 16 de abril 2027
-- URL: https://www.legendtravel.com.ar/paquetes/andalucia-marruecos-portugal
+- URL: https://www.legendtravel.com.ar/paquetes/andalucia-marruecos-portugal/
 - Destinos: Madrid, Granada, Marrakech, Fez, Sevilla, Lisboa
 - Salida: 16 de abril 2027 · 16 noches · Régimen: Desayuno
 - Precio: desde USD 4.710 por persona en base doble (por persona en base doble — tarifa + impuestos aéreos + IVA y gastos)
@@ -785,7 +785,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 15/01/2027
 
 ### Madrid y Norte Europeo — 23 de abril 2027
-- URL: https://www.legendtravel.com.ar/paquetes/madrid-norte-europeo
+- URL: https://www.legendtravel.com.ar/paquetes/madrid-norte-europeo/
 - Destinos: Madrid, Burdeos, París, Londres, Brujas, Ámsterdam
 - Salida: 23 de abril 2027 · 16 noches · Régimen: Desayuno
 - Precio: desde USD 5.024 por persona en base doble (por persona en base doble — tarifa + impuestos aéreos + IVA y gastos)
@@ -804,7 +804,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 15/01/2027
 
 ### Descubriendo Europa — 2 de mayo 2027
-- URL: https://www.legendtravel.com.ar/paquetes/descubriendo-europa
+- URL: https://www.legendtravel.com.ar/paquetes/descubriendo-europa/
 - Destinos: Madrid, París, Venecia, Roma, Florencia, Costa Azul, Barcelona
 - Salida: 2 de mayo 2027 · 17 noches · Régimen: Desayuno
 - Precio: desde USD 4.554 por persona en base doble (por persona en base doble — tarifa + impuestos aéreos + IVA y gastos)
@@ -826,7 +826,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 15/01/2027
 
 ### Península Ibérica con Madrid — 7 de mayo 2027
-- URL: https://www.legendtravel.com.ar/paquetes/peninsula-iberica-madrid
+- URL: https://www.legendtravel.com.ar/paquetes/peninsula-iberica-madrid/
 - Destinos: Madrid, Granada, Sevilla, Lisboa, Oporto, Santiago, Santander, Barcelona, Valencia
 - Salida: 7 de mayo 2027 · 16 noches · Régimen: Desayuno
 - Precio: desde USD 4.723 por persona en base doble (por persona en base doble — tarifa + impuestos aéreos + IVA y gastos)
@@ -850,7 +850,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 15/01/2027
 
 ### Esencias del Perú, salida grupal acompañada · 7 de mayo 2027
-- URL: https://www.legendtravel.com.ar/paquetes/esencias-del-peru-may-2027
+- URL: https://www.legendtravel.com.ar/paquetes/esencias-del-peru-may-2027/
 - Destinos: Lima, Arequipa, Colca, Puno, Cusco, Valle Sagrado, Machu Picchu
 - Salida: 7 de mayo 2027 · 10 noches · Régimen: Desayuno
 - Precio: desde USD 3.140 por persona en base doble (por persona en base doble · total con impuestos)
@@ -869,7 +869,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 31/10/2026
 
 ### Europa Esencial — 9 de mayo 2027
-- URL: https://www.legendtravel.com.ar/paquetes/europa-esencial
+- URL: https://www.legendtravel.com.ar/paquetes/europa-esencial/
 - Destinos: Madrid, París, Frankfurt, Innsbruck, Venecia, Florencia, Roma, Costa Azul, Barcelona
 - Salida: 9 de mayo 2027 · 17 noches · Régimen: Desayuno
 - Precio: desde USD 5.679 por persona en base doble (por persona en base doble — tarifa + impuestos aéreos + IVA y gastos)
@@ -892,7 +892,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 15/01/2027
 
 ### Hong Kong y la China milenaria — Salida grupal, 10 de mayo 2027
-- URL: https://www.legendtravel.com.ar/paquetes/hong-kong-china-2027
+- URL: https://www.legendtravel.com.ar/paquetes/hong-kong-china-2027/
 - Destinos: Hong Kong, Beijing, Xi'an, Chongqing, Guilin, Hangzhou, Shanghái
 - Salida: 10 de mayo 2027 · 17 noches · Régimen: Desayuno
 - Precio: desde USD 8.230 por persona en base doble (por persona en base doble — total con impuestos)
@@ -911,7 +911,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 10/05/2027
 
 ### Paseando por Europa — 21 de mayo 2027
-- URL: https://www.legendtravel.com.ar/paquetes/paseando-por-europa
+- URL: https://www.legendtravel.com.ar/paquetes/paseando-por-europa/
 - Destinos: Madrid, Barcelona, Costa Azul, Venecia, Florencia, Roma, París
 - Salida: 21 de mayo 2027 · 16 noches · Régimen: Desayuno
 - Precio: desde USD 4.858 por persona en base doble (por persona en base doble — tarifa + impuestos aéreos + IVA y gastos)
@@ -933,7 +933,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 15/01/2027
 
 ### Malasia, Singapur y Bali — Salida grupal, 24 de mayo 2027
-- URL: https://www.legendtravel.com.ar/paquetes/malasia-singapur-bali
+- URL: https://www.legendtravel.com.ar/paquetes/malasia-singapur-bali/
 - Destinos: Kuala Lumpur, Malaca, Singapur, Ubud, Nusa Dua
 - Salida: 24 de mayo 2027 · 16 noches · Régimen: Desayuno
 - Precio: desde USD 9.435 por persona en base doble (por persona en base doble — total con impuestos)
@@ -950,7 +950,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 24/05/2027
 
 ### Andalucía, Portugal y País Vasco, con Lourdes — 6 de junio 2027
-- URL: https://www.legendtravel.com.ar/paquetes/andalucia-portugal-pais-vasco-lourdes
+- URL: https://www.legendtravel.com.ar/paquetes/andalucia-portugal-pais-vasco-lourdes/
 - Destinos: Madrid, Granada, Sevilla, Lisboa, Oporto, Santiago, San Sebastián, Lourdes
 - Salida: 6 de junio 2027 · 17 noches · Régimen: Desayuno
 - Precio: desde USD 4.885 por persona en base doble (por persona en base doble — tarifa + impuestos aéreos + IVA y gastos)
@@ -974,7 +974,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 15/01/2027
 
 ### Escapada a Mendoza
-- URL: https://www.legendtravel.com.ar/paquetes/escapada-mendoza
+- URL: https://www.legendtravel.com.ar/paquetes/escapada-mendoza/
 - Destinos: Mendoza
 - Salida: Fecha a elección, hasta julio 2027 · 3 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde ARS 567.676 por persona en base doble (por persona en base doble — precio estimado, se cotiza al consultar)
@@ -986,7 +986,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 14/11/2026
 
 ### Ushuaia
-- URL: https://www.legendtravel.com.ar/paquetes/ushuaia
+- URL: https://www.legendtravel.com.ar/paquetes/ushuaia/
 - Destinos: Ushuaia
 - Salida: Fecha a elección, hasta julio 2027 · 3 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde ARS 949.630 por persona en base doble (por persona en base doble — precio estimado, se cotiza al consultar)
@@ -998,7 +998,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 14/11/2026
 
 ### Bariloche lo tiene todo
-- URL: https://www.legendtravel.com.ar/paquetes/bariloche-lo-tiene-todo
+- URL: https://www.legendtravel.com.ar/paquetes/bariloche-lo-tiene-todo/
 - Destinos: Bariloche
 - Salida: Fecha a elección, hasta julio 2027 · 3 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde ARS 651.624 por persona en base doble (por persona en base doble — precio estimado, se cotiza al consultar)
@@ -1010,7 +1010,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 14/11/2026
 
 ### Vuelta al norte argentino
-- URL: https://www.legendtravel.com.ar/paquetes/vuelta-norte-argentino
+- URL: https://www.legendtravel.com.ar/paquetes/vuelta-norte-argentino/
 - Destinos: Tucumán, Cafayate, Salta
 - Salida: Fecha a elección, hasta julio 2027 · 6 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde ARS 1.280.826 por persona en base doble (por persona en base doble — precio estimado, se cotiza al consultar)
@@ -1024,7 +1024,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 14/11/2026
 
 ### Ushuaia & El Calafate
-- URL: https://www.legendtravel.com.ar/paquetes/ushuaia-el-calafate
+- URL: https://www.legendtravel.com.ar/paquetes/ushuaia-el-calafate/
 - Destinos: Ushuaia, El Calafate
 - Salida: Fecha a elección, hasta julio 2027 · 6 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde ARS 1.342.389 por persona en base doble (por persona en base doble — precio estimado, se cotiza al consultar)
@@ -1037,7 +1037,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 14/11/2026
 
 ### Puerto Madryn
-- URL: https://www.legendtravel.com.ar/paquetes/puerto-madryn-escapada
+- URL: https://www.legendtravel.com.ar/paquetes/puerto-madryn-escapada/
 - Destinos: Puerto Madryn
 - Salida: Fecha a elección, hasta julio 2027 · 3 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde ARS 676.299 por persona en base doble (por persona en base doble — precio estimado, se cotiza al consultar)
@@ -1049,7 +1049,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 14/11/2026
 
 ### Valle de la Luna con noche en Valle Fértil
-- URL: https://www.legendtravel.com.ar/paquetes/valle-de-la-luna
+- URL: https://www.legendtravel.com.ar/paquetes/valle-de-la-luna/
 - Destinos: San Juan, Valle Fértil, Ischigualasto
 - Salida: Fecha a elección, hasta julio 2027 · 3 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde ARS 1.395.002 por persona en base single (por persona en base single — precio estimado, se cotiza al consultar)
@@ -1062,7 +1062,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 14/11/2026
 
 ### Salta & Purmamarca
-- URL: https://www.legendtravel.com.ar/paquetes/salta-purmamarca
+- URL: https://www.legendtravel.com.ar/paquetes/salta-purmamarca/
 - Destinos: Salta, Purmamarca
 - Salida: Fecha a elección, hasta julio 2027 · 5 noches · Otras fechas: consultar (tenemos muchas más fechas disponibles: consultanos por la que te convenga) · Régimen: Desayuno
 - Precio: desde ARS 1.362.212 por persona en base single (por persona en base single — precio estimado, se cotiza al consultar)
@@ -1076,7 +1076,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Vigente hasta: 14/11/2026
 
 ### Disney Europa Premium — Viaje de Quinceañeras
-- URL: https://www.legendtravel.com.ar/paquetes/disney-europa-premium-xv
+- URL: https://www.legendtravel.com.ar/paquetes/disney-europa-premium-xv/
 - Destinos: Londres, París, Disneyland París, Barcelona, Port Aventura, Madrid
 - Salida: Septiembre 2027 · desde Buenos Aires, Córdoba y Rosario · 12 noches · Régimen: Pensión completa con merienda
 - Precio: desde USD 7.464 por persona en base doble (por persona — total con impuestos)
@@ -1088,7 +1088,7 @@ Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo sali
 - Resumen: Los 15 por Europa: Londres con Harry Potter Studios, Disneyland París, Port Aventura y Ferrari Land, Parque Warner Madrid. 12 noches con pensión completa y coordinación permanente.
 - Vigente hasta: 01/09/2027
 
-Listado completo: https://www.legendtravel.com.ar/paquetes
+Listado completo: https://www.legendtravel.com.ar/paquetes/
 
 ## Preguntas frecuentes por página
 

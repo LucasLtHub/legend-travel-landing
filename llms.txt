@@ -21,7 +21,7 @@ Versión completa (historia, medios de pago, detalle de cada paquete con hoteles
 
 ## Servicios
 - Viajes a medida (especialidad)
-- Viajes corporativos: viajes de negocios, eventos y congresos, y viajes de incentivo (https://www.legendtravel.com.ar/viajes-corporativos)
+- Viajes corporativos: viajes de negocios, eventos y congresos, y viajes de incentivo (https://www.legendtravel.com.ar/viajes-corporativos/)
 - Salidas y paquetes con precio y fecha publicados en /paquetes
 - Formas de pago. Viajes internacionales: efectivo en dólares billete (consultar percepciones) o transferencia en dólares. Viajes nacionales: efectivo en pesos, transferencia en pesos o tarjeta de crédito (consultar cuotas sin interés vigentes). Nuestros viajes internacionales, por lo general, se pueden reservar con una seña y abonar el saldo restante hasta un mes antes de la salida. Tu asesora te va a dar más información sobre las posibilidades de pago al momento de la reserva.
 - Acompañamiento antes, durante y después del viaje
@@ -33,77 +33,77 @@ Versión completa (historia, medios de pago, detalle de cada paquete con hoteles
 
 <!-- PAQUETES:START -->
 ## Salidas y paquetes actuales
-Generado el 2026-10-21 desde data/paquetes.json. Solo salidas vigentes:
+Generado el 2026-10-22 desde data/paquetes.json. Solo salidas vigentes:
 lo inactivo o vencido se retira de esta lista automáticamente.
 Precios por persona en base doble, salvo que el paquete indique otra base. Sujeto a disponibilidad al momento de la reserva.
 
-- Año Nuevo a bordo del Costa Serena — desde USD 2.158 — Salida: 27 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/anio-nuevo-costa-serena
-- Auroras Boreales — Salida grupal — desde USD 7.878 — Salida: 24 de enero 2027 — https://www.legendtravel.com.ar/paquetes/auroras-boreales-grupal
-- Sudáfrica & Mauritius — desde USD 9.820 — Salida: 8 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/sudafrica-mauritius
-- Punta Cana All Inclusive — desde USD 2.490 — Salida: 15 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/punta-cana-all-inclusive
-- Tesoros de Corea y Japón — Salida grupal acompañada — desde USD 8.070 — Salida: 5 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/tesoros-corea-japon
-- Vietnam, Camboya y Tailandia — Salida grupal, 7 de marzo 2027 — desde USD 9.740 — Salida: 7 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/vietnam-camboya-tailandia
-- Sur de Italia y Sicilia con Puglia — Salida grupal acompañada — desde USD 5.428 — Salida: 9 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/sur-italia-sicilia-puglia
-- Egipto & Jordania — desde USD 8.420 — Salida: 17 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/egipto-jordania
-- Enjoy Disney USA — Viaje de Quinceañeras — desde USD 6.860 — Salida: Salidas 2027 y 2028: enero-febrero, junio-julio y diciembre — https://www.legendtravel.com.ar/paquetes/enjoy-disney-usa-xv
-- Cruce Andino: Bariloche & Puerto Varas — desde ARS 1.322.790 — Salida: Salidas del 16/09 al 30/12/2026 — https://www.legendtravel.com.ar/paquetes/cruce-andino-bariloche-puerto-varas
-- Mendoza: Experiencia entre Viñedos — desde ARS 642.990 — Salida: Salidas los lunes, del 16/09 al 28/12/2026 — https://www.legendtravel.com.ar/paquetes/mendoza-vinedos
-- Puerto Madryn: Puerto Pirámides con Avistaje de Ballenas — desde ARS 1.198.657 — Salida: Salidas del 16/09 al 31/12/2026 — https://www.legendtravel.com.ar/paquetes/puerto-madryn-ballenas
-- Bariloche, fin de semana largo · 5 al 8 de diciembre 2026 — desde ARS 699.030 — Salida: 5 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/bariloche-finde-largo-dic-2026
-- Mendoza, fin de semana largo con cupo aéreo · 5 al 8 de diciembre 2026 — desde ARS 541.899 — Salida: 5 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/mendoza-finde-largo-dic-2026
-- Salta, fin de semana largo con cupo aéreo · 5 al 8 de diciembre 2026 — desde ARS 710.845 — Salida: 5 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/salta-finde-largo-dic-2026
-- Navidad a bordo del Costa Diadema — desde USD 1.334 — Salida: 23 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/navidad-costa-diadema
-- Recibí el 2027 en Altamar — Costa Diadema — desde USD 1.536 — Salida: 30 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/2027-altamar-costa-diadema
-- Punta Cana & Bayahíbe All Inclusive — desde USD 2.400 — Salida: 2 de enero 2027 — https://www.legendtravel.com.ar/paquetes/punta-cana-bayahibe
-- Riviera Maya All Inclusive — Costa Mujeres + Riviera Maya — desde USD 3.310 — Salida: 4 de enero 2027 — https://www.legendtravel.com.ar/paquetes/riviera-maya-costa-mujeres
-- Miches — 4 de enero 2027 — desde USD 3.744 — Salida: 4 de enero 2027 — https://www.legendtravel.com.ar/paquetes/miches-ene-2027
-- Caribe con crucero Costa Fascinosa — 7 de enero 2027 — desde USD 3.293 — Salida: 7 de enero 2027 — https://www.legendtravel.com.ar/paquetes/caribe-con-crucero-ene-2027
-- Aruba — 9 de enero 2027 — desde USD 3.134 — Salida: 9 de enero 2027 — https://www.legendtravel.com.ar/paquetes/aruba-ene-2027
-- Búzios — 9 de enero 2027 — desde USD 1.500 — Salida: 9 de enero 2027 — https://www.legendtravel.com.ar/paquetes/buzios-ene-2027
-- Río de Janeiro: verano en Copacabana — 9 de enero 2027 — desde USD 1.500 — Salida: 9 de enero 2027 — https://www.legendtravel.com.ar/paquetes/rio-de-janeiro-ene-2027
-- Salvador de Bahía — 9 de enero 2027 — desde USD 1.455 — Salida: 9 de enero 2027 — https://www.legendtravel.com.ar/paquetes/salvador-de-bahia-ene-2027
-- Arraial d'Ajuda — 10 de enero 2027 — desde USD 1.739 — Salida: 10 de enero 2027 — https://www.legendtravel.com.ar/paquetes/arraial-d-ajuda
-- Búzios, posada a elección · 11 de enero 2027 — desde USD 1.150 — Salida: 11 de enero 2027 — https://www.legendtravel.com.ar/paquetes/buzios-posadas-ene-2027
-- Punta Cana — 13 de enero 2027 — desde USD 2.988 — Salida: 13 de enero 2027 — https://www.legendtravel.com.ar/paquetes/punta-cana-ene-2027
-- Florianópolis — 16 de enero 2027 — desde USD 1.480 — Salida: 16 de enero 2027 — https://www.legendtravel.com.ar/paquetes/florianopolis-ene-2027
-- Riviera Maya — 18 de enero 2027 — desde USD 2.396 — Salida: 18 de enero 2027 — https://www.legendtravel.com.ar/paquetes/riviera-maya-ene-2027
-- Costa Mujeres — 18 de enero 2027 — desde USD 2.586 — Salida: 18 de enero 2027 — https://www.legendtravel.com.ar/paquetes/costa-mujeres-ene-2027
-- India & Maldivas — Salida grupal — desde USD 9.440 — Salida: 20 de enero 2027 — https://www.legendtravel.com.ar/paquetes/india-maldivas
-- Riviera Maya & Cancún — 25 de enero 2027 — desde USD 3.159 — Salida: 25 de enero 2027 — https://www.legendtravel.com.ar/paquetes/riviera-maya-cancun-ene-2027
-- Maceió — 26 de enero 2027 — desde USD 1.511 — Salida: 26 de enero 2027 — https://www.legendtravel.com.ar/paquetes/maceio-ene-2027
-- Cancún All Inclusive — desde USD 3.840 — Salida: 8 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/cancun-all-inclusive
-- Majestic Princess: de Buenos Aires a Southampton · 9 de febrero 2027 — desde USD 1.808 — Salida: 9 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/majestic-princess-buenos-aires-southampton-feb-2027
-- Majestic Princess: Buenos Aires a Southampton con fiordos noruegos · 9 de febrero 2027 — desde USD 4.531 — Salida: 9 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/majestic-princess-fiordos-noruegos-feb-2027
-- Zaandam: de Buenos Aires a Fort Lauderdale · 13 de febrero 2027 — desde USD 5.999 — Salida: 13 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/zaandam-buenos-aires-fort-lauderdale-feb-2027
-- Miami & Bayahíbe — 14 de febrero 2027 — desde USD 3.485 — Salida: 14 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/miami-bayahibe-feb-2027
-- Praia do Forte, all inclusive en Bahía — 20 de febrero 2027 — desde USD 2.537 — Salida: 20 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/praia-do-forte-feb-2027
-- Kenia & Tanzania — Safari grupal con Zanzíbar — desde USD 11.900 — Salida: 22 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/kenia-tanzania
-- Fiesta Holi — India 2027, salida grupal — desde USD 7.890 — Salida: 14 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/holi-india-2027
-- Corea & Japón — Cherry Blossom, salida grupal — desde USD 14.810 — Salida: 17 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/corea-japon-cherry-blossom
-- España, Francia, Suiza e Italia — 4 de abril 2027 — desde USD 5.187 — Salida: 4 de abril 2027 — https://www.legendtravel.com.ar/paquetes/espana-francia-suiza-italia
-- China & Tíbet — Salida grupal — desde USD 10.220 — Salida: 6 de abril 2027 — https://www.legendtravel.com.ar/paquetes/china-tibet
-- Mágicamente Europa — 9 de abril 2027 — desde USD 4.622 — Salida: 9 de abril 2027 — https://www.legendtravel.com.ar/paquetes/magicamente-europa
-- Andalucía, Marruecos y Portugal — 16 de abril 2027 — desde USD 4.710 — Salida: 16 de abril 2027 — https://www.legendtravel.com.ar/paquetes/andalucia-marruecos-portugal
-- Madrid y Norte Europeo — 23 de abril 2027 — desde USD 5.024 — Salida: 23 de abril 2027 — https://www.legendtravel.com.ar/paquetes/madrid-norte-europeo
-- Descubriendo Europa — 2 de mayo 2027 — desde USD 4.554 — Salida: 2 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/descubriendo-europa
-- Península Ibérica con Madrid — 7 de mayo 2027 — desde USD 4.723 — Salida: 7 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/peninsula-iberica-madrid
-- Esencias del Perú, salida grupal acompañada · 7 de mayo 2027 — desde USD 3.140 — Salida: 7 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/esencias-del-peru-may-2027
-- Europa Esencial — 9 de mayo 2027 — desde USD 5.679 — Salida: 9 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/europa-esencial
-- Hong Kong y la China milenaria — Salida grupal, 10 de mayo 2027 — desde USD 8.230 — Salida: 10 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/hong-kong-china-2027
-- Paseando por Europa — 21 de mayo 2027 — desde USD 4.858 — Salida: 21 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/paseando-por-europa
-- Malasia, Singapur y Bali — Salida grupal, 24 de mayo 2027 — desde USD 9.435 — Salida: 24 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/malasia-singapur-bali
-- Andalucía, Portugal y País Vasco, con Lourdes — 6 de junio 2027 — desde USD 4.885 — Salida: 6 de junio 2027 — https://www.legendtravel.com.ar/paquetes/andalucia-portugal-pais-vasco-lourdes
-- Escapada a Mendoza — desde ARS 567.676 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/escapada-mendoza
-- Ushuaia — desde ARS 949.630 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/ushuaia
-- Bariloche lo tiene todo — desde ARS 651.624 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/bariloche-lo-tiene-todo
-- Vuelta al norte argentino — desde ARS 1.280.826 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/vuelta-norte-argentino
-- Ushuaia & El Calafate — desde ARS 1.342.389 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/ushuaia-el-calafate
-- Puerto Madryn — desde ARS 676.299 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/puerto-madryn-escapada
-- Valle de la Luna con noche en Valle Fértil — desde ARS 1.395.002 (base single) — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/valle-de-la-luna
-- Salta & Purmamarca — desde ARS 1.362.212 (base single) — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/salta-purmamarca
-- Disney Europa Premium — Viaje de Quinceañeras — desde USD 7.464 — Salida: Septiembre 2027 — https://www.legendtravel.com.ar/paquetes/disney-europa-premium-xv
+- Año Nuevo a bordo del Costa Serena — desde USD 2.158 — Salida: 27 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/anio-nuevo-costa-serena/
+- Auroras Boreales — Salida grupal — desde USD 7.878 — Salida: 24 de enero 2027 — https://www.legendtravel.com.ar/paquetes/auroras-boreales-grupal/
+- Sudáfrica & Mauritius — desde USD 9.820 — Salida: 8 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/sudafrica-mauritius/
+- Punta Cana All Inclusive — desde USD 2.490 — Salida: 15 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/punta-cana-all-inclusive/
+- Tesoros de Corea y Japón — Salida grupal acompañada — desde USD 8.070 — Salida: 5 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/tesoros-corea-japon/
+- Vietnam, Camboya y Tailandia — Salida grupal, 7 de marzo 2027 — desde USD 9.740 — Salida: 7 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/vietnam-camboya-tailandia/
+- Sur de Italia y Sicilia con Puglia — Salida grupal acompañada — desde USD 5.428 — Salida: 9 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/sur-italia-sicilia-puglia/
+- Egipto & Jordania — desde USD 8.420 — Salida: 17 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/egipto-jordania/
+- Enjoy Disney USA — Viaje de Quinceañeras — desde USD 6.860 — Salida: Salidas 2027 y 2028: enero-febrero, junio-julio y diciembre — https://www.legendtravel.com.ar/paquetes/enjoy-disney-usa-xv/
+- Cruce Andino: Bariloche & Puerto Varas — desde ARS 1.322.790 — Salida: Salidas del 16/09 al 30/12/2026 — https://www.legendtravel.com.ar/paquetes/cruce-andino-bariloche-puerto-varas/
+- Mendoza: Experiencia entre Viñedos — desde ARS 642.990 — Salida: Salidas los lunes, del 16/09 al 28/12/2026 — https://www.legendtravel.com.ar/paquetes/mendoza-vinedos/
+- Puerto Madryn: Puerto Pirámides con Avistaje de Ballenas — desde ARS 1.198.657 — Salida: Salidas del 16/09 al 31/12/2026 — https://www.legendtravel.com.ar/paquetes/puerto-madryn-ballenas/
+- Bariloche, fin de semana largo · 5 al 8 de diciembre 2026 — desde ARS 699.030 — Salida: 5 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/bariloche-finde-largo-dic-2026/
+- Mendoza, fin de semana largo con cupo aéreo · 5 al 8 de diciembre 2026 — desde ARS 541.899 — Salida: 5 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/mendoza-finde-largo-dic-2026/
+- Salta, fin de semana largo con cupo aéreo · 5 al 8 de diciembre 2026 — desde ARS 710.845 — Salida: 5 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/salta-finde-largo-dic-2026/
+- Navidad a bordo del Costa Diadema — desde USD 1.334 — Salida: 23 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/navidad-costa-diadema/
+- Recibí el 2027 en Altamar — Costa Diadema — desde USD 1.536 — Salida: 30 de diciembre 2026 — https://www.legendtravel.com.ar/paquetes/2027-altamar-costa-diadema/
+- Punta Cana & Bayahíbe All Inclusive — desde USD 2.400 — Salida: 2 de enero 2027 — https://www.legendtravel.com.ar/paquetes/punta-cana-bayahibe/
+- Riviera Maya All Inclusive — Costa Mujeres + Riviera Maya — desde USD 3.310 — Salida: 4 de enero 2027 — https://www.legendtravel.com.ar/paquetes/riviera-maya-costa-mujeres/
+- Miches — 4 de enero 2027 — desde USD 3.744 — Salida: 4 de enero 2027 — https://www.legendtravel.com.ar/paquetes/miches-ene-2027/
+- Caribe con crucero Costa Fascinosa — 7 de enero 2027 — desde USD 3.293 — Salida: 7 de enero 2027 — https://www.legendtravel.com.ar/paquetes/caribe-con-crucero-ene-2027/
+- Aruba — 9 de enero 2027 — desde USD 3.134 — Salida: 9 de enero 2027 — https://www.legendtravel.com.ar/paquetes/aruba-ene-2027/
+- Búzios — 9 de enero 2027 — desde USD 1.500 — Salida: 9 de enero 2027 — https://www.legendtravel.com.ar/paquetes/buzios-ene-2027/
+- Río de Janeiro: verano en Copacabana — 9 de enero 2027 — desde USD 1.500 — Salida: 9 de enero 2027 — https://www.legendtravel.com.ar/paquetes/rio-de-janeiro-ene-2027/
+- Salvador de Bahía — 9 de enero 2027 — desde USD 1.455 — Salida: 9 de enero 2027 — https://www.legendtravel.com.ar/paquetes/salvador-de-bahia-ene-2027/
+- Arraial d'Ajuda — 10 de enero 2027 — desde USD 1.739 — Salida: 10 de enero 2027 — https://www.legendtravel.com.ar/paquetes/arraial-d-ajuda/
+- Búzios, posada a elección · 11 de enero 2027 — desde USD 1.150 — Salida: 11 de enero 2027 — https://www.legendtravel.com.ar/paquetes/buzios-posadas-ene-2027/
+- Punta Cana — 13 de enero 2027 — desde USD 2.988 — Salida: 13 de enero 2027 — https://www.legendtravel.com.ar/paquetes/punta-cana-ene-2027/
+- Florianópolis — 16 de enero 2027 — desde USD 1.480 — Salida: 16 de enero 2027 — https://www.legendtravel.com.ar/paquetes/florianopolis-ene-2027/
+- Riviera Maya — 18 de enero 2027 — desde USD 2.396 — Salida: 18 de enero 2027 — https://www.legendtravel.com.ar/paquetes/riviera-maya-ene-2027/
+- Costa Mujeres — 18 de enero 2027 — desde USD 2.586 — Salida: 18 de enero 2027 — https://www.legendtravel.com.ar/paquetes/costa-mujeres-ene-2027/
+- India & Maldivas — Salida grupal — desde USD 9.440 — Salida: 20 de enero 2027 — https://www.legendtravel.com.ar/paquetes/india-maldivas/
+- Riviera Maya & Cancún — 25 de enero 2027 — desde USD 3.159 — Salida: 25 de enero 2027 — https://www.legendtravel.com.ar/paquetes/riviera-maya-cancun-ene-2027/
+- Maceió — 26 de enero 2027 — desde USD 1.511 — Salida: 26 de enero 2027 — https://www.legendtravel.com.ar/paquetes/maceio-ene-2027/
+- Cancún All Inclusive — desde USD 3.840 — Salida: 8 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/cancun-all-inclusive/
+- Majestic Princess: de Buenos Aires a Southampton · 9 de febrero 2027 — desde USD 1.808 — Salida: 9 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/majestic-princess-buenos-aires-southampton-feb-2027/
+- Majestic Princess: Buenos Aires a Southampton con fiordos noruegos · 9 de febrero 2027 — desde USD 4.531 — Salida: 9 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/majestic-princess-fiordos-noruegos-feb-2027/
+- Zaandam: de Buenos Aires a Fort Lauderdale · 13 de febrero 2027 — desde USD 5.999 — Salida: 13 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/zaandam-buenos-aires-fort-lauderdale-feb-2027/
+- Miami & Bayahíbe — 14 de febrero 2027 — desde USD 3.485 — Salida: 14 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/miami-bayahibe-feb-2027/
+- Praia do Forte, all inclusive en Bahía — 20 de febrero 2027 — desde USD 2.537 — Salida: 20 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/praia-do-forte-feb-2027/
+- Kenia & Tanzania — Safari grupal con Zanzíbar — desde USD 11.900 — Salida: 22 de febrero 2027 — https://www.legendtravel.com.ar/paquetes/kenia-tanzania/
+- Fiesta Holi — India 2027, salida grupal — desde USD 7.890 — Salida: 14 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/holi-india-2027/
+- Corea & Japón — Cherry Blossom, salida grupal — desde USD 14.810 — Salida: 17 de marzo 2027 — https://www.legendtravel.com.ar/paquetes/corea-japon-cherry-blossom/
+- España, Francia, Suiza e Italia — 4 de abril 2027 — desde USD 5.187 — Salida: 4 de abril 2027 — https://www.legendtravel.com.ar/paquetes/espana-francia-suiza-italia/
+- China & Tíbet — Salida grupal — desde USD 10.220 — Salida: 6 de abril 2027 — https://www.legendtravel.com.ar/paquetes/china-tibet/
+- Mágicamente Europa — 9 de abril 2027 — desde USD 4.622 — Salida: 9 de abril 2027 — https://www.legendtravel.com.ar/paquetes/magicamente-europa/
+- Andalucía, Marruecos y Portugal — 16 de abril 2027 — desde USD 4.710 — Salida: 16 de abril 2027 — https://www.legendtravel.com.ar/paquetes/andalucia-marruecos-portugal/
+- Madrid y Norte Europeo — 23 de abril 2027 — desde USD 5.024 — Salida: 23 de abril 2027 — https://www.legendtravel.com.ar/paquetes/madrid-norte-europeo/
+- Descubriendo Europa — 2 de mayo 2027 — desde USD 4.554 — Salida: 2 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/descubriendo-europa/
+- Península Ibérica con Madrid — 7 de mayo 2027 — desde USD 4.723 — Salida: 7 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/peninsula-iberica-madrid/
+- Esencias del Perú, salida grupal acompañada · 7 de mayo 2027 — desde USD 3.140 — Salida: 7 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/esencias-del-peru-may-2027/
+- Europa Esencial — 9 de mayo 2027 — desde USD 5.679 — Salida: 9 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/europa-esencial/
+- Hong Kong y la China milenaria — Salida grupal, 10 de mayo 2027 — desde USD 8.230 — Salida: 10 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/hong-kong-china-2027/
+- Paseando por Europa — 21 de mayo 2027 — desde USD 4.858 — Salida: 21 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/paseando-por-europa/
+- Malasia, Singapur y Bali — Salida grupal, 24 de mayo 2027 — desde USD 9.435 — Salida: 24 de mayo 2027 — https://www.legendtravel.com.ar/paquetes/malasia-singapur-bali/
+- Andalucía, Portugal y País Vasco, con Lourdes — 6 de junio 2027 — desde USD 4.885 — Salida: 6 de junio 2027 — https://www.legendtravel.com.ar/paquetes/andalucia-portugal-pais-vasco-lourdes/
+- Escapada a Mendoza — desde ARS 567.676 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/escapada-mendoza/
+- Ushuaia — desde ARS 949.630 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/ushuaia/
+- Bariloche lo tiene todo — desde ARS 651.624 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/bariloche-lo-tiene-todo/
+- Vuelta al norte argentino — desde ARS 1.280.826 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/vuelta-norte-argentino/
+- Ushuaia & El Calafate — desde ARS 1.342.389 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/ushuaia-el-calafate/
+- Puerto Madryn — desde ARS 676.299 — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/puerto-madryn-escapada/
+- Valle de la Luna con noche en Valle Fértil — desde ARS 1.395.002 (base single) — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/valle-de-la-luna/
+- Salta & Purmamarca — desde ARS 1.362.212 (base single) — Salida: Fecha a elección, hasta julio 2027 — https://www.legendtravel.com.ar/paquetes/salta-purmamarca/
+- Disney Europa Premium — Viaje de Quinceañeras — desde USD 7.464 — Salida: Septiembre 2027 — https://www.legendtravel.com.ar/paquetes/disney-europa-premium-xv/
 
-Listado completo: https://www.legendtravel.com.ar/paquetes
+Listado completo: https://www.legendtravel.com.ar/paquetes/
 <!-- PAQUETES:END -->
 
 ## Contacto
@@ -113,4 +113,4 @@ Listado completo: https://www.legendtravel.com.ar/paquetes
 - Email: promociones@legendtravel.com.ar
 - Horario: Lunes a sábados de 10 a 20 h
 - Instagram: https://www.instagram.com/legendtraveloficial
-- Web: https://www.legendtravel.com.ar
+- Web: https://www.legendtravel.com.ar/

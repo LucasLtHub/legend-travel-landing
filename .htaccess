@@ -4,4 +4,18 @@ RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule ^ https://www.legendtravel.com.ar%{REQUEST_URI} [L,R=301]
 
+# Redirecciones 301 de la web vieja (URLs que Search Console marca 404). Solo rutas que ya no existen:
+# no tocan los formularios (sorteo/sorteo-submit.php, contacto/enviar.php, newsletter/suscribir.php) ni carpetas vigentes.
+# /consulta/<lo que sea> -> /contacto/
+RewriteRule ^consulta(/.*)?$ /contacto/ [L,R=301]
+# /buscarxpaquetes y todo lo que cuelgue -> /paquetes/
+RewriteRule ^buscarxpaquetes(/.*)?$ /paquetes/ [L,R=301]
+# /paquetes?id=... y /paquetes/?id=... (buscador viejo) -> /paquetes/ sin query string
+RewriteCond %{QUERY_STRING} (^|&)id= [NC]
+RewriteRule ^paquetes/?$ /paquetes/? [L,R=301]
+# /index.php e /index.html -> /
+RewriteRule ^index\.(php|html)$ /? [L,R=301]
+# /pay-methods -> /financiacion/
+RewriteRule ^pay-methods/?$ /financiacion/ [L,R=301]
+
 ErrorDocument 404 /404.html

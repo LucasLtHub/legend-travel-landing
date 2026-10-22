@@ -902,7 +902,7 @@ def render_detalle(p, vig, plantilla, todos=()):
     urgencia = ('    <div class="durg">' + "".join(urg) + '</div>') if urg else ''
 
     # --- B: schema. BreadcrumbList + TouristTrip, SIN precios (rotan) ---
-    canonical = "{}/paquetes/{}".format(DOMINIO, p["id"])
+    canonical = "{}/paquetes/{}/".format(DOMINIO, p["id"])
     trip = {
         "@type": "TouristTrip",
         "@id": canonical + "#trip",
@@ -938,7 +938,7 @@ def render_detalle(p, vig, plantilla, todos=()):
         "@graph": [
             {"@type": "BreadcrumbList", "itemListElement": [
                 {"@type": "ListItem", "position": 1, "name": "Inicio", "item": DOMINIO + "/"},
-                {"@type": "ListItem", "position": 2, "name": "Paquetes", "item": DOMINIO + "/paquetes"},
+                {"@type": "ListItem", "position": 2, "name": "Paquetes", "item": DOMINIO + "/paquetes/"},
                 {"@type": "ListItem", "position": 3, "name": titulo_txt, "item": canonical},
             ]},
             trip,
@@ -1331,7 +1331,7 @@ def generar_llms_full(publicados, hoy):
         precios = {str(x.get("base", "")).lower(): x.get("valor") for x in (p.get("precios") or []) if isinstance(x, dict)}
         doble = precios.get("doble", pd.get("valor"))
         L.append("### " + txt(p, "titulo"))
-        L.append("- URL: {}/paquetes/{}".format(DOMINIO, p["id"]))
+        L.append("- URL: {}/paquetes/{}/".format(DOMINIO, p["id"]))
         if lista(p, "destinos"):
             L.append("- Destinos: " + ", ".join(lista(p, "destinos")))
         L.append("- Salida: {}{}{}".format(p.get("salida", ""), " · {} noches".format(p["noches"]) if p.get("noches") else "",
@@ -1366,7 +1366,7 @@ def generar_llms_full(publicados, hoy):
         L.append("")
     if not publicados:
         L += ["En este momento no hay salidas publicadas. Consultar por WhatsApp.", ""]
-    L.append("Listado completo: {}/paquetes".format(DOMINIO))
+    L.append("Listado completo: {}/paquetes/".format(DOMINIO))
     L.append("")
 
     L += ["## Preguntas frecuentes por página", ""]
@@ -1378,7 +1378,7 @@ def generar_llms_full(publicados, hoy):
             continue
         m = re.search(r"<title>(.*?)</title>", texto, flags=re.S)
         titulo = html.unescape(re.sub(r"\s+", " ", m.group(1))).strip() if m else ruta or "Inicio"
-        L.append("### {} — {}/{}".format(titulo, DOMINIO, ruta))
+        L.append("### {} — {}/{}".format(titulo, DOMINIO, (ruta.rstrip("/") + "/") if ruta else ""))
         for q, a in faqs:
             L.append("- P: {}".format(q))
             L.append("  R: {}".format(a))
@@ -1415,7 +1415,7 @@ def actualizar_llms(publicados, hoy):
         filas.append("- {titulo} — desde {mon} {val}{base} — Salida: {sal} — {url}".format(
             titulo=txt(p, "titulo"), mon=pd.get("moneda", ""), base=base_txt,
             val=fmt_precio(pd.get("valor")), sal=salida_corta(p["salida"]),
-            url="{}/paquetes/{}".format(DOMINIO, p["id"])))
+            url="{}/paquetes/{}/".format(DOMINIO, p["id"])))
 
     bloque = NL.join([
         LLMS_START,
@@ -1426,7 +1426,7 @@ def actualizar_llms(publicados, hoy):
         "",
     ] + filas + [
         "",
-        "Listado completo: {}/paquetes".format(DOMINIO),
+        "Listado completo: {}/paquetes/".format(DOMINIO),
         LLMS_END,
     ]) if filas else NL.join([
         LLMS_START,

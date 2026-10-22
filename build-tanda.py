@@ -9,7 +9,7 @@ NUNCA modifica el proyecto original.
 
 Uso: python build-tanda.py
 """
-import sys, shutil, re, datetime, urllib.parse, html
+import sys, shutil, re, datetime, urllib.parse, html, os
 from pathlib import Path
 
 # Forzar UTF-8 en stdout (Windows CP1252 no soporta símbolos unicode)
@@ -23,6 +23,11 @@ SRC = Path(__file__).parent  # raíz del proyecto
 # ============================================================
 
 DOMAIN = "https://www.legendtravel.com.ar"
+# <base href> que llevan TODAS las páginas publicadas. La fuente trae <base href="/">
+# estático (nunca por JS: Google resuelve los links antes de ejecutar JS). Para una
+# prueba en otra ruta (ej. GitHub Pages) se exporta LEGEND_BASE_HREF=/legend-travel-landing/
+BASE_HREF = os.environ.get("LEGEND_BASE_HREF", "/")
+BASE_DINAMICO_RE = re.compile(r"document\.write\(\s*['\"]<base\b")
 
 # Carpeta destino — FUERA de OneDrive para evitar bloqueos de sincronización.
 # FileZilla: apuntar a esta ruta cuando subas.
@@ -364,6 +369,10 @@ def copy_html_transformed(src_path: Path, dest_path: Path,
     """Lee un HTML, aplica transformación WhatsApp y guarda en destino."""
     dest_path.parent.mkdir(parents=True, exist_ok=True)
     text = src_path.read_text(encoding='utf-8', errors='ignore')
+    if BASE_DINAMICO_RE.search(text):
+        sys.exit(f"ERROR: {src_path} inyecta <base> por JavaScript. Tiene que ser <base href=\"/\"> estático.")
+    if BASE_HREF != "/":
+        text = re.sub(r'<base\s+href="/"\s*>', '<base href="%s">' % BASE_HREF, text, count=1)
     new_text, n_wa = transform_html(text, published, wa_examples)
     dest_path.write_text(new_text, encoding='utf-8')
     if n_wa > 0:
