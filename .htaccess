@@ -20,4 +20,13 @@ RewriteRule ^(.*/)?index\.(php|html)$ /$1 [L,R=301]
 # /pay-methods -> /financiacion/
 RewriteRule ^pay-methods/?$ /financiacion/ [L,R=301]
 
+# PAQUETES-RETIRADOS:START (lo genera build-paquetes.py desde data/paquetes-retirados.json; no editar a mano)
+# 5 paquete(s) retirado(s) -> madre de su region. Con y sin barra final.
+RewriteRule ^paquetes/bariloche-jul-2027/?$ /argentina/ [L,R=301]
+RewriteRule ^paquetes/esteros-del-ibera/?$ /argentina/ [L,R=301]
+RewriteRule ^paquetes/italia-clasica-abr-2027/?$ /europa/ [L,R=301]
+RewriteRule ^paquetes/punta-cana-nov-2026/?$ /caribe/ [L,R=301]
+RewriteRule ^paquetes/tulipanes-bariloche-puelo/?$ /argentina/ [L,R=301]
+# PAQUETES-RETIRADOS:END
+
 ErrorDocument 404 /404.html

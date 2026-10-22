@@ -1719,6 +1719,71 @@ def actualizar_resenas():
         print("=   quienes-somos/index.html: resenas sin cambios")
 
 
+
+# ============================================================
+# Paquetes retirados: registro persistente + 301 en .htaccess
+# ============================================================
+RETIRADOS = ROOT / "data" / "paquetes-retirados.json"
+HTACCESS = ROOT / ".htaccess"
+RET_START = "# PAQUETES-RETIRADOS:START (lo genera build-paquetes.py desde data/paquetes-retirados.json; no editar a mano)"
+RET_END = "# PAQUETES-RETIRADOS:END"
+
+
+def actualizar_retirados(publicados, hoy):
+    """Regla fija (2026-10-22): cuando un paquete vence o pasa a activo=false su pagina
+    desaparece, pero la URL /paquetes/<slug>/ NO puede quedar en 404. Se lleva un registro
+    persistente de todo slug que alguna vez se publico (data/paquetes-retirados.json, nunca
+    se borra nada) y en cada build se escribe en .htaccess, entre marcadores y antes del
+    ErrorDocument, una 301 por cada slug retirado hacia la madre de su region (o /paquetes/
+    si la region no tiene pagina). Si el paquete vuelve a activarse, su regla se quita sola
+    porque solo se generan reglas para slugs que NO estan publicados: nunca se redirige
+    una URL activa, asi no hay bucles."""
+    reg = json.loads(RETIRADOS.read_text(encoding="utf-8")) if RETIRADOS.exists() else {"paquetes": {}}
+    items = reg.setdefault("paquetes", {})
+    cambios = 0
+    for p, _v in publicados:
+        slug = p["id"]
+        if slug not in items:
+            items[slug] = {"region": p["region"], "fuente": "publicado el " + hoy.isoformat()}
+            cambios += 1
+        elif items[slug].get("region") != p["region"]:
+            items[slug]["region"] = p["region"]
+            cambios += 1
+    if cambios or not RETIRADOS.exists():
+        reg["paquetes"] = dict(sorted(items.items()))
+        RETIRADOS.write_text(json.dumps(reg, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    activos = {p["id"] for p, _v in publicados}
+    reglas = []
+    for slug, info in sorted(items.items()):
+        if slug in activos:
+            continue
+        if not re.match(r"^[a-z0-9-]+$", slug):
+            continue
+        region = str(info.get("region") or "").strip("/")
+        destino = "/{}/".format(region) if region and (ROOT / region / "index.html").exists() else "/paquetes/"
+        if (ROOT / "paquetes" / slug / "index.html").exists():
+            print("   AVISO: {} sigue con pagina en paquetes/ aunque no esta publicado: no se redirige".format(slug))
+            continue
+        reglas.append("RewriteRule ^paquetes/{}/?$ {} [L,R=301]".format(slug, destino))   # slug ya validado: solo [a-z0-9-]
+
+    bloque = "\n".join([RET_START,
+                        "# {} paquete(s) retirado(s) -> madre de su region. Con y sin barra final.".format(len(reglas))]
+                       + reglas + [RET_END])
+    txt = HTACCESS.read_text(encoding="utf-8")
+    if RET_START in txt and RET_END in txt:
+        nuevo = re.sub(re.escape(RET_START) + r".*?" + re.escape(RET_END), lambda m: bloque, txt, count=1, flags=re.S)
+    elif "ErrorDocument 404" in txt:
+        nuevo = txt.replace("ErrorDocument 404", bloque + "\n\nErrorDocument 404", 1)
+    else:
+        nuevo = txt.rstrip("\n") + "\n\n" + bloque + "\n"
+    if nuevo != txt:
+        HTACCESS.write_text(nuevo, encoding="utf-8", newline="\n")
+        print("OK  .htaccess: bloque PAQUETES-RETIRADOS con {} regla(s) 301 ({} slug(s) en el registro)".format(len(reglas), len(items)))
+    else:
+        print("=   .htaccess: bloque PAQUETES-RETIRADOS sin cambios ({} regla(s))".format(len(reglas)))
+    return reglas
+
 def main():
     hoy = datetime.date.today()
     print("build-paquetes.py  —  {}".format(hoy.isoformat()))
@@ -1840,6 +1905,7 @@ def main():
     actualizar_llms(publicados, hoy)
     generar_llms_full(publicados, hoy)
     generar_vuelos_faltantes(publicados, hoy)
+    actualizar_retirados(publicados, hoy)
 
     # ---------- 5. resenas de Google en la home ----------
     actualizar_resenas()

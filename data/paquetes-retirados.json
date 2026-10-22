@@ -1,0 +1,285 @@
+{
+  "_nota": "Registro persistente de todo slug de paquete que alguna vez se publicó (/paquetes/<slug>/) con su región principal. Lo mantiene build-paquetes.py: suma los publicados de cada build y NUNCA borra. Con él genera en .htaccess (bloque PAQUETES-RETIRADOS) una 301 por cada slug que ya no está activo, hacia la página de su región (o /paquetes/ si la región no tiene madre).",
+  "paquetes": {
+    "2027-altamar-costa-diadema": {
+      "region": "cruceros",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "andalucia-marruecos-portugal": {
+      "region": "europa",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "andalucia-portugal-pais-vasco-lourdes": {
+      "region": "europa",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "anio-nuevo-costa-serena": {
+      "region": "cruceros",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "arraial-d-ajuda": {
+      "region": "brasil",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "aruba-ene-2027": {
+      "region": "caribe",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "auroras-boreales-grupal": {
+      "region": "europa",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "bariloche-finde-largo-dic-2026": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "bariloche-jul-2027": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "bariloche-lo-tiene-todo": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "buzios-ene-2027": {
+      "region": "brasil",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "buzios-posadas-ene-2027": {
+      "region": "brasil",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "cancun-all-inclusive": {
+      "region": "caribe",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "caribe-con-crucero-ene-2027": {
+      "region": "cruceros",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "china-tibet": {
+      "region": "asia",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "corea-japon-cherry-blossom": {
+      "region": "asia",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "costa-mujeres-ene-2027": {
+      "region": "caribe",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "cruce-andino-bariloche-puerto-varas": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "descubriendo-europa": {
+      "region": "europa",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "disney-europa-premium-xv": {
+      "region": "quinceaneras",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "egipto-jordania": {
+      "region": "africa",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "enjoy-disney-usa-xv": {
+      "region": "quinceaneras",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "escapada-mendoza": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "esencias-del-peru-may-2027": {
+      "region": "latinoamerica",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "espana-francia-suiza-italia": {
+      "region": "europa",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "esteros-del-ibera": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "europa-esencial": {
+      "region": "europa",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "florianopolis-ene-2027": {
+      "region": "brasil",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "holi-india-2027": {
+      "region": "asia",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "hong-kong-china-2027": {
+      "region": "asia",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "india-maldivas": {
+      "region": "asia",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "italia-clasica-abr-2027": {
+      "region": "europa",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "kenia-tanzania": {
+      "region": "africa",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "maceio-ene-2027": {
+      "region": "brasil",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "madrid-norte-europeo": {
+      "region": "europa",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "magicamente-europa": {
+      "region": "europa",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "majestic-princess-buenos-aires-southampton-feb-2027": {
+      "region": "cruceros",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "majestic-princess-fiordos-noruegos-feb-2027": {
+      "region": "cruceros",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "malasia-singapur-bali": {
+      "region": "asia",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "mendoza-finde-largo-dic-2026": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "mendoza-vinedos": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "miami-bayahibe-feb-2027": {
+      "region": "caribe",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "miches-ene-2027": {
+      "region": "caribe",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "navidad-costa-diadema": {
+      "region": "cruceros",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "paseando-por-europa": {
+      "region": "europa",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "peninsula-iberica-madrid": {
+      "region": "europa",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "praia-do-forte-feb-2027": {
+      "region": "brasil",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "puerto-madryn-ballenas": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "puerto-madryn-escapada": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "punta-cana-all-inclusive": {
+      "region": "caribe",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "punta-cana-bayahibe": {
+      "region": "caribe",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "punta-cana-ene-2027": {
+      "region": "caribe",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "punta-cana-nov-2026": {
+      "region": "caribe",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "rio-de-janeiro-ene-2027": {
+      "region": "brasil",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "riviera-maya-cancun-ene-2027": {
+      "region": "caribe",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "riviera-maya-costa-mujeres": {
+      "region": "caribe",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "riviera-maya-ene-2027": {
+      "region": "caribe",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "salta-finde-largo-dic-2026": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "salta-purmamarca": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "salvador-de-bahia-ene-2027": {
+      "region": "brasil",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "sudafrica-mauritius": {
+      "region": "africa",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "sur-italia-sicilia-puglia": {
+      "region": "europa",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "tesoros-corea-japon": {
+      "region": "asia",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "tulipanes-bariloche-puelo": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "ushuaia": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "ushuaia-el-calafate": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "valle-de-la-luna": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "vietnam-camboya-tailandia": {
+      "region": "asia",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "vuelta-norte-argentino": {
+      "region": "argentina",
+      "fuente": "historial git (2026-10-22)"
+    },
+    "zaandam-buenos-aires-fort-lauderdale-feb-2027": {
+      "region": "cruceros",
+      "fuente": "historial git (2026-10-22)"
+    }
+  }
+}
