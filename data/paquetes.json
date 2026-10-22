@@ -162,7 +162,27 @@
         "url": "https://www.legendtravel.com.ar/paquetes?id=489&salidaId=593&adultsQty=2",
         "fecha": "2026-10-13"
       },
-      "codigo_ref": "GEA"
+      "codigo_ref": "GEA",
+      "seo_titulo": "Cruce Andino: Bariloche y Puerto Varas, 5 noches | Legend Travel",
+      "seo_descripcion": "Travesía Cruce Andino con 3 noches en Huinid Pioneros 3* y 2 en Cabaña del Lago 4* (Puerto Varas), aéreos y traslados. Salidas hasta el 30/12/2026.",
+      "subtitulo": "Tres noches en Bariloche y dos en Puerto Varas, con la travesía de lagos entre los dos países incluida",
+      "por_que": [
+        "Huinid Pioneros Hotel 3* en Bariloche y Hotel Cabaña del Lago 4* a orillas del lago Llanquihue",
+        "La travesía Cruce Andino incluida: lagos, montañas y volcanes entre Argentina y Chile",
+        "5 noches con aéreos desde Buenos Aires, traslados y asistencia médica",
+        "Salidas del 16/09 al 30/12/2026"
+      ],
+      "ideal_para": "Parejas y viajeros que quieren combinar dos países en un solo viaje, con la travesía resuelta y hoteles con piscina climatizada y spa.",
+      "ver_tambien": [
+        {
+          "id": "bariloche-lo-tiene-todo",
+          "texto": "Si preferís solo Bariloche y elegir la fecha, mirá también"
+        },
+        {
+          "id": "bariloche-finde-largo-dic-2026",
+          "texto": "Para el fin de semana largo de diciembre, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -242,7 +262,27 @@
         "url": "https://www.legendtravel.com.ar/paquetes?id=493&salidaId=597&adultsQty=2",
         "fecha": "2026-10-13"
       },
-      "codigo_ref": "GEA"
+      "codigo_ref": "GEA",
+      "seo_titulo": "Mendoza entre viñedos: 3 noches en Raíces Aconcagua 4* | Legend Travel",
+      "seo_descripcion": "Salidas los lunes hasta el 28/12/2026: 3 noches en Hotel Raíces Aconcagua 4*, en el centro, aéreos, traslados y excursión Camino del Vino - El Sol.",
+      "subtitulo": "Salidas los lunes, hotel 4* en el centro y la excursión Camino del Vino incluida",
+      "por_que": [
+        "Hotel Raíces Aconcagua 4* sobre calle San Lorenzo, en pleno centro, con piscina y gimnasio",
+        "Excursión Camino del Vino - El Sol incluida",
+        "Aéreos desde Buenos Aires y traslados de llegada y salida",
+        "Salidas todos los lunes, del 16/09 al 28/12/2026"
+      ],
+      "ideal_para": "Quienes quieren una escapada corta a Mendoza con la bodega ya resuelta y un hotel céntrico para salir a caminar.",
+      "ver_tambien": [
+        {
+          "id": "escapada-mendoza",
+          "texto": "Si preferís elegir la fecha y armar las excursiones aparte, mirá también"
+        },
+        {
+          "id": "mendoza-finde-largo-dic-2026",
+          "texto": "Para el fin de semana largo de diciembre con City Tour y bodegas, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -327,7 +367,23 @@
         "url": "https://www.legendtravel.com.ar/paquetes?id=480&salidaId=584&adultsQty=2",
         "fecha": "2026-10-13"
       },
-      "codigo_ref": "GEA"
+      "codigo_ref": "GEA",
+      "seo_titulo": "Avistaje de ballenas en Madryn, 3 noches en Hotel Tolosa 4* | Legend Travel",
+      "seo_descripcion": "3 noches en Hotel Tolosa 4*, a 250 m de la playa, con excursión a Puerto Pirámides y avistaje embarcado de ballenas. Aéreos y traslados hasta el 31/12/2026.",
+      "subtitulo": "Con la excursión a Puerto Pirámides y el avistaje embarcado de ballenas incluidos",
+      "por_que": [
+        "Excursión a Puerto Pirámides con embarcación para avistaje de ballenas incluida",
+        "Hotel Tolosa 4* en el centro, a 250 metros de la playa, con desayuno buffet y opciones sin gluten",
+        "Aéreos desde Buenos Aires, traslados y asistencia médica",
+        "Salidas del 16/09 al 31/12/2026, en plena temporada de ballenas"
+      ],
+      "ideal_para": "Familias y parejas que viajan por las ballenas y quieren la navegación ya incluida, con hotel céntrico y bicicletas sin cargo.",
+      "ver_tambien": [
+        {
+          "id": "puerto-madryn-escapada",
+          "texto": "Si preferís elegir la fecha y decidir las excursiones en destino, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -469,7 +525,27 @@
         "url": "https://www.legendtravel.com.ar/consulta/8337/ano-nuevo-a-bordo-de-costa-serena",
         "fecha": "2026-10-13"
       },
-      "codigo_ref": "GEA"
+      "codigo_ref": "GEA",
+      "seo_titulo": "Año Nuevo en el Costa Serena: 9 noches desde Buenos Aires | Legend Travel",
+      "seo_descripcion": "Salida 27 de diciembre: 9 noches en el Costa Serena con Río de Janeiro el 1° de enero, Camboriú, Ilha Grande e Ilhabela. Bebidas en comidas y propinas incluidas.",
+      "subtitulo": "Salida 27 de diciembre, Río de Janeiro el 1° de enero, bebidas en comidas y propinas incluidas",
+      "por_que": [
+        "Recibís el Año Nuevo navegando y pasás el 1° de enero en Río de Janeiro",
+        "9 noches con escalas en Montevideo, Camboriú, Ilha Grande, Río e Ilhabela",
+        "Bebidas en almuerzo y cena, propinas, tasas e impuestos ya incluidos",
+        "Embarque y desembarque en Buenos Aires: sin aéreos"
+      ],
+      "ideal_para": "Familias y grupos que quieren las fiestas a bordo sin volar: entretenimiento para todas las edades y tarifa para 3° y 4° pasajero.",
+      "ver_tambien": [
+        {
+          "id": "2027-altamar-costa-diadema",
+          "texto": "Si preferís 7 noches en el Costa Diadema con el 31 en Montevideo, mirá también"
+        },
+        {
+          "id": "navidad-costa-diadema",
+          "texto": "Para pasar Navidad a bordo, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -599,7 +675,27 @@
         "url": "https://www.legendtravel.com.ar/consulta/8338/navidad-a-bordo-del-costa-diadema",
         "fecha": "2026-10-13"
       },
-      "codigo_ref": "GEA"
+      "codigo_ref": "GEA",
+      "seo_titulo": "Navidad en el Costa Diadema: 7 noches desde Buenos Aires | Legend Travel",
+      "seo_descripcion": "Salida 23 de diciembre: 7 noches en el Costa Diadema con Montevideo, Itajaí y Santos, regreso el 30. Bebidas en comidas y propinas incluidas. Desde USD 1.334.",
+      "subtitulo": "Salida 23 de diciembre: Nochebuena a bordo y regreso el 30, antes de Año Nuevo",
+      "por_que": [
+        "Pasás Nochebuena y Navidad a bordo y volvés el 30 de diciembre",
+        "7 noches con escalas en Montevideo, Itajaí y Santos",
+        "Bebidas en almuerzo y cena, propinas, tasas e impuestos incluidos",
+        "El precio más bajo de nuestros tres cruceros de fiestas: desde USD 1.334"
+      ],
+      "ideal_para": "Quienes quieren una Navidad distinta y estar de vuelta para Año Nuevo.",
+      "ver_tambien": [
+        {
+          "id": "2027-altamar-costa-diadema",
+          "texto": "Mismo barco, pero con Año Nuevo a bordo: mirá también"
+        },
+        {
+          "id": "anio-nuevo-costa-serena",
+          "texto": "Si preferís 9 noches con Río el 1° de enero, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -728,7 +824,27 @@
         "url": "https://www.legendtravel.com.ar/consulta/8339/recibi-el-2027-en-altamar",
         "fecha": "2026-10-13"
       },
-      "codigo_ref": "GEA"
+      "codigo_ref": "GEA",
+      "seo_titulo": "Año Nuevo en altamar: Costa Diadema, 7 noches | Legend Travel",
+      "seo_descripcion": "Salida 30 de diciembre: 7 noches en el Costa Diadema con el 31 en Montevideo, Itajaí y Santos, regreso el 6 de enero. Bebidas y propinas incluidas. Desde USD 1.536.",
+      "subtitulo": "Salida 30 de diciembre: el 31 en Montevideo y el 1° de enero navegando",
+      "por_que": [
+        "Fiesta de Año Nuevo a bordo, con el 31 de diciembre en Montevideo",
+        "7 noches con escalas en Montevideo, Itajaí y Santos, regreso el 6 de enero",
+        "Bebidas en almuerzo y cena, propinas, tasas e impuestos incluidos",
+        "Mismo barco que la salida de Navidad, pero con las fiestas de fin de año"
+      ],
+      "ideal_para": "Quienes quieren arrancar el año navegando sin aéreos ni traslados.",
+      "ver_tambien": [
+        {
+          "id": "navidad-costa-diadema",
+          "texto": "Si preferís Navidad a bordo y volver antes de fin de año, mirá también"
+        },
+        {
+          "id": "anio-nuevo-costa-serena",
+          "texto": "Si querés 9 noches con Río de Janeiro el 1° de enero, mirá también"
+        }
+      ]
     },
     {
       "activo": false,
@@ -955,7 +1071,23 @@
         "url": "https://www.legendtravel.com.ar/paquetes?id=398&salidaId=476&adultsQty=2",
         "fecha": "2026-10-13"
       },
-      "codigo_ref": "GEA"
+      "codigo_ref": "GEA",
+      "seo_titulo": "Auroras boreales, salida grupal 24 de enero 2027 | Legend Travel",
+      "seo_descripcion": "10 noches en hoteles 4* superior y una en crucero DFDS: Copenhague, Oslo, Tromsø y Estocolmo con guía en español, trineo de renos y experiencia Sami. Iberia.",
+      "subtitulo": "Tromsø en pleno invierno ártico, con trineo de renos y experiencia Sami, en grupo con guía en español",
+      "por_que": [
+        "Tres noches en Tromsø, dentro del círculo polar, para buscar auroras boreales",
+        "Hoteles 4* superior con desayuno buffet y una noche en crucero DFDS con cena",
+        "Teleférico Fjellheisen, trineo tirado por renos y cena Sami alrededor del fuego",
+        "Vuelo interno Oslo–Tromsø y tren rápido Oslo–Estocolmo incluidos"
+      ],
+      "ideal_para": "Quienes buscan el invierno nórdico con todo organizado: salida grupal con guía de habla hispana y seguro de cancelación.",
+      "ver_tambien": [
+        {
+          "id": "majestic-princess-fiordos-noruegos-feb-2027",
+          "texto": "Si preferís llegar a los fiordos y a Tromsø en crucero, mirá también"
+        }
+      ]
     },
     {
       "activo": false,
@@ -1381,7 +1513,23 @@
         "url": "https://www.legendtravel.com.ar/paquetes?id=548&salidaId=676&adultsQty=2",
         "fecha": "2026-10-13"
       },
-      "codigo_ref": "PI"
+      "codigo_ref": "PI",
+      "seo_titulo": "Sur de Italia, Sicilia y Puglia, grupal 9 de marzo 2027 | Legend Travel",
+      "seo_descripcion": "14 noches con acompañante: Roma, Alberobello, Matera, Capri, Taormina, Siracusa, Agrigento, Palermo y Pompeya, hoteles 4*, ferries y 5 comidas. Desde USD 5.428.",
+      "subtitulo": "El único de nuestros circuitos por Italia con Puglia, Sicilia y Capri, con acompañante desde Buenos Aires",
+      "por_que": [
+        "Trulli de Alberobello, sassi de Matera, Capri, el Valle de los Templos y Pompeya en un solo recorrido",
+        "Hoteles 4*: Ergife Palace en Roma y Excelsior Palace en Taormina, con vistas al Etna",
+        "Ferries incluidos: Nápoles–Capri–Sorrento, Mesina y el nocturno Palermo–Nápoles",
+        "5 almuerzos o cenas y acompañante desde Buenos Aires con mínimo de 20 pasajeros"
+      ],
+      "ideal_para": "Quienes ya conocen el norte de Italia o quieren un viaje de grupo con guía por el sur y Sicilia.",
+      "ver_tambien": [
+        {
+          "id": "paseando-por-europa",
+          "texto": "Si es tu primer viaje y querés también Venecia, Florencia y París, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -1487,7 +1635,27 @@
         "url": "https://www.legendtravel.com.ar/paquetes?id=560&salidaId=691&adultsQty=2",
         "fecha": "2026-10-13"
       },
-      "codigo_ref": "GEA"
+      "codigo_ref": "GEA",
+      "seo_titulo": "Punta Cana en Whala! Bávaro, 10 noches all inclusive, 15/2/2027 | Legend Travel",
+      "seo_descripcion": "10 noches all inclusive en Whala! Bávaro 4*, a metros de Playa Bávaro, con tres piscinas y programa para chicos. Aéreos LATAM y traslados. Desde USD 2.490.",
+      "subtitulo": "Hotel 4* a metros de Playa Bávaro, con programa para chicos y 10 noches all inclusive",
+      "por_que": [
+        "Whala! Bávaro 4* en la zona de El Cortecito, a metros de Playa Bávaro",
+        "Régimen all inclusive con bar de playa incluido",
+        "Tres piscinas y programa de juegos y talleres para chicos",
+        "10 noches con aéreos LATAM, traslados y asistencia hasta 70 años"
+      ],
+      "ideal_para": "Familias con chicos que quieren 10 noches de all inclusive en febrero sin moverse del hotel.",
+      "ver_tambien": [
+        {
+          "id": "punta-cana-ene-2027",
+          "texto": "Si preferís viajar en enero, con Occidental Caribe y cupo confirmado, mirá también"
+        },
+        {
+          "id": "punta-cana-bayahibe",
+          "texto": "Para combinar con un hotel solo adultos en Bayahíbe, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -1626,7 +1794,27 @@
         "url": "https://www.legendtravel.com.ar/paquetes?id=557&salidaId=688&adultsQty=2",
         "fecha": "2026-10-13"
       },
-      "codigo_ref": "GEA"
+      "codigo_ref": "GEA",
+      "seo_titulo": "Costa Mujeres y Riviera Maya all inclusive, 10 noches, 4/1/2027 | Legend Travel",
+      "seo_descripcion": "5 noches en Catalonia Grand Costa Mujeres 5* y 5 en BlueBay Grand Esmeralda 4*, todo all inclusive, con aéreos LATAM y traslados internos. Desde USD 3.310.",
+      "subtitulo": "Dos resorts en un viaje: Catalonia Grand Costa Mujeres 5* y BlueBay Grand Esmeralda 4*",
+      "por_que": [
+        "Catalonia Grand Costa Mujeres 5*: suites frente al mar, spa con circuito de aguas y club de chicos y adolescentes",
+        "BlueBay Grand Esmeralda 4* en Riviera Maya, entre selva y manglares, con seis restaurantes y miniclub",
+        "Traslados internos entre los dos resorts incluidos",
+        "10 noches all inclusive con aéreos LATAM, salida 4 de enero 2027"
+      ],
+      "ideal_para": "Familias que quieren comparar dos zonas del Caribe mexicano en un solo viaje, con clubes para chicos en ambos hoteles.",
+      "ver_tambien": [
+        {
+          "id": "riviera-maya-cancun-ene-2027",
+          "texto": "Si preferís dos Iberostar entre Playa del Carmen y Cancún, mirá también"
+        },
+        {
+          "id": "costa-mujeres-ene-2027",
+          "texto": "Para solo Costa Mujeres, 7 noches en el Riu Dunamar, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -1767,7 +1955,27 @@
           "fecha": "2026-10-13"
         }
       ],
-      "codigo_ref": "GEA"
+      "codigo_ref": "GEA",
+      "seo_titulo": "Bayahíbe y Punta Cana all inclusive, 10 noches, 2/1/2027 | Legend Travel",
+      "seo_descripcion": "6 noches en HM Alma de Bayahíbe 4*, solo adultos y frente al mar, más 4 en Whala! Bávaro, todo all inclusive, con aéreos LATAM y traslados. Desde USD 2.400.",
+      "subtitulo": "Seis noches en un hotel solo para adultos en Bayahíbe y cuatro en Bávaro, todo all inclusive",
+      "por_que": [
+        "HM Alma de Bayahíbe 4*: solo para adultos, frente al mar Caribe, con cinco piscinas",
+        "Después, cuatro noches en Whala! Bávaro a metros de Playa Bávaro",
+        "Todos los traslados entre el aeropuerto y los dos hoteles incluidos",
+        "10 noches all inclusive con aéreos LATAM, salida 2 de enero 2027"
+      ],
+      "ideal_para": "Parejas que buscan tranquilidad en Bayahíbe y quieren conocer Punta Cana en el mismo viaje.",
+      "ver_tambien": [
+        {
+          "id": "punta-cana-all-inclusive",
+          "texto": "Si preferís las 10 noches en Punta Cana, mirá también"
+        },
+        {
+          "id": "miami-bayahibe-feb-2027",
+          "texto": "Para combinar Bayahíbe con Miami en febrero, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -1873,7 +2081,27 @@
         "url": "https://www.legendtravel.com.ar/paquetes?id=559&salidaId=690&adultsQty=2",
         "fecha": "2026-10-13"
       },
-      "codigo_ref": "GEA"
+      "codigo_ref": "GEA",
+      "seo_titulo": "Cancún en Hotel Riu Caribe 5*, 10 noches all inclusive, 8/2/2027 | Legend Travel",
+      "seo_descripcion": "10 noches en Hotel Riu Caribe 5*, sobre la playa de la Zona Hotelera, con all inclusive 24 horas, seis restaurantes y club infantil. Aéreos LATAM. Desde USD 3.840.",
+      "subtitulo": "Hotel 5* sobre la playa de la Zona Hotelera, con all inclusive 24 horas",
+      "por_que": [
+        "Hotel Riu Caribe 5* sobre la playa, en la Zona Hotelera de Cancún",
+        "All inclusive 24 horas con seis restaurantes",
+        "Cinco piscinas, club infantil, spa y gimnasio",
+        "10 noches con aéreos LATAM y traslados, salida 8 de febrero 2027"
+      ],
+      "ideal_para": "Familias y parejas que quieren un 5* en plena Zona Hotelera, con la ciudad y la vida nocturna de Cancún cerca.",
+      "ver_tambien": [
+        {
+          "id": "riviera-maya-cancun-ene-2027",
+          "texto": "Si preferís enero y repartir las noches entre Playa del Carmen y Cancún, mirá también"
+        },
+        {
+          "id": "riviera-maya-ene-2027",
+          "texto": "Para una semana en Riviera Maya al menor precio, mirá también"
+        }
+      ]
     },
     {
       "activo": false,
@@ -2382,7 +2610,23 @@
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 7.950 + impuestos USD 1.790 (IVA, gastos, DNT, tasas y propinas) = USD 9.740. Single: 7.950 + 2.280 + 1.790 = 12.020. Reemplaza la versión de noviembre 2026 (26 días, USD 14.330)."
       },
-      "codigo_ref": "KM-1115"
+      "codigo_ref": "KM-1115",
+      "seo_titulo": "Vietnam, Camboya y Tailandia, grupal 7 de marzo 2027 | Legend Travel",
+      "seo_descripcion": "16 noches en hoteles 4* con tour leader: Hanoi, crucero por la bahía de Lan Ha, Hoi An, Hue, Ho Chi Minh, Angkor, Bangkok y 3 noches en Phuket. Desde USD 9.740.",
+      "subtitulo": "Tres países, una noche de crucero en la bahía de Lan Ha y tres noches de playa en Phuket para cerrar",
+      "por_que": [
+        "Noche a bordo del crucero Indochine Premium por la bahía de Lan Ha, con pensión completa",
+        "Templos de Angkor desde Siem Reap y el Gran Palacio de Bangkok",
+        "Cierre de tres noches en Pullman Phuket Panwa Beach, con late check-out",
+        "9 almuerzos y 3 cenas incluidos, guía en español y tour leader desde Argentina"
+      ],
+      "ideal_para": "Quienes quieren el sudeste asiático completo en grupo, con vuelos internos resueltos y playa al final.",
+      "ver_tambien": [
+        {
+          "id": "malasia-singapur-bali",
+          "texto": "Si preferís más días de playa, con ocho noches en Bali, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -2778,7 +3022,23 @@
         "url": "https://www.legendtravel.com.ar/paquetes?id=372&salidaId=438&adultsQty=2",
         "fecha": "2026-10-13"
       },
-      "codigo_ref": "GEA"
+      "codigo_ref": "GEA",
+      "seo_titulo": "Corea y Japón, grupal acompañada 5 de marzo 2027 | Legend Travel",
+      "seo_descripcion": "15 noches con acompañante: Seúl y la DMZ, Busan, Hiroshima, noche en monasterio del Monte Koya, Kioto, tren bala y 4 noches en Tokio. Hoteles 4*. Desde USD 8.070.",
+      "subtitulo": "Con la noche en el monasterio budista del Monte Koya y cuatro noches en Tokio",
+      "por_que": [
+        "Noche en el templo Koyasan Shukubo Hojoin, con habitaciones de tatami y cocina vegetariana budista",
+        "Excursión a la DMZ en Cheorwon y elaboración de salsa Gochujang",
+        "Ferry Hiroshima–Matsuyama, funicular al castillo y tren bala Kioto–Tokio",
+        "11 almuerzos o cenas y acompañante desde Buenos Aires con mínimo de 20 pasajeros"
+      ],
+      "ideal_para": "Viajeros que quieren Corea y Japón juntos en marzo, con guía y sin resolver trenes ni ferries por su cuenta.",
+      "ver_tambien": [
+        {
+          "id": "corea-japon-cherry-blossom",
+          "texto": "Si preferís viajar en plena floración de los cerezos, con Osaka y los Alpes japoneses, mirá también"
+        }
+      ]
     },
     {
       "activo": false,
@@ -3172,7 +3432,18 @@
       "regiones_extra": [
         "medio-oriente"
       ],
-      "codigo_ref": "KM-1117"
+      "codigo_ref": "KM-1117",
+      "seo_titulo": "Egipto y Jordania, salida grupal 17 de marzo 2027 | Legend Travel",
+      "seo_descripcion": "15 noches: 5 en El Cairo en el Sofitel sobre el Nilo, 4 de crucero por el Nilo, Petra, campamento de lujo en Wadi Rum y 2 en el Mar Muerto. Desde USD 8.420.",
+      "subtitulo": "Crucero de cuatro noches por el Nilo y noche bajo las estrellas en Wadi Rum",
+      "por_que": [
+        "4 noches de crucero por el Nilo con pensión completa, de Luxor a Aswan",
+        "Sofitel Cairo Downtown sobre la costanera del Nilo, con vista al río desde todas las habitaciones",
+        "Mövenpick Resort Petra en la entrada del sitio y carpas domo con panel transparente en Wadi Rum",
+        "Resort con playa propia en el Mar Muerto y tour leader desde Argentina"
+      ],
+      "ideal_para": "Quienes quieren Egipto y Jordania en un solo viaje de 15 noches, con guías en español y vuelos internos incluidos.",
+      "ver_tambien": []
     },
     {
       "activo": true,
@@ -3419,7 +3690,23 @@
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 7.950 + impuestos USD 1.870 (DNT, IVA, gastos y propinas) = USD 9.820. Single: 7.950 + 2.880 + 1.870 = 12.700. Los vuelos de la ficha figuran con fechas de noviembre (16NOV–28NOV): se cargan solo aerolínea, ruta y número. Decisión del usuario (15/10/2026): se publica la salida del 8 de febrero 2027."
       },
-      "codigo_ref": "KM-1147"
+      "codigo_ref": "KM-1147",
+      "seo_titulo": "Sudáfrica y Mauritius, salida grupal 8 de febrero 2027 | Legend Travel",
+      "seo_descripcion": "11 noches: safaris en reserva privada del área Kruger, 4 noches en Hilton Mauritius con media pensión y 4 en Ciudad del Cabo con Table Mountain. Desde USD 9.820.",
+      "subtitulo": "Safari, playa y Ciudad del Cabo en once noches, con tour leader desde Argentina",
+      "por_que": [
+        "2 noches en la reserva privada Karongwe, área Kruger, con safaris en 4x4 y pensión completa",
+        "4 noches en Hilton Mauritius Resort & Spa con media pensión",
+        "Península del Cabo, Table Mountain y viñedos con degustación incluidos",
+        "Tour leader desde Argentina y asistencia Universal Assistance Excellence"
+      ],
+      "ideal_para": "Parejas que quieren safari y playa en el mismo viaje, con hoteles 4* y todo coordinado.",
+      "ver_tambien": [
+        {
+          "id": "kenia-tanzania",
+          "texto": "Si preferís un safari más largo, con Masai Mara y Serengueti, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -3526,7 +3813,23 @@
         "url": "https://www.legendtravel.com.ar/consulta/1781/enjoy-disney-usa",
         "fecha": "2026-10-13"
       },
-      "codigo_ref": "GEA"
+      "codigo_ref": "GEA",
+      "seo_titulo": "Quinceañeras en Disney y Miami, 11 noches pensión completa | Legend Travel",
+      "seo_descripcion": "10 noches en resorts Walt Disney World con pensión completa, todos los parques Disney y Universal, 1 noche en Miami, coordinadoras y equipo médico. Salidas 2027 y 2028.",
+      "subtitulo": "Resorts dentro de Walt Disney World, todos los parques y coordinación permanente",
+      "por_que": [
+        "10 noches en resorts de Walt Disney World (All Star / Pop Century) con pensión completa y Disney Mug de bebidas ilimitadas",
+        "Magic Kingdom, Epcot, Hollywood Studios, Animal Kingdom, parques acuáticos y Universal con Hogwarts Express",
+        "Coordinador/a cada 15 pasajeras, equipo médico y seguimiento diario con fotos",
+        "Salidas desde Buenos Aires, Córdoba y Rosario en enero-febrero, junio-julio y diciembre"
+      ],
+      "ideal_para": "Familias que buscan el viaje de 15 clásico a Disney con todo incluido y acompañamiento permanente.",
+      "ver_tambien": [
+        {
+          "id": "disney-europa-premium-xv",
+          "texto": "Si preferís Europa con Disneyland París y Port Aventura, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -3650,7 +3953,23 @@
         "url": "https://www.legendtravel.com.ar/consulta/1782/disney-europa-premium",
         "fecha": "2026-10-13"
       },
-      "codigo_ref": "GEA"
+      "codigo_ref": "GEA",
+      "seo_titulo": "Quinceañeras por Europa con Disneyland París, 2027 | Legend Travel",
+      "seo_descripcion": "12 noches con pensión completa: Londres con Harry Potter Studios, Disneyland París, Port Aventura y Ferrari Land, Parque Warner Madrid. Septiembre 2027. Desde USD 7.464.",
+      "subtitulo": "Cuatro ciudades y cinco parques en 12 noches, con pensión completa y merienda",
+      "por_que": [
+        "Warner Bros Studio Tour Harry Potter en Londres y Early Park Entry en Disneyland París",
+        "Port Aventura, Ferrari Land y playa de Salou, más Parque Warner en Madrid",
+        "Pensión completa con merienda durante todo el viaje",
+        "Coordinadores exclusivos permanentes y Assist-Card hasta USD 1.000.000"
+      ],
+      "ideal_para": "Quinceañeras que prefieren Europa a Orlando: ciudades, compras y parques temáticos en un mismo viaje.",
+      "ver_tambien": [
+        {
+          "id": "enjoy-disney-usa-xv",
+          "texto": "Si preferís Orlando y Miami con resorts Disney, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -3951,7 +4270,23 @@
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 7.750 + impuestos USD 1.690 (DNT, IVA, gastos y propinas) = USD 9.440. Single: 7.750 + 2.950 + 1.690 = 12.390. Triple igual a doble según ficha."
       },
-      "codigo_ref": "KM-1145"
+      "codigo_ref": "KM-1145",
+      "seo_titulo": "India y Maldivas, salida grupal 20 de enero 2027 | Legend Travel",
+      "seo_descripcion": "17 noches: Delhi, Jaipur, safari de tigres en Ranthambore, Taj Mahal y 4 noches all inclusive en Centara Ras Fushi, Maldivas, en villa sobre la playa. Desde USD 9.440.",
+      "subtitulo": "Rajastán y el Taj Mahal, y para cerrar cuatro noches all inclusive en Maldivas",
+      "por_que": [
+        "Safari de tigres con 2 noches en Kipling Lodge, Ranthambore",
+        "Taj Mahal en Agra y los palacios de Jaipur con guías locales en español",
+        "4 noches all inclusive en Centara Ras Fushi, Maldivas, en Lagoon View Beach Villa",
+        "Tour leader desde Argentina y la tarifa en base triple igual a la doble"
+      ],
+      "ideal_para": "Parejas que combinan un viaje cultural intenso con descanso en Maldivas al final.",
+      "ver_tambien": [
+        {
+          "id": "holi-india-2027",
+          "texto": "Si preferís vivir la fiesta Holi en marzo, con Jodhpur, Udaipur y Mumbai, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -4240,7 +4575,23 @@
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 9.980 + impuestos USD 1.920 (visa de Kenia, DNT, IVA, gastos y propinas) = USD 11.900. Single: 9.980 + 1.850 + 1.920 = 13.750."
       },
-      "codigo_ref": "KM-4"
+      "codigo_ref": "KM-4",
+      "seo_titulo": "Kenia y Tanzania con Zanzíbar, safari grupal 22/2/2027 | Legend Travel",
+      "seo_descripcion": "15 noches: Masai Mara, Serengueti y Ngorongoro en safaris 4x4 con lodges 4* y pensión completa, más 4 noches all inclusive en Riu Jambo Zanzibar. Desde USD 11.900.",
+      "subtitulo": "Los grandes parques de Kenia y Tanzania en 4x4 y cuatro noches all inclusive en Zanzíbar",
+      "por_que": [
+        "Masai Mara, Serengueti y Ngorongoro con todas las entradas a parques incluidas",
+        "Lodges 4* con pensión completa: Mara Simba, Mbalageti Tented Lodge, Lake Manyara Serena",
+        "4 noches all inclusive en Riu Jambo Zanzibar",
+        "Visa de Kenia incluida, cena en el Carnivore de Nairobi y tour leader desde Argentina"
+      ],
+      "ideal_para": "Quienes quieren el safari completo de África del Este en una sola salida, con playa al final.",
+      "ver_tambien": [
+        {
+          "id": "sudafrica-mauritius",
+          "texto": "Si preferís un viaje más corto con Ciudad del Cabo y Mauritius, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -4574,7 +4925,23 @@
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 6.350 + impuestos USD 1.540 (DNT, IVA, gastos y propinas) = USD 7.890. Single: 6.350 + 1.850 + 1.540 = 9.740."
       },
-      "codigo_ref": "KM-1116"
+      "codigo_ref": "KM-1116",
+      "seo_titulo": "Fiesta Holi en India, salida grupal 14 de marzo 2027 | Legend Travel",
+      "seo_descripcion": "17 noches: el Holi en el Chomu Palace, Delhi, Taj Mahal, Jaipur, Jodhpur, Udaipur, cuevas de Ajanta y Ellora y Mumbai, en hoteles 4* y 5*. Desde USD 7.890.",
+      "subtitulo": "El Holi celebrado en un palacio de Rajastán, con Jodhpur, Udaipur, Ajanta y Mumbai",
+      "por_que": [
+        "La fiesta Holi en el Chomu Palace, con noche en el palacio",
+        "Hoteles 5*: The Lalit en Delhi y Udaipur, Welcome by ITC en Jodhpur",
+        "Cuevas de Ajanta y Ellora desde Aurangabad y cierre en Mumbai",
+        "Early check-in en Delhi, vuelos domésticos y tour leader desde Argentina"
+      ],
+      "ideal_para": "Quienes quieren India a fondo y en fecha de fiesta, con hoteles de categoría alta y grupo acompañado.",
+      "ver_tambien": [
+        {
+          "id": "india-maldivas",
+          "texto": "Si preferís India en enero con cuatro noches en Maldivas, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -4919,7 +5286,23 @@
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 12.880 + impuestos USD 1.930 (DNT, IVA, gastos y propinas) = USD 14.810. Single: 12.880 + 4.170 + 1.930 = 18.980."
       },
-      "codigo_ref": "KM-1090"
+      "codigo_ref": "KM-1090",
+      "seo_titulo": "Corea y Japón en floración de cerezos, grupal 17/3/2027 | Legend Travel",
+      "seo_descripcion": "18 noches: Seúl, Gyeongju, Busan, Osaka, Kioto, Hiroshima en tren bala, Kanazawa, Shirakawago, noche en ryokan, Hakone y Tokio. 12 comidas. Desde USD 14.810.",
+      "subtitulo": "Dieciocho noches en plena floración, con los Alpes japoneses y una noche de ryokan",
+      "por_que": [
+        "Viaje en la temporada del cherry blossom, con Gyeongju y Busan además de Seúl",
+        "Kanazawa, Shirakawago, Takayama y Hakone: los Alpes japoneses",
+        "Noche en ryokan en Yugawara y Hotel New Otani en Tokio",
+        "Billetes de tren incluidos, 10 almuerzos y 2 cenas y tour leader desde Argentina"
+      ],
+      "ideal_para": "Quienes priorizan la floración de los cerezos y un recorrido largo de 18 noches.",
+      "ver_tambien": [
+        {
+          "id": "tesoros-corea-japon",
+          "texto": "Si preferís salir el 5 de marzo con la noche en el Monte Koya y menor precio, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -5255,7 +5638,23 @@
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 8.350 + impuestos USD 1.870 (DNT, IVA, visa de China, gastos y propinas) = USD 10.220. Single: 8.350 + 1.920 + 1.870 = 12.140."
       },
-      "codigo_ref": "KM-2"
+      "codigo_ref": "KM-2",
+      "seo_titulo": "China y Tíbet, salida grupal 6 de abril 2027 | Legend Travel",
+      "seo_descripcion": "19 noches: Gran Muralla, Xi'an, 3 noches en Lhasa en el St. Regis, pandas de Chengdu, Zhangjiajie, Fenghuang y Shanghái. Visa y permiso del Tíbet incluidos. Desde USD 10.220.",
+      "subtitulo": "Tres noches en Lhasa con permiso de ingreso al Tíbet incluido, Zhangjiajie y los pandas de Chengdu",
+      "por_que": [
+        "3 noches en The St. Regis Lhasa Resort con la autorización de ingreso al Tíbet incluida",
+        "Pandas en Chengdu, montañas de Zhangjiajie y las ciudades antiguas de Furong y Fenghuang",
+        "Hoteles 5* en Beijing, Xi'an, Zhangjiajie y Shanghái",
+        "Visa de China incluida, cena de pato laqueado y 9 almuerzos"
+      ],
+      "ideal_para": "Quienes quieren ir más allá de la China clásica: Tíbet y el interior, en grupo con guía en español.",
+      "ver_tambien": [
+        {
+          "id": "hong-kong-china-2027",
+          "texto": "Si preferís entrar por Hong Kong y recorrer Guilin y Chongqing, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -5565,7 +5964,23 @@
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 6.680 + impuestos USD 1.550 (DNT, IVA, gastos y propinas) = USD 8.230. Single: 6.680 + 1.750 + 1.550 = 9.980."
       },
-      "codigo_ref": "KM-1126"
+      "codigo_ref": "KM-1126",
+      "seo_titulo": "Hong Kong y China milenaria, grupal 10 de mayo 2027 | Legend Travel",
+      "seo_descripcion": "17 noches: 2 en Hong Kong, Gran Muralla, Guerreros de Terracota, Chongqing, el río Li en Guilin, Hangzhou y Shanghái, en hoteles 5* con 9 almuerzos. Desde USD 8.230.",
+      "subtitulo": "Entrada por Hong Kong, Chongqing y el río Li en Guilin, en hoteles 5*",
+      "por_que": [
+        "Dos noches en Hong Kong antes de entrar a China",
+        "Chongqing, Guilin y Hangzhou: tres paradas que el viaje con Tíbet no incluye",
+        "Hoteles 5* en Beijing, Xi'an, Chongqing, Guilin, Hangzhou y Shanghái",
+        "Trenes incluidos, 9 almuerzos, cena de pato laqueado y espectáculo de acrobacia"
+      ],
+      "ideal_para": "Primer viaje a China con Hong Kong incluido y hotelería alta, en mayo.",
+      "ver_tambien": [
+        {
+          "id": "china-tibet",
+          "texto": "Si querés sumar el Tíbet y Zhangjiajie, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -5839,7 +6254,23 @@
         "fecha": "2026-10-15",
         "desglose": "Base doble USD 7.820 + impuestos USD 1.615 (DNT, IVA, gastos y propinas) = USD 9.435. Single: 7.820 + 2.480 + 1.615 = 11.915."
       },
-      "codigo_ref": "KM-1146"
+      "codigo_ref": "KM-1146",
+      "seo_titulo": "Malasia, Singapur y Bali, salida grupal 24 de mayo 2027 | Legend Travel",
+      "seo_descripcion": "16 noches: Kuala Lumpur, Malaca, 4 noches en Singapur y ocho en Bali entre Ubud y Nusa Dua, hoteles 4*, 5 almuerzos y 2 cenas, tour leader. Desde USD 9.435.",
+      "subtitulo": "Ocho noches en Bali entre Ubud y la playa de Nusa Dua, después de Kuala Lumpur y Singapur",
+      "por_que": [
+        "3 noches en Plataran Ubud y 5 en Merusaka Nusa Dua: la estadía de playa más larga de nuestras salidas a Asia",
+        "4 noches en Singapur en The Grand Copthorne Waterfront",
+        "Malaca histórica y las Torres Petronas de Kuala Lumpur",
+        "5 almuerzos, 2 cenas y tour leader desde Argentina"
+      ],
+      "ideal_para": "Quienes quieren Asia con ritmo más tranquilo y más días de playa.",
+      "ver_tambien": [
+        {
+          "id": "vietnam-camboya-tailandia",
+          "texto": "Si preferís Vietnam, Angkor y Bangkok con playa en Phuket, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -5943,7 +6374,27 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
       },
-      "codigo_ref": "PI-63139480"
+      "codigo_ref": "PI-63139480",
+      "seo_titulo": "Riviera Maya y Cancún con Iberostar, 10 noches, 25/1/2027 | Legend Travel",
+      "seo_descripcion": "8 noches en Iberostar Waves Paraíso Beach y 2 en Iberostar Selection Cancún con vista al mar, todo incluido, cupo LATAM confirmado con valija de 23 kg. Desde USD 3.159.",
+      "subtitulo": "Dos Iberostar frente al mar: ocho noches en Playa del Carmen y dos en la zona hotelera de Cancún",
+      "por_que": [
+        "Iberostar Waves Paraíso Beach en habitación Premium Tropical View, 8 noches",
+        "Cierre de 2 noches en Iberostar Selection Cancún con habitación Premium Ocean View",
+        "Cupo aéreo confirmado con LATAM, valija de 23 kg y carry on",
+        "Traslados interhotel incluidos y asistencia con seguro de cancelación"
+      ],
+      "ideal_para": "Quienes quieren resort en Riviera Maya pero terminar en Cancún, con hoteles de una misma cadena.",
+      "ver_tambien": [
+        {
+          "id": "cancun-all-inclusive",
+          "texto": "Si preferís las 10 noches en Cancún en un 5*, mirá también"
+        },
+        {
+          "id": "riviera-maya-ene-2027",
+          "texto": "Para una semana en Puerto Aventuras con Arajet, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -6034,7 +6485,23 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
       },
-      "codigo_ref": "PI-65533521"
+      "codigo_ref": "PI-65533521",
+      "seo_titulo": "Miches, 12 noches todo incluido, salida 4 de enero 2027 | Legend Travel",
+      "seo_descripcion": "12 noches todo incluido en Viva Miches by Wyndham, en la costa noreste dominicana, con traslados privados y aéreos LATAM con valija de 23 kg. Desde USD 3.744.",
+      "subtitulo": "La estadía más larga de nuestras salidas al Caribe: 12 noches en una costa todavía poco construida",
+      "por_que": [
+        "Miches, la costa noreste dominicana que recién se abre al turismo",
+        "12 noches todo incluido en Viva Miches by Wyndham, habitación Superior",
+        "Traslados privados de llegada y salida",
+        "Aéreos LATAM con valija de 23 kg, salida 4 de enero 2027"
+      ],
+      "ideal_para": "Quienes buscan playa tranquila y muchos días, lejos de la zona más concurrida de Punta Cana.",
+      "ver_tambien": [
+        {
+          "id": "punta-cana-ene-2027",
+          "texto": "Si preferís el clásico de Bávaro con 10 noches, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -6151,7 +6618,23 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
       },
-      "codigo_ref": "PI-66158100"
+      "codigo_ref": "PI-66158100",
+      "seo_titulo": "Miami y Bayahíbe con vuelos directos LATAM, 14/2/2027 | Legend Travel",
+      "seo_descripcion": "5 noches en Miami Beach y 5 todo incluido en Catalonia Bayahibe, con vuelos directos LATAM Buenos Aires–Miami y Miami–Punta Cana y traslados privados. Desde USD 3.485.",
+      "subtitulo": "Ciudad y compras en Miami Beach, después playa todo incluido en Bayahíbe",
+      "por_que": [
+        "Vuelos directos LATAM Buenos Aires–Miami y Miami–Punta Cana",
+        "5 noches en Miami Beach en Chesterfield Hotel & Suites",
+        "5 noches todo incluido en Catalonia Bayahibe",
+        "Traslados privados en cada ciudad y asistencia con seguro de cancelación"
+      ],
+      "ideal_para": "Quienes quieren compras y ciudad y después playa, con visa de Estados Unidos vigente.",
+      "ver_tambien": [
+        {
+          "id": "punta-cana-bayahibe",
+          "texto": "Si preferís Bayahíbe en un hotel solo adultos combinado con Punta Cana, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -6264,7 +6747,23 @@
         "asistencia": "Internacional Plus 100K",
         "web": ""
       },
-      "codigo_ref": "PI-51938153"
+      "codigo_ref": "PI-51938153",
+      "seo_titulo": "Punta Cana y crucero Costa Fascinosa, 10 noches, 7/1/2027 | Legend Travel",
+      "seo_descripcion": "3 noches todo incluido en Ocean El Faro y 7 a bordo del Costa Fascinosa en cabina externa con bebidas y propinas: La Romana, Samaná, Gran Turca. Vuelos directos Arajet.",
+      "subtitulo": "Hotel todo incluido más crucero por el Caribe con bebidas y propinas a bordo incluidas",
+      "por_que": [
+        "Vuelos directos Buenos Aires–Punta Cana con Arajet",
+        "3 noches en Ocean El Faro, Jr. Suite todo incluido, antes de embarcar",
+        "7 noches en cabina externa del Costa Fascinosa con paquete My Drinks y propinas incluidas",
+        "Escalas en La Romana, Isla Catalina, Samaná, Gran Turca, Amber Cove y Cabo Rojo"
+      ],
+      "ideal_para": "Quienes quieren un crucero por el Caribe con vuelo directo y unos días de playa antes.",
+      "ver_tambien": [
+        {
+          "id": "punta-cana-ene-2027",
+          "texto": "Si preferís solo resort en Punta Cana, 10 noches todo incluido, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -6355,7 +6854,23 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
       },
-      "codigo_ref": "PI-52302197"
+      "codigo_ref": "PI-52302197",
+      "seo_titulo": "Aruba, 8 noches en hotel solo adultos, 9 de enero 2027 | Legend Travel",
+      "seo_descripcion": "8 noches en TRYP by Wyndham Aruba Adults Only, en Palm Beach, con aéreos LATAM, traslados y asistencia. Aruba está fuera de la zona de huracanes. Desde USD 3.134.",
+      "subtitulo": "Hotel boutique solo para adultos en Palm Beach, en una isla fuera de la zona de huracanes",
+      "por_que": [
+        "TRYP by Wyndham Aruba Adults Only, en Palm Beach, en habitación Premium",
+        "Aruba queda fuera de la zona de huracanes: sol casi todo el año",
+        "8 noches con aéreos LATAM, valija de 23 kg y traslados",
+        "Asistencia con seguro de cancelación hasta 70 años"
+      ],
+      "ideal_para": "Parejas que quieren una isla tranquila y un hotel sin chicos.",
+      "ver_tambien": [
+        {
+          "id": "punta-cana-bayahibe",
+          "texto": "Si buscás solo adultos pero con all inclusive, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -6446,7 +6961,27 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
       },
-      "codigo_ref": "PI-52975881"
+      "codigo_ref": "PI-52975881",
+      "seo_titulo": "Punta Cana con Occidental Caribe, 10 noches, 13 de enero 2027 | Legend Travel",
+      "seo_descripcion": "10 noches todo incluido en Occidental Caribe, en Playa Arena Gorda, Bávaro, con cupo aéreo LATAM confirmado, valija de 23 kg y traslados. Desde USD 2.988.",
+      "subtitulo": "Occidental Caribe en Playa Arena Gorda, con cupo aéreo confirmado para enero",
+      "por_que": [
+        "Occidental Caribe en Bávaro, sobre Playa Arena Gorda",
+        "10 noches todo incluido con cupo aéreo confirmado para el 13 de enero",
+        "Aéreos LATAM con valija de 23 kg y carry on",
+        "Asistencia Internacional Plus con seguro de cancelación hasta 70 años"
+      ],
+      "ideal_para": "Quienes buscan el clásico de enero en Punta Cana con lugar en el avión asegurado.",
+      "ver_tambien": [
+        {
+          "id": "punta-cana-all-inclusive",
+          "texto": "Si preferís febrero en Whala! Bávaro, mirá también"
+        },
+        {
+          "id": "miches-ene-2027",
+          "texto": "Para 12 noches en una costa más tranquila, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -6535,7 +7070,27 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
       },
-      "codigo_ref": "PI-54740316"
+      "codigo_ref": "PI-54740316",
+      "seo_titulo": "Riviera Maya en Puerto Aventuras, 7 noches, 18 de enero 2027 | Legend Travel",
+      "seo_descripcion": "7 noches todo incluido en Catalonia Riviera Maya Resort and Spa, entre Playa del Carmen y Tulum, con aéreos Arajet y traslados. Desde USD 2.396.",
+      "subtitulo": "Catalonia Riviera Maya en Puerto Aventuras, entre Playa del Carmen y Tulum, una semana justa",
+      "por_que": [
+        "Catalonia Riviera Maya Resort and Spa, habitación Premium, en Puerto Aventuras",
+        "A mitad de camino entre Playa del Carmen y Tulum",
+        "7 noches todo incluido: el precio más bajo de nuestras salidas al Caribe mexicano",
+        "Aéreos Arajet con valija de 23 kg y traslados compartidos"
+      ],
+      "ideal_para": "Quienes quieren una semana de resort con Tulum y Playa del Carmen cerca para salir.",
+      "ver_tambien": [
+        {
+          "id": "costa-mujeres-ene-2027",
+          "texto": "Misma fecha y mismo vuelo, pero al norte de Cancún en el Riu Dunamar: mirá también"
+        },
+        {
+          "id": "riviera-maya-cancun-ene-2027",
+          "texto": "Si preferís 10 noches con cupo LATAM y dos Iberostar, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -6624,7 +7179,27 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona en base doble publicado por el operador (incluye IVA, DNT, impuestos y gastos administrativos); la ficha no desglosa componentes."
       },
-      "codigo_ref": "PI-55903469"
+      "codigo_ref": "PI-55903469",
+      "seo_titulo": "Costa Mujeres en Riu Dunamar, 7 noches, 18 de enero 2027 | Legend Travel",
+      "seo_descripcion": "7 noches todo incluido en Riu Dunamar, en Playa Mujeres, al norte de Cancún, con aéreos Arajet y traslados. Hotel recomendado por el operador. Desde USD 2.586.",
+      "subtitulo": "Riu Dunamar en Playa Mujeres, al norte de Cancún: aguas calmas y playa amplia",
+      "por_que": [
+        "Riu Dunamar en Playa Mujeres, al norte de Cancún, con aguas calmas",
+        "Uno de los hoteles recomendados por el operador",
+        "7 noches todo incluido con aéreos Arajet y valija de 23 kg",
+        "Salida 18 de enero 2027 con traslados compartidos incluidos"
+      ],
+      "ideal_para": "Quienes prefieren la zona norte de Cancún, con mar calmo, en vez de la Riviera Maya.",
+      "ver_tambien": [
+        {
+          "id": "riviera-maya-ene-2027",
+          "texto": "Misma fecha y mismo vuelo, pero en Puerto Aventuras y más barato: mirá también"
+        },
+        {
+          "id": "riviera-maya-costa-mujeres",
+          "texto": "Si querés Costa Mujeres en un 5* combinado con Riviera Maya, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -6890,7 +7465,27 @@
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 4.160 + impuestos aéreos USD 584 + IVA y gastos USD 280 = USD 5.024. Triple USD 4.946. Single USD 6.892. Seña USD 2.300."
       },
-      "codigo_ref": "JT-2187"
+      "codigo_ref": "JT-2187",
+      "seo_titulo": "Madrid y Norte Europeo: París, Londres y Ámsterdam, 23/4/2027 | Legend Travel",
+      "seo_descripcion": "16 noches en autocar con guía: Madrid, Burdeos, 4 noches en París, cruce del Canal con 3 en Londres, Brujas, Gante y Ámsterdam. Iberia. Desde USD 5.024.",
+      "subtitulo": "El único de nuestros circuitos que cruza a Londres y llega a Ámsterdam",
+      "por_que": [
+        "Cuatro noches en París y tres en Londres, con el cruce del Canal por Canterbury",
+        "Brujas, Gante, Rotterdam, Ámsterdam y los molinos de Kinderdijk",
+        "Hoteles 4* en Madrid y Burdeos, Ibis en París y Londres",
+        "Aéreos Iberia con valija de 23 kg y guía acompañante en español"
+      ],
+      "ideal_para": "Quienes ya conocen Italia y quieren el norte de Europa: Francia, Inglaterra, Bélgica y Países Bajos.",
+      "ver_tambien": [
+        {
+          "id": "descubriendo-europa",
+          "texto": "Si preferís el circuito clásico con Italia, mirá también"
+        },
+        {
+          "id": "europa-esencial",
+          "texto": "Si te interesa Alemania con crucero por el Rhin, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -7195,7 +7790,27 @@
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 4.006 + impuestos aéreos USD 583 + IVA y gastos USD 269 = USD 4.858. Triple USD 4.782. Single USD 6.445. Seña USD 2.200."
       },
-      "codigo_ref": "JT-2143"
+      "codigo_ref": "JT-2143",
+      "seo_titulo": "Paseando por Europa: España, Italia y París, 21 de mayo 2027 | Legend Travel",
+      "seo_descripcion": "16 noches en autocar con guía: Madrid, Barcelona, Costa Azul y Mónaco, Venecia, Florencia, 3 noches en Roma, Turín, Ginebra y 3 en París. Hoteles 4*. Desde USD 4.858.",
+      "subtitulo": "El clásico completo con tres noches en Roma y tres en París, en hoteles 4*",
+      "por_que": [
+        "Tres noches en Roma y tres en París, las estadías más largas del circuito",
+        "Costa Azul con Mónaco, y el paso por Turín y Ginebra camino a París",
+        "Hoteles 4* en todas las ciudades salvo Burdeos",
+        "Aéreos Iberia con valija de 23 kg y guía acompañante en español"
+      ],
+      "ideal_para": "Primer viaje a Europa: las ciudades imprescindibles en un solo recorrido.",
+      "ver_tambien": [
+        {
+          "id": "descubriendo-europa",
+          "texto": "Si preferís salir el 2 de mayo con cinco noches en Madrid y menor precio, mirá también"
+        },
+        {
+          "id": "europa-esencial",
+          "texto": "Si querés sumar Alemania y Austria, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -7499,7 +8114,27 @@
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 3.722 + impuestos aéreos USD 581 + IVA y gastos USD 251 = USD 4.554. Triple USD 4.484. Single USD 6.077."
       },
-      "codigo_ref": "JT-2149"
+      "codigo_ref": "JT-2149",
+      "seo_titulo": "Descubriendo Europa en 17 noches, salida 2 de mayo 2027 | Legend Travel",
+      "seo_descripcion": "17 noches con 5 en Madrid: Burdeos, París, Ginebra, Aosta, Venecia, Rávena, Asís, 3 noches en Roma, Florencia, Pisa, Montecarlo y Barcelona. Desde USD 4.554.",
+      "subtitulo": "Diecisiete noches con cinco en Madrid y el precio más bajo de nuestros circuitos por Europa",
+      "por_que": [
+        "Cinco noches en Madrid repartidas al inicio y al final",
+        "Rávena y Aosta en los Alpes, además de Venecia, Florencia y Roma",
+        "Tres noches en Roma en Novotel Roma Est y dos en París",
+        "El precio más bajo de nuestros circuitos por Europa, con Iberia y valija de 23 kg"
+      ],
+      "ideal_para": "Quienes quieren ver mucho con presupuesto ajustado y tener días libres en Madrid.",
+      "ver_tambien": [
+        {
+          "id": "paseando-por-europa",
+          "texto": "Si preferís tres noches en París y salir en mayo con hoteles 4* en todo el recorrido, mirá también"
+        },
+        {
+          "id": "magicamente-europa",
+          "texto": "Si buscás la versión económica de abril, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -7819,7 +8454,27 @@
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 3.867 + impuestos aéreos USD 582 + IVA y gastos USD 261 = USD 4.710. Triple USD 4.636. Single USD 6.067. Seña USD 2.300."
       },
-      "codigo_ref": "JT-2160"
+      "codigo_ref": "JT-2160",
+      "seo_titulo": "Andalucía, Marruecos y Portugal, 16 noches, 16/4/2027 | Legend Travel",
+      "seo_descripcion": "16 noches con 11 comidas: Toledo y la Alhambra, cruce a Marruecos por Tánger, Marrakech, kasbahs y desierto hasta Fez, Sevilla y Lisboa. Iberia. Desde USD 4.710.",
+      "subtitulo": "El único de nuestros circuitos que cruza a Marruecos: Marrakech, las kasbahs, el desierto y Fez",
+      "por_que": [
+        "Siete noches en Marruecos con media pensión: Rabat, Marrakech, Boumalne Dades, Erfoud, Fez y Tánger",
+        "Entrada a la Alhambra y el Generalife incluida",
+        "11 comidas incluidas, más que cualquier otro de nuestros circuitos",
+        "Los argentinos no necesitan visa para Marruecos"
+      ],
+      "ideal_para": "Quienes buscan algo distinto a la Europa clásica, con desierto y medinas además de Andalucía y Lisboa.",
+      "ver_tambien": [
+        {
+          "id": "peninsula-iberica-madrid",
+          "texto": "Si preferís solo España y Portugal, mirá también"
+        },
+        {
+          "id": "andalucia-portugal-pais-vasco-lourdes",
+          "texto": "Para Andalucía y Portugal con el País Vasco y Lourdes en junio, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -8153,7 +8808,27 @@
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 3.880 + impuestos aéreos USD 583 + IVA y gastos USD 260 = USD 4.723. Triple USD 4.651. Single USD 6.195. Seña USD 2.250."
       },
-      "codigo_ref": "JT-2181"
+      "codigo_ref": "JT-2181",
+      "seo_titulo": "Península Ibérica: España y Portugal en 16 noches, 7/5/2027 | Legend Travel",
+      "seo_descripcion": "16 noches en hoteles 4*: Andalucía, Lisboa, Oporto, Santiago, Oviedo, Santander, Bilbao, Zaragoza, Barcelona y Valencia, con 3 comidas. Iberia. Desde USD 4.723.",
+      "subtitulo": "La vuelta completa a España y Portugal, con Barcelona y Valencia, en hoteles 4*",
+      "por_que": [
+        "Barcelona y Valencia, que el circuito con Lourdes no incluye, y la cornisa cantábrica completa",
+        "Hoteles 4* en todas las paradas",
+        "3 comidas incluidas y guía acompañante en español",
+        "Aéreos Iberia con valija de 23 kg, salida 7 de mayo 2027"
+      ],
+      "ideal_para": "Quienes quieren solo España y Portugal, sin cruzar a otros países.",
+      "ver_tambien": [
+        {
+          "id": "andalucia-portugal-pais-vasco-lourdes",
+          "texto": "Si preferís cerrar en San Sebastián y Lourdes, mirá también"
+        },
+        {
+          "id": "andalucia-marruecos-portugal",
+          "texto": "Si querés sumar Marruecos, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -8491,7 +9166,27 @@
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 4.031 + impuestos aéreos USD 581 + IVA y gastos USD 273 = USD 4.885. Triple USD 4.807. Single USD 6.489. Seña USD 2.200."
       },
-      "codigo_ref": "JT-2205"
+      "codigo_ref": "JT-2205",
+      "seo_titulo": "Andalucía, Portugal, País Vasco y Lourdes, 6 de junio 2027 | Legend Travel",
+      "seo_descripcion": "17 noches: 4 en Madrid, Andalucía, Lisboa, Oporto, Santiago, cornisa cantábrica, San Sebastián con pintxos, Burdeos y 2 noches en Lourdes. Iberia. Desde USD 4.885.",
+      "subtitulo": "Con San Sebastián, Burdeos y dos noches en el santuario de Lourdes, la única salida de junio",
+      "por_que": [
+        "Dos noches en Lourdes y una en San Sebastián con degustación de pintxos",
+        "Cuatro noches en Madrid al inicio para arrancar sin apuro",
+        "4 comidas incluidas y hoteles 4* en casi todo el recorrido",
+        "La única de nuestras salidas a Europa en junio"
+      ],
+      "ideal_para": "Quienes quieren Andalucía y Portugal con un cierre en el País Vasco y Lourdes, viajando en junio.",
+      "ver_tambien": [
+        {
+          "id": "peninsula-iberica-madrid",
+          "texto": "Si preferís Barcelona y Valencia en vez de Lourdes, mirá también"
+        },
+        {
+          "id": "andalucia-marruecos-portugal",
+          "texto": "Si querés cruzar a Marruecos, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -8818,7 +9513,27 @@
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 4.772 + impuestos aéreos USD 581 + IVA y gastos USD 326 = USD 5.679. Triple USD 5.607. Single USD 7.520. Seña USD 2.300."
       },
-      "codigo_ref": "JT-2156"
+      "codigo_ref": "JT-2156",
+      "seo_titulo": "Europa Esencial con crucero por el Rhin, 9 de mayo 2027 | Legend Travel",
+      "seo_descripcion": "17 noches: Madrid, 3 en París, crucero por el Rhin, Ruta Romántica e Innsbruck con cena, Venecia, Florencia, Roma, Costa Azul y Barcelona. Hoteles 4*. Desde USD 5.679.",
+      "subtitulo": "El único de nuestros circuitos con crucero por el Rhin y la Ruta Romántica alemana",
+      "por_que": [
+        "Crucero por el Rhin incluido y Frankfurt, Rothenburg y Füssen por la Ruta Romántica",
+        "Noche en Innsbruck con cena incluida",
+        "Tres noches en París y hoteles 4* en casi todo el recorrido",
+        "Aéreos Iberia con valija de 23 kg, salida 9 de mayo 2027"
+      ],
+      "ideal_para": "Quienes quieren sumar Alemania y Austria al circuito clásico de España, Francia e Italia.",
+      "ver_tambien": [
+        {
+          "id": "espana-francia-suiza-italia",
+          "texto": "Si preferís Zúrich y Milán en vez de Alemania, mirá también"
+        },
+        {
+          "id": "magicamente-europa",
+          "texto": "Para la versión económica con Innsbruck, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -9131,7 +9846,27 @@
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 3.696 + impuestos aéreos USD 582 + IVA y gastos USD 248 + tasas hoteleras obligatorias USD 94 + gastos USD 2 = USD 4.622 (la ficha publica 4.526 y las tasas aparte; por regla, todo cargo obligatorio que se paga al reservar va dentro del Desde). Triple y single: consultar. Seña USD 2.100."
       },
-      "codigo_ref": "JT-2193"
+      "codigo_ref": "JT-2193",
+      "seo_titulo": "Mágicamente Europa, circuito económico de 16 noches, 9/4/2027 | Legend Travel",
+      "seo_descripcion": "16 noches en hoteles turista: Madrid, París, Alsacia, Zúrich, Innsbruck, Venecia, Florencia, 3 noches en Roma, Costa Azul y Barcelona. Tasas incluidas. Desde USD 4.622.",
+      "subtitulo": "La versión económica del gran circuito, con tasas hoteleras ya incluidas en el precio",
+      "por_que": [
+        "Mulhouse en Alsacia y el paso por Zúrich camino a Innsbruck",
+        "Tres noches en Roma en Black Hotel 4*",
+        "Las tasas hoteleras obligatorias ya están dentro del precio publicado",
+        "Hoteles de categoría turista, varios en las afueras, con desayuno"
+      ],
+      "ideal_para": "Quienes priorizan el precio y aceptan hoteles en las afueras de las ciudades.",
+      "ver_tambien": [
+        {
+          "id": "espana-francia-suiza-italia",
+          "texto": "Mismo recorrido base con hoteles 4* y cinco noches en Madrid: mirá también"
+        },
+        {
+          "id": "descubriendo-europa",
+          "texto": "Si preferís salir en mayo con 17 noches, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -9438,7 +10173,27 @@
         "fecha": "2026-10-15",
         "desglose": "Tarifa USD 4.313 + impuestos aéreos USD 581 + IVA y gastos USD 293 = USD 5.187. Triple USD 5.052. Single USD 6.619. Seña USD 2.200."
       },
-      "codigo_ref": "JT-2253"
+      "codigo_ref": "JT-2253",
+      "seo_titulo": "España, Francia, Suiza e Italia, 17 noches, 4 de abril 2027 | Legend Travel",
+      "seo_descripcion": "17 noches con 5 en Madrid en Chamartín The One 4*, 3 en París, Zúrich, Milán, Venecia, Florencia, 2 en Roma, Costa Azul y Barcelona. Iberia. Desde USD 5.187.",
+      "subtitulo": "Cinco noches en Madrid, tres en París y el paso por Zúrich y Milán",
+      "por_que": [
+        "Milán y el Véneto camino a Venecia, además de Zúrich",
+        "Cinco noches en Madrid en Chamartín The One 4* y tres en París en Mercure La Défense",
+        "Primera salida de la temporada: 4 de abril 2027",
+        "Precio válido hasta la fecha de salida, sin plazo de venta anticipada"
+      ],
+      "ideal_para": "Quienes quieren el circuito clásico con buena hotelería y más días en Madrid.",
+      "ver_tambien": [
+        {
+          "id": "magicamente-europa",
+          "texto": "Si buscás el mismo recorrido con hoteles turista y menor precio, mirá también"
+        },
+        {
+          "id": "europa-esencial",
+          "texto": "Si preferís Alemania con crucero por el Rhin, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -9532,7 +10287,27 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
       },
-      "codigo_ref": "CC-22256231"
+      "codigo_ref": "CC-22256231",
+      "seo_titulo": "Escapada a Mendoza, 3 noches con fecha a elección | Legend Travel",
+      "seo_descripcion": "3 noches en Hotel Cordón del Plata con desayuno y vuelos directos de Aerolíneas Argentinas, en la fecha que elijas hasta julio 2027. Desde ARS 567.676.",
+      "subtitulo": "Fecha a elección hasta julio 2027, con vuelos directos y hotel céntrico con desayuno",
+      "por_que": [
+        "Viajás en la fecha que elijas, hasta julio de 2027",
+        "Hotel Cordón del Plata con desayuno, habitación Standard",
+        "Vuelos directos de Aerolíneas Argentinas con tarifa Flex y valija en bodega",
+        "El precio estimado más bajo de nuestras escapadas por Argentina"
+      ],
+      "ideal_para": "Quienes quieren Mendoza a su ritmo, sin excursiones cerradas, y elegir la fecha.",
+      "ver_tambien": [
+        {
+          "id": "mendoza-vinedos",
+          "texto": "Si querés la bodega incluida y salir un lunes, mirá también"
+        },
+        {
+          "id": "mendoza-finde-largo-dic-2026",
+          "texto": "Para el fin de semana largo de diciembre con cupo aéreo, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -9626,7 +10401,23 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
       },
-      "codigo_ref": "CC-22203065"
+      "codigo_ref": "CC-22203065",
+      "seo_titulo": "Escapada a Ushuaia, 3 noches con fecha a elección | Legend Travel",
+      "seo_descripcion": "3 noches en Del Bosque Apart & Hotel con desayuno y vuelos directos de Aerolíneas Argentinas, en la fecha que elijas hasta julio 2027. Desde ARS 949.630.",
+      "subtitulo": "Solo Ushuaia: tres noches en apart hotel con desayuno y fecha a elección",
+      "por_que": [
+        "Del Bosque Apart & Hotel con desayuno: formato apart para manejar tus horarios",
+        "Vuelos directos de Aerolíneas Argentinas con tarifa Flex y valija en bodega",
+        "Fecha a elección hasta julio 2027",
+        "Las excursiones al Canal Beagle y al Parque Nacional se cotizan aparte, según lo que quieras hacer"
+      ],
+      "ideal_para": "Quienes van al fin del mundo por primera vez y quieren armar las excursiones a medida.",
+      "ver_tambien": [
+        {
+          "id": "ushuaia-el-calafate",
+          "texto": "Si querés sumar El Calafate y el Perito Moreno, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -9720,7 +10511,27 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
       },
-      "codigo_ref": "CC-40420928"
+      "codigo_ref": "CC-40420928",
+      "seo_titulo": "Escapada a Bariloche, 3 noches con fecha a elección | Legend Travel",
+      "seo_descripcion": "3 noches en Hotel Nevada con desayuno y vuelos directos de Aerolíneas Argentinas, para viajar cuando quieras hasta julio 2027. Desde ARS 651.624.",
+      "subtitulo": "Hotel Nevada con desayuno y fecha a elección: la escapada flexible a Bariloche",
+      "por_que": [
+        "Fecha a elección hasta julio 2027, también en temporada de nieve",
+        "Hotel Nevada con desayuno",
+        "Vuelos directos de Aerolíneas Argentinas con tarifa Flex y valija en bodega",
+        "Sin excursiones cerradas: Circuito Chico y lagos se cotizan según tus días"
+      ],
+      "ideal_para": "Quienes quieren elegir la fecha y armar Bariloche a medida.",
+      "ver_tambien": [
+        {
+          "id": "bariloche-finde-largo-dic-2026",
+          "texto": "Si preferís el fin de semana largo de diciembre con Circuito Chico y traslados incluidos, mirá también"
+        },
+        {
+          "id": "cruce-andino-bariloche-puerto-varas",
+          "texto": "Para combinar Bariloche con Puerto Varas en la travesía de lagos, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -9869,7 +10680,27 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
       },
-      "codigo_ref": "CC-24058473"
+      "codigo_ref": "CC-24058473",
+      "seo_titulo": "Vuelta al norte argentino: Tucumán, Cafayate y Salta | Legend Travel",
+      "seo_descripcion": "Circuito de 6 noches con excursiones y traslados: entra por Tucumán, Cafayate y los Valles Calchaquíes, 4 noches en Salta. Fecha a elección hasta julio 2027.",
+      "subtitulo": "Entrás por Tucumán y salís por Salta, con excursiones y traslados incluidos",
+      "por_que": [
+        "Vuelo de ida a Tucumán y de vuelta desde Salta: sin repetir camino",
+        "1 noche en Tucumán, 1 en Cafayate y 4 en Salta con desayuno",
+        "Traslados y excursiones del circuito incluidos, con salidas regulares los lunes",
+        "Valles Calchaquíes, Cafayate, Quebrada de Humahuaca y Cachi en un solo viaje"
+      ],
+      "ideal_para": "Quienes quieren el norte completo con todo organizado, sin manejar.",
+      "ver_tambien": [
+        {
+          "id": "salta-purmamarca",
+          "texto": "Si preferís dormir dos noches en Purmamarca, mirá también"
+        },
+        {
+          "id": "salta-finde-largo-dic-2026",
+          "texto": "Para solo Salta ciudad en el feriado de diciembre, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -9986,7 +10817,23 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
       },
-      "codigo_ref": "CC-22204583"
+      "codigo_ref": "CC-22204583",
+      "seo_titulo": "Ushuaia y El Calafate, 6 noches con fecha a elección | Legend Travel",
+      "seo_descripcion": "3 noches en Ushuaia y 3 en El Calafate con desayuno y los tres vuelos de Aerolíneas Argentinas incluidos, en la fecha que elijas hasta julio 2027.",
+      "subtitulo": "Canal Beagle y glaciar Perito Moreno en un solo viaje, con el vuelo entre ambas ciudades incluido",
+      "por_que": [
+        "Tres vuelos de Aerolíneas Argentinas incluidos: ida a Ushuaia, Ushuaia–El Calafate y regreso",
+        "3 noches en Hotel Rosa de los Vientos y 3 en Kapenke Hotel con desayuno",
+        "Fecha a elección hasta julio 2027",
+        "Las excursiones al Perito Moreno y al Canal Beagle se cotizan aparte"
+      ],
+      "ideal_para": "Quienes quieren la Patagonia austral completa y no solo Ushuaia.",
+      "ver_tambien": [
+        {
+          "id": "ushuaia",
+          "texto": "Si solo querés Ushuaia, tres noches en apart hotel, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -10080,7 +10927,23 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador en base a 2 adultos (incluye impuestos); la ficha no desglosa componentes. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
       },
-      "codigo_ref": "CC-37028317"
+      "codigo_ref": "CC-37028317",
+      "seo_titulo": "Puerto Madryn, 3 noches con fecha a elección | Legend Travel",
+      "seo_descripcion": "3 noches en Parry Hotel con desayuno y vuelos directos de Aerolíneas Argentinas, en la fecha que elijas hasta julio 2027. Ballenas de junio a diciembre.",
+      "subtitulo": "Parry Hotel con desayuno y fecha a elección, con la temporada de ballenas de junio a diciembre",
+      "por_que": [
+        "Fecha a elección hasta julio 2027; de junio a diciembre hay ballenas en Península Valdés",
+        "Parry Hotel con desayuno",
+        "Vuelos directos de Aerolíneas Argentinas con tarifa Flex y valija en bodega",
+        "La excursión a Península Valdés se cotiza aparte, según la fecha"
+      ],
+      "ideal_para": "Quienes quieren elegir la fecha y decidir las excursiones en destino.",
+      "ver_tambien": [
+        {
+          "id": "puerto-madryn-ballenas",
+          "texto": "Si querés el avistaje embarcado ya incluido, con Hotel Tolosa 4*, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -10211,7 +11074,18 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador para 1 adulto (incluye impuestos), fecha de ejemplo 17–20 nov 2026. Salidas diarias: la ficha no da fecha límite, se carga vigencia 31/12/2026 para revisión. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
       },
-      "codigo_ref": "CC-15448792"
+      "codigo_ref": "CC-15448792",
+      "seo_titulo": "Valle de la Luna con noche en Valle Fértil, 3 noches | Legend Travel",
+      "seo_descripcion": "Circuito con salidas diarias: 2 noches en San Juan y 1 en Valle Fértil con media pensión para entrar temprano a Ischigualasto, excursiones y traslados.",
+      "subtitulo": "Noche en Valle Fértil para entrar temprano a Ischigualasto, con excursiones incluidas",
+      "por_que": [
+        "Noche en Hostería Valle Fértil con media pensión, al lado del parque",
+        "Traslados y excursiones del circuito incluidos, con salidas diarias",
+        "2 noches en America Apart Hotel en San Juan con desayuno buffet",
+        "Vuelos de Aerolíneas Argentinas con valija, fecha a elección hasta julio 2027"
+      ],
+      "ideal_para": "Quienes viajan solos o quieren Ischigualasto sin manejar: el precio publicado es en base single.",
+      "ver_tambien": []
     },
     {
       "activo": true,
@@ -10365,7 +11239,27 @@
         "fecha": "2026-10-15",
         "desglose": "Precio total por persona publicado por el operador para 1 adulto (incluye impuestos); no publica base doble. Cotización de referencia del 15/10/2026 para una fecha puntual: se publica como precio estimado 'Desde' sin fecha fija, viajable hasta julio 2027 (indicación del usuario). Vigencia 30 días (hasta 14/11/2026): precio en ARS de referencia, actualizar cada 30 días."
       },
-      "codigo_ref": "CC-25105671"
+      "codigo_ref": "CC-25105671",
+      "seo_titulo": "Salta y Purmamarca, 5 noches con Humahuaca y Salinas Grandes | Legend Travel",
+      "seo_descripcion": "2 noches en Salta, 2 en Purmamarca al pie del Cerro de los Siete Colores y 1 en Salta, con la excursión a la Quebrada de Humahuaca y Salinas Grandes.",
+      "subtitulo": "Dos noches en Purmamarca, al pie del Cerro de los Siete Colores, con la excursión a Humahuaca y Salinas Grandes",
+      "por_que": [
+        "Dos noches en El Refugio de Coquena, en Purmamarca",
+        "Excursión a la Quebrada de Humahuaca y las Salinas Grandes incluida",
+        "Roomie Salta by DOT y Hotel del Tren en Salta, con desayuno",
+        "Fecha a elección hasta julio 2027; el precio publicado es en base single"
+      ],
+      "ideal_para": "Quienes quieren dormir en la Quebrada y no solo visitarla desde Salta.",
+      "ver_tambien": [
+        {
+          "id": "vuelta-norte-argentino",
+          "texto": "Si preferís el circuito que entra por Tucumán y Cafayate, mirá también"
+        },
+        {
+          "id": "salta-finde-largo-dic-2026",
+          "texto": "Para solo Salta ciudad en el feriado de diciembre, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -10461,7 +11355,27 @@
         "fecha": "2026-10-15",
         "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.739 (total 2 adultos USD 3.478). La ficha no desglosa componentes. Otras salidas listadas sin precio: 17/01/2027."
       },
-      "codigo_ref": "AS-322357"
+      "codigo_ref": "AS-322357",
+      "seo_titulo": "Arraial d'Ajuda, 7 noches en Pousada Coqueiros, 10/1/2027 | Legend Travel",
+      "seo_descripcion": "7 noches en Pousada Coqueiros con desayuno, a 500 m de la playa de Mucugê, con vuelo directo GOL a Porto Seguro con cupo, valija de 23 kg y traslados. Desde USD 1.739.",
+      "subtitulo": "Posada a 500 metros de la playa de Mucugê y a 200 del centro, con vuelo directo a Porto Seguro",
+      "por_que": [
+        "Vuelo directo GOL Buenos Aires–Porto Seguro con cupo confirmado",
+        "Pousada Coqueiros a 500 m de la playa de Mucugê y a 200 m del centro",
+        "Trancoso a un paso para una excursión",
+        "Valija de 23 kg, traslados y asistencia hasta 70 años; otra salida el 17/01"
+      ],
+      "ideal_para": "Parejas que buscan un pueblo de playa con ambiente, lejos de las grandes ciudades.",
+      "ver_tambien": [
+        {
+          "id": "salvador-de-bahia-ene-2027",
+          "texto": "Si preferís ciudad y playa en un 5* en Salvador, mirá también"
+        },
+        {
+          "id": "praia-do-forte-feb-2027",
+          "texto": "Para all inclusive en Bahía en febrero, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -10556,7 +11470,27 @@
         "fecha": "2026-10-15",
         "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.500 (total 2 adultos USD 3.000). La ficha no desglosa componentes."
       },
-      "codigo_ref": "AS-561135"
+      "codigo_ref": "AS-561135",
+      "seo_titulo": "Búzios en Lestada Pousada, 7 noches, 9 de enero 2027 | Legend Travel",
+      "seo_descripcion": "7 noches en Lestada Pousada, con vista a Praia dos Ossos y cerca de la Rua das Pedras, vuelo directo JetSMART a Río con cupo y traslado a Búzios. Desde USD 1.500.",
+      "subtitulo": "Una posada fija con vista a Praia dos Ossos y a pasos de la Rua das Pedras",
+      "por_que": [
+        "Lestada Pousada con vista a Praia dos Ossos, cerca de la Rua das Pedras",
+        "Vuelo directo JetSMART Buenos Aires–Río con cupo confirmado y valija de 23 kg",
+        "Traslado aeropuerto de Río–Búzios incluido, en servicio regular",
+        "Salida 9 de enero 2027, 7 noches con desayuno"
+      ],
+      "ideal_para": "Quienes quieren Búzios con una posada ya elegida y el traslado desde Río resuelto.",
+      "ver_tambien": [
+        {
+          "id": "buzios-posadas-ene-2027",
+          "texto": "Si preferís elegir entre catorce posadas, con salida el 11 de enero, mirá también"
+        },
+        {
+          "id": "rio-de-janeiro-ene-2027",
+          "texto": "Mismo vuelo del 9 de enero, pero para quedarte en Copacabana: mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -10651,7 +11585,27 @@
         "fecha": "2026-10-15",
         "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.500 (total 2 adultos USD 3.000). La ficha no desglosa componentes."
       },
-      "codigo_ref": "AS-561130"
+      "codigo_ref": "AS-561130",
+      "seo_titulo": "Río de Janeiro en Copacabana, 7 noches, 9 de enero 2027 | Legend Travel",
+      "seo_descripcion": "7 noches en Windsor Martinique 3*, a media cuadra de la playa de Copacabana, con vuelo directo JetSMART con cupo, valija de 23 kg y traslados privados. Desde USD 1.500.",
+      "subtitulo": "Hotel a media cuadra de Copacabana y traslados privados, en pleno verano carioca",
+      "por_que": [
+        "Windsor Martinique 3* a media cuadra de la playa de Copacabana",
+        "Traslados privados aeropuerto–hotel–aeropuerto",
+        "Vuelo directo JetSMART con cupo confirmado y valija de 23 kg",
+        "Pan de Azúcar, Corcovado, Ipanema y Lapa a mano, 7 noches con desayuno"
+      ],
+      "ideal_para": "Quienes quieren ciudad y playa en el mismo lugar, con la noche de Río incluida en el plan.",
+      "ver_tambien": [
+        {
+          "id": "buzios-ene-2027",
+          "texto": "Mismo vuelo del 9 de enero, pero en una posada de Búzios: mirá también"
+        },
+        {
+          "id": "salvador-de-bahia-ene-2027",
+          "texto": "Si preferís Salvador en un 5* frente al mar, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -10746,7 +11700,27 @@
         "fecha": "2026-10-15",
         "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.511 (total 2 adultos USD 3.022). La ficha no desglosa componentes. Otras salidas listadas sin precio: 12/01/2027 y 19/01/2027."
       },
-      "codigo_ref": "AS-195199"
+      "codigo_ref": "AS-195199",
+      "seo_titulo": "Maceió, 7 noches frente al mar, 26 de enero 2027 | Legend Travel",
+      "seo_descripcion": "7 noches en Ritz Suites Grand Hotel Boutique, frente al mar, con vuelo directo LATAM Buenos Aires–Maceió con cupo, valija de 23 kg y traslados. Desde USD 1.511.",
+      "subtitulo": "Hotel boutique frente al mar en la capital de Alagoas, con vuelo directo",
+      "por_que": [
+        "Vuelo directo LATAM Buenos Aires–Maceió con cupo confirmado",
+        "Ritz Suites Grand Hotel Boutique, frente al mar",
+        "Piscinas naturales de Pajuçara y las playas del litoral norte cerca",
+        "Otras salidas el 12 y el 19 de enero: consultar"
+      ],
+      "ideal_para": "Quienes buscan el nordeste brasileño con vuelo directo y hotel sobre la playa.",
+      "ver_tambien": [
+        {
+          "id": "salvador-de-bahia-ene-2027",
+          "texto": "Si preferís Salvador en un 5* con late check out, mirá también"
+        },
+        {
+          "id": "praia-do-forte-feb-2027",
+          "texto": "Para all inclusive en Bahía, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -10842,7 +11816,27 @@
         "fecha": "2026-10-15",
         "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.455 (total 2 adultos USD 2.910). La ficha no desglosa componentes. Otras salidas listadas sin precio: enero a marzo 2027. Corregido el 19/10/2026 a pedido del usuario: el precio correcto con Vila Galé Salvador es USD 1.455 (antes figuraba 1.356)."
       },
-      "codigo_ref": "AS-217217"
+      "codigo_ref": "AS-217217",
+      "seo_titulo": "Salvador de Bahía en Vila Galé 5*, 7 noches, 9/1/2027 | Legend Travel",
+      "seo_descripcion": "7 noches en Vila Galé Salvador 5*, frente a la playa de Ondina, con late check out, vuelo GOL con cupo, valija de 23 kg y traslados. Salidas hasta marzo. Desde USD 1.455.",
+      "subtitulo": "Hotel cinco estrellas frente a la playa de Ondina, con late check out incluido",
+      "por_que": [
+        "Vila Galé Salvador 5*, frente a la playa de Ondina",
+        "Late check out incluido",
+        "El Pelourinho, la Igreja do Bonfim y la música de la ciudad más afrobrasileña",
+        "Vuelo GOL con cupo confirmado, valija de 23 kg y traslados; salidas de enero a marzo"
+      ],
+      "ideal_para": "Quienes quieren playa y ciudad con historia, en un hotel cinco estrellas.",
+      "ver_tambien": [
+        {
+          "id": "praia-do-forte-feb-2027",
+          "texto": "Si preferís all inclusive a una hora de Salvador, mirá también"
+        },
+        {
+          "id": "maceio-ene-2027",
+          "texto": "Para Maceió con vuelo directo LATAM, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -10937,7 +11931,27 @@
         "fecha": "2026-10-15",
         "desglose": "Precio final por persona en base doble publicado por el operador: USD 1.480 (total 2 adultos USD 2.960). La ficha no desglosa componentes. Otras salidas listadas sin precio: 09/01/2027."
       },
-      "codigo_ref": "AS-118771"
+      "codigo_ref": "AS-118771",
+      "seo_titulo": "Florianópolis en Ingleses, 7 noches, 16 de enero 2027 | Legend Travel",
+      "seo_descripcion": "7 noches en Porto Sol Ingleses, a pasos de la playa de Ingleses, con vuelo directo JetSMART con cupo, valija de 23 kg y traslados. Otra salida el 9/1. Desde USD 1.480.",
+      "subtitulo": "Playa de Ingleses, en el norte de la isla, con vuelo directo y otra salida el 9 de enero",
+      "por_que": [
+        "Porto Sol Ingleses a pasos de la playa de Ingleses, mar tranquilo y arena blanca",
+        "Lagoa da Conceição y Jurerê a pocos minutos",
+        "Vuelo directo JetSMART Buenos Aires–Florianópolis con cupo confirmado",
+        "Salida 16 de enero 2027; otra salida el 9 de enero"
+      ],
+      "ideal_para": "Familias que buscan mar tranquilo en el norte de la isla.",
+      "ver_tambien": [
+        {
+          "id": "buzios-ene-2027",
+          "texto": "Si preferís Búzios con traslado desde Río, mirá también"
+        },
+        {
+          "id": "maceio-ene-2027",
+          "texto": "Para el nordeste con hotel frente al mar, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -11032,7 +12046,23 @@
         "fecha": "2026-10-15",
         "desglose": "Precio final por persona en base doble publicado por el operador: USD 2.537 (total 2 adultos USD 5.074). La ficha no desglosa componentes. Otras salidas listadas sin precio: enero a marzo 2027."
       },
-      "codigo_ref": "AS-162781"
+      "codigo_ref": "AS-162781",
+      "seo_titulo": "Praia do Forte all inclusive en Iberostar, 20/2/2027 | Legend Travel",
+      "seo_descripcion": "7 noches all inclusive en Iberostar Waves Bahia, a una hora de Salvador, con late check out, vuelo GOL con cupo, valija de 23 kg y traslados. Desde USD 2.537.",
+      "subtitulo": "El único all inclusive de nuestras salidas a Brasil, a una hora de Salvador",
+      "por_que": [
+        "Iberostar Waves Bahia con régimen all inclusive, 7 noches",
+        "Praia do Forte: cocoteros, piscinas naturales y el proyecto Tamar de tortugas",
+        "Late check out y traslado desde el aeropuerto de Salvador incluidos",
+        "Vuelo GOL con cupo confirmado, salida 20 de febrero; otras fechas de enero a marzo"
+      ],
+      "ideal_para": "Familias que prefieren resort con todo incluido en vez de posada con desayuno.",
+      "ver_tambien": [
+        {
+          "id": "salvador-de-bahia-ene-2027",
+          "texto": "Si preferís Salvador ciudad en un 5* con desayuno, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -11162,7 +12192,27 @@
         "fecha": "2026-10-20",
         "desglose": "Precios por persona en base doble publicados por el operador como finales, según hotel del selector: Hotel Nevada ARS 699.030 (Desde), Huinid Pioneros Aparts ARS 867.080, Hotel Cristal Bariloche ARS 895.315. La ficha no desglosa componentes ni informa categoría de los hoteles. Leído con Playwright sin enviar formularios."
       },
-      "codigo_ref": "ST-F82F837EC63E"
+      "codigo_ref": "ST-F82F837EC63E",
+      "seo_titulo": "Bariloche, finde largo 5 al 8 de diciembre con cupo aéreo | Legend Travel",
+      "seo_descripcion": "Feriado de diciembre en Bariloche: vuelo JetSMART con cupo, 3 noches con desayuno a elegir entre tres hoteles, traslados y Circuito Chico. Desde ARS 699.030.",
+      "subtitulo": "Tres hoteles para elegir, traslados y Circuito Chico incluidos, en el feriado del 5 al 8 de diciembre",
+      "por_que": [
+        "Fecha fija en el fin de semana largo del 5 al 8 de diciembre 2026, con cupo aéreo confirmado",
+        "Elegís entre Hotel Nevada, Huinid Pioneros Aparts y Hotel Cristal Bariloche",
+        "Traslados y excursión al Circuito Chico incluidos",
+        "Precio final en pesos, sin cargos adicionales informados"
+      ],
+      "ideal_para": "Quienes quieren aprovechar el feriado de diciembre con todo cerrado de antemano.",
+      "ver_tambien": [
+        {
+          "id": "bariloche-lo-tiene-todo",
+          "texto": "Si preferís elegir la fecha y armar las excursiones aparte, mirá también"
+        },
+        {
+          "id": "mendoza-finde-largo-dic-2026",
+          "texto": "Mismo feriado, pero en Mendoza con bodegas: mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -11310,7 +12360,27 @@
         "fecha": "2026-10-20",
         "desglose": "Precios por persona en base doble publicados por el operador como finales, según hotel del selector: Hotel Carollo Gold ARS 541.899 (Desde), Raíces Aconcagua ARS 629.810, Premium Tower Suites ARS 759.025, Amerian Executive Mendoza ARS 841.315. La ficha no desglosa componentes ni informa categoría de los hoteles. Leído con Playwright sin enviar formularios. Vigencia: 30 días desde la carga por ser nacional en ARS."
       },
-      "codigo_ref": "ST-5DC17AAC3394"
+      "codigo_ref": "ST-5DC17AAC3394",
+      "seo_titulo": "Mendoza, finde largo 5 al 8 de diciembre con bodegas | Legend Travel",
+      "seo_descripcion": "Feriado de diciembre en Mendoza: vuelo JetSMART con cupo, 3 noches a elegir entre cuatro hoteles, traslados, City Tour y Bodegas y Olivares. Desde ARS 541.899.",
+      "subtitulo": "City Tour y Bodegas y Olivares incluidos, con cuatro hoteles para elegir, en el feriado del 5 al 8 de diciembre",
+      "por_que": [
+        "Fecha fija en el fin de semana largo del 5 al 8 de diciembre 2026, con cupo aéreo confirmado",
+        "Elegís entre Hotel Carollo Gold, Raíces Aconcagua, Premium Tower Suites y Amerian Executive",
+        "City Tour y excursión Bodegas y Olivares incluidos, además de los traslados",
+        "El precio final más bajo de nuestras tres escapadas del feriado de diciembre"
+      ],
+      "ideal_para": "Quienes quieren Mendoza con vino en el feriado y todo organizado.",
+      "ver_tambien": [
+        {
+          "id": "escapada-mendoza",
+          "texto": "Si preferís elegir la fecha, mirá también"
+        },
+        {
+          "id": "salta-finde-largo-dic-2026",
+          "texto": "Mismo feriado, pero en Salta: mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -11440,7 +12510,27 @@
         "fecha": "2026-10-20",
         "desglose": "Página identificada como 'Cupo Confirmado Salta | Finde XXL | Salida 05 de Diciembre'. Precios por persona en base doble publicados por el operador como finales, según hotel del selector: Hotel Marilian ARS 710.845 (Desde), Hotel del Virrey ARS 839.560, Casa Real ARS 914.920. La ficha no desglosa componentes ni informa categoría de los hoteles. Leído con Playwright sin enviar formularios. Vigencia: 30 días desde la carga por ser nacional en ARS."
       },
-      "codigo_ref": "ST-9ABEECA36365"
+      "codigo_ref": "ST-9ABEECA36365",
+      "seo_titulo": "Salta, finde largo 5 al 8 de diciembre con City Tour | Legend Travel",
+      "seo_descripcion": "Feriado de diciembre en Salta: vuelo Aerolíneas con cupo, 3 noches a elegir entre Hotel Marilian, del Virrey y Casa Real, traslados y City Tour. Desde ARS 710.845.",
+      "subtitulo": "City Tour por el casco colonial y tres hoteles para elegir, en el feriado del 5 al 8 de diciembre",
+      "por_que": [
+        "Fecha fija en el fin de semana largo del 5 al 8 de diciembre 2026, con cupo aéreo confirmado en Aerolíneas Argentinas",
+        "Elegís entre Hotel Marilian, Hotel del Virrey y Casa Real",
+        "Traslados y City Tour por el casco histórico incluidos",
+        "Precio final en pesos, sin cargos adicionales informados"
+      ],
+      "ideal_para": "Quienes quieren conocer Salta ciudad en cuatro días, sin manejar.",
+      "ver_tambien": [
+        {
+          "id": "salta-purmamarca",
+          "texto": "Si querés dormir en Purmamarca y conocer la Quebrada, mirá también"
+        },
+        {
+          "id": "vuelta-norte-argentino",
+          "texto": "Para el circuito completo del norte, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -11704,7 +12794,18 @@
         "fecha": "2026-10-20",
         "desglose": "Panel de la salida 07/05/2027, categoría Turista: doble USD 2.430 + 710 tax = 3.140; single 2.915 + 760 = 3.675; triple 2.400 + 700 = 3.100; doble a compartir 2.670 + 740 = 3.410. El Desde USD 3.140 es total: los legales de la ficha dicen textualmente \"Los TAX incluyen: impuestos aéreos DNT, IVA terrestre, gastos administrativos y de reserva\", por eso no se suma el 5% estimado (confirmado por el usuario el 20/10/2026). Pagos en pesos: percepción 30% RG 5463 aparte (aéreo USD 173; terrestre DBL USD 415 / SGL 524 / DBL a compartir 470 / TPL 409). La web es para agencias y no marca el precio como neto ni comisionable: confirmar que es precio de venta al público. Noches por ciudad deducidas del itinerario (Lima 2, Arequipa 1, Colca 1, Puno 2, Cusco 3, Valle Sagrado 1). Leído con Playwright sin login ni formularios."
       },
-      "codigo_ref": "VT-11825"
+      "codigo_ref": "VT-11825",
+      "seo_titulo": "Esencias del Perú, grupal acompañada 7 de mayo 2027 | Legend Travel",
+      "seo_descripcion": "11 días en grupo: Lima, Arequipa, Colca, lago Titicaca, Cusco, Valle Sagrado y Machu Picchu en tren, 10 noches con desayuno, 6 almuerzos. Preventa hasta el 31/10/2026.",
+      "subtitulo": "Perú completo en once días, con coordinador, visitas privadas y el vuelo desde el interior incluido",
+      "por_que": [
+        "Coordinador acompañante garantizado con 15 pasajeros y visitas en servicio privado con guías en español",
+        "Cañón del Colca, lago Titicaca con los Uros y Taquile, y Machu Picchu en tren Expedition",
+        "Incluye el vuelo a Buenos Aires desde Bahía Blanca, Salta, Mendoza, Tucumán, Rosario, Córdoba o Neuquén",
+        "Precio de preventa 2027 con impuestos incluidos, válido hasta el 31 de octubre de 2026"
+      ],
+      "ideal_para": "Primer viaje a Perú en grupo, para quienes prefieren no organizar nada por su cuenta.",
+      "ver_tambien": []
     },
     {
       "activo": true,
@@ -12030,7 +13131,23 @@
         "fecha": "2026-10-20",
         "desglose": "Panel de la salida 11/01/2027: precio por persona + USD 110 tax en todas las opciones. Los legales dicen que las tarifas no incluyen IVA, gastos administrativos ni gastos de reserva y no dan el monto: por decisión del usuario (20/10/2026) se suma 5% sobre tarifa + tax, redondeando hacia arriba al dólar, como estimado a confirmar por el equipo. Desde (Pousada Vila do Sol): tarifa 985 + tax 110 + 5% estimado de IVA y gastos, a confirmar por el equipo = USD 1.150 en base doble; single 1.550 + 110 + 5% = 1.743; triple 905 + 110 + 5% = 1.066. Base doble por posada (tarifa / total estimado): Pousada Vila do Sol 985 / 1150; Pousada Vila Pitanga 1105 / 1276; Gammel Dansk 1110 / 1281; Villa Mercedes 1110 / 1281; Pousada Villegaignon 1175 / 1350; Barra da Lagoa Hotel 1175 / 1350; Pousada Lestada 1195 / 1371; Pousada dos Tangarás 1230 / 1407; Bucaneiro 1240 / 1418; La Foret 1295 / 1476; Armação dos Búzios Pousada Design 1345 / 1528; Ilha Branca Inn 1385 / 1570; Pousada La Chimere 1505 / 1696; La Boheme 1695 / 1896. Pagos en pesos: percepción 30% RG 5463 aparte (aéreo USD 85 y terrestre según posada). La web es para agencias y no marca el precio como neto ni comisionable: confirmar que es precio de venta al público. Existe buzios-ene-2027 (otro operador, 9/1/2027, USD 1.500): mismo destino y semana, distinto producto. Leído con Playwright sin login ni formularios."
       },
-      "codigo_ref": "VT-11817"
+      "codigo_ref": "VT-11817",
+      "seo_titulo": "Búzios con posada a elección entre 14, 11 de enero 2027 | Legend Travel",
+      "seo_descripcion": "7 noches con desayuno en la posada que elijas entre catorce, desde Pousada Vila do Sol, con vuelo LATAM a Río con cupo, carry on de 12 kg y traslados. Desde USD 1.150.",
+      "subtitulo": "Catorce posadas y hoteles para elegir, con precio por cada uno, y traslados desde Río",
+      "por_que": [
+        "Elegís entre catorce posadas y hoteles, de Pousada Vila do Sol a La Boheme, cada uno con su precio",
+        "Vuelo LATAM Buenos Aires–Río de Janeiro con cupo confirmado, salida 11 de enero",
+        "Traslados de llegada y salida incluidos",
+        "Asistencia Universal Assistance con seguro de cancelación hasta 70 años"
+      ],
+      "ideal_para": "Quienes quieren elegir la posada según presupuesto y ocupación, con chicos o sin ellos.",
+      "ver_tambien": [
+        {
+          "id": "buzios-ene-2027",
+          "texto": "Si preferís una posada fija con vista a Praia dos Ossos y valija de 23 kg, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -12166,7 +13283,27 @@
         "fecha": "2026-10-21",
         "desglose": "Datos de capturas del buscador del operador transcriptos por el usuario el 21/10/2026 (el sitio del operador está bloqueado). Precios por pasajero con impuestos incluidos, cabina interior USD 1.808, balcón USD 2.104, suite USD 3.197 (exterior no disponible). Tarifas de promoción sin fecha: vigencia 30 días desde la carga. Faltantes: confirmar propinas, confirmar precio de venta al público, itinerario día por día. Termina en el Reino Unido: ETA obligatoria."
       },
-      "codigo_ref": "DC-MAJ22"
+      "codigo_ref": "DC-MAJ22",
+      "seo_titulo": "Majestic Princess: de Buenos Aires a Southampton, 22 noches | Legend Travel",
+      "seo_descripcion": "Transatlántico de 22 noches, salida 9 de febrero 2027: Montevideo, Río, Canarias, Casablanca y La Coruña hasta Inglaterra. Solo ida, pensión completa. Desde USD 1.808.",
+      "subtitulo": "La travesía corta: 22 noches directas a Inglaterra, sin los fiordos",
+      "por_que": [
+        "22 noches cruzando el Atlántico con Montevideo, Río, Canarias, Casablanca y La Coruña",
+        "Cabina interior desde USD 1.808 con impuestos; balcón y suite disponibles",
+        "Pensión completa a bordo y tasas portuarias incluidas",
+        "Desembarco en Southampton: es la versión corta de la travesía del Majestic Princess"
+      ],
+      "ideal_para": "Quienes quieren cruzar el Atlántico en barco y seguir viaje por Europa por su cuenta.",
+      "ver_tambien": [
+        {
+          "id": "majestic-princess-fiordos-noruegos-feb-2027",
+          "texto": "Si querés seguir hasta los fiordos noruegos, 14 noches más en el mismo barco, mirá también"
+        },
+        {
+          "id": "zaandam-buenos-aires-fort-lauderdale-feb-2027",
+          "texto": "Si preferís navegar hacia el Caribe y Florida, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -12331,7 +13468,27 @@
         "fecha": "2026-10-21",
         "desglose": "Datos de capturas del buscador del operador transcriptos por el usuario el 21/10/2026 (el sitio del operador está bloqueado). Precios por pasajero con impuestos incluidos, cabina interior USD 4.531, balcón USD 5.107, suite USD 7.237. Tarifas de promoción sin fecha: vigencia 30 días desde la carga. Faltantes: confirmar propinas, confirmar precio de venta al público, itinerario día por día. Termina en el Reino Unido: ETA obligatoria."
       },
-      "codigo_ref": "DC-MAJ36"
+      "codigo_ref": "DC-MAJ36",
+      "seo_titulo": "Majestic Princess con fiordos noruegos, 36 noches | Legend Travel",
+      "seo_descripcion": "36 noches desde Buenos Aires, salida 9 de febrero 2027: la travesía transatlántica más Alesund, Trondheim, Tromsø, Alta y Molde. Solo ida. Desde USD 4.531.",
+      "subtitulo": "La travesía larga: después del Atlántico, dos semanas por los fiordos hasta Tromsø y Alta",
+      "por_que": [
+        "36 noches: 14 más que la travesía corta, con Alesund, Trondheim, Tromsø, Alta y Molde",
+        "Tromsø y Alta en febrero, dentro del círculo polar ártico",
+        "Cabina interior desde USD 4.531 con impuestos; balcón y suite disponibles",
+        "Pensión completa a bordo y tasas portuarias incluidas"
+      ],
+      "ideal_para": "Quienes tienen más de un mes y quieren Noruega sin cambiar de barco.",
+      "ver_tambien": [
+        {
+          "id": "majestic-princess-buenos-aires-southampton-feb-2027",
+          "texto": "Si solo querés la travesía a Inglaterra, 22 noches, mirá también"
+        },
+        {
+          "id": "auroras-boreales-grupal",
+          "texto": "Si preferís Tromsø en avión y en grupo, en enero, mirá también"
+        }
+      ]
     },
     {
       "activo": true,
@@ -12497,7 +13654,23 @@
         "fecha": "2026-10-21",
         "desglose": "Datos de capturas del buscador del operador transcriptos por el usuario el 21/10/2026 (el sitio del operador está bloqueado). Precios por pasajero con impuestos incluidos, cabina interior USD 5.999, exterior USD 7.099, suite USD 12.899 (balcón no disponible). Tarifas de promoción sin fecha: vigencia 30 días desde la carga. Faltantes: confirmar propinas, confirmar precio de venta al público, itinerario día por día. Termina en Estados Unidos: visa obligatoria para pasaporte argentino."
       },
-      "codigo_ref": "DC-ZAA29"
+      "codigo_ref": "DC-ZAA29",
+      "seo_titulo": "Zaandam: de Buenos Aires a Fort Lauderdale, 29 noches | Legend Travel",
+      "seo_descripcion": "29 noches en el Zaandam de Holland America Line, salida 13 de febrero 2027: la costa de Brasil, Isla del Diablo y el Caribe hasta Florida. Solo ida. Desde USD 5.999.",
+      "subtitulo": "La costa de Brasil completa, la Isla del Diablo y el Caribe hasta Florida, en un solo barco",
+      "por_que": [
+        "Siete escalas en Brasil: Santos, Ilhabela, Río, Salvador, Recife, Fortaleza y Belém",
+        "Isla del Diablo y cuatro islas del Caribe antes de Fort Lauderdale",
+        "Cabina interior desde USD 5.999 con impuestos; exterior y suite disponibles",
+        "Pensión completa a bordo, tasas portuarias incluidas, salida 13 de febrero 2027"
+      ],
+      "ideal_para": "Quienes quieren llegar a Estados Unidos navegando, con visa vigente.",
+      "ver_tambien": [
+        {
+          "id": "majestic-princess-buenos-aires-southampton-feb-2027",
+          "texto": "Si preferís cruzar a Europa, mirá también"
+        }
+      ]
     }
   ]
 }

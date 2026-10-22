@@ -554,6 +554,9 @@ def render_region_block(carpeta, items, hoy):
         '    <div class="pkc-grid rv">',
         NL.join(render_card_compacta(p, v) for p, v in muestra),
         '    </div>',
+        ('    <p class="dnota rv">Todas las salidas {f}: '.format(f=e(frase) if r else "publicadas") + " &middot; ".join(
+            '<a href="paquetes/{}/" style="text-decoration:underline;text-underline-offset:3px">{}</a>'.format(e(p["id"]), e(txt(p, "titulo"))) for p, v in items) + '</p>')
+        if len(items) > len(muestra) else '',
         '  </div>',
         R_END,
     ])
@@ -739,6 +742,96 @@ def render_relacionados(p, todos):
         '  </div>',
         '</section>',
     ])
+
+
+# ============================================================
+# Diferenciales (2026-10-22): lo que distingue a cada paquete de los parecidos.
+# Campos opcionales del JSON: seo_titulo, seo_descripcion, subtitulo, por_que (lista),
+# ideal_para, ver_tambien (lista de {id, texto}). Nada se inventa: lo escribe el equipo
+# a partir de la ficha. Las ciudades exclusivas de los circuitos de Europa se calculan
+# contra los otros circuitos ACTIVOS de la misma region.
+# ============================================================
+_SEP_ITIN = re.compile(r"\s[–—-]\s|\s✈\s|,\s")
+_CIUDAD_IGNORAR = {"buenos aires", "madrid", "navegacion", "navegación", "embarque", "desembarque"}
+_NO_ES_CIUDAD = re.compile(r"(crucero|auroras|experiencia|abadía|safari|excursi|city tour|y |visita|tren |ferry|vuelo|llegada|salida)", re.I)
+
+
+def _es_ciudad(c):
+    """Token de itinerario que parece un nombre de lugar: empieza en mayuscula, hasta 4 palabras, sin descriptores."""
+    return bool(c) and c[0].isupper() and len(c.split()) <= 4 and not _NO_ES_CIUDAD.search(c)
+
+
+def _ciudades(p):
+    """Lugares de un paquete: primero los destinos cargados, despues las paradas del itinerario."""
+    out = []
+    for c in lista(p, "destinos"):
+        c = str(c).strip()
+        if c and c.lower() not in _CIUDAD_IGNORAR and c not in out:
+            out.append(c)
+    for i in lista(p, "itinerario"):
+        if not isinstance(i, dict):
+            continue
+        for c in _SEP_ITIN.split(str(i.get("titulo") or "")):
+            c = c.strip(" .")
+            if _es_ciudad(c) and c.lower() not in _CIUDAD_IGNORAR and c not in out:
+                out.append(c)
+    return out
+
+
+def _mismo_lugar(a, b):
+    """'Santiago' ~ 'Santiago de Compostela', 'Santillana' ~ 'Santillana del Mar', 'Venecia' ~ 'Venecia (Mestre)'."""
+    a, b = a.lower(), b.lower()
+    return a == b or a.startswith(b + " ") or b.startswith(a + " ") or a.startswith(b + " (") or b.startswith(a + " (")
+
+
+def ciudades_exclusivas(p, todos):
+    """Lugares de p que ningun otro paquete activo de su region recorre (destinos + itinerario)."""
+    otras = []
+    for q, _v in todos:
+        if q is p or q.get("id") == p.get("id") or q.get("region") != p.get("region"):
+            continue
+        otras.extend(_ciudades(q))
+    return [c for c in _ciudades(p) if not any(_mismo_lugar(c, o) for o in otras)]
+
+
+def _enumerar(items):
+    items = [str(x) for x in items]
+    if len(items) <= 1:
+        return "".join(items)
+    return ", ".join(items[:-1]) + " y " + items[-1]
+
+
+def render_por_que(p, todos):
+    """Seccion "Por que elegir este viaje" + "Ideal para" + comparativas con links a otros paquetes activos."""
+    puntos = [str(x).strip() for x in lista(p, "por_que") if str(x).strip()]
+    if p.get("region") == "europa" and lista(p, "itinerario"):
+        excl = ciudades_exclusivas(p, todos)[:6]
+        if excl:
+            puntos.insert(0, "De nuestros circuitos por Europa, solo este pasa por {}.".format(_enumerar(excl)))
+    ideal = txt(p, "ideal_para")
+    activos = {q.get("id") for q, _v in todos}
+    titulos = {q.get("id"): txt(q, "titulo") for q, _v in todos}
+    links = []
+    for v in lista(p, "ver_tambien"):
+        if not isinstance(v, dict) or v.get("id") not in activos or v.get("id") == p.get("id"):
+            continue
+        links.append('    <p class="dnota">{} <a href="paquetes/{}/" style="text-decoration:underline;text-underline-offset:3px">{}</a>.</p>'.format(
+            e(str(v.get("texto") or "Mir\u00e1 tambi\u00e9n").strip().rstrip(":.,")), e(v["id"]), e(titulos[v["id"]])))
+    if not (puntos or ideal or links):
+        return ""
+    cuerpo = ('    <ul class="dlist si">\n' + "\n".join(
+        '      <li>{}<span>{}</span></li>'.format(IC_CHECK, e(x)) for x in puntos) + '\n    </ul>') if puntos else ""
+    extra = ""
+    if ideal:
+        extra += '\n    <p class="dnota"><strong>Ideal para:</strong> {}</p>'.format(e(ideal))
+    if links:
+        extra += "\n" + "\n".join(links)
+    return _sec("Por qu&eacute; elegir <em>este viaje</em>", cuerpo, extra)
+
+
+def render_subtitulo(p):
+    sub = txt(p, "subtitulo")
+    return ('\n      <p class="dhero-linea dhero-sub"><b>{}</b></p>'.format(e(sub))) if sub else ""
 
 
 def render_detalle(p, vig, plantilla, todos=()):
@@ -976,7 +1069,7 @@ def render_detalle(p, vig, plantilla, todos=()):
 
     vals = {
         "{{IMAGEN_HERO}}": e(img_hero),
-        "{{TITULO_TAG}}": e(titulo_tag(titulo_txt)),
+        "{{TITULO_TAG}}": e(txt(p, "seo_titulo") or titulo_tag(titulo_txt)),
         "{{OG_TITULO}}": e(html.unescape(og_titulo)),
         "{{OG_DESC}}": e(resumen),
         "{{TITULO_TXT}}": e(titulo_txt),
@@ -984,7 +1077,9 @@ def render_detalle(p, vig, plantilla, todos=()):
         "{{HERO_MADRE}}": hero_madre,
         "{{URGENCIA}}": urgencia,
         "{{RELACIONADOS}}": relacionados,
-        "{{DESC}}": e(desc),
+        "{{DESC}}": e(txt(p, "seo_descripcion") or desc),
+        "{{SUBTITULO}}": render_subtitulo(p),
+        "{{POR_QUE}}": render_por_que(p, todos),
         "{{ALT}}": e(alt_imagen(p)),
         "{{KICKER}}": e(REGIONES.get(p["region"], p["region"])),
         "{{CANONICAL}}": e(canonical),
@@ -1342,6 +1437,10 @@ def generar_llms_full(publicados, hoy):
             doble = precios[base_ppal]
         L.append("- Precio: desde {} {} por persona en base {}{}".format(mon, fmt_precio(doble), base_ppal,
                  " ({})".format(pd["nota"]) if pd.get("nota") else ""))
+        if lista(p, "por_que"):
+            L.append("- Por qu\u00e9 elegirlo: " + "; ".join(str(x).strip().rstrip(".") for x in lista(p, "por_que")) + ".")
+        if txt(p, "ideal_para"):
+            L.append("- Ideal para: " + txt(p, "ideal_para"))
         for base_, val in precios.items():
             if base_ != base_ppal and val:
                 L.append("- Precio: desde {} {} por persona en base {}".format(mon, fmt_precio(val), base_))

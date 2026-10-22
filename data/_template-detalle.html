@@ -60,7 +60,7 @@
   <div class="mx dhero-in">
     <div class="dhero-txt">
       <p class="kicker">{{KICKER}}</p>
-      <h1>{{TITULO}}</h1>
+      <h1>{{TITULO}}</h1>{{SUBTITULO}}
       <p class="dhero-linea">{{HERO_LINEA}}</p>{{HERO_MADRE}}
     </div>
     <div class="dhero-precio">
@@ -83,6 +83,7 @@
     <p class="dresumen">{{RESUMEN}}</p>
   </div>
 </section>
+{{POR_QUE}}
 {{ITINERARIO}}
 {{INCLUYE}}
 {{NO_INCLUYE}}
@@ -197,7 +198,7 @@ var _b=document.querySelector('base'),_bp=_b?_b.getAttribute('href'):'/';
 var _sn={'paquetes':'Paquetes'};
 function _sl(s){return _sn[s]||s.split('-').map(function(w){return w.charAt(0).toUpperCase()+w.slice(1);}).join(' ');}
 var _segs=window.location.pathname.replace(_bp,'').replace(/\/index\.html$/,'/').replace(/\/$/,'').split('/').filter(Boolean);
-var _cn=(document.title||'').split(' | ')[0].replace(/ desde Buenos Aires$/,'').trim();
+var _cn=(((document.querySelector('h1')||{}).textContent)||(document.title||'').split(' | ')[0]).trim();
 var _bci=[{t:'Inicio',h:_bp}];
 for(var _i=0;_i<_segs.length-1;_i++){_bci.push({t:_sl(_segs[_i]),h:_segs.slice(0,_i+1).join('/')+'/'});}
 _bci.push({t:_cn,h:null});
