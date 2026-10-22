@@ -355,6 +355,131 @@ def reemplazar_bloque(texto, ini, fin, bloque):
 # ============================================================
 # Render — CARD
 # ============================================================
+# ============================================================
+# Filtros y orden de /paquetes/ (2026-10-22). Los datos salen del JSON:
+# - meses_salida (explicito) o el texto de "salida": fecha fija, rango "del dd/mm al dd/mm/aaaa",
+#   "Fecha a eleccion, hasta <mes> <aaaa>" (desde el mes del build) o "<Mes> <aaaa>".
+# - tipo: lista derivada por tools (grupal, crucero, todo-incluido).
+# ============================================================
+MESES_NOMBRE = ["", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
+                "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+TIPOS_LABEL = [("grupal", "Salida grupal acompa\u00f1ada"), ("crucero", "Crucero"), ("todo-incluido", "Todo incluido")]
+DURACIONES = [("hasta-5", "Hasta 5 noches"), ("6-10", "6 a 10 noches"), ("mas-10", "M\u00e1s de 10 noches")]
+
+
+def _meses_entre(y1, m1, y2, m2):
+    out = []
+    y, m = y1, m1
+    while (y, m) <= (y2, m2) and len(out) < 36:
+        out.append("{:04d}-{:02d}".format(y, m))
+        m += 1
+        if m > 12:
+            y, m = y + 1, 1
+    return out
+
+
+def meses_de(p, hoy=None):
+    """Meses (YYYY-MM) en los que sale el paquete. Un rango o 'fecha a eleccion' cubre todos sus meses."""
+    hoy = hoy or datetime.date.today()
+    exp = [str(x) for x in lista(p, "meses_salida") if re.match(r"^\d{4}-\d{2}$", str(x))]
+    if exp:
+        return exp
+    s = str(p.get("salida") or "").strip().lower()
+    m = re.search(r"del\s+(\d{1,2})/(\d{1,2})(?:/(\d{4}))?\s+al\s+(\d{1,2})/(\d{1,2})/(\d{4})", s)
+    if m:
+        y2, m2 = int(m.group(6)), int(m.group(5))
+        y1, m1 = int(m.group(3) or y2), int(m.group(2))
+        return _meses_entre(y1, m1, y2, m2)
+    m = re.search(r"hasta\s+([a-z\u00e1\u00e9\u00ed\u00f3\u00fa]+)\s+(?:de\s+)?(\d{4})", s)
+    if m and m.group(1) in MESES:
+        return _meses_entre(hoy.year, hoy.month, int(m.group(2)), MESES[m.group(1)])
+    d = parse_salida(s)
+    if d:
+        return ["{:04d}-{:02d}".format(d.year, d.month)]
+    v = parse_vigencia(p.get("vigencia"))
+    return ["{:04d}-{:02d}".format(v.year, v.month)] if v else []
+
+
+def duracion_rango(noches):
+    try:
+        n = int(noches)
+    except (TypeError, ValueError):
+        return ""
+    return "hasta-5" if n <= 5 else ("6-10" if n <= 10 else "mas-10")
+
+
+def mes_label(ym):
+    y, m = ym.split("-")
+    return "{} {}".format(MESES_NOMBRE[int(m)], y)
+
+
+def render_filtros(publicados, hoy):
+    """Barra de filtros y orden: selects (orden, mes, duracion, tipo), chips de region, Limpiar y contador.
+    En mobile va dentro de un <details> (boton 'Filtrar y ordenar'); el JS lo abre en escritorio.
+    Sin JS: el listado completo se ve igual, en el orden por defecto."""
+    desde = "{:04d}-{:02d}".format(hoy.year, hoy.month)
+    meses = sorted({m for p, v in publicados for m in meses_de(p, hoy) if m >= desde})   # meses pasados no se ofrecen
+    tipos_pres = {t for p, v in publicados for t in lista(p, "tipo")}
+    NL = chr(10)
+
+    def opt(val, lbl):
+        return '          <option value="{}">{}</option>'.format(e(val), lbl)
+    sel_orden = [opt("", "Pr\u00f3ximas salidas"), opt("precio-asc", "Precio: menor a mayor"),
+                 opt("precio-desc", "Precio: mayor a menor"), opt("duracion", "Duraci\u00f3n")]
+    sel_mes = [opt("", "Todos los meses")] + [opt(m, mes_label(m)) for m in meses]
+    sel_dur = [opt("", "Cualquier duraci\u00f3n")] + [opt(k, l) for k, l in DURACIONES]
+    sel_tipo = [opt("", "Todos los tipos")] + [opt(k, l) for k, l in TIPOS_LABEL if k in tipos_pres]
+
+    def campo(id_, label, opts, nombre):
+        return NL.join([
+            '      <div class="pk-fld">',
+            '        <label class="pk-lbl" for="pk-{}">{}</label>'.format(id_, label),
+            '        <select id="pk-{}" class="pk-sel" data-f="{}">'.format(id_, nombre),
+            NL.join(opts),
+            '        </select>',
+            '      </div>'])
+    chips = render_chips(publicados).replace('    <div class="pk-filters rv" role="group" aria-label="Filtrar por regi&oacute;n">',
+                                             '        <div class="pk-filters" role="group" aria-labelledby="pk-reg-lbl">')
+    n = len(publicados)
+    return NL.join([
+        '    <details class="pk-fbox rv">',
+        '      <summary class="pk-fsum">{}Filtrar y ordenar</summary>'.format(IC_FILTRO),
+        '      <div class="pk-bar">',
+        '      <div class="pk-sels">',
+        campo("orden", "Ordenar por", sel_orden, "orden"),
+        campo("mes", "Mes de salida", sel_mes, "mes"),
+        campo("duracion", "Duraci\u00f3n", sel_dur, "duracion"),
+        campo("tipo", "Tipo de viaje", sel_tipo, "tipo"),
+        '      </div>',
+        '      <div class="pk-fld">',
+        '        <span class="pk-lbl" id="pk-reg-lbl">Regi\u00f3n</span>',
+        chips,
+        '      </div>',
+        '      <div class="pk-tools">',
+        '        <button type="button" class="pk-clear" disabled>Limpiar filtros</button>',
+        '      </div>',
+        '      </div>',
+        '    </details>',
+        '    <p class="pk-count" role="status" aria-live="polite">{} {}</p>'.format(n, "salida" if n == 1 else "salidas"),
+    ])
+
+
+def render_nores():
+    wa = "https://wa.me/{}?text={}".format(WA_NUMERO, urllib.parse.quote(
+        "Hola Legend Travel, busqu\u00e9 en los paquetes y no encontr\u00e9 lo que quiero. \u00bfMe arman una propuesta a medida?", safe=''))
+    return NL_.join([
+        '    <div class="pk-nores" hidden>',
+        '      <h3>No encontramos salidas con esos filtros.</h3>',
+        '      <p>Prob\u00e1 con otro mes o regi\u00f3n, o contanos qu\u00e9 busc\u00e1s y te armamos un viaje a medida.</p>',
+        '      <a class="pk-cta" style="max-width:340px;margin:16px auto 0" href="{}" target="_blank" rel="noopener noreferrer">{}Pedir una propuesta por WhatsApp</a>'.format(e(wa), IC_WA),
+        '    </div>',
+    ])
+
+
+NL_ = chr(10)
+IC_FILTRO = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>'
+
+
 def render_card(p, vig_date):
     badge = ('\n        <span class="pk-badge">{}Destacado</span>'.format(IC_ESTRELLA)
              if p.get("destacado") else "")
@@ -381,7 +506,8 @@ def render_card(p, vig_date):
     pnota = str(pd.get("nota") or "").strip()
     pnota_html = ('\n            <p class="pk-pnota">{}</p>'.format(e(pnota)) if pnota else "")
 
-    return '''      <article class="pk-card" data-r="{region}">
+    fecha_orden = parse_salida(p["salida"]) or vig_date
+    return '''      <article class="pk-card" data-r="{region}" data-moneda="{moneda}" data-precio="{precio_n}" data-noches="{noches}" data-meses="{meses}" data-tipo="{tipo}" data-base="{base}" data-fecha="{fecha}">
         <a class="pk-stretch" href="paquetes/{id}/" aria-label="Ver detalle: {titulo}"></a>
         <div class="pk-media">
           <img src="{imagen}" alt="{alt}" loading="lazy">{badge}
@@ -407,6 +533,9 @@ def render_card(p, vig_date):
         </div>
       </article>'''.format(
         region=e(p["region"]), id=e(p["id"]), imagen=e(p["imagen"]),
+        precio_n=int(pd.get("valor") or 0), noches=int(p.get("noches") or 0),
+        meses=" ".join(meses_de(p)), tipo=" ".join(lista(p, "tipo")),
+        base=e("doble" if "doble" in [str(x.get("base")) for x in (p.get("precios") or []) if isinstance(x, dict)] else (str(((p.get("precios") or [{}])[0] or {}).get("base") or "doble"))), fecha=fecha_orden.isoformat(),
         alt=e(alt_imagen(p)), badge=badge,
         kicker=kicker, titulo=e(p["titulo"]), resumen=e(txt(p, "resumen")),
         metas="\n".join(metas), incluye=inc_html, mas=mas,
@@ -1907,9 +2036,10 @@ def main():
             START,
             "<!-- Generado por build-paquetes.py el {}. NO editar a mano: se pisa. -->".format(hoy.isoformat()),
             CARD_CSS,
-            render_chips(publicados),
+            render_filtros(publicados, hoy),
             render_grupos(publicados),
-            '    <p class="pk-nores">No hay salidas en esa regi&oacute;n por ahora.</p>',
+            '    <div class="pk-flat" hidden></div>',
+            render_nores(),
             END,
         ])
     else:

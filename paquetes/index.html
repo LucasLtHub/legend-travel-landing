@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/design.css?v=14">
+<link rel="stylesheet" href="assets/design.css?v=15">
 <style>
 .hero-media .scene{background-image:url('assets/img/pexels/1450353-1800.jpg');background-position:center 42%}
 </style>
@@ -86,7 +86,64 @@
 <!-- PAQUETES:START -->
 <!-- Generado por build-paquetes.py el 2026-10-22. NO editar a mano: se pisa. -->
 <!-- El diseno de las cards (.pk-*, .pkc) vive en assets/design.css, seccion "paquetes". Aca no se inyecta CSS: una corrida no puede pisarlo. -->
-    <div class="pk-filters rv" role="group" aria-label="Filtrar por regi&oacute;n">
+    <details class="pk-fbox rv">
+      <summary class="pk-fsum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filtrar y ordenar</summary>
+      <div class="pk-bar">
+      <div class="pk-sels">
+      <div class="pk-fld">
+        <label class="pk-lbl" for="pk-orden">Ordenar por</label>
+        <select id="pk-orden" class="pk-sel" data-f="orden">
+          <option value="">Próximas salidas</option>
+          <option value="precio-asc">Precio: menor a mayor</option>
+          <option value="precio-desc">Precio: mayor a menor</option>
+          <option value="duracion">Duración</option>
+        </select>
+      </div>
+      <div class="pk-fld">
+        <label class="pk-lbl" for="pk-mes">Mes de salida</label>
+        <select id="pk-mes" class="pk-sel" data-f="mes">
+          <option value="">Todos los meses</option>
+          <option value="2026-10">Octubre 2026</option>
+          <option value="2026-11">Noviembre 2026</option>
+          <option value="2026-12">Diciembre 2026</option>
+          <option value="2027-01">Enero 2027</option>
+          <option value="2027-02">Febrero 2027</option>
+          <option value="2027-03">Marzo 2027</option>
+          <option value="2027-04">Abril 2027</option>
+          <option value="2027-05">Mayo 2027</option>
+          <option value="2027-06">Junio 2027</option>
+          <option value="2027-07">Julio 2027</option>
+          <option value="2027-09">Septiembre 2027</option>
+          <option value="2027-12">Diciembre 2027</option>
+          <option value="2028-01">Enero 2028</option>
+          <option value="2028-02">Febrero 2028</option>
+          <option value="2028-06">Junio 2028</option>
+          <option value="2028-07">Julio 2028</option>
+          <option value="2028-12">Diciembre 2028</option>
+        </select>
+      </div>
+      <div class="pk-fld">
+        <label class="pk-lbl" for="pk-duracion">Duración</label>
+        <select id="pk-duracion" class="pk-sel" data-f="duracion">
+          <option value="">Cualquier duración</option>
+          <option value="hasta-5">Hasta 5 noches</option>
+          <option value="6-10">6 a 10 noches</option>
+          <option value="mas-10">Más de 10 noches</option>
+        </select>
+      </div>
+      <div class="pk-fld">
+        <label class="pk-lbl" for="pk-tipo">Tipo de viaje</label>
+        <select id="pk-tipo" class="pk-sel" data-f="tipo">
+          <option value="">Todos los tipos</option>
+          <option value="grupal">Salida grupal acompañada</option>
+          <option value="crucero">Crucero</option>
+          <option value="todo-incluido">Todo incluido</option>
+        </select>
+      </div>
+      </div>
+      <div class="pk-fld">
+        <span class="pk-lbl" id="pk-reg-lbl">Región</span>
+        <div class="pk-filters" role="group" aria-labelledby="pk-reg-lbl">
       <button class="pk-chip on" data-r="all" aria-pressed="true">Todos <span class="n">65</span></button>
       <button class="pk-chip" data-r="caribe" aria-pressed="false">Caribe <span class="n">11</span></button>
       <button class="pk-chip" data-r="cruceros" aria-pressed="false">Cruceros <span class="n">7</span></button>
@@ -98,13 +155,20 @@
       <button class="pk-chip" data-r="brasil" aria-pressed="false">Brasil <span class="n">8</span></button>
       <button class="pk-chip" data-r="latinoamerica" aria-pressed="false">Latinoamérica <span class="n">1</span></button>
     </div>
+      </div>
+      <div class="pk-tools">
+        <button type="button" class="pk-clear" disabled>Limpiar filtros</button>
+      </div>
+      </div>
+    </details>
+    <p class="pk-count" role="status" aria-live="polite">65 salidas</p>
     <section class="pk-group" data-r="caribe">
       <div class="pk-ghead">
         <h3>Escapadas al Caribe</h3>
         <span class="n">11 salidas</span>
       </div>
       <div class="pk-grid">
-      <article class="pk-card" data-r="caribe">
+      <article class="pk-card" data-r="caribe" data-moneda="USD" data-precio="2490" data-noches="10" data-meses="2027-02" data-tipo="todo-incluido" data-base="doble" data-fecha="2027-02-15">
         <a class="pk-stretch" href="paquetes/punta-cana-all-inclusive/" aria-label="Ver detalle: Punta Cana All Inclusive"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/2646066-1600.jpg" alt="Playa de arena blanca con palmeras y banderas en Punta Cana, República Dominicana" loading="lazy">
@@ -137,7 +201,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="caribe">
+      <article class="pk-card" data-r="caribe" data-moneda="USD" data-precio="2400" data-noches="10" data-meses="2027-01" data-tipo="todo-incluido" data-base="doble" data-fecha="2027-01-02">
         <a class="pk-stretch" href="paquetes/punta-cana-bayahibe/" aria-label="Ver detalle: Punta Cana &amp; Bayahíbe All Inclusive"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/10816914-1600.jpg" alt="Lancha en la orilla de una playa de arena blanca en Bayahíbe, República Dominicana" loading="lazy">
@@ -170,7 +234,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="caribe">
+      <article class="pk-card" data-r="caribe" data-moneda="USD" data-precio="3310" data-noches="10" data-meses="2027-01" data-tipo="todo-incluido" data-base="doble" data-fecha="2027-01-04">
         <a class="pk-stretch" href="paquetes/riviera-maya-costa-mujeres/" aria-label="Ver detalle: Riviera Maya All Inclusive — Costa Mujeres + Riviera Maya"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/16116483-1600.jpg" alt="Vista aérea de la playa de Costa Mujeres, Cancún, México" loading="lazy">
@@ -203,7 +267,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="caribe">
+      <article class="pk-card" data-r="caribe" data-moneda="USD" data-precio="3744" data-noches="12" data-meses="2027-01" data-tipo="todo-incluido" data-base="doble" data-fecha="2027-01-04">
         <a class="pk-stretch" href="paquetes/miches-ene-2027/" aria-label="Ver detalle: Miches — 4 de enero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/10490906-1200.jpg" alt="Playa caribeña de arena blanca con palmeras y mar turquesa" loading="lazy">
@@ -235,7 +299,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="caribe">
+      <article class="pk-card" data-r="caribe" data-moneda="USD" data-precio="3134" data-noches="8" data-meses="2027-01" data-tipo="" data-base="doble" data-fecha="2027-01-09">
         <a class="pk-stretch" href="paquetes/aruba-ene-2027/" aria-label="Ver detalle: Aruba — 9 de enero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/4710783-1800.jpg" alt="Vista aérea de una playa de arena blanca y mar turquesa en Aruba" loading="lazy">
@@ -267,7 +331,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="caribe">
+      <article class="pk-card" data-r="caribe" data-moneda="USD" data-precio="2988" data-noches="10" data-meses="2027-01" data-tipo="todo-incluido" data-base="doble" data-fecha="2027-01-13">
         <a class="pk-stretch" href="paquetes/punta-cana-ene-2027/" aria-label="Ver detalle: Punta Cana — 13 de enero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/30447886-1200.jpg" alt="Playa de arena blanca con palmeras y mar turquesa en el Caribe" loading="lazy">
@@ -299,7 +363,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="caribe">
+      <article class="pk-card" data-r="caribe" data-moneda="USD" data-precio="2396" data-noches="7" data-meses="2027-01" data-tipo="todo-incluido" data-base="doble" data-fecha="2027-01-18">
         <a class="pk-stretch" href="paquetes/riviera-maya-ene-2027/" aria-label="Ver detalle: Riviera Maya — 18 de enero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/11944898-1200.jpg" alt="Playa de arena blanca y mar turquesa en la Riviera Maya, México" loading="lazy">
@@ -331,7 +395,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="caribe">
+      <article class="pk-card" data-r="caribe" data-moneda="USD" data-precio="2586" data-noches="7" data-meses="2027-01" data-tipo="todo-incluido" data-base="doble" data-fecha="2027-01-18">
         <a class="pk-stretch" href="paquetes/costa-mujeres-ene-2027/" aria-label="Ver detalle: Costa Mujeres — 18 de enero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/9149277-1200.jpg" alt="Playa de aguas turquesa en Isla Mujeres, frente a Costa Mujeres, México" loading="lazy">
@@ -363,7 +427,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="caribe">
+      <article class="pk-card" data-r="caribe" data-moneda="USD" data-precio="3159" data-noches="10" data-meses="2027-01" data-tipo="todo-incluido" data-base="doble" data-fecha="2027-01-25">
         <a class="pk-stretch" href="paquetes/riviera-maya-cancun-ene-2027/" aria-label="Ver detalle: Riviera Maya &amp; Cancún — 25 de enero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/29901886-1200.jpg" alt="Playa de arena blanca con palmeras en la Riviera Maya, México" loading="lazy">
@@ -396,7 +460,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="caribe">
+      <article class="pk-card" data-r="caribe" data-moneda="USD" data-precio="3840" data-noches="10" data-meses="2027-02" data-tipo="todo-incluido" data-base="doble" data-fecha="2027-02-08">
         <a class="pk-stretch" href="paquetes/cancun-all-inclusive/" aria-label="Ver detalle: Cancún All Inclusive"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/18118993-1600.jpg" alt="Playa de arena blanca con palmeras en Cancún, México" loading="lazy">
@@ -428,7 +492,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="caribe">
+      <article class="pk-card" data-r="caribe" data-moneda="USD" data-precio="3485" data-noches="10" data-meses="2027-02" data-tipo="" data-base="doble" data-fecha="2027-02-14">
         <a class="pk-stretch" href="paquetes/miami-bayahibe-feb-2027/" aria-label="Ver detalle: Miami &amp; Bayahíbe — 14 de febrero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/9293251-1200.jpg" alt="Playa y edificios de Miami Beach, Estados Unidos" loading="lazy">
@@ -469,7 +533,7 @@
         <span class="n">7 salidas</span>
       </div>
       <div class="pk-grid">
-      <article class="pk-card" data-r="cruceros">
+      <article class="pk-card" data-r="cruceros" data-moneda="USD" data-precio="2158" data-noches="9" data-meses="2026-12" data-tipo="crucero" data-base="doble" data-fecha="2026-12-27">
         <a class="pk-stretch" href="paquetes/anio-nuevo-costa-serena/" aria-label="Ver detalle: Año Nuevo a bordo del Costa Serena"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/2868242-1800.jpg" alt="Vista aérea de la costa de Río de Janeiro, Brasil" loading="lazy">
@@ -502,7 +566,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="cruceros">
+      <article class="pk-card" data-r="cruceros" data-moneda="USD" data-precio="1334" data-noches="7" data-meses="2026-12" data-tipo="crucero" data-base="doble" data-fecha="2026-12-23">
         <a class="pk-stretch" href="paquetes/navidad-costa-diadema/" aria-label="Ver detalle: Navidad a bordo del Costa Diadema"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/1001682-1800.jpg" alt="Mar abierto bajo un cielo despejado, visto desde un crucero" loading="lazy">
@@ -534,7 +598,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="cruceros">
+      <article class="pk-card" data-r="cruceros" data-moneda="USD" data-precio="1536" data-noches="7" data-meses="2026-12" data-tipo="crucero" data-base="doble" data-fecha="2026-12-30">
         <a class="pk-stretch" href="paquetes/2027-altamar-costa-diadema/" aria-label="Ver detalle: Recibí el 2027 en Altamar — Costa Diadema"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/18149722-1800.jpg" alt="Vista aérea de una playa con barcos anclados en aguas turquesa" loading="lazy">
@@ -566,7 +630,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="cruceros">
+      <article class="pk-card" data-r="cruceros" data-moneda="USD" data-precio="3293" data-noches="10" data-meses="2027-01" data-tipo="crucero todo-incluido" data-base="doble" data-fecha="2027-01-07">
         <a class="pk-stretch" href="paquetes/caribe-con-crucero-ene-2027/" aria-label="Ver detalle: Caribe con crucero Costa Fascinosa — 7 de enero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/37880222-1200.jpg" alt="Crucero navegando en mar abierto" loading="lazy">
@@ -598,7 +662,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="cruceros">
+      <article class="pk-card" data-r="cruceros" data-moneda="USD" data-precio="1808" data-noches="22" data-meses="2027-02" data-tipo="crucero" data-base="doble" data-fecha="2027-02-09">
         <a class="pk-stretch" href="paquetes/majestic-princess-buenos-aires-southampton-feb-2027/" aria-label="Ver detalle: Majestic Princess: de Buenos Aires a Southampton · 9 de febrero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/5334261-1200.jpg" alt="Cubierta de paseo de un crucero al atardecer, con el mar abierto de fondo" loading="lazy">
@@ -628,7 +692,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="cruceros">
+      <article class="pk-card" data-r="cruceros" data-moneda="USD" data-precio="4531" data-noches="36" data-meses="2027-02" data-tipo="crucero" data-base="doble" data-fecha="2027-02-09">
         <a class="pk-stretch" href="paquetes/majestic-princess-fiordos-noruegos-feb-2027/" aria-label="Ver detalle: Majestic Princess: Buenos Aires a Southampton con fiordos noruegos · 9 de febrero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/34203329-1200.jpg" alt="Crucero navegando entre las montañas de un fiordo noruego" loading="lazy">
@@ -658,7 +722,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="cruceros">
+      <article class="pk-card" data-r="cruceros" data-moneda="USD" data-precio="5999" data-noches="29" data-meses="2027-02" data-tipo="crucero" data-base="doble" data-fecha="2027-02-13">
         <a class="pk-stretch" href="paquetes/zaandam-buenos-aires-fort-lauderdale-feb-2027/" aria-label="Ver detalle: Zaandam: de Buenos Aires a Fort Lauderdale · 13 de febrero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/38059196-1200.jpg" alt="Crucero navegando de frente por el mar Caribe bajo un cielo azul" loading="lazy">
@@ -696,7 +760,7 @@
         <span class="n">11 salidas</span>
       </div>
       <div class="pk-grid">
-      <article class="pk-card" data-r="europa">
+      <article class="pk-card" data-r="europa" data-moneda="USD" data-precio="7878" data-noches="10" data-meses="2027-01" data-tipo="grupal" data-base="doble" data-fecha="2027-01-24">
         <a class="pk-stretch" href="paquetes/auroras-boreales-grupal/" aria-label="Ver detalle: Auroras Boreales — Salida grupal"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/20743085-1600.jpg" alt="Aurora boreal verde sobre un fiordo nevado en Noruega" loading="lazy">
@@ -728,7 +792,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="europa">
+      <article class="pk-card" data-r="europa" data-moneda="USD" data-precio="5428" data-noches="14" data-meses="2027-03" data-tipo="grupal" data-base="doble" data-fecha="2027-03-09">
         <a class="pk-stretch" href="paquetes/sur-italia-sicilia-puglia/" aria-label="Ver detalle: Sur de Italia y Sicilia con Puglia — Salida grupal acompañada"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/2064827-1600.jpg" alt="Coliseo de Roma bajo un cielo con nubes, Italia" loading="lazy">
@@ -760,7 +824,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="europa">
+      <article class="pk-card" data-r="europa" data-moneda="USD" data-precio="5187" data-noches="17" data-meses="2027-04" data-tipo="" data-base="doble" data-fecha="2027-04-04">
         <a class="pk-stretch" href="paquetes/espana-francia-suiza-italia/" aria-label="Ver detalle: España, Francia, Suiza e Italia — 4 de abril 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/14897462-1200.jpg" alt="Edificios históricos de la Gran Vía de Madrid, España" loading="lazy">
@@ -792,7 +856,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="europa">
+      <article class="pk-card" data-r="europa" data-moneda="USD" data-precio="4622" data-noches="16" data-meses="2027-04" data-tipo="" data-base="doble" data-fecha="2027-04-09">
         <a class="pk-stretch" href="paquetes/magicamente-europa/" aria-label="Ver detalle: Mágicamente Europa — 9 de abril 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/532826-1200.jpg" alt="La Torre Eiffel vista desde los jardines del Trocadero, París" loading="lazy">
@@ -824,7 +888,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="europa">
+      <article class="pk-card" data-r="europa" data-moneda="USD" data-precio="4710" data-noches="16" data-meses="2027-04" data-tipo="" data-base="doble" data-fecha="2027-04-16">
         <a class="pk-stretch" href="paquetes/andalucia-marruecos-portugal/" aria-label="Ver detalle: Andalucía, Marruecos y Portugal — 16 de abril 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/6621125-1200.jpg" alt="Calle del zoco en la medina de Marrakech, Marruecos" loading="lazy">
@@ -856,7 +920,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="europa">
+      <article class="pk-card" data-r="europa" data-moneda="USD" data-precio="5024" data-noches="16" data-meses="2027-04" data-tipo="" data-base="doble" data-fecha="2027-04-23">
         <a class="pk-stretch" href="paquetes/madrid-norte-europeo/" aria-label="Ver detalle: Madrid y Norte Europeo — 23 de abril 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/17080606-1200.jpg" alt="Canal de Ámsterdam con casas antiguas y una iglesia al fondo" loading="lazy">
@@ -888,7 +952,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="europa">
+      <article class="pk-card" data-r="europa" data-moneda="USD" data-precio="4554" data-noches="17" data-meses="2027-05" data-tipo="" data-base="doble" data-fecha="2027-05-02">
         <a class="pk-stretch" href="paquetes/descubriendo-europa/" aria-label="Ver detalle: Descubriendo Europa — 2 de mayo 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/19976960-1200.jpg" alt="Techos de Florencia vistos desde lo alto, Italia" loading="lazy">
@@ -920,7 +984,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="europa">
+      <article class="pk-card" data-r="europa" data-moneda="USD" data-precio="4723" data-noches="16" data-meses="2027-05" data-tipo="" data-base="doble" data-fecha="2027-05-07">
         <a class="pk-stretch" href="paquetes/peninsula-iberica-madrid/" aria-label="Ver detalle: Península Ibérica con Madrid — 7 de mayo 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/12200742-1200.jpg" alt="Plaza de España de Sevilla con su torre y puente de azulejos" loading="lazy">
@@ -952,7 +1016,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="europa">
+      <article class="pk-card" data-r="europa" data-moneda="USD" data-precio="5679" data-noches="17" data-meses="2027-05" data-tipo="" data-base="doble" data-fecha="2027-05-09">
         <a class="pk-stretch" href="paquetes/europa-esencial/" aria-label="Ver detalle: Europa Esencial — 9 de mayo 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/20659013-1200.jpg" alt="Pueblo de montaña con casas de piedra frente a los Alpes" loading="lazy">
@@ -984,7 +1048,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="europa">
+      <article class="pk-card" data-r="europa" data-moneda="USD" data-precio="4858" data-noches="16" data-meses="2027-05" data-tipo="" data-base="doble" data-fecha="2027-05-21">
         <a class="pk-stretch" href="paquetes/paseando-por-europa/" aria-label="Ver detalle: Paseando por Europa — 21 de mayo 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/733830-1200.jpg" alt="Canal de Venecia con góndolas y fachadas antiguas" loading="lazy">
@@ -1016,7 +1080,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="europa">
+      <article class="pk-card" data-r="europa" data-moneda="USD" data-precio="4885" data-noches="17" data-meses="2027-06" data-tipo="" data-base="doble" data-fecha="2027-06-06">
         <a class="pk-stretch" href="paquetes/andalucia-portugal-pais-vasco-lourdes/" aria-label="Ver detalle: Andalucía, Portugal y País Vasco, con Lourdes — 6 de junio 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/20095795-1200.jpg" alt="Viñedos en terrazas sobre el río Duero, Portugal" loading="lazy">
@@ -1056,7 +1120,7 @@
         <span class="n">14 salidas</span>
       </div>
       <div class="pk-grid">
-      <article class="pk-card" data-r="argentina">
+      <article class="pk-card" data-r="argentina" data-moneda="ARS" data-precio="1322790" data-noches="5" data-meses="2026-09 2026-10 2026-11 2026-12" data-tipo="" data-base="doble" data-fecha="2026-09-16">
         <a class="pk-stretch" href="paquetes/cruce-andino-bariloche-puerto-varas/" aria-label="Ver detalle: Cruce Andino: Bariloche &amp; Puerto Varas"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/14866540-1600.jpg" alt="Lago con un volcán nevado al fondo entre la vegetación, en el cruce andino entre Bariloche y Puerto Varas" loading="lazy">
@@ -1088,7 +1152,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="argentina">
+      <article class="pk-card" data-r="argentina" data-moneda="ARS" data-precio="642990" data-noches="3" data-meses="2026-09 2026-10 2026-11 2026-12" data-tipo="" data-base="doble" data-fecha="2026-09-16">
         <a class="pk-stretch" href="paquetes/mendoza-vinedos/" aria-label="Ver detalle: Mendoza: Experiencia entre Viñedos"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/19046646-1600.jpg" alt="Hileras de viñedos con la cordillera de los Andes de fondo, Mendoza, Argentina" loading="lazy">
@@ -1120,7 +1184,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="argentina">
+      <article class="pk-card" data-r="argentina" data-moneda="ARS" data-precio="1198657" data-noches="3" data-meses="2026-09 2026-10 2026-11 2026-12" data-tipo="" data-base="doble" data-fecha="2026-09-16">
         <a class="pk-stretch" href="paquetes/puerto-madryn-ballenas/" aria-label="Ver detalle: Puerto Madryn: Puerto Pirámides con Avistaje de Ballenas"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/14019374-1600.jpg" alt="Dos ballenas francas australes vistas desde arriba en aguas claras, Puerto Madryn, Argentina" loading="lazy">
@@ -1152,7 +1216,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="argentina">
+      <article class="pk-card" data-r="argentina" data-moneda="ARS" data-precio="699030" data-noches="3" data-meses="2026-12" data-tipo="" data-base="doble" data-fecha="2026-12-05">
         <a class="pk-stretch" href="paquetes/bariloche-finde-largo-dic-2026/" aria-label="Ver detalle: Bariloche, fin de semana largo · 5 al 8 de diciembre 2026"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/38227808-1200.jpg" alt="Lago Nahuel Huapi con la ciudad de Bariloche y la cordillera de los Andes al fondo, entre pinos" loading="lazy">
@@ -1185,7 +1249,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="argentina">
+      <article class="pk-card" data-r="argentina" data-moneda="ARS" data-precio="541899" data-noches="3" data-meses="2026-12" data-tipo="" data-base="doble" data-fecha="2026-12-05">
         <a class="pk-stretch" href="paquetes/mendoza-finde-largo-dic-2026/" aria-label="Ver detalle: Mendoza, fin de semana largo con cupo aéreo · 5 al 8 de diciembre 2026"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/31025236-1200.jpg" alt="Viñedos en Tunuyán, Mendoza, con la cordillera de los Andes nevada al fondo" loading="lazy">
@@ -1218,7 +1282,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="argentina">
+      <article class="pk-card" data-r="argentina" data-moneda="ARS" data-precio="710845" data-noches="3" data-meses="2026-12" data-tipo="" data-base="doble" data-fecha="2026-12-05">
         <a class="pk-stretch" href="paquetes/salta-finde-largo-dic-2026/" aria-label="Ver detalle: Salta, fin de semana largo con cupo aéreo · 5 al 8 de diciembre 2026"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/21336116-1200.jpg" alt="Ruta entre los cerros rojos de la Quebrada de las Conchas, Salta" loading="lazy">
@@ -1251,7 +1315,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="argentina">
+      <article class="pk-card" data-r="argentina" data-moneda="ARS" data-precio="567676" data-noches="3" data-meses="2026-10 2026-11 2026-12 2027-01 2027-02 2027-03 2027-04 2027-05 2027-06 2027-07" data-tipo="" data-base="doble" data-fecha="2027-07-01">
         <a class="pk-stretch" href="paquetes/escapada-mendoza/" aria-label="Ver detalle: Escapada a Mendoza"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/31025244-1200.jpg" alt="Viñedos verdes al pie de la cordillera de los Andes, Mendoza" loading="lazy">
@@ -1283,7 +1347,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="argentina">
+      <article class="pk-card" data-r="argentina" data-moneda="ARS" data-precio="949630" data-noches="3" data-meses="2026-10 2026-11 2026-12 2027-01 2027-02 2027-03 2027-04 2027-05 2027-06 2027-07" data-tipo="" data-base="doble" data-fecha="2027-07-01">
         <a class="pk-stretch" href="paquetes/ushuaia/" aria-label="Ver detalle: Ushuaia"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/31305759-1200.jpg" alt="Ushuaia de noche frente al canal Beagle" loading="lazy">
@@ -1315,7 +1379,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="argentina">
+      <article class="pk-card" data-r="argentina" data-moneda="ARS" data-precio="651624" data-noches="3" data-meses="2026-10 2026-11 2026-12 2027-01 2027-02 2027-03 2027-04 2027-05 2027-06 2027-07" data-tipo="" data-base="doble" data-fecha="2027-07-01">
         <a class="pk-stretch" href="paquetes/bariloche-lo-tiene-todo/" aria-label="Ver detalle: Bariloche lo tiene todo"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/17676585-1200.jpg" alt="Lago Nahuel Huapi con sus islas y montañas, Bariloche" loading="lazy">
@@ -1347,7 +1411,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="argentina">
+      <article class="pk-card" data-r="argentina" data-moneda="ARS" data-precio="1280826" data-noches="6" data-meses="2026-10 2026-11 2026-12 2027-01 2027-02 2027-03 2027-04 2027-05 2027-06 2027-07" data-tipo="" data-base="doble" data-fecha="2027-07-01">
         <a class="pk-stretch" href="paquetes/vuelta-norte-argentino/" aria-label="Ver detalle: Vuelta al norte argentino"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/13467821-1200.jpg" alt="Cerros de colores en la Quebrada de las Conchas, Salta" loading="lazy">
@@ -1380,7 +1444,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="argentina">
+      <article class="pk-card" data-r="argentina" data-moneda="ARS" data-precio="1342389" data-noches="6" data-meses="2026-10 2026-11 2026-12 2027-01 2027-02 2027-03 2027-04 2027-05 2027-06 2027-07" data-tipo="" data-base="doble" data-fecha="2027-07-01">
         <a class="pk-stretch" href="paquetes/ushuaia-el-calafate/" aria-label="Ver detalle: Ushuaia &amp; El Calafate"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/4042403-1200.jpg" alt="Frente del glaciar Perito Moreno, El Calafate" loading="lazy">
@@ -1412,7 +1476,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="argentina">
+      <article class="pk-card" data-r="argentina" data-moneda="ARS" data-precio="676299" data-noches="3" data-meses="2026-10 2026-11 2026-12 2027-01 2027-02 2027-03 2027-04 2027-05 2027-06 2027-07" data-tipo="" data-base="doble" data-fecha="2027-07-01">
         <a class="pk-stretch" href="paquetes/puerto-madryn-escapada/" aria-label="Ver detalle: Puerto Madryn"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/14019459-1200.jpg" alt="Ballena franca austral con su cría vista desde el aire, Península Valdés" loading="lazy">
@@ -1444,7 +1508,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="argentina">
+      <article class="pk-card" data-r="argentina" data-moneda="ARS" data-precio="1395002" data-noches="3" data-meses="2026-10 2026-11 2026-12 2027-01 2027-02 2027-03 2027-04 2027-05 2027-06 2027-07" data-tipo="" data-base="single" data-fecha="2027-07-01">
         <a class="pk-stretch" href="paquetes/valle-de-la-luna/" aria-label="Ver detalle: Valle de la Luna con noche en Valle Fértil"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/31725158-1200.jpg" alt="Formaciones rocosas del Valle de la Luna, Ischigualasto, San Juan" loading="lazy">
@@ -1477,7 +1541,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="argentina">
+      <article class="pk-card" data-r="argentina" data-moneda="ARS" data-precio="1362212" data-noches="5" data-meses="2026-10 2026-11 2026-12 2027-01 2027-02 2027-03 2027-04 2027-05 2027-06 2027-07" data-tipo="" data-base="single" data-fecha="2027-07-01">
         <a class="pk-stretch" href="paquetes/salta-purmamarca/" aria-label="Ver detalle: Salta &amp; Purmamarca"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/6097178-1200.jpg" alt="Salinas Grandes bajo el cielo de la puna, Jujuy" loading="lazy">
@@ -1518,7 +1582,7 @@
         <span class="n">8 salidas</span>
       </div>
       <div class="pk-grid">
-      <article class="pk-card" data-r="asia">
+      <article class="pk-card" data-r="asia" data-moneda="USD" data-precio="8070" data-noches="15" data-meses="2027-03" data-tipo="grupal" data-base="doble" data-fecha="2027-03-05">
         <a class="pk-stretch" href="paquetes/tesoros-corea-japon/" aria-label="Ver detalle: Tesoros de Corea y Japón — Salida grupal acompañada"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/15121561-1600.jpg" alt="Puerta Namdaemun iluminada de noche, Seúl, Corea del Sur" loading="lazy">
@@ -1550,7 +1614,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="asia">
+      <article class="pk-card" data-r="asia" data-moneda="USD" data-precio="9740" data-noches="16" data-meses="2027-03" data-tipo="grupal" data-base="doble" data-fecha="2027-03-07">
         <a class="pk-stretch" href="paquetes/vietnam-camboya-tailandia/" aria-label="Ver detalle: Vietnam, Camboya y Tailandia — Salida grupal, 7 de marzo 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/13008674-1200.jpg" alt="Islas de piedra caliza en la bahía de Ha Long, Vietnam" loading="lazy">
@@ -1583,7 +1647,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="asia">
+      <article class="pk-card" data-r="asia" data-moneda="USD" data-precio="9440" data-noches="17" data-meses="2027-01" data-tipo="grupal todo-incluido" data-base="doble" data-fecha="2027-01-20">
         <a class="pk-stretch" href="paquetes/india-maldivas/" aria-label="Ver detalle: India &amp; Maldivas — Salida grupal"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/18894126-1200.jpg" alt="Taj Mahal reflejado en el estanque de sus jardines, Agra, India" loading="lazy">
@@ -1615,7 +1679,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="asia">
+      <article class="pk-card" data-r="asia" data-moneda="USD" data-precio="7890" data-noches="17" data-meses="2027-03" data-tipo="grupal" data-base="doble" data-fecha="2027-03-14">
         <a class="pk-stretch" href="paquetes/holi-india-2027/" aria-label="Ver detalle: Fiesta Holi — India 2027, salida grupal"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/34185066-1200.jpg" alt="Celebración del Holi con polvos de colores en India" loading="lazy">
@@ -1647,7 +1711,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="asia">
+      <article class="pk-card" data-r="asia" data-moneda="USD" data-precio="14810" data-noches="18" data-meses="2027-03" data-tipo="grupal" data-base="doble" data-fecha="2027-03-17">
         <a class="pk-stretch" href="paquetes/corea-japon-cherry-blossom/" aria-label="Ver detalle: Corea &amp; Japón — Cherry Blossom, salida grupal"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/31658696-1200.jpg" alt="Cerezos en flor junto a un templo en Japón" loading="lazy">
@@ -1679,7 +1743,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="asia">
+      <article class="pk-card" data-r="asia" data-moneda="USD" data-precio="10220" data-noches="19" data-meses="2027-04" data-tipo="grupal" data-base="doble" data-fecha="2027-04-06">
         <a class="pk-stretch" href="paquetes/china-tibet/" aria-label="Ver detalle: China &amp; Tíbet — Salida grupal"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/165169-1200.jpg" alt="Palacio Potala iluminado de noche, Lhasa, Tíbet" loading="lazy">
@@ -1711,7 +1775,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="asia">
+      <article class="pk-card" data-r="asia" data-moneda="USD" data-precio="8230" data-noches="17" data-meses="2027-05" data-tipo="grupal" data-base="doble" data-fecha="2027-05-10">
         <a class="pk-stretch" href="paquetes/hong-kong-china-2027/" aria-label="Ver detalle: Hong Kong y la China milenaria — Salida grupal, 10 de mayo 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/5208090-1200.jpg" alt="Hong Kong de noche desde el Pico Victoria" loading="lazy">
@@ -1743,7 +1807,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="asia">
+      <article class="pk-card" data-r="asia" data-moneda="USD" data-precio="9435" data-noches="16" data-meses="2027-05" data-tipo="grupal" data-base="doble" data-fecha="2027-05-24">
         <a class="pk-stretch" href="paquetes/malasia-singapur-bali/" aria-label="Ver detalle: Malasia, Singapur y Bali — Salida grupal, 24 de mayo 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/35428411-1200.jpg" alt="Terrazas de arroz entre palmeras en Bali, Indonesia" loading="lazy">
@@ -1783,7 +1847,7 @@
         <span class="n">3 salidas</span>
       </div>
       <div class="pk-grid">
-      <article class="pk-card" data-r="africa">
+      <article class="pk-card" data-r="africa" data-moneda="USD" data-precio="9820" data-noches="11" data-meses="2027-02" data-tipo="grupal" data-base="doble" data-fecha="2027-02-08">
         <a class="pk-stretch" href="paquetes/sudafrica-mauritius/" aria-label="Ver detalle: Sudáfrica &amp; Mauritius"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/3889918-1600.jpg" alt="Jirafas y cebras en la sabana del Parque Kruger, Sudáfrica" loading="lazy">
@@ -1815,7 +1879,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="africa">
+      <article class="pk-card" data-r="africa" data-moneda="USD" data-precio="8420" data-noches="15" data-meses="2027-03" data-tipo="grupal" data-base="doble" data-fecha="2027-03-17">
         <a class="pk-stretch" href="paquetes/egipto-jordania/" aria-label="Ver detalle: Egipto &amp; Jordania"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/1631665-1600.jpg" alt="Fachada del Tesoro de Petra con carruajes, Jordania" loading="lazy">
@@ -1847,7 +1911,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="africa">
+      <article class="pk-card" data-r="africa" data-moneda="USD" data-precio="11900" data-noches="15" data-meses="2027-02" data-tipo="grupal todo-incluido" data-base="doble" data-fecha="2027-02-22">
         <a class="pk-stretch" href="paquetes/kenia-tanzania/" aria-label="Ver detalle: Kenia &amp; Tanzania — Safari grupal con Zanzíbar"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/33498304-1200.jpg" alt="Leones en la sabana africana durante un safari" loading="lazy">
@@ -1887,7 +1951,7 @@
         <span class="n">2 salidas</span>
       </div>
       <div class="pk-grid">
-      <article class="pk-card" data-r="quinceaneras">
+      <article class="pk-card" data-r="quinceaneras" data-moneda="USD" data-precio="6860" data-noches="11" data-meses="2027-01 2027-02 2027-06 2027-07 2027-12 2028-01 2028-02 2028-06 2028-07 2028-12" data-tipo="grupal" data-base="doble" data-fecha="2028-12-01">
         <a class="pk-stretch" href="paquetes/enjoy-disney-usa-xv/" aria-label="Ver detalle: Enjoy Disney USA — Viaje de Quinceañeras"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/12422683-1600.jpg" alt="Castillo de Cenicienta visto entre los visitantes de Magic Kingdom, Orlando" loading="lazy">
@@ -1920,7 +1984,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="quinceaneras">
+      <article class="pk-card" data-r="quinceaneras" data-moneda="USD" data-precio="7464" data-noches="12" data-meses="2027-09" data-tipo="grupal" data-base="doble" data-fecha="2027-09-01">
         <a class="pk-stretch" href="paquetes/disney-europa-premium-xv/" aria-label="Ver detalle: Disney Europa Premium — Viaje de Quinceañeras"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/1461974-1600.jpg" alt="Torre Eiffel vista desde abajo con cielo nublado, París, Francia" loading="lazy">
@@ -1960,7 +2024,7 @@
         <span class="n">8 salidas</span>
       </div>
       <div class="pk-grid">
-      <article class="pk-card" data-r="brasil">
+      <article class="pk-card" data-r="brasil" data-moneda="USD" data-precio="1500" data-noches="7" data-meses="2027-01" data-tipo="" data-base="doble" data-fecha="2027-01-09">
         <a class="pk-stretch" href="paquetes/buzios-ene-2027/" aria-label="Ver detalle: Búzios — 9 de enero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/12039523-1200.jpg" alt="Vista aérea de la bahía de Búzios con barcos y playas, Brasil" loading="lazy">
@@ -1993,7 +2057,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="brasil">
+      <article class="pk-card" data-r="brasil" data-moneda="USD" data-precio="1500" data-noches="7" data-meses="2027-01" data-tipo="" data-base="doble" data-fecha="2027-01-09">
         <a class="pk-stretch" href="paquetes/rio-de-janeiro-ene-2027/" aria-label="Ver detalle: Río de Janeiro: verano en Copacabana — 9 de enero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/11047755-1200.jpg" alt="Costa de Río de Janeiro con sus morros, Brasil" loading="lazy">
@@ -2026,7 +2090,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="brasil">
+      <article class="pk-card" data-r="brasil" data-moneda="USD" data-precio="1455" data-noches="7" data-meses="2027-01" data-tipo="" data-base="doble" data-fecha="2027-01-09">
         <a class="pk-stretch" href="paquetes/salvador-de-bahia-ene-2027/" aria-label="Ver detalle: Salvador de Bahía — 9 de enero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/30495351-1200.jpg" alt="Iglesias y casas coloniales del Pelourinho, Salvador de Bahía, Brasil" loading="lazy">
@@ -2059,7 +2123,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="brasil">
+      <article class="pk-card" data-r="brasil" data-moneda="USD" data-precio="1739" data-noches="7" data-meses="2027-01" data-tipo="" data-base="doble" data-fecha="2027-01-10">
         <a class="pk-stretch" href="paquetes/arraial-d-ajuda/" aria-label="Ver detalle: Arraial d&#x27;Ajuda — 10 de enero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/36768233-1200.jpg" alt="Playa con cocoteros y acantilado verde en el sur de Bahía, Brasil" loading="lazy">
@@ -2092,7 +2156,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="brasil">
+      <article class="pk-card" data-r="brasil" data-moneda="USD" data-precio="1150" data-noches="7" data-meses="2027-01" data-tipo="" data-base="doble" data-fecha="2027-01-11">
         <a class="pk-stretch" href="paquetes/buzios-posadas-ene-2027/" aria-label="Ver detalle: Búzios, posada a elección · 11 de enero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/18988842-1200.jpg" alt="Vista aérea de la playa de Ferradurinha con aguas turquesa, Búzios, Brasil" loading="lazy">
@@ -2125,7 +2189,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="brasil">
+      <article class="pk-card" data-r="brasil" data-moneda="USD" data-precio="1480" data-noches="7" data-meses="2027-01" data-tipo="" data-base="doble" data-fecha="2027-01-16">
         <a class="pk-stretch" href="paquetes/florianopolis-ene-2027/" aria-label="Ver detalle: Florianópolis — 16 de enero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/155313-1200.jpg" alt="Playa de arena dorada y mar azul en la isla de Florianópolis, Brasil" loading="lazy">
@@ -2158,7 +2222,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="brasil">
+      <article class="pk-card" data-r="brasil" data-moneda="USD" data-precio="1511" data-noches="7" data-meses="2027-01" data-tipo="" data-base="doble" data-fecha="2027-01-26">
         <a class="pk-stretch" href="paquetes/maceio-ene-2027/" aria-label="Ver detalle: Maceió — 26 de enero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/27688572-1200.jpg" alt="Bancos de arena y aguas turquesa en el nordeste de Brasil" loading="lazy">
@@ -2191,7 +2255,7 @@
           </div>
         </div>
       </article>
-      <article class="pk-card" data-r="brasil">
+      <article class="pk-card" data-r="brasil" data-moneda="USD" data-precio="2537" data-noches="7" data-meses="2027-02" data-tipo="todo-incluido" data-base="doble" data-fecha="2027-02-20">
         <a class="pk-stretch" href="paquetes/praia-do-forte-feb-2027/" aria-label="Ver detalle: Praia do Forte, all inclusive en Bahía — 20 de febrero 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/36016910-1200.jpg" alt="Playa con piscinas naturales y aguas turquesa vista desde el aire, Bahía, Brasil" loading="lazy">
@@ -2232,7 +2296,7 @@
         <span class="n">1 salida</span>
       </div>
       <div class="pk-grid">
-      <article class="pk-card" data-r="latinoamerica">
+      <article class="pk-card" data-r="latinoamerica" data-moneda="USD" data-precio="3140" data-noches="10" data-meses="2027-05" data-tipo="grupal" data-base="doble" data-fecha="2027-05-07">
         <a class="pk-stretch" href="paquetes/esencias-del-peru-may-2027/" aria-label="Ver detalle: Esencias del Perú, salida grupal acompañada · 7 de mayo 2027"></a>
         <div class="pk-media">
           <img src="assets/img/pexels/16973651-1200.jpg" alt="Ciudadela de Machu Picchu con el Huayna Picchu al fondo, Perú" loading="lazy">
@@ -2266,7 +2330,12 @@
       </article>
       </div>
     </section>
-    <p class="pk-nores">No hay salidas en esa regi&oacute;n por ahora.</p>
+    <div class="pk-flat" hidden></div>
+    <div class="pk-nores" hidden>
+      <h3>No encontramos salidas con esos filtros.</h3>
+      <p>Probá con otro mes o región, o contanos qué buscás y te armamos un viaje a medida.</p>
+      <a class="pk-cta" style="max-width:340px;margin:16px auto 0" href="https://wa.me/5491176554362?text=Hola%20Legend%20Travel%2C%20busqu%C3%A9%20en%20los%20paquetes%20y%20no%20encontr%C3%A9%20lo%20que%20quiero.%20%C2%BFMe%20arman%20una%20propuesta%20a%20medida%3F" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.9-6.1c-.8-1.3-1.2-2.4-1.1-3 0-.6.5-1.6 1.1-1.9.3-.2.7-.2 1-.1.2 0 .5 0 .7.6l.9 2.1c.1.2.1.5 0 .7l-.5.8c-.2.2-.3.4-.1.7.5.9 1.2 1.7 2 2.4.8.7 1.6 1.2 2.6 1.6.3.1.5.1.7-.1l.7-.7c.2-.3.4-.3.7-.2l2.1 1c.5.3.6.4.6.8Z"/></svg>Pedir una propuesta por WhatsApp</a>
+    </div>
 <!-- PAQUETES:END -->
 
     <p class="pk-disc rv">Precios expresados por persona en base doble. Las tarifas pierden validez al vencer la fecha indicada en cada salida. No incluyen impuestos y tasas salvo aclaraci&#243;n expresa. Legend Travel &#8212; Legajo 7553, Ministerio de Turismo de la Naci&#243;n.</p>
@@ -2426,51 +2495,123 @@
 <script>(function(){var s=document.createElement('script');s.src='assets/design.js?v=5';document.body.appendChild(s)})()</script>
 
 <script>
-/* Filtro por región — client-side, sin librerías.
-   Soporta deep-link por hash: paquetes/#caribe abre ya filtrado.
-   Desde cada madre y desde el mosaico del home se entra por ahí. */
+/* Filtros y orden del listado de paquetes (2026-10-22). Sin librerias.
+   - Las cards vienen todas en el HTML (SEO): aca solo se muestran, ocultan y reordenan.
+   - Orden por precio: SIEMPRE dentro de cada moneda (USD primero, despues "Paquetes en pesos"); nunca se convierte ni compara entre monedas.
+   - Estado en la URL (?region=&orden=&mes=&duracion=&tipo=) y deep-link viejo por hash (#caribe).
+   - Cada cambio del usuario empuja al dataLayer el evento filtro_paquetes {tipo, valor}. */
 (function(){
-  var chips=Array.prototype.slice.call(document.querySelectorAll('.pk-chip'));
-  /* La grilla viene partida en bloques por region, asi que el filtro muestra
-     u oculta BLOQUES enteros — el titulo de cada uno va con sus cards. */
+  var bar=document.querySelector('.pk-bar');
+  var cards=Array.prototype.slice.call(document.querySelectorAll('.pk-card'));
+  if(!bar||!cards.length)return;
   var grupos=Array.prototype.slice.call(document.querySelectorAll('.pk-group'));
+  var flat=document.querySelector('.pk-flat');
   var nores=document.querySelector('.pk-nores');
-  if(!chips.length||!grupos.length)return;
+  var count=document.querySelector('.pk-count');
+  var fbox=document.querySelector('.pk-fbox');
+  var chips=Array.prototype.slice.call(bar.querySelectorAll('.pk-chip'));
+  var sels={};
+  Array.prototype.forEach.call(bar.querySelectorAll('select[data-f]'),function(s){sels[s.getAttribute('data-f')]=s;});
+  var clear=bar.querySelector('.pk-clear');
+  var ORDENES=['precio-asc','precio-desc','duracion'];
+  var DURS=['hasta-5','6-10','mas-10'];
+  var st={region:'all',orden:'',mes:'',duracion:'',tipo:''};
 
-  function pintar(r){
-    var vis=0;
-    grupos.forEach(function(g){
-      var show=(r==='all'||g.getAttribute('data-r')===r);
-      g.style.display=show?'':'none';
-      if(show)vis++;
-    });
-    if(nores)nores.style.display=vis?'none':'block';
-    chips.forEach(function(x){
-      var on=(x.getAttribute('data-r')===r);
-      x.classList.toggle('on',on);
-      x.setAttribute('aria-pressed',on?'true':'false');
-    });
+  cards.forEach(function(c,i){c._home=c.parentNode;c._idx=i;});
+  var gruposN={};
+  grupos.forEach(function(g){var n=g.querySelector('.pk-ghead .n');if(n)gruposN[g.getAttribute('data-r')]=n;});
+
+  function regionOk(r){return r==='all'||chips.some(function(x){return x.getAttribute('data-r')===r;});}
+  function opcionOk(sel,v){return !!sel&&Array.prototype.some.call(sel.options,function(o){return o.value===v;});}
+  function dur(n){n=+n||0;return n<=5?'hasta-5':(n<=10?'6-10':'mas-10');}
+  function pasa(c){
+    if(st.region!=='all'&&c.getAttribute('data-r')!==st.region)return false;
+    if(st.mes&&(' '+(c.getAttribute('data-meses')||'')+' ').indexOf(' '+st.mes+' ')<0)return false;
+    if(st.duracion&&dur(c.getAttribute('data-noches'))!==st.duracion)return false;
+    if(st.tipo&&(' '+(c.getAttribute('data-tipo')||'')+' ').indexOf(' '+st.tipo+' ')<0)return false;
+    return true;
   }
-
-  function existe(r){
-    return chips.some(function(x){return x.getAttribute('data-r')===r});
+  function seccion(titulo,n){
+    var s=document.createElement('section');s.className='pk-group';
+    s.innerHTML='<div class="pk-ghead"><h3></h3><span class="n"></span></div><div class="pk-grid"></div>';
+    s.querySelector('h3').textContent=titulo;
+    s.querySelector('.n').textContent=n+(n===1?' salida':' salidas');
+    return s;
   }
-
-  function desdeHash(){
-    var r=(location.hash||'').replace('#','').trim();
-    pintar(existe(r)?r:'all');
+  function cmp(a,b){
+    if(st.orden==='duracion'){var d=(+a.getAttribute('data-noches'))-(+b.getAttribute('data-noches'));if(d)return d;}
+    else{var pa=+a.getAttribute('data-precio'),pb=+b.getAttribute('data-precio');var d2=st.orden==='precio-desc'?pb-pa:pa-pb;if(d2)return d2;}
+    var fa=a.getAttribute('data-fecha')||'',fb=b.getAttribute('data-fecha')||'';
+    return fa<fb?-1:(fa>fb?1:a._idx-b._idx);
   }
-
-  chips.forEach(function(c){
-    c.addEventListener('click',function(){
-      var r=c.getAttribute('data-r');
-      pintar(r);
-      if(history.replaceState)history.replaceState(null,'',r==='all'?location.pathname:'#'+r);
-    });
-  });
-
-  window.addEventListener('hashchange',desdeHash);
-  desdeHash();
+  function aplicar(){
+    var vis=cards.filter(pasa);
+    cards.forEach(function(c){c.hidden=vis.indexOf(c)<0;});
+    if(st.orden){
+      grupos.forEach(function(g){g.hidden=true;});
+      while(flat.firstChild)flat.removeChild(flat.firstChild);
+      var ord=vis.slice().sort(cmp);
+      if(st.orden==='duracion'){
+        if(ord.length){var s=seccion('Por duración',ord.length);ord.forEach(function(c){s.querySelector('.pk-grid').appendChild(c);});flat.appendChild(s);}
+      }else{
+        var usd=ord.filter(function(c){return c.getAttribute('data-moneda')!=='ARS';});
+        var ars=ord.filter(function(c){return c.getAttribute('data-moneda')==='ARS';});
+        if(usd.length){var su=seccion('Paquetes en dólares',usd.length);usd.forEach(function(c){su.querySelector('.pk-grid').appendChild(c);});flat.appendChild(su);}
+        if(ars.length){var sa=seccion('Paquetes en pesos',ars.length);ars.forEach(function(c){sa.querySelector('.pk-grid').appendChild(c);});flat.appendChild(sa);}
+      }
+      flat.hidden=!vis.length;
+    }else{
+      flat.hidden=true;
+      while(flat.firstChild)flat.removeChild(flat.firstChild);
+      cards.slice().sort(function(a,b){return a._idx-b._idx;}).forEach(function(c){if(c.parentNode!==c._home)c._home.appendChild(c);});
+      grupos.forEach(function(g){
+        var n=Array.prototype.filter.call(g.querySelectorAll('.pk-card'),function(c){return !c.hidden;}).length;
+        g.hidden=!n;
+        var el=gruposN[g.getAttribute('data-r')];if(el)el.textContent=n+(n===1?' salida':' salidas');
+      });
+    }
+    if(nores)nores.hidden=vis.length>0;
+    if(count)count.textContent=vis.length+(vis.length===1?' salida':' salidas');
+    chips.forEach(function(x){var on=x.getAttribute('data-r')===st.region;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on?'true':'false');});
+    for(var k in sels)if(sels[k].value!==(st[k]||''))sels[k].value=st[k]||'';
+    var activo=st.region!=='all'||st.orden||st.mes||st.duracion||st.tipo;
+    if(clear)clear.disabled=!activo;
+    if(history.replaceState){
+      var q=[];
+      if(st.region!=='all')q.push('region='+encodeURIComponent(st.region));
+      if(st.orden)q.push('orden='+encodeURIComponent(st.orden));
+      if(st.mes)q.push('mes='+encodeURIComponent(st.mes));
+      if(st.duracion)q.push('duracion='+encodeURIComponent(st.duracion));
+      if(st.tipo)q.push('tipo='+encodeURIComponent(st.tipo));
+      history.replaceState(null,'',location.pathname+(q.length?'?'+q.join('&'):''));
+    }
+  }
+  function medir(tipo,valor){
+    window.dataLayer=window.dataLayer||[];
+    window.dataLayer.push({event:'filtro_paquetes',tipo:tipo,valor:valor||'todos'});
+  }
+  function desdeURL(){
+    var q={};
+    (location.search||'').replace(/^\?/,'').split('&').forEach(function(kv){if(!kv)return;var i=kv.indexOf('=');var k=decodeURIComponent(i<0?kv:kv.slice(0,i)),v=decodeURIComponent(i<0?'':kv.slice(i+1));q[k]=v;});
+    var h=(location.hash||'').replace('#','').trim();
+    st.region=regionOk(q.region)?(q.region||'all'):(regionOk(h)&&h?h:'all');
+    st.orden=ORDENES.indexOf(q.orden)>=0?q.orden:'';
+    st.mes=opcionOk(sels.mes,q.mes)?q.mes:'';
+    st.duracion=DURS.indexOf(q.duracion)>=0?q.duracion:'';
+    st.tipo=opcionOk(sels.tipo,q.tipo)?q.tipo:'';
+  }
+  chips.forEach(function(c){c.addEventListener('click',function(){st.region=c.getAttribute('data-r');aplicar();medir('region',st.region==='all'?'':st.region);});});
+  for(var k in sels)(function(k){sels[k].addEventListener('change',function(){st[k]=sels[k].value;aplicar();medir(k==='tipo'?'categoria':k,st[k]);});})(k);
+  if(clear)clear.addEventListener('click',function(){st={region:'all',orden:'',mes:'',duracion:'',tipo:''};aplicar();medir('limpiar','');if(fbox&&!esEscritorio())fbox.open=false;});
+  function esEscritorio(){return window.matchMedia&&window.matchMedia('(min-width:880px)').matches;}
+  function panel(){if(fbox&&esEscritorio())fbox.open=true;}
+  if(fbox){
+    if(window.matchMedia){var mq=window.matchMedia('(min-width:880px)');if(mq.addEventListener)mq.addEventListener('change',panel);else if(mq.addListener)mq.addListener(panel);}
+    panel();
+  }
+  window.addEventListener('hashchange',function(){desdeURL();aplicar();});
+  desdeURL();
+  aplicar();
 })();
 </script>
 

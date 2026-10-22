@@ -46,7 +46,8 @@
         "Circuito Tulipanes: El Bolsón, Travelin, Campo de Tulipanes, Cascadas Nant y Fall, El Hoyo, Lago Puelo",
         "Asistencia médica"
       ],
-      "imagen": "assets/img/pexels/7785553-1600.jpg"
+      "imagen": "assets/img/pexels/7785553-1600.jpg",
+      "tipo": []
     },
     {
       "activo": true,
@@ -182,7 +183,8 @@
           "id": "bariloche-finde-largo-dic-2026",
           "texto": "Para el fin de semana largo de diciembre, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -282,7 +284,8 @@
           "id": "mendoza-finde-largo-dic-2026",
           "texto": "Para el fin de semana largo de diciembre con City Tour y bodegas, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -383,7 +386,8 @@
           "id": "puerto-madryn-escapada",
           "texto": "Si preferís elegir la fecha y decidir las excursiones en destino, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -545,6 +549,9 @@
           "id": "navidad-costa-diadema",
           "texto": "Para pasar Navidad a bordo, mirá también"
         }
+      ],
+      "tipo": [
+        "crucero"
       ]
     },
     {
@@ -695,6 +702,9 @@
           "id": "anio-nuevo-costa-serena",
           "texto": "Si preferís 9 noches con Río el 1° de enero, mirá también"
         }
+      ],
+      "tipo": [
+        "crucero"
       ]
     },
     {
@@ -844,6 +854,9 @@
           "id": "anio-nuevo-costa-serena",
           "texto": "Si querés 9 noches con Río de Janeiro el 1° de enero, mirá también"
         }
+      ],
+      "tipo": [
+        "crucero"
       ]
     },
     {
@@ -924,7 +937,8 @@
         "Kit de viaje Premium",
         "Habitación a compartir garantizada para pasajeras mujeres"
       ],
-      "imagen": "img/paquetes/mercadillos-bernina.jpg"
+      "imagen": "img/paquetes/mercadillos-bernina.jpg",
+      "tipo": []
     },
     {
       "activo": true,
@@ -1087,6 +1101,9 @@
           "id": "majestic-princess-fiordos-noruegos-feb-2027",
           "texto": "Si preferís llegar a los fiordos y a Tromsø en crucero, mirá también"
         }
+      ],
+      "tipo": [
+        "grupal"
       ]
     },
     {
@@ -1225,7 +1242,8 @@
         "Seguro de asistencia GLOBAL (Terrawind) — consultar suplemento +75 años",
         "Maleta de 23 kg + equipaje de mano en vuelo"
       ],
-      "imagen": "img/paquetes/espana-portugal.jpg"
+      "imagen": "img/paquetes/espana-portugal.jpg",
+      "tipo": []
     },
     {
       "activo": true,
@@ -1529,6 +1547,9 @@
           "id": "paseando-por-europa",
           "texto": "Si es tu primer viaje y querés también Venecia, Florencia y París, mirá también"
         }
+      ],
+      "tipo": [
+        "grupal"
       ]
     },
     {
@@ -1655,6 +1676,9 @@
           "id": "punta-cana-bayahibe",
           "texto": "Para combinar con un hotel solo adultos en Bayahíbe, mirá también"
         }
+      ],
+      "tipo": [
+        "todo-incluido"
       ]
     },
     {
@@ -1814,6 +1838,9 @@
           "id": "costa-mujeres-ene-2027",
           "texto": "Para solo Costa Mujeres, 7 noches en el Riu Dunamar, mirá también"
         }
+      ],
+      "tipo": [
+        "todo-incluido"
       ]
     },
     {
@@ -1975,6 +2002,9 @@
           "id": "miami-bayahibe-feb-2027",
           "texto": "Para combinar Bayahíbe con Miami en febrero, mirá también"
         }
+      ],
+      "tipo": [
+        "todo-incluido"
       ]
     },
     {
@@ -2101,6 +2131,9 @@
           "id": "riviera-maya-ene-2027",
           "texto": "Para una semana en Riviera Maya al menor precio, mirá también"
         }
+      ],
+      "tipo": [
+        "todo-incluido"
       ]
     },
     {
@@ -2157,7 +2190,10 @@
         "Guía de habla hispana",
         "Bus de lujo con aire acondicionado"
       ],
-      "imagen": "img/paquetes/israel.jpg"
+      "imagen": "img/paquetes/israel.jpg",
+      "tipo": [
+        "grupal"
+      ]
     },
     {
       "activo": false,
@@ -2222,7 +2258,10 @@
         "Reunión informativa previa",
         "Tour leader desde Argentina (mín. 10 pax)"
       ],
-      "imagen": "img/paquetes/tailandia-yee-peng.jpg"
+      "imagen": "img/paquetes/tailandia-yee-peng.jpg",
+      "tipo": [
+        "grupal"
+      ]
     },
     {
       "activo": false,
@@ -2287,7 +2326,10 @@
         "Asistencia al viajero hasta 70 años",
         "Bolso de viaje y guía virtual"
       ],
-      "imagen": "img/paquetes/gran-tour-china.jpg"
+      "imagen": "img/paquetes/gran-tour-china.jpg",
+      "tipo": [
+        "grupal"
+      ]
     },
     {
       "activo": true,
@@ -2626,6 +2668,9 @@
           "id": "malasia-singapur-bali",
           "texto": "Si preferís más días de playa, con ocho noches en Bali, mirá también"
         }
+      ],
+      "tipo": [
+        "grupal"
       ]
     },
     {
@@ -3038,6 +3083,9 @@
           "id": "corea-japon-cherry-blossom",
           "texto": "Si preferís viajar en plena floración de los cerezos, con Osaka y los Alpes japoneses, mirá también"
         }
+      ],
+      "tipo": [
+        "grupal"
       ]
     },
     {
@@ -3106,7 +3154,8 @@
         "Guías locales de habla hispana",
         "Bus de lujo con aire acondicionado"
       ],
-      "imagen": "img/paquetes/marruecos.jpg"
+      "imagen": "img/paquetes/marruecos.jpg",
+      "tipo": []
     },
     {
       "activo": true,
@@ -3443,7 +3492,10 @@
         "Resort con playa propia en el Mar Muerto y tour leader desde Argentina"
       ],
       "ideal_para": "Quienes quieren Egipto y Jordania en un solo viaje de 15 noches, con guías en español y vuelos internos incluidos.",
-      "ver_tambien": []
+      "ver_tambien": [],
+      "tipo": [
+        "grupal"
+      ]
     },
     {
       "activo": true,
@@ -3706,6 +3758,9 @@
           "id": "kenia-tanzania",
           "texto": "Si preferís un safari más largo, con Masai Mara y Serengueti, mirá también"
         }
+      ],
+      "tipo": [
+        "grupal"
       ]
     },
     {
@@ -3829,6 +3884,21 @@
           "id": "disney-europa-premium-xv",
           "texto": "Si preferís Europa con Disneyland París y Port Aventura, mirá también"
         }
+      ],
+      "tipo": [
+        "grupal"
+      ],
+      "meses_salida": [
+        "2027-01",
+        "2027-02",
+        "2027-06",
+        "2027-07",
+        "2027-12",
+        "2028-01",
+        "2028-02",
+        "2028-06",
+        "2028-07",
+        "2028-12"
       ]
     },
     {
@@ -3969,6 +4039,9 @@
           "id": "enjoy-disney-usa-xv",
           "texto": "Si preferís Orlando y Miami con resorts Disney, mirá también"
         }
+      ],
+      "tipo": [
+        "grupal"
       ]
     },
     {
@@ -4286,6 +4359,10 @@
           "id": "holi-india-2027",
           "texto": "Si preferís vivir la fiesta Holi en marzo, con Jodhpur, Udaipur y Mumbai, mirá también"
         }
+      ],
+      "tipo": [
+        "grupal",
+        "todo-incluido"
       ]
     },
     {
@@ -4591,6 +4668,10 @@
           "id": "sudafrica-mauritius",
           "texto": "Si preferís un viaje más corto con Ciudad del Cabo y Mauritius, mirá también"
         }
+      ],
+      "tipo": [
+        "grupal",
+        "todo-incluido"
       ]
     },
     {
@@ -4941,6 +5022,9 @@
           "id": "india-maldivas",
           "texto": "Si preferís India en enero con cuatro noches en Maldivas, mirá también"
         }
+      ],
+      "tipo": [
+        "grupal"
       ]
     },
     {
@@ -5302,6 +5386,9 @@
           "id": "tesoros-corea-japon",
           "texto": "Si preferís salir el 5 de marzo con la noche en el Monte Koya y menor precio, mirá también"
         }
+      ],
+      "tipo": [
+        "grupal"
       ]
     },
     {
@@ -5654,6 +5741,9 @@
           "id": "hong-kong-china-2027",
           "texto": "Si preferís entrar por Hong Kong y recorrer Guilin y Chongqing, mirá también"
         }
+      ],
+      "tipo": [
+        "grupal"
       ]
     },
     {
@@ -5980,6 +6070,9 @@
           "id": "china-tibet",
           "texto": "Si querés sumar el Tíbet y Zhangjiajie, mirá también"
         }
+      ],
+      "tipo": [
+        "grupal"
       ]
     },
     {
@@ -6270,6 +6363,9 @@
           "id": "vietnam-camboya-tailandia",
           "texto": "Si preferís Vietnam, Angkor y Bangkok con playa en Phuket, mirá también"
         }
+      ],
+      "tipo": [
+        "grupal"
       ]
     },
     {
@@ -6394,6 +6490,9 @@
           "id": "riviera-maya-ene-2027",
           "texto": "Para una semana en Puerto Aventuras con Arajet, mirá también"
         }
+      ],
+      "tipo": [
+        "todo-incluido"
       ]
     },
     {
@@ -6501,6 +6600,9 @@
           "id": "punta-cana-ene-2027",
           "texto": "Si preferís el clásico de Bávaro con 10 noches, mirá también"
         }
+      ],
+      "tipo": [
+        "todo-incluido"
       ]
     },
     {
@@ -6634,7 +6736,8 @@
           "id": "punta-cana-bayahibe",
           "texto": "Si preferís Bayahíbe en un hotel solo adultos combinado con Punta Cana, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -6763,6 +6866,10 @@
           "id": "punta-cana-ene-2027",
           "texto": "Si preferís solo resort en Punta Cana, 10 noches todo incluido, mirá también"
         }
+      ],
+      "tipo": [
+        "crucero",
+        "todo-incluido"
       ]
     },
     {
@@ -6870,7 +6977,8 @@
           "id": "punta-cana-bayahibe",
           "texto": "Si buscás solo adultos pero con all inclusive, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -6981,6 +7089,9 @@
           "id": "miches-ene-2027",
           "texto": "Para 12 noches en una costa más tranquila, mirá también"
         }
+      ],
+      "tipo": [
+        "todo-incluido"
       ]
     },
     {
@@ -7090,6 +7201,9 @@
           "id": "riviera-maya-cancun-ene-2027",
           "texto": "Si preferís 10 noches con cupo LATAM y dos Iberostar, mirá también"
         }
+      ],
+      "tipo": [
+        "todo-incluido"
       ]
     },
     {
@@ -7199,6 +7313,9 @@
           "id": "riviera-maya-costa-mujeres",
           "texto": "Si querés Costa Mujeres en un 5* combinado con Riviera Maya, mirá también"
         }
+      ],
+      "tipo": [
+        "todo-incluido"
       ]
     },
     {
@@ -7485,7 +7602,8 @@
           "id": "europa-esencial",
           "texto": "Si te interesa Alemania con crucero por el Rhin, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -7810,7 +7928,8 @@
           "id": "europa-esencial",
           "texto": "Si querés sumar Alemania y Austria, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -8134,7 +8253,8 @@
           "id": "magicamente-europa",
           "texto": "Si buscás la versión económica de abril, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -8474,7 +8594,8 @@
           "id": "andalucia-portugal-pais-vasco-lourdes",
           "texto": "Para Andalucía y Portugal con el País Vasco y Lourdes en junio, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -8828,7 +8949,8 @@
           "id": "andalucia-marruecos-portugal",
           "texto": "Si querés sumar Marruecos, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -9186,7 +9308,8 @@
           "id": "andalucia-marruecos-portugal",
           "texto": "Si querés cruzar a Marruecos, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -9533,7 +9656,8 @@
           "id": "magicamente-europa",
           "texto": "Para la versión económica con Innsbruck, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -9866,7 +9990,8 @@
           "id": "descubriendo-europa",
           "texto": "Si preferís salir en mayo con 17 noches, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -10193,7 +10318,8 @@
           "id": "europa-esencial",
           "texto": "Si preferís Alemania con crucero por el Rhin, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -10307,7 +10433,8 @@
           "id": "mendoza-finde-largo-dic-2026",
           "texto": "Para el fin de semana largo de diciembre con cupo aéreo, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -10417,7 +10544,8 @@
           "id": "ushuaia-el-calafate",
           "texto": "Si querés sumar El Calafate y el Perito Moreno, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -10531,7 +10659,8 @@
           "id": "cruce-andino-bariloche-puerto-varas",
           "texto": "Para combinar Bariloche con Puerto Varas en la travesía de lagos, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -10700,7 +10829,8 @@
           "id": "salta-finde-largo-dic-2026",
           "texto": "Para solo Salta ciudad en el feriado de diciembre, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -10833,7 +10963,8 @@
           "id": "ushuaia",
           "texto": "Si solo querés Ushuaia, tres noches en apart hotel, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -10943,7 +11074,8 @@
           "id": "puerto-madryn-ballenas",
           "texto": "Si querés el avistaje embarcado ya incluido, con Hotel Tolosa 4*, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -11085,7 +11217,8 @@
         "Vuelos de Aerolíneas Argentinas con valija, fecha a elección hasta julio 2027"
       ],
       "ideal_para": "Quienes viajan solos o quieren Ischigualasto sin manejar: el precio publicado es en base single.",
-      "ver_tambien": []
+      "ver_tambien": [],
+      "tipo": []
     },
     {
       "activo": true,
@@ -11259,7 +11392,8 @@
           "id": "salta-finde-largo-dic-2026",
           "texto": "Para solo Salta ciudad en el feriado de diciembre, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -11375,7 +11509,8 @@
           "id": "praia-do-forte-feb-2027",
           "texto": "Para all inclusive en Bahía en febrero, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -11490,7 +11625,8 @@
           "id": "rio-de-janeiro-ene-2027",
           "texto": "Mismo vuelo del 9 de enero, pero para quedarte en Copacabana: mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -11605,7 +11741,8 @@
           "id": "salvador-de-bahia-ene-2027",
           "texto": "Si preferís Salvador en un 5* frente al mar, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -11720,7 +11857,8 @@
           "id": "praia-do-forte-feb-2027",
           "texto": "Para all inclusive en Bahía, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -11836,7 +11974,8 @@
           "id": "maceio-ene-2027",
           "texto": "Para Maceió con vuelo directo LATAM, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -11951,7 +12090,8 @@
           "id": "maceio-ene-2027",
           "texto": "Para el nordeste con hotel frente al mar, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -12062,6 +12202,9 @@
           "id": "salvador-de-bahia-ene-2027",
           "texto": "Si preferís Salvador ciudad en un 5* con desayuno, mirá también"
         }
+      ],
+      "tipo": [
+        "todo-incluido"
       ]
     },
     {
@@ -12212,7 +12355,8 @@
           "id": "mendoza-finde-largo-dic-2026",
           "texto": "Mismo feriado, pero en Mendoza con bodegas: mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -12380,7 +12524,8 @@
           "id": "salta-finde-largo-dic-2026",
           "texto": "Mismo feriado, pero en Salta: mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -12530,7 +12675,8 @@
           "id": "vuelta-norte-argentino",
           "texto": "Para el circuito completo del norte, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -12805,7 +12951,10 @@
         "Precio de preventa 2027 con impuestos incluidos, válido hasta el 31 de octubre de 2026"
       ],
       "ideal_para": "Primer viaje a Perú en grupo, para quienes prefieren no organizar nada por su cuenta.",
-      "ver_tambien": []
+      "ver_tambien": [],
+      "tipo": [
+        "grupal"
+      ]
     },
     {
       "activo": true,
@@ -13147,7 +13296,8 @@
           "id": "buzios-ene-2027",
           "texto": "Si preferís una posada fija con vista a Praia dos Ossos y valija de 23 kg, mirá también"
         }
-      ]
+      ],
+      "tipo": []
     },
     {
       "activo": true,
@@ -13303,6 +13453,9 @@
           "id": "zaandam-buenos-aires-fort-lauderdale-feb-2027",
           "texto": "Si preferís navegar hacia el Caribe y Florida, mirá también"
         }
+      ],
+      "tipo": [
+        "crucero"
       ]
     },
     {
@@ -13488,6 +13641,9 @@
           "id": "auroras-boreales-grupal",
           "texto": "Si preferís Tromsø en avión y en grupo, en enero, mirá también"
         }
+      ],
+      "tipo": [
+        "crucero"
       ]
     },
     {
@@ -13670,6 +13826,9 @@
           "id": "majestic-princess-buenos-aires-southampton-feb-2027",
           "texto": "Si preferís cruzar a Europa, mirá también"
         }
+      ],
+      "tipo": [
+        "crucero"
       ]
     }
   ]
