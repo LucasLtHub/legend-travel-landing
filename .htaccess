@@ -13,8 +13,10 @@ RewriteRule ^buscarxpaquetes(/.*)?$ /paquetes/ [L,R=301]
 # /paquetes?id=... y /paquetes/?id=... (buscador viejo) -> /paquetes/ sin query string
 RewriteCond %{QUERY_STRING} (^|&)id= [NC]
 RewriteRule ^paquetes/?$ /paquetes/? [L,R=301]
-# /index.php e /index.html -> /
-RewriteRule ^index\.(php|html)$ /? [L,R=301]
+# /index.php e /index.html (también en subcarpetas: /caribe/index.html) -> la carpeta. Solo si el visitante
+# pidió index explícitamente (THE_REQUEST): el DirectoryIndex interno de / no debe disparar la regla (evita el bucle).
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.(php|html)[\s?] [NC]
+RewriteRule ^(.*/)?index\.(php|html)$ /$1 [L,R=301]
 # /pay-methods -> /financiacion/
 RewriteRule ^pay-methods/?$ /financiacion/ [L,R=301]
 
