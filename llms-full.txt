@@ -26,9 +26,12 @@
 - Acompañamiento antes, durante y después del viaje
 
 ## Guías y artículos
-- Nuevo sistema EES: cómo es ahora el ingreso a Europa (información actualizada en octubre de 2026): https://www.legendtravel.com.ar/#guias
-- Sargazo en el Caribe: qué es y cómo elegir bien la fecha y el destino (información actualizada en octubre de 2026): https://www.legendtravel.com.ar/#guias
-- Europa: ¿viaje a medida o circuito con guía? (información actualizada en octubre de 2026): https://www.legendtravel.com.ar/#guias
+- ¿Cuándo conviene viajar a Disney?: https://www.legendtravel.com.ar/guias/cuando-conviene-viajar-a-disney/
+- Punta Cana vs Cancún: cuál elegir: https://www.legendtravel.com.ar/guias/punta-cana-vs-cancun/
+- Primer viaje a Europa: cómo planificarlo: https://www.legendtravel.com.ar/guias/primer-viaje-a-europa/
+- Nuevo sistema EES: cómo es ahora el ingreso a Europa: https://www.legendtravel.com.ar/guias/sistema-ees-ingreso-a-europa/
+- Sargazo en el Caribe: qué es y cómo elegir bien la fecha y el destino: https://www.legendtravel.com.ar/guias/sargazo-en-el-caribe/
+- Europa: ¿viaje a medida o circuito con guía?: https://www.legendtravel.com.ar/guias/europa-a-medida-o-circuito-con-guia/
 
 ## Contacto
 - WhatsApp: +54 9 11 7655-4362
@@ -39,7 +42,7 @@
 - Instagram: https://www.instagram.com/legendtraveloficial
 - Web: https://www.legendtravel.com.ar/
 
-Generado el 2026-10-22 por build-paquetes.py. Resumen corto: https://www.legendtravel.com.ar/llms.txt
+Generado el 2026-10-26 por build-paquetes.py. Resumen corto: https://www.legendtravel.com.ar/llms.txt
 
 ## Historia
 - Una familia que lleva
@@ -106,7 +109,7 @@ Generado el 2026-10-22 por build-paquetes.py. Resumen corto: https://www.legendt
 - Tarjeta de crédito (nacionales)
 
 ## Paquetes y salidas vigentes (detalle)
-Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo salidas vigentes al 22/10/2026.
+Precios por persona. Sujeto a disponibilidad al momento de la reserva. Solo salidas vigentes al 26/10/2026.
 
 ### Año Nuevo a bordo del Costa Serena
 - URL: https://www.legendtravel.com.ar/paquetes/anio-nuevo-costa-serena/
@@ -1278,6 +1281,292 @@ Listado completo: https://www.legendtravel.com.ar/paquetes/
 - P: ¿Cómo consulto por este viaje?
   R: Tocá cualquier botón "Consultar por WhatsApp" y te responde una asesora del equipo en el día. También podés llamarnos o visitarnos en el local.
 
+### Año Nuevo en altamar: Costa Diadema, 7 noches | Legend Travel — https://www.legendtravel.com.ar/paquetes/2027-altamar-costa-diadema/
+- P: ¿Qué incluye Recibí el 2027 en Altamar y qué no?
+  R: El precio desde USD 1.536 por persona incluye 7 noches en cabina a bordo del Costa Diadema en base doble, Bebidas en almuerzo y cena, Entretenimiento a bordo para todas las edades, Asistencia al viajero Universal Assistance y Propinas. En el detalle figura el resto de lo incluido. No incluye excursiones, servicios personales y wi-fi.
+- P: ¿Cuándo sale Recibí el 2027 en Altamar y dónde se duerme?
+  R: Recibí el 2027 en Altamar sale el 30 de diciembre 2026 — embarque en Buenos Aires y dura 7 noches. Se navega a bordo del Costa Diadema y las escalas son Montevideo, Itajaí y Santos. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo se paga Recibí el 2027 en Altamar?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Recibí el 2027 en Altamar?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Tarifas finales por pasajero, sujetas a modificación y disponibilidad al momento de la reserva. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Andalucía, Marruecos y Portugal, 16 noches, 16/4/2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/andalucia-marruecos-portugal/
+- P: ¿Qué incluye Andalucía, Marruecos y Portugal y qué no?
+  R: El precio desde USD 4.710 por persona incluye Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica y 1 valija de hasta 23 kg por persona en todo el recorrido. En el detalle figura el resto de lo incluido. No incluye comidas y bebidas no indicadas y tasas hoteleras y de ciudad, se pagan en destino.
+- P: ¿Qué documentación o requisitos necesito para Andalucía, Marruecos y Portugal?
+  R: Los argentinos no necesitan visa para ingresar a Marruecos. Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento. Si tenés dudas sobre tu documentación, escribinos por WhatsApp antes de reservar y lo revisamos con vos.
+- P: ¿Cómo se paga Andalucía, Marruecos y Portugal?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Andalucía, Marruecos y Portugal?
+  R: Los vuelos de Iberia incluyen 1 valija de hasta 23 kg por persona en todo el recorrido. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Andalucía, Marruecos y Portugal?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Seña USD 2.300 por persona para reservar. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Andalucía, Portugal, País Vasco y Lourdes, 6 de junio 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/andalucia-portugal-pais-vasco-lourdes/
+- P: ¿Qué incluye Andalucía, Portugal y País Vasco, con Lourdes y qué no?
+  R: El precio desde USD 4.885 por persona incluye Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica y 1 valija de hasta 23 kg por persona en todo el recorrido. En el detalle figura el resto de lo incluido. No incluye comidas y bebidas no indicadas y tasas hoteleras y de ciudad, se pagan en destino.
+- P: ¿Cómo se paga Andalucía, Portugal y País Vasco, con Lourdes?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Andalucía, Portugal y País Vasco, con Lourdes?
+  R: Los vuelos de Iberia incluyen 1 valija de hasta 23 kg por persona en todo el recorrido. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Andalucía, Portugal y País Vasco, con Lourdes?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Seña USD 2.200 por persona para reservar. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Año Nuevo en el Costa Serena: 9 noches desde Buenos Aires | Legend Travel — https://www.legendtravel.com.ar/paquetes/anio-nuevo-costa-serena/
+- P: ¿Qué incluye Año Nuevo a bordo del Costa Serena y qué no?
+  R: El precio desde USD 2.158 por persona incluye 9 noches en cabina a bordo del Costa Serena en base doble, Bebidas en almuerzo y cena, Entretenimiento a bordo para todas las edades, Asistencia al viajero Universal Assistance y Propinas. En el detalle figura el resto de lo incluido. No incluye excursiones, servicios personales y wi-fi.
+- P: ¿Cuándo sale Año Nuevo a bordo del Costa Serena y dónde se duerme?
+  R: Año Nuevo a bordo del Costa Serena sale el 27 de diciembre 2026 — embarque en Buenos Aires y dura 9 noches. Se navega a bordo del Costa Serena y las escalas son Montevideo, Camboriú, Ilha Grande (Abraão), Río de Janeiro y Ilhabela.
+- P: ¿Cómo se paga Año Nuevo a bordo del Costa Serena?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Año Nuevo a bordo del Costa Serena?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Tarifas finales por pasajero, sujetas a modificación y disponibilidad al momento de la reserva. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Arraial d'Ajuda, 7 noches en Pousada Coqueiros, 10/1/2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/arraial-d-ajuda/
+- P: ¿Qué incluye Arraial d'Ajuda y qué no?
+  R: El precio desde USD 1.739 por persona incluye Aéreo ida y vuelta con cupo confirmado, 1 valija de 23 kg en bodega, Traslados aeropuerto – posada – aeropuerto en servicio regular y 7 noches en habitación estándar con desayuno. En el detalle figura el resto de lo incluido. No incluye comidas no indicadas, excursiones y gastos personales y propinas.
+- P: ¿Cómo se paga Arraial d'Ajuda?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Arraial d'Ajuda?
+  R: Los vuelos de GOL incluyen 1 valija de 23 kg en bodega. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Arraial d'Ajuda?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Aéreo con cupo confirmado. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Aruba, 8 noches en hotel solo adultos, 9 de enero 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/aruba-ene-2027/
+- P: ¿Qué incluye Aruba y qué no?
+  R: El precio desde USD 3.134 por persona incluye Aéreos Buenos Aires / Aruba / Buenos Aires con LATAM, Traslados compartidos de llegada y salida y 8 noches en Palm Beach, solo habitación. En el detalle figura el resto de lo incluido. No incluye propinas, gastos personales y servicios no especificados.
+- P: ¿Cómo se paga Aruba?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Aruba?
+  R: Los vuelos de LATAM incluyen 1 artículo personal (10 kg) + 1 carry on (10 kg) + 1 valija en bodega de 23 kg. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea.
+- P: ¿Cómo reservo Aruba?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Auroras boreales, salida grupal 24 de enero 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/auroras-boreales-grupal/
+- P: ¿Qué incluye Auroras Boreales y qué no?
+  R: El precio desde USD 7.878 por persona incluye Aéreos Buenos Aires/Copenhague – Estocolmo/Buenos Aires con Iberia (vía Madrid), Traslados en todas las ciudades y 9 noches en hoteles 4* superior con desayuno buffet. En el detalle figura el resto de lo incluido.
+- P: ¿Cuándo sale Auroras Boreales y dónde se duerme?
+  R: Auroras Boreales sale el 24 de enero 2027 y dura 10 noches. Recorre Copenhague, Oslo, Tromsø y Estocolmo. Los vuelos son con Iberia. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo se paga Auroras Boreales?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Auroras Boreales?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Bariloche, finde largo 5 al 8 de diciembre con cupo aéreo | Legend Travel — https://www.legendtravel.com.ar/paquetes/bariloche-finde-largo-dic-2026/
+- P: ¿Qué incluye Bariloche, fin de semana largo y qué no?
+  R: El precio desde ARS 699.030 por persona incluye Aéreo Buenos Aires – Bariloche – Buenos Aires con cupo confirmado, Equipaje de 10 kg, Traslados aeropuerto – hotel – aeropuerto, 3 noches de alojamiento con desayuno, Excursión Circuito Chico y Asistencia médica Universal Assistance.
+- P: ¿Cómo se paga Bariloche, fin de semana largo?
+  R: Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de crédito (consultar cuotas sin interés vigentes). Precio final por persona en base doble publicado como tarifa final (sin cargos adicionales informados). Tu asesora te confirma las opciones de pago y el total final al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Bariloche, fin de semana largo?
+  R: Los vuelos de JetSMART incluyen 10 kg. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Bariloche, fin de semana largo?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Aéreo con cupo confirmado. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Escapada a Bariloche, 3 noches con fecha a elección | Legend Travel — https://www.legendtravel.com.ar/paquetes/bariloche-lo-tiene-todo/
+- P: ¿Qué incluye Bariloche lo tiene todo y qué no?
+  R: El precio desde ARS 651.624 por persona incluye Aéreos Buenos Aires / Bariloche / Buenos Aires con Aerolíneas Argentinas, tarifa Flex, 1 valija en bodega (1 PC) + equipaje de mano y 3 noches en Hotel Nevada con desayuno. En el detalle figura el resto de lo incluido. No incluye comidas no indicadas, excursiones no indicadas y gastos personales.
+- P: ¿Cómo se paga Bariloche lo tiene todo?
+  R: Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de crédito (consultar cuotas sin interés vigentes). Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión. Tu asesora te confirma las opciones de pago y el total final al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Bariloche lo tiene todo?
+  R: Los vuelos de Aerolíneas Argentinas incluyen 1 valija en bodega (1 PC) + equipaje de mano. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Bariloche lo tiene todo?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Búzios en Lestada Pousada, 7 noches, 9 de enero 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/buzios-ene-2027/
+- P: ¿Qué incluye Búzios y qué no?
+  R: El precio desde USD 1.500 por persona incluye Aéreo ida y vuelta con cupo confirmado, 1 valija de 23 kg en bodega, Traslados aeropuerto de Río – Búzios – aeropuerto en servicio regular y 7 noches en habitación estándar con desayuno. En el detalle figura el resto de lo incluido. No incluye comidas no indicadas, excursiones y gastos personales y propinas.
+- P: ¿Cómo se paga Búzios?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Búzios?
+  R: Los vuelos de JetSMART incluyen 1 valija de 23 kg en bodega. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Búzios?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Aéreo con cupo confirmado. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Búzios con posada a elección entre 14, 11 de enero 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/buzios-posadas-ene-2027/
+- P: ¿Qué incluye Búzios, posada a elección y qué no?
+  R: El precio desde USD 1.150 por persona incluye Aéreo Buenos Aires (EZE) – Río de Janeiro (GIG) – Buenos Aires por LATAM, clase económica, Bolso de mano y carry on de 12 kg y Traslados de llegada y salida. En el detalle figura el resto de lo incluido.
+- P: ¿Cómo se paga Búzios, posada a elección?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Búzios, posada a elección?
+  R: Los vuelos de LATAM incluyen bolso de mano + carry on 12 kg. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Búzios, posada a elección?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Aéreo confirmado con cupo; los tickets se emiten entre 60 y 30 días antes de la salida y no admiten devolución ni cambios.
+
+### Cancún en Hotel Riu Caribe 5*, 10 noches all inclusive, 8/2/2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/cancun-all-inclusive/
+- P: ¿Qué incluye Cancún All Inclusive y qué no?
+  R: El precio desde USD 3.840 por persona incluye Aéreos con LATAM, 10 noches en Cancún All Inclusive, Traslados de llegada y salida y Universal Assistance Master Plus (hasta 70 años). No incluye propinas, gastos personales y servicios no especificados.
+- P: ¿Cuándo sale Cancún All Inclusive y dónde se duerme?
+  R: Cancún All Inclusive sale el 8 de febrero 2027 y dura 10 noches. El alojamiento previsto es Hotel Riu Caribe en Cancún (10 noches, all inclusive). Los vuelos son con LATAM. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo se paga Cancún All Inclusive?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Cancún All Inclusive?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Tarifas sujetas a modificación y disponibilidad al momento de la reserva. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Punta Cana y crucero Costa Fascinosa, 10 noches, 7/1/2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/caribe-con-crucero-ene-2027/
+- P: ¿Qué incluye Caribe con crucero Costa Fascinosa y qué no?
+  R: El precio desde USD 3.293 por persona incluye Aéreos Buenos Aires / Punta Cana / Buenos Aires con Arajet, vuelos directos, Traslados aeropuerto – hotel – puerto – aeropuerto y 3 noches pre-crucero con Todo Incluido en Punta Cana. En el detalle figura el resto de lo incluido. No incluye propinas, gastos personales y servicios no especificados.
+- P: ¿Qué documentación o requisitos necesito para Caribe con crucero Costa Fascinosa?
+  R: Formulario digital de ingreso a República Dominicana (e-Ticket) obligatorio: se solicita en el check-in. Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento. Si tenés dudas sobre tu documentación, escribinos por WhatsApp antes de reservar y lo revisamos con vos.
+- P: ¿Cómo se paga Caribe con crucero Costa Fascinosa?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Caribe con crucero Costa Fascinosa?
+  R: Los vuelos de Arajet incluyen 1 artículo personal (6 kg) + 1 valija en bodega de 23 kg + selección de asiento. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea.
+- P: ¿Cómo reservo Caribe con crucero Costa Fascinosa?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### China y Tíbet, salida grupal 6 de abril 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/china-tibet/
+- P: ¿Qué incluye China & Tíbet y qué no?
+  R: El precio desde USD 10.220 por persona incluye Aéreos Buenos Aires / Beijing // Shanghái / Buenos Aires con Turkish Airlines. En el detalle figura el resto de lo incluido. No incluye comidas y bebidas no especificadas y cualquier otro servicio no especificado como incluido.
+- P: ¿Cuándo sale China & Tíbet y dónde se duerme?
+  R: China & Tíbet sale el 6 de abril 2027 y dura 19 noches. El alojamiento previsto es Kerry Hotel Beijing en Beijing (4 noches, desayuno), Hilton Xian High-tech Zone en Xi'an (2 noches, desayuno), The St. Regis Lhasa Resort en Lhasa (3 noches, desayuno) y Four Points by Sheraton Chengdu Chunxi Road en Chengdu (2 noches, desayuno), entre otros.
+- P: ¿Cómo se paga China & Tíbet?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo China & Tíbet?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Corea y Japón en floración de cerezos, grupal 17/3/2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/corea-japon-cherry-blossom/
+- P: ¿Qué incluye Corea & Japón y qué no?
+  R: El precio desde USD 14.810 por persona incluye Aéreos Buenos Aires / Seúl // Tokio / Buenos Aires con Turkish Airlines y Vuelo Busan / Osaka. En el detalle figura el resto de lo incluido. No incluye comidas y bebidas no especificadas y cualquier otro servicio no especificado como incluido.
+- P: ¿Qué documentación o requisitos necesito para Corea & Japón?
+  R: Para la visita a la DMZ es obligatorio llevar el pasaporte físico. Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento. Si tenés dudas sobre tu documentación, escribinos por WhatsApp antes de reservar y lo revisamos con vos.
+- P: ¿Cómo se paga Corea & Japón?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Corea & Japón?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Costa Mujeres en Riu Dunamar, 7 noches, 18 de enero 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/costa-mujeres-ene-2027/
+- P: ¿Qué incluye Costa Mujeres y qué no?
+  R: El precio desde USD 2.586 por persona incluye Aéreos Buenos Aires / Cancún / Buenos Aires con Arajet, clase económica, Traslados compartidos de llegada y salida y 7 noches con Todo Incluido. En el detalle figura el resto de lo incluido. No incluye propinas, gastos personales y servicios no especificados.
+- P: ¿Cómo se paga Costa Mujeres?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Costa Mujeres?
+  R: Los vuelos de Arajet incluyen 1 artículo personal + 1 valija en bodega de 23 kg (no incluye carry on). Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea.
+- P: ¿Cómo reservo Costa Mujeres?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Cruce Andino: Bariloche y Puerto Varas, 5 noches | Legend Travel — https://www.legendtravel.com.ar/paquetes/cruce-andino-bariloche-puerto-varas/
+- P: ¿Qué incluye Cruce Andino: Bariloche & Puerto Varas y qué no?
+  R: El precio desde ARS 1.322.790 por persona incluye Pasajes aéreos desde Buenos Aires, Traslados de llegada y salida, 3 noches en Huinid Pioneros Hotel (Bariloche), 2 noches en Hotel Cabaña del Lago (Puerto Varas), Travesía Cruce Andino y Asistencia médica.
+- P: ¿Cuándo sale Cruce Andino: Bariloche & Puerto Varas y dónde se duerme?
+  R: Cruce Andino: Bariloche & Puerto Varas sale el Salidas del 16/09 al 30/12/2026 y dura 5 noches. El alojamiento previsto es Huinid Pioneros Hotel en Bariloche y Hotel Cabaña del Lago en Puerto Varas. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo se paga Cruce Andino: Bariloche & Puerto Varas?
+  R: Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de crédito (consultar cuotas sin interés vigentes). Tarifa no incluye 2,9% de gasto administrativo. Tu asesora te confirma las opciones de pago y el total final al momento de la reserva.
+- P: ¿Cómo reservo Cruce Andino: Bariloche & Puerto Varas?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Tarifas sujetas a modificación y disponibilidad al momento de la reserva. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Descubriendo Europa en 17 noches, salida 2 de mayo 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/descubriendo-europa/
+- P: ¿Qué incluye Descubriendo Europa y qué no?
+  R: El precio desde USD 4.554 por persona incluye Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica y 1 valija de hasta 23 kg por persona en todo el recorrido. En el detalle figura el resto de lo incluido. No incluye comidas y bebidas no indicadas y tasas hoteleras y de ciudad, se pagan en destino.
+- P: ¿Cómo se paga Descubriendo Europa?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Descubriendo Europa?
+  R: Los vuelos de Iberia incluyen 1 valija de hasta 23 kg por persona en todo el recorrido. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Descubriendo Europa?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Quinceañeras por Europa con Disneyland París, 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/disney-europa-premium-xv/
+- P: ¿Qué incluye Disney Europa Premium y qué no?
+  R: El precio desde USD 7.464 por persona incluye Vuelos internacionales desde Buenos Aires, Córdoba y Rosario, Traslados en bus privado ejecutivo exclusivo con la Enjoy15 Playlist y Pensión completa con merienda durante todo el viaje. En el detalle figura el resto de lo incluido.
+- P: ¿Cuándo sale Disney Europa Premium y dónde se duerme?
+  R: Disney Europa Premium sale el Septiembre 2027 · desde Buenos Aires, Córdoba y Rosario y dura 12 noches. El alojamiento previsto es Royal National o similar en Londres, Campanile Val de France / Dream Castle en París, Hotel Caribe / Gold River / El Paso en Port Aventura y Ayre Colón / Palladium / Sterling Gran Vía en Madrid.
+- P: ¿Cómo se paga Disney Europa Premium?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Disney Europa Premium?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Egipto y Jordania, salida grupal 17 de marzo 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/egipto-jordania/
+- P: ¿Qué incluye Egipto & Jordania y qué no?
+  R: El precio desde USD 8.420 por persona incluye Aéreos desde Buenos Aires con Ethiopian Airlines, Vuelos internos en Egipto y aéreo El Cairo–Amman y 5 noches en El Cairo con desayuno. En el detalle figura el resto de lo incluido. No incluye bebidas durante el crucero, comidas y bebidas no especificadas y gastos personales.
+- P: ¿Qué documentación o requisitos necesito para Egipto & Jordania?
+  R: Es obligatorio el certificado internacional de vacuna contra la fiebre amarilla para ingresar a Egipto (no se acepta exención). Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento. Si tenés dudas sobre tu documentación, escribinos por WhatsApp antes de reservar y lo revisamos con vos.
+- P: ¿Cómo se paga Egipto & Jordania?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Egipto & Jordania?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Quinceañeras en Disney y Miami, 11 noches pensión completa | Legend Travel — https://www.legendtravel.com.ar/paquetes/enjoy-disney-usa-xv/
+- P: ¿Qué incluye Enjoy Disney USA y qué no?
+  R: El precio desde USD 6.860 por persona incluye Vuelos con aerolíneas de primer nivel desde Buenos Aires, Córdoba y Rosario y Traslados en bus privado con pantallas y música exclusiva. En el detalle figura el resto de lo incluido.
+- P: ¿Cuándo sale Enjoy Disney USA y dónde se duerme?
+  R: Enjoy Disney USA sale el Salidas 2027 y 2028: enero-febrero, junio-julio y diciembre · desde Buenos Aires, Córdoba y Rosario y dura 11 noches. El alojamiento previsto es Walt Disney World Resort (All Star / Pop Century) en Orlando (10 noches, pensión completa), entre otros.
+- P: ¿Cómo se paga Enjoy Disney USA?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Enjoy Disney USA?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Escapada a Mendoza, 3 noches con fecha a elección | Legend Travel — https://www.legendtravel.com.ar/paquetes/escapada-mendoza/
+- P: ¿Qué incluye Escapada a Mendoza y qué no?
+  R: El precio desde ARS 567.676 por persona incluye Aéreos Buenos Aires / Mendoza / Buenos Aires con Aerolíneas Argentinas, tarifa Flex, 1 valija en bodega (1 PC) + equipaje de mano y 3 noches en Hotel Cordón del Plata con desayuno. En el detalle figura el resto de lo incluido. No incluye comidas no indicadas, excursiones no indicadas y gastos personales.
+- P: ¿Cómo se paga Escapada a Mendoza?
+  R: Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de crédito (consultar cuotas sin interés vigentes). Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión. Tu asesora te confirma las opciones de pago y el total final al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Escapada a Mendoza?
+  R: Los vuelos de Aerolíneas Argentinas incluyen 1 valija en bodega (1 PC) + equipaje de mano. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Escapada a Mendoza?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Esencias del Perú, grupal acompañada 7 de mayo 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/esencias-del-peru-may-2027/
+- P: ¿Qué incluye Esencias del Perú, salida grupal acompañada y qué no?
+  R: El precio desde USD 3.140 por persona incluye Aéreo Buenos Aires – Lima – Arequipa / Cusco – Lima – Buenos Aires por LATAM, clase económica con equipaje incluido, 10 noches de alojamiento con desayuno en hoteles de categoría turista superior y 6 almuerzos (sin bebidas). En el detalle figura el resto de lo incluido. No incluye gastos personales.
+- P: ¿Qué documentación o requisitos necesito para Esencias del Perú, salida grupal acompañada?
+  R: Para viajar a Perú los argentinos no necesitan visa: alcanza con DNI, cédula del Mercosur o pasaporte. Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento. Si tenés dudas sobre tu documentación, escribinos por WhatsApp antes de reservar y lo revisamos con vos.
+- P: ¿Cómo se paga Esencias del Perú, salida grupal acompañada?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Esencias del Perú, salida grupal acompañada?
+  R: Los vuelos de LATAM tienen el equipaje incluido; la ficha no detalla el peso. En el tren a Machu Picchu solo se permite equipaje de mano: un bolso o mochila de hasta 5 kg y 157 cm lineales. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea.
+- P: ¿Cómo reservo Esencias del Perú, salida grupal acompañada?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### España, Francia, Suiza e Italia, 17 noches, 4 de abril 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/espana-francia-suiza-italia/
+- P: ¿Qué incluye España, Francia, Suiza e Italia y qué no?
+  R: El precio desde USD 5.187 por persona incluye Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica y 1 valija de hasta 23 kg por persona en todo el recorrido. En el detalle figura el resto de lo incluido. No incluye comidas y bebidas no indicadas y tasas hoteleras y de ciudad, se pagan en destino.
+- P: ¿Cómo se paga España, Francia, Suiza e Italia?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de España, Francia, Suiza e Italia?
+  R: Los vuelos de Iberia incluyen 1 valija de hasta 23 kg por persona en todo el recorrido. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo España, Francia, Suiza e Italia?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Seña USD 2.200 por persona para reservar. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Europa Esencial con crucero por el Rhin, 9 de mayo 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/europa-esencial/
+- P: ¿Qué incluye Europa Esencial y qué no?
+  R: El precio desde USD 5.679 por persona incluye Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica y 1 valija de hasta 23 kg por persona en todo el recorrido. En el detalle figura el resto de lo incluido. No incluye comidas y bebidas no indicadas y tasas hoteleras y de ciudad, se pagan en destino.
+- P: ¿Cómo se paga Europa Esencial?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Europa Esencial?
+  R: Los vuelos de Iberia incluyen 1 valija de hasta 23 kg por persona en todo el recorrido. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Europa Esencial?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Seña USD 2.300 por persona para reservar. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Florianópolis en Ingleses, 7 noches, 16 de enero 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/florianopolis-ene-2027/
+- P: ¿Qué incluye Florianópolis y qué no?
+  R: El precio desde USD 1.480 por persona incluye Aéreo ida y vuelta con cupo confirmado, 1 valija de 23 kg en bodega, Traslados aeropuerto – hotel – aeropuerto en servicio regular y 7 noches en habitación estándar con desayuno. En el detalle figura el resto de lo incluido. No incluye comidas no indicadas, excursiones y gastos personales y propinas.
+- P: ¿Cómo se paga Florianópolis?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Florianópolis?
+  R: Los vuelos de JetSMART incluyen 1 valija de 23 kg en bodega. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Florianópolis?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Aéreo con cupo confirmado. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Fiesta Holi en India, salida grupal 14 de marzo 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/holi-india-2027/
+- P: ¿Qué incluye Fiesta Holi y qué no?
+  R: El precio desde USD 7.890 por persona incluye Aéreos Buenos Aires / Delhi // Mumbai / Buenos Aires con Ethiopian Airlines y Early check-in en Delhi. En el detalle figura el resto de lo incluido. No incluye visa de india (trámite online por cuenta del pasajero), comidas y bebidas no especificadas y gastos extras o personales.
+- P: ¿Qué documentación o requisitos necesito para Fiesta Holi?
+  R: Es obligatorio el certificado internacional de vacuna contra la fiebre amarilla para ingresar a India (no se acepta exención). La visa de India se tramita online por cuenta del pasajero y no está incluida. Visa de India (trámite online por cuenta del pasajero)
+- P: ¿Cómo se paga Fiesta Holi?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Fiesta Holi?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Hong Kong y China milenaria, grupal 10 de mayo 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/hong-kong-china-2027/
+- P: ¿Qué incluye Hong Kong y la China milenaria y qué no?
+  R: El precio desde USD 8.230 por persona incluye Aéreos Buenos Aires / Hong Kong // Shanghái / Buenos Aires con Turkish Airlines. En el detalle figura el resto de lo incluido. No incluye comidas y bebidas no especificadas y cualquier otro servicio no especificado como incluido.
+- P: ¿Cuándo sale Hong Kong y la China milenaria y dónde se duerme?
+  R: Hong Kong y la China milenaria sale el 10 de mayo 2027 y dura 17 noches. El alojamiento previsto es Royal Garden Hotel en Hong Kong (2 noches, desayuno), Kerry Hotel en Beijing (4 noches, desayuno), Hilton Xian High-tech Zone en Xi'an (2 noches, desayuno) y JW Marriott en Chongqing (3 noches, desayuno), entre otros.
+- P: ¿Cómo se paga Hong Kong y la China milenaria?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Hong Kong y la China milenaria?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
 ### Paquetes y salidas desde Argentina | Legend Travel — https://www.legendtravel.com.ar/paquetes/
 - P: ¿Los precios incluyen impuestos?
   R: Los precios que ves son «desde», por persona en base doble. La tarifa final — con impuestos, tasas y percepciones vigentes — te la confirmamos en la consulta, siempre antes de que reserves. Los impuestos sobre viajes al exterior cambian según la normativa vigente, por eso no los fijamos en cada paquete: preferimos darte el número real del día en que reservás.
@@ -1289,6 +1578,384 @@ Listado completo: https://www.legendtravel.com.ar/paquetes/
   R: Depende de las condiciones de cada paquete: algunos permiten cambios con un cargo, otros no lo permiten una vez emitido. Te informamos las condiciones exactas por escrito y antes de que reserves.
 - P: ¿Qué incluye exactamente cada paquete?
   R: Lo detallado en cada paquete: vuelos, traslados, categoría de hotel, régimen de comidas y asistencia al viajero, según el caso. En la consulta te pasamos el detalle completo por escrito, incluido qué no está incluido.
+
+### India y Maldivas, salida grupal 20 de enero 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/india-maldivas/
+- P: ¿Qué incluye India & Maldivas y qué no?
+  R: El precio desde USD 9.440 por persona incluye Aéreos Buenos Aires / Delhi // Maldivas / Buenos Aires con Turkish Airlines y Vuelo Delhi / Maldivas. En el detalle figura el resto de lo incluido. No incluye visa de india (trámite online, con anticipación), comidas y bebidas no especificadas y gastos extras o personales.
+- P: ¿Qué documentación o requisitos necesito para India & Maldivas?
+  R: Es obligatorio el certificado internacional de vacuna contra la fiebre amarilla para ingresar a India (no se acepta exención). La visa de India se tramita online con anticipación y no está incluida. Visa de India (trámite online, con anticipación) Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento.
+- P: ¿Cómo se paga India & Maldivas?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo India & Maldivas?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Kenia y Tanzania con Zanzíbar, safari grupal 22/2/2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/kenia-tanzania/
+- P: ¿Qué incluye Kenia & Tanzania y qué no?
+  R: El precio desde USD 11.900 por persona incluye Aéreos con Ethiopian Airlines: Buenos Aires / Nairobi // Zanzíbar / Addis Abeba / Buenos Aires, Vuelo doméstico Arusha / Zanzíbar y 2 noches en Nairobi con desayuno. En el detalle figura el resto de lo incluido. No incluye visa de tanzania, trámite on arrival (usd 50 por persona).
+- P: ¿Qué documentación o requisitos necesito para Kenia & Tanzania?
+  R: Es obligatorio el certificado internacional de vacuna contra la fiebre amarilla para Kenia y Tanzania. El tratamiento antimalárico es recomendado, no obligatorio. Visa de Tanzania, trámite on arrival (USD 50 por persona) Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento.
+- P: ¿Cómo se paga Kenia & Tanzania?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Kenia & Tanzania?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Maceió, 7 noches frente al mar, 26 de enero 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/maceio-ene-2027/
+- P: ¿Qué incluye Maceió y qué no?
+  R: El precio desde USD 1.511 por persona incluye Aéreo ida y vuelta con cupo confirmado, 1 valija de 23 kg en bodega, Traslados aeropuerto – hotel – aeropuerto en servicio regular y 7 noches en habitación estándar con desayuno. En el detalle figura el resto de lo incluido. No incluye comidas no indicadas, excursiones y gastos personales y propinas.
+- P: ¿Cómo se paga Maceió?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Maceió?
+  R: Los vuelos de LATAM incluyen 1 valija de 23 kg en bodega. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Maceió?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Aéreo con cupo confirmado. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Madrid y Norte Europeo: París, Londres y Ámsterdam, 23/4/2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/madrid-norte-europeo/
+- P: ¿Qué incluye Madrid y Norte Europeo y qué no?
+  R: El precio desde USD 5.024 por persona incluye Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica y 1 valija de hasta 23 kg por persona en todo el recorrido. En el detalle figura el resto de lo incluido. No incluye comidas y bebidas no indicadas y tasas hoteleras y de ciudad, se pagan en destino.
+- P: ¿Qué documentación o requisitos necesito para Madrid y Norte Europeo?
+  R: Para ingresar al Reino Unido se requiere la autorización electrónica ETA (aprox. GBP 20), trámite online por cuenta del pasajero. Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento.
+- P: ¿Cómo se paga Madrid y Norte Europeo?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Madrid y Norte Europeo?
+  R: Los vuelos de Iberia incluyen 1 valija de hasta 23 kg por persona en todo el recorrido. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Madrid y Norte Europeo?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Seña USD 2.300 por persona para reservar. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Mágicamente Europa, circuito económico de 16 noches, 9/4/2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/magicamente-europa/
+- P: ¿Qué incluye Mágicamente Europa y qué no?
+  R: El precio desde USD 4.622 por persona incluye Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica y 1 valija de hasta 23 kg por persona en todo el recorrido. En el detalle figura el resto de lo incluido. No incluye comidas y bebidas no indicadas, propinas y gastos personales y excursiones opcionales.
+- P: ¿Cómo se paga Mágicamente Europa?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Mágicamente Europa?
+  R: Los vuelos de Iberia incluyen 1 valija de hasta 23 kg por persona en todo el recorrido. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Mágicamente Europa?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Las tasas hoteleras obligatorias (USD 94 + USD 2 de gastos) se abonan al reservar y están incluidas en el precio publicado.
+
+### Majestic Princess: de Buenos Aires a Southampton, 22 noches | Legend Travel — https://www.legendtravel.com.ar/paquetes/majestic-princess-buenos-aires-southampton-feb-2027/
+- P: ¿Qué incluye Majestic Princess: de Buenos Aires a Southampton y qué no?
+  R: El precio desde USD 1.808 por persona incluye Crucero de 22 noches a bordo del Majestic Princess en la cabina elegida, en base doble, Pensión completa a bordo y Tasas e impuestos portuarios. No incluye el aéreo de regreso no está incluido: el crucero es solo de ida, te lo cotizamos y cargos por servicio a bordo (propinas).
+- P: ¿Qué documentación o requisitos necesito para Majestic Princess: de Buenos Aires a Southampton?
+  R: Documentación: para desembarcar en el Reino Unido se necesita la ETA (autorización electrónica de viaje) del Reino Unido, obligatoria; el trámite es personal de cada pasajero. Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento.
+- P: ¿Cómo se paga Majestic Princess: de Buenos Aires a Southampton?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Majestic Princess: de Buenos Aires a Southampton?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Tarifas de promoción por pasajero en base doble, sujetas a modificación y disponibilidad al momento de la reserva.
+
+### Majestic Princess con fiordos noruegos, 36 noches | Legend Travel — https://www.legendtravel.com.ar/paquetes/majestic-princess-fiordos-noruegos-feb-2027/
+- P: ¿Qué incluye Majestic Princess: Buenos Aires a Southampton con fiordos noruegos y qué no?
+  R: El precio desde USD 4.531 por persona incluye Crucero de 36 noches a bordo del Majestic Princess en la cabina elegida, en base doble, Pensión completa a bordo y Tasas e impuestos portuarios. No incluye el aéreo de regreso no está incluido: el crucero es solo de ida, te lo cotizamos y cargos por servicio a bordo (propinas).
+- P: ¿Qué documentación o requisitos necesito para Majestic Princess: Buenos Aires a Southampton con fiordos noruegos?
+  R: Documentación: para desembarcar en el Reino Unido se necesita la ETA (autorización electrónica de viaje) del Reino Unido, obligatoria; el trámite es personal de cada pasajero. Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento.
+- P: ¿Cómo se paga Majestic Princess: Buenos Aires a Southampton con fiordos noruegos?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Majestic Princess: Buenos Aires a Southampton con fiordos noruegos?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Tarifas de promoción por pasajero en base doble, sujetas a modificación y disponibilidad al momento de la reserva.
+
+### Malasia, Singapur y Bali, salida grupal 24 de mayo 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/malasia-singapur-bali/
+- P: ¿Qué incluye Malasia, Singapur y Bali y qué no?
+  R: El precio desde USD 9.435 por persona incluye Aéreos Buenos Aires / Kuala Lumpur // Denpasar / Buenos Aires con Turkish Airlines y Vuelo Singapur / Denpasar. En el detalle figura el resto de lo incluido. No incluye visa de indonesia (trámite online, usd 35/40 por persona) y impuesto hotelero de malasia (aprox. usd 3 por habitación y noche).
+- P: ¿Qué documentación o requisitos necesito para Malasia, Singapur y Bali?
+  R: Es obligatorio el certificado internacional de vacuna contra la fiebre amarilla (no se acepta exención). La visa de Indonesia se tramita online y no está incluida. Visa de Indonesia (trámite online, USD 35/40 por persona) Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento.
+- P: ¿Cómo se paga Malasia, Singapur y Bali?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Malasia, Singapur y Bali?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Mendoza, finde largo 5 al 8 de diciembre con bodegas | Legend Travel — https://www.legendtravel.com.ar/paquetes/mendoza-finde-largo-dic-2026/
+- P: ¿Qué incluye Mendoza, fin de semana largo con cupo aéreo y qué no?
+  R: El precio desde ARS 541.899 por persona incluye Aéreo Buenos Aires – Mendoza – Buenos Aires con cupo confirmado, Equipaje de 10 kg, Traslados aeropuerto – hotel – aeropuerto, 3 noches de alojamiento con desayuno, Excursión City Tour y Excursión Bodegas y Olivares. En el detalle figura el resto de lo incluido.
+- P: ¿Cómo se paga Mendoza, fin de semana largo con cupo aéreo?
+  R: Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de crédito (consultar cuotas sin interés vigentes). Precio final por persona en base doble publicado como tarifa final (sin cargos adicionales informados). Tu asesora te confirma las opciones de pago y el total final al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Mendoza, fin de semana largo con cupo aéreo?
+  R: Los vuelos de JetSMART incluyen 10 kg. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Mendoza, fin de semana largo con cupo aéreo?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Aéreo con cupo confirmado. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Mendoza entre viñedos: 3 noches en Raíces Aconcagua 4* | Legend Travel — https://www.legendtravel.com.ar/paquetes/mendoza-vinedos/
+- P: ¿Qué incluye Mendoza: Experiencia entre Viñedos y qué no?
+  R: El precio desde ARS 642.990 por persona incluye Pasajes aéreos desde Buenos Aires, Traslados de llegada y salida, 3 noches en Hotel Raíces Aconcagua, Excursión Camino del Vino - El Sol y Asistencia médica. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cuándo sale Mendoza: Experiencia entre Viñedos y dónde se duerme?
+  R: Mendoza: Experiencia entre Viñedos sale el Salidas los lunes, del 16/09 al 28/12/2026 y dura 3 noches. El alojamiento previsto es Hotel Raíces Aconcagua en Mendoza. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo se paga Mendoza: Experiencia entre Viñedos?
+  R: Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de crédito (consultar cuotas sin interés vigentes). Tarifa no incluye 2,9% de gasto administrativo. Tu asesora te confirma las opciones de pago y el total final al momento de la reserva.
+- P: ¿Cómo reservo Mendoza: Experiencia entre Viñedos?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Tarifas sujetas a modificación y disponibilidad al momento de la reserva. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Miami y Bayahíbe con vuelos directos LATAM, 14/2/2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/miami-bayahibe-feb-2027/
+- P: ¿Qué incluye Miami & Bayahíbe y qué no?
+  R: El precio desde USD 3.485 por persona incluye Aéreos Buenos Aires / Miami / Buenos Aires con LATAM, clase económica, Vuelo Miami / Punta Cana, Traslados privados de llegada y salida en cada ciudad y 5 noches en Miami Beach, solo habitación. En el detalle figura el resto de lo incluido. No incluye propinas, gastos personales y servicios no especificados.
+- P: ¿Qué documentación o requisitos necesito para Miami & Bayahíbe?
+  R: Formulario digital de ingreso a República Dominicana (e-Ticket) obligatorio: se solicita en el check-in. Con pasaporte argentino se necesita visa para ingresar a Estados Unidos; el trámite es personal de cada pasajero. Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento.
+- P: ¿Cómo se paga Miami & Bayahíbe?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Miami & Bayahíbe?
+  R: Los vuelos de LATAM incluyen 1 artículo personal (10 kg) + 1 carry on (10 kg) + 1 valija en bodega de 23 kg. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea.
+- P: ¿Cómo reservo Miami & Bayahíbe?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Miches, 12 noches todo incluido, salida 4 de enero 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/miches-ene-2027/
+- P: ¿Qué incluye Miches y qué no?
+  R: El precio desde USD 3.744 por persona incluye Aéreos Buenos Aires / Punta Cana / Buenos Aires con LATAM, clase económica, Traslados privados de llegada y salida y 12 noches con Todo Incluido. En el detalle figura el resto de lo incluido. No incluye propinas, gastos personales y servicios no especificados.
+- P: ¿Qué documentación o requisitos necesito para Miches?
+  R: Formulario digital de ingreso a República Dominicana (e-Ticket) obligatorio: se solicita en el check-in. Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento. Si tenés dudas sobre tu documentación, escribinos por WhatsApp antes de reservar y lo revisamos con vos.
+- P: ¿Cómo se paga Miches?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Miches?
+  R: Los vuelos de LATAM incluyen 1 artículo personal (10 kg) + 1 carry on (10 kg) + 1 valija en bodega de 23 kg. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea.
+- P: ¿Cómo reservo Miches?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Navidad en el Costa Diadema: 7 noches desde Buenos Aires | Legend Travel — https://www.legendtravel.com.ar/paquetes/navidad-costa-diadema/
+- P: ¿Qué incluye Navidad a bordo del Costa Diadema y qué no?
+  R: El precio desde USD 1.334 por persona incluye 7 noches en cabina a bordo del Costa Diadema en base doble, Bebidas en almuerzo y cena, Entretenimiento a bordo para todas las edades, Asistencia al viajero Universal Assistance y Propinas. En el detalle figura el resto de lo incluido. No incluye excursiones, servicios personales y wi-fi.
+- P: ¿Cuándo sale Navidad a bordo del Costa Diadema y dónde se duerme?
+  R: Navidad a bordo del Costa Diadema sale el 23 de diciembre 2026 — embarque en Buenos Aires y dura 7 noches. Se navega a bordo del Costa Diadema y las escalas son Montevideo, Itajaí y Santos. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo se paga Navidad a bordo del Costa Diadema?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Navidad a bordo del Costa Diadema?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Tarifas finales por pasajero, sujetas a modificación y disponibilidad al momento de la reserva. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Paseando por Europa: España, Italia y París, 21 de mayo 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/paseando-por-europa/
+- P: ¿Qué incluye Paseando por Europa y qué no?
+  R: El precio desde USD 4.858 por persona incluye Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica y 1 valija de hasta 23 kg por persona en todo el recorrido. En el detalle figura el resto de lo incluido. No incluye comidas y bebidas no indicadas y tasas hoteleras y de ciudad, se pagan en destino.
+- P: ¿Cómo se paga Paseando por Europa?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Paseando por Europa?
+  R: Los vuelos de Iberia incluyen 1 valija de hasta 23 kg por persona en todo el recorrido. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Paseando por Europa?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Seña USD 2.200 por persona para reservar. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Península Ibérica: España y Portugal en 16 noches, 7/5/2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/peninsula-iberica-madrid/
+- P: ¿Qué incluye Península Ibérica con Madrid y qué no?
+  R: El precio desde USD 4.723 por persona incluye Aéreos Buenos Aires / Madrid / Buenos Aires con Iberia, clase económica y 1 valija de hasta 23 kg por persona en todo el recorrido. En el detalle figura el resto de lo incluido. No incluye comidas y bebidas no indicadas y tasas hoteleras y de ciudad, se pagan en destino.
+- P: ¿Cómo se paga Península Ibérica con Madrid?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Península Ibérica con Madrid?
+  R: Los vuelos de Iberia incluyen 1 valija de hasta 23 kg por persona en todo el recorrido. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Península Ibérica con Madrid?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Seña USD 2.250 por persona para reservar. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Praia do Forte all inclusive en Iberostar, 20/2/2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/praia-do-forte-feb-2027/
+- P: ¿Qué incluye Praia do Forte, all inclusive en Bahía y qué no?
+  R: El precio desde USD 2.537 por persona incluye Aéreo ida y vuelta con cupo confirmado, 1 valija de 23 kg en bodega y Traslados aeropuerto de Salvador – Praia do Forte – aeropuerto en servicio regular. En el detalle figura el resto de lo incluido. No incluye comidas no indicadas, excursiones y gastos personales y propinas.
+- P: ¿Cómo se paga Praia do Forte, all inclusive en Bahía?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Praia do Forte, all inclusive en Bahía?
+  R: Los vuelos de GOL incluyen 1 valija de 23 kg en bodega. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Praia do Forte, all inclusive en Bahía?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Aéreo con cupo confirmado. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Avistaje de ballenas en Madryn, 3 noches en Hotel Tolosa 4* | Legend Travel — https://www.legendtravel.com.ar/paquetes/puerto-madryn-ballenas/
+- P: ¿Qué incluye Puerto Madryn: Puerto Pirámides con Avistaje de Ballenas y qué no?
+  R: El precio desde ARS 1.198.657 por persona incluye Pasajes aéreos desde Buenos Aires, Traslados de llegada y salida, 3 noches de alojamiento con desayuno, Excursión Puerto Pirámides con embarcación para avistaje de ballenas y Asistencia médica. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cuándo sale Puerto Madryn: Puerto Pirámides con Avistaje de Ballenas y dónde se duerme?
+  R: Puerto Madryn: Puerto Pirámides con Avistaje de Ballenas sale el Salidas del 16/09 al 31/12/2026 y dura 3 noches. El alojamiento previsto es Hotel Tolosa en Puerto Madryn. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo se paga Puerto Madryn: Puerto Pirámides con Avistaje de Ballenas?
+  R: Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de crédito (consultar cuotas sin interés vigentes). Tarifa no incluye 2,9% de gasto administrativo. Tu asesora te confirma las opciones de pago y el total final al momento de la reserva.
+- P: ¿Cómo reservo Puerto Madryn: Puerto Pirámides con Avistaje de Ballenas?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Tarifas sujetas a modificación y disponibilidad al momento de la reserva. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Puerto Madryn, 3 noches con fecha a elección | Legend Travel — https://www.legendtravel.com.ar/paquetes/puerto-madryn-escapada/
+- P: ¿Qué incluye Puerto Madryn y qué no?
+  R: El precio desde ARS 676.299 por persona incluye Aéreos Buenos Aires / Puerto Madryn / Buenos Aires con Aerolíneas Argentinas, tarifa Flex, 1 valija en bodega (1 PC) + equipaje de mano y 3 noches en Parry Hotel con desayuno. En el detalle figura el resto de lo incluido. No incluye comidas no indicadas, excursiones no indicadas y gastos personales.
+- P: ¿Cómo se paga Puerto Madryn?
+  R: Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de crédito (consultar cuotas sin interés vigentes). Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión. Tu asesora te confirma las opciones de pago y el total final al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Puerto Madryn?
+  R: Los vuelos de Aerolíneas Argentinas incluyen 1 valija en bodega (1 PC) + equipaje de mano. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Puerto Madryn?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Punta Cana en Whala! Bávaro, 10 noches all inclusive, 15/2/2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/punta-cana-all-inclusive/
+- P: ¿Qué incluye Punta Cana All Inclusive y qué no?
+  R: El precio desde USD 2.490 por persona incluye Aéreos con LATAM, 10 noches en Punta Cana con régimen All Inclusive, Traslados de llegada y salida y Universal Assistance Master Plus (hasta 70 años). No incluye propinas, gastos personales y servicios no especificados.
+- P: ¿Cuándo sale Punta Cana All Inclusive y dónde se duerme?
+  R: Punta Cana All Inclusive sale el 15 de febrero 2027 y dura 10 noches. El alojamiento previsto es WHALA! BAVARO en Punta Cana (10 noches, all inclusive). Los vuelos son con LATAM. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo se paga Punta Cana All Inclusive?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Punta Cana All Inclusive?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Tarifas sujetas a modificación y disponibilidad al momento de la reserva. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Bayahíbe y Punta Cana all inclusive, 10 noches, 2/1/2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/punta-cana-bayahibe/
+- P: ¿Qué incluye Punta Cana & Bayahíbe All Inclusive y qué no?
+  R: El precio desde USD 2.400 por persona incluye Aéreos con LATAM, 6 noches en Bayahíbe All Inclusive, 4 noches en Punta Cana All Inclusive, Todos los traslados y Universal Assistance Master Plus (hasta 70 años). No incluye propinas, gastos personales y servicios no especificados.
+- P: ¿Cuándo sale Punta Cana & Bayahíbe All Inclusive y dónde se duerme?
+  R: Punta Cana & Bayahíbe All Inclusive sale el 2 de enero 2027 y dura 10 noches. El alojamiento previsto es HM Alma de Bayahibe en Bayahíbe (6 noches, all inclusive) y WHALA! BAVARO en Punta Cana (4 noches, all inclusive). Los vuelos son con LATAM.
+- P: ¿Cómo se paga Punta Cana & Bayahíbe All Inclusive?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Punta Cana & Bayahíbe All Inclusive?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Tarifas sujetas a modificación y disponibilidad al momento de la reserva. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Punta Cana con Occidental Caribe, 10 noches, 13 de enero 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/punta-cana-ene-2027/
+- P: ¿Qué incluye Punta Cana y qué no?
+  R: El precio desde USD 2.988 por persona incluye Aéreos Buenos Aires / Punta Cana / Buenos Aires con LATAM, clase económica, Traslados compartidos de llegada y salida y 10 noches con Todo Incluido. En el detalle figura el resto de lo incluido. No incluye propinas, gastos personales y servicios no especificados.
+- P: ¿Qué documentación o requisitos necesito para Punta Cana?
+  R: Formulario digital de ingreso a República Dominicana (e-Ticket) obligatorio: se solicita en el check-in. Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento. Si tenés dudas sobre tu documentación, escribinos por WhatsApp antes de reservar y lo revisamos con vos.
+- P: ¿Cómo se paga Punta Cana?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Punta Cana?
+  R: Los vuelos de LATAM incluyen 1 artículo personal (10 kg) + 1 carry on (10 kg) + 1 valija en bodega de 23 kg. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea.
+- P: ¿Cómo reservo Punta Cana?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Río de Janeiro en Copacabana, 7 noches, 9 de enero 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/rio-de-janeiro-ene-2027/
+- P: ¿Qué incluye Río de Janeiro: verano en Copacabana y qué no?
+  R: El precio desde USD 1.500 por persona incluye Aéreo ida y vuelta con cupo confirmado, 1 valija de 23 kg en bodega, Traslados privados aeropuerto – hotel – aeropuerto y 7 noches en habitación estándar con desayuno. En el detalle figura el resto de lo incluido. No incluye comidas no indicadas, excursiones y gastos personales y propinas.
+- P: ¿Cómo se paga Río de Janeiro: verano en Copacabana?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Río de Janeiro: verano en Copacabana?
+  R: Los vuelos de JetSMART incluyen 1 valija de 23 kg en bodega. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Río de Janeiro: verano en Copacabana?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Aéreo con cupo confirmado. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Riviera Maya y Cancún con Iberostar, 10 noches, 25/1/2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/riviera-maya-cancun-ene-2027/
+- P: ¿Qué incluye Riviera Maya & Cancún y qué no?
+  R: El precio desde USD 3.159 por persona incluye Aéreos Buenos Aires / Cancún / Buenos Aires con LATAM, clase económica, Traslados de llegada, interhotel y salida, 8 noches en Riviera Maya con Todo Incluido y 2 noches en Cancún con Todo Incluido. En el detalle figura el resto de lo incluido. No incluye propinas, gastos personales y servicios no especificados.
+- P: ¿Cómo se paga Riviera Maya & Cancún?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Riviera Maya & Cancún?
+  R: Los vuelos de LATAM incluyen 1 artículo personal (10 kg) + 1 carry on (10 kg) + 1 valija en bodega de 23 kg. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea.
+- P: ¿Cómo reservo Riviera Maya & Cancún?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Costa Mujeres y Riviera Maya all inclusive, 10 noches, 4/1/2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/riviera-maya-costa-mujeres/
+- P: ¿Qué incluye Riviera Maya All Inclusive y qué no?
+  R: El precio desde USD 3.310 por persona incluye Aéreos Buenos Aires/Cancún/Buenos Aires con LATAM, 5 noches en Costa Mujeres All Inclusive, 5 noches en Riviera Maya All Inclusive y Traslados de llegada, salida e internos. En el detalle figura el resto de lo incluido. No incluye propinas, gastos personales y servicios no especificados.
+- P: ¿Cuándo sale Riviera Maya All Inclusive y dónde se duerme?
+  R: Riviera Maya All Inclusive sale el 4 de enero 2027 y dura 10 noches. El alojamiento previsto es BlueBay Grand Esmeralda en Riviera Maya (5 noches, all inclusive) y Catalonia Grand Costa Mujeres All Suites & Spa en Costa Mujeres (5 noches, all inclusive).
+- P: ¿Cómo se paga Riviera Maya All Inclusive?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Riviera Maya All Inclusive?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Tarifas sujetas a modificación y disponibilidad al momento de la reserva. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Riviera Maya en Puerto Aventuras, 7 noches, 18 de enero 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/riviera-maya-ene-2027/
+- P: ¿Qué incluye Riviera Maya y qué no?
+  R: El precio desde USD 2.396 por persona incluye Aéreos Buenos Aires / Cancún / Buenos Aires con Arajet, clase económica, Traslados compartidos de llegada y salida y 7 noches con Todo Incluido. En el detalle figura el resto de lo incluido. No incluye propinas, gastos personales y servicios no especificados.
+- P: ¿Cómo se paga Riviera Maya?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Riviera Maya?
+  R: Los vuelos de Arajet incluyen 1 artículo personal + 1 valija en bodega de 23 kg (no incluye carry on). Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea.
+- P: ¿Cómo reservo Riviera Maya?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Salta, finde largo 5 al 8 de diciembre con City Tour | Legend Travel — https://www.legendtravel.com.ar/paquetes/salta-finde-largo-dic-2026/
+- P: ¿Qué incluye Salta, fin de semana largo con cupo aéreo y qué no?
+  R: El precio desde ARS 710.845 por persona incluye Aéreo Buenos Aires – Salta – Buenos Aires con cupo confirmado, Equipaje de 8 kg, Traslados aeropuerto – hotel – aeropuerto, 3 noches de alojamiento con desayuno, Excursión City Tour y Asistencia médica Universal Assistance.
+- P: ¿Cómo se paga Salta, fin de semana largo con cupo aéreo?
+  R: Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de crédito (consultar cuotas sin interés vigentes). Precio final por persona en base doble publicado como tarifa final (sin cargos adicionales informados). Tu asesora te confirma las opciones de pago y el total final al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Salta, fin de semana largo con cupo aéreo?
+  R: Los vuelos de Aerolíneas Argentinas incluyen 8 kg. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Salta, fin de semana largo con cupo aéreo?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Aéreo con cupo confirmado. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Salta y Purmamarca, 5 noches con Humahuaca y Salinas Grandes | Legend Travel — https://www.legendtravel.com.ar/paquetes/salta-purmamarca/
+- P: ¿Qué incluye Salta & Purmamarca y qué no?
+  R: El precio desde ARS 1.362.212 por persona incluye Aéreos Buenos Aires / Salta / Buenos Aires con Aerolíneas Argentinas, tarifa Flex y 1 valija en bodega (1 PC) + equipaje de mano. En el detalle figura el resto de lo incluido. No incluye comidas no indicadas, excursiones no indicadas y gastos personales.
+- P: ¿Cómo se paga Salta & Purmamarca?
+  R: Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de crédito (consultar cuotas sin interés vigentes). Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión. Tu asesora te confirma las opciones de pago y el total final al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Salta & Purmamarca?
+  R: Los vuelos de Aerolíneas Argentinas incluyen 1 valija en bodega (1 PC) + equipaje de mano. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Salta & Purmamarca?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Salvador de Bahía en Vila Galé 5*, 7 noches, 9/1/2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/salvador-de-bahia-ene-2027/
+- P: ¿Qué incluye Salvador de Bahía y qué no?
+  R: El precio desde USD 1.455 por persona incluye Aéreo ida y vuelta con cupo confirmado, 1 valija de 23 kg en bodega, Traslados aeropuerto – hotel – aeropuerto en servicio regular y 7 noches en habitación estándar con desayuno. En el detalle figura el resto de lo incluido. No incluye comidas no indicadas, excursiones y gastos personales y propinas.
+- P: ¿Cómo se paga Salvador de Bahía?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Salvador de Bahía?
+  R: Los vuelos de GOL incluyen 1 valija de 23 kg en bodega. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Salvador de Bahía?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Aéreo con cupo confirmado. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Sudáfrica y Mauritius, salida grupal 8 de febrero 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/sudafrica-mauritius/
+- P: ¿Qué incluye Sudáfrica & Mauritius y qué no?
+  R: El precio desde USD 9.820 por persona incluye Aéreos desde Buenos Aires vía San Pablo con South African Airways, 1 noche en Johannesburgo con desayuno y 2 noches en reserva privada área Kruger con media pensión. En el detalle figura el resto de lo incluido. No incluye comidas y bebidas no especificadas y gastos personales.
+- P: ¿Cuándo sale Sudáfrica & Mauritius y dónde se duerme?
+  R: Sudáfrica & Mauritius sale el 8 de febrero 2027 — South African Airways vía San Pablo y dura 11 noches. El alojamiento previsto es Silverbirch Hotel en Johannesburgo (1 noches, desayuno), Moditlo / Shidlulli, reserva privada Karongwe en Área Kruger (2 noches, pensión completa) y Hilton Mauritius Resort & Spa en Mauritius (4 noches, media pensión), entre otros.
+- P: ¿Cómo se paga Sudáfrica & Mauritius?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Sudáfrica & Mauritius?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Sur de Italia, Sicilia y Puglia, grupal 9 de marzo 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/sur-italia-sicilia-puglia/
+- P: ¿Qué incluye Sur de Italia y Sicilia con Puglia y qué no?
+  R: El precio desde USD 5.428 por persona incluye Aéreo económica Bs As/Roma/Bs As con Iberia (vía Madrid), Traslados de llegada y salida y 13 noches de hotel con desayuno buffet + 1 noche en ferry (camarote doble con baño). En el detalle figura el resto de lo incluido. No incluye cualquier servicio no especificado como incluido.
+- P: ¿Qué documentación o requisitos necesito para Sur de Italia y Sicilia con Puglia?
+  R: Documentación definitiva 10 días antes de la salida. Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento. Si tenés dudas sobre tu documentación, escribinos por WhatsApp antes de reservar y lo revisamos con vos.
+- P: ¿Cómo se paga Sur de Italia y Sicilia con Puglia?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Sur de Italia y Sicilia con Puglia?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Impuestos y cargos de combustible sujetos a cambio hasta la emisión del ticket. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Corea y Japón, grupal acompañada 5 de marzo 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/tesoros-corea-japon/
+- P: ¿Qué incluye Tesoros de Corea y Japón y qué no?
+  R: El precio desde USD 8.070 por persona incluye Aéreos Buenos Aires–Seúl / Tokio–Buenos Aires vía Addis Abeba, Traslados de llegada y salida, 15 noches con desayuno, 11 almuerzos y/o cenas según itinerario y Excursión a la DMZ en Cheorwon. En el detalle figura el resto de lo incluido. No incluye cualquier servicio no especificado como incluido.
+- P: ¿Qué documentación o requisitos necesito para Tesoros de Corea y Japón?
+  R: Documentación definitiva 10 días antes de la salida. Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento. Si tenés dudas sobre tu documentación, escribinos por WhatsApp antes de reservar y lo revisamos con vos.
+- P: ¿Cómo se paga Tesoros de Corea y Japón?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Tesoros de Corea y Japón?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Impuestos y cargos de combustible sujetos a cambio hasta la emisión. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Escapada a Ushuaia, 3 noches con fecha a elección | Legend Travel — https://www.legendtravel.com.ar/paquetes/ushuaia/
+- P: ¿Qué incluye Ushuaia y qué no?
+  R: El precio desde ARS 949.630 por persona incluye Aéreos Buenos Aires / Ushuaia / Buenos Aires con Aerolíneas Argentinas, tarifa Flex, 1 valija en bodega (1 PC) + equipaje de mano y 3 noches en Del Bosque Apart & Hotel con desayuno. En el detalle figura el resto de lo incluido. No incluye comidas no indicadas, excursiones no indicadas y gastos personales.
+- P: ¿Cómo se paga Ushuaia?
+  R: Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de crédito (consultar cuotas sin interés vigentes). Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión. Tu asesora te confirma las opciones de pago y el total final al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Ushuaia?
+  R: Los vuelos de Aerolíneas Argentinas incluyen 1 valija en bodega (1 PC) + equipaje de mano. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Ushuaia?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Ushuaia y El Calafate, 6 noches con fecha a elección | Legend Travel — https://www.legendtravel.com.ar/paquetes/ushuaia-el-calafate/
+- P: ¿Qué incluye Ushuaia & El Calafate y qué no?
+  R: El precio desde ARS 1.342.389 por persona incluye Aéreos Buenos Aires / Ushuaia / El Calafate / Buenos Aires con Aerolíneas Argentinas, tarifa Flex y 1 valija en bodega (1 PC) + equipaje de mano. En el detalle figura el resto de lo incluido. No incluye comidas no indicadas, excursiones no indicadas y gastos personales.
+- P: ¿Cómo se paga Ushuaia & El Calafate?
+  R: Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de crédito (consultar cuotas sin interés vigentes). Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión. Tu asesora te confirma las opciones de pago y el total final al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Ushuaia & El Calafate?
+  R: Los vuelos de Aerolíneas Argentinas incluyen 1 valija en bodega (1 PC) + equipaje de mano. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Ushuaia & El Calafate?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Valle de la Luna con noche en Valle Fértil, 3 noches | Legend Travel — https://www.legendtravel.com.ar/paquetes/valle-de-la-luna/
+- P: ¿Qué incluye Valle de la Luna con noche en Valle Fértil y qué no?
+  R: El precio desde ARS 1.395.002 por persona incluye Aéreos Buenos Aires / San Juan / Buenos Aires con Aerolíneas Argentinas, tarifa Flex y 1 valija en bodega (1 PC) + equipaje de mano. En el detalle figura el resto de lo incluido. No incluye comidas no indicadas, excursiones no indicadas y gastos personales.
+- P: ¿Cómo se paga Valle de la Luna con noche en Valle Fértil?
+  R: Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de crédito (consultar cuotas sin interés vigentes). Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión. Tu asesora te confirma las opciones de pago y el total final al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Valle de la Luna con noche en Valle Fértil?
+  R: Los vuelos de Aerolíneas Argentinas incluyen 1 valija en bodega (1 PC) + equipaje de mano. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Valle de la Luna con noche en Valle Fértil?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Vietnam, Camboya y Tailandia, grupal 7 de marzo 2027 | Legend Travel — https://www.legendtravel.com.ar/paquetes/vietnam-camboya-tailandia/
+- P: ¿Qué incluye Vietnam, Camboya y Tailandia y qué no?
+  R: El precio desde USD 9.740 por persona incluye Aéreos Buenos Aires / Hanoi // Phuket / Buenos Aires con Turkish Airlines, Vuelos domésticos Hanoi / Danang, Hue / Ho Chi Minh y Bangkok / Phuket y Aéreos Ho Chi Minh / Siem Reap / Bangkok. En el detalle figura el resto de lo incluido. No incluye visa de vietnam (trámite online, aprox. usd 25/30 por persona).
+- P: ¿Qué documentación o requisitos necesito para Vietnam, Camboya y Tailandia?
+  R: Es obligatorio el certificado internacional de vacuna contra la fiebre amarilla para este recorrido. Visa de Vietnam (trámite online, aprox. USD 25/30 por persona) Visa de Camboya on arrival (aprox. USD 25/30) Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento.
+- P: ¿Cómo se paga Vietnam, Camboya y Tailandia?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Vietnam, Camboya y Tailandia?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Vuelta al norte argentino: Tucumán, Cafayate y Salta | Legend Travel — https://www.legendtravel.com.ar/paquetes/vuelta-norte-argentino/
+- P: ¿Qué incluye Vuelta al norte argentino y qué no?
+  R: El precio desde ARS 1.280.826 por persona incluye Aéreo Buenos Aires / Tucumán y Salta / Buenos Aires con Aerolíneas Argentinas, tarifa Flex y 1 valija en bodega (1 PC) + equipaje de mano. En el detalle figura el resto de lo incluido. No incluye comidas no indicadas, excursiones no indicadas y gastos personales.
+- P: ¿Cómo se paga Vuelta al norte argentino?
+  R: Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de crédito (consultar cuotas sin interés vigentes). Precio en pesos argentinos, total por persona con impuestos, sujeto a la cotización del día de la emisión. Tu asesora te confirma las opciones de pago y el total final al momento de la reserva.
+- P: ¿Qué equipaje incluyen los vuelos de Vuelta al norte argentino?
+  R: Los vuelos de Aerolíneas Argentinas incluyen 1 valija en bodega (1 PC) + equipaje de mano. Si necesitás despachar más equipaje, consultanos antes de la emisión de los pasajes y te confirmamos el costo con la aerolínea. La tarifa es por persona en base doble y está sujeta a disponibilidad al momento de la reserva.
+- P: ¿Cómo reservo Vuelta al norte argentino?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. El precio es desde, por persona en base doble, y está sujeto a disponibilidad al momento de la reserva.
+
+### Zaandam: de Buenos Aires a Fort Lauderdale, 29 noches | Legend Travel — https://www.legendtravel.com.ar/paquetes/zaandam-buenos-aires-fort-lauderdale-feb-2027/
+- P: ¿Qué incluye Zaandam: de Buenos Aires a Fort Lauderdale y qué no?
+  R: El precio desde USD 5.999 por persona incluye Crucero de 29 noches a bordo del Zaandam en la cabina elegida, en base doble, Pensión completa a bordo y Tasas e impuestos portuarios. No incluye el aéreo de regreso no está incluido: el crucero es solo de ida, te lo cotizamos y cargos por servicio a bordo (propinas).
+- P: ¿Qué documentación o requisitos necesito para Zaandam: de Buenos Aires a Fort Lauderdale?
+  R: Con pasaporte argentino se necesita visa para ingresar a Estados Unidos; el trámite es personal de cada pasajero. Es un trámite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento. Si tenés dudas sobre tu documentación, escribinos por WhatsApp antes de reservar y lo revisamos con vos.
+- P: ¿Cómo se paga Zaandam: de Buenos Aires a Fort Lauderdale?
+  R: Es un paquete internacional: se paga en efectivo en dólares billete (consultar percepciones) o por transferencia en dólares. Por lo general se reserva con una seña y el saldo se abona hasta un mes antes de la salida. Tu asesora te confirma las opciones de pago al momento de la reserva.
+- P: ¿Cómo reservo Zaandam: de Buenos Aires a Fort Lauderdale?
+  R: Escribinos por WhatsApp, llamanos o completá el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso. Tarifas de promoción por pasajero en base doble, sujetas a modificación y disponibilidad al momento de la reserva.
 
 ### Viajes a Estados Unidos desde Argentina | Legend Travel — https://www.legendtravel.com.ar/usa/
 - P: ¿Cuál es la mejor época para viajar a Estados Unidos?

@@ -1,6 +1,6 @@
 # Vuelos faltantes por paquete
 
-Generado el 2026-10-22 por build-paquetes.py desde data/paquetes.json (se rehace en cada build; no editar a mano).
+Generado el 2026-10-26 por build-paquetes.py desde data/paquetes.json (se rehace en cada build; no editar a mano).
 Copiar el bloque de cada paquete y pegarlo en WhatsApp para que el operador lo complete.
 Después, cargar la respuesta en `vuelos` del paquete (aerolinea, fecha, horario, numero, equipaje) y correr el build.
 Los cruceros con embarque en Buenos Aires no llevan vuelos y no figuran.

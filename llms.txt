@@ -27,13 +27,16 @@ Versión completa (historia, medios de pago, detalle de cada paquete con hoteles
 - Acompañamiento antes, durante y después del viaje
 
 ## Guías y artículos
-- Nuevo sistema EES: cómo es ahora el ingreso a Europa (información actualizada en octubre de 2026): https://www.legendtravel.com.ar/#guias
-- Sargazo en el Caribe: qué es y cómo elegir bien la fecha y el destino (información actualizada en octubre de 2026): https://www.legendtravel.com.ar/#guias
-- Europa: ¿viaje a medida o circuito con guía? (información actualizada en octubre de 2026): https://www.legendtravel.com.ar/#guias
+- ¿Cuándo conviene viajar a Disney?: https://www.legendtravel.com.ar/guias/cuando-conviene-viajar-a-disney/
+- Punta Cana vs Cancún: cuál elegir: https://www.legendtravel.com.ar/guias/punta-cana-vs-cancun/
+- Primer viaje a Europa: cómo planificarlo: https://www.legendtravel.com.ar/guias/primer-viaje-a-europa/
+- Nuevo sistema EES: cómo es ahora el ingreso a Europa: https://www.legendtravel.com.ar/guias/sistema-ees-ingreso-a-europa/
+- Sargazo en el Caribe: qué es y cómo elegir bien la fecha y el destino: https://www.legendtravel.com.ar/guias/sargazo-en-el-caribe/
+- Europa: ¿viaje a medida o circuito con guía?: https://www.legendtravel.com.ar/guias/europa-a-medida-o-circuito-con-guia/
 
 <!-- PAQUETES:START -->
 ## Salidas y paquetes actuales
-Generado el 2026-10-22 desde data/paquetes.json. Solo salidas vigentes:
+Generado el 2026-10-26 desde data/paquetes.json. Solo salidas vigentes:
 lo inactivo o vencido se retira de esta lista automáticamente.
 Precios por persona en base doble, salvo que el paquete indique otra base. Sujeto a disponibilidad al momento de la reserva.
 

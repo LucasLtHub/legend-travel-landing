@@ -69,6 +69,7 @@ FULL_DIRS = [
     "lunas-de-miel",
     "quinceaneras",
     "paquetes",
+    "guias",       # guias y articulos (index.html + una carpeta por guia); las genera build-paquetes.py
     "politica-de-privacidad",
     "terminos-y-condiciones",
     # "arrepentimiento",  # botón de arrepentimiento (Ley 24.240): despublicado el 2026-10-07; descomentar para volver a publicarlo (index.html + enviar.php + data/ protegida)

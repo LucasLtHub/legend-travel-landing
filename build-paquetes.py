@@ -963,6 +963,380 @@ def render_subtitulo(p):
     return ('\n      <p class="dhero-linea dhero-sub"><b>{}</b></p>'.format(e(sub))) if sub else ""
 
 
+# ============================================================
+# AEO (2026-10-26): preguntas frecuentes por paquete, schema con Offer, frescura,
+# respuesta directa en las madres y guias como paginas (/guias/).
+# ============================================================
+GUIAS_JSON = ROOT / "data" / "guias.json"
+GUIAS_DIR = ROOT / "guias"
+PLANTILLA_GUIA = ROOT / "data" / "_template-guia.html"
+RESP_START = "<!-- RESPUESTA:START -->"
+RESP_END = "<!-- RESPUESTA:END -->"
+HOY_BUILD = datetime.date.today()
+
+
+def fmt_fecha_larga(d):
+    return "{} de {} de {}".format(d.day, MESES_NOMBRE[d.month].lower(), d.year)
+
+
+def _palabras(s):
+    return len(re.findall(r"[\wáéíóúñü]+", str(s), flags=re.I))
+
+
+def _recortar_frases(texto, maximo=60):
+    """Deja frases enteras mientras no pase de `maximo` palabras (al menos una)."""
+    frases = re.split(r"(?<=[.!?])\s+", texto.strip())
+    out = []
+    for f in frases:
+        if out and _palabras(" ".join(out + [f])) > maximo:
+            break
+        out.append(f)
+    return " ".join(out)
+
+
+def _titulo_corto(p):
+    t = txt(p, "titulo")
+    for corte in (" \u2014 ", " \u00b7 "):
+        if corte in t:
+            t = t.split(corte)[0]
+    return t.strip()
+
+
+def _enum(items):
+    items = [str(x).strip().rstrip(".") for x in items if str(x).strip()]
+    if not items:
+        return ""
+    if len(items) == 1:
+        return items[0]
+    return ", ".join(items[:-1]) + " y " + items[-1]
+
+
+LEYENDA_FAQ = "La tarifa es por persona en base doble y est\u00e1 sujeta a disponibilidad al momento de la reserva."
+
+
+def faq_paquete(p):
+    """4 o 5 preguntas con respuesta de 40 a 60 palabras, SOLO con datos del paquete y del bloque de pagos del sitio.
+    Si un dato no existe, esa pregunta no se arma."""
+    corto = _titulo_corto(p)
+    pd = p["precio_desde"]
+    mon = pd.get("moneda", "")
+    precio = "{} {}".format(mon, fmt_precio(pd.get("valor")))
+    cond = [str(c) for c in lista(p, "condiciones")]
+    out = []
+
+    # 1) que incluye y que no
+    inc = [str(x) for x in lista(p, "incluye")]
+    noinc = [str(x) for x in lista(p, "no_incluye")]
+    if inc:
+        sel = []
+        for it in inc:
+            prueba = "El precio desde {} por persona incluye {}.".format(precio, _enum(sel + [it]))
+            if sel and _palabras(prueba) > 42:
+                break
+            sel.append(it)
+        ans = "El precio desde {} por persona incluye {}.".format(precio, _enum(sel))
+        if len(sel) < len(inc):
+            ans += " En el detalle figura el resto de lo incluido."
+        if noinc:
+            nsel = []
+            for it in noinc:
+                if nsel and _palabras(ans + " No incluye {}.".format(_enum(nsel + [it]))) > 60:
+                    break
+                nsel.append(it)
+            ans += " No incluye {}.".format(_enum(nsel).lower() if nsel and nsel[0][:1].isupper() and not nsel[0].isupper() else _enum(nsel))
+        if _palabras(ans) < 40:
+            ans += " " + LEYENDA_FAQ
+        out.append(("\u00bfQu\u00e9 incluye {} y qu\u00e9 no?".format(corto), ans))
+
+    # 2) documentacion y requisitos (solo si la ficha lo dice)
+    doc = [c for c in cond + noinc if re.search(r"\bvisa\b|\bETA\b|vacuna|pasaporte|e-?ticket|\bDNI\b|documentaci", c, re.I)]
+    if doc:
+        ans = _recortar_frases(" ".join(doc), 60)
+        if _palabras(ans) < 40:
+            ans += " Es un tr\u00e1mite personal de cada pasajero: consultanos antes de reservar y te confirmamos los requisitos vigentes para tu documento."
+        if _palabras(ans) < 40:
+            ans += " Si ten\u00e9s dudas sobre tu documentaci\u00f3n, escribinos por WhatsApp antes de reservar y lo revisamos con vos."
+        ans = _recortar_frases(ans, 60)
+        out.append(("\u00bfQu\u00e9 documentaci\u00f3n o requisitos necesito para {}?".format(corto), ans))
+
+    # 2b) cuando sale, cuanto dura y donde se duerme (siempre hay dato); entra solo si hacen falta preguntas para llegar a 4
+    hot = [h for h in lista(p, "hoteles") if isinstance(h, dict) and _v(h, "nombre")]
+    noches = p.get("noches")
+    ans_sal = "{} sale el {} y dura {} noche{}.".format(corto, txt(p, "salida").rstrip("."), noches, "" if str(noches) == "1" else "s")
+    if hot:
+        partes = []
+        for h in hot:
+            parte = "{}{}{}".format(_v(h, "nombre"), " en " + _v(h, "ciudad") if _v(h, "ciudad") else "",
+                                    " ({} noches, {})".format(_v(h, "noches"), _v(h, "regimen").lower()) if _v(h, "noches") and _v(h, "regimen") else "")
+            if partes and _palabras(ans_sal + " El alojamiento previsto es {}.".format(_enum(partes + [parte]))) > 58:
+                break
+            partes.append(parte)
+        ans_sal += " El alojamiento previsto es {}{}.".format(_enum(partes), ", entre otros" if len(partes) < len(hot) else "")
+    elif isinstance(p.get("crucero"), dict) and p["crucero"]:
+        ans_sal += " Se navega a bordo del {} y las escalas son {}.".format(_v(p["crucero"], "barco") or "barco", _enum(lista(p, "destinos")[:8]))
+    elif lista(p, "destinos"):
+        ans_sal += " Recorre {}.".format(_enum(lista(p, "destinos")[:7]))
+    aer_sal = []
+    for v in lista(p, "vuelos"):
+        a_ = str(v.get("aerolinea") or "").strip() if isinstance(v, dict) else ""
+        if a_ and a_ not in aer_sal:
+            aer_sal.append(a_)
+    if aer_sal and _palabras(ans_sal) < 40:
+        ans_sal += " Los vuelos son con {}.".format(_enum(aer_sal))
+    if _palabras(ans_sal) < 40:
+        ans_sal += " " + LEYENDA_FAQ
+    ans_sal = _recortar_frases(ans_sal, 60)
+    q_salida = ("\u00bfCu\u00e1ndo sale {} y d\u00f3nde se duerme?".format(corto), ans_sal)
+
+    # 3) como se paga (bloque unico de medios de pago del sitio)
+    if mon == "ARS":
+        ans = ("Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de cr\u00e9dito "
+               "(consultar cuotas sin inter\u00e9s vigentes). Tu asesora te confirma las opciones de pago y el total final al momento de la reserva.")
+        nota = txt(p, "nota_impuestos")
+        if nota and _palabras(ans + " " + nota) <= 60:
+            ans = ans.replace(" Tu asesora", " {} Tu asesora".format(nota.rstrip(".") + "."), 1)
+    else:
+        ans = ("Es un paquete internacional: se paga en efectivo en d\u00f3lares billete (consultar percepciones) o por transferencia en d\u00f3lares. "
+               "Por lo general se reserva con una se\u00f1a y el saldo se abona hasta un mes antes de la salida. "
+               "Tu asesora te confirma las opciones de pago al momento de la reserva.")
+    out.append(("\u00bfC\u00f3mo se paga {}?".format(corto), ans))
+
+    # 4) equipaje (solo si figura en los vuelos)
+    vuelos = [v for v in lista(p, "vuelos") if isinstance(v, dict)]
+    eqs, aers = [], []
+    for v in vuelos:
+        e_ = str(v.get("equipaje") or "").strip()
+        if e_ and e_ not in eqs:
+            eqs.append(e_)
+        a_ = str(v.get("aerolinea") or "").strip()
+        if a_ and a_ not in aers:
+            aers.append(a_)
+    if eqs:
+        if all(re.match(r"^equipaje incluido", x, re.I) for x in eqs):
+            ans = "Los vuelos{} tienen el equipaje incluido; la ficha no detalla el peso.".format(" de " + _enum(aers) if aers else "")
+        else:
+            ans = "Los vuelos{} incluyen {}.".format(" de " + _enum(aers) if aers else "", _enum(eqs).lower() if not eqs[0][:1].isdigit() else _enum(eqs))
+        extra = [c for c in cond if re.search(r"equipaje|valija|bolso|mochila", c, re.I)]
+        if extra:
+            ans = _recortar_frases(ans + " " + " ".join(extra), 60)
+        if _palabras(ans) < 40:
+            ans += " Si necesit\u00e1s despachar m\u00e1s equipaje, consultanos antes de la emisi\u00f3n de los pasajes y te confirmamos el costo con la aerol\u00ednea."
+            ans = _recortar_frases(ans, 60)
+        out.append(("\u00bfQu\u00e9 equipaje incluyen los vuelos de {}?".format(corto), ans))
+
+    # 5) como se reserva o confirma
+    cupo = [c for c in cond if re.search(r"cupo|se\u00f1a|reserv|saldo|emiten|emisi\u00f3n", c, re.I)]
+    ans = ("Escribinos por WhatsApp, llamanos o complet\u00e1 el formulario de contacto: una asesora te confirma disponibilidad, "
+           "la tarifa final y las opciones de pago, sin compromiso.")
+    if cupo:
+        ans = _recortar_frases(ans + " " + cupo[0], 48)
+    ans += " El precio es desde, por persona en base doble, y est\u00e1 sujeto a disponibilidad al momento de la reserva."
+    ans = _recortar_frases(ans, 60)
+    out.append(("\u00bfC\u00f3mo reservo {}?".format(corto), ans))
+
+    if len(out) < 4 and 40 <= _palabras(q_salida[1]) <= 60:
+        out.insert(1, q_salida)
+
+    # control: 40 a 60 palabras, sin inventar: lo que no entra se descarta
+    final = []
+    for q, a in out:
+        n = _palabras(a)
+        if 40 <= n <= 60:
+            final.append((q, a))
+        elif n > 60:
+            a2 = _recortar_frases(a, 60)
+            if 40 <= _palabras(a2) <= 60:
+                final.append((q, a2))
+        else:
+            a2 = a + " " + LEYENDA_FAQ
+            if 40 <= _palabras(a2) <= 60:
+                final.append((q, a2))
+    return final[:5]
+
+
+def render_faq(faqs):
+    if not faqs:
+        return ""
+    NL = chr(10)
+    cuerpo = NL.join(
+        '    <details class="dfaq">' + NL +
+        '      <summary>{}</summary>'.format(e(q)) + NL +
+        '      <p>{}</p>'.format(e(a)) + NL +
+        '    </details>' for q, a in faqs)
+    return _sec("Preguntas <em>frecuentes</em>", cuerpo)
+
+
+def schema_faq(faqs):
+    return {"@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]}
+
+
+def render_actualizado(hoy=None):
+    return '<p class="dnota">Actualizado el {}.</p>'.format(fmt_fecha_larga(hoy or HOY_BUILD))
+
+
+def render_respuesta(carpeta, items, hoy):
+    """Parrafo de respuesta directa para la madre: cantidad de salidas, rango de precios Desde por moneda
+    y destinos con mas salidas. Todo calculado en el build; sin superlativos."""
+    r_madre = next((reg for reg, c in REGION_MADRE.items() if c == carpeta and reg in REGIONES_FRASE), None)
+    frase = REGIONES_FRASE.get(r_madre or carpeta, "a " + carpeta.replace("-", " ").title())
+    n = len(items)
+    por_mon = {}
+    for p, v in items:
+        pd = p["precio_desde"]
+        por_mon.setdefault(pd.get("moneda", ""), []).append(int(pd.get("valor") or 0))
+    partes = []
+    for mon in ("USD", "ARS"):
+        vals = [x for x in por_mon.get(mon, []) if x > 0]
+        if not vals:
+            continue
+        if len(vals) == 1 or min(vals) == max(vals):
+            partes.append("{} {} por persona".format(mon, fmt_precio(min(vals))) if len(partes) == 0 else "{} {}".format(mon, fmt_precio(min(vals))))
+        else:
+            partes.append("{} {} hasta {} {} por persona".format(mon, fmt_precio(min(vals)), mon, fmt_precio(max(vals))))
+    rango = " y ".join(partes)
+    cont = {}
+    for p, v in items:
+        for d in lista(p, "destinos")[:3]:
+            cont[d] = cont.get(d, 0) + 1
+    top = sorted(cont.items(), key=lambda kv: (-kv[1], kv[0]))[:2]
+    top = [kv for kv in top if kv[1] >= 2]
+    frase_dest = ""
+    if top:
+        frase_dest = " Los destinos con m\u00e1s salidas son " + _enum(["{} ({})".format(d, c) for d, c in top]) + "."
+    texto = "Viajes {}{}: hoy tenemos {} {} publicada{} con precio desde {}.{} Cada precio es \u00abdesde\u00bb, sujeto a disponibilidad, y una asesora lo confirma por WhatsApp antes de reservar.".format(
+        e(frase), "" if carpeta == "argentina" else " desde Argentina", n, "salida" if n == 1 else "salidas", "" if n == 1 else "s", rango, frase_dest)
+    url = "{}/{}/".format(DOMINIO, carpeta)
+    schema = json.dumps({"@context": "https://schema.org", "@type": "WebPage", "@id": url + "#webpage", "url": url,
+                         "dateModified": hoy.isoformat(), "publisher": {"@id": ORG_ID}}, ensure_ascii=False)
+    return "\n".join([
+        RESP_START,
+        '<section class="px" style="padding-top:56px;padding-bottom:0">',
+        '  <div class="mx">',
+        '    <div class="rv" style="max-width:860px">',
+        '      <p style="font-size:18px;line-height:1.8;color:var(--ink)">{}</p>'.format(texto),
+        '      <p class="dnota" style="margin-top:10px">Actualizado el {}.</p>'.format(fmt_fecha_larga(hoy)),
+        '    </div>',
+        '  </div>',
+        '</section>',
+        '<script type="application/ld+json">{}</script>'.format(schema),
+        RESP_END,
+    ])
+
+
+def _render_guia(g, guias, publicados, plantilla, hoy):
+    url = "{}/guias/{}/".format(DOMINIO, g["slug"])
+    titulo = g["titulo"]
+    region = g.get("region")
+    madre = REGION_MADRE.get(region, region)
+    rel = [p for p, v in publicados if region in regiones_de(p)][:4]
+    links = []
+    if madre and (ROOT / madre / "index.html").exists():
+        links.append('      <li>{}<span><a href="{}/">Viajes {}: todos los destinos y salidas</a></span></li>'.format(
+            IC_CHECK, e(madre), e(REGIONES_FRASE.get(region) or REGIONES_FRASE.get(madre) or ("a " + REGIONES.get(region, region)))))
+    for p in rel:
+        links.append('      <li>{}<span><a href="paquetes/{}/">{}</a> &middot; desde {} {}</span></li>'.format(
+            IC_CHECK, e(p["id"]), e(txt(p, "titulo")), e(p["precio_desde"].get("moneda", "")), fmt_precio(p["precio_desde"].get("valor"))))
+    relacionados = ('    <div class="grel">\n      <h2>Te puede interesar</h2>\n      <ul class="dlist si">\n' + "\n".join(links) + "\n      </ul>\n    </div>") if links else ""
+    pub = datetime.date.fromisoformat(g["fecha_publicacion"])
+    meta = "Por <strong>Equipo de Legend Travel</strong> &middot; Publicado el {} &middot; Actualizado el {}".format(
+        fmt_fecha_larga(pub), fmt_fecha_larga(hoy))
+    img = g.get("imagen", "")
+    figura = ('    <figure class="gfig"><img src="/{}" alt="{}" loading="eager" fetchpriority="high" decoding="async"></figure>'.format(e(img), e(g.get("imagen_alt", ""))) if img else "")
+    desc = g.get("descripcion") or titulo
+    wa = "https://wa.me/{}?text={}".format(WA_NUMERO, urllib.parse.quote("Hola Legend Travel, le\u00ed la gu\u00eda \u00ab{}\u00bb y quiero consultar".format(titulo), safe=''))
+    schema = {"@context": "https://schema.org", "@graph": [
+        {"@type": "Article", "@id": url + "#article", "headline": titulo, "description": desc, "url": url, "mainEntityOfPage": url,
+         "image": "{}/{}".format(DOMINIO, img) if img else "{}/og-image.jpg".format(DOMINIO),
+         "datePublished": g["fecha_publicacion"], "dateModified": hoy.isoformat(), "inLanguage": "es-AR",
+         "articleSection": g.get("categoria", ""),
+         "author": {"@type": "Organization", "name": "Equipo de Legend Travel", "@id": ORG_ID},
+         "publisher": {"@id": ORG_ID}},
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Inicio", "item": DOMINIO + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Gu\u00edas", "item": DOMINIO + "/guias/"},
+            {"@type": "ListItem", "position": 3, "name": titulo, "item": url}]},
+    ]}
+    vals = {
+        "{{TITULO_TAG}}": e(titulo if len(titulo) > 50 else titulo + " | Legend Travel"),
+        "{{DESC}}": e(recortar(desc, 158)), "{{CANONICAL}}": e(url), "{{OG_TITULO}}": e(titulo), "{{OG_DESC}}": e(recortar(desc, 200)),
+        "{{OGIMAGE}}": e("{}/{}".format(DOMINIO, img) if img else "{}/og-image.jpg".format(DOMINIO)), "{{ALT}}": e(g.get("imagen_alt", "")),
+        "{{OG_TYPE}}": "article", "{{WA}}": e(wa), "{{CRUMB_EXTRA}}": ' <span aria-hidden="true">&rsaquo;</span> <span>{}</span>'.format(e(titulo)),
+        "{{CAT}}": e(g.get("categoria", "")), "{{TITULO}}": e(titulo), "{{META}}": meta, "{{FIGURA}}": figura,
+        "{{CUERPO}}": g["cuerpo_html"], "{{RELACIONADOS}}": relacionados,
+        "{{SCHEMA}}": json.dumps(schema, ensure_ascii=False, separators=(',', ':')),
+    }
+    out = plantilla
+    for k, v in vals.items():
+        out = out.replace(k, v)
+    return out
+
+
+def _render_guias_index(guias, plantilla, hoy):
+    url = DOMINIO + "/guias/"
+    cards = []
+    for g in guias:
+        cards.append('      <a class="gcard" href="guias/{slug}/">\n        <div class="im"><img src="/{img}" alt="{alt}" loading="lazy" decoding="async"></div>\n        <div class="b"><p class="cat">{cat}</p><h2>{t}</h2><p>{d}</p><p class="d">Actualizado el {f}</p></div>\n      </a>'.format(
+            slug=e(g["slug"]), img=e(g.get("imagen", "")), alt=e(g.get("imagen_alt", "")), cat=e(g.get("categoria", "")), t=e(g["titulo"]),
+            d=e(recortar(g.get("descripcion") or "", 150)), f=fmt_fecha_larga(hoy)))
+    cuerpo = '    <div class="glist">\n' + "\n".join(cards) + "\n    </div>"
+    schema = {"@context": "https://schema.org", "@graph": [
+        {"@type": "CollectionPage", "@id": url + "#webpage", "url": url, "name": "Gu\u00edas y art\u00edculos de viaje", "dateModified": hoy.isoformat(), "publisher": {"@id": ORG_ID}},
+        {"@type": "ItemList", "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "url": "{}/guias/{}/".format(DOMINIO, g["slug"]), "name": g["titulo"]} for i, g in enumerate(guias)]},
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Inicio", "item": DOMINIO + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Gu\u00edas", "item": url}]},
+    ]}
+    wa = "https://wa.me/{}?text={}".format(WA_NUMERO, urllib.parse.quote("Hola Legend Travel, quiero consultar por un viaje", safe=''))
+    desc = "Gu\u00edas y art\u00edculos de viaje escritos por el equipo de Legend Travel: cu\u00e1ndo viajar, qu\u00e9 destino elegir y c\u00f3mo planificar tu viaje desde Argentina."
+    vals = {
+        "{{TITULO_TAG}}": "Gu\u00edas y art\u00edculos de viaje | Legend Travel", "{{DESC}}": e(desc), "{{CANONICAL}}": e(url),
+        "{{OG_TITULO}}": "Gu\u00edas y art\u00edculos de viaje | Legend Travel", "{{OG_DESC}}": e(desc), "{{OGIMAGE}}": DOMINIO + "/og-image.jpg",
+        "{{ALT}}": "Legend Travel", "{{OG_TYPE}}": "website", "{{WA}}": e(wa), "{{CRUMB_EXTRA}}": "",
+        "{{CAT}}": "Gu\u00edas y art\u00edculos", "{{TITULO}}": "Todo lo que necesit\u00e1s saber antes de viajar",
+        "{{META}}": "Escritas por el equipo de Legend Travel con datos verificados. {} gu\u00edas publicadas.".format(len(guias)),
+        "{{FIGURA}}": "", "{{CUERPO}}": cuerpo, "{{RELACIONADOS}}": "",
+        "{{SCHEMA}}": json.dumps(schema, ensure_ascii=False, separators=(',', ':')),
+    }
+    out = plantilla
+    for k, v in vals.items():
+        out = out.replace(k, v)
+    return out.replace('<div class="art-body">', '<div class="art-body" style="margin-top:0">', 1)
+
+
+def generar_guias(publicados, hoy):
+    """/guias/index.html y /guias/<slug>/index.html desde data/guias.json y data/_template-guia.html."""
+    if not GUIAS_JSON.exists() or not PLANTILLA_GUIA.exists():
+        print("   (sin data/guias.json o plantilla: no se generan guias)")
+        return []
+    guias = json.loads(GUIAS_JSON.read_text(encoding="utf-8")).get("guias") or []
+    plantilla = PLANTILLA_GUIA.read_text(encoding="utf-8")
+    GUIAS_DIR.mkdir(exist_ok=True)
+    logo = ROOT / "logo-wordmark.png"
+    cambios = 0
+    for g in guias:
+        d = GUIAS_DIR / g["slug"]
+        d.mkdir(exist_ok=True)
+        for carpeta in (GUIAS_DIR, d):
+            if logo.exists() and not (carpeta / "logo-wordmark.png").exists():
+                shutil.copy2(logo, carpeta / "logo-wordmark.png")
+        out = _render_guia(g, guias, publicados, plantilla, hoy)
+        f = d / "index.html"
+        if not f.exists() or f.read_text(encoding="utf-8") != out:
+            f.write_text(out, encoding="utf-8"); cambios += 1
+    idx = _render_guias_index(guias, plantilla, hoy)
+    f = GUIAS_DIR / "index.html"
+    if not f.exists() or f.read_text(encoding="utf-8") != idx:
+        f.write_text(idx, encoding="utf-8"); cambios += 1
+    vivos = {g["slug"] for g in guias}
+    for d in GUIAS_DIR.iterdir():
+        if d.is_dir() and d.name not in vivos:
+            shutil.rmtree(d)
+    print("OK  guias/: {} guias + indice ({} archivo(s) escritos)".format(len(guias), cambios))
+    return guias
+
+
 def render_detalle(p, vig, plantilla, todos=()):
     pd = p["precio_desde"]
     dests = lista(p, "destinos")
@@ -1155,16 +1529,28 @@ def render_detalle(p, vig, plantilla, todos=()):
                                                 str(d.get("titulo") or "").strip()] if x)}
                 for i, d in enumerate(dias)],
         }
-    schema = json.dumps({
-        "@context": "https://schema.org",
-        "@graph": [
-            {"@type": "BreadcrumbList", "itemListElement": [
-                {"@type": "ListItem", "position": 1, "name": "Inicio", "item": DOMINIO + "/"},
-                {"@type": "ListItem", "position": 2, "name": "Paquetes", "item": DOMINIO + "/paquetes/"},
-                {"@type": "ListItem", "position": 3, "name": titulo_txt, "item": canonical},
-            ]},
-            trip,
-        ]}, ensure_ascii=False, separators=(',', ':'))
+    pdv = p["precio_desde"]
+    vig_iso = vig.isoformat() if hasattr(vig, "isoformat") else str(vig)
+    trip["offers"] = {
+        "@type": "Offer", "price": int(pdv.get("valor") or 0), "priceCurrency": pdv.get("moneda", ""),
+        "validThrough": vig_iso, "availability": "https://schema.org/InStock", "url": canonical,
+        "priceSpecification": {"@type": "PriceSpecification", "price": int(pdv.get("valor") or 0), "priceCurrency": pdv.get("moneda", ""),
+                               "description": "Precio desde por persona en base doble. " + LEYENDA_PRECIO},
+    }
+    faqs = faq_paquete(p)
+    grafo = [
+        {"@type": "WebPage", "@id": canonical + "#webpage", "url": canonical, "name": titulo_txt,
+         "dateModified": HOY_BUILD.isoformat(), "publisher": {"@id": ORG_ID}},
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Inicio", "item": DOMINIO + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Paquetes", "item": DOMINIO + "/paquetes/"},
+            {"@type": "ListItem", "position": 3, "name": titulo_txt, "item": canonical},
+        ]},
+        trip,
+    ]
+    if faqs:
+        grafo.append(schema_faq(faqs))
+    schema = json.dumps({"@context": "https://schema.org", "@graph": grafo}, ensure_ascii=False, separators=(',', ':'))
 
     # --- A: metas. og:image absoluta; con placeholder cae a la del sitio ---
     desc = meta_desc(p)
@@ -1208,6 +1594,8 @@ def render_detalle(p, vig, plantilla, todos=()):
         "{{RELACIONADOS}}": relacionados,
         "{{DESC}}": e(txt(p, "seo_descripcion") or desc),
         "{{SUBTITULO}}": render_subtitulo(p),
+        "{{FAQ}}": render_faq(faqs),
+        "{{ACTUALIZADO}}": render_actualizado(),
         "{{POR_QUE}}": render_por_que(p, todos),
         "{{ALT}}": e(alt_imagen(p)),
         "{{KICKER}}": e(REGIONES.get(p["region"], p["region"])),
@@ -2116,6 +2504,9 @@ def main():
         bloque_r = (render_region_block(carpeta, items, hoy) if items
                     else R_START + "\n" + R_END)
         nuevo = reemplazar_bloque(texto, R_START, R_END, bloque_r)
+        if RESP_START in nuevo and RESP_END in nuevo:
+            bloque_resp = render_respuesta(carpeta, items, hoy) if items else RESP_START + "\n" + RESP_END
+            nuevo = reemplazar_bloque(nuevo, RESP_START, RESP_END, bloque_resp)
         if nuevo != f.read_text(encoding="utf-8"):
             f.write_text(nuevo, encoding="utf-8")
             if items:
@@ -2129,6 +2520,9 @@ def main():
         print("   {:<18} sin salidas — modulo vaciado".format(r + "/"))
     if not tocadas and not vaciadas:
         print("   (sin cambios)")
+
+    # ---------- 3b. guias como paginas ----------
+    generar_guias(publicados, hoy)
 
     # ---------- 4. llms.txt (GEO) ----------
     actualizar_llms(publicados, hoy)

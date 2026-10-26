@@ -1212,3 +1212,38 @@ footer.px{background:var(--white);color:var(--ink);padding-top:72px;padding-bott
   .pk-bar{margin-top:0}
   .pk-sels{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
 }
+
+/* ---------- detalle: preguntas frecuentes (AEO, 2026-10-26) ---------- */
+.dfaq{border-top:1px solid var(--line)}
+.dfaq:last-of-type{border-bottom:1px solid var(--line)}
+.dfaq summary{list-style:none;cursor:pointer;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:16px 0;font-size:16px;font-weight:700;line-height:1.4;color:var(--ink)}
+.dfaq summary::-webkit-details-marker{display:none}
+.dfaq summary::after{content:"+";flex:none;font-weight:400;font-size:22px;line-height:1;color:var(--red)}
+.dfaq[open] summary::after{content:"\2013"}
+.dfaq summary:focus-visible{outline:2px solid var(--red);outline-offset:2px;border-radius:4px}
+.dfaq p{padding:0 0 18px;font-size:15.5px;line-height:1.65;color:var(--ink-2)}
+/* ---------- guias (/guias/) ---------- */
+.ghero{padding-top:clamp(120px,16vh,160px);padding-bottom:28px}
+.ghero .mx{max-width:860px}
+.ghero h1{font-size:clamp(32px,4.6vw,56px);font-weight:700;letter-spacing:-.035em;line-height:1.05;color:var(--ink);margin-top:14px}
+.gcrumb{font-size:13px;font-weight:600;letter-spacing:.02em;color:var(--ink-3);margin-bottom:22px}
+.gcrumb a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.gmeta{margin-top:16px;font-size:13.5px;color:var(--ink-3);line-height:1.7}
+.gbody{padding-top:8px;padding-bottom:clamp(56px,8vh,96px)}
+.gbody .mx{max-width:860px}
+.gfig{margin:0 0 32px;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:16/9;background:#eee}
+.gfig img{width:100%;height:100%;object-fit:cover;display:block}
+.grel{margin-top:44px;padding-top:28px;border-top:1px solid var(--line)}
+.grel h2{font-size:22px;font-weight:700;letter-spacing:-.02em;margin-bottom:6px}
+.grel a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.glist{display:grid;gap:16px;margin-top:8px}
+@media(min-width:680px){.glist{grid-template-columns:1fr 1fr}}
+@media(min-width:1080px){.glist{grid-template-columns:1fr 1fr 1fr}}
+.gcard{display:flex;flex-direction:column;background:#fff;border-radius:var(--r-lg);overflow:hidden;box-shadow:0 0 0 1px rgba(14,35,45,.08);color:var(--ink);text-decoration:none}
+.gcard .im{aspect-ratio:16/10;background:#eee}
+.gcard .im img{width:100%;height:100%;object-fit:cover;display:block}
+.gcard .b{padding:18px 20px 22px}
+.gcard .cat{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--red)}
+.gcard h2,.gcard h3{font-size:19px;font-weight:700;letter-spacing:-.02em;line-height:1.25;margin:8px 0 10px}
+.gcard p{font-size:14px;line-height:1.6;color:var(--ink-2)}
+.gcard .d{margin-top:12px;font-size:12.5px;color:var(--ink-3)}
