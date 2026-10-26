@@ -1013,6 +1013,53 @@ def _enum(items):
 
 LEYENDA_FAQ = "La tarifa es por persona en base doble y est\u00e1 sujeta a disponibilidad al momento de la reserva."
 
+_COMUNES_INC = {"a\u00e9reo", "a\u00e9reos", "aereo", "aereos", "traslado", "traslados", "noche", "noches", "excursi\u00f3n", "excursiones", "asistencia",
+                "equipaje", "crucero", "pensi\u00f3n", "tasas", "vuelo", "vuelos", "visita", "visitas", "gu\u00eda", "gu\u00edas", "entrada", "entradas",
+                "bebidas", "propinas", "comidas", "comida", "circuito", "reuni\u00f3n", "coordinador", "coordinadores", "bolso", "valija", "ferry",
+                "ferries", "billetes", "tren", "trenes", "almuerzos", "cenas", "cena", "almuerzo", "parques", "parque", "city", "d\u00eda", "alojamiento",
+                "habitaci\u00f3n", "paquete", "seguro", "kit", "evento", "seguimiento", "reuniones", "acompa\u00f1ante", "tour", "salida", "salidas",
+                "aut\u00f3car", "autocar", "late", "early", "gastos", "servicios", "cualquier", "todos", "todas", "otros", "el", "la", "los", "las", "un", "una",
+                "impuesto", "impuestos", "cobertura", "visado", "visa", "cargos", "cargo", "wi-fi", "wifi", "cabina", "p\u00e9rdida", "pensi\u00f3n"}
+
+
+def _minus(item):
+    """Minuscula inicial para los items comunes ('Aéreos con LATAM' -> 'aéreos con LATAM'); respeta nombres propios y siglas."""
+    item = str(item).strip()
+    if not item:
+        return item
+    primera = item.split()[0].lower().strip(",.;:")
+    if item[0].isdigit() or primera in _COMUNES_INC:
+        return item[0].lower() + item[1:]
+    return item
+
+
+def _plural_noches(texto):
+    return re.sub(r"\b1 noches\b", "1 noche", texto)
+
+
+def _fecha_salida_limpia(p):
+    """'8 de febrero 2027 — South African Airways vía San Pablo' -> ('el 8 de febrero de 2027', True).
+    Rangos y fecha a eleccion devuelven el texto limpio sin la cola."""
+    s_ = txt(p, "salida")
+    d = parse_salida(s_)
+    base = salida_corta(s_)
+    if re.match(r"^\d{1,2} de [a-z\u00e1\u00e9\u00ed\u00f3\u00fa]+ \d{4}$", base.lower()) and d:
+        return "el " + fmt_fecha_larga(d)
+    if re.match(r"^[a-z\u00e1\u00e9\u00ed\u00f3\u00fa]+ \d{4}$", base.lower()) and d:
+        return "en {} de {}".format(MESES_NOMBRE[d.month].lower(), d.year)
+    b = base[0].lower() + base[1:]
+    if b.startswith("salidas "):
+        return "con " + b
+    if b.startswith("fecha a elecci"):
+        return "en la fecha que elijas" + (", " + b.split(",", 1)[1].strip() if "," in b else "")
+    return "el " + b
+
+
+def _var(p, n):
+    """Indice estable 0..n-1 por paquete, para variar los arranques sin cambiar los datos."""
+    return sum(ord(c) for c in str(p.get("id", ""))) % n
+
+
 
 def faq_paquete(p):
     """4 o 5 preguntas con respuesta de 40 a 60 palabras, SOLO con datos del paquete y del bloque de pagos del sitio.
@@ -1029,27 +1076,32 @@ def faq_paquete(p):
     noinc = [str(x) for x in lista(p, "no_incluye")]
     if inc:
         sel = []
+        arranques = ["El precio desde {pr} por persona incluye {it}.",
+                     "Por {pr} por persona, {co} incluye {it}.",
+                     "{co} incluye, desde {pr} por persona, {it}."]
+        arr = arranques[_var(p, 3)]
         for it in inc:
-            prueba = "El precio desde {} por persona incluye {}.".format(precio, _enum(sel + [it]))
+            prueba = arr.format(pr=precio, co=corto, it=_enum([_minus(x) for x in sel + [it]]))
             if sel and _palabras(prueba) > 42:
                 break
             sel.append(it)
-        ans = "El precio desde {} por persona incluye {}.".format(precio, _enum(sel))
+        ans = arr.format(pr=precio, co=corto, it=_enum([_minus(x) for x in sel]))
         if len(sel) < len(inc):
-            ans += " En el detalle figura el resto de lo incluido."
+            ans += [" En el detalle figura el resto de lo incluido.", " El resto de lo incluido est\u00e1 en el detalle.", " En esta p\u00e1gina figura todo lo incluido."][_var(p, 3)]
         if noinc:
             nsel = []
             for it in noinc:
                 if nsel and _palabras(ans + " No incluye {}.".format(_enum(nsel + [it]))) > 60:
                     break
                 nsel.append(it)
-            ans += " No incluye {}.".format(_enum(nsel).lower() if nsel and nsel[0][:1].isupper() and not nsel[0].isupper() else _enum(nsel))
+            ans += " No incluye {}.".format(_enum([_minus(x) for x in nsel]))
         if _palabras(ans) < 40:
             ans += " " + LEYENDA_FAQ
         out.append(("\u00bfQu\u00e9 incluye {} y qu\u00e9 no?".format(corto), ans))
 
     # 2) documentacion y requisitos (solo si la ficha lo dice)
-    doc = [c for c in cond + noinc if re.search(r"\bvisa\b|\bETA\b|vacuna|pasaporte|e-?ticket|\bDNI\b|documentaci", c, re.I)]
+    doc = [c.strip() for c in cond + noinc if re.search(r"\bvisa\b|\bETA\b|vacuna|pasaporte|e-?ticket|\bDNI\b|c\u00e9dula", c, re.I)]
+    doc = [c if c.endswith((".", "!", "?")) else c + "." for c in doc]   # 'Visa de Vietnam (...)' sin punto: se separa bien
     if doc:
         ans = _recortar_frases(" ".join(doc), 60)
         if _palabras(ans) < 40:
@@ -1062,12 +1114,13 @@ def faq_paquete(p):
     # 2b) cuando sale, cuanto dura y donde se duerme (siempre hay dato); entra solo si hacen falta preguntas para llegar a 4
     hot = [h for h in lista(p, "hoteles") if isinstance(h, dict) and _v(h, "nombre")]
     noches = p.get("noches")
-    ans_sal = "{} sale el {} y dura {} noche{}.".format(corto, txt(p, "salida").rstrip("."), noches, "" if str(noches) == "1" else "s")
+    ans_sal = ["{co} sale {fe} y dura {n} noche{s}.", "La salida de {co} es {fe}; son {n} noche{s}.", "{co} parte {fe}, con {n} noche{s} de viaje."][_var(p, 3)].format(
+        co=corto, fe=_fecha_salida_limpia(p), n=noches, s="" if str(noches) == "1" else "s")
     if hot:
         partes = []
         for h in hot:
             parte = "{}{}{}".format(_v(h, "nombre"), " en " + _v(h, "ciudad") if _v(h, "ciudad") else "",
-                                    " ({} noches, {})".format(_v(h, "noches"), _v(h, "regimen").lower()) if _v(h, "noches") and _v(h, "regimen") else "")
+                                    " ({} noche{}, {})".format(_v(h, "noches"), "" if str(_v(h, "noches")) == "1" else "s", _v(h, "regimen").lower()) if _v(h, "noches") and _v(h, "regimen") else "")
             if partes and _palabras(ans_sal + " El alojamiento previsto es {}.".format(_enum(partes + [parte]))) > 58:
                 break
             partes.append(parte)
@@ -1086,19 +1139,23 @@ def faq_paquete(p):
     if _palabras(ans_sal) < 40:
         ans_sal += " " + LEYENDA_FAQ
     ans_sal = _recortar_frases(ans_sal, 60)
-    q_salida = ("\u00bfCu\u00e1ndo sale {} y d\u00f3nde se duerme?".format(corto), ans_sal)
+    q_salida = ("\u00bfCu\u00e1ndo sale {} y en qu\u00e9 hoteles se aloja?".format(corto) if hot else "\u00bfCu\u00e1ndo sale {} y qu\u00e9 recorre?".format(corto), _plural_noches(ans_sal))
 
     # 3) como se paga (bloque unico de medios de pago del sitio)
     if mon == "ARS":
-        ans = ("Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de cr\u00e9dito "
-               "(consultar cuotas sin inter\u00e9s vigentes). Tu asesora te confirma las opciones de pago y el total final al momento de la reserva.")
+        ans = ["Es un paquete nacional: se paga en efectivo en pesos, por transferencia en pesos o con tarjeta de cr\u00e9dito (consultar cuotas sin inter\u00e9s vigentes).",
+               "Como es un viaje dentro de Argentina, pod\u00e9s pagar en efectivo en pesos, por transferencia en pesos o con tarjeta de cr\u00e9dito (consultar cuotas sin inter\u00e9s vigentes).",
+               "{} se abona en pesos: efectivo, transferencia o tarjeta de cr\u00e9dito (consultar cuotas sin inter\u00e9s vigentes).".format(corto)][_var(p, 3)]
+        ans += " Tu asesora te confirma las opciones de pago y el total final al momento de la reserva."
         nota = txt(p, "nota_impuestos")
         if nota and _palabras(ans + " " + nota) <= 60:
             ans = ans.replace(" Tu asesora", " {} Tu asesora".format(nota.rstrip(".") + "."), 1)
     else:
-        ans = ("Es un paquete internacional: se paga en efectivo en d\u00f3lares billete (consultar percepciones) o por transferencia en d\u00f3lares. "
-               "Por lo general se reserva con una se\u00f1a y el saldo se abona hasta un mes antes de la salida. "
-               "Tu asesora te confirma las opciones de pago al momento de la reserva.")
+        ans = ["Es un paquete internacional: se paga en efectivo en d\u00f3lares billete (consultar percepciones) o por transferencia en d\u00f3lares.",
+               "Como todos nuestros viajes internacionales, {} se paga en efectivo en d\u00f3lares billete (consultar percepciones) o por transferencia en d\u00f3lares.".format(corto),
+               "El pago es en d\u00f3lares: efectivo billete (consultar percepciones) o transferencia en d\u00f3lares."][_var(p, 3)]
+        ans += (" Por lo general se reserva con una se\u00f1a y el saldo se abona hasta un mes antes de la salida. "
+                "Tu asesora te confirma las opciones de pago al momento de la reserva.")
     out.append(("\u00bfC\u00f3mo se paga {}?".format(corto), ans))
 
     # 4) equipaje (solo si figura en los vuelos)
@@ -1115,7 +1172,8 @@ def faq_paquete(p):
         if all(re.match(r"^equipaje incluido", x, re.I) for x in eqs):
             ans = "Los vuelos{} tienen el equipaje incluido; la ficha no detalla el peso.".format(" de " + _enum(aers) if aers else "")
         else:
-            ans = "Los vuelos{} incluyen {}.".format(" de " + _enum(aers) if aers else "", _enum(eqs).lower() if not eqs[0][:1].isdigit() else _enum(eqs))
+            ans = ["Los vuelos{a} incluyen {e}.", "En los vuelos{a} viaj\u00e1s con {e}.", "El equipaje incluido en los vuelos{a} es {e}."][_var(p, 3)].format(
+                a=" de " + _enum(aers) if aers else "", e=_enum(eqs).lower() if not eqs[0][:1].isdigit() else _enum(eqs))
         extra = [c for c in cond if re.search(r"equipaje|valija|bolso|mochila", c, re.I)]
         if extra:
             ans = _recortar_frases(ans + " " + " ".join(extra), 60)
@@ -1126,13 +1184,14 @@ def faq_paquete(p):
 
     # 5) como se reserva o confirma
     cupo = [c for c in cond if re.search(r"cupo|se\u00f1a|reserv|saldo|emiten|emisi\u00f3n", c, re.I)]
-    ans = ("Escribinos por WhatsApp, llamanos o complet\u00e1 el formulario de contacto: una asesora te confirma disponibilidad, "
-           "la tarifa final y las opciones de pago, sin compromiso.")
+    ans = ["Escribinos por WhatsApp, llamanos o complet\u00e1 el formulario de contacto: una asesora te confirma disponibilidad, la tarifa final y las opciones de pago, sin compromiso.",
+           "Para reservar {}, consultanos por WhatsApp, por tel\u00e9fono o con el formulario de contacto: una asesora te confirma disponibilidad, tarifa final y opciones de pago, sin compromiso.".format(corto),
+           "La reserva empieza con una consulta por WhatsApp, tel\u00e9fono o formulario: una asesora revisa disponibilidad y te confirma la tarifa final y las opciones de pago, sin compromiso."][_var(p, 3)]
     if cupo:
         ans = _recortar_frases(ans + " " + cupo[0], 48)
     ans += " El precio es desde, por persona en base doble, y est\u00e1 sujeto a disponibilidad al momento de la reserva."
     ans = _recortar_frases(ans, 60)
-    out.append(("\u00bfC\u00f3mo reservo {}?".format(corto), ans))
+    out.append(("\u00bfC\u00f3mo se reserva {}?".format(corto), ans))
 
     if len(out) < 4 and 40 <= _palabras(q_salida[1]) <= 60:
         out.insert(1, q_salida)
@@ -1140,6 +1199,7 @@ def faq_paquete(p):
     # control: 40 a 60 palabras, sin inventar: lo que no entra se descarta
     final = []
     for q, a in out:
+        a = _plural_noches(a)
         n = _palabras(a)
         if 40 <= n <= 60:
             final.append((q, a))
