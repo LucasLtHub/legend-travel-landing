@@ -13831,6 +13831,251 @@
       "tipo": [
         "crucero"
       ]
+    },
+    {
+      "activo": true,
+      "destacado": false,
+      "motivo_inactivo": "",
+      "regimen": "Todo incluido",
+      "nota_impuestos": "Totales por persona con impuestos aéreos, IVA terrestre y gastos administrativos incluidos, más la tasa de conexión del aeropuerto de Lima (USD 11,86 por pasajero), que no forma parte de la tarifa del operador y se abona online o en el aeropuerto de Lima. Base single, doble y triple: salida del 17 de abril de 2027.",
+      "condiciones": [
+        "Hoteles previstos o similares, categoría Turista.",
+        "Salida con mínimo de pasajeros: el operador puede cancelarla con 15 días hábiles de aviso y reintegro total; el estado del grupo se informa 60 días antes. Asistencia en aeropuerto garantizada con un mínimo de 10 pasajeros.",
+        "Los tickets aéreos se emiten al completar el cupo o entre 60 y 30 días antes de la salida; una vez emitidos no admiten devolución ni cambios.",
+        "Asistencia al viajero válida hasta 70 años cumplidos; de 71 a 85 años suplemento USD 41 y desde 86 años USD 82, sin seguro de cancelación a partir de los 71 años.",
+        "Cancelaciones: hasta 71 días antes, 35% del total; entre 70 y 46 días, 60%; dentro de los 45 días o no presentación, 100%.",
+        "La salida de marzo regresa a Aeroparque y la de abril a Ezeiza.",
+        "Opcionales a cotizar: estadía en Guanacaste en lugar de Jacó y auto de alquiler del día 1 al 8 con devolución en el aeropuerto de San José.",
+        "No se garantizan menús sin TACC. Política de menores: consultar.",
+        "Tarifas sujetas a cambio sin previo aviso, válidas para nuevas reservas y sujetas a disponibilidad."
+      ],
+      "no_incluye": [
+        "La tasa de conexión del aeropuerto de Lima, USD 11,86 por pasajero, que no está en la tarifa del operador: la sumamos a los totales publicados y se abona online o en el aeropuerto de Lima",
+        "Percepciones si se paga en pesos",
+        "Todo servicio no especificado como incluido"
+      ],
+      "hoteles": [
+        {
+          "ciudad": "San José",
+          "nombre": "Crowne Plaza Corobicí",
+          "categoria": "Turista",
+          "noches": 1,
+          "regimen": "Desayuno",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "Crowne Plaza Corobicí, San José, Costa Rica",
+          "destacados": [],
+          "foto_credito": ""
+        },
+        {
+          "ciudad": "Jacó",
+          "nombre": "Best Western Jacó Beach",
+          "categoria": "Turista",
+          "noches": 7,
+          "regimen": "Todo incluido",
+          "habitacion": "",
+          "web": "",
+          "id": "",
+          "mapa": "Best Western Jacó Beach, Jacó, Costa Rica",
+          "destacados": [],
+          "foto_credito": ""
+        }
+      ],
+      "itinerario": [
+        {
+          "dia": "Día 1",
+          "titulo": "Buenos Aires – San José",
+          "texto": "Vuelo de LATAM vía Lima. Llegada a San José, traslado al hotel y tiempo libre."
+        },
+        {
+          "dia": "Día 2",
+          "titulo": "San José – Jacó",
+          "texto": "Desayuno y traslado a Jacó, en la costa del Pacífico. Alojamiento con régimen todo incluido."
+        },
+        {
+          "dia": "Días 3 a 8",
+          "titulo": "Jacó",
+          "texto": "Días libres en Jacó con régimen todo incluido."
+        },
+        {
+          "dia": "Día 9",
+          "titulo": "Jacó – San José – Lima",
+          "texto": "Desayuno y traslado al aeropuerto de San José. Vuelo de regreso vía Lima; noche a bordo."
+        },
+        {
+          "dia": "Día 10",
+          "titulo": "Buenos Aires",
+          "texto": "Llegada a Buenos Aires: la salida de marzo llega a Aeroparque y la de abril a Ezeiza."
+        }
+      ],
+      "tarifas": [
+        {
+          "etiqueta": "Salida 13 de marzo 2027 · base doble",
+          "precio": "USD 2.812"
+        },
+        {
+          "etiqueta": "Salida 13 de marzo 2027 · base triple",
+          "precio": "USD 2.787"
+        },
+        {
+          "etiqueta": "Salida 13 de marzo 2027 · base single",
+          "precio": "USD 3.282"
+        }
+      ],
+      "id": "costa-rica-jaco-all-inclusive-2027",
+      "titulo": "Costa Rica: San José y Jacó todo incluido",
+      "region": "latinoamerica",
+      "destinos": [
+        "San José",
+        "Jacó"
+      ],
+      "resumen": "Diez días en Costa Rica con vuelos LATAM vía Lima: una noche en San José con desayuno y siete noches en Jacó, en la costa del Pacífico, con régimen todo incluido. Traslados y asistencia al viajero incluidos, con dos salidas: 13 de marzo y 17 de abril de 2027.",
+      "precio_desde": {
+        "valor": 2792,
+        "moneda": "USD",
+        "nota": "por persona en base doble · total con impuestos y la tasa de conexión de Lima"
+      },
+      "salida": "13 de marzo y 17 de abril 2027",
+      "meses_salida": [
+        "2027-03",
+        "2027-04"
+      ],
+      "vigencia": "2027-03-13",
+      "noches": 9,
+      "operador": "VieTur",
+      "operador_sigla": "VT",
+      "ref": "VT-11643",
+      "incluye": [
+        "Aéreo Buenos Aires – Lima – San José – Lima – Buenos Aires por LATAM, clase económica con equipaje incluido",
+        "Traslados de llegada y salida",
+        "1 noche de alojamiento en San José con desayuno",
+        "7 noches de alojamiento en Jacó con régimen todo incluido",
+        "Impuestos locales",
+        "Asistencia al viajero con cobertura hasta USD 80.000, para pasajeros de hasta 70 años",
+        "Impuestos aéreos, IVA terrestre y gastos administrativos y de reserva"
+      ],
+      "imagen": "assets/img/pexels/11181956-1200.jpg",
+      "imagen_alt": "Vista aérea de la playa de Jacó, en la costa del Pacífico de Costa Rica",
+      "precios": [
+        {
+          "base": "doble",
+          "valor": 2792
+        },
+        {
+          "base": "single",
+          "valor": 3262
+        },
+        {
+          "base": "triple",
+          "valor": 2762
+        }
+      ],
+      "vuelos": [
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Buenos Aires (EZE) – Lima (LIM)",
+          "clase": "Económica",
+          "fecha": "13/03/2027",
+          "horario": "04:00 – 06:50",
+          "numero": "LA 2376",
+          "equipaje": "Equipaje incluido"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Lima (LIM) – San José (SJO)",
+          "clase": "Económica",
+          "fecha": "13/03/2027",
+          "horario": "09:40 – 12:35",
+          "numero": "LA 2938",
+          "equipaje": "Equipaje incluido"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "San José (SJO) – Lima (LIM)",
+          "clase": "Económica",
+          "fecha": "21/03/2027",
+          "horario": "16:55 – 21:40",
+          "numero": "LA 2409",
+          "equipaje": "Equipaje incluido"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Lima (LIM) – Buenos Aires (AEP, Aeroparque)",
+          "clase": "Económica",
+          "fecha": "22/03/2027",
+          "horario": "01:20 – 07:40",
+          "numero": "LA 2465",
+          "equipaje": "Equipaje incluido"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Buenos Aires (EZE) – Lima (LIM)",
+          "clase": "Económica",
+          "fecha": "17/04/2027",
+          "horario": "07:35 – 10:25",
+          "numero": "LA 1436",
+          "equipaje": "Equipaje incluido"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Lima (LIM) – San José (SJO)",
+          "clase": "Económica",
+          "fecha": "17/04/2027",
+          "horario": "12:45 – 15:40",
+          "numero": "LA 2408",
+          "equipaje": "Equipaje incluido"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "San José (SJO) – Lima (LIM)",
+          "clase": "Económica",
+          "fecha": "25/04/2027",
+          "horario": "16:55 – 21:40",
+          "numero": "LA 2409",
+          "equipaje": "Equipaje incluido"
+        },
+        {
+          "aerolinea": "LATAM",
+          "ruta": "Lima (LIM) – Buenos Aires (EZE)",
+          "clase": "Económica",
+          "fecha": "25/04/2027 – 26/04/2027",
+          "horario": "23:45 – 06:10",
+          "numero": "LA 1437",
+          "equipaje": "Equipaje incluido"
+        }
+      ],
+      "foto_portada": "",
+      "fuente_detalle": {
+        "url": "https://www.vietur.com.ar/circuitos/1/11643?product_type=8&currency=USD",
+        "fecha": "2026-10-27",
+        "desglose": "Ficha data/fichas/VT-11643.md (leída del sitio del operador el 27/10/2026, tablas de salidas desplegadas). Precio Desde = salida 17/04/2027 base doble: tarifa USD 2.150 + tax 630 = 2.780 (los TAX incluyen impuestos aéreos DNT, IVA terrestre, gastos administrativos y de reserva: no se suma el 5%) + USD 11,86 de la Tarifa Unificada de Uso de Aeropuerto de Lima (conexión), que la tabla no incluye y se paga online o en el aeropuerto = 2.791,86, redondeado hacia arriba a USD 2.792. Totales con la tasa de Lima: 13/03 doble 2.800→2.812, single 3.270→3.282, triple 2.775→2.787; 17/04 doble 2.780→2.792, single 3.250→3.262, triple 2.750→2.762. No se publica la 'doble a compartir' (la tabla no tiene precio) ni las cuotas sin interés del operador. Pago en pesos: percepción 30% RG 5463 aparte (aéreo USD 161 marzo / 156 abril; terrestre SGL 456 / DBL 361 / TPL 355). La ficha no tiene fecha de vencimiento: se aplica el mismo criterio que en VT-11817 (vigencia = fecha de la primera salida, 13/03/2027); para seguir vendiendo la salida de abril después de esa fecha hay que revalidar la tarifa. El día 2 de la ficha dice 'Salida hacia Guanacaste' por error: el alojamiento es en Jacó y Guanacaste figura como opcional a cotizar. Hoteles previstos o similares, categoría Turista (no se usan como argumento de venta). La web es para agencias: confirmar que es precio de venta al público."
+      },
+      "codigo_ref": "VT-11643",
+      "seo_titulo": "Costa Rica todo incluido: San José y Jacó, 9 noches, salidas marzo y abril 2027 | Legend Travel",
+      "seo_descripcion": "Una noche en San José y siete en Jacó con todo incluido, vuelos LATAM vía Lima con equipaje, traslados y asistencia al viajero. Salidas 13 de marzo y 17 de abril de 2027. Desde USD 2.792.",
+      "subtitulo": "Costa del Pacífico con todo incluido y una noche en la capital, con dos fechas para elegir",
+      "por_que": [
+        "Siete noches en Jacó, en la costa del Pacífico, con régimen todo incluido, y una noche en San José con desayuno",
+        "Vuelos LATAM vía Lima con equipaje incluido, en dos salidas: 13 de marzo y 17 de abril de 2027",
+        "Traslados de llegada y salida y asistencia al viajero con cobertura hasta USD 80.000",
+        "Precio total con impuestos aéreos, IVA y gastos, y con la tasa de conexión de Lima ya sumada"
+      ],
+      "ideal_para": "Quienes buscan playa con todo incluido fuera del Caribe, con fechas fijas y todo resuelto.",
+      "ver_tambien": [],
+      "tipo": [
+        "todo-incluido"
+      ],
+      "faq_extra": [
+        {
+          "pregunta": "¿Qué cubre la asistencia al viajero de Costa Rica: San José y Jacó?",
+          "respuesta": "La asistencia al viajero incluida cubre hasta USD 80.000 por pasajero y es válida hasta los 70 años cumplidos. De 71 a 85 años se abona un suplemento de USD 41 y desde los 86 años, de USD 82; a partir de los 71 años la asistencia no incluye seguro de cancelación. Consultanos la cobertura detallada antes de reservar."
+        },
+        {
+          "pregunta": "¿Qué pasa si no se llega al mínimo de pasajeros?",
+          "respuesta": "La salida se confirma con un mínimo de pasajeros. Si no se alcanza, el operador puede cancelarla avisando con 15 días hábiles de anticipación y reintegra el total abonado. El estado del grupo se informa 60 días antes de la salida, y los tickets aéreos se emiten al completar el cupo o entre 60 y 30 días antes."
+        }
+      ]
     }
   ]
 }

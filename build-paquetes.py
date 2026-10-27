@@ -67,6 +67,7 @@ OBLIGATORIOS = ["id", "titulo", "region", "destinos", "resumen",
 #   nota_impuestos, motivo_inactivo, operador, operador_sigla, ref, destacado,
 #   precios, vuelos, crucero, foto_portada (P1/P2, ver docs/planilla-paquetes.md)
 #   fuente_detalle (interno: de donde salio el detalle; no se publica)
+#   faq_extra: lista de {pregunta, respuesta} propias de la ficha (40-60 palabras), van antes de 'como se reserva'
 #   regiones_extra: lista de regiones secundarias SOLO para listados (madres y relacionados);
 #   la region principal sigue mandando en URL, kicker, schema y chips.
 
@@ -1181,6 +1182,11 @@ def faq_paquete(p):
             ans += " Si necesit\u00e1s despachar m\u00e1s equipaje, consultanos antes de la emisi\u00f3n de los pasajes y te confirmamos el costo con la aerol\u00ednea."
             ans = _recortar_frases(ans, 60)
         out.append(("\u00bfQu\u00e9 equipaje incluyen los vuelos de {}?".format(corto), ans))
+
+    # 4b) preguntas propias del paquete (faq_extra en el JSON: solo datos de la ficha; se validan 40-60 palabras como las demas)
+    for fx in lista(p, "faq_extra"):
+        if isinstance(fx, dict) and str(fx.get("pregunta") or "").strip() and str(fx.get("respuesta") or "").strip():
+            out.append((str(fx["pregunta"]).strip(), str(fx["respuesta"]).strip()))
 
     # 5) como se reserva o confirma
     cupo = [c for c in cond if re.search(r"cupo|se\u00f1a|reserv|saldo|emiten|emisi\u00f3n", c, re.I)]
