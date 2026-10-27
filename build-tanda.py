@@ -85,7 +85,9 @@ SITEMAP_EXCLUIR = ["sorteo", "newsletter"]
 # Lo que NUNCA se copia a la tanda aunque esté dentro de un servicio:
 # la configuración local de Doppler (tiene la API key; en producción va FUERA de
 # public_html, cargada a mano), su modelo y los datos de pruebas locales.
-NO_PUBLICAR = {"newsletter": {"newsletter-config.php", "newsletter-config.example.php", "data"}}
+NO_PUBLICAR = {"newsletter": {"newsletter-config.php", "newsletter-config.example.php", "data"},
+               # /quinceaneras/disney-europa/ es una página de país de la tanda 2 (publicar: false en data/destinos-paises.json): no se copia ni va al sitemap.
+               "quinceaneras": {"disney-europa"}}
 
 # Las 12 madres: se copia SOLO index.html + logo-wordmark.png si existe.
 # Las subcarpetas (hijas/nietas) NO se copian.
@@ -104,12 +106,17 @@ MADRE_DIRS = [
     "cruceros",
 ]
 
-# Sub-madres excluidas de tanda 1 (nota informativa al final del resumen):
-EXCLUIDAS_NOTA = [
-    "europa/sur-occidental/, central/, del-este/, islas-britanicas/, escandinavia/",
-    "usa/costa-oeste/ (y otras hijas)",
-    "caribe/republica-dominicana/ (y otras hijas)",
-]
+# Páginas de país (tanda 2): entran SOLO las marcadas "publicar": true en data/destinos-paises.json
+# (una fuente de verdad para build-paquetes.py, que les genera el módulo de salidas, y para esta
+# tanda). Se copia únicamente su index.html: las hijas no marcadas quedan fuera, sin borrarse del repo.
+import json as _json
+_PAISES_JSON = SRC / "data" / "destinos-paises.json"
+_PAISES = _json.loads(_PAISES_JSON.read_text(encoding="utf-8")).get("paginas", {}) if _PAISES_JSON.exists() else {}
+PAIS_DIRS = [r for r, c in _PAISES.items() if c.get("publicar")]
+NO_PUBLICADAS_PAIS = [r for r, c in _PAISES.items() if not c.get("publicar")]
+
+# Páginas de país que siguen fuera (nota informativa al final del resumen):
+EXCLUIDAS_NOTA = ["{} páginas de país de data/destinos-paises.json sin publicar (publicar: false)".format(len(NO_PUBLICADAS_PAIS))]
 
 # ============================================================
 # LINKS A PÁGINAS QUE NO ENTRAN EN LA TANDA
@@ -265,7 +272,7 @@ def arreglar_links_no_publicados(dest_root: Path) -> tuple:
 def build_published_set() -> set:
     """Construye el conjunto de paths root-relativos publicados en esta tanda."""
     paths = {'/', '/index.html', '/index.html/'}
-    for d in FULL_DIRS + MADRE_DIRS:
+    for d in FULL_DIRS + MADRE_DIRS + PAIS_DIRS:
         paths.add(f'/{d}/')
         paths.add(f'/{d}/index.html')
         paths.add(f'/{d}')
@@ -535,6 +542,21 @@ def main():
                      if f'{d}/index.html' in transform_log else ""
         print(f"   {d}/  ({label}){prox_label}")
 
+    # 4a. Páginas de país publicadas (solo index.html)
+    print("\n→  Páginas de país (tanda 2, solo index.html):")
+    for d in PAIS_DIRS:
+        idx = SRC / d / "index.html"
+        if not idx.exists():
+            warnings.append(f"País: '{d}/index.html' no encontrado")
+            print(f"   ⚠  {d}/ — NO ENCONTRADO")
+            continue
+        copy_html_transformed(idx, DEST / d / "index.html", published, transform_log, wa_examples)
+        copied_files.append(f"{d}/index.html")
+        prox_label = f"  [{transform_log[f'{d}/index.html']} cards → WA]" if f'{d}/index.html' in transform_log else ""
+        print(f"   {d}/{prox_label}")
+    if not PAIS_DIRS:
+        print("   (ninguna marcada publicar)")
+
     # 4b. Links internos a páginas que no entraron en la tanda
     print("\n→  Links a páginas no publicadas:")
     redir, quit_, sust, sin_res = arreglar_links_no_publicados(DEST)
@@ -575,7 +597,7 @@ def main():
                 continue
             if sub.is_dir() and (sub / "index.html").exists():
                 candidatas.append(f"/{d}/{sub.name}/")
-    for d in MADRE_DIRS:
+    for d in MADRE_DIRS + PAIS_DIRS:
         candidatas.append(f"/{d}/")
     sin_indexar = [p for p in candidatas if tiene_noindex(p)]
     sitemap_paths = [p for p in candidatas if p not in sin_indexar]
@@ -662,7 +684,7 @@ def main():
         for n in sorted(set(notes)):
             print(f"    {n}")
 
-    print(f"\n  Sub-madres NO incluidas en tanda 1 (para tu revisión):")
+    print(f"\n  Páginas de país NO incluidas (para tu revisión):")
     for e in EXCLUIDAS_NOTA:
         print(f"    - {e}")
 

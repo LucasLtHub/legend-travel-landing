@@ -1,0 +1,1130 @@
+{
+  "_doc": "Paginas de pais (tanda 2). build-paquetes.py genera en cada una el modulo 'Salidas por destino' entre <!-- PAQUETES-PAIS:START/END -->: entran los paquetes activos cuyo campo destinos o la ciudad de algun hotel coincide con un termino de 'match' (sin acentos, palabra completa). Si no hay ninguno, muestra las salidas activas de 'region' bajo 'Otras salidas en <region>'. 'publicar': true = build-tanda.py la copia a la tanda, la pone en el sitemap y en llms.txt. 'revisado': el equipo reviso la lista de match.",
+  "paginas": {
+    "africa/seychelles": {
+      "nombre": "Seychelles",
+      "frase": "a Seychelles",
+      "region": "africa",
+      "match": [
+        "seychelles"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "africa/zanzibar": {
+      "nombre": "Zanzíbar",
+      "frase": "a Zanzíbar",
+      "region": "africa",
+      "match": [
+        "zanzibar"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "argentina/bariloche": {
+      "nombre": "Bariloche",
+      "frase": "a Bariloche",
+      "region": "argentina",
+      "match": [
+        "bariloche"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "argentina/cataratas-iguazu": {
+      "nombre": "Cataratas del Iguazú",
+      "frase": "a las Cataratas del Iguazú",
+      "region": "argentina",
+      "match": [
+        "iguazu",
+        "cataratas"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "argentina/el-calafate": {
+      "nombre": "El Calafate y El Chaltén",
+      "frase": "a El Calafate y El Chaltén",
+      "region": "argentina",
+      "match": [
+        "calafate"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "argentina/mendoza": {
+      "nombre": "Mendoza",
+      "frase": "a Mendoza",
+      "region": "argentina",
+      "match": [
+        "mendoza"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "argentina/salta-jujuy": {
+      "nombre": "Salta y Jujuy",
+      "frase": "a Salta y Jujuy",
+      "region": "argentina",
+      "match": [
+        "salta",
+        "jujuy",
+        "purmamarca",
+        "cafayate",
+        "humahuaca",
+        "tucuman"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "argentina/ushuaia": {
+      "nombre": "Ushuaia",
+      "frase": "a Ushuaia",
+      "region": "argentina",
+      "match": [
+        "ushuaia"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "asia/china": {
+      "nombre": "China",
+      "frase": "a China",
+      "region": "asia",
+      "match": [
+        "china",
+        "beijing",
+        "shanghai",
+        "xi'an",
+        "hong kong",
+        "lhasa",
+        "tibet",
+        "chengdu"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "asia/corea": {
+      "nombre": "Corea del Sur",
+      "frase": "a Corea del Sur",
+      "region": "asia",
+      "match": [
+        "corea",
+        "seul",
+        "busan"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "asia/dubai": {
+      "nombre": "Dubái",
+      "frase": "a Dubái",
+      "region": "asia",
+      "match": [
+        "dubai",
+        "emiratos"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "asia/filipinas": {
+      "nombre": "Filipinas",
+      "frase": "a Filipinas",
+      "region": "asia",
+      "match": [
+        "filipinas"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "asia/india": {
+      "nombre": "India",
+      "frase": "a India",
+      "region": "asia",
+      "match": [
+        "india",
+        "delhi",
+        "jaipur",
+        "agra",
+        "mumbai",
+        "rajastan"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "asia/japon": {
+      "nombre": "Japón",
+      "frase": "a Japón",
+      "region": "asia",
+      "match": [
+        "japon",
+        "tokio",
+        "kioto",
+        "osaka"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "asia/malasia": {
+      "nombre": "Malasia",
+      "frase": "a Malasia",
+      "region": "asia",
+      "match": [
+        "malasia",
+        "kuala lumpur",
+        "malaca"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "asia/maldivas": {
+      "nombre": "Maldivas",
+      "frase": "a Maldivas",
+      "region": "asia",
+      "match": [
+        "maldivas"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "asia/singapur": {
+      "nombre": "Singapur",
+      "frase": "a Singapur",
+      "region": "asia",
+      "match": [
+        "singapur"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "asia/tailandia": {
+      "nombre": "Tailandia",
+      "frase": "a Tailandia",
+      "region": "asia",
+      "match": [
+        "tailandia",
+        "bangkok",
+        "phuket"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "asia/vietnam": {
+      "nombre": "Vietnam",
+      "frase": "a Vietnam",
+      "region": "asia",
+      "match": [
+        "vietnam",
+        "hanoi",
+        "hoi an",
+        "hue",
+        "ho chi minh"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "caribe/aruba": {
+      "nombre": "Aruba",
+      "frase": "a Aruba",
+      "region": "caribe",
+      "match": [
+        "aruba"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "caribe/bahamas": {
+      "nombre": "Bahamas",
+      "frase": "a Bahamas",
+      "region": "caribe",
+      "match": [
+        "bahamas"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "caribe/cancun-riviera-maya": {
+      "nombre": "Cancún y la Riviera Maya",
+      "frase": "a Cancún y la Riviera Maya",
+      "region": "caribe",
+      "match": [
+        "Cancún",
+        "Riviera Maya",
+        "Costa Mujeres",
+        "Playa del Carmen",
+        "Tulum",
+        "Puerto Aventuras",
+        "Puerto Morelos",
+        "Akumal",
+        "Isla Mujeres",
+        "Cozumel",
+        "Holbox",
+        "Chichén Itzá"
+      ],
+      "revisado": true,
+      "publicar": true
+    },
+    "caribe/cuba": {
+      "nombre": "Cuba",
+      "frase": "a Cuba",
+      "region": "caribe",
+      "match": [
+        "cuba",
+        "habana",
+        "varadero"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "caribe/curazao": {
+      "nombre": "Curazao",
+      "frase": "a Curazao",
+      "region": "caribe",
+      "match": [
+        "curazao"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "caribe/jamaica": {
+      "nombre": "Jamaica",
+      "frase": "a Jamaica",
+      "region": "caribe",
+      "match": [
+        "jamaica"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "caribe/republica-dominicana": {
+      "nombre": "República Dominicana",
+      "frase": "a República Dominicana",
+      "region": "caribe",
+      "match": [
+        "Punta Cana",
+        "Bayahíbe",
+        "Bayahibe",
+        "Samaná",
+        "Miches",
+        "La Romana",
+        "Isla Catalina",
+        "Isla Saona",
+        "Santo Domingo",
+        "Puerto Plata",
+        "Amber Cove",
+        "Las Terrenas",
+        "Uvero Alto",
+        "Bávaro",
+        "Cabo Rojo",
+        "República Dominicana"
+      ],
+      "revisado": true,
+      "publicar": true
+    },
+    "caribe/republica-dominicana/bayahibe": {
+      "nombre": "Bayahíbe",
+      "frase": "a Bayahíbe",
+      "region": "caribe",
+      "match": [
+        "bayahibe"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "caribe/republica-dominicana/miches": {
+      "nombre": "Miches",
+      "frase": "a Miches",
+      "region": "caribe",
+      "match": [
+        "miches"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "caribe/republica-dominicana/punta-cana": {
+      "nombre": "Punta Cana",
+      "frase": "a Punta Cana",
+      "region": "caribe",
+      "match": [
+        "punta cana",
+        "bavaro"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "caribe/republica-dominicana/samana": {
+      "nombre": "Samaná",
+      "frase": "a Samaná",
+      "region": "caribe",
+      "match": [
+        "samana"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "caribe/saint-maarten": {
+      "nombre": "Saint Maarten",
+      "frase": "a Saint Maarten",
+      "region": "caribe",
+      "match": [
+        "maarten",
+        "martin"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "caribe/san-andres": {
+      "nombre": "San Andrés",
+      "frase": "a San Andrés",
+      "region": "caribe",
+      "match": [
+        "san andres"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "caribe/turks-caicos": {
+      "nombre": "Turks y Caicos",
+      "frase": "a Turks y Caicos",
+      "region": "caribe",
+      "match": [
+        "turks",
+        "caicos",
+        "gran turca"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/central": {
+      "nombre": "Europa Central",
+      "frase": "a Europa Central",
+      "region": "europa",
+      "match": [
+        "alemania",
+        "belgica",
+        "croacia",
+        "eslovenia",
+        "paises bajos",
+        "suiza",
+        "frankfurt",
+        "brujas",
+        "amsterdam",
+        "zurich",
+        "gante",
+        "rotterdam",
+        "ginebra"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/central/alemania": {
+      "nombre": "Alemania",
+      "frase": "a Alemania",
+      "region": "europa",
+      "match": [
+        "alemania",
+        "frankfurt",
+        "rothenburg",
+        "fussen"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/central/belgica": {
+      "nombre": "Bélgica",
+      "frase": "a Bélgica",
+      "region": "europa",
+      "match": [
+        "belgica",
+        "brujas",
+        "gante",
+        "bruselas"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/central/croacia": {
+      "nombre": "Croacia",
+      "frase": "a Croacia",
+      "region": "europa",
+      "match": [
+        "croacia"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/central/eslovenia": {
+      "nombre": "Eslovenia",
+      "frase": "a Eslovenia",
+      "region": "europa",
+      "match": [
+        "eslovenia"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/central/paises-bajos": {
+      "nombre": "Países Bajos",
+      "frase": "a Países Bajos",
+      "region": "europa",
+      "match": [
+        "paises bajos",
+        "amsterdam",
+        "rotterdam",
+        "kinderdijk"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/central/suiza": {
+      "nombre": "Suiza",
+      "frase": "a Suiza",
+      "region": "europa",
+      "match": [
+        "suiza",
+        "zurich",
+        "ginebra"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/del-este": {
+      "nombre": "Europa del Este",
+      "frase": "a Europa del Este",
+      "region": "europa",
+      "match": [
+        "austria",
+        "hungria",
+        "polonia",
+        "republica checa",
+        "viena",
+        "budapest",
+        "praga",
+        "innsbruck"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/del-este/austria": {
+      "nombre": "Austria",
+      "frase": "a Austria",
+      "region": "europa",
+      "match": [
+        "austria",
+        "innsbruck",
+        "viena"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/del-este/hungria": {
+      "nombre": "Hungría",
+      "frase": "a Hungría",
+      "region": "europa",
+      "match": [
+        "hungria",
+        "budapest"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/del-este/polonia": {
+      "nombre": "Polonia",
+      "frase": "a Polonia",
+      "region": "europa",
+      "match": [
+        "polonia"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/del-este/republica-checa": {
+      "nombre": "República Checa",
+      "frase": "a República Checa",
+      "region": "europa",
+      "match": [
+        "republica checa",
+        "praga"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/escandinavia": {
+      "nombre": "Escandinavia",
+      "frase": "a Escandinavia",
+      "region": "europa",
+      "match": [
+        "dinamarca",
+        "finlandia",
+        "islandia",
+        "noruega",
+        "suecia",
+        "copenhague",
+        "oslo",
+        "tromso",
+        "estocolmo",
+        "fiordos",
+        "alesund",
+        "trondheim",
+        "molde"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/escandinavia/dinamarca": {
+      "nombre": "Dinamarca",
+      "frase": "a Dinamarca",
+      "region": "europa",
+      "match": [
+        "dinamarca",
+        "copenhague"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/escandinavia/finlandia": {
+      "nombre": "Finlandia",
+      "frase": "a Finlandia",
+      "region": "europa",
+      "match": [
+        "finlandia"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/escandinavia/islandia": {
+      "nombre": "Islandia",
+      "frase": "a Islandia",
+      "region": "europa",
+      "match": [
+        "islandia"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/escandinavia/noruega": {
+      "nombre": "Noruega",
+      "frase": "a Noruega",
+      "region": "europa",
+      "match": [
+        "noruega",
+        "oslo",
+        "tromso",
+        "alesund",
+        "trondheim",
+        "alta",
+        "molde",
+        "fiordos"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/escandinavia/suecia": {
+      "nombre": "Suecia",
+      "frase": "a Suecia",
+      "region": "europa",
+      "match": [
+        "suecia",
+        "estocolmo"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/islas-britanicas": {
+      "nombre": "Islas Británicas",
+      "frase": "a las Islas Británicas",
+      "region": "europa",
+      "match": [
+        "londres",
+        "inglaterra",
+        "escocia",
+        "gales",
+        "irlanda",
+        "reino unido",
+        "southampton"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/islas-britanicas/escocia": {
+      "nombre": "Escocia",
+      "frase": "a Escocia",
+      "region": "europa",
+      "match": [
+        "escocia"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/islas-britanicas/gales": {
+      "nombre": "Gales",
+      "frase": "a Gales",
+      "region": "europa",
+      "match": [
+        "gales"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/islas-britanicas/inglaterra": {
+      "nombre": "Inglaterra",
+      "frase": "a Inglaterra",
+      "region": "europa",
+      "match": [
+        "inglaterra",
+        "londres",
+        "southampton",
+        "canterbury"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/islas-britanicas/irlanda": {
+      "nombre": "Irlanda",
+      "frase": "a Irlanda",
+      "region": "europa",
+      "match": [
+        "irlanda"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/sur-occidental": {
+      "nombre": "Europa Sur-Occidental",
+      "frase": "a Europa Sur-Occidental",
+      "region": "europa",
+      "match": [
+        "Madrid",
+        "Barcelona",
+        "Sevilla",
+        "Granada",
+        "Córdoba",
+        "Valencia",
+        "Zaragoza",
+        "Oviedo",
+        "Santander",
+        "Santiago",
+        "San Sebastián",
+        "Bilbao",
+        "Toledo",
+        "Málaga",
+        "Port Aventura",
+        "Lisboa",
+        "Oporto",
+        "Fátima",
+        "Algarve",
+        "Roma",
+        "Florencia",
+        "Venecia",
+        "Milán",
+        "Nápoles",
+        "Bari",
+        "Lecce",
+        "Alberobello",
+        "Matera",
+        "Capri",
+        "Taormina",
+        "Siracusa",
+        "Agrigento",
+        "Palermo",
+        "Pompeya",
+        "Salerno",
+        "Turín",
+        "Aosta",
+        "Pisa",
+        "Sicilia",
+        "Puglia",
+        "París",
+        "Disneyland París",
+        "Niza",
+        "Costa Azul",
+        "Cannes",
+        "Burdeos",
+        "Lourdes",
+        "Mulhouse",
+        "Atenas",
+        "Santorini",
+        "Mykonos",
+        "Creta"
+      ],
+      "revisado": true,
+      "publicar": true
+    },
+    "europa/sur-occidental/espana": {
+      "nombre": "España",
+      "frase": "a España",
+      "region": "europa",
+      "match": [
+        "Madrid",
+        "Barcelona",
+        "Sevilla",
+        "Granada",
+        "Córdoba",
+        "Valencia",
+        "Zaragoza",
+        "Oviedo",
+        "Santander",
+        "Santiago",
+        "Santiago de Compostela",
+        "San Sebastián",
+        "Bilbao",
+        "Toledo",
+        "Málaga",
+        "Ronda",
+        "Nerja",
+        "Salamanca",
+        "Port Aventura"
+      ],
+      "revisado": true,
+      "publicar": true
+    },
+    "europa/sur-occidental/francia": {
+      "nombre": "Francia",
+      "frase": "a Francia",
+      "region": "europa",
+      "match": [
+        "París",
+        "Disneyland París",
+        "Niza",
+        "Costa Azul",
+        "Cannes",
+        "Burdeos",
+        "Lourdes",
+        "Mulhouse",
+        "Lyon",
+        "Marsella",
+        "Estrasburgo",
+        "Aviñón",
+        "Provenza"
+      ],
+      "revisado": true,
+      "publicar": true
+    },
+    "europa/sur-occidental/grecia": {
+      "nombre": "Grecia",
+      "frase": "a Grecia",
+      "region": "europa",
+      "match": [
+        "grecia"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "europa/sur-occidental/italia": {
+      "nombre": "Italia",
+      "frase": "a Italia",
+      "region": "europa",
+      "match": [
+        "Roma",
+        "Florencia",
+        "Venecia",
+        "Milán",
+        "Nápoles",
+        "Bari",
+        "Lecce",
+        "Alberobello",
+        "Matera",
+        "Capri",
+        "Taormina",
+        "Siracusa",
+        "Agrigento",
+        "Palermo",
+        "Pompeya",
+        "Salerno",
+        "Turín",
+        "Aosta",
+        "Pisa",
+        "Verona",
+        "Bolonia",
+        "Génova",
+        "Como",
+        "Sicilia",
+        "Puglia",
+        "Amalfi",
+        "Sorrento",
+        "Positano"
+      ],
+      "revisado": true,
+      "publicar": true
+    },
+    "europa/sur-occidental/portugal": {
+      "nombre": "Portugal",
+      "frase": "a Portugal",
+      "region": "europa",
+      "match": [
+        "portugal",
+        "lisboa",
+        "oporto"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "latinoamerica/chile": {
+      "nombre": "Chile",
+      "frase": "a Chile",
+      "region": "latinoamerica",
+      "match": [
+        "chile",
+        "puerto varas"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "latinoamerica/colombia": {
+      "nombre": "Colombia",
+      "frase": "a Colombia",
+      "region": "latinoamerica",
+      "match": [
+        "colombia"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "latinoamerica/costa-rica": {
+      "nombre": "Costa Rica",
+      "frase": "a Costa Rica",
+      "region": "latinoamerica",
+      "match": [
+        "costa rica"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "latinoamerica/guatemala": {
+      "nombre": "Guatemala",
+      "frase": "a Guatemala",
+      "region": "latinoamerica",
+      "match": [
+        "guatemala"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "latinoamerica/panama": {
+      "nombre": "Panamá",
+      "frase": "a Panamá",
+      "region": "latinoamerica",
+      "match": [
+        "panama"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "latinoamerica/peru": {
+      "nombre": "Perú",
+      "frase": "a Perú",
+      "region": "latinoamerica",
+      "match": [
+        "peru",
+        "lima",
+        "cusco",
+        "machu picchu"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "medio-oriente/dubai-emiratos": {
+      "nombre": "Dubái y Emiratos",
+      "frase": "a Dubái y Emiratos",
+      "region": "medio-oriente",
+      "match": [
+        "dubai",
+        "emiratos"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "medio-oriente/jordania": {
+      "nombre": "Jordania",
+      "frase": "a Jordania",
+      "region": "medio-oriente",
+      "match": [
+        "jordania",
+        "petra",
+        "amman",
+        "wadi rum",
+        "mar muerto"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "medio-oriente/turquia": {
+      "nombre": "Turquía",
+      "frase": "a Turquía",
+      "region": "medio-oriente",
+      "match": [
+        "turquia"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "oceania/australia": {
+      "nombre": "Australia",
+      "frase": "a Australia",
+      "region": "oceania",
+      "match": [
+        "australia"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "oceania/bora-bora": {
+      "nombre": "Bora Bora",
+      "frase": "a Bora Bora",
+      "region": "oceania",
+      "match": [
+        "bora bora"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "oceania/nueva-zelanda": {
+      "nombre": "Nueva Zelanda",
+      "frase": "a Nueva Zelanda",
+      "region": "oceania",
+      "match": [
+        "nueva zelanda"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "quinceaneras/disney-europa": {
+      "nombre": "Disney en Europa para Quinceañeras",
+      "frase": "a Disney en Europa para Quinceañeras",
+      "region": "quinceaneras",
+      "match": [
+        "disneyland paris",
+        "disney europa"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "usa/costa-oeste": {
+      "nombre": "Costa Oeste de Estados Unidos",
+      "frase": "a Costa Oeste de Estados Unidos",
+      "region": "usa",
+      "match": [
+        "las vegas",
+        "los angeles",
+        "san francisco"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "usa/costa-oeste/las-vegas": {
+      "nombre": "Las Vegas",
+      "frase": "a Las Vegas",
+      "region": "usa",
+      "match": [
+        "las vegas"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "usa/costa-oeste/los-angeles": {
+      "nombre": "Los Ángeles",
+      "frase": "a Los Ángeles",
+      "region": "usa",
+      "match": [
+        "los angeles"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "usa/costa-oeste/san-francisco": {
+      "nombre": "San Francisco",
+      "frase": "a San Francisco",
+      "region": "usa",
+      "match": [
+        "san francisco"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "usa/disney-universal": {
+      "nombre": "Disney y Universal Orlando",
+      "frase": "a Disney y Universal Orlando",
+      "region": "usa",
+      "match": [
+        "orlando",
+        "walt disney world",
+        "universal"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "usa/hawaii": {
+      "nombre": "Hawaii",
+      "frase": "a Hawaii",
+      "region": "usa",
+      "match": [
+        "hawaii",
+        "hawai"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "usa/miami": {
+      "nombre": "Miami",
+      "frase": "a Miami",
+      "region": "usa",
+      "match": [
+        "miami",
+        "fort lauderdale"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "usa/nueva-york": {
+      "nombre": "Nueva York",
+      "frase": "a Nueva York",
+      "region": "usa",
+      "match": [
+        "nueva york"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "viajes-deportivos/formula-1": {
+      "nombre": "Fórmula 1",
+      "frase": "a la Fórmula 1",
+      "region": "viajes-deportivos",
+      "match": [
+        "formula 1"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "viajes-deportivos/grand-slams-tenis": {
+      "nombre": "Grand Slams de Tenis",
+      "frase": "a Grand Slams de Tenis",
+      "region": "viajes-deportivos",
+      "match": [
+        "grand slam",
+        "tenis"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "viajes-deportivos/mundial-futbol": {
+      "nombre": "Mundial de Fútbol",
+      "frase": "al Mundial de Fútbol",
+      "region": "viajes-deportivos",
+      "match": [
+        "mundial"
+      ],
+      "revisado": false,
+      "publicar": false
+    },
+    "viajes-deportivos/rugby": {
+      "nombre": "Rugby",
+      "frase": "de Rugby",
+      "region": "viajes-deportivos",
+      "match": [
+        "rugby"
+      ],
+      "revisado": false,
+      "publicar": false
+    }
+  }
+}

@@ -31,7 +31,7 @@ Reglas que no se negocian:
 
 Uso: python build-paquetes.py
 """
-import sys, json, html, re, datetime, urllib.parse, shutil
+import sys, json, html, re, datetime, urllib.parse, shutil, unicodedata
 from pathlib import Path
 
 if hasattr(sys.stdout, 'reconfigure'):
@@ -2118,6 +2118,19 @@ def actualizar_llms(publicados, hoy):
     else:
         t = t.rstrip() + NL + NL + bloque + NL
 
+    # Páginas de destino publicadas (tanda 2): entre marcadores, antes de "## Servicios". Salen de
+    # data/destinos-paises.json ("publicar": true); llms-full.txt las hereda con la parte fija.
+    D_START, D_END = "<!-- DESTINOS:START -->", "<!-- DESTINOS:END -->"
+    pubs = [(r, c) for r, c in cargar_paises().items() if c.get("publicar")]
+    if pubs:
+        bloque_d = NL.join([D_START, "## Páginas de destino",
+                            "Páginas propias con guía de viaje, requisitos y las salidas publicadas de cada destino:"] +
+                           ["- {}: {}/{}/".format(c["nombre"], DOMINIO, r) for r, c in pubs] + [D_END])
+        if D_START in t and D_END in t:
+            t = reemplazar_bloque(t, D_START, D_END, bloque_d)
+        elif "## Servicios" in t:
+            t = t.replace("## Servicios", bloque_d + NL + NL + "## Servicios", 1)
+
     # Link a la versión completa (llms-full.txt), una sola vez, antes de "## Destinos".
     if "llms-full.txt" not in t and "## Destinos" in t:
         t = t.replace("## Destinos", "Versión completa (historia, medios de pago, detalle de cada paquete con hoteles y las FAQ de cada página): {}/llms-full.txt".format(DOMINIO) + NL + NL + "## Destinos", 1)
@@ -2460,6 +2473,158 @@ def actualizar_retirados(publicados, hoy):
         print("=   .htaccess: bloque PAQUETES-RETIRADOS sin cambios ({} regla(s))".format(len(reglas)))
     return reglas
 
+# ============================================================
+# Modulo "Salidas por destino" en las paginas de pais (tanda 2, 27/10/2026)
+# ============================================================
+# data/destinos-paises.json lista cada pagina de pais con sus terminos de match. El match
+# se hace contra los campos "destinos" y hoteles[].ciudad de paquetes.json (sin acentos,
+# palabra completa), nunca contra palabras sueltas del titulo. Las cards son las compactas
+# de las madres y el ItemList del schema replica EXACTAMENTE las cards visibles, en el
+# mismo orden. Si la pagina queda sin paquetes (porque vencen), muestra las salidas activas
+# de su region bajo "Otras salidas en <region>" con su propio ItemList. Se recalcula en
+# cada build. "publicar": true marca las paginas que build-tanda.py copia a la tanda.
+PAISES_JSON = ROOT / "data" / "destinos-paises.json"
+PAIS_START = "<!-- PAQUETES-PAIS:START -->"
+PAIS_END = "<!-- PAQUETES-PAIS:END -->"
+REGION_EN = {"caribe": "el Caribe", "europa": "Europa", "usa": "Estados Unidos", "argentina": "Argentina",
+             "asia": "Asia", "africa": "\u00c1frica", "oceania": "Ocean\u00eda", "latinoamerica": "Latinoam\u00e9rica",
+             "medio-oriente": "Medio Oriente", "brasil": "Brasil", "cruceros": "crucero",
+             "viajes-deportivos": "viajes deportivos", "quinceaneras": "viajes de quincea\u00f1eras", "disney": "Disney"}
+_SECCION_PAQ_RE = re.compile(r'(?:<!-- PAQUETES -->\s*)?<section\b[^>]*\bid="paquetes"[^>]*>.*?</section>\s*', re.S)
+
+
+def _norm_lugar(s):
+    return unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode().lower().strip()
+
+
+def lugares_de(p):
+    """Destinos + ciudades de los hoteles, normalizados: los unicos campos que cuentan para el match."""
+    out = set(_norm_lugar(d) for d in lista(p, "destinos"))
+    for h in lista(p, "hoteles"):
+        if isinstance(h, dict) and _v(h, "ciudad"):
+            out.add(_norm_lugar(_v(h, "ciudad")))
+    return out
+
+
+def coincide_pais(p, terminos):
+    lug = lugares_de(p)
+    for t in terminos:
+        pat = re.compile(r"(?<![a-z0-9])" + re.escape(_norm_lugar(t)) + r"(?![a-z0-9])")
+        if any(pat.search(l) for l in lug):
+            return True
+    return False
+
+
+def cargar_paises():
+    if not PAISES_JSON.exists():
+        return {}
+    return json.loads(PAISES_JSON.read_text(encoding="utf-8")).get("paginas", {})
+
+
+def schema_itemlist(nombre, items):
+    return json.dumps({"@context": "https://schema.org", "@type": "ItemList", "name": nombre, "numberOfItems": len(items),
+                       "itemListElement": [{"@type": "ListItem", "position": i + 1,
+                                            "url": "{}/paquetes/{}/".format(DOMINIO, p["id"]), "name": txt(p, "titulo")}
+                                           for i, (p, v) in enumerate(items)]}, ensure_ascii=False)
+
+
+def render_modulo_pais(cfg, items, otros, hoy):
+    nombre = cfg["nombre"]
+    frase = cfg.get("frase") or ("a " + nombre)
+    region = cfg.get("region")
+    reg_en = REGION_EN.get(region, REGIONES.get(region, region))
+    NL = chr(10)
+    if items:
+        n = len(items)
+        kicker = "Salidas {}".format(e(frase))
+        h2 = "{} {} {} <em>con fecha y precio publicados.</em>".format(n, "salida" if n == 1 else "salidas", e(frase))
+        cards, nombre_lista = items, "Salidas {}".format(frase)
+    elif otros:
+        kicker = "Otras salidas en {}".format(e(reg_en))
+        h2 = "Por ahora no hay salidas publicadas {}. <em>Estas son otras salidas en {}.</em>".format(e(frase), e(reg_en))
+        cards, nombre_lista = otros, "Otras salidas en {}".format(reg_en)
+    else:
+        kicker = "Salidas {}".format(e(frase))
+        h2 = "Por ahora no hay salidas publicadas {}. <em>Te cotizamos el viaje a medida.</em>".format(e(frase))
+        cards, nombre_lista = [], None
+    wa = "https://wa.me/{}?text={}".format(WA_NUMERO, urllib.parse.quote("Hola Legend Travel, quiero consultar sobre un viaje " + frase, safe=''))
+    partes = [
+        PAIS_START,
+        "<!-- Generado por build-paquetes.py el {}. NO editar a mano: se pisa. -->".format(hoy.isoformat()),
+        CARD_CSS,
+        '<section class="sec px" id="paquetes" style="background:#fff">',
+        '  <div class="mx">',
+        '    <div class="pk-rhead rv">',
+        '      <div>',
+        '        <p class="kicker">{}</p>'.format(kicker),
+        '        <h2 class="h2" style="font-size:clamp(28px,3vw,40px)">{}</h2>'.format(h2),
+        '      </div>',
+        '      <a class="pk-rall" href="paquetes/">Ver todos los paquetes{}</a>'.format(IC_FLECHA),
+        '    </div>',
+    ]
+    if cards:
+        partes += [
+            '    <div class="pkc-grid rv">',
+            NL.join(render_card_compacta(p, v) for p, v in cards),
+            '    </div>',
+            '    <p class="dnota rv" style="margin-top:20px">Actualizado el {}. Precios por persona en base doble, \u00abdesde\u00bb y sujetos a disponibilidad; una asesora los confirma por WhatsApp antes de reservar.</p>'.format(fmt_fecha_larga(hoy)),
+        ]
+    else:
+        partes.append('    <p class="dnota rv">Actualizado el {}. <a href="{}" target="_blank" rel="noopener noreferrer" style="color:var(--red);font-weight:600">Consultanos por WhatsApp</a> y armamos el viaje con tus fechas.</p>'.format(fmt_fecha_larga(hoy), e(wa)))
+    partes += ['  </div>', '</section>']
+    if cards:
+        partes.append('<script type="application/ld+json">{}</script>'.format(schema_itemlist(nombre_lista, cards)))
+    partes.append(PAIS_END)
+    return NL.join(partes)
+
+
+def asegurar_marcadores_pais(texto):
+    """(texto, True) si inserto los marcadores: reemplaza la seccion estatica #paquetes o, si la pagina
+    no la tiene, los pone antes del contacto (o del footer). (texto, None) si no hay donde."""
+    if PAIS_START in texto and PAIS_END in texto:
+        return texto, False
+    bloque = PAIS_START + "\n" + PAIS_END + "\n"
+    m = _SECCION_PAQ_RE.search(texto)
+    if m:
+        return texto[:m.start()] + bloque + texto[m.end():], True
+    for pat in (r'<section\b[^>]*\bid="contacto"', r'<section\b[^>]*\bclass="[^"]*\bcontact\b', r'<footer\b'):
+        m = re.search(pat, texto)
+        if m:
+            return texto[:m.start()] + bloque + texto[m.start():], True
+    return texto, None
+
+
+def generar_modulos_pais(publicados, hoy):
+    """Escribe el modulo en TODAS las paginas de data/destinos-paises.json (esten o no publicadas:
+    asi cada grupo de la tanda 2 ya tiene su modulo listo). Devuelve {ruta: (ids, ids_region)}."""
+    paginas = cargar_paises()
+    if not paginas:
+        return {}
+    resultado = {}
+    print("\n\u2192  Salidas por destino en las p\u00e1ginas de pa\u00eds (se listan las marcadas publicar):")
+    for ruta, cfg in paginas.items():
+        f = ROOT / ruta / "index.html"
+        if not f.exists():
+            print("   !  {}/index.html no existe".format(ruta))
+            continue
+        items = [(p, v) for p, v in publicados if coincide_pais(p, cfg.get("match", []))]
+        region = cfg.get("region")
+        otros = [] if items else [(p, v) for p, v in publicados if region in regiones_de(p)]
+        original = f.read_text(encoding="utf-8")
+        texto, ins = asegurar_marcadores_pais(original)
+        if ins is None:
+            print("   !  {}: sin lugar para el m\u00f3dulo (ni #paquetes, ni contacto, ni footer)".format(ruta))
+            continue
+        nuevo = reemplazar_bloque(texto, PAIS_START, PAIS_END, render_modulo_pais(cfg, items, otros, hoy))
+        if nuevo != original:
+            f.write_text(nuevo, encoding="utf-8")
+        resultado[ruta] = ([p["id"] for p, _ in items], [p["id"] for p, _ in otros])
+        if cfg.get("publicar"):
+            print("   {:<40} {} salida(s){}".format(ruta + "/", len(items), "" if items else "  \u2192 {} de la regi\u00f3n".format(len(otros))))
+    print("   ({} p\u00e1ginas con m\u00f3dulo)".format(len(resultado)))
+    return resultado
+
+
 def main():
     hoy = datetime.date.today()
     print("build-paquetes.py  —  {}".format(hoy.isoformat()))
@@ -2583,6 +2748,9 @@ def main():
 
     # ---------- 3b. guias como paginas ----------
     generar_guias(publicados, hoy)
+
+    # ---------- 3c. salidas por destino en las paginas de pais ----------
+    generar_modulos_pais(publicados, hoy)
 
     # ---------- 4. llms.txt (GEO) ----------
     actualizar_llms(publicados, hoy)
