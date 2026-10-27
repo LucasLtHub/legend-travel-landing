@@ -2476,9 +2476,11 @@ def actualizar_retirados(publicados, hoy):
 # ============================================================
 # Modulo "Salidas por destino" en las paginas de pais (tanda 2, 27/10/2026)
 # ============================================================
-# data/destinos-paises.json lista cada pagina de pais con sus terminos de match. El match
-# se hace contra los campos "destinos" y hoteles[].ciudad de paquetes.json (sin acentos,
-# palabra completa), nunca contra palabras sueltas del titulo. Las cards son las compactas
+# data/destinos-paises.json lista cada pagina de pais con sus terminos de match. Un paquete
+# entra en una pagina solo si tiene al menos una noche de hotel (hoteles[].ciudad) o un tramo
+# de recorrido terrestre ("destinos" de un paquete que no es crucero) en ese pais; las escalas
+# de crucero no cuentan y los viajes de quinceaneras no entran en ninguna. Match sin acentos y
+# por palabra completa, nunca contra palabras sueltas del titulo. Las cards son las compactas
 # de las madres y el ItemList del schema replica EXACTAMENTE las cards visibles, en el
 # mismo orden. Si la pagina queda sin paquetes (porque vencen), muestra las salidas activas
 # de su region bajo "Otras salidas en <region>" con su propio ItemList. Se recalcula en
@@ -2497,9 +2499,17 @@ def _norm_lugar(s):
     return unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode().lower().strip()
 
 
+def es_crucero(p):
+    return p.get("region") == "cruceros" or "crucero" in lista(p, "tipo")
+
+
 def lugares_de(p):
-    """Destinos + ciudades de los hoteles, normalizados: los unicos campos que cuentan para el match."""
-    out = set(_norm_lugar(d) for d in lista(p, "destinos"))
+    """Lugares donde el paquete tiene al menos una noche de hotel o un tramo de recorrido terrestre:
+    las ciudades de hoteles[] siempre, y "destinos" solo si NO es crucero (en un crucero "destinos"
+    son escalas, que no cuentan; un crucero con noches de hotel pre/post entra por esas ciudades)."""
+    out = set()
+    if not es_crucero(p):
+        out.update(_norm_lugar(d) for d in lista(p, "destinos"))
     for h in lista(p, "hoteles"):
         if isinstance(h, dict) and _v(h, "ciudad"):
             out.add(_norm_lugar(_v(h, "ciudad")))
@@ -2607,9 +2617,11 @@ def generar_modulos_pais(publicados, hoy):
         if not f.exists():
             print("   !  {}/index.html no existe".format(ruta))
             continue
-        items = [(p, v) for p, v in publicados if coincide_pais(p, cfg.get("match", []))]
+        # Los viajes de quinceaneras (XV) no entran en ninguna pagina de pais.
+        candidatos = [(p, v) for p, v in publicados if p.get("region") != "quinceaneras"]
+        items = [(p, v) for p, v in candidatos if coincide_pais(p, cfg.get("match", []))]
         region = cfg.get("region")
-        otros = [] if items else [(p, v) for p, v in publicados if region in regiones_de(p)]
+        otros = [] if items else [(p, v) for p, v in candidatos if region in regiones_de(p)]
         original = f.read_text(encoding="utf-8")
         texto, ins = asegurar_marcadores_pais(original)
         if ins is None:
@@ -2623,6 +2635,126 @@ def generar_modulos_pais(publicados, hoy):
             print("   {:<40} {} salida(s){}".format(ruta + "/", len(items), "" if items else "  \u2192 {} de la regi\u00f3n".format(len(otros))))
     print("   ({} p\u00e1ginas con m\u00f3dulo)".format(len(resultado)))
     return resultado
+
+
+def _plano_inline(frag):
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", frag))).strip()
+
+
+def faqs_visibles(texto_html):
+    """Pares (pregunta, respuesta) de los desplegables .faq (button + .ans) de una pagina, en orden."""
+    out = []
+    for m in re.finditer(r'<div class="faq(?: [^"]*)?">\s*<button[^>]*>(.*?)<span class="pm".*?<div class="ans">(.*?)</div>\s*</div>',
+                         texto_html, flags=re.S):
+        q, a = _plano_inline(m.group(1)), _plano_inline(m.group(2))
+        if q and a:
+            out.append((q, a))
+    return out
+
+
+def sincronizar_faqpage(texto_html):
+    """Reescribe el nodo FAQPage del JSON-LD de la pagina con EXACTAMENTE las preguntas visibles
+    (regla AEO: FAQPage = lo visible). Si la pagina tiene .faq pero ningun FAQPage, lo agrega al
+    @graph del primer JSON-LD. Conserva el formato (compacto o indentado). Sin .faq, no toca nada."""
+    faqs = faqs_visibles(texto_html)
+    if not faqs:
+        return texto_html
+    nodo = {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faqs]}
+    scripts = list(re.finditer(r'<script type="application/ld\+json">\s*(\{(?:(?!</script>).)*\})\s*</script>', texto_html, flags=re.S))
+    elegido = next((m for m in scripts if '"FAQPage"' in m.group(1)), None) or next((m for m in scripts if '"@graph"' in m.group(1)), None)
+    if not elegido:
+        return texto_html
+    try:
+        d = json.loads(elegido.group(1))
+    except ValueError:
+        return texto_html
+    if isinstance(d, dict) and d.get("@type") == "FAQPage":
+        d = {"@context": d.get("@context", "https://schema.org"), **nodo}
+    elif isinstance(d, dict) and isinstance(d.get("@graph"), list):
+        if any(isinstance(n, dict) and n.get("@type") == "FAQPage" for n in d["@graph"]):
+            d["@graph"] = [nodo if isinstance(n, dict) and n.get("@type") == "FAQPage" else n for n in d["@graph"]]
+        else:
+            d["@graph"].append(nodo)
+    else:
+        return texto_html
+    indentado = "\n" in elegido.group(1).strip()
+    out = json.dumps(d, ensure_ascii=False, indent=2) if indentado else json.dumps(d, ensure_ascii=False, separators=(",", ":"))
+    return texto_html[:elegido.start(1)] + out + texto_html[elegido.end(1):]
+
+
+def sincronizar_faqs_estaticas():
+    """FAQPage = visible tambien en las paginas estaticas (home, servicios, madres y paginas de pais
+    publicadas). Los detalles de paquetes y las guias ya salen sincronizados del generador."""
+    rutas = [ROOT / "index.html"] + sorted(ROOT.glob("*/index.html"))
+    rutas += [ROOT / r / "index.html" for r, c in cargar_paises().items() if c.get("publicar")]
+    tocadas = []
+    for f in rutas:
+        if not f.exists():
+            continue
+        t = f.read_text(encoding="utf-8")
+        n = sincronizar_faqpage(t)
+        if n != t:
+            f.write_text(n, encoding="utf-8", newline="\n")
+            tocadas.append(f.relative_to(ROOT).as_posix())
+    if tocadas:
+        print("OK  FAQPage sincronizado con lo visible en: " + ", ".join(tocadas))
+    else:
+        print("=   FAQPage = visible en todas las paginas estaticas")
+
+
+# ============================================================
+# Paginas de pais que no estan en el build -> 301 a su ancestro publicado (28/10/2026)
+# ============================================================
+# Hostinger no borra lo subido en builds anteriores (Overwrite no elimina archivos) y el sitemap
+# viejo (julio 2026) anunciaba todas las paginas de pais. Por eso cada pagina de
+# data/destinos-paises.json con publicar: false (y cada ruta extra de "retiradas") redirige al
+# ancestro publicado mas cercano, en el mismo formato que PAQUETES-RETIRADOS. Si una pagina pasa
+# a publicar: true, su regla desaparece sola: nunca se redirige una URL publicada.
+PAGRET_START = "# PAGINAS-RETIRADAS:START (lo genera build-paquetes.py desde data/destinos-paises.json; no editar a mano)"
+PAGRET_END = "# PAGINAS-RETIRADAS:END"
+
+
+def actualizar_paginas_retiradas():
+    datos = json.loads(PAISES_JSON.read_text(encoding="utf-8")) if PAISES_JSON.exists() else {}
+    paginas = datos.get("paginas", {})
+    publicadas = {r for r, c in paginas.items() if c.get("publicar")}
+
+    def ancestro(ruta):
+        partes = ruta.strip("/").split("/")
+        for corte in range(len(partes) - 1, 0, -1):
+            cand = "/".join(partes[:corte])
+            if cand in publicadas or (corte == 1 and (ROOT / cand / "index.html").exists()):
+                return "/{}/".format(cand)
+        return "/"
+
+    reglas = []
+    fuentes = [(r, None) for r, c in sorted(paginas.items()) if not c.get("publicar")]
+    fuentes += [(r, d) for r, d in sorted((datos.get("retiradas") or {}).items())]
+    for ruta, destino in fuentes:
+        ruta = ruta.strip("/")
+        if not re.match(r"^[a-z0-9-]+(/[a-z0-9-]+)*$", ruta) or ruta in publicadas:
+            continue
+        destino = destino or ancestro(ruta)
+        if not re.match(r"^/([a-z0-9-]+/)*$", destino):
+            continue
+        reglas.append("RewriteRule ^{}/?$ {} [L,R=301]".format(ruta, destino))
+    bloque = "\n".join([PAGRET_START, "# {} pagina(s) fuera del build -> ancestro publicado. Con y sin barra final.".format(len(reglas))]
+                       + reglas + [PAGRET_END])
+    txt = HTACCESS.read_text(encoding="utf-8")
+    if PAGRET_START in txt and PAGRET_END in txt:
+        nuevo = re.sub(re.escape(PAGRET_START) + r".*?" + re.escape(PAGRET_END), lambda m: bloque, txt, count=1, flags=re.S)
+    elif RET_END in txt:
+        nuevo = txt.replace(RET_END, RET_END + "\n\n" + bloque, 1)
+    elif "ErrorDocument 404" in txt:
+        nuevo = txt.replace("ErrorDocument 404", bloque + "\n\nErrorDocument 404", 1)
+    else:
+        nuevo = txt.rstrip("\n") + "\n\n" + bloque + "\n"
+    if nuevo != txt:
+        HTACCESS.write_text(nuevo, encoding="utf-8", newline="\n")
+        print("OK  .htaccess: bloque PAGINAS-RETIRADAS con {} regla(s) 301".format(len(reglas)))
+    else:
+        print("=   .htaccess: bloque PAGINAS-RETIRADAS sin cambios ({} regla(s))".format(len(reglas)))
+    return reglas
 
 
 def main():
@@ -2661,7 +2793,7 @@ def main():
     pagina = PAGE.read_text(encoding="utf-8")
     if START not in pagina or END not in pagina:
         sys.exit("ERROR: faltan los marcadores en {}".format(PAGE))
-    nueva = reemplazar_bloque(pagina, START, END, bloque)
+    nueva = sincronizar_faqpage(reemplazar_bloque(pagina, START, END, bloque))   # FAQPage = preguntas visibles
     if nueva != pagina:
         PAGE.write_text(nueva, encoding="utf-8")
         print("\nOK  paquetes/index.html  ({} salidas)".format(len(publicados)))
@@ -2757,6 +2889,8 @@ def main():
     generar_llms_full(publicados, hoy)
     generar_vuelos_faltantes(publicados, hoy)
     actualizar_retirados(publicados, hoy)
+    actualizar_paginas_retiradas()
+    sincronizar_faqs_estaticas()
 
     # ---------- 5. resenas de Google en la home ----------
     actualizar_resenas()

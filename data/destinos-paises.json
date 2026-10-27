@@ -1,5 +1,6 @@
 {
-  "_doc": "Paginas de pais (tanda 2). build-paquetes.py genera en cada una el modulo 'Salidas por destino' entre <!-- PAQUETES-PAIS:START/END -->: entran los paquetes activos cuyo campo destinos o la ciudad de algun hotel coincide con un termino de 'match' (sin acentos, palabra completa). Si no hay ninguno, muestra las salidas activas de 'region' bajo 'Otras salidas en <region>'. 'publicar': true = build-tanda.py la copia a la tanda, la pone en el sitemap y en llms.txt. 'revisado': el equipo reviso la lista de match.",
+  "_doc": "Paginas de pais (tanda 2). build-paquetes.py genera en cada una el modulo 'Salidas por destino' entre <!-- PAQUETES-PAIS:START/END -->: entra un paquete activo solo si tiene al menos una noche de hotel (hoteles[].ciudad) o un tramo de recorrido terrestre ('destinos' de un paquete que no es crucero) que coincide con un termino de 'match' (sin acentos, palabra completa); las escalas de crucero no cuentan y los viajes de quinceaneras no entran en ninguna pagina. Si no hay ninguno, muestra las salidas activas de 'region' bajo 'Otras salidas en <region>'. 'publicar': true = build-tanda.py la copia a la tanda, la pone en el sitemap y en llms.txt; con publicar: false el build escribe un 301 en .htaccess (bloque PAGINAS-RETIRADAS) hacia su ancestro publicado. 'retiradas': otras rutas viejas -> destino. 'revisado': el equipo reviso la lista de match.",
+  "retiradas": {},
   "paginas": {
     "africa/seychelles": {
       "nombre": "Seychelles",
