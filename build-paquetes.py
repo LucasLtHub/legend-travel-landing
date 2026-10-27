@@ -1012,6 +1012,7 @@ def _enum(items):
     return ", ".join(items[:-1]) + " y " + items[-1]
 
 
+FAQ_REQUISITOS = False   # pregunta de requisitos en las FAQ de los paquetes (ver faq_paquete)
 LEYENDA_FAQ = "La tarifa es por persona en base doble y est\u00e1 sujeta a disponibilidad al momento de la reserva."
 
 _COMUNES_INC = {"a\u00e9reo", "a\u00e9reos", "aereo", "aereos", "traslado", "traslados", "noche", "noches", "excursi\u00f3n", "excursiones", "asistencia",
@@ -1100,8 +1101,9 @@ def faq_paquete(p):
             ans += " " + LEYENDA_FAQ
         out.append(("\u00bfQu\u00e9 incluye {} y qu\u00e9 no?".format(corto), ans))
 
-    # 2) documentacion y requisitos (solo si la ficha lo dice)
-    doc = [c.strip() for c in cond + noinc if re.search(r"\bvisa\b|\bETA\b|vacuna|pasaporte|e-?ticket|\bDNI\b|c\u00e9dula", c, re.I)]
+    # 2) documentacion y requisitos: desactivada (pedido del usuario, 28/10/2026): las FAQ de los paquetes no llevan
+    #    preguntas de visas, ETA, vacunas ni documentacion. FAQ_REQUISITOS = True las vuelve a armar solo si la ficha lo dice.
+    doc = [c.strip() for c in cond + noinc if FAQ_REQUISITOS and re.search(r"\bvisa\b|\bETA\b|vacuna|pasaporte|e-?ticket|\bDNI\b|c\u00e9dula", c, re.I)]
     doc = [c if c.endswith((".", "!", "?")) else c + "." for c in doc]   # 'Visa de Vietnam (...)' sin punto: se separa bien
     if doc:
         ans = _recortar_frases(" ".join(doc), 60)
@@ -2136,6 +2138,8 @@ def actualizar_llms(publicados, hoy):
             t = reemplazar_bloque(t, D_START, D_END, bloque_d)
         elif "## Servicios" in t:
             t = t.replace("## Servicios", bloque_d + NL + NL + "## Servicios", 1)
+    elif D_START in t and D_END in t:   # sin paginas de pais publicadas: el bloque se vacia
+        t = re.sub(re.escape(D_START) + r".*?" + re.escape(D_END) + "[" + chr(10) + "]*", "", t, count=1, flags=re.S)
 
     # Link a la versión completa (llms-full.txt), una sola vez, antes de "## Destinos".
     if "llms-full.txt" not in t and "## Destinos" in t:

@@ -263,7 +263,7 @@
         "Chichén Itzá"
       ],
       "revisado": true,
-      "publicar": true
+      "publicar": false
     },
     "caribe/cuba": {
       "nombre": "Cuba",
@@ -320,7 +320,7 @@
         "República Dominicana"
       ],
       "revisado": true,
-      "publicar": true
+      "publicar": false
     },
     "caribe/republica-dominicana/bayahibe": {
       "nombre": "Bayahíbe",
@@ -749,7 +749,7 @@
         "Creta"
       ],
       "revisado": true,
-      "publicar": true
+      "publicar": false
     },
     "europa/sur-occidental/espana": {
       "nombre": "España",
@@ -777,7 +777,7 @@
         "Port Aventura"
       ],
       "revisado": true,
-      "publicar": true
+      "publicar": false
     },
     "europa/sur-occidental/francia": {
       "nombre": "Francia",
@@ -799,7 +799,7 @@
         "Provenza"
       ],
       "revisado": true,
-      "publicar": true
+      "publicar": false
     },
     "europa/sur-occidental/grecia": {
       "nombre": "Grecia",
@@ -846,7 +846,7 @@
         "Positano"
       ],
       "revisado": true,
-      "publicar": true
+      "publicar": false
     },
     "europa/sur-occidental/portugal": {
       "nombre": "Portugal",

@@ -19,17 +19,6 @@ Versión completa (historia, medios de pago, detalle de cada paquete con hoteles
 - Cruceros: Caribe, Mediterráneo y desde Buenos Aires
 - Argentina: norte, sur y todo el país
 
-<!-- DESTINOS:START -->
-## Páginas de destino
-Páginas propias con guía de viaje, requisitos y las salidas publicadas de cada destino:
-- Cancún y la Riviera Maya: https://www.legendtravel.com.ar/caribe/cancun-riviera-maya/
-- República Dominicana: https://www.legendtravel.com.ar/caribe/republica-dominicana/
-- Europa Sur-Occidental: https://www.legendtravel.com.ar/europa/sur-occidental/
-- España: https://www.legendtravel.com.ar/europa/sur-occidental/espana/
-- Francia: https://www.legendtravel.com.ar/europa/sur-occidental/francia/
-- Italia: https://www.legendtravel.com.ar/europa/sur-occidental/italia/
-<!-- DESTINOS:END -->
-
 ## Servicios
 - Viajes a medida (especialidad)
 - Viajes corporativos: viajes de negocios, eventos y congresos, y viajes de incentivo (https://www.legendtravel.com.ar/viajes-corporativos/)
